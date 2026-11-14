@@ -338,4 +338,4 @@ Item 20 is an advert for a paid service in the original; XSlop only asks for the
 - `SKILL.md` – the core skill sheet.
 - `inspiration/`, `toolkit/`, `recipes/`, `style/`, `references/` – the packs described above.
 - `README.md` – this overview.
-- `assets/banner.jpg` – the image above, a 3D scene rendered with three.js (`assets/banner.html` is its source).
+- `assets/banner.jpg` – the image above, a dark 3D scene (chrome X, dissolving slop blob, bloom) rendered with three.js (`assets/banner.html` is its source).
