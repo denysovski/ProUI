@@ -120,5 +120,6 @@ These patterns recur across the featured work. They are good when they fit the c
 
 ## Reference screenshots
 
-Screenshots of these galleries and of individual references live in `references/screens/`. See
-`references/README.md` for the list and how to add more.
+Screenshots of these galleries and tools live in `references/screens/` (for example `dark-home.jpg`,
+`recent-feed.jpg`, `saved-grid.jpg`, `21st-3d.jpg`). `references/README.md` lists each file and what to learn
+from it.

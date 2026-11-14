@@ -49,8 +49,8 @@ Next to the core sheet there are packs the agent loads when it needs them:
 | `inspiration/INSPIRATION.md` | where to look for inspiration (Dark, Recent, Saved, Mobbin, Dribbble, Designeer), what each is good for, how to analyse a reference, and patterns worth learning |
 | `toolkit/TOOLKIT.md` | libraries, assets and fonts to build with (GSAP, Made With GSAP, Lenis, React Bits, 21st.dev, Codrops, Spline, three.js, SVGL, SVG Doodles, Fontshare): when to use each, install code, licence notes, guardrails |
 | `recipes/RECIPES.md` | ready patterns with code: smooth scroll, reveals, split text, pinned gallery, magnetic button, marquee, popovers, custom select, toasts, light 3D hero, countdown, tracking boxes |
-| `style/MY-STYLE.md` | my personal style, applied on top of the rules (draft; the Pinterest part is still to be filled in) |
-| `references/` | screenshots of reference sites and what to learn from each (to be captured) |
+| `style/MY-STYLE.md` | my personal style, applied on top of the rules, including the main keys from my Pinterest web-design board |
+| `references/` | screenshots of the inspiration and tool sites, and what to learn from each |
 
 ## What I want to avoid
 
