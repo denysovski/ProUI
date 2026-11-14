@@ -1,100 +1,101 @@
 # XSlop
 
-Jeden velký skill sheet (`SKILL.md`) pro AI agenty (Claude, ChatGPT, Cursor…), podle kterého staví weby tak,
-aby nevypadaly vygenerovaně („AI slop“, „vibecoded“), ale jako hotový produkt od člověka.
+One big skill sheet (`SKILL.md`) for AI agents (Claude, ChatGPT, Cursor…) that tells them how to build websites
+that don't look generated ("AI slop", "vibecoded"), but like a finished product made by a person.
 
-Každé pravidlo má vlastní kód (např. `SL-14`, `MO-04`), takže agentovi můžu přesně říct, co zahrnout a co
-vynechat.
+Every rule has its own ID (for example `SL-14`, `MO-04`), so I can tell the agent exactly what to include and
+what to leave out.
 
-## Jak to použít
+## How to use it
 
-Zadání pro agenta, například:
+Example prompts:
 
-- `Udělej web pro kavárnu podle XSlop.` – použije všechna pravidla.
-- `Podle XSlop, ale nech SL-25 (mono písmo).` – tenhle vzor povolí, ale střídmě.
-- `Podle XSlop, vynech PE-10.` – tohle pravidlo přeskočí.
-- `Jen XSlop SEO a PF.` – použije jen tyhle skupiny.
-- `XSlop audit tohohle webu.` – nic nestaví, jen zkontroluje web a vypíše, co nesplňuje.
+- `Build a website for a coffee shop using XSlop.` – applies every rule.
+- `Use XSlop, but keep SL-25 (mono fonts).` – allows that pattern, used sparingly.
+- `Use XSlop, skip PE-10.` – skips that rule.
+- `XSlop, only SEO and PF.` – applies only those groups.
+- `XSlop audit of this site.` – builds nothing, just reviews the site and lists what fails.
 
-Jako skill: složku s `SKILL.md` stačí dát mezi skilly agenta (např. Claude), načte se sama, když se řekne „XSlop“.
+As a skill: put the folder with `SKILL.md` among the agent's skills (for example in Claude). It loads
+automatically when you say "XSlop".
 
-## Co obsahuje
+## What it contains
 
-| Skupina | Kód | Obsah |
+| Group | IDs | Contents |
 | --- | --- | --- |
-| Slop, kterému se vyhnout | `SL-01` až `SL-48` | vizuální a textové vzory, podle kterých web vypadá jako od AI |
-| Design craft | `DC-01` až `DC-20` | drobná rozhodnutí, díky kterým design působí promyšleně |
-| Animace | `MO-01` až `MO-20` | jak animovat rychle, přirozeně a bez efektů pro efekt |
-| Stavy | `ST-01` až `ST-10` | prázdný stav, načítání, chyba, offline, pomalá síť, žádné výsledky, chybějící oprávnění, vypršení přihlášení, validace, úspěch |
-| Produkční základ | `PE-01` až `PE-14` | 404, CTA, favicon, OG obrázek, děkovací stránka, právní stránky, cookies, analytika, kontakt, Git, přístupnost |
-| SEO | `SEO-01` až `SEO-16` | sitemap, robots.txt, canonical, title, description, H1, nadpisy, alt texty, schema, odkazy, URL, HTTPS, Search Console, llms.txt |
-| Výkon | `PF-01` až `PF-21` | obrázky, lazy loading, Core Web Vitals, code splitting, cache, databáze, Lighthouse, lehké 3D a video |
+| Slop to avoid | `SL-01` to `SL-48` | visual and copy patterns that make a site look AI-generated |
+| Design craft | `DC-01` to `DC-20` | small decisions that make a design feel considered |
+| Motion | `MO-01` to `MO-20` | how to animate fast and naturally, without effects for their own sake |
+| States | `ST-01` to `ST-10` | empty, loading, error, offline, slow network, zero results, permission denied, session expiry, validation, success |
+| Production essentials | `PE-01` to `PE-14` | 404, CTA, favicon, OG image, thank-you page, legal pages, cookies, analytics, contact details, Git, accessibility |
+| SEO | `SEO-01` to `SEO-16` | sitemap, robots.txt, canonical, titles, descriptions, H1, heading order, alt text, schema, links, URLs, HTTPS, Search Console, llms.txt |
+| Performance | `PF-01` to `PF-21` | images, lazy loading, Core Web Vitals, code splitting, caching, database, Lighthouse, lightweight 3D and video |
 
-Na konci je kontrolní seznam, který agent projde, než řekne, že je hotovo.
+At the end there is a checklist the agent goes through before saying the work is done.
 
-## Čemu se chci vyhnout
+## What I want to avoid
 
-Tohle jsou věci, které na webu nechci (pravidla `SL`). Některé jsou označené jako „soft“: ty jsou v pořádku,
-jen když jsou záměrnou součástí stylu a nejsou všude.
+These are the things I don't want on a site (the `SL` rules). Some are marked "soft": those are fine only when
+they are a deliberate part of the style and not everywhere.
 
-Barvy a plochy
-- fialovo-modré přechody
-- přechody na pozadí místo skutečného obsahu (soft)
-- svítící rozmazané koule na pozadí
-- skleněné průhledné panely všude (soft)
-- zbytečné výrazné stíny
-- tmavý režim s nečitelným šedým textem
-- spousta odstínů a průhledností místo jednoduché palety
-- zrnitý / dither efekt jen kvůli trendu (soft)
+Colour and surfaces
+- purple-to-blue gradients
+- gradient backgrounds instead of real content (soft)
+- glowing blurred orbs in the background
+- frosted glass panels everywhere (soft)
+- pointless strong shadows
+- dark mode with unreadable grey text
+- lots of shades and opacities instead of a simple palette
+- grain / dither effects just because they are trendy (soft)
 
-Layout a komponenty
-- tři karty s ikonkou vedle sebe
-- prázdné bento mřížky
-- generické tři cenové tarify
-- všechno v rámečcích, krabičky v krabičkách
-- oddělovací čáry všude
-- štítky a pilulky všude
-- štítky „New“ nad nadpisy
-- malý nadtitulek nad každým nadpisem (soft)
-- číslování sekcí, které nic neznamená (soft)
-- super-zaoblené čtverce všude
-- neupravené komponenty z knihovny (shadcn/ui)
-- přeplácané falešné ukázky rozhraní
-- zbytečně složité diagramy
+Layout and components
+- three feature cards with icons in a row
+- empty bento grids
+- generic three-tier pricing
+- everything in bordered boxes, boxes inside boxes
+- dividers everywhere
+- tags and pills everywhere
+- "New" badges above headlines
+- a small eyebrow above every heading (soft)
+- section numbering that means nothing (soft)
+- super-rounded squircles everywhere
+- untouched component libraries (shadcn/ui)
+- overloaded fake UI mockups
+- needlessly complex diagrams
 
-Písmo
-- Instrument Serif a „AI serif“ vzhled
-- kurzíva na náhodných slovech
-- stažené mezery mezi písmeny v běžném textu
-- mono písmo všude (soft)
-- VELKÁ PÍSMENA v každém podnadpisu (soft)
-- tečky na konci nadpisů (soft)
-- nadpisy vyplněné barevným přechodem
+Type
+- Instrument Serif and the "AI serif" look
+- italics on random words
+- tight letter-spacing in body text
+- mono fonts everywhere (soft)
+- ALL CAPS in every subtitle (soft)
+- periods at the end of headlines (soft)
+- headlines filled with a colour gradient
 
-Ikony a dekorace
-- Lucide ikonky na každém řádku
-- emoji v nadpisech a tlačítkách
-- jiskřičky u všeho „AI“ a „nového“
-- dekorativní „kódové“ prvky na webu, který není o kódu
-- ASCII obrázky a animace
-- záře a paprsky sledující kurzor
+Icons and decoration
+- Lucide icons on every line
+- emojis in headings and buttons
+- sparkles on everything "AI" or "new"
+- decorative "code" elements on a site that isn't about code
+- ASCII images and animations
+- glows and beams that follow the cursor
 
-Animace
-- všechno se při scrollu prolíná a vyjíždí
-- poskakující pružné animace u běžných prvků
+Motion
+- everything fading and sliding in on scroll
+- bouncy, springy animations on everyday UI
 
-Texty
-- dlouhé pomlčky v každé větě
-- fráze „Není to X, je to Y“
-- obecné hero texty („Supercharge your workflow“)
-- upovídané, opakující se texty
-- nejasná tlačítka („Get started“, „Learn more“)
-- tvrzení bez důkazů
+Copy
+- em dashes in every sentence
+- "It's not X, it's Y" phrasing
+- generic hero copy ("Supercharge your workflow")
+- wordy, repetitive text
+- vague buttons ("Get started", "Learn more")
+- claims without proof
 
-Důvěra
-- vymyšlené recenze
-- zapomenuté zástupné údaje (lorem ipsum, 123 Main Street)
-- chybějící skutečná ukázka produktu
-- rozbité vložené prvky (mapy, videa, chat)
-- formuláře, které chtějí příliš údajů
-- formuláře, které nejdou ovládat klávesnicí
+Trust
+- fake testimonials
+- leftover placeholder info (lorem ipsum, 123 Main Street)
+- no real product demo
+- broken embeds (maps, videos, chat)
+- forms that ask for too much
+- forms that can't be used with a keyboard
