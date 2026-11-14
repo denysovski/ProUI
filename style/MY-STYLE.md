@@ -4,9 +4,9 @@ The personal taste profile to apply on top of XSlop when building something for 
 come first; this file decides the look and feel when nothing else does.
 
 **Sources.** Sections 1–4 come from the NATURIK project and the feedback I gave while building it. Section 5
-comes from my Pinterest board `web-design` (1,797 pins; the first 900 were loaded and every third one, 300 pins,
-was looked at in detail). The pin images themselves are not stored in this repository because they belong to
-their authors; only the conclusions are.
+comes from my Pinterest board `web-design`: of its 1,797 pins, Pinterest loads 878 on the web, and all 878 were
+looked at and measured. The pin images are not copied here because most were made by other designers; section
+5.6 links to example pins on Pinterest instead.
 
 ---
 
@@ -56,56 +56,89 @@ their authors; only the conclusions are.
 
 ## 5. Pinterest board: web-design
 
-### 5.1 What the board is made of
+### 5.1 Measured colour profile (all 878 loaded pins)
 
-Approximate shares in the 300-pin sample:
+Every pin image was sampled for brightness and colour.
 
-| Share | Theme | Typical look |
+| Measure | All pins | Newest 300 | Oldest 300 |
+| --- | --- | --- | --- |
+| Mostly light (bright background) | 50 % | 56 % | 45 % |
+| Mostly dark | 29 % | 18 % | 38 % |
+| In between (photo-led) | 21 % | 26 % | 17 % |
+| Nearly monochrome (under 4 % saturated pixels) | 52 % | 49 % | 60 % |
+
+Where colour does appear, it is mostly **red, orange and pink (48 % of all saturated pixels)** and **blue to
+cyan (38 %)**. Green and lime are rare (12 %); purple and magenta almost absent.
+
+Trend: the older saves are darker and more monochrome (streetwear, black and red); the newer saves are lighter
+(editorial, architecture, clean product pages) while keeping the same accent colours.
+
+### 5.2 Themes on the board
+
+| Theme | Roughly | Typical look |
 | --- | --- | --- |
-| about 30 % | Fashion, streetwear and creative studios | black and white photography, models in dark outerwear, one hot accent (red, orange or acid), heavy uppercase type, poster grids, collage and torn-paper textures |
-| about 25 % | Dark tech and SaaS | near-black pages, product UI cards, light streaks and glows behind the product, particle and 3D renders (neon green, teal), code snippets |
-| about 20 % | Editorial, architecture and interiors | cream, beige and stone backgrounds, large landscape and building photography, high-contrast serif headlines with italics, lots of white space |
-| about 10 % | Art, gallery and culture | classical paintings and engravings, museum layouts, dates and big numbers, "meet the artist" pages |
-| about 15 % | Other | clean light fintech and mobile app UI, colourful playful illustration sites, real estate, a few UX diagrams and tips |
+| Streetwear and fashion stores | large, strongest among the older saves | black and white photos, models in dark clothing, black pages with one red accent, heavy uppercase and condensed type, product grids |
+| Fashion and creative studios | large | oversized headline words cropped at the edges, editorial photo crops, white or black pages, one hot accent |
+| Editorial, architecture and interiors | large, growing in the newer saves | cream, stone and sage backgrounds, elegant serif headlines with italics, landscape and building photography, wide margins |
+| Dark tech and SaaS | medium | near-black pages, product UI at large size, orange or blue light beams behind the product, code and dashboards |
+| Clean product and app UI | medium | white or very light pages, cards, phone mockups, fintech and booking flows; saved for UX details |
+| Poster, collage and brutalist | medium | poster grids, torn paper, halftone, stickers, very large numbers and dates |
+| Art, gallery and culture | small | classical paintings and engravings, museum layouts, big statistics, dates |
+| Abstract 3D and particles | small | chrome and iridescent objects, glass forms, particle typography, used as one centrepiece |
+| Playful colourful | small | bright illustration-led pages; occasional, not the core taste |
 
-### 5.2 The main keys of my style
+### 5.3 The main keys of my style
 
-1. **Typography is the hero.** Oversized words that run off the edge of the screen (STUDIO, ILLUSION, VOID,
-   GILLTEK, LUMERA), set in heavy condensed or wide grotesks, usually uppercase. The headline is often the
-   biggest graphic on the page.
-2. **Two type moods.** Either a bold grotesk (fashion, tech) or an elegant high-contrast serif with italics
-   (architecture, editorial, art). Rarely both in equal weight; when mixed, the serif is used for one or two
-   words.
-3. **Mostly monochrome, one hot accent.** Black, white, grey or cream carry the page; one strong colour
-   (red, orange, acid green, cobalt) marks the key word, the CTA or a sticker.
-4. **Dark first, cream second.** Dark pages dominate. The light alternative is warm (cream, paper, stone),
-   not pure white.
-5. **Full-bleed photography.** People and products shot large, often black and white or cold-graded,
-   cropped hard. Fashion editorial and architecture photography over illustrations.
-6. **Poster and print influence.** Grids from posters and magazines, big numbers and dates, labels and
-   codes in small type, stickers, collage, torn paper, halftone and grain textures.
-7. **One 3D or abstract object.** Chrome, iridescent or glass objects, particles and sculptures used as a
-   single centrepiece, not as background filler.
-8. **Minimal chrome.** Thin navigation, small labels, very little UI decoration around the content.
-9. **Asymmetric, editorial layouts.** Text in narrow columns beside large images, generous empty areas,
-   elements overlapping the edges of images.
-10. **Tech pages with light, not boxes.** On dark SaaS pages the product sits in a soft beam or glow of
-    light that comes from the brand colour, with the UI shown at large size.
+1. **Typography is the hero.** Oversized words that run off the edge of the screen, set in heavy
+   condensed or wide grotesks, usually uppercase. The headline is often the biggest graphic on the page.
+2. **Two type moods.** A bold grotesk for fashion, streetwear and tech, or an elegant high-contrast serif with
+   italics for architecture, editorial and art. When mixed, the serif is used for one or two words.
+3. **Mostly monochrome.** Half of the saved designs have almost no colour: black, white, grey, cream.
+4. **One accent, usually red-orange or blue.** When colour appears it is a single strong red, orange or
+   cobalt / electric blue, used on the key word, a sticker or the CTA. Green and purple are rare.
+5. **Light and dark in balance, trending lighter.** Dark pages for streetwear and tech, warm light pages
+   (cream, paper, stone, not pure white) for editorial and product work. Newer saves lean light.
+6. **Full-bleed photography.** People and products shot large, often black and white or cold-graded,
+   cropped hard. Photography over illustration.
+7. **Poster and print influence.** Grids from posters and magazines, big numbers and dates, small labels and
+   codes, stickers, collage, halftone and grain.
+8. **One 3D or abstract object** as a centrepiece (chrome, glass, particles), never as background filler.
+9. **Minimal chrome.** Thin navigation, small labels, little UI decoration around the content.
+10. **Asymmetric, editorial layouts.** Narrow text columns beside large images, generous empty areas,
+    elements overlapping image edges.
+11. **On dark tech pages, light instead of boxes.** The product sits in a beam or glow of light in the
+    brand colour, with the UI shown large.
 
-### 5.3 How to apply it
+### 5.4 How to apply it
 
-- Start from the dark + one accent palette, or the cream editorial palette, depending on the brand.
-- Choose one display face with strong character (condensed grotesk or high-contrast serif) and one quiet text
-  face. Fontshare candidates: Clash Display, Cabinet Grotesk, Boska, Gambetta, with General Sans or Switzer for
+- Pick the mode from the brand: **dark mode** (streetwear, tech, nightlife) or **warm light mode**
+  (editorial, architecture, product, culture).
+- One display face with strong character and one quiet text face. Fontshare candidates: Clash Display or
+  Cabinet Grotesk for the grotesk mood, Boska or Gambetta for the serif mood, with General Sans or Switzer for
   text.
-- Give every page one oversized typographic moment and one strong image or 3D object.
+- One accent colour from the red-orange or blue family unless the brand says otherwise.
+- Every page gets one oversized typographic moment and one strong image or 3D object.
 - Keep the UI around it minimal and precise: hairlines, small labels, tight alignment.
 
-### 5.4 What the board contains that XSlop still filters
+### 5.5 What the board contains that XSlop still filters
 
 Some saved pins use patterns XSlop treats as slop: purple-blue gradients and glow orbs on SaaS pages, three
-feature cards in a row, generic pricing tables, emoji-heavy playful sites. They are on the board as references
-for single details, not as the direction. When building for me, the keys in 5.2 win and XSlop still applies.
+feature cards in a row, generic pricing tables, emoji-heavy playful sites. They are on the board for single
+details, not as the direction. When building for me, the keys in 5.3 win and XSlop still applies.
+
+### 5.6 Example pins by theme
+
+Links to pins on the board (opening them needs Pinterest).
+
+- **Streetwear and fashion stores:** [1](https://cz.pinterest.com/pin/661255157834990238/) · [2](https://cz.pinterest.com/pin/661255157834990229/) · [3](https://cz.pinterest.com/pin/661255157834990227/) · [4](https://cz.pinterest.com/pin/661255157830862801/) · [5](https://cz.pinterest.com/pin/661255157830862786/) · [6](https://cz.pinterest.com/pin/661255157830862776/) · [7](https://cz.pinterest.com/pin/661255157830829030/) · [8](https://cz.pinterest.com/pin/661255157830829028/) · [9](https://cz.pinterest.com/pin/661255157830829022/) · [10](https://cz.pinterest.com/pin/661255157830828953/) · [11](https://cz.pinterest.com/pin/661255157830828836/) · [12](https://cz.pinterest.com/pin/661255157830828820/) · [13](https://cz.pinterest.com/pin/661255157830828685/) · [14](https://cz.pinterest.com/pin/661255157830828668/) · [15](https://cz.pinterest.com/pin/661255157830272313/)
+- **Fashion and creative studios:** [1](https://cz.pinterest.com/pin/661255157835225661/) · [2](https://cz.pinterest.com/pin/661255157834990237/) · [3](https://cz.pinterest.com/pin/661255157834990234/) · [4](https://cz.pinterest.com/pin/661255157834990232/) · [5](https://cz.pinterest.com/pin/661255157834990224/) · [6](https://cz.pinterest.com/pin/661255157833963461/) · [7](https://cz.pinterest.com/pin/661255157833910534/) · [8](https://cz.pinterest.com/pin/661255157833910450/) · [9](https://cz.pinterest.com/pin/661255157831026003/) · [10](https://cz.pinterest.com/pin/661255157830935503/)
+- **Poster, collage and brutalist:** [1](https://cz.pinterest.com/pin/661255157835225660/) · [2](https://cz.pinterest.com/pin/661255157834109112/) · [3](https://cz.pinterest.com/pin/661255157834109009/) · [4](https://cz.pinterest.com/pin/661255157833963319/) · [5](https://cz.pinterest.com/pin/661255157833959068/) · [6](https://cz.pinterest.com/pin/661255157833925301/) · [7](https://cz.pinterest.com/pin/661255157833921414/) · [8](https://cz.pinterest.com/pin/661255157832938350/) · [9](https://cz.pinterest.com/pin/661255157830897336/) · [10](https://cz.pinterest.com/pin/661255157830897330/)
+- **Dark tech and SaaS:** [1](https://cz.pinterest.com/pin/661255157834990239/) · [2](https://cz.pinterest.com/pin/661255157833963403/) · [3](https://cz.pinterest.com/pin/661255157833959147/) · [4](https://cz.pinterest.com/pin/661255157833959143/) · [5](https://cz.pinterest.com/pin/661255157833921301/) · [6](https://cz.pinterest.com/pin/661255157833910494/) · [7](https://cz.pinterest.com/pin/661255157832478885/) · [8](https://cz.pinterest.com/pin/661255157831008818/) · [9](https://cz.pinterest.com/pin/661255157830925098/) · [10](https://cz.pinterest.com/pin/661255157830869219/)
+- **Abstract 3D and particles:** [1](https://cz.pinterest.com/pin/661255157835225656/) · [2](https://cz.pinterest.com/pin/661255157834108985/) · [3](https://cz.pinterest.com/pin/661255157833963369/) · [4](https://cz.pinterest.com/pin/661255157833925232/) · [5](https://cz.pinterest.com/pin/661255157833921424/) · [6](https://cz.pinterest.com/pin/661255157833921420/) · [7](https://cz.pinterest.com/pin/661255157833921419/) · [8](https://cz.pinterest.com/pin/661255157833910416/) · [9](https://cz.pinterest.com/pin/661255157832643335/) · [10](https://cz.pinterest.com/pin/661255157831044982/)
+- **Editorial, architecture and interiors:** [1](https://cz.pinterest.com/pin/661255157834990230/) · [2](https://cz.pinterest.com/pin/661255157834109160/) · [3](https://cz.pinterest.com/pin/661255157834109157/) · [4](https://cz.pinterest.com/pin/661255157834109156/) · [5](https://cz.pinterest.com/pin/661255157833963460/) · [6](https://cz.pinterest.com/pin/661255157833963306/) · [7](https://cz.pinterest.com/pin/661255157833959154/) · [8](https://cz.pinterest.com/pin/661255157833959043/) · [9](https://cz.pinterest.com/pin/661255157833959038/) · [10](https://cz.pinterest.com/pin/661255157832478917/) · [11](https://cz.pinterest.com/pin/661255157830869123/)
+- **Art, gallery and culture:** [1](https://cz.pinterest.com/pin/661255157834108993/) · [2](https://cz.pinterest.com/pin/661255157833959131/) · [3](https://cz.pinterest.com/pin/661255157833959055/) · [4](https://cz.pinterest.com/pin/661255157833929521/) · [5](https://cz.pinterest.com/pin/661255157833925231/) · [6](https://cz.pinterest.com/pin/661255157832938354/) · [7](https://cz.pinterest.com/pin/661255157832935757/) · [8](https://cz.pinterest.com/pin/661255157832643244/)
+- **Playful colourful:** [1](https://cz.pinterest.com/pin/661255157834109135/) · [2](https://cz.pinterest.com/pin/661255157833963323/) · [3](https://cz.pinterest.com/pin/661255157833959075/) · [4](https://cz.pinterest.com/pin/661255157833925318/) · [5](https://cz.pinterest.com/pin/661255157833925248/) · [6](https://cz.pinterest.com/pin/661255157833910470/)
+- **Clean product and app UI:** [1](https://cz.pinterest.com/pin/661255157834109132/) · [2](https://cz.pinterest.com/pin/661255157834109122/) · [3](https://cz.pinterest.com/pin/661255157834109119/) · [4](https://cz.pinterest.com/pin/661255157833963320/) · [5](https://cz.pinterest.com/pin/661255157833929498/) · [6](https://cz.pinterest.com/pin/661255157833925308/) · [7](https://cz.pinterest.com/pin/661255157833910460/) · [8](https://cz.pinterest.com/pin/661255157832927433/)
 
 ## 6. Documentation preferences
 

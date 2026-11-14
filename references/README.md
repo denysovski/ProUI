@@ -27,5 +27,5 @@ description of the brand).
 
 - mobbin.com: the site blocked automated access (403).
 - reactbits.dev, madewithgsap.com, lenis.dev: their animated home pages did not render in a background tab.
-- Pinterest board `web-design`: viewed and analysed (see `style/MY-STYLE.md`), but the pin images are not
-  stored here because they belong to their authors.
+- Pinterest board `web-design`: all 878 loadable pins viewed and measured (see `style/MY-STYLE.md`, with links
+  to example pins by theme). The pin images are not copied here because most were made by other designers.
