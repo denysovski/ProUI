@@ -1,6 +1,6 @@
 ---
 name: xslop
-description: Rulebook for building websites that look designed by a person, not generated. Use when building, redesigning or reviewing a website or web app, or when the user says "XSlop", "no slop", "make it not look vibecoded" or names XSlop rule IDs to include or skip.
+description: Add-on rulebook for building websites that look designed by a person, not generated. Use alongside a project's own brief and instructions when building, redesigning or reviewing a website or web app, or when the user says "XSlop", "no slop", "make it not look vibecoded" or names XSlop rule IDs to include or skip.
 ---
 
 # XSlop — a rulebook against AI slop
@@ -15,6 +15,21 @@ careful person, not like something generated in five minutes. It covers five thi
 5. **Production essentials**: the pages, files, SEO and performance work every real site has (`PE`, `SEO`, `PF`).
 
 Every rule has an ID. The user refers to rules by ID or by name to switch them on or off.
+
+### XSlop is an add-on layer
+
+XSlop is meant to be loaded **next to** a project's own context (its brief, design system, brand guidelines,
+README, CLAUDE.md / AGENTS.md, existing code). It helps you understand what "good" means for the project and
+fills the gaps those sources leave. Order of precedence:
+
+1. The user's explicit instructions in the conversation.
+2. The project's own rules and existing design system (brand colours, fonts, components, conventions).
+3. XSlop.
+
+So if a project's brand deliberately uses something XSlop lists as slop (for example mono labels or a
+signature gradient), keep it, use it consistently, and apply XSlop everywhere else. When joining an existing
+project, read its code and docs first, then use XSlop to judge and improve, not to restyle the whole project
+on your own initiative.
 
 ---
 

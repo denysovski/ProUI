@@ -1,10 +1,19 @@
 # XSlop
 
+![XSlop: a rulebook for building websites that look made by a person, not generated](assets/banner.jpg)
+
 One big skill sheet (`SKILL.md`) for AI agents (Claude, ChatGPT, Cursor…) that tells them how to build websites
 that don't look generated ("AI slop", "vibecoded"), but like a finished product made by a person.
 
 Every rule has its own ID (for example `SL-14`, `MO-04`), so I can tell the agent exactly what to include and
 what to leave out.
+
+## How it fits into a project
+
+XSlop is an add-on skillset. Load it next to a project's own instructions (brief, brand guidelines, design
+system, README, CLAUDE.md / AGENTS.md) so the agent understands the project better and knows what quality bar
+to aim for. The order of precedence is: my instructions in the chat first, then the project's own rules and
+design system, then XSlop. If a project's brand deliberately uses something XSlop calls slop, the project wins.
 
 ## How to use it
 
@@ -99,3 +108,9 @@ Trust
 - broken embeds (maps, videos, chat)
 - forms that ask for too much
 - forms that can't be used with a keyboard
+
+## Files
+
+- `SKILL.md` – the skill sheet itself.
+- `README.md` – this overview.
+- `assets/banner.jpg` – the image above, a 3D scene rendered with three.js (`assets/banner.html` is its source).
