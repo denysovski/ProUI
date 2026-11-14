@@ -59,6 +59,18 @@ The user's explicit words always win over this sheet. If an override conflicts w
 accessibility (for example skipping a privacy policy on a site that collects emails in the EU), do what they
 asked and mention the risk in one line.
 
+### Packs (extra files)
+
+This sheet is the core rulebook. Load the packs when the task needs them:
+
+| File | Load when |
+| --- | --- |
+| `inspiration/INSPIRATION.md` | starting a new site or component; researching references (Dark, Recent, Saved, Mobbin, Dribbble, Designeer) |
+| `toolkit/TOOLKIT.md` | choosing libraries, assets and fonts (GSAP, Made With GSAP, Lenis, React Bits, 21st.dev, Codrops, Spline, SVGL, SVG Doodles, Fontshare) |
+| `recipes/RECIPES.md` | implementing motion, scroll effects, popovers, marquees, 3D heroes and other components |
+| `style/MY-STYLE.md` | building anything for the repository owner (denysovski): his personal taste, applied on top of these rules |
+| `references/` | looking at screenshots of reference sites |
+
 ### Working order
 
 1. Read the brief. Decide what the site is, who it is for and the **one action** a visitor should take.

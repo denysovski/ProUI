@@ -42,6 +42,16 @@ automatically when you say "XSlop".
 
 At the end there is a checklist the agent goes through before saying the work is done.
 
+Next to the core sheet there are packs the agent loads when it needs them:
+
+| Pack | What it contains |
+| --- | --- |
+| `inspiration/INSPIRATION.md` | where to look for inspiration (Dark, Recent, Saved, Mobbin, Dribbble, Designeer), what each is good for, how to analyse a reference, and patterns worth learning |
+| `toolkit/TOOLKIT.md` | libraries, assets and fonts to build with (GSAP, Made With GSAP, Lenis, React Bits, 21st.dev, Codrops, Spline, three.js, SVGL, SVG Doodles, Fontshare): when to use each, install code, licence notes, guardrails |
+| `recipes/RECIPES.md` | ready patterns with code: smooth scroll, reveals, split text, pinned gallery, magnetic button, marquee, popovers, custom select, toasts, light 3D hero, countdown, tracking boxes |
+| `style/MY-STYLE.md` | my personal style, applied on top of the rules (draft; the Pinterest part is still to be filled in) |
+| `references/` | screenshots of reference sites and what to learn from each (to be captured) |
+
 ## What I want to avoid
 
 These are the things I don't want on a site (the `SL` rules). Some are marked "soft": those are fine only when
@@ -111,6 +121,7 @@ Trust
 
 ## Files
 
-- `SKILL.md` – the skill sheet itself.
+- `SKILL.md` – the core skill sheet.
+- `inspiration/`, `toolkit/`, `recipes/`, `style/`, `references/` – the packs described above.
 - `README.md` – this overview.
 - `assets/banner.jpg` – the image above, a 3D scene rendered with three.js (`assets/banner.html` is its source).
