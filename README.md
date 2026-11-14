@@ -1,6 +1,6 @@
 # XSlop
 
-![XSlop: a rulebook for building websites that look made by a person, not generated](assets/banner.jpg)
+![XSlop: a rulebook for building websites that look made by a person, not generated](assets/banner-dark.jpg)
 
 One big skill sheet (`SKILL.md`) for AI agents (Claude, ChatGPT, Cursor…) that tells them how to build websites
 that don't look generated ("AI slop", "vibecoded"), but like a finished product made by a person.
@@ -338,4 +338,4 @@ Item 20 is an advert for a paid service in the original; XSlop only asks for the
 - `SKILL.md` – the core skill sheet.
 - `inspiration/`, `toolkit/`, `recipes/`, `style/`, `references/` – the packs described above.
 - `README.md` – this overview.
-- `assets/banner.jpg` – the image above, a dark 3D scene (chrome X, dissolving slop blob, bloom) rendered with three.js (`assets/banner.html` is its source).
+- `assets/banner-dark.jpg` – the image above, a dark 3D scene (chrome X, dissolving slop blob, bloom) rendered with three.js (`assets/banner.html` is its source).
