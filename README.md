@@ -24,6 +24,7 @@ Example prompts:
 - `Use XSlop, skip PE-10.` – skips that rule.
 - `XSlop, only SEO and PF.` – applies only those groups.
 - `XSlop audit of this site.` – builds nothing, just reviews the site and lists what fails.
+- `Build a site for a ceramics studio in EDITORIAL CREAM + MEGA TYPE.` – uses style keywords from `style/STYLES.md`.
 
 As a skill: put the folder with `SKILL.md` among the agent's skills (for example in Claude). It loads
 automatically when you say "XSlop".
@@ -50,6 +51,8 @@ Next to the core sheet there are packs the agent loads when it needs them:
 | `toolkit/TOOLKIT.md` | libraries, assets and fonts to build with (GSAP, Made With GSAP, Lenis, React Bits, 21st.dev, Codrops, Spline, three.js, SVGL, SVG Doodles, Fontshare): when to use each, install code, licence notes, guardrails |
 | `recipes/RECIPES.md` | ready patterns with code: smooth scroll, reveals, split text, pinned gallery, magnetic button, marquee, popovers, custom select, toasts, light 3D hero, countdown, tracking boxes |
 | `style/MY-STYLE.md` | my personal style, applied on top of the rules, including the main keys from my Pinterest web-design board |
+| `style/STYLES.md` | 14 named style keywords and modifiers to use in prompts (for example `BLACK COAL + MEGA TYPE, maximal`) |
+| `style/PINS.md` | all 878 pins from my board sorted into themes, as links |
 | `references/` | screenshots of the inspiration and tool sites, and what to learn from each |
 
 ## What I want to avoid

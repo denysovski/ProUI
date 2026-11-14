@@ -75,17 +75,21 @@ Trend: the older saves are darker and more monochrome (streetwear, black and red
 
 ### 5.2 Themes on the board
 
-| Theme | Roughly | Typical look |
-| --- | --- | --- |
-| Streetwear and fashion stores | large, strongest among the older saves | black and white photos, models in dark clothing, black pages with one red accent, heavy uppercase and condensed type, product grids |
-| Fashion and creative studios | large | oversized headline words cropped at the edges, editorial photo crops, white or black pages, one hot accent |
-| Editorial, architecture and interiors | large, growing in the newer saves | cream, stone and sage backgrounds, elegant serif headlines with italics, landscape and building photography, wide margins |
-| Dark tech and SaaS | medium | near-black pages, product UI at large size, orange or blue light beams behind the product, code and dashboards |
-| Clean product and app UI | medium | white or very light pages, cards, phone mockups, fintech and booking flows; saved for UX details |
-| Poster, collage and brutalist | medium | poster grids, torn paper, halftone, stickers, very large numbers and dates |
-| Art, gallery and culture | small | classical paintings and engravings, museum layouts, big statistics, dates |
-| Abstract 3D and particles | small | chrome and iridescent objects, glass forms, particle typography, used as one centrepiece |
-| Playful colourful | small | bright illustration-led pages; occasional, not the core taste |
+All 878 loaded pins were sorted into themes (full lists with links in `style/PINS.md`):
+
+| Theme | Pins | Share | Typical look |
+| --- | --- | --- | --- |
+| Clean product and app UI | 227 | 26 % | white or very light pages, real UI, phone mockups, fintech and booking flows; saved mostly for UX details |
+| Dark tech and SaaS | 182 | 21 % | near-black pages, product UI at large size, orange or blue light behind the product, code |
+| Fashion, streetwear and creative studios | 154 | 18 % | black and white photos, dark clothing, one red accent, heavy uppercase type, cropped mega headlines; strongest among the older saves |
+| Editorial, architecture and interiors | 133 | 15 % | cream, stone and sage, serif headlines with italics, landscape and building photography; growing in the newer saves |
+| Playful colourful | 77 | 9 % | bright illustration-led pages; occasional |
+| Poster, collage and brutalist | 38 | 4 % | poster grids, torn paper, halftone, stickers, big numbers |
+| Abstract 3D, particles and dither | 35 | 4 % | chrome and glass objects, particle type, dither shapes |
+| Art, gallery and culture | 32 | 4 % | paintings, engravings, museum layouts, dates and statistics |
+
+The board is half "how to build it" (product UI, dark SaaS) and half "how it should feel" (fashion, editorial,
+poster, art, 3D). The second half is where the personal taste lives; the first half is reference for UX.
 
 ### 5.3 The main keys of my style
 
@@ -126,19 +130,11 @@ Some saved pins use patterns XSlop treats as slop: purple-blue gradients and glo
 feature cards in a row, generic pricing tables, emoji-heavy playful sites. They are on the board for single
 details, not as the direction. When building for me, the keys in 5.3 win and XSlop still applies.
 
-### 5.6 Example pins by theme
+### 5.6 Pins and style keywords
 
-Links to pins on the board (opening them needs Pinterest).
-
-- **Streetwear and fashion stores:** [1](https://cz.pinterest.com/pin/661255157834990238/) · [2](https://cz.pinterest.com/pin/661255157834990229/) · [3](https://cz.pinterest.com/pin/661255157834990227/) · [4](https://cz.pinterest.com/pin/661255157830862801/) · [5](https://cz.pinterest.com/pin/661255157830862786/) · [6](https://cz.pinterest.com/pin/661255157830862776/) · [7](https://cz.pinterest.com/pin/661255157830829030/) · [8](https://cz.pinterest.com/pin/661255157830829028/) · [9](https://cz.pinterest.com/pin/661255157830829022/) · [10](https://cz.pinterest.com/pin/661255157830828953/) · [11](https://cz.pinterest.com/pin/661255157830828836/) · [12](https://cz.pinterest.com/pin/661255157830828820/) · [13](https://cz.pinterest.com/pin/661255157830828685/) · [14](https://cz.pinterest.com/pin/661255157830828668/) · [15](https://cz.pinterest.com/pin/661255157830272313/)
-- **Fashion and creative studios:** [1](https://cz.pinterest.com/pin/661255157835225661/) · [2](https://cz.pinterest.com/pin/661255157834990237/) · [3](https://cz.pinterest.com/pin/661255157834990234/) · [4](https://cz.pinterest.com/pin/661255157834990232/) · [5](https://cz.pinterest.com/pin/661255157834990224/) · [6](https://cz.pinterest.com/pin/661255157833963461/) · [7](https://cz.pinterest.com/pin/661255157833910534/) · [8](https://cz.pinterest.com/pin/661255157833910450/) · [9](https://cz.pinterest.com/pin/661255157831026003/) · [10](https://cz.pinterest.com/pin/661255157830935503/)
-- **Poster, collage and brutalist:** [1](https://cz.pinterest.com/pin/661255157835225660/) · [2](https://cz.pinterest.com/pin/661255157834109112/) · [3](https://cz.pinterest.com/pin/661255157834109009/) · [4](https://cz.pinterest.com/pin/661255157833963319/) · [5](https://cz.pinterest.com/pin/661255157833959068/) · [6](https://cz.pinterest.com/pin/661255157833925301/) · [7](https://cz.pinterest.com/pin/661255157833921414/) · [8](https://cz.pinterest.com/pin/661255157832938350/) · [9](https://cz.pinterest.com/pin/661255157830897336/) · [10](https://cz.pinterest.com/pin/661255157830897330/)
-- **Dark tech and SaaS:** [1](https://cz.pinterest.com/pin/661255157834990239/) · [2](https://cz.pinterest.com/pin/661255157833963403/) · [3](https://cz.pinterest.com/pin/661255157833959147/) · [4](https://cz.pinterest.com/pin/661255157833959143/) · [5](https://cz.pinterest.com/pin/661255157833921301/) · [6](https://cz.pinterest.com/pin/661255157833910494/) · [7](https://cz.pinterest.com/pin/661255157832478885/) · [8](https://cz.pinterest.com/pin/661255157831008818/) · [9](https://cz.pinterest.com/pin/661255157830925098/) · [10](https://cz.pinterest.com/pin/661255157830869219/)
-- **Abstract 3D and particles:** [1](https://cz.pinterest.com/pin/661255157835225656/) · [2](https://cz.pinterest.com/pin/661255157834108985/) · [3](https://cz.pinterest.com/pin/661255157833963369/) · [4](https://cz.pinterest.com/pin/661255157833925232/) · [5](https://cz.pinterest.com/pin/661255157833921424/) · [6](https://cz.pinterest.com/pin/661255157833921420/) · [7](https://cz.pinterest.com/pin/661255157833921419/) · [8](https://cz.pinterest.com/pin/661255157833910416/) · [9](https://cz.pinterest.com/pin/661255157832643335/) · [10](https://cz.pinterest.com/pin/661255157831044982/)
-- **Editorial, architecture and interiors:** [1](https://cz.pinterest.com/pin/661255157834990230/) · [2](https://cz.pinterest.com/pin/661255157834109160/) · [3](https://cz.pinterest.com/pin/661255157834109157/) · [4](https://cz.pinterest.com/pin/661255157834109156/) · [5](https://cz.pinterest.com/pin/661255157833963460/) · [6](https://cz.pinterest.com/pin/661255157833963306/) · [7](https://cz.pinterest.com/pin/661255157833959154/) · [8](https://cz.pinterest.com/pin/661255157833959043/) · [9](https://cz.pinterest.com/pin/661255157833959038/) · [10](https://cz.pinterest.com/pin/661255157832478917/) · [11](https://cz.pinterest.com/pin/661255157830869123/)
-- **Art, gallery and culture:** [1](https://cz.pinterest.com/pin/661255157834108993/) · [2](https://cz.pinterest.com/pin/661255157833959131/) · [3](https://cz.pinterest.com/pin/661255157833959055/) · [4](https://cz.pinterest.com/pin/661255157833929521/) · [5](https://cz.pinterest.com/pin/661255157833925231/) · [6](https://cz.pinterest.com/pin/661255157832938354/) · [7](https://cz.pinterest.com/pin/661255157832935757/) · [8](https://cz.pinterest.com/pin/661255157832643244/)
-- **Playful colourful:** [1](https://cz.pinterest.com/pin/661255157834109135/) · [2](https://cz.pinterest.com/pin/661255157833963323/) · [3](https://cz.pinterest.com/pin/661255157833959075/) · [4](https://cz.pinterest.com/pin/661255157833925318/) · [5](https://cz.pinterest.com/pin/661255157833925248/) · [6](https://cz.pinterest.com/pin/661255157833910470/)
-- **Clean product and app UI:** [1](https://cz.pinterest.com/pin/661255157834109132/) · [2](https://cz.pinterest.com/pin/661255157834109122/) · [3](https://cz.pinterest.com/pin/661255157834109119/) · [4](https://cz.pinterest.com/pin/661255157833963320/) · [5](https://cz.pinterest.com/pin/661255157833929498/) · [6](https://cz.pinterest.com/pin/661255157833925308/) · [7](https://cz.pinterest.com/pin/661255157833910460/) · [8](https://cz.pinterest.com/pin/661255157832927433/)
+- `style/PINS.md` lists every classified pin by theme with links.
+- `style/STYLES.md` turns the board into named style keywords (BLACK COAL, EDITORIAL CREAM, MEGA TYPE,
+  DITHER GRAIN and more) that I can put in a prompt.
 
 ## 6. Documentation preferences
 

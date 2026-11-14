@@ -69,6 +69,8 @@ This sheet is the core rulebook. Load the packs when the task needs them:
 | `toolkit/TOOLKIT.md` | choosing libraries, assets and fonts (GSAP, Made With GSAP, Lenis, React Bits, 21st.dev, Codrops, Spline, SVGL, SVG Doodles, Fontshare) |
 | `recipes/RECIPES.md` | implementing motion, scroll effects, popovers, marquees, 3D heroes and other components |
 | `style/MY-STYLE.md` | building anything for the repository owner (denysovski): his personal taste, applied on top of these rules |
+| `style/STYLES.md` | the prompt names a style keyword (BLACK COAL, RED SIGNAL, EDITORIAL CREAM, GALLERY CLASSIC, POSTER COLLAGE, SWISS MINIMAL, MEGA TYPE, LIGHT BEAM, VOID PARTICLES, CHROME OBJECT, DITHER GRAIN, NOIR PORTRAIT, PRODUCT CLEAN, PLAYFUL POP) or a modifier (MAXIMAL, MINIMAL, DARK, LIGHT, WARM, COLD, STILL, CALM, KINETIC, MONO, ACCENT) |
+| `style/PINS.md` | looking for concrete visual references by theme (links to Pinterest pins) |
 | `references/` | looking at screenshots of reference sites |
 
 ### Working order
