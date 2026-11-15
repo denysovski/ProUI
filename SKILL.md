@@ -50,7 +50,8 @@ When the user asks for a website (or says "use XSlop") without further instructi
 
 The user may say things like:
 
-- `XSlop, but keep SL-17` or `keep mono fonts`: that pattern is allowed. Use it deliberately, not everywhere.
+- `XSlop, but keep SL-25` or `keep mono fonts`: that pattern is allowed. Use it deliberately, not everywhere.
+  `SL-17` (decorative counting) is the exception: it is never allowed, whatever the override.
 - `XSlop, skip PE-19` or `no cookie banner`: do not do that rule.
 - `XSlop only SEO and PF`: apply only those groups.
 - `XSlop audit`: do not build. Review an existing site against every rule and report what fails.
@@ -121,9 +122,13 @@ These patterns make a site read as "generated". Avoid them by default.
 - **SL-15 Badges above headlines.** "New", "Introducing" or a sparkle chip above every heading. Use one only
   for real news.
 - **SL-16 Eyebrows on every heading** (soft). A small kicker above each title ("FEATURES" above "Our
-  features"). Fine occasionally when it adds information (a date, a category, a step number).
-- **SL-17 Section numbering** (soft). "01 / 02 / 03" on sections whose order means nothing. Fine for real
-  steps or a real sequence.
+  features"). Fine occasionally when it adds information (a date or a category), never a number.
+- **SL-17 Decorative counting (hard rule, never).** No counting labels anywhere: no "01 / 02 / 03" on
+  sections, no "001", "(02)", "No. 3" or "04 —" on cards, photos, features, services, FAQ items, steps,
+  slides or list rows, no "1/5" image counters, no numbered form steps ("1 Contact", "2 Delivery"). Give
+  each item a name instead ("Contact", "Delivery"), and let order come from position. This holds even
+  when the order is real and even inside styles that otherwise like catalogues or grids. Numbers that
+  are data stay: prices, sizes, dates, times, quantities, stock left, order IDs, measurements.
 - **SL-18 Squircles everywhere.** iOS-style super-rounded squares on every icon and card.
 - **SL-19 Untouched component library.** shadcn/ui (or any kit) in its default look. Restyle it to the brand:
   colours, radii, type, spacing, states.
@@ -383,6 +388,7 @@ What every real, launched website has.
 Before calling the site finished, check and report briefly:
 
 1. No `SL` pattern present unless the user kept it (and then used deliberately and sparingly).
+   `SL-17` cannot be kept: search the build for counting labels (`01`, `02`, `/ 05`, `No.`) and remove them.
 2. Design tokens exist and are used; nothing off-scale (`DC-05`).
 3. Every page has one clear primary action (`DC-10`, `PE-02`).
 4. All ten states exist where they apply (`ST-01` to `ST-10`).

@@ -50,6 +50,8 @@ looked at and measured. The pin images are not copied here because most were mad
 - Buttons in normal weight, not bold. Headlines in one font family, highlighted words by colour, not by a
   different font.
 - No demo or developer notes visible to visitors.
+- Never count things on the page: no 01 / 02 / 03, 001, (04) or "1 / 5" labels on sections, cards, photos,
+  steps or lists. I hate that pattern. Name things instead (`SL-17`, a hard rule).
 - Honest scarcity: real counters and real reservation timers, explained clearly.
 - In Figma and screenshots, show one representative card or frame of a repeating section, not the whole
   scrolling strip.

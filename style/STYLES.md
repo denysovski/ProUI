@@ -94,7 +94,7 @@ Museum and art-world feel: classical paintings, engravings, archive material tre
 - **Type:** Classical serif display (Boska, Gambetta), small grotesk captions, large numerals for dates and statistics
 - **Layout and imagery:** Artwork shown big with captions like a catalogue, timelines, index lists, big statistics
 - **Motion:** Slow zoom on artworks, page-turn style transitions
-- **XSlop rules it allows:** SL-17 (numbering) allowed for catalogue entries
+- **XSlop rules it allows:** none extra. Catalogue entries get titles and dates, never 01 / 02 numbering (SL-17)
 - **Avoid:** tech gradients, stock icons
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157834108993/) · [2](https://cz.pinterest.com/pin/661255157833959131/) · [3](https://cz.pinterest.com/pin/661255157833959055/) · [4](https://cz.pinterest.com/pin/661255157833929521/) · [5](https://cz.pinterest.com/pin/661255157833925231/) · [6](https://cz.pinterest.com/pin/661255157832938354/) · [7](https://cz.pinterest.com/pin/661255157832935757/) · [8](https://cz.pinterest.com/pin/661255157832643244/) · [9](https://cz.pinterest.com/pin/661255157832442269/) · [10](https://cz.pinterest.com/pin/661255157831044861/)
 
@@ -122,7 +122,7 @@ Strict grid, lots of white, small precise type. Studios, portfolios, architectur
 - **Type:** One grotesk family only (Switzer, General Sans), sizes from a strict scale, left aligned
 - **Layout and imagery:** 12-column grid, small text blocks, images aligned to the grid, generous empty fields
 - **Motion:** Almost none: fades and underline animations
-- **XSlop rules it allows:** SL-17 (numbering) allowed when it orders real content
+- **XSlop rules it allows:** none extra. Order comes from the grid, never from 01 / 02 numbering (SL-17)
 - **Avoid:** decoration of any kind, shadows, gradients
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157835225657/) · [2](https://cz.pinterest.com/pin/661255157834109158/) · [3](https://cz.pinterest.com/pin/661255157833921283/) · [4](https://cz.pinterest.com/pin/661255157833921277/) · [5](https://cz.pinterest.com/pin/661255157832487251/) · [6](https://cz.pinterest.com/pin/661255157832487239/) · [7](https://cz.pinterest.com/pin/661255157830869170/) · [8](https://cz.pinterest.com/pin/661255157830869167/)
 

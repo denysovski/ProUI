@@ -20,7 +20,7 @@ design system, then XSlop. If a project's brand deliberately uses something XSlo
 Example prompts:
 
 - `Build a website for a coffee shop using XSlop.` – applies every rule.
-- `Use XSlop, but keep SL-25 (mono fonts).` – allows that pattern, used sparingly.
+- `Use XSlop, but keep SL-25 (mono fonts).` – allows that pattern, used sparingly. (`SL-17`, decorative counting, can never be switched back on.)
 - `Use XSlop, skip PE-10.` – skips that rule.
 - `XSlop, only SEO and PF.` – applies only those groups.
 - `XSlop audit of this site.` – builds nothing, just reviews the site and lists what fails.
@@ -79,7 +79,7 @@ Layout and components
 - tags and pills everywhere
 - "New" badges above headlines
 - a small eyebrow above every heading (soft)
-- section numbering that means nothing (soft)
+- counting labels of any kind: 01 / 02 / 03 on sections, cards, photos, steps or list rows (never, not even when the order is real)
 - super-rounded squircles everywhere
 - untouched component libraries (shadcn/ui)
 - overloaded fake UI mockups
