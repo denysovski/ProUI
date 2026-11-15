@@ -1,6 +1,6 @@
 # XSlop
 
-![XSlop: a rulebook for building websites that look made by a person, not generated](assets/banner-dark.jpg)
+![XSlop: a rulebook for building websites that look made by a person, not generated](assets/xslop-banner.jpg)
 
 One big skill sheet (`SKILL.md`) for AI agents (Claude, ChatGPT, Cursor…) that tells them how to build websites
 that don't look generated ("AI slop", "vibecoded"), but like a finished product made by a person.
@@ -14,6 +14,33 @@ XSlop is an add-on skillset. Load it next to a project's own instructions (brief
 system, README, CLAUDE.md / AGENTS.md) so the agent understands the project better and knows what quality bar
 to aim for. The order of precedence is: my instructions in the chat first, then the project's own rules and
 design system, then XSlop. If a project's brand deliberately uses something XSlop calls slop, the project wins.
+
+## The workflow
+
+`WORKFLOW.md` is the order my agent follows when it builds a new site. It goes step by step and stops four
+times to let me choose:
+
+- **Brief**: what the site is, for whom, the one main action. At most three questions if something is missing.
+- **Research**: the agent browses design galleries (Dark, Recent, Saved, Designeer, Dribbble, Mobbin, my
+  Pinterest board) and collects 8–15 real designs that match the request, with screenshots and links.
+- **Checkpoint, direction**: it groups them into three or four directions named after style keywords, shows
+  the pictures, and I pick one (or combine parts, or send my own link).
+- **Design system** and **checkpoint, type and colour**: it shows two or three font pairings and palettes as
+  specimens; I pick.
+- **Structure** and **checkpoint, outline**: pages and sections; I confirm.
+- **First screen** and **checkpoint**: it builds the hero and the next section; I approve or adjust.
+- **Build the rest**, page by page.
+- **Passes**, one after another over the whole site: slop and craft, states, motion, accessibility, SEO,
+  performance, security, production and legal. Each pass goes through its rules, fixes, verifies and ticks
+  itself off.
+- **Quality check** and **handoff**.
+
+All decisions are written into `xslop/DECISIONS.md` in the project, so another session can continue with
+`XSlop continue`. Templates for the brief, the direction board and the decisions record are in `templates/`.
+
+Short commands: `XSlop workflow: <request>`, `XSlop workflow, direction BLACK COAL`, `XSlop workflow, fast`,
+`XSlop workflow, decide yourself`, `XSlop workflow, research only`, `XSlop continue`, `XSlop passes`,
+`XSlop pass security`.
 
 ## How to use it
 
@@ -40,6 +67,7 @@ automatically when you say "XSlop".
 | Production essentials | `PE-01` to `PE-14` | 404, CTA, favicon, OG image, thank-you page, legal pages, cookies, analytics, contact details, Git, accessibility |
 | SEO | `SEO-01` to `SEO-16` | sitemap, robots.txt, canonical, titles, descriptions, H1, heading order, alt text, schema, links, URLs, HTTPS, Search Console, llms.txt |
 | Performance | `PF-01` to `PF-21` | images, lazy loading, Core Web Vitals, code splitting, caching, database, Lighthouse, lightweight 3D and video |
+| Security | `SEC-01` to `SEC-18` | HTTPS and HSTS, CSP, security headers, no secrets in the client, input validation, escaping, safe queries, protected forms, cookies, auth, uploads, CORS, pinned third-party code, dependency audit, safe errors, safe links, minimal data, security.txt |
 
 At the end there is a checklist the agent goes through before saying the work is done.
 
@@ -336,6 +364,8 @@ Item 20 is an advert for a paid service in the original; XSlop only asks for the
 ## Files
 
 - `SKILL.md` – the core skill sheet.
+- `WORKFLOW.md` – the step-by-step workflow with checkpoints and passes.
+- `templates/` – brief, direction board and decisions record used by the workflow.
 - `inspiration/`, `toolkit/`, `recipes/`, `style/`, `references/` – the packs described above.
 - `README.md` – this overview.
-- `assets/banner-dark.jpg` – the image above, a dark 3D scene (chrome X, dissolving slop blob, bloom) rendered with three.js (`assets/banner.html` is its source).
+- `assets/xslop-banner.jpg` – the image above, a dark 3D scene (chrome X, dissolving slop blob, bloom) rendered with three.js (`assets/banner.html` is its source).
