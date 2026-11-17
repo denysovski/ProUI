@@ -1,0 +1,168 @@
+{
+  "order": 16,
+  "prefix": "CP",
+  "folder": "copy",
+  "name": "Copy and UX Writing Rulebook",
+  "category": "Content",
+  "summary": "Words that sound like the business and help people act: headlines, buttons, errors, claims.",
+  "check": [
+    "Read every button out of context; it says what happens.",
+    "Search the copy for buzzwords, em dashes and \"Oops\"."
+  ],
+  "sources": [
+    {
+      "title": "GOV.UK: Writing for the web",
+      "url": "https://www.gov.uk/guidance/content-design/writing-for-gov-uk"
+    },
+    {
+      "title": "Fluent 2: Content",
+      "url": "https://fluent2.microsoft.design"
+    }
+  ],
+  "related": [
+    "SL-37",
+    "SL-38",
+    "SL-39",
+    "SL-40",
+    "SL-41",
+    "SL-42",
+    "SL-43",
+    "SL-44",
+    "SL-71"
+  ],
+  "rules": [
+    {
+      "id": "CP-01",
+      "kind": "do",
+      "title": "Write like the business talks",
+      "text": "Use the client's own words from their brief, their menus, their emails. A bakery does not \"empower\"; it bakes."
+    },
+    {
+      "id": "CP-02",
+      "kind": "do",
+      "title": "Specific beats clever",
+      "text": "Name the thing, the number, the place and the time: \"Fresh bread from 7:00, Vinohradská 12\" beats \"Crafted with passion\"."
+    },
+    {
+      "id": "CP-03",
+      "kind": "dont",
+      "title": "Buzzwords",
+      "text": "Avoid \"seamless\", \"unlock\", \"elevate\", \"empower\", \"revolutionise\", \"next-level\", \"cutting-edge\", \"game-changing\", \"supercharge\", \"effortless\", \"delve\", \"leverage\", \"robust\", \"in today's fast-paced world\"."
+    },
+    {
+      "id": "CP-04",
+      "kind": "dont",
+      "title": "Slogan rhythm",
+      "text": "Avoid three-word fragments in a row, rhetorical questions as headings, and \"not X but Y\" contrasts (`SL-38`, `SL-71`)."
+    },
+    {
+      "id": "CP-05",
+      "kind": "do",
+      "title": "Short sentences, plain words",
+      "text": "Most sentences under about 20 words; one idea per sentence."
+    },
+    {
+      "id": "CP-06",
+      "kind": "do",
+      "title": "Front-load",
+      "text": "The important word comes first in headings, buttons and list items, so scanning works."
+    },
+    {
+      "id": "CP-07",
+      "kind": "do",
+      "title": "Buttons say what happens",
+      "text": "Verb plus object: \"Book a table\", \"Download the menu\", \"Save changes\". The button keeps the same words as the heading or link that led to it (`SL-41`)."
+    },
+    {
+      "id": "CP-08",
+      "kind": "do",
+      "title": "Consistent terms",
+      "text": "One name per thing across the whole site (\"basket\" or \"cart\", never both)."
+    },
+    {
+      "id": "CP-09",
+      "kind": "do",
+      "title": "Sentence case",
+      "text": "Headings, buttons and labels in sentence case unless the brand insists otherwise."
+    },
+    {
+      "id": "CP-10",
+      "kind": "do",
+      "title": "Error messages: what, why, how to fix",
+      "text": "\"This card has expired. Use another card or update the expiry date.\" Never blame the user, never \"Invalid input\", never only a code."
+    },
+    {
+      "id": "CP-11",
+      "kind": "do",
+      "title": "Empty states invite",
+      "text": "Say what will be here and how to start (`ST-01`)."
+    },
+    {
+      "id": "CP-12",
+      "kind": "do",
+      "title": "Confirmations name the result",
+      "text": "\"Order 4821 is placed. We will email you when it ships.\" (`ST-10`)."
+    },
+    {
+      "id": "CP-13",
+      "kind": "do",
+      "title": "Permission and data requests explain why",
+      "text": "Say what you need and what the user gets for it, at the moment you ask (`PL-04`)."
+    },
+    {
+      "id": "CP-14",
+      "kind": "dont",
+      "title": "Invented claims, numbers or customers",
+      "text": "No invented numbers, customers, awards or reviews. Placeholders are marked as placeholders for the client to replace (`SL-42` to `SL-44`).",
+      "level": "hard"
+    },
+    {
+      "id": "CP-15",
+      "kind": "do",
+      "title": "Numerals for numbers",
+      "text": "Write numbers as digits (\"3 days\", \"12 %\") in interfaces; they scan faster than words."
+    },
+    {
+      "id": "CP-16",
+      "kind": "do",
+      "title": "Write for scanning",
+      "text": "Short paragraphs, meaningful subheadings, lists for steps and options, the key point first."
+    },
+    {
+      "id": "CP-17",
+      "kind": "do",
+      "title": "Unambiguous dates and times",
+      "text": "Write dates in a format nobody misreads (\"17 Nov 2026\", \"Tue 9:00–17:00\") and show time zones where they matter."
+    },
+    {
+      "id": "CP-18",
+      "kind": "do",
+      "title": "Inclusive, plain language",
+      "text": "Gender-neutral wording, no idioms that do not translate, explain necessary jargon once."
+    },
+    {
+      "id": "CP-19",
+      "kind": "dont",
+      "title": "Cute error messages",
+      "text": "No \"Oops!\", \"Uh-oh\" or jokes in errors. People with a problem want the cause and the fix."
+    },
+    {
+      "id": "CP-20",
+      "kind": "dont",
+      "title": "Exclamation marks everywhere",
+      "text": "At most one exclamation mark on a page, saved for real good news."
+    },
+    {
+      "id": "CP-21",
+      "kind": "dont",
+      "title": "All-caps for emphasis",
+      "text": "Do not shout. Use weight or placement for emphasis, never capitals in sentences."
+    },
+    {
+      "id": "CP-22",
+      "kind": "dont",
+      "title": "Placeholder copy in a design",
+      "text": "No lorem ipsum in reviewed designs. Write real or realistic copy; placeholder text hides layout problems."
+    }
+  ]
+}

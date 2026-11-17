@@ -1,0 +1,194 @@
+{
+  "order": 3,
+  "prefix": "TY",
+  "folder": "typography",
+  "name": "Typography Rulebook",
+  "category": "Design",
+  "summary": "Choosing faces, setting a scale, measure, leading and tracking, and loading fonts properly.",
+  "check": [
+    "Check body size, measure and line height in DevTools on a phone and a desktop.",
+    "Zoom to 200 % and set a larger default font size: hierarchy holds, nothing overlaps.",
+    "Render every shipped language and check diacritics."
+  ],
+  "sources": [
+    {
+      "title": "Apple HIG: Typography",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/typography"
+    },
+    {
+      "title": "Fluent 2: Typography",
+      "url": "https://fluent2.microsoft.design/typography"
+    },
+    {
+      "title": "Practical Typography",
+      "url": "https://practicaltypography.com"
+    }
+  ],
+  "related": [
+    "SL-22",
+    "SL-23",
+    "SL-24",
+    "SL-25",
+    "SL-26",
+    "SL-27",
+    "SL-28",
+    "SL-59",
+    "SL-60",
+    "SL-61",
+    "SL-62",
+    "SL-63",
+    "SL-66"
+  ],
+  "rules": [
+    {
+      "id": "TY-01",
+      "kind": "do",
+      "title": "Choose faces for the subject, not the category",
+      "text": "Write one sentence about who reads this and where, then pick faces that fit that scene. \"Tech wants mono\", \"books want a serif\" and \"luxury wants a thin didone\" are the associations to break, not follow. Check `SL-59` before naming a face."
+    },
+    {
+      "id": "TY-02",
+      "kind": "do",
+      "title": "Product UI can use one family",
+      "text": "Dashboards, settings and tools are often best in one well-tuned sans (or the system stack) for headings, labels, buttons and data. Marketing pages can pair a display face with a text face."
+    },
+    {
+      "id": "TY-03",
+      "kind": "do",
+      "title": "At most two families, three only with a reason",
+      "text": "A display face, a text face, and optionally a mono for data (`DC-04`). Every extra family weakens the hierarchy."
+    },
+    {
+      "id": "TY-04",
+      "kind": "dont",
+      "title": "Thin weights for text",
+      "text": "Body and UI text stay at Regular (400) or heavier; Light, Thin and Ultralight are for large display sizes only. If a face only looks good thin, it is the wrong text face."
+    },
+    {
+      "id": "TY-05",
+      "kind": "do",
+      "title": "A real type scale",
+      "text": "5 to 7 sizes on a ratio: about 1.125–1.2 for product UI, 1.25–1.5 for marketing. Adjacent heading levels differ by at least about 1.25× (`SL-60`). Define them as tokens (`DC-05`); no one-off sizes."
+    },
+    {
+      "id": "TY-06",
+      "kind": "do",
+      "title": "Body text 16 px minimum on the web",
+      "text": "17–18 px is often better for long reading. Secondary text can go to 14 px; nothing a person needs to read goes below 12 px, and UI labels never below 11 px. Inputs are at least 16 px so iOS does not zoom into them."
+    },
+    {
+      "id": "TY-07",
+      "kind": "do",
+      "title": "Fixed scale in apps, fluid scale in marketing",
+      "text": "Product UI uses fixed `rem` sizes. Landing pages may use `clamp()` for display sizes, with a sensible minimum and maximum; body text stays fixed."
+    },
+    {
+      "id": "TY-08",
+      "kind": "do",
+      "title": "Hierarchy through more than size",
+      "text": "Combine size, weight and colour (primary / secondary text tokens). Do not rely on colour alone and do not use more than three weights."
+    },
+    {
+      "id": "TY-09",
+      "kind": "do",
+      "title": "Keep hierarchy when text is zoomed",
+      "text": "At 200 % browser zoom the order and relative weight of headings stay the same, nothing overlaps and nothing gets cut off. Use `rem` for type, not `px` locked in containers."
+    },
+    {
+      "id": "TY-10",
+      "kind": "do",
+      "title": "Line length 45–75 characters for body text",
+      "text": "Set `max-width` in `ch` (about `65ch`). Data tables and dense UI can run wider; prose cannot."
+    },
+    {
+      "id": "TY-11",
+      "kind": "do",
+      "title": "Line height by role",
+      "text": "Body 1.5–1.7, UI text about 1.4, headings 1.05–1.25. Below 1.3 on body text is too tight. Longer lines need more leading."
+    },
+    {
+      "id": "TY-12",
+      "kind": "do",
+      "title": "Tracking by size",
+      "text": "Body text at 0. Uppercase labels +0.02 to +0.08em. Large display can tighten slightly, never below about -0.04em (`SL-62`). Never letter-space lowercase body text wider than 0.05em."
+    },
+    {
+      "id": "TY-13",
+      "kind": "do",
+      "title": "Vertical rhythm",
+      "text": "More space above a heading than below it, so the heading belongs to the text that follows. Paragraph spacing about 0.75–1em."
+    },
+    {
+      "id": "TY-14",
+      "kind": "dont",
+      "title": "Justified text",
+      "text": "It creates rivers without proper hyphenation. Left-aligned (start aligned) text, centred only for short display lines."
+    },
+    {
+      "id": "TY-15",
+      "kind": "dont",
+      "title": "All-caps paragraphs",
+      "text": "Uppercase is for short labels of a few words. See `SL-26`."
+    },
+    {
+      "id": "TY-16",
+      "kind": "do",
+      "title": "Balance and pretty wrapping",
+      "text": "`text-wrap: balance` on headings, `text-wrap: pretty` on paragraphs, no single-word last lines (`DC-16`). Use `text-box: trim-both cap alphabetic` where supported to align text to its box optically."
+    },
+    {
+      "id": "TY-17",
+      "kind": "do",
+      "title": "Real typographic characters",
+      "text": "Curly quotes and apostrophes, proper ellipsis (…), en dash for ranges (9–17 h), non-breaking spaces between number and unit (`10 kg`), and the right local quotes („…“ in Czech)."
+    },
+    {
+      "id": "TY-18",
+      "kind": "do",
+      "title": "Numerals by context",
+      "text": "Tabular figures in tables, prices and timers (`DC-18`); proportional or oldstyle figures in running text if the face has them."
+    },
+    {
+      "id": "TY-19",
+      "kind": "do",
+      "title": "Load fonts properly",
+      "text": "Self-host or use a fast CDN, subset to the needed languages (Latin Extended for Czech diacritics), `font-display: swap`, preload the one or two files used above the fold, and set `size-adjust` / metric overrides on the fallback to avoid layout shift."
+    },
+    {
+      "id": "TY-20",
+      "kind": "do",
+      "title": "Check every language you ship",
+      "text": "Diacritics (č, ř, ů, ž), long German words and right-to-left scripts must render in the chosen face. A display face without the needed glyphs is not an option."
+    },
+    {
+      "id": "TY-21",
+      "kind": "do",
+      "title": "Load only the weights you use",
+      "text": "Two or three weights per family at most, preferably one variable font file. Every extra weight is extra bytes and extra noise."
+    },
+    {
+      "id": "TY-22",
+      "kind": "do",
+      "title": "Hyphenate narrow columns",
+      "text": "In narrow columns and on phones, use `hyphens: auto` with the correct `lang`, so ragged edges stay calm."
+    },
+    {
+      "id": "TY-23",
+      "kind": "dont",
+      "title": "Faux bold and italic",
+      "text": "Never let the browser fake a weight or style the font file does not have. Load the real file or set `font-synthesis: none`."
+    },
+    {
+      "id": "TY-24",
+      "kind": "dont",
+      "title": "Display faces for body text",
+      "text": "Display and decorative faces are for large sizes only. Paragraphs, labels and forms use a text face designed for small sizes."
+    },
+    {
+      "id": "TY-25",
+      "kind": "dont",
+      "title": "Centred long paragraphs",
+      "text": "Centred text is for short display lines. Anything longer than two or three lines is start-aligned."
+    }
+  ]
+}

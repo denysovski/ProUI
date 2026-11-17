@@ -1,0 +1,167 @@
+{
+  "order": 6,
+  "prefix": "LY",
+  "folder": "layout",
+  "name": "Layout and Spacing Rulebook",
+  "category": "Design",
+  "summary": "Hierarchy, spacing scale, rhythm, grid and adapting to every screen.",
+  "check": [
+    "Screenshots at 360, 390, 768, 1024, 1440 and 1920 px.",
+    "Blur a screenshot: the focal point and groups are still clear."
+  ],
+  "sources": [
+    {
+      "title": "Apple HIG: Layout",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/layout"
+    },
+    {
+      "title": "Fluent 2: Layout",
+      "url": "https://fluent2.microsoft.design/layout"
+    }
+  ],
+  "related": [
+    "SL-09",
+    "SL-10",
+    "SL-11",
+    "SL-12",
+    "SL-13",
+    "SL-14",
+    "SL-51",
+    "SL-57",
+    "SL-61"
+  ],
+  "rules": [
+    {
+      "id": "LY-01",
+      "kind": "do",
+      "title": "Most important first",
+      "text": "People read top to bottom and from the start edge. The main message and action sit near the top and the leading side (`DC-07`, `PE-02`)."
+    },
+    {
+      "id": "LY-02",
+      "kind": "do",
+      "title": "The squint test",
+      "text": "Blur the screen (or squint): you should still see one clear focal point, then two or three groups. If everything has equal weight, nothing leads."
+    },
+    {
+      "id": "LY-03",
+      "kind": "do",
+      "title": "Progressive disclosure",
+      "text": "Show what most people need; put the rest behind a link, a disclosure, a tab or the next page. Do not put every option on the first screen."
+    },
+    {
+      "id": "LY-04",
+      "kind": "do",
+      "title": "Separate controls from content",
+      "text": "Navigation and toolbars look like controls; content looks like content. A floating bar over content needs a clear edge or a scroll-edge fade, not a heavy box."
+    },
+    {
+      "id": "LY-05",
+      "kind": "do",
+      "title": "One spacing scale on a 4 px base",
+      "text": "For example 4, 8, 12, 16, 24, 32, 48, 64, 96, 128. Every margin, padding and gap comes from it (`DC-05`)."
+    },
+    {
+      "id": "LY-06",
+      "kind": "do",
+      "title": "Proximity groups",
+      "text": "Space inside a group is clearly smaller than space between groups (at least about 1.5–2×). Spacing groups before borders or backgrounds do (`DC-08`, `SL-12`)."
+    },
+    {
+      "id": "LY-07",
+      "kind": "do",
+      "title": "Vary the rhythm",
+      "text": "A page with the same gap everywhere is monotonous. Dense passages earn quiet ones; section spacing is larger than block spacing, which is larger than element spacing."
+    },
+    {
+      "id": "LY-08",
+      "kind": "do",
+      "title": "Use `gap`",
+      "text": "Lay out with flex/grid `gap` instead of margins on children, so spacing stays consistent and no stray margin collapses."
+    },
+    {
+      "id": "LY-09",
+      "kind": "do",
+      "title": "Comfortable padding",
+      "text": "Cards and buttons have enough inner padding that text never touches the edge; on phones, body text keeps at least 16 px from the screen edge (never under 12 px)."
+    },
+    {
+      "id": "LY-10",
+      "kind": "do",
+      "title": "A grid with a reason",
+      "text": "A 12-column (or 4/8 on mobile) grid with fixed gutters, and content that sometimes breaks it on purpose. Align edges: things that look aligned must be aligned."
+    },
+    {
+      "id": "LY-11",
+      "kind": "do",
+      "title": "Alignment and indentation show hierarchy",
+      "text": "Items on the same edge read as siblings; indented items read as children. Do not centre everything."
+    },
+    {
+      "id": "LY-12",
+      "kind": "dont",
+      "title": "Every section as a centred stack",
+      "text": "Mix compositions: split, offset, full-bleed image, list, table, long text. A row of equal cards is the template (`SL-09`, `SL-57`)."
+    },
+    {
+      "id": "LY-13",
+      "kind": "do",
+      "title": "Real content widths",
+      "text": "Text blocks capped by measure (`TY-10`); images and data allowed wider; the page container about 1200–1440 px with fluid side padding."
+    },
+    {
+      "id": "LY-14",
+      "kind": "do",
+      "title": "Same function on every size",
+      "text": "A smaller screen may show less at once (sidebar becomes a drawer, a table becomes cards or scrolls) but never removes a feature."
+    },
+    {
+      "id": "LY-15",
+      "kind": "do",
+      "title": "Container queries for components",
+      "text": "Components adapt to the space they get (`@container`), not only to the viewport, so the same card works in a sidebar and a main column."
+    },
+    {
+      "id": "LY-16",
+      "kind": "do",
+      "title": "Respect safe areas",
+      "text": "`env(safe-area-inset-*)` for fixed bars on phones with notches and home indicators; sticky CTAs sit above the home indicator (`PE-03`)."
+    },
+    {
+      "id": "LY-17",
+      "kind": "do",
+      "title": "Reserve space for media",
+      "text": "Images, videos, embeds and ads have `width`/`height` or `aspect-ratio`, so nothing jumps while loading (`PF-03`)."
+    },
+    {
+      "id": "LY-18",
+      "kind": "do",
+      "title": "A compact sticky header",
+      "text": "A sticky header stays short (about 56–72 px on desktop, less on phones) and may hide on scroll down and return on scroll up."
+    },
+    {
+      "id": "LY-19",
+      "kind": "dont",
+      "title": "Horizontal scroll on the page",
+      "text": "Nothing overflows the viewport sideways at any width from 320 px up. Wide tables and carousels scroll inside their own container."
+    },
+    {
+      "id": "LY-20",
+      "kind": "dont",
+      "title": "Fixed heights on text containers",
+      "text": "Boxes that hold text grow with it. Fixed heights cut off translations, larger text and user zoom."
+    },
+    {
+      "id": "LY-21",
+      "kind": "dont",
+      "title": "Full-width lines on large screens",
+      "text": "On wide screens text never runs edge to edge; the measure stays capped (`TY-10`) even when the layout is wide."
+    },
+    {
+      "id": "LY-22",
+      "kind": "dont",
+      "title": "Content hidden behind sticky elements",
+      "text": "Sticky headers, footers, cookie bars and chat buttons never cover focused elements, anchors or the last line of content (`AX-17`)."
+    }
+  ]
+}

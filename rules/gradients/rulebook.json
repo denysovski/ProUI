@@ -1,0 +1,119 @@
+{
+  "order": 5,
+  "prefix": "GR",
+  "folder": "gradients",
+  "name": "Gradients and Backgrounds Rulebook",
+  "category": "Design",
+  "summary": "When a gradient or background pattern has a job, and how to make one that looks intentional.",
+  "check": [
+    "Measure text contrast at the lightest and darkest point behind it.",
+    "View large gradients on an 8-bit screen or a compressed screenshot for banding."
+  ],
+  "sources": [],
+  "related": [
+    "SL-01",
+    "SL-02",
+    "SL-03",
+    "SL-28",
+    "SL-55",
+    "SL-56"
+  ],
+  "rules": [
+    {
+      "id": "GR-01",
+      "kind": "do",
+      "title": "A gradient needs a job",
+      "text": "Lighting a product, setting a time of day, carrying a brand colour across a whole surface, separating a section from the next. \"The section looked empty\" is not a job (`SL-02`)."
+    },
+    {
+      "id": "GR-02",
+      "kind": "do",
+      "title": "One signature gradient per site",
+      "text": "Reuse it in two or three places (hero, one feature, the footer or OG image). Different gradients in every section are noise."
+    },
+    {
+      "id": "GR-03",
+      "kind": "dont",
+      "title": "Gradients in text or as border glows",
+      "text": "No gradient-filled headlines (`SL-28`), no glowing gradient borders around cards (`SL-54`)."
+    },
+    {
+      "id": "GR-04",
+      "kind": "do",
+      "title": "Colours from the palette",
+      "text": "Stops come from the colour tokens (`CL-04`), or from the hero photo. Never the purple-to-blue default (`SL-01`)."
+    },
+    {
+      "id": "GR-05",
+      "kind": "do",
+      "title": "Interpolate in OKLCH",
+      "text": "`linear-gradient(in oklch, …)` avoids the grey, muddy middle that sRGB gradients get between distant hues. Close hues are safer than opposite ones."
+    },
+    {
+      "id": "GR-06",
+      "kind": "do",
+      "title": "Few stops, soft transitions",
+      "text": "Two to four stops. Use easing stops (extra stops along a curve) so there is no visible band edge."
+    },
+    {
+      "id": "GR-07",
+      "kind": "do",
+      "title": "Mesh gradients from layered radials",
+      "text": "Build soft \"mesh\" backgrounds from two to four overlapping `radial-gradient()` layers on a base colour, or export one from a gradient tool as an image. Keep the brightest area behind the content that matters, not dead centre by reflex (`SL-55`)."
+    },
+    {
+      "id": "GR-08",
+      "kind": "do",
+      "title": "Fight banding",
+      "text": "Large smooth gradients band on 8-bit screens. Add very subtle noise (an exported noise PNG at 2–4 % opacity, or noise baked into an exported image), or export with dithering. Grain as a visible effect is a style choice (`SL-08`, `DITHER GRAIN`)."
+    },
+    {
+      "id": "GR-09",
+      "kind": "do",
+      "title": "Check text on gradients",
+      "text": "Measure contrast at the lightest and darkest point behind the text, not the average. If it fails anywhere, add a scrim or move the text."
+    },
+    {
+      "id": "GR-10",
+      "kind": "do",
+      "title": "Both themes",
+      "text": "A gradient designed on light may glow on dark. Define a dark variant with lower lightness and chroma."
+    },
+    {
+      "id": "GR-11",
+      "kind": "do",
+      "title": "Backgrounds hold back",
+      "text": "A background texture or pattern sits at low contrast so it never competes with type. If you notice it before the headline, it is too strong."
+    },
+    {
+      "id": "GR-12",
+      "kind": "do",
+      "title": "Patterns from a real system",
+      "text": "Use generated patterns with a clear logic (grid, radial, flow, isometric) from a pattern tool, tuned to the palette, instead of hand-drawn random shapes (`SL-70`)."
+    },
+    {
+      "id": "GR-13",
+      "kind": "do",
+      "title": "Export the right format",
+      "text": "SVG for patterns and shapes (optimised with SVGO), AVIF/WebP for photo-like gradients and mesh exports, CSS only when the gradient is simple. Animated shader gradients render only while visible and stop for reduced motion (`PF-21`)."
+    },
+    {
+      "id": "GR-14",
+      "kind": "do",
+      "title": "Dividers with intent",
+      "text": "Wave or angled section dividers only when the style is organic or playful, and the same divider shape across the site."
+    },
+    {
+      "id": "GR-15",
+      "kind": "dont",
+      "title": "Gradients on every button",
+      "text": "Buttons are solid colours from the palette. A gradient button is a template tell and loses contrast at one end."
+    },
+    {
+      "id": "GR-16",
+      "kind": "dont",
+      "title": "Animated gradients behind text",
+      "text": "Text never sits on a background that moves. Animate gradients only where nothing has to be read."
+    }
+  ]
+}

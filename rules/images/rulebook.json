@@ -1,0 +1,119 @@
+{
+  "order": 7,
+  "prefix": "IM",
+  "folder": "images",
+  "name": "Images and Media Rulebook",
+  "category": "Design",
+  "summary": "Photography, illustration, video and icons: what to use, how to prepare it, what never to ship.",
+  "check": [
+    "Lighthouse image audits: modern formats, proper sizing, no lazy LCP image.",
+    "Check every image licence and alt text."
+  ],
+  "sources": [
+    {
+      "title": "web.dev: Image performance",
+      "url": "https://web.dev/learn/performance/image-performance"
+    },
+    {
+      "title": "W3C: Images tutorial (alt text)",
+      "url": "https://www.w3.org/WAI/tutorials/images/"
+    }
+  ],
+  "related": [
+    "SL-45",
+    "SL-46",
+    "SL-70"
+  ],
+  "rules": [
+    {
+      "id": "IM-01",
+      "kind": "do",
+      "title": "Real photography",
+      "text": "Photos of the real product, place, team and work. Commission or take them; stock only for neutral textures and never for people presented as staff or customers."
+    },
+    {
+      "id": "IM-02",
+      "kind": "do",
+      "title": "Consistent art direction",
+      "text": "All images share light, colour grade, crop logic and angle, so the site looks like one story."
+    },
+    {
+      "id": "IM-03",
+      "kind": "do",
+      "title": "Modern formats and responsive sizes",
+      "text": "AVIF or WebP with a fallback, `srcset` and `sizes` for every content image, served at the size displayed (`PF-01`)."
+    },
+    {
+      "id": "IM-04",
+      "kind": "do",
+      "title": "Set the focal point",
+      "text": "Use `object-fit: cover` with `object-position` so faces and products stay in frame on every crop."
+    },
+    {
+      "id": "IM-05",
+      "kind": "do",
+      "title": "Width, height and aspect ratio",
+      "text": "Every image and video has dimensions or `aspect-ratio` to prevent layout shift."
+    },
+    {
+      "id": "IM-06",
+      "kind": "do",
+      "title": "Meaningful alt text",
+      "text": "Alt text says what the image shows and why it is there; decorative images use `alt=\"\"` (`AX-07`)."
+    },
+    {
+      "id": "IM-07",
+      "kind": "do",
+      "title": "Video done properly",
+      "text": "Videos have a poster image, captions, controls, and are compressed for the web (H.264 or AV1, short loops under a few MB)."
+    },
+    {
+      "id": "IM-08",
+      "kind": "do",
+      "title": "SVG for icons and logos",
+      "text": "Icons and logos are optimised inline SVG or an SVG sprite, not icon fonts or PNGs."
+    },
+    {
+      "id": "IM-09",
+      "kind": "do",
+      "title": "Credit and licence",
+      "text": "Every image that is not the client's own has a licence that allows the use, recorded in the project."
+    },
+    {
+      "id": "IM-10",
+      "kind": "dont",
+      "title": "Stock clichés",
+      "text": "No handshakes, people pointing at laptops, smiling call-centre headsets or generic city skylines."
+    },
+    {
+      "id": "IM-11",
+      "kind": "dont",
+      "title": "AI-generated people presented as real",
+      "text": "No generated faces or scenes passed off as real customers, staff, places or products."
+    },
+    {
+      "id": "IM-12",
+      "kind": "dont",
+      "title": "Text baked into images",
+      "text": "No headlines, prices or buttons inside images. Text stays HTML so it scales, translates and is read by screen readers and search engines."
+    },
+    {
+      "id": "IM-13",
+      "kind": "dont",
+      "title": "Upscaled or blurry images",
+      "text": "No images shown larger than their source resolution, and no visible compression artefacts."
+    },
+    {
+      "id": "IM-14",
+      "kind": "dont",
+      "title": "Autoplay with sound",
+      "text": "Video and audio never start with sound. Background video is muted, short, pausable and stops for reduced motion."
+    },
+    {
+      "id": "IM-15",
+      "kind": "dont",
+      "title": "Lazy-loading the first image",
+      "text": "Never lazy-load images in the first viewport, especially the largest one (`PF-22`)."
+    }
+  ]
+}

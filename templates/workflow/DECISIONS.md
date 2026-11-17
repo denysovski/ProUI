@@ -46,18 +46,21 @@ continues from here with `XSlop continue`.
 
 Tick when every rule of the group is met or marked not applicable (with the reason).
 
-- [ ] Slop and craft (`SL`, `DC`), scan clean of hard rules
+- [ ] Anti-slop and craft (`SL`, `DC`), scan clean of hard rules
 - [ ] Type and colour (`TY`, `CL`, `GR`)
 - [ ] Layout (`LY`, `PL`)
-- [ ] Components and copy (`IX`, `CP`)
+- [ ] Images and navigation (`IM`, `NV`)
+- [ ] Copy (`CP`)
+- [ ] Components and forms (`IX`, `FO`)
 - [ ] Product UI (`DB`), operate surfaces only
 - [ ] States (`ST`)
 - [ ] Motion (`MO`, `PF-21`)
 - [ ] Accessibility (`AX`, `DC-15`, `PE-14`)
+- [ ] Localisation (`LO`), multi-language sites only
 - [ ] SEO (`SEO`)
 - [ ] Performance (`PF`): Lighthouse mobile scores:
 - [ ] Security (`SEC`): headers checked, audit clean:
-- [ ] Production and legal (`PE`)
+- [ ] Launch and legal (`PE`)
 - [ ] Quality check (final checklist in `SKILL.md`): critique score /40, audit score /20
 - [ ] GitHub and deploy (`GH`): repo, CI, quality gates, live URL:
 - [ ] `DESIGN.md` written from the build

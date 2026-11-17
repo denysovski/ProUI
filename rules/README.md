@@ -1,47 +1,118 @@
-# Rules
+# Rulebooks
 
-351 rules in 18 groups. Every rule has an ID the user can name to switch it on or off. `SL` rules are things
-to avoid; every other group is things to do.
+> Every rule XSlop applies, sorted into rulebooks by subject. Each rulebook has its own folder with a readable `README.md` and the data file it is built from.
 
-| Folder | File | Group | IDs | Covers |
-| --- | --- | --- | --- | --- |
-| `design/` | `slop.md` | Slop to avoid | `SL-01` to `SL-72` | patterns that make a site look generated, including detector patterns and the four default "AI looks" |
-| `design/` | `craft.md` | Design craft | `DC-01` to `DC-20` | small decisions that make a design feel considered |
-| `design/` | `typography.md` | Typography | `TY-01` to `TY-20` | choosing faces, scale, measure, leading, tracking, loading, languages |
-| `design/` | `color.md` | Colour | `CL-01` to `CL-16` | strategy, roles, OKLCH, contrast, dark mode |
-| `design/` | `gradients.md` | Gradients and backgrounds | `GR-01` to `GR-14` | when and how to use gradients, mesh, banding, patterns, shapes |
-| `design/` | `layout.md` | Layout and spacing | `LY-01` to `LY-16` | hierarchy, spacing scale, rhythm, grid, adaptation, safe areas |
-| `interaction/` | `motion.md` | Motion | `MO-01` to `MO-20` | timing, easing, popovers, gestures, reduced motion |
-| `interaction/` | `states.md` | States | `ST-01` to `ST-10` | empty, loading, error, offline, slow, zero results, permission, session, validation, success |
-| `interaction/` | `components.md` | Components and interaction | `IX-01` to `IX-18` | control states, standard controls, overlays, forms, undo, feedback |
-| `interaction/` | `accessibility.md` | Accessibility | `AX-01` to `AX-16` | semantics, contrast, focus, keyboard, zoom, motion, announcements, testing |
-| `interaction/` | `platform.md` | Platform conventions | `PL-01` to `PL-12` | Apple HIG and Fluent 2 principles applied to the web |
-| `product/` | `dashboards.md` | Dashboards and product UI | `DB-01` to `DB-18` | shell, data, charts, tables, filters, states for tools and admin panels |
-| `product/` | `copy.md` | Copy and UX writing | `CP-01` to `CP-14` | voice, clarity, buttons, errors, honest claims |
-| `production/` | `essentials.md` | Production essentials | `PE-01` to `PE-14` | 404, CTA, favicon, OG, legal pages, cookies, analytics, contact, Git |
-| `production/` | `seo.md` | SEO | `SEO-01` to `SEO-16` | sitemap, robots, canonical, meta, headings, schema, links, llms.txt |
-| `production/` | `performance.md` | Performance | `PF-01` to `PF-21` | images, loading, Core Web Vitals, caching, database, Lighthouse, heavy visuals |
-| `production/` | `security.md` | Security | `SEC-01` to `SEC-18` | HTTPS, CSP, headers, secrets, validation, auth, uploads, dependencies |
-| `production/` | `github.md` | GitHub workflow | `GH-01` to `GH-16` | repository, branches, commits, PRs, CI, quality gates, deploys, releases |
+## How rules are named
+
+Every rule has an ID made of a **prefix** and a **number**:
+
+```text
+SEO-05
+│   └─ number: the rule's place in its rulebook. It never changes once given,
+│      so prompts, reviews and commits can refer to it. It is not a priority.
+└──── prefix: the rulebook (SEO = SEO Rulebook, ST = States Rulebook, SL = Anti-Slop)
+```
+
+Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: what never ships). Some carry a label:
+
+| Label | Meaning |
+| --- | --- |
+| SOFT | allowed only as a deliberate, sparing part of a brand or a chosen style |
+| HARD RULE | can never be switched back on, whatever the prompt says |
+
+## Design
+
+| Rulebook | Prefix | Covers |
+| --- | --- | --- |
+| [Anti-Slop Rulebook](anti-slop/README.md) | `SL` | Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks. |
+| [Design Craft Rulebook](craft/README.md) | `DC` | Small decisions that separate a considered design from a template. |
+| [Typography Rulebook](typography/README.md) | `TY` | Choosing faces, setting a scale, measure, leading and tracking, and loading fonts properly. |
+| [Colour Rulebook](color/README.md) | `CL` | Colour strategy, roles, OKLCH, contrast and dark mode. |
+| [Gradients and Backgrounds Rulebook](gradients/README.md) | `GR` | When a gradient or background pattern has a job, and how to make one that looks intentional. |
+| [Layout and Spacing Rulebook](layout/README.md) | `LY` | Hierarchy, spacing scale, rhythm, grid and adapting to every screen. |
+| [Images and Media Rulebook](images/README.md) | `IM` | Photography, illustration, video and icons: what to use, how to prepare it, what never to ship. |
+
+## Interaction
+
+| Rulebook | Prefix | Covers |
+| --- | --- | --- |
+| [Navigation Rulebook](navigation/README.md) | `NV` | Menus, wayfinding, search, footers and URLs that let people find things and know where they are. |
+| [Components and Interaction Rulebook](components/README.md) | `IX` | Controls, overlays, feedback and behaviour that feel familiar and trustworthy. |
+| [Forms and Checkout Rulebook](forms/README.md) | `FO` | Forms people can finish: fields, labels, validation, errors and checkout. |
+| [States Rulebook](states/README.md) | `ST` | Every situation the interface has to handle, not only the happy path. |
+| [Motion Rulebook](motion/README.md) | `MO` | Timing, easing and choreography that make an interface feel fast and physical. |
+| [Accessibility Rulebook](accessibility/README.md) | `AX` | Usable by everyone, designed in from the start. Target: WCAG 2.2 AA. |
+| [Platform Conventions Rulebook](platform/README.md) | `PL` | Principles from Apple's Human Interface Guidelines and Microsoft Fluent 2, applied to the web. |
+
+## Product
+
+| Rulebook | Prefix | Covers |
+| --- | --- | --- |
+| [Dashboards and Product UI Rulebook](dashboards/README.md) | `DB` | Dashboards, admin panels, tools and settings: shell, data, charts, tables and states. |
+
+## Content
+
+| Rulebook | Prefix | Covers |
+| --- | --- | --- |
+| [Copy and UX Writing Rulebook](copy/README.md) | `CP` | Words that sound like the business and help people act: headlines, buttons, errors, claims. |
+| [Localisation Rulebook](localization/README.md) | `LO` | Sites in more than one language or market: language, formats, currencies and switching. |
+
+## Production
+
+| Rulebook | Prefix | Covers |
+| --- | --- | --- |
+| [Launch Essentials Rulebook](launch/README.md) | `PE` | What every real, launched website has: system pages, legal pages, contact details, monitoring. |
+| [SEO Rulebook](seo/README.md) | `SEO` | Being found: technical SEO, content signals, structured data and what search engines penalise. |
+| [Performance Rulebook](performance/README.md) | `PF` | Fast loading, smooth interaction and stable layout, measured with Core Web Vitals. |
+| [Security Rulebook](security/README.md) | `SEC` | Protecting visitors, data and the site itself, from headers to authentication. |
+| [GitHub Workflow Rulebook](github/README.md) | `GH` | The repository, branches, commits, pull requests, CI, quality gates, deploys and releases. |
 
 ## Hard rules
 
-These can never be switched back on, whatever the override:
-
-- `SL-17` decorative counting (01 / 02 / 03 on anything)
-- `SL-43` fake testimonials presented as real
-- `SL-44` placeholder business info left in a shipped build
-- `SL-49` side-stripe accent borders
-- `CP-14` invented claims, numbers or customers
-
-## Which rules load when
-
-| Task | Load |
+| ID | Never |
 | --- | --- |
-| Marketing site, landing page, portfolio (`modes/persuade.md`) | `design/` all, `interaction/` all, `product/copy.md`, `production/` all |
-| Dashboard, admin, tool, settings (`modes/operate.md`) | `product/dashboards.md` first, then everything else; `GR` mostly does not apply |
-| Docs, blog, long-form (`modes/read.md`) | `design/typography.md` first, `layout.md`, `accessibility.md`, `seo.md` |
-| Immersive, portfolio, campaign (`modes/experience.md`) | `design/` all, `motion.md`, `performance.md` (`PF-21`), `accessibility.md` |
-| Review only | the command file (`commands/critique.md` or `commands/audit.md`) plus all rules |
+| `SL-17` | Decorative counting |
+| `SL-43` | Fake testimonials |
+| `SL-44` | Placeholder business info |
+| `SL-49` | Side-stripe accent borders |
+| `CP-14` | Invented claims, numbers or customers |
 
-`scripts/check-rules.mjs` verifies that IDs are unique and that the counts in this table match the files.
+## Which rulebooks lead in each mode
+
+| Mode | Lead with | Then |
+| --- | --- | --- |
+| [Persuade](../modes/persuade.md) | Anti-Slop, Craft, Typography, Colour, Copy | everything else |
+| [Operate](../modes/operate.md) | Dashboards, Components, Forms, States, Accessibility | everything else; Gradients rarely apply |
+| [Read](../modes/read.md) | Typography, Layout, Navigation, Accessibility, SEO | everything else |
+| [Experience](../modes/experience.md) | Anti-Slop, Motion, Images, Performance, Accessibility | everything else |
+
+## Adding or changing a rule
+
+```bash
+# 1. edit the rulebook data
+rules/<rulebook>/rulebook.json   # add an object to "rules" with the next free id
+
+# 2. rebuild the READMEs
+node scripts/build-rulebooks.mjs
+
+# 3. validate (also runs in CI)
+node scripts/build-rulebooks.mjs --check
+```
+
+A rule object:
+
+```json
+{
+  "id": "SEO-30",
+  "kind": "do",
+  "title": "Short title",
+  "text": "One or two sentences: what to do and why.",
+  "level": "soft"
+}
+```
+
+`kind` is `do` or `dont`; `level` is optional (`soft` or `hard`). IDs are never reused or renumbered.
+
+---
+
+<sub>Generated from the `rulebook.json` files by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

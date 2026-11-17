@@ -16,7 +16,7 @@ Bakaus. XSlop takes strong inspiration from its structure and ideas; nothing is 
 | The "craft floor": verify and refuse lists | the final checklist in `SKILL.md`, hard rules in `rules/README.md` |
 | Colour strategies (Restrained, Committed, Full palette, Drenched), OKLCH, roles | `CL-01`, `CL-04`, `CL-05` |
 | The four saturated "AI looks" and overused fonts | `SL-59`, `SL-64` to `SL-67` |
-| Operate-mode product rules | `rules/product/dashboards.md`, `modes/operate.md` |
+| Operate-mode product rules | `rules/dashboards/README.md`, `modes/operate.md` |
 | Foundations every shipped project needs (404, icons, social previews, legal, CI, tokens, reduced motion, Dependabot) | `PE`, `GH` |
 
 ## What XSlop does differently

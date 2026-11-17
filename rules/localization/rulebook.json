@@ -1,0 +1,85 @@
+{
+  "order": 17,
+  "prefix": "LO",
+  "folder": "localization",
+  "name": "Localisation Rulebook",
+  "category": "Content",
+  "summary": "Sites in more than one language or market: language, formats, currencies and switching.",
+  "check": [
+    "Switch languages on a deep page: you stay on the same page.",
+    "Check `lang`, `hreflang`, formats and long translations."
+  ],
+  "sources": [
+    {
+      "title": "Google: Localized versions (hreflang)",
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+    },
+    {
+      "title": "MDN: Intl",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl"
+    }
+  ],
+  "related": [],
+  "rules": [
+    {
+      "id": "LO-01",
+      "kind": "do",
+      "title": "Correct lang on every page",
+      "text": "`<html lang>` matches the page language, and passages in another language have their own `lang`."
+    },
+    {
+      "id": "LO-02",
+      "kind": "do",
+      "title": "hreflang for language versions",
+      "text": "Pages that exist in several languages link to each other with `hreflang`, including `x-default`."
+    },
+    {
+      "id": "LO-03",
+      "kind": "do",
+      "title": "Locale formats",
+      "text": "Dates, numbers, currencies and units are formatted for the locale with `Intl` APIs, never assembled by hand."
+    },
+    {
+      "id": "LO-04",
+      "kind": "do",
+      "title": "Room for longer text",
+      "text": "Layouts allow text that is 30–40 % longer than English and words that do not break (German, Czech)."
+    },
+    {
+      "id": "LO-05",
+      "kind": "do",
+      "title": "Language switcher in native names",
+      "text": "The language switcher lists \"Čeština\", \"Deutsch\", \"English\", in the same place on every page, and keeps the user on the same page."
+    },
+    {
+      "id": "LO-06",
+      "kind": "do",
+      "title": "Translate everything",
+      "text": "Titles, meta descriptions, alt text, error messages, emails and legal pages are translated, not only the visible body."
+    },
+    {
+      "id": "LO-07",
+      "kind": "do",
+      "title": "Local currency and prices",
+      "text": "Prices show in the visitor's currency where the business supports it, with taxes as local law expects."
+    },
+    {
+      "id": "LO-08",
+      "kind": "dont",
+      "title": "Flags for languages",
+      "text": "Flags stand for countries, not languages. Use language names."
+    },
+    {
+      "id": "LO-09",
+      "kind": "dont",
+      "title": "Automatic redirect by location",
+      "text": "Never force a language or country version based on IP alone. Suggest it and let people stay."
+    },
+    {
+      "id": "LO-10",
+      "kind": "dont",
+      "title": "Sentences built from fragments",
+      "text": "Never join translated pieces in code (\"You have \" + n + \" items\"); use full messages with placeholders and plural rules."
+    }
+  ]
+}

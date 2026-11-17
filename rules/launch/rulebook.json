@@ -1,0 +1,157 @@
+{
+  "order": 18,
+  "prefix": "PE",
+  "folder": "launch",
+  "name": "Launch Essentials Rulebook",
+  "category": "Production",
+  "summary": "What every real, launched website has: system pages, legal pages, contact details, monitoring.",
+  "check": [
+    "Open every system and legal page; test cookie consent in a fresh browser.",
+    "Send a test through every form and check the email arrives."
+  ],
+  "sources": [
+    {
+      "title": "European Accessibility Act",
+      "url": "https://eur-lex.europa.eu/eli/dir/2019/882/oj"
+    },
+    {
+      "title": "GDPR overview",
+      "url": "https://gdpr.eu"
+    }
+  ],
+  "related": [],
+  "rules": [
+    {
+      "id": "PE-01",
+      "kind": "do",
+      "title": "Custom 404 page",
+      "text": "In the site's design, with links home, to search and to key pages."
+    },
+    {
+      "id": "PE-02",
+      "kind": "do",
+      "title": "CTA above the fold",
+      "text": "The primary action is visible without scrolling on desktop and mobile."
+    },
+    {
+      "id": "PE-03",
+      "kind": "do",
+      "title": "Sticky mobile CTA",
+      "text": "On phones, the primary action stays reachable (for example a bar at the bottom) where it makes sense: product pages, booking, sign-up."
+    },
+    {
+      "id": "PE-04",
+      "kind": "do",
+      "title": "Mobile breakpoints",
+      "text": "Tested at roughly 360, 390, 768, 1024, 1440 and 1920 px. No horizontal scroll, tap targets at least 44 px."
+    },
+    {
+      "id": "PE-05",
+      "kind": "do",
+      "title": "Favicon set",
+      "text": "`favicon.ico` or SVG, `apple-touch-icon` (180 px), icons for Android and the web manifest."
+    },
+    {
+      "id": "PE-06",
+      "kind": "do",
+      "title": "Open Graph and social preview",
+      "text": "`og:title`, `og:description`, `og:image` (1200 × 630), Twitter card tags, per page where it matters."
+    },
+    {
+      "id": "PE-07",
+      "kind": "do",
+      "title": "Thank-you page or state",
+      "text": "After a form or an order, a confirmation with the next step."
+    },
+    {
+      "id": "PE-08",
+      "kind": "do",
+      "title": "Privacy policy page",
+      "text": "Required in the EU (GDPR) whenever the site collects any personal data, including analytics and newsletter emails."
+    },
+    {
+      "id": "PE-09",
+      "kind": "do",
+      "title": "Terms page",
+      "text": "Terms and conditions, required for shops and services."
+    },
+    {
+      "id": "PE-10",
+      "kind": "do",
+      "title": "Cookie banner",
+      "text": "Needed in the EU for non-essential cookies (analytics, marketing). \"Reject\" must be as easy as \"Accept\". Load those scripts only after consent."
+    },
+    {
+      "id": "PE-11",
+      "kind": "do",
+      "title": "Analytics installed",
+      "text": "Plausible, Umami, Google Analytics or similar, respecting consent."
+    },
+    {
+      "id": "PE-12",
+      "kind": "do",
+      "title": "Real contact details",
+      "text": "Real address, email, phone and company ID where applicable."
+    },
+    {
+      "id": "PE-13",
+      "kind": "do",
+      "title": "Version control",
+      "text": "The code lives in a Git repository with meaningful commits."
+    },
+    {
+      "id": "PE-14",
+      "kind": "do",
+      "title": "Accessibility basics",
+      "text": "Semantic HTML, labelled inputs, visible focus, keyboard navigation for every interactive element, `lang` attribute, reduced-motion support."
+    },
+    {
+      "id": "PE-15",
+      "kind": "do",
+      "title": "Accessibility statement",
+      "text": "For sites selling to EU consumers, an accessibility statement and a feedback channel for barriers, linked from the footer (`AX-24`)."
+    },
+    {
+      "id": "PE-16",
+      "kind": "do",
+      "title": "Company details",
+      "text": "Legal name, registered address and company ID (in the Czech Republic the IČO, and DIČ if VAT registered) in the footer or contact page where the law asks for them."
+    },
+    {
+      "id": "PE-17",
+      "kind": "do",
+      "title": "Redirects from old URLs",
+      "text": "When a site replaces an old one, every old URL redirects with a 301 to its closest new page."
+    },
+    {
+      "id": "PE-18",
+      "kind": "do",
+      "title": "Email that arrives",
+      "text": "Form and order emails are sent from the site domain with SPF, DKIM and DMARC set up, and tested in common inboxes."
+    },
+    {
+      "id": "PE-19",
+      "kind": "do",
+      "title": "Uptime and error monitoring",
+      "text": "An uptime check and front-end error tracking are in place, alerting a real person."
+    },
+    {
+      "id": "PE-20",
+      "kind": "do",
+      "title": "Backups",
+      "text": "Content and databases are backed up automatically, and a restore has been tested at least once."
+    },
+    {
+      "id": "PE-21",
+      "kind": "dont",
+      "title": "Launch without a content owner",
+      "text": "No site ships without someone named who keeps prices, opening hours, team and legal pages up to date."
+    },
+    {
+      "id": "PE-22",
+      "kind": "dont",
+      "title": "Under construction pages",
+      "text": "No \"coming soon\" sections or empty pages in navigation. Ship what exists; add the rest when it is real."
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "order": 20,
+  "prefix": "PF",
+  "folder": "performance",
+  "name": "Performance Rulebook",
+  "category": "Production",
+  "summary": "Fast loading, smooth interaction and stable layout, measured with Core Web Vitals.",
+  "check": [
+    "Lighthouse on mobile for each page type; PageSpeed Insights field data once live.",
+    "Check bundle sizes against the budget in CI."
+  ],
+  "sources": [
+    {
+      "title": "web.dev: Web Vitals",
+      "url": "https://web.dev/articles/vitals"
+    },
+    {
+      "title": "web.dev: Optimize LCP",
+      "url": "https://web.dev/articles/optimize-lcp"
+    },
+    {
+      "title": "web.dev: INP",
+      "url": "https://web.dev/articles/inp"
+    }
+  ],
+  "related": [],
+  "rules": [
+    {
+      "id": "PF-01",
+      "kind": "do",
+      "title": "Compress images",
+      "text": "Modern formats (AVIF/WebP), correct dimensions, `srcset` and `sizes`, explicit `width` and `height` to prevent layout shift."
+    },
+    {
+      "id": "PF-02",
+      "kind": "do",
+      "title": "Lazy loading",
+      "text": "Images, iframes and heavy sections below the fold load lazily (`loading=\"lazy\"`); nothing in the first viewport does."
+    },
+    {
+      "id": "PF-03",
+      "kind": "do",
+      "title": "Core Web Vitals",
+      "text": "Good LCP (under 2.5 s), INP (under 200 ms) and CLS (under 0.1)."
+    },
+    {
+      "id": "PF-04",
+      "kind": "do",
+      "title": "Code splitting",
+      "text": "Load only the JavaScript the current page needs."
+    },
+    {
+      "id": "PF-05",
+      "kind": "do",
+      "title": "Minify JS and CSS",
+      "text": "Production builds minify JavaScript and CSS; any modern bundler does this when configured for production."
+    },
+    {
+      "id": "PF-06",
+      "kind": "do",
+      "title": "Defer non-critical scripts",
+      "text": "Analytics, chat and embeds load with `defer`, `async` or after interaction."
+    },
+    {
+      "id": "PF-07",
+      "kind": "do",
+      "title": "Remove unused dependencies",
+      "text": "Uninstall packages nothing imports, and replace heavy libraries used for one small function with a few lines of code or a lighter alternative."
+    },
+    {
+      "id": "PF-08",
+      "kind": "dont",
+      "title": "Unnecessary re-renders",
+      "text": "In React and similar: keep state local, memoise expensive parts, avoid new objects in props on every render."
+    },
+    {
+      "id": "PF-09",
+      "kind": "do",
+      "title": "Debounce input handlers",
+      "text": "Search-as-you-type waits about 250–300 ms after the last keystroke."
+    },
+    {
+      "id": "PF-10",
+      "kind": "do",
+      "title": "Paginate or virtualise long lists",
+      "text": "Lists of more than about 50–100 items are paginated, loaded in batches, or virtualised so only visible rows are rendered."
+    },
+    {
+      "id": "PF-11",
+      "kind": "do",
+      "title": "Use a CDN",
+      "text": "Static files are served from a CDN close to visitors."
+    },
+    {
+      "id": "PF-12",
+      "kind": "do",
+      "title": "Cache API responses",
+      "text": "API responses are cached on the client and the server wherever the data allows."
+    },
+    {
+      "id": "PF-13",
+      "kind": "do",
+      "title": "Server-side caching",
+      "text": "Rendered pages or fragments are cached on the server or at the edge."
+    },
+    {
+      "id": "PF-14",
+      "kind": "do",
+      "title": "Cache expensive queries",
+      "text": "Expensive queries (statistics, rankings) are cached and refreshed on a schedule instead of computed per request."
+    },
+    {
+      "id": "PF-15",
+      "kind": "do",
+      "title": "Index the database",
+      "text": "Columns used for lookups, filters and sorting have database indexes."
+    },
+    {
+      "id": "PF-16",
+      "kind": "dont",
+      "title": "N+1 queries",
+      "text": "Load related data in one query (JOIN, eager loading), not one query per item."
+    },
+    {
+      "id": "PF-17",
+      "kind": "do",
+      "title": "Compress API payloads",
+      "text": "Return only needed fields; enable gzip or brotli."
+    },
+    {
+      "id": "PF-18",
+      "kind": "do",
+      "title": "Database connection pooling",
+      "text": "Servers reuse a pool of database connections instead of opening a new one per request; serverless functions use the provider's pooler."
+    },
+    {
+      "id": "PF-19",
+      "kind": "do",
+      "title": "Load balancing",
+      "text": "When traffic needs more than one server, a load balancer spreads it and health checks remove broken instances."
+    },
+    {
+      "id": "PF-20",
+      "kind": "do",
+      "title": "Lighthouse audit",
+      "text": "Run Lighthouse before launch on every page type, on mobile, and fix what it flags."
+    },
+    {
+      "id": "PF-21",
+      "kind": "do",
+      "title": "Heavy visuals stay light",
+      "text": "WebGL, video and large animations render only while visible, cap pixel ratio and frame rate, and have a static fallback for weak devices and reduced motion."
+    },
+    {
+      "id": "PF-22",
+      "kind": "do",
+      "title": "Prioritise the LCP image",
+      "text": "The largest image above the fold is a real `<img>` in the HTML with `fetchpriority=\"high\"`, never lazy-loaded."
+    },
+    {
+      "id": "PF-23",
+      "kind": "do",
+      "title": "Preconnect to critical origins",
+      "text": "`<link rel=\"preconnect\">` for the one or two third-party origins needed above the fold (fonts, image CDN)."
+    },
+    {
+      "id": "PF-24",
+      "kind": "do",
+      "title": "Long cache for hashed assets",
+      "text": "Fingerprinted files get `Cache-Control: public, max-age=31536000, immutable`; HTML is revalidated."
+    },
+    {
+      "id": "PF-25",
+      "kind": "do",
+      "title": "Critical CSS first",
+      "text": "CSS needed for the first screen is inlined or loaded first; the rest does not block rendering."
+    },
+    {
+      "id": "PF-26",
+      "kind": "do",
+      "title": "A performance budget",
+      "text": "Agree limits (for example under about 170 KB of compressed JavaScript for the first load, LCP under 2.5 s on a mid-range phone) and check them in CI (`GH-11`)."
+    },
+    {
+      "id": "PF-27",
+      "kind": "do",
+      "title": "Keep the back/forward cache working",
+      "text": "No `unload` handlers and no `Cache-Control: no-store` on normal pages, so Back is instant."
+    },
+    {
+      "id": "PF-28",
+      "kind": "do",
+      "title": "Break up long tasks",
+      "text": "JavaScript work over about 50 ms is split up or moved to a worker so input stays responsive (INP under 200 ms)."
+    },
+    {
+      "id": "PF-29",
+      "kind": "do",
+      "title": "Skip off-screen rendering",
+      "text": "`content-visibility: auto` with `contain-intrinsic-size` on long pages with heavy sections below the fold."
+    },
+    {
+      "id": "PF-30",
+      "kind": "dont",
+      "title": "Client-rendering static pages",
+      "text": "Do not ship a JavaScript app to render content that never changes per visitor. Pre-render it."
+    },
+    {
+      "id": "PF-31",
+      "kind": "dont",
+      "title": "Autoplaying hero video on mobile data",
+      "text": "Large background videos do not autoplay on small screens or with `prefers-reduced-data`; show a poster image."
+    },
+    {
+      "id": "PF-32",
+      "kind": "dont",
+      "title": "Too many third-party scripts",
+      "text": "Every tag, widget and pixel costs performance and privacy. Remove what nobody looks at; load the rest after interaction or consent."
+    },
+    {
+      "id": "PF-33",
+      "kind": "dont",
+      "title": "Huge DOM",
+      "text": "Avoid pages with thousands of nodes. Paginate, virtualise or simplify markup (about 1,500 nodes is a warning sign)."
+    }
+  ]
+}

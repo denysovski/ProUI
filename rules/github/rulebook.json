@@ -1,0 +1,160 @@
+{
+  "order": 22,
+  "prefix": "GH",
+  "folder": "github",
+  "name": "GitHub Workflow Rulebook",
+  "category": "Production",
+  "summary": "The repository, branches, commits, pull requests, CI, quality gates, deploys and releases.",
+  "check": [
+    "CI and quality workflows green on the main branch; branch protection on; Dependabot running."
+  ],
+  "sources": [
+    {
+      "title": "GitHub Docs: Actions",
+      "url": "https://docs.github.com/actions"
+    },
+    {
+      "title": "Conventional Commits",
+      "url": "https://www.conventionalcommits.org"
+    },
+    {
+      "title": "Semantic Versioning",
+      "url": "https://semver.org"
+    }
+  ],
+  "related": [],
+  "rules": [
+    {
+      "id": "GH-01",
+      "kind": "do",
+      "title": "One repository per site",
+      "text": "Each site has its own repository with a clear name, a description, topics and the live website URL set."
+    },
+    {
+      "id": "GH-02",
+      "kind": "do",
+      "title": "A real README",
+      "text": "What the site is, the live URL, how to install, run, build and deploy (commands that actually exist in `package.json`), where content is edited, and the tech stack."
+    },
+    {
+      "id": "GH-03",
+      "kind": "do",
+      "title": "Ignore what must not be committed",
+      "text": "`.gitignore` for `node_modules`, build output, `.env*` (except `.env.example`), OS and editor files, logs, local caches."
+    },
+    {
+      "id": "GH-04",
+      "kind": "do",
+      "title": "`.env.example`",
+      "text": "Every environment variable the project needs, with placeholder values and a comment. Real secrets live in GitHub Actions secrets or the host's secret store (`SEC-04`)."
+    },
+    {
+      "id": "GH-05",
+      "kind": "do",
+      "title": "Consistent formatting",
+      "text": "`.editorconfig`, a formatter (Prettier or the stack's equivalent) and a linter configured in the repo and run in CI."
+    },
+    {
+      "id": "GH-06",
+      "kind": "do",
+      "title": "`main` is always deployable",
+      "text": "Work happens on short branches (`feat/…`, `fix/…`, `chore/…`), merged by pull request."
+    },
+    {
+      "id": "GH-07",
+      "kind": "do",
+      "title": "Conventional commits",
+      "text": "`feat:`, `fix:`, `style:`, `perf:`, `refactor:`, `docs:`, `chore:`, `ci:`, with a short imperative summary. One logical change per commit."
+    },
+    {
+      "id": "GH-08",
+      "kind": "do",
+      "title": "Pull requests with a checklist",
+      "text": "Every PR uses the template: what changed, screenshots at mobile and desktop, XSlop passes touched, how it was tested."
+    },
+    {
+      "id": "GH-09",
+      "kind": "do",
+      "title": "Protected `main`",
+      "text": "Branch protection (or a ruleset): pull request required, CI must pass, no force pushes. For a solo project, at least require CI."
+    },
+    {
+      "id": "GH-10",
+      "kind": "do",
+      "title": "CI on every push and PR",
+      "text": "Install with a lockfile, lint, type-check, run tests if any, build."
+    },
+    {
+      "id": "GH-11",
+      "kind": "do",
+      "title": "Quality gates",
+      "text": "Lighthouse CI with budgets (performance, accessibility, SEO, best practices), an accessibility check (axe or pa11y), a link checker, and `scripts/xslop-scan.mjs` for slop patterns."
+    },
+    {
+      "id": "GH-12",
+      "kind": "do",
+      "title": "Preview deploys",
+      "text": "Each PR gets a preview URL (Vercel, Netlify, Cloudflare Pages) so changes are reviewed in a browser, not only in code."
+    },
+    {
+      "id": "GH-13",
+      "kind": "do",
+      "title": "Automated deploy from `main`",
+      "text": "GitHub Pages, Vercel, Netlify or Cloudflare deploy on merge; the hosting config lives in the repo (`vercel.json`, `netlify.toml`, `wrangler.toml` or the Pages workflow)."
+    },
+    {
+      "id": "GH-14",
+      "kind": "do",
+      "title": "Dependency and security automation",
+      "text": "Dependabot (or Renovate) for npm and GitHub Actions, secret scanning and push protection on, CodeQL or another code scan for apps with a backend (`SEC-14`)."
+    },
+    {
+      "id": "GH-15",
+      "kind": "do",
+      "title": "Releases",
+      "text": "Tag versions (`v1.0.0`) at launch and at major changes, with release notes generated from the commits."
+    },
+    {
+      "id": "GH-16",
+      "kind": "do",
+      "title": "Issue and PR templates",
+      "text": "A bug template (steps, expected, actual, device, screenshot) and a feature template, so feedback after launch arrives in a usable shape."
+    },
+    {
+      "id": "GH-17",
+      "kind": "do",
+      "title": "Semantic versions",
+      "text": "Releases follow semantic versioning (major.minor.patch), so it is clear what a change means."
+    },
+    {
+      "id": "GH-18",
+      "kind": "do",
+      "title": "A licence when the code is public",
+      "text": "Public repositories state a licence (MIT, Apache-2.0) or say clearly that all rights are reserved."
+    },
+    {
+      "id": "GH-19",
+      "kind": "do",
+      "title": "CODEOWNERS on team projects",
+      "text": "A `CODEOWNERS` file asks the right people to review changes in their area."
+    },
+    {
+      "id": "GH-20",
+      "kind": "dont",
+      "title": "Force-pushing to main",
+      "text": "Never rewrite the history of `main`. Revert with a new commit instead."
+    },
+    {
+      "id": "GH-21",
+      "kind": "dont",
+      "title": "Committing generated files",
+      "text": "No build output, `node_modules`, caches or large binaries in Git. Large media goes to a CDN or Git LFS."
+    },
+    {
+      "id": "GH-22",
+      "kind": "dont",
+      "title": "Long-lived branches",
+      "text": "Branches live days, not months. Merge small changes often to avoid painful conflicts."
+    }
+  ]
+}

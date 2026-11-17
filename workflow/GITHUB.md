@@ -1,6 +1,6 @@
 # GitHub workflow, from first commit to live site
 
-How every XSlop site lives on GitHub. Rules: `rules/production/github.md` (`GH`). Files to copy:
+How every XSlop site lives on GitHub. Rules: `rules/github/README.md` (`GH`). Files to copy:
 `templates/github/`. The agent asks before creating a repository, changing repository settings, adding
 secrets or publishing anything.
 

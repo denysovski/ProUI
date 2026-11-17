@@ -11,13 +11,15 @@ Brief ──▶ Research ──▶ ◆ Direction ──▶ Design system ──�
      Build the rest ◀── ◆ First screen ◀── Build the first screen ◀────────────────────────────────┘
           │
           ▼
-     Passes: Slop and craft ─▶ Type and colour ─▶ Layout ─▶ Components and copy ─▶ Product UI*
-             ─▶ States ─▶ Motion ─▶ Accessibility ─▶ SEO ─▶ Performance ─▶ Security ─▶ Production and legal
+     Design passes:     Anti-slop and craft ─▶ Type and colour ─▶ Layout ─▶ Images ─▶ Navigation ─▶ Copy
+     Behaviour passes:  Components ─▶ Forms ─▶ Product UI* ─▶ States ─▶ Motion ─▶ Accessibility
+     Production passes: SEO ─▶ Localisation** ─▶ Performance ─▶ Security ─▶ Launch and legal
           │
           ▼
      Quality check ──▶ GitHub and deploy ──▶ Handoff
 
-* only for operate surfaces (dashboards, tools, settings)
+*  only for operate surfaces (dashboards, tools, settings)
+** only for sites in more than one language or market
 
 ◆ = checkpoint: the agent shows options, asks, and waits for the user's choice
 ```
@@ -204,7 +206,7 @@ trade-off); otherwise decide and note it.
 
 ## Passes
 
-Run them in this order. For each pass: go through every rule of its group in `rules/`, fix the site,
+Run them in this order. For each pass: go through every rule of its rulebook in `rules/<rulebook>/README.md`, fix the site,
 verify with the method given, and tick the pass in `DECISIONS.md` (with any rule marked not applicable and
 why). Send the user one short line per finished pass.
 
@@ -225,11 +227,23 @@ why). Send the user one short line per finished pass.
 - Run `commands/layout.md`: squint test, spacing scale, rhythm, grid, container queries, safe areas.
 - Verify: screenshots at 360, 768, 1024, 1440, 1920 with a blurred copy for the squint test.
 
-### Pass: Components and copy (`IX`, `CP`)
+### Pass: Images and navigation (`IM`, `NV`)
 
-- Every control with every state; standard controls; overlays and forms by the rules; undo over confirm.
+- Real photography with one art direction, modern formats, focal points, alt text, no stock clichés.
+- Visible desktop navigation, current location marked, working footer, accessible mobile menu, shareable URLs.
+- Verify: Lighthouse image audits; find three key pages from home without search on phone and desktop.
+
+### Pass: Copy (`CP`)
+
 - Run `commands/clarify.md` over all text, errors and buttons.
-- Verify: tab through every control; trigger every overlay; read every button out of context.
+- Verify: read every button out of context; search for buzzwords, em dashes and "Oops".
+
+### Pass: Components and forms (`IX`, `FO`)
+
+- Every control with every state; standard controls; overlays by the rules; undo over confirm.
+- Forms in one column, labels above, autocomplete, validation after leaving a field, guest checkout, full price
+  early.
+- Verify: tab through every control; trigger every overlay; fill every form with keyboard and autofill.
 
 ### Pass: Product UI (`DB`, operate surfaces only)
 
@@ -262,6 +276,11 @@ why). Send the user one short line per finished pass.
 - Verify: full keyboard walk-through of every page and form; automated check (axe or Lighthouse
   accessibility); zoom to 200 % without broken layout.
 
+### Pass: Localisation (`LO`, multi-language sites only)
+
+- `lang`, `hreflang`, locale formats, language switcher in native names, everything translated.
+- Verify: switch language on a deep page; check long translations.
+
 ### Pass: SEO (`SEO`, `PE-05`, `PE-06`)
 
 - Unique titles and descriptions, canonical URLs, heading order, alt text, structured data, sitemap.xml,
@@ -287,7 +306,7 @@ why). Send the user one short line per finished pass.
   build output for keys and tokens, submit forms with bad and oversized input, and confirm error pages show no
   internals.
 
-### Pass: Production and legal (`PE`)
+### Pass: Launch and legal (`PE`)
 
 - Custom 404, primary action above the fold and sticky on mobile where it helps, breakpoints, favicon set,
   Open Graph, thank-you states, privacy policy, terms, cookie consent that loads non-essential scripts only

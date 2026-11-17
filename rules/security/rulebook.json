@@ -1,0 +1,185 @@
+{
+  "order": 21,
+  "prefix": "SEC",
+  "folder": "security",
+  "name": "Security Rulebook",
+  "category": "Production",
+  "summary": "Protecting visitors, data and the site itself, from headers to authentication.",
+  "check": [
+    "`curl -I` the live site for headers; `npm audit`; search the repo and build for keys.",
+    "Submit forms with bad and oversized input; check error pages show no internals."
+  ],
+  "sources": [
+    {
+      "title": "OWASP Top 10",
+      "url": "https://owasp.org/www-project-top-ten/"
+    },
+    {
+      "title": "MDN: HTTP security headers",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+    },
+    {
+      "title": "securityheaders.com",
+      "url": "https://securityheaders.com"
+    }
+  ],
+  "related": [],
+  "rules": [
+    {
+      "id": "SEC-01",
+      "kind": "do",
+      "title": "HTTPS only",
+      "text": "The site is served only over HTTPS, with HSTS (`Strict-Transport-Security: max-age=31536000; includeSubDomains`) once HTTPS is confirmed working."
+    },
+    {
+      "id": "SEC-02",
+      "kind": "do",
+      "title": "Content Security Policy",
+      "text": "A CSP header (or meta tag on static hosting) that allows only the origins the site really uses; no `unsafe-eval`, avoid `unsafe-inline` for scripts (use nonces or hashes)."
+    },
+    {
+      "id": "SEC-03",
+      "kind": "do",
+      "title": "Security headers",
+      "text": "`X-Content-Type-Options: nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy` that turns off unused features (camera, microphone, geolocation), and `frame-ancestors 'none'` (or `X-Frame-Options: DENY`) unless embedding is wanted."
+    },
+    {
+      "id": "SEC-04",
+      "kind": "dont",
+      "title": "Secrets in the client",
+      "text": "API keys with write access, tokens and passwords never appear in front-end code, the repository or build output. Use environment variables on the server; commit an `.env.example`, never `.env`."
+    },
+    {
+      "id": "SEC-05",
+      "kind": "do",
+      "title": "Validate input on the server",
+      "text": "Every form and API endpoint checks type, length and format on the server, not only in the browser."
+    },
+    {
+      "id": "SEC-06",
+      "kind": "do",
+      "title": "Escape output",
+      "text": "Never insert user content as HTML (`innerHTML`, `dangerouslySetInnerHTML`, `v-html`) without sanitising it; prefer text nodes."
+    },
+    {
+      "id": "SEC-07",
+      "kind": "do",
+      "title": "Injection-safe data access",
+      "text": "Parameterised queries or an ORM; no string-built SQL; the database user has only the rights it needs."
+    },
+    {
+      "id": "SEC-08",
+      "kind": "do",
+      "title": "Forms protected from abuse",
+      "text": "CSRF protection on state-changing requests, rate limiting, and spam protection that does not punish people (honeypot field, time check, or a privacy-friendly challenge)."
+    },
+    {
+      "id": "SEC-09",
+      "kind": "do",
+      "title": "Safe cookies and sessions",
+      "text": "`Secure`, `HttpOnly` and `SameSite=Lax` (or `Strict`) cookies; sessions expire; log-out really ends the session."
+    },
+    {
+      "id": "SEC-10",
+      "kind": "do",
+      "title": "Authentication done properly",
+      "text": "When the site has accounts: use a proven provider or library, hash passwords with a slow algorithm (argon2 or bcrypt), offer two-factor where it matters, and never reveal whether an email is registered."
+    },
+    {
+      "id": "SEC-11",
+      "kind": "do",
+      "title": "Safe uploads",
+      "text": "When the site accepts files: check type and size on the server, rename files, store them outside the web root or in object storage, and never execute them."
+    },
+    {
+      "id": "SEC-12",
+      "kind": "do",
+      "title": "Restricted CORS",
+      "text": "Allow only the origins that need the API; never `*` with credentials."
+    },
+    {
+      "id": "SEC-13",
+      "kind": "do",
+      "title": "Third-party code is pinned and checked",
+      "text": "Exact versions for CDN scripts with Subresource Integrity (`integrity` + `crossorigin`), sandboxed iframes for embeds, as few third-party scripts as possible."
+    },
+    {
+      "id": "SEC-14",
+      "kind": "do",
+      "title": "Dependencies audited",
+      "text": "Run `npm audit` (or the stack's equivalent) and fix high and critical issues; remove unused packages (`PF-07`); keep a lockfile."
+    },
+    {
+      "id": "SEC-15",
+      "kind": "do",
+      "title": "Errors without leaks",
+      "text": "Production error pages and API errors show a friendly message, never stack traces, file paths, queries or versions."
+    },
+    {
+      "id": "SEC-16",
+      "kind": "do",
+      "title": "Safe external links",
+      "text": "`rel=\"noopener noreferrer\"` on links that open in a new tab."
+    },
+    {
+      "id": "SEC-17",
+      "kind": "do",
+      "title": "Collect only what is needed",
+      "text": "Minimal personal data, stored securely, with a retention period and a way to delete it; matches the privacy policy (`PE-08`)."
+    },
+    {
+      "id": "SEC-18",
+      "kind": "do",
+      "title": "Security contact",
+      "text": "`/.well-known/security.txt` with a contact address for reporting issues."
+    },
+    {
+      "id": "SEC-19",
+      "kind": "do",
+      "title": "Rate-limit sign-in and forms",
+      "text": "Repeated failed sign-ins, password resets and form posts are slowed down or blocked per IP and account."
+    },
+    {
+      "id": "SEC-20",
+      "kind": "do",
+      "title": "Verify webhooks",
+      "text": "Incoming webhooks (payments, forms) are checked by signature before anything happens."
+    },
+    {
+      "id": "SEC-21",
+      "kind": "do",
+      "title": "Least-privilege keys",
+      "text": "API keys and service accounts have only the rights they need, and are rotated when people leave or keys leak."
+    },
+    {
+      "id": "SEC-22",
+      "kind": "do",
+      "title": "Expiring reset links",
+      "text": "Password reset and magic links are single-use and expire within about an hour."
+    },
+    {
+      "id": "SEC-23",
+      "kind": "dont",
+      "title": "Storing card data",
+      "text": "Never store or log card numbers. Use the payment provider's hosted fields or checkout."
+    },
+    {
+      "id": "SEC-24",
+      "kind": "dont",
+      "title": "Exposed internals on the server",
+      "text": "No reachable `.git`, `.env`, backups, directory listings or server version headers in production."
+    },
+    {
+      "id": "SEC-25",
+      "kind": "dont",
+      "title": "Your own crypto",
+      "text": "Never invent hashing, encryption or token schemes. Use the platform's and well-known libraries' implementations."
+    },
+    {
+      "id": "SEC-26",
+      "kind": "dont",
+      "title": "Personal data in logs and URLs",
+      "text": "Logs, analytics and URLs never contain passwords, tokens, card data or unnecessary personal data."
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "order": 4,
+  "prefix": "CL",
+  "folder": "color",
+  "name": "Colour Rulebook",
+  "category": "Design",
+  "summary": "Colour strategy, roles, OKLCH, contrast and dark mode.",
+  "check": [
+    "Make a contrast table of every text/background pair in light and dark.",
+    "View the site with a colour-blindness simulator (DevTools Rendering panel)."
+  ],
+  "sources": [
+    {
+      "title": "Apple HIG: Color",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/color"
+    },
+    {
+      "title": "Apple HIG: Dark Mode",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/dark-mode"
+    },
+    {
+      "title": "OKLCH in CSS (Evil Martians)",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl"
+    }
+  ],
+  "related": [
+    "SL-01",
+    "SL-02",
+    "SL-03",
+    "SL-04",
+    "SL-05",
+    "SL-06",
+    "SL-07",
+    "SL-08",
+    "SL-53",
+    "SL-54",
+    "SL-55",
+    "SL-64",
+    "SL-65"
+  ],
+  "rules": [
+    {
+      "id": "CL-01",
+      "kind": "do",
+      "title": "Pick a colour strategy before picking colours",
+      "text": "One of: **Restrained** (tinted neutrals plus one accent; the default for product UI), **Committed** (one strong colour covers 30–60 % of the surface), **Full palette** (three or four named roles), **Drenched** (the surface is the colour). Write the choice into the decisions record."
+    },
+    {
+      "id": "CL-02",
+      "kind": "do",
+      "title": "Light or dark is decided, never defaulted",
+      "text": "Write one sentence about where the site is used (who, where, under what light) and let it decide. Neither mode is the safe choice."
+    },
+    {
+      "id": "CL-03",
+      "kind": "do",
+      "title": "Colours come from the subject",
+      "text": "Take them from the product, its photography, its materials or its place, not from a generic palette generator. See `SL-01`, `SL-64` to `SL-67`."
+    },
+    {
+      "id": "CL-04",
+      "kind": "do",
+      "title": "Roles, not swatches",
+      "text": "Name colours by job: `bg`, `surface`, `surface-raised`, `text`, `text-muted`, `border`, `accent`, `accent-contrast`, `focus`, `success`, `warning`, `danger`, `info`. Components use roles, never raw values."
+    },
+    {
+      "id": "CL-05",
+      "kind": "do",
+      "title": "Define colours in OKLCH",
+      "text": "`oklch()` keeps lightness steps even across hues, so ramps and dark-mode variants are predictable. Keep sRGB fallbacks only where old browsers matter."
+    },
+    {
+      "id": "CL-06",
+      "kind": "do",
+      "title": "Tint the neutrals",
+      "text": "Greys lean slightly towards the brand hue (chroma about 0.005–0.02). Pure `#000` and `#fff` are rarely the right ground; near-black and off-white are."
+    },
+    {
+      "id": "CL-07",
+      "kind": "do",
+      "title": "A small palette",
+      "text": "About 8–12 tokens for a marketing site, a few more for an app with states. Fewer opacities and fewer shades (`SL-07`)."
+    },
+    {
+      "id": "CL-08",
+      "kind": "do",
+      "title": "One meaning per colour",
+      "text": "If the accent means \"you can click this\", do not use it for decoration or static text. Status colours mean status only."
+    },
+    {
+      "id": "CL-09",
+      "kind": "do",
+      "title": "Contrast table before building",
+      "text": "Check every text/background pair you will use: 4.5:1 for body text, 3:1 for large text (about 24 px, or 19 px bold), icons and control borders, 7:1 for small text when possible. Check both themes and hover/disabled states."
+    },
+    {
+      "id": "CL-10",
+      "kind": "dont",
+      "title": "Colour as the only signal",
+      "text": "Errors, status, chart series and required fields also carry a label, icon, pattern or shape. Check with a colour-blindness simulation."
+    },
+    {
+      "id": "CL-11",
+      "kind": "dont",
+      "title": "Grey text on coloured backgrounds",
+      "text": "Muted grey on a coloured surface drops contrast; use a tint of the surface colour or white/near-black at a checked ratio."
+    },
+    {
+      "id": "CL-12",
+      "kind": "do",
+      "title": "Dark mode is redesigned, not inverted",
+      "text": "Dim, slightly tinted grounds; raised surfaces get lighter, not shadowed; accents usually lose a little chroma and gain lightness; body text is off-white, not pure white. Large white areas in images are softened."
+    },
+    {
+      "id": "CL-13",
+      "kind": "do",
+      "title": "Follow the system setting",
+      "text": "Respect `prefers-color-scheme`; add a manual switch only when people ask for it, and remember their choice. Support `prefers-contrast: more` with stronger borders and text."
+    },
+    {
+      "id": "CL-14",
+      "kind": "do",
+      "title": "Elevation in dark mode is lighter, not darker",
+      "text": "Each raised layer (card, popover, dialog) is a step lighter than the one below."
+    },
+    {
+      "id": "CL-15",
+      "kind": "do",
+      "title": "Accent sparingly",
+      "text": "The primary action, links, the current selection and focus. Not every icon, heading and border (`DC-11`)."
+    },
+    {
+      "id": "CL-16",
+      "kind": "do",
+      "title": "Respect culture and context",
+      "text": "Red can mean danger, loss or luck; green can mean gain or not. In charts and finance follow the audience's convention, and label the meaning."
+    },
+    {
+      "id": "CL-17",
+      "kind": "do",
+      "title": "Define state colours once",
+      "text": "Success, warning, danger and info are tokens with a background, border and text variant each, checked for contrast in both themes."
+    },
+    {
+      "id": "CL-18",
+      "kind": "do",
+      "title": "A visible focus colour",
+      "text": "The focus ring has its own token with 3:1 contrast against every surface it can appear on, not the accent at low opacity."
+    },
+    {
+      "id": "CL-19",
+      "kind": "dont",
+      "title": "Red and green as the only difference",
+      "text": "Never rely on a red/green pair alone for good and bad, up and down, or valid and invalid; add a sign, icon or label (`CL-10`)."
+    },
+    {
+      "id": "CL-20",
+      "kind": "dont",
+      "title": "Several saturated accents in one view",
+      "text": "One saturated accent per view. A second strong colour competes with the primary action."
+    },
+    {
+      "id": "CL-21",
+      "kind": "dont",
+      "title": "Pure black text on pure white for long reading",
+      "text": "For long reading, soften the extremes slightly (near-black on off-white) to reduce glare, while keeping contrast well above 7:1."
+    }
+  ]
+}

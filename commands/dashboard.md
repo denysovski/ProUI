@@ -1,6 +1,6 @@
 # XSlop dashboard
 
-Build or review product UI. Load `modes/operate.md`, `rules/product/dashboards.md`,
+Build or review product UI. Load `modes/operate.md`, `rules/dashboards/README.md`,
 `inspiration/dashboards.md` and `recipes/dashboard.md`.
 
 - Ask (or read from `PRODUCT.md`) the main question the dashboard answers and who asks it how often.

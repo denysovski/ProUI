@@ -1,6 +1,6 @@
 # XSlop layout
 
-A spacing, grid and hierarchy pass. Load `rules/design/layout.md`.
+A spacing, grid and hierarchy pass. Load `rules/layout/README.md`.
 
 - Squint test on each viewport: one focal point, then clear groups (`LY-02`).
 - Every spacing value on the 4 px scale (`LY-05`); groups separated by about twice their inner spacing

@@ -1,0 +1,140 @@
+{
+  "order": 10,
+  "prefix": "FO",
+  "folder": "forms",
+  "name": "Forms and Checkout Rulebook",
+  "category": "Interaction",
+  "summary": "Forms people can finish: fields, labels, validation, errors and checkout.",
+  "check": [
+    "Fill every form with the keyboard and with browser autofill.",
+    "Submit with errors: values kept, messages next to fields, focus moves to the first error."
+  ],
+  "sources": [
+    {
+      "title": "Baymard: Checkout usability",
+      "url": "https://baymard.com/research/checkout-usability"
+    },
+    {
+      "title": "GOV.UK Design System: Patterns",
+      "url": "https://design-system.service.gov.uk/patterns/"
+    },
+    {
+      "title": "HTML autocomplete tokens (MDN)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete"
+    }
+  ],
+  "related": [
+    "SL-47",
+    "SL-48"
+  ],
+  "rules": [
+    {
+      "id": "FO-01",
+      "kind": "do",
+      "title": "One column",
+      "text": "Forms run in a single column, in the order people think about the information. Short related fields (city and postcode) may share a row."
+    },
+    {
+      "id": "FO-02",
+      "kind": "do",
+      "title": "Labels above fields",
+      "text": "Every field has a visible label above it, always visible while typing (`IX-11`)."
+    },
+    {
+      "id": "FO-03",
+      "kind": "do",
+      "title": "Mark both required and optional",
+      "text": "Mark required fields and optional ones explicitly, so nobody has to guess."
+    },
+    {
+      "id": "FO-04",
+      "kind": "do",
+      "title": "Autocomplete and the right keyboard",
+      "text": "`autocomplete` tokens (name, email, tel, street-address, postal-code, cc-number) and `inputmode` on every field, so browsers fill them in and phones show the right keyboard."
+    },
+    {
+      "id": "FO-05",
+      "kind": "do",
+      "title": "Validate after leaving the field",
+      "text": "Check a field when the user leaves it and on submit, not on every keystroke. Show success quietly and errors next to the field."
+    },
+    {
+      "id": "FO-06",
+      "kind": "do",
+      "title": "Error summary on long forms",
+      "text": "After a failed submit of a long form, list all errors at the top with links to each field, and move focus there."
+    },
+    {
+      "id": "FO-07",
+      "kind": "do",
+      "title": "Keep everything on error",
+      "text": "A failed submit keeps every value, including payment fields where allowed (`IX-14`)."
+    },
+    {
+      "id": "FO-08",
+      "kind": "do",
+      "title": "Guest checkout first",
+      "text": "Shops let people buy as a guest as the most prominent option and offer an account after the order."
+    },
+    {
+      "id": "FO-09",
+      "kind": "do",
+      "title": "Full price early",
+      "text": "Shipping, taxes and fees are visible in the cart, before the payment step."
+    },
+    {
+      "id": "FO-10",
+      "kind": "do",
+      "title": "Named steps in multi-step forms",
+      "text": "Multi-step forms show the steps by name (\"Delivery\", \"Payment\") with the current one marked. No step numbers (`SL-17`)."
+    },
+    {
+      "id": "FO-11",
+      "kind": "do",
+      "title": "Show password option",
+      "text": "Password fields have a show/hide toggle and accept paste and password managers."
+    },
+    {
+      "id": "FO-12",
+      "kind": "do",
+      "title": "Address lookup where it helps",
+      "text": "Offer address autocomplete or postcode lookup, with manual entry always possible."
+    },
+    {
+      "id": "FO-13",
+      "kind": "dont",
+      "title": "Placeholder as the label",
+      "text": "Never use placeholder text as the only label. It disappears while typing and has poor contrast."
+    },
+    {
+      "id": "FO-14",
+      "kind": "dont",
+      "title": "Asking for what is not needed",
+      "text": "No title, gender, birth date, company or phone unless the task truly needs it now (`SL-47`)."
+    },
+    {
+      "id": "FO-15",
+      "kind": "dont",
+      "title": "Forced account creation",
+      "text": "Never require an account to buy, book or download something."
+    },
+    {
+      "id": "FO-16",
+      "kind": "dont",
+      "title": "Splitting simple fields",
+      "text": "Do not split names, phone numbers or dates into several boxes unless the format really requires it."
+    },
+    {
+      "id": "FO-17",
+      "kind": "dont",
+      "title": "CAPTCHA by default",
+      "text": "No puzzle for every visitor. Use invisible protection (honeypot, time check, rate limits) and show a challenge only on suspicious traffic (`SEC-08`)."
+    },
+    {
+      "id": "FO-18",
+      "kind": "dont",
+      "title": "Clearing the form or resetting it",
+      "text": "No \"Reset\" button, and never clear fields after an error or a session timeout."
+    }
+  ]
+}

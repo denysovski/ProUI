@@ -1,6 +1,6 @@
 # XSlop animate
 
-Plan motion before adding it. Load `rules/interaction/motion.md` and `recipes/RECIPES.md`.
+Plan motion before adding it. Load `rules/motion/README.md` and `recipes/RECIPES.md`.
 
 Write a short motion plan:
 

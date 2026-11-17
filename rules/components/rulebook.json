@@ -1,0 +1,186 @@
+{
+  "order": 9,
+  "prefix": "IX",
+  "folder": "components",
+  "name": "Components and Interaction Rulebook",
+  "category": "Interaction",
+  "summary": "Controls, overlays, feedback and behaviour that feel familiar and trustworthy.",
+  "check": [
+    "Tab through every control and check every state.",
+    "Trigger every overlay: focus moves in, Escape closes, focus returns."
+  ],
+  "sources": [
+    {
+      "title": "NN/g: Auto-forwarding carousels",
+      "url": "https://www.nngroup.com/articles/auto-forwarding/"
+    },
+    {
+      "title": "ARIA Authoring Practices Guide",
+      "url": "https://www.w3.org/WAI/ARIA/apg/"
+    }
+  ],
+  "related": [
+    "SL-19",
+    "SL-34",
+    "SL-46",
+    "SL-48"
+  ],
+  "rules": [
+    {
+      "id": "IX-01",
+      "kind": "do",
+      "title": "Every control has all its states",
+      "text": "Default, hover, focus-visible, active/pressed, disabled, loading, error, and selected where it applies. A control without a focus style is unfinished."
+    },
+    {
+      "id": "IX-02",
+      "kind": "do",
+      "title": "Standard controls stay standard",
+      "text": "Use native `<button>`, `<a>`, `<select>`, `<input>`, `<dialog>`, `<details>` or well-tested accessible components. Do not reinvent scrollbars, selects, checkboxes or date pickers for flavour; restyle them instead."
+    },
+    {
+      "id": "IX-03",
+      "kind": "do",
+      "title": "Buttons look like buttons, links look like links",
+      "text": "Buttons for actions, links for navigation. Links in text are underlined or otherwise clearly distinct without relying only on colour."
+    },
+    {
+      "id": "IX-04",
+      "kind": "do",
+      "title": "One button vocabulary",
+      "text": "Primary, secondary, tertiary (text) and destructive, the same shapes and sizes everywhere. If \"Save\" looks different on two screens, one is wrong."
+    },
+    {
+      "id": "IX-05",
+      "kind": "do",
+      "title": "Target size",
+      "text": "Touch targets at least 44 × 44 px (24 × 24 px is the WCAG AA floor; aim for 44), with space between neighbours. Small icons get padding to reach it."
+    },
+    {
+      "id": "IX-06",
+      "kind": "do",
+      "title": "Hover is a bonus",
+      "text": "Nothing important only appears on hover; touch screens have no hover. Hover effects never move the element away from the pointer or shift its neighbours."
+    },
+    {
+      "id": "IX-07",
+      "kind": "do",
+      "title": "Modal is the last choice",
+      "text": "Prefer inline editing, expanding sections, a side sheet or a new page. Use a modal only for a focused task that must be finished or cancelled before going on."
+    },
+    {
+      "id": "IX-08",
+      "kind": "do",
+      "title": "Dialogs done right",
+      "text": "`<dialog>` or an accessible equivalent: focus moves in, stays trapped, Escape closes, focus returns to the trigger, background is inert, a visible close button and a clear title."
+    },
+    {
+      "id": "IX-09",
+      "kind": "do",
+      "title": "Overlays escape their container",
+      "text": "Dropdowns and popovers use the popover API, `<dialog>`, `position: fixed` or a portal so `overflow: hidden` parents do not clip them."
+    },
+    {
+      "id": "IX-10",
+      "kind": "do",
+      "title": "Toasts for confirmation, not for errors that need action",
+      "text": "Toasts disappear; anything the user must fix stays on the screen next to the cause (`ST-09`)."
+    },
+    {
+      "id": "IX-11",
+      "kind": "do",
+      "title": "Labels above fields, always visible",
+      "text": "Placeholders are examples, not labels."
+    },
+    {
+      "id": "IX-12",
+      "kind": "do",
+      "title": "The right input",
+      "text": "`type=\"email\"`, `tel`, `number` only for real numbers, `autocomplete` attributes, `inputmode`, and native pickers where they work well."
+    },
+    {
+      "id": "IX-13",
+      "kind": "do",
+      "title": "Forgiving input",
+      "text": "Accept spaces in phone numbers and card numbers, trim whitespace, accept both decimal separators where the locale needs it."
+    },
+    {
+      "id": "IX-14",
+      "kind": "do",
+      "title": "Preserve input",
+      "text": "Never clear a form after an error. Autosave long forms and drafts (`ST-08`)."
+    },
+    {
+      "id": "IX-15",
+      "kind": "do",
+      "title": "Undo over confirm",
+      "text": "For reversible actions (archive, remove from cart), act immediately and offer undo. Confirm only destructive, irreversible ones, and name what will be lost."
+    },
+    {
+      "id": "IX-16",
+      "kind": "do",
+      "title": "Immediate feedback",
+      "text": "Every action responds within about 100 ms (pressed state, spinner on the button, optimistic update) and confirms its result (`DC-20`, `ST-10`)."
+    },
+    {
+      "id": "IX-17",
+      "kind": "do",
+      "title": "Keyboard and shortcuts",
+      "text": "Everything works with the keyboard in a logical order; frequent actions in apps get shortcuts (for example `/` for search, `⌘K` for a command menu) shown in tooltips or menus."
+    },
+    {
+      "id": "IX-18",
+      "kind": "do",
+      "title": "Touch gestures have a fallback",
+      "text": "Swipe, drag and long-press always have a visible button alternative; drag surfaces set `touch-action` and clean up when a gesture is interrupted."
+    },
+    {
+      "id": "IX-19",
+      "kind": "do",
+      "title": "Sticky actions on long forms and pages",
+      "text": "On long forms and product pages, the main action stays reachable (a sticky footer bar on phones) without covering content."
+    },
+    {
+      "id": "IX-20",
+      "kind": "do",
+      "title": "Confirm destructive actions by name",
+      "text": "Irreversible actions say exactly what will be lost and use a specific button label (\"Delete 3 invoices\"), not \"OK\"."
+    },
+    {
+      "id": "IX-21",
+      "kind": "dont",
+      "title": "Auto-rotating carousels",
+      "text": "No hero carousel that changes slides on its own. People miss the content and lose control; show the most important item, or let people move the carousel themselves with visible controls."
+    },
+    {
+      "id": "IX-22",
+      "kind": "dont",
+      "title": "Disabled buttons without a reason",
+      "text": "A disabled button says why (helper text or a tooltip), or stays enabled and explains what is missing when pressed."
+    },
+    {
+      "id": "IX-23",
+      "kind": "dont",
+      "title": "Essential information only in tooltips",
+      "text": "Tooltips are for hints. Anything needed to complete a task is visible on the page."
+    },
+    {
+      "id": "IX-24",
+      "kind": "dont",
+      "title": "Infinite scroll that hides the footer",
+      "text": "Infinite lists offer \"Load more\" or pagination when the footer, contact or legal links live below them."
+    },
+    {
+      "id": "IX-25",
+      "kind": "dont",
+      "title": "Custom cursors in working interfaces",
+      "text": "The system cursor stays in product UI and forms. Custom cursors are a style choice for portfolios and experiences only."
+    },
+    {
+      "id": "IX-26",
+      "kind": "dont",
+      "title": "Pop-ups on arrival",
+      "text": "No newsletter, discount or chat pop-up on page load or within the first scroll. Offer it inline or after a clear sign of interest."
+    }
+  ]
+}

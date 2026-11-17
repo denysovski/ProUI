@@ -1,0 +1,204 @@
+{
+  "order": 19,
+  "prefix": "SEO",
+  "folder": "seo",
+  "name": "SEO Rulebook",
+  "category": "Production",
+  "summary": "Being found: technical SEO, content signals, structured data and what search engines penalise.",
+  "check": [
+    "View source for head tags; validate structured data; Lighthouse SEO.",
+    "Crawl the site for broken links, redirects and noindex.",
+    "Submit the sitemap in Search Console."
+  ],
+  "sources": [
+    {
+      "title": "Google Search Essentials",
+      "url": "https://developers.google.com/search/docs/essentials"
+    },
+    {
+      "title": "Google spam policies",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+    },
+    {
+      "title": "Schema.org",
+      "url": "https://schema.org"
+    }
+  ],
+  "related": [],
+  "rules": [
+    {
+      "id": "SEO-01",
+      "kind": "do",
+      "title": "Sitemap",
+      "text": "A `sitemap.xml` lists every public page and is linked from robots.txt."
+    },
+    {
+      "id": "SEO-02",
+      "kind": "do",
+      "title": "robots.txt",
+      "text": "A `robots.txt` allows the public site and blocks private areas."
+    },
+    {
+      "id": "SEO-03",
+      "kind": "dont",
+      "title": "Stray noindex",
+      "text": "Make sure no public page still carries a `noindex` left from development."
+    },
+    {
+      "id": "SEO-04",
+      "kind": "do",
+      "title": "Canonical tags",
+      "text": "One canonical URL per page (`<link rel=\"canonical\">`)."
+    },
+    {
+      "id": "SEO-05",
+      "kind": "do",
+      "title": "Unique meta title per page",
+      "text": "Specific, about 60 characters at most."
+    },
+    {
+      "id": "SEO-06",
+      "kind": "do",
+      "title": "Unique meta description per page",
+      "text": "About 155 characters, written to earn the click."
+    },
+    {
+      "id": "SEO-07",
+      "kind": "do",
+      "title": "One H1 per page",
+      "text": "Each page has exactly one H1 that states what the page is about."
+    },
+    {
+      "id": "SEO-08",
+      "kind": "do",
+      "title": "Logical heading order",
+      "text": "H1 → H2 → H3, no skipped levels for styling reasons."
+    },
+    {
+      "id": "SEO-09",
+      "kind": "do",
+      "title": "Alt text on meaningful images",
+      "text": "Every meaningful image has alt text; purely decorative images have an empty `alt=\"\"`."
+    },
+    {
+      "id": "SEO-10",
+      "kind": "do",
+      "title": "Schema markup",
+      "text": "JSON-LD for the relevant types: Organization, Product, Article, FAQPage, BreadcrumbList, LocalBusiness."
+    },
+    {
+      "id": "SEO-11",
+      "kind": "do",
+      "title": "Internal links",
+      "text": "Related pages link to each other with descriptive anchor text."
+    },
+    {
+      "id": "SEO-12",
+      "kind": "dont",
+      "title": "Broken links",
+      "text": "Check every internal and external link before launch."
+    },
+    {
+      "id": "SEO-13",
+      "kind": "do",
+      "title": "Clean URL slugs",
+      "text": "`/shop/m1-puffer`, not `/page?id=8273`."
+    },
+    {
+      "id": "SEO-14",
+      "kind": "do",
+      "title": "HTTPS everywhere",
+      "text": "Every page is served over HTTPS, with a permanent redirect from http."
+    },
+    {
+      "id": "SEO-15",
+      "kind": "do",
+      "title": "Search Console verified",
+      "text": "The site is verified in Google Search Console and the sitemap is submitted."
+    },
+    {
+      "id": "SEO-16",
+      "kind": "do",
+      "title": "llms.txt",
+      "text": "An `llms.txt` at the site root gives a short plain description of the site and links to its key pages for AI assistants."
+    },
+    {
+      "id": "SEO-17",
+      "kind": "do",
+      "title": "Server-rendered content",
+      "text": "Main content and links are in the HTML the server sends (static or server-rendered), not only built by JavaScript in the browser."
+    },
+    {
+      "id": "SEO-18",
+      "kind": "do",
+      "title": "301 redirects for moved pages",
+      "text": "Changed URLs redirect permanently to the new address; nothing important returns 404 after a redesign."
+    },
+    {
+      "id": "SEO-19",
+      "kind": "do",
+      "title": "Real 404 status",
+      "text": "Missing pages return HTTP 404 (not 200 with an error message), so they are not indexed as \"soft 404s\"."
+    },
+    {
+      "id": "SEO-20",
+      "kind": "do",
+      "title": "Descriptive image file names",
+      "text": "`m1-puffer-jacket-black.avif`, not `IMG_2381.jpg`."
+    },
+    {
+      "id": "SEO-21",
+      "kind": "do",
+      "title": "Breadcrumbs with structured data",
+      "text": "Deeper pages show breadcrumbs and mark them up as BreadcrumbList."
+    },
+    {
+      "id": "SEO-22",
+      "kind": "do",
+      "title": "Show who is behind the site",
+      "text": "About, contact and author information make the site trustworthy to people and search engines."
+    },
+    {
+      "id": "SEO-23",
+      "kind": "do",
+      "title": "Local business consistency",
+      "text": "Local businesses keep name, address and phone identical on the site, Google Business Profile and directories, and add LocalBusiness schema with opening hours."
+    },
+    {
+      "id": "SEO-24",
+      "kind": "do",
+      "title": "Accurate sitemap dates",
+      "text": "`lastmod` in the sitemap changes only when the page content really changes."
+    },
+    {
+      "id": "SEO-25",
+      "kind": "dont",
+      "title": "Intrusive interstitials",
+      "text": "No pop-up that covers the main content right after arriving from search, especially on phones. Legal banners (cookies, age checks) are the exception."
+    },
+    {
+      "id": "SEO-26",
+      "kind": "dont",
+      "title": "Duplicate pages",
+      "text": "No identical content under several URLs (with and without slash, parameters, http and https). Pick one and point canonicals and redirects to it."
+    },
+    {
+      "id": "SEO-27",
+      "kind": "dont",
+      "title": "Keyword stuffing and hidden text",
+      "text": "No repeated keywords for search engines, no text hidden from people. Write for readers."
+    },
+    {
+      "id": "SEO-28",
+      "kind": "dont",
+      "title": "Doorway pages",
+      "text": "No near-identical pages for every city or keyword. One good page per real offer."
+    },
+    {
+      "id": "SEO-29",
+      "kind": "dont",
+      "title": "Orphan pages",
+      "text": "Every page that should rank is linked from at least one other page and listed in the sitemap."
+    }
+  ]
+}

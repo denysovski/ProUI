@@ -1,6 +1,6 @@
 # Gradients: tools and how to use them
 
-Rules: `rules/design/gradients.md` (`GR`). Code: `recipes/gradients.md`.
+Rules: `rules/gradients/README.md` (`GR`). Code: `recipes/gradients.md`.
 
 ## Tools
 

@@ -1,0 +1,199 @@
+{
+  "order": 12,
+  "prefix": "MO",
+  "folder": "motion",
+  "name": "Motion Rulebook",
+  "category": "Interaction",
+  "summary": "Timing, easing and choreography that make an interface feel fast and physical.",
+  "check": [
+    "Record the signature moment; check the performance panel for long frames.",
+    "Turn on reduced motion and check every animation has a calm alternative."
+  ],
+  "sources": [
+    {
+      "title": "Apple HIG: Motion",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/motion"
+    },
+    {
+      "title": "MDN: View Transitions API",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API"
+    }
+  ],
+  "related": [
+    "SL-35",
+    "SL-36",
+    "SL-68",
+    "SL-69",
+    "SL-72"
+  ],
+  "rules": [
+    {
+      "id": "MO-01",
+      "kind": "do",
+      "title": "Ease-out for entrances",
+      "text": "Things that appear start fast and settle (for example `cubic-bezier(0.22, 1, 0.36, 1)`)."
+    },
+    {
+      "id": "MO-02",
+      "kind": "do",
+      "title": "Dropdowns at 150–250 ms",
+      "text": "Menus, selects and tooltips open quickly."
+    },
+    {
+      "id": "MO-03",
+      "kind": "do",
+      "title": "Stagger list rows by about 30 ms",
+      "text": "Each row starts slightly after the previous one. Cap the total stagger so long lists do not crawl."
+    },
+    {
+      "id": "MO-04",
+      "kind": "do",
+      "title": "Scale to 0.97 on press",
+      "text": "Buttons shrink slightly while pressed."
+    },
+    {
+      "id": "MO-05",
+      "kind": "do",
+      "title": "Stretch moving knobs about 12 %",
+      "text": "A toggle knob or slider thumb stretches in its direction of travel while moving, then settles."
+    },
+    {
+      "id": "MO-06",
+      "kind": "do",
+      "title": "Stagger details as they settle",
+      "text": "The container arrives first, then its title, then the smaller details."
+    },
+    {
+      "id": "MO-07",
+      "kind": "do",
+      "title": "Arcs for object movement",
+      "text": "Objects travelling across the screen follow a slight curve, not a straight line."
+    },
+    {
+      "id": "MO-08",
+      "kind": "do",
+      "title": "Pulse to confirm success",
+      "text": "A short scale pulse (about 1 → 1.06 → 1) when something succeeds."
+    },
+    {
+      "id": "MO-09",
+      "kind": "do",
+      "title": "Ease-in-out for moves",
+      "text": "An element already on screen moving to a new position eases in and out."
+    },
+    {
+      "id": "MO-10",
+      "kind": "do",
+      "title": "Start popovers at 0.95",
+      "text": "Popovers and tooltips grow from 95 % scale and 0 opacity, not from zero."
+    },
+    {
+      "id": "MO-11",
+      "kind": "do",
+      "title": "Enter from the trigger",
+      "text": "Set `transform-origin` to the button that opened it, so the popover grows out of it."
+    },
+    {
+      "id": "MO-12",
+      "kind": "do",
+      "title": "Exit to the trigger",
+      "text": "On close it shrinks back towards the same point."
+    },
+    {
+      "id": "MO-13",
+      "kind": "dont",
+      "title": "Bounce on everyday UI",
+      "text": "No spring overshoot on menus, dialogs, toggles or tabs. Save bounce for rare playful moments."
+    },
+    {
+      "id": "MO-14",
+      "kind": "dont",
+      "title": "Easing while the user drags",
+      "text": "While the user drags a slider, sheet or card, it follows the pointer 1:1 with no easing. Animate only after release."
+    },
+    {
+      "id": "MO-15",
+      "kind": "do",
+      "title": "Make exits about 20 % shorter",
+      "text": "An exit runs about 20 % shorter than the matching entrance, so closing feels instant."
+    },
+    {
+      "id": "MO-16",
+      "kind": "do",
+      "title": "Overlap old and new states",
+      "text": "Crossfade between states so there is never an empty frame."
+    },
+    {
+      "id": "MO-17",
+      "kind": "do",
+      "title": "Masks for reveals and colour changes",
+      "text": "Reveal content or swap a colour with a moving `clip-path` mask rather than a plain fade."
+    },
+    {
+      "id": "MO-18",
+      "kind": "do",
+      "title": "Crossfade icons with blur",
+      "text": "When an icon changes (menu to close, copy to check), crossfade with a small blur (about 2–4 px) and a slight scale."
+    },
+    {
+      "id": "MO-19",
+      "kind": "do",
+      "title": "Rubber band past bounds",
+      "text": "Dragging or scrolling past an edge moves with increasing resistance, then springs back."
+    },
+    {
+      "id": "MO-20",
+      "kind": "do",
+      "title": "Reuse the same `layoutId`",
+      "text": "In Framer Motion (or a FLIP technique elsewhere), give the same element the same `layoutId` in both places so it travels between them: a card into its detail view, the underline of the active tab."
+    },
+    {
+      "id": "MO-21",
+      "kind": "do",
+      "title": "Native page transitions",
+      "text": "Use the View Transitions API for page and state transitions where it is supported, with an instant fallback."
+    },
+    {
+      "id": "MO-22",
+      "kind": "do",
+      "title": "Scroll-driven animation in CSS",
+      "text": "Prefer CSS scroll-driven animations (`animation-timeline`) over scroll listeners, with a static fallback."
+    },
+    {
+      "id": "MO-23",
+      "kind": "do",
+      "title": "Animate only transform and opacity",
+      "text": "Moving things use `transform` and `opacity`; filter and clip-path only for short, bounded moments."
+    },
+    {
+      "id": "MO-24",
+      "kind": "dont",
+      "title": "Scroll hijacking",
+      "text": "Never take over the scroll wheel or trackpad to move the page in fixed steps, change its speed, or lock it until an animation ends."
+    },
+    {
+      "id": "MO-25",
+      "kind": "dont",
+      "title": "Animating layout properties",
+      "text": "Never animate `width`, `height`, `top`, `left`, `margin` or `padding` in a loop; they force layout on every frame."
+    },
+    {
+      "id": "MO-26",
+      "kind": "dont",
+      "title": "Motion that blocks input",
+      "text": "The user can click, scroll and type while something animates. No intro sequence holds the page hostage."
+    },
+    {
+      "id": "MO-27",
+      "kind": "dont",
+      "title": "Parallax on text",
+      "text": "Text never moves at a different speed than the page. Parallax, if any, is for background imagery and stops for reduced motion."
+    },
+    {
+      "id": "MO-28",
+      "kind": "dont",
+      "title": "Endless decorative loops",
+      "text": "No looping animation on content that people read or use (rotating badges, pulsing buttons, floating cards)."
+    }
+  ]
+}

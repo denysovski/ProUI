@@ -1,5 +1,18 @@
 # Changelog
 
+## 3.0.0 (2026-11-17)
+
+- Rulebooks: every subject has its own folder in `rules/` with a `README.md` (Do and Don't tables, how to
+  check, sources) built from a `rulebook.json` data file by `scripts/build-rulebooks.mjs`.
+- Rules are split into positive (Do) and negative (Don't), with SOFT and HARD RULE labels.
+- New rulebooks: Images and Media (`IM`), Navigation (`NV`), Forms and Checkout (`FO`), Localisation (`LO`).
+- Many new rules from research: WCAG 2.2 criteria, the European Accessibility Act, Baymard checkout research,
+  NN/g navigation and carousel findings, Google Search Essentials and spam policies, Core Web Vitals.
+- Rulebooks are named by subject (SEO Rulebook, Performance Rulebook) instead of by rule count.
+- Simpler main README with contents, ID explanation, rulebook table, workflow diagram, websites and tools.
+- A README in every folder; source checklists moved to `references/source-checklists.md`.
+- `scripts/check-rules.mjs` replaced by `scripts/build-rulebooks.mjs --check`.
+
 ## 2.0.0 (2026-11-17)
 
 - Restructured into folders: `rules/` (design, interaction, product, production), `modes/`, `commands/`,

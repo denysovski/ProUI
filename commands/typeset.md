@@ -1,6 +1,6 @@
 # XSlop typeset
 
-A typography pass. Load `rules/design/typography.md`.
+A typography pass. Load `rules/typography/README.md`.
 
 - Make two judgements first, separately: is the face right for this subject (`TY-01`, `SL-59`), and is the
   hierarchy clear at a squint (`TY-05`, `LY-02`)?

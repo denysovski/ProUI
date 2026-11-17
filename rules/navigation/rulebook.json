@@ -1,0 +1,109 @@
+{
+  "order": 8,
+  "prefix": "NV",
+  "folder": "navigation",
+  "name": "Navigation Rulebook",
+  "category": "Interaction",
+  "summary": "Menus, wayfinding, search, footers and URLs that let people find things and know where they are.",
+  "check": [
+    "Find three key pages from the home page without search, on phone and desktop.",
+    "Tab through the header and mobile menu with the keyboard."
+  ],
+  "sources": [
+    {
+      "title": "NN/g: Hamburger menus and hidden navigation",
+      "url": "https://www.nngroup.com/articles/hamburger-menus/"
+    },
+    {
+      "title": "NN/g: Auto-forwarding carousels",
+      "url": "https://www.nngroup.com/articles/auto-forwarding/"
+    }
+  ],
+  "related": [],
+  "rules": [
+    {
+      "id": "NV-01",
+      "kind": "do",
+      "title": "Navigation visible on desktop",
+      "text": "On desktop, show the main sections as visible links in the header. Hidden menus are found later and used less."
+    },
+    {
+      "id": "NV-02",
+      "kind": "do",
+      "title": "Few, clear top-level items",
+      "text": "About four to seven top-level items named in the visitors' words, ordered by importance."
+    },
+    {
+      "id": "NV-03",
+      "kind": "do",
+      "title": "Show where people are",
+      "text": "The current section is marked in the navigation (`aria-current=\"page\"`), and deeper pages show breadcrumbs."
+    },
+    {
+      "id": "NV-04",
+      "kind": "do",
+      "title": "Logo links home",
+      "text": "The logo in the header links to the home page on every page."
+    },
+    {
+      "id": "NV-05",
+      "kind": "do",
+      "title": "One primary action in the header",
+      "text": "The header carries at most one primary button (Book, Buy, Contact); everything else is a link."
+    },
+    {
+      "id": "NV-06",
+      "kind": "do",
+      "title": "Search for larger sites",
+      "text": "Sites with more than a few dozen pages or products have a search field that is visible, forgiving and fast."
+    },
+    {
+      "id": "NV-07",
+      "kind": "do",
+      "title": "A footer that works",
+      "text": "The footer repeats key links: contact, opening hours or support, legal pages, social profiles, a short sitemap."
+    },
+    {
+      "id": "NV-08",
+      "kind": "do",
+      "title": "Accessible mobile menu",
+      "text": "The mobile menu opens with a labelled button, traps focus while open, closes with Escape and returns focus to the button."
+    },
+    {
+      "id": "NV-09",
+      "kind": "do",
+      "title": "URLs for every state worth sharing",
+      "text": "Tabs, filters, search results and opened items that people may share or revisit have their own URL."
+    },
+    {
+      "id": "NV-10",
+      "kind": "dont",
+      "title": "Mystery-meat navigation",
+      "text": "No icon-only navigation without labels, and no clever names (\"Explore\", \"Universe\") instead of plain ones (\"Work\", \"Pricing\")."
+    },
+    {
+      "id": "NV-11",
+      "kind": "dont",
+      "title": "Hover-only menus",
+      "text": "Menus open on click or tap and keyboard as well as hover, and do not close when the pointer slips off for a moment."
+    },
+    {
+      "id": "NV-12",
+      "kind": "dont",
+      "title": "Mega menus without structure",
+      "text": "Large menus have grouped, labelled columns; never a wall of links."
+    },
+    {
+      "id": "NV-13",
+      "kind": "dont",
+      "title": "Different navigation on every page",
+      "text": "The header and its order stay the same across the site. Only the current marker changes."
+    },
+    {
+      "id": "NV-14",
+      "kind": "dont",
+      "title": "Links that open new tabs by default",
+      "text": "Internal links stay in the same tab. External links open in the same tab too unless leaving would lose work."
+    }
+  ]
+}

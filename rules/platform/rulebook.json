@@ -1,0 +1,112 @@
+{
+  "order": 14,
+  "prefix": "PL",
+  "folder": "platform",
+  "name": "Platform Conventions Rulebook",
+  "category": "Interaction",
+  "summary": "Principles from Apple's Human Interface Guidelines and Microsoft Fluent 2, applied to the web.",
+  "check": [
+    "Change OS settings (dark mode, reduced motion, larger text, more contrast) and reload."
+  ],
+  "sources": [
+    {
+      "title": "Apple HIG: Design principles",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/design-principles"
+    },
+    {
+      "title": "Apple HIG: Materials",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/materials"
+    },
+    {
+      "title": "Fluent 2",
+      "url": "https://fluent2.microsoft.design"
+    }
+  ],
+  "related": [],
+  "rules": [
+    {
+      "id": "PL-01",
+      "kind": "do",
+      "title": "Purpose first",
+      "text": "Know what the product is for and make those few things great before adding anything else. Every element earns its place; simplicity is not the same as minimalism."
+    },
+    {
+      "id": "PL-02",
+      "kind": "do",
+      "title": "Agency",
+      "text": "Let people move freely, skip guided flows, and recover from mistakes. Forgiveness (undo, back, drafts) makes people confident to explore (`IX-15`)."
+    },
+    {
+      "id": "PL-03",
+      "kind": "do",
+      "title": "Familiarity",
+      "text": "Build on patterns people know from the web and their OS. Familiar controls in the expected place beat clever new ones (`IX-02`)."
+    },
+    {
+      "id": "PL-04",
+      "kind": "do",
+      "title": "Responsibility",
+      "text": "Be transparent about what the product does with data, ask for permissions with a reason at the moment they are needed, collect only what is needed (`SEC-17`)."
+    },
+    {
+      "id": "PL-05",
+      "kind": "do",
+      "title": "Delight is not decoration",
+      "text": "Delight comes from the sum of care: speed, clear feedback, kind words in errors, one well-made moment. Effects that slow the task are not delight."
+    },
+    {
+      "id": "PL-06",
+      "kind": "do",
+      "title": "Respect user settings",
+      "text": "Colour scheme, reduced motion, reduced transparency, more contrast, text size and language preferences of the browser and OS are honoured, not overridden."
+    },
+    {
+      "id": "PL-07",
+      "kind": "do",
+      "title": "Materials only in the control layer",
+      "text": "Translucent \"glass\" belongs to bars and overlays that float over content (a header over a photo, a sheet over a map), never to content cards, and never stacked glass on glass. Text on glass uses a thicker material or a scrim (`SL-04`)."
+    },
+    {
+      "id": "PL-08",
+      "kind": "do",
+      "title": "Concentric corners",
+      "text": "Nested radii follow the parent: inner radius = outer radius − padding (`DC-14`). Radii come from a small radius scale."
+    },
+    {
+      "id": "PL-09",
+      "kind": "do",
+      "title": "Elevation by meaning",
+      "text": "A small elevation ramp (for example rest, raised, popover, dialog) where higher means more temporary and more important. Shadows are soft, low and few (`SL-05`, `SL-53`)."
+    },
+    {
+      "id": "PL-10",
+      "kind": "do",
+      "title": "Platform-appropriate input",
+      "text": "Hover and right-click on desktop, large targets and thumb reach on phones, visible focus for keyboard, and voice/screen-reader-friendly labels."
+    },
+    {
+      "id": "PL-11",
+      "kind": "do",
+      "title": "Same experience across sizes",
+      "text": "Content and controls keep predictable positions when the window resizes; layouts change structure (tab bar to sidebar), not function (`LY-14`)."
+    },
+    {
+      "id": "PL-12",
+      "kind": "do",
+      "title": "Native app look on the web only when it is an app",
+      "text": "A web app may borrow platform patterns (sidebar, toolbar, segmented controls); a marketing site should not dress up as an operating system."
+    },
+    {
+      "id": "PL-13",
+      "kind": "do",
+      "title": "Respect the reading direction",
+      "text": "Use logical CSS properties (`margin-inline-start`, `inset-inline-end`) so layouts mirror correctly for right-to-left languages."
+    },
+    {
+      "id": "PL-14",
+      "kind": "dont",
+      "title": "Breaking the back button",
+      "text": "Navigation, filters and opened items create history entries where people expect them, and Back always returns to the previous view."
+    }
+  ]
+}

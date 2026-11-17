@@ -1,6 +1,6 @@
 # XSlop colorize
 
-A colour pass. Load `rules/design/color.md` and `rules/design/gradients.md`.
+A colour pass. Load `rules/color/README.md` and `rules/gradients/README.md`.
 
 - Name the strategy (`CL-01`) and the light/dark reason (`CL-02`).
 - Rebuild the palette as roles in OKLCH (`CL-04`, `CL-05`), tinted neutrals (`CL-06`).

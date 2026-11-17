@@ -1,0 +1,185 @@
+{
+  "order": 2,
+  "prefix": "DC",
+  "folder": "craft",
+  "name": "Design Craft Rulebook",
+  "category": "Design",
+  "summary": "Small decisions that separate a considered design from a template.",
+  "check": [
+    "Squint at each page: one focal point, one primary action.",
+    "List every distinct spacing, radius and colour value in the CSS; anything not a token is a fix."
+  ],
+  "sources": [],
+  "related": [
+    "SL-15",
+    "SL-16",
+    "SL-17",
+    "SL-18",
+    "SL-19",
+    "SL-20",
+    "SL-21",
+    "SL-29",
+    "SL-30",
+    "SL-31",
+    "SL-32",
+    "SL-33",
+    "SL-34",
+    "SL-49",
+    "SL-50",
+    "SL-52",
+    "SL-67",
+    "SL-70"
+  ],
+  "rules": [
+    {
+      "id": "DC-01",
+      "kind": "do",
+      "title": "Delete filler badges",
+      "text": "Remove any badge, chip or label that does not carry information."
+    },
+    {
+      "id": "DC-02",
+      "kind": "do",
+      "title": "Drop redundant labels",
+      "text": "No \"Email:\" above a field whose placeholder is already an email. No \"Our Services\" above three service cards. If the content says it, the label does not need to."
+    },
+    {
+      "id": "DC-03",
+      "kind": "do",
+      "title": "Unitalicize random words",
+      "text": "Italics only for titles of works, foreign words or one deliberate emphasis."
+    },
+    {
+      "id": "DC-04",
+      "kind": "do",
+      "title": "Mono only where needed",
+      "text": "Numbers that change or align (prices, timers, tables), codes, IDs."
+    },
+    {
+      "id": "DC-05",
+      "kind": "do",
+      "title": "Use a design system",
+      "text": "Define tokens before building: colour, type scale (about 5–7 sizes), spacing scale (for example 4, 8, 12, 16, 24, 32, 48, 64, 96), radii, shadows, motion durations. Never invent a one-off value."
+    },
+    {
+      "id": "DC-06",
+      "kind": "do",
+      "title": "Show the actual product",
+      "text": "Real screenshots, real photos, real UI. Mockups only of the real thing."
+    },
+    {
+      "id": "DC-07",
+      "kind": "do",
+      "title": "Enlarge the main feature",
+      "text": "The most important thing on each page is clearly the biggest. Hierarchy is readable at a glance."
+    },
+    {
+      "id": "DC-08",
+      "kind": "do",
+      "title": "Group with spacing",
+      "text": "Related items sit closer together, groups sit further apart. Spacing does the grouping before any border or background."
+    },
+    {
+      "id": "DC-09",
+      "kind": "do",
+      "title": "Make headlines specific",
+      "text": "\"Invoices sent in 30 seconds\" beats \"Revolutionise your finances\"."
+    },
+    {
+      "id": "DC-10",
+      "kind": "do",
+      "title": "Emphasise the CTA",
+      "text": "One primary action per view, visually the strongest element. Secondary actions look secondary."
+    },
+    {
+      "id": "DC-11",
+      "kind": "do",
+      "title": "One accent colour, used sparingly",
+      "text": "For the primary button, links and key highlights only."
+    },
+    {
+      "id": "DC-12",
+      "kind": "do",
+      "title": "Keep icons consistent",
+      "text": "One set, one stroke width, one size grid, one corner style."
+    },
+    {
+      "id": "DC-13",
+      "kind": "do",
+      "title": "Remove embellishments",
+      "text": "Ornaments, extra gradients and decorative shapes that say nothing go."
+    },
+    {
+      "id": "DC-14",
+      "kind": "do",
+      "title": "Inner radius = outer radius − padding",
+      "text": "A card with 20 px radius and 8 px padding holds children with 12 px radius. Nested corners then look concentric."
+    },
+    {
+      "id": "DC-15",
+      "kind": "do",
+      "title": "Text contrast",
+      "text": "WCAG AA at least: 4.5:1 for body text, 3:1 for large text and UI parts. Check muted text and dark mode especially."
+    },
+    {
+      "id": "DC-16",
+      "kind": "do",
+      "title": "Wrap headlines properly",
+      "text": "`text-wrap: balance` on headings, `text-wrap: pretty` on paragraphs. No single orphaned word on the last line. Set a sensible max width (about 60–75 characters for body text)."
+    },
+    {
+      "id": "DC-17",
+      "kind": "do",
+      "title": "Align by eye, not by pixels",
+      "text": "Optically centre play triangles, arrows and round icons. Nudge icons next to text to sit on the visual centre line."
+    },
+    {
+      "id": "DC-18",
+      "kind": "do",
+      "title": "Tabular numbers",
+      "text": "`font-variant-numeric: tabular-nums` for prices, timers, counters and table columns, so digits do not jump."
+    },
+    {
+      "id": "DC-19",
+      "kind": "do",
+      "title": "Loading states everywhere",
+      "text": "Every action and every data region has a loading state that matches the final layout (`ST-02`)."
+    },
+    {
+      "id": "DC-20",
+      "kind": "do",
+      "title": "Animate useful feedback",
+      "text": "Animation confirms something happened (added to bag, saved, error). It is never only decoration."
+    },
+    {
+      "id": "DC-21",
+      "kind": "do",
+      "title": "One radius scale",
+      "text": "Corners come from a small radius scale (for example 4, 8, 12, 999). Every card, button and input uses it, and nested corners stay concentric (`DC-14`)."
+    },
+    {
+      "id": "DC-22",
+      "kind": "do",
+      "title": "Every interactive element looks interactive",
+      "text": "Cards that link have a hover and focus state, a cursor change and a clear target; static cards do not pretend to be clickable."
+    },
+    {
+      "id": "DC-23",
+      "kind": "do",
+      "title": "Optical sizes for icons",
+      "text": "Icons sit on a fixed size grid (16, 20, 24) with one stroke width, and are visually balanced against the cap height of the text next to them."
+    },
+    {
+      "id": "DC-24",
+      "kind": "dont",
+      "title": "Decoration that competes with content",
+      "text": "No ornament, shape or effect draws the eye before the headline, the product or the action. If people remember the decoration first, remove it."
+    },
+    {
+      "id": "DC-25",
+      "kind": "dont",
+      "title": "One-off values",
+      "text": "No spacing, colour, radius, shadow or font size that is not a token. A one-off value is a missing token or a mistake (`DC-05`)."
+    }
+  ]
+}

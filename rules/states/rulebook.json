@@ -1,0 +1,116 @@
+{
+  "order": 11,
+  "prefix": "ST",
+  "folder": "states",
+  "name": "States Rulebook",
+  "category": "Interaction",
+  "summary": "Every situation the interface has to handle, not only the happy path.",
+  "check": [
+    "Throttle the network, go offline, empty the data, send bad input, and screenshot each state."
+  ],
+  "sources": [
+    {
+      "title": "NN/g: Error message guidelines",
+      "url": "https://www.nngroup.com/articles/error-message-guidelines/"
+    }
+  ],
+  "related": [],
+  "rules": [
+    {
+      "id": "ST-01",
+      "kind": "do",
+      "title": "Empty state",
+      "text": "Before there is any data, explain what this place is for and give one clear action (\"Create your first project\")."
+    },
+    {
+      "id": "ST-02",
+      "kind": "do",
+      "title": "Loading state",
+      "text": "Skeletons that match the final layout, disabled and busy buttons, progress where the duration is known. The wait should look active."
+    },
+    {
+      "id": "ST-03",
+      "kind": "do",
+      "title": "Error state",
+      "text": "Say what happened in plain words and give a way out: retry, go back, contact support. Never only \"Something went wrong\"."
+    },
+    {
+      "id": "ST-04",
+      "kind": "do",
+      "title": "Offline state",
+      "text": "Tell the user they are offline (a small bar), keep already loaded content visible, queue or disable actions that need the network."
+    },
+    {
+      "id": "ST-05",
+      "kind": "do",
+      "title": "Slow network",
+      "text": "Show incremental progress and partial content. A spinner that never changes looks frozen; after a few seconds, say that it is still working."
+    },
+    {
+      "id": "ST-06",
+      "kind": "do",
+      "title": "Zero search results",
+      "text": "Offer a spelling fix, related results, popular items or a way to clear filters. Never a dead end."
+    },
+    {
+      "id": "ST-07",
+      "kind": "do",
+      "title": "Permission denied",
+      "text": "Explain why access is blocked and how to get it (\"Ask an admin\", \"Allow camera in browser settings\")."
+    },
+    {
+      "id": "ST-08",
+      "kind": "do",
+      "title": "Session expiry",
+      "text": "Save drafts and form input before signing the user out, and restore them after they sign back in."
+    },
+    {
+      "id": "ST-09",
+      "kind": "do",
+      "title": "Form validation",
+      "text": "Errors appear inline at the exact field, in plain words, after the user leaves the field or submits. Focus moves to the first error. Correct tab order, Enter submits, visible focus rings."
+    },
+    {
+      "id": "ST-10",
+      "kind": "do",
+      "title": "Success state",
+      "text": "Confirm completion clearly and offer the next step (\"Track your order\", \"Continue shopping\")."
+    },
+    {
+      "id": "ST-11",
+      "kind": "do",
+      "title": "Stale data says so",
+      "text": "When data might be old, show when it was last updated and offer a refresh."
+    },
+    {
+      "id": "ST-12",
+      "kind": "do",
+      "title": "Partial content",
+      "text": "When part of a page fails, show what loaded and explain what did not, with a retry for that part only."
+    },
+    {
+      "id": "ST-13",
+      "kind": "do",
+      "title": "Concurrent edits",
+      "text": "When two people can edit the same thing, detect conflicts and let the user choose what to keep instead of silently overwriting."
+    },
+    {
+      "id": "ST-14",
+      "kind": "do",
+      "title": "First run",
+      "text": "The very first visit to a product area has a short orientation or a useful default, which can be skipped and never comes back unasked."
+    },
+    {
+      "id": "ST-15",
+      "kind": "do",
+      "title": "Maintenance and rate limits",
+      "text": "Planned downtime and rate limits get their own friendly page or message with a time when it will work again."
+    },
+    {
+      "id": "ST-16",
+      "kind": "dont",
+      "title": "Blank screens",
+      "text": "A page is never empty white while it loads, fails or has no data. Every wait and every failure shows something useful."
+    }
+  ]
+}

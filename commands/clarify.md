@@ -1,6 +1,6 @@
 # XSlop clarify
 
-A copy pass. Load `rules/product/copy.md` and the word rules in `rules/design/slop.md` (`SL-37` to `SL-42`,
+A copy pass. Load `rules/copy/README.md` and the word rules in `rules/anti-slop/README.md` (`SL-37` to `SL-42`,
 `SL-71`).
 
 - Replace generic headlines with specific ones (`DC-09`, `CP-02`).
