@@ -85,9 +85,9 @@ This sheet is the core rulebook. Load the packs when the task needs them:
 1. Read the brief. Decide what the site is, who it is for and the **one action** a visitor should take.
 2. Settle the design system first (`DC-05`): colours, type scale, spacing, radii, motion durations.
 3. Build with real content. Where real content is missing, ask for it or mark it clearly as a placeholder
-   that has to be replaced, never present it as real (`SL-03`, `PE-19`).
+   that has to be replaced, never present it as real (`SL-43`, `SL-44`).
 4. Build every state (`ST`), not just the filled, logged-in, fast-network version.
-5. Add the production essentials (`PE`, `SEO`, `PF`).
+5. Add the production essentials (`PE`, `SEO`, `PF`, `SEC`).
 6. Run the final checklist (section 8) before saying it is done.
 
 ---
