@@ -1,0 +1,45 @@
+name: Quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+
+      - name: XSlop scan (hard rules fail the build)
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/denysovski/XSlop/main/scripts/xslop-scan.mjs -o "$RUNNER_TEMP/xslop-scan.mjs"
+          node "$RUNNER_TEMP/xslop-scan.mjs" src --ci
+
+      - name: Lighthouse CI
+        run: npx --yes @lhci/cli@0.14.x autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+
+      - name: Serve build
+        run: |
+          npx --yes http-server dist -p 8080 -s &
+          npx --yes wait-on http://localhost:8080
+
+      - name: Accessibility (axe)
+        run: npx --yes @axe-core/cli http://localhost:8080 --exit
+
+      - name: Link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --exclude-loopback 'dist/**/*.html'
+          fail: true

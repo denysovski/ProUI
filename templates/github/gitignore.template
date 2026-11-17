@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+
+# builds and caches
+dist/
+build/
+.next/
+.astro/
+.vercel/
+.netlify/
+.cache/
+.lighthouseci/
+coverage/
+
+# environment (commit .env.example only)
+.env
+.env.*
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json

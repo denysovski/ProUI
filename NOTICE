@@ -1,0 +1,15 @@
+XSlop
+Copyright 2026 denysovski
+
+This project takes inspiration from Impeccable (https://github.com/pbakaus/impeccable),
+Copyright Paul Bakaus, licensed under the Apache License, Version 2.0. Ideas adapted from it
+(visitor modes, the command set, the PRODUCT.md / DESIGN.md context files, critique and audit
+scoring, and the slop detector patterns that became rules SL-49 to SL-72) are written in XSlop's
+own words; no Impeccable source files are included. Impeccable's own NOTICE credits
+ehmo/platform-design-skills (MIT).
+
+Apple Human Interface Guidelines (https://developer.apple.com/design/human-interface-guidelines)
+and Microsoft Fluent 2 (https://fluent2.microsoft.design) are summarised and linked, not copied.
+Apple and Fluent are trademarks of their respective owners.
+
+Pinterest pins listed in style/PINS.md belong to their authors and are linked only.

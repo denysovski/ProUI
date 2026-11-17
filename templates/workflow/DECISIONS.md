@@ -11,6 +11,8 @@ continues from here with `XSlop continue`.
 ## Brief
 
 - Summary: (see `BRIEF.md`)
+- Mode per surface (persuade / operate / read / experience):
+- Product context: `PRODUCT.md` written / read
 
 ## Direction
 
@@ -23,7 +25,10 @@ continues from here with `XSlop continue`.
 - Display font:
 - Text font:
 - Mono (data only):
-- Palette tokens:
+- Colour strategy (Restrained / Committed / Full palette / Drenched):
+- Light or dark, and why:
+- Palette tokens (OKLCH, by role):
+- Signature gradient / background, tool used:
 - Scale (type, spacing, radii, motion):
 
 ## Outline
@@ -41,15 +46,21 @@ continues from here with `XSlop continue`.
 
 Tick when every rule of the group is met or marked not applicable (with the reason).
 
-- [ ] Slop and craft (`SL`, `DC`)
+- [ ] Slop and craft (`SL`, `DC`), scan clean of hard rules
+- [ ] Type and colour (`TY`, `CL`, `GR`)
+- [ ] Layout (`LY`, `PL`)
+- [ ] Components and copy (`IX`, `CP`)
+- [ ] Product UI (`DB`), operate surfaces only
 - [ ] States (`ST`)
 - [ ] Motion (`MO`, `PF-21`)
-- [ ] Accessibility (`DC-15`, `PE-14`)
+- [ ] Accessibility (`AX`, `DC-15`, `PE-14`)
 - [ ] SEO (`SEO`)
-- [ ] Performance (`PF`) — Lighthouse mobile scores:
-- [ ] Security (`SEC`) — headers checked, audit clean:
+- [ ] Performance (`PF`): Lighthouse mobile scores:
+- [ ] Security (`SEC`): headers checked, audit clean:
 - [ ] Production and legal (`PE`)
-- [ ] Quality check (`SKILL.md` section 8)
+- [ ] Quality check (final checklist in `SKILL.md`): critique score /40, audit score /20
+- [ ] GitHub and deploy (`GH`): repo, CI, quality gates, live URL:
+- [ ] `DESIGN.md` written from the build
 
 ## Not applicable
 

@@ -11,11 +11,13 @@ Brief ──▶ Research ──▶ ◆ Direction ──▶ Design system ──�
      Build the rest ◀── ◆ First screen ◀── Build the first screen ◀────────────────────────────────┘
           │
           ▼
-     Passes: Slop and craft ─▶ States ─▶ Motion ─▶ Accessibility ─▶ SEO ─▶ Performance ─▶ Security
-             ─▶ Production and legal
+     Passes: Slop and craft ─▶ Type and colour ─▶ Layout ─▶ Components and copy ─▶ Product UI*
+             ─▶ States ─▶ Motion ─▶ Accessibility ─▶ SEO ─▶ Performance ─▶ Security ─▶ Production and legal
           │
           ▼
-     Quality check ──▶ Handoff
+     Quality check ──▶ GitHub and deploy ──▶ Handoff
+
+* only for operate surfaces (dashboards, tools, settings)
 
 ◆ = checkpoint: the agent shows options, asks, and waits for the user's choice
 ```
@@ -25,7 +27,7 @@ fixes what fails, verifies it, and ticks it off in `DECISIONS.md`. A pass is don
 is either met or recorded as not applicable with a reason.
 
 Everything decided along the way is written into a decisions file in the project
-(`xslop/DECISIONS.md`, template in `templates/DECISIONS.md`), so any later session or agent can continue
+(`xslop/DECISIONS.md`, template in `templates/workflow/DECISIONS.md`), so any later session or agent can continue
 exactly where the last one stopped.
 
 ---
@@ -36,10 +38,14 @@ Goal: know what to build before looking at anything.
 
 1. Read the request, the project's own files (README, CLAUDE.md / AGENTS.md, existing code, brand
    guidelines) and `style/MY-STYLE.md` when building for the repository owner.
-2. Fill in the brief (`templates/BRIEF.md`): what the site is, for whom, the one primary action, pages,
+2. Fill in the brief (`templates/workflow/BRIEF.md`): what the site is, for whom, the one primary action, pages,
    content that exists, content that is missing, constraints (stack, hosting, deadline, languages), and any
    style keyword the user already named (`style/STYLES.md`).
-3. If something essential is missing (what it is, who it is for, the primary action), ask **one short
+3. Decide the **mode** of each surface (`modes/`): persuade, operate, read or experience. It changes which
+   rules weigh most and how far the style may lead.
+4. If the project has no `PRODUCT.md`, write one (`commands/init.md`); if it has one, read it and respect its
+   "Must stay true" list.
+5. If something essential is missing (what it is, who it is for, the primary action), ask **one short
    message** with at most three questions. Everything else gets a sensible default, written into the brief
    as an assumption.
 
@@ -63,7 +69,8 @@ Search the sources that fit the brief. Always use at least four, mixing gallerie
 | saved.design | newest interface, 3D and typography work | filter by Web, Interface, 3D or Typography |
 | designeer.xyz | interface craft, motion, 3D, components | category and colour filters |
 | dribbble.com | concepts for 3D, scroll and product reveals | search by the brief's topic plus "website" or "3d scroll" |
-| mobbin.com | how shipped apps and sites solve a specific flow | search the flow (onboarding, checkout, booking); may need the user's login |
+| mobbin.com | how shipped apps and sites solve a specific flow, dashboards, business site sections | search the flow or section (onboarding, checkout, analytics dashboard, pricing section); needs the user's paid login, in the browser or through the Mobbin connector |
+| `inspiration/dashboards.md` | what well-made dashboards and business sites share | read before any operate surface |
 | 21st.dev, reactbits.dev, madewithgsap.com, tympanus.net/codrops | the one signature interaction | search the effect, not the industry |
 
 Optional extra galleries when the above are thin: godly.website, awwwards.com, land-book.com, siteinspire.com,
@@ -89,7 +96,7 @@ Output: `xslop/research/` with screenshots and `xslop/RESEARCH.md` (one block pe
 
 Goal: the user picks the visual direction.
 
-Group the candidates into **three or four directions** (`templates/DIRECTIONS.md`). Each direction is named
+Group the candidates into **three or four directions** (`templates/workflow/DIRECTIONS.md`). Each direction is named
 after a style keyword or a combination from `style/STYLES.md` and shows:
 
 - two or three reference screenshots with links,
@@ -111,11 +118,18 @@ Send the screenshots as files or a page the user can open, then ask in one messa
 
 Goal: turn the chosen direction into concrete tokens.
 
-1. **Type:** propose two or three pairings that fit the direction (display + text, optional mono for data),
-   mostly from Fontshare (`toolkit/TOOLKIT.md`). Render a specimen for each: the real headline, a paragraph of
-   real copy, a button, a price or number.
-2. **Colour:** background, surface, line, text, muted text, one accent, danger. Check contrast (`DC-15`).
-3. **Scale:** type sizes, spacing scale, radii, shadows, motion durations and easings (`DC-05`, `MO`).
+1. **Type:** propose two or three pairings that fit the direction and the mode (display + text, optional mono
+   for data), mostly from Fontshare (`toolkit/TOOLKIT.md`, `toolkit/design-tools.md`). Check `SL-59` and
+   `TY-01` to `TY-04`. Render a specimen for each: the real headline, a paragraph of real copy, a button, a
+   price or number.
+2. **Colour:** name the strategy (`CL-01`) and the light/dark reason (`CL-02`), then define roles in OKLCH
+   (`CL-04`, `CL-05`) and a contrast table for both themes (`CL-09`).
+3. **Gradient and background**, if the direction uses one: one signature gradient from the palette
+   (`GR-01` to `GR-10`), built in CSS (`recipes/gradients.md`) or with a tool the user exports from
+   (`toolkit/gradients.md`: Balsa UI Gradient Studio, Pryzm, ShaderGradient); patterns from Book of Shapes
+   (`toolkit/shapes-and-backgrounds.md`).
+4. **Scale:** type scale (`TY-05`), spacing scale on 4 px (`LY-05`), radii and elevation ramps (`PL-08`,
+   `PL-09`), motion durations and easings (`DC-05`, `MO`).
 
 Output: a specimen page or image with the pairings side by side and the palette.
 
@@ -190,15 +204,37 @@ trade-off); otherwise decide and note it.
 
 ## Passes
 
-Run them in this order. For each pass: go through every rule of its group in `SKILL.md`, fix the site,
+Run them in this order. For each pass: go through every rule of its group in `rules/`, fix the site,
 verify with the method given, and tick the pass in `DECISIONS.md` (with any rule marked not applicable and
 why). Send the user one short line per finished pass.
 
 ### Pass: Slop and craft (`SL`, `DC`)
 
-- Check every page against `SL-01`–`SL-48` and `DC-01`–`DC-20`.
-- `SL-17` is absolute: search the build for counting labels (`01`, `02`, `/ 05`, `No.`) and remove them.
+- Run `node scripts/xslop-scan.mjs <src>` (`commands/scan.md`) and open every finding in context.
+- Check every page against `SL-01`–`SL-72` and `DC-01`–`DC-20`.
+- Hard rules are absolute: `SL-17` (search for `01`, `02`, `/ 05`, `No.`), `SL-43`, `SL-44`, `SL-49`, `CP-14`.
 - Verify: screenshots of every page at desktop and mobile, compared side by side with the chosen direction.
+
+### Pass: Type and colour (`TY`, `CL`, `GR`)
+
+- Run `commands/typeset.md` and `commands/colorize.md` over the whole site.
+- Verify: contrast table for every pair in both themes; 200 % zoom; every shipped language renders.
+
+### Pass: Layout (`LY`, `PL`)
+
+- Run `commands/layout.md`: squint test, spacing scale, rhythm, grid, container queries, safe areas.
+- Verify: screenshots at 360, 768, 1024, 1440, 1920 with a blurred copy for the squint test.
+
+### Pass: Components and copy (`IX`, `CP`)
+
+- Every control with every state; standard controls; overlays and forms by the rules; undo over confirm.
+- Run `commands/clarify.md` over all text, errors and buttons.
+- Verify: tab through every control; trigger every overlay; read every button out of context.
+
+### Pass: Product UI (`DB`, operate surfaces only)
+
+- Run `commands/dashboard.md` review: shell, answer-first, charts, tables, filters, widget states.
+- Verify: realistic data at small, normal and huge volumes; one widget forced to fail.
 
 ### Pass: States (`ST`)
 
@@ -219,7 +255,7 @@ why). Send the user one short line per finished pass.
 - Verify: scroll every page with the performance panel open; no long frames during scroll; record a short clip
   of the signature moment.
 
-### Pass: Accessibility (`DC-15`, `PE-14`, `ST-09`, `SL-48`)
+### Pass: Accessibility (`AX`, `DC-15`, `PE-14`, `ST-09`, `SL-48`)
 
 - Semantic HTML, one H1, labelled controls, visible focus, logical tab order, Escape closes overlays, focus
   returns to the trigger, `lang` set, alt text, contrast AA, touch targets at least 44 px.
@@ -265,7 +301,9 @@ why). Send the user one short line per finished pass.
 
 A final look at the whole site after all passes:
 
-- the final checklist from `SKILL.md` section 8, item by item,
+- the final checklist in `SKILL.md`, item by item,
+- `commands/critique.md` (scored heuristics, personas, P0–P3) and `commands/audit.md` (five scored
+  dimensions); fix every P0 and P1,
 - screenshots of every page at 390, 768, 1440 and 1920 widths,
 - a search of the build for leftovers: `lorem`, `example.com`, `TODO`, `console.log`, counting labels,
 - for high-stakes work, a separate agent that did not build the site reviews it against XSlop and reports
@@ -273,10 +311,19 @@ A final look at the whole site after all passes:
 
 ---
 
+## Stage: GitHub and deploy
+
+Follow `workflow/GITHUB.md` (rules `GH`): repository, README, `.gitignore`, `.env.example`, CI, quality gates
+(Lighthouse CI, axe, link check, XSlop scan), deploy from `main`, Dependabot, release tag. Ask before creating
+repositories, changing settings or publishing.
+
+---
+
 ## Stage: Handoff
 
-1. Deploy or prepare deployment as the brief says.
-2. Update the project README: what the site is, how to run it, the design decisions (link `DECISIONS.md`).
+1. Write `DESIGN.md` from the finished build (`commands/document.md`).
+2. Update the project README: what the site is, the live link, how to run it, the design decisions (link
+   `DECISIONS.md`).
 3. Report to the user: what was built, the link, what was skipped on request, what still needs real content.
 
 ---

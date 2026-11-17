@@ -1,154 +1,272 @@
 # XSlop
 
-![XSlop: a rulebook for building websites that look made by a person, not generated](assets/xslop-banner.jpg)
+![XSlop: a rulebook for building websites that look made by a person, not generated](assets/xslop-banner-v2.jpg)
 
-One big skill sheet (`SKILL.md`) for AI agents (Claude, ChatGPT, Cursor…) that tells them how to build websites
-that don't look generated ("AI slop", "vibecoded"), but like a finished product made by a person.
+A skill for AI agents (Claude Code, Claude, Codex, Cursor…) that teaches them what a website must not look like
+if it should not look AI-generated, and what a professional site, landing page or dashboard needs instead.
+It is a rulebook of 351 rules, four visitor modes, twenty commands, a step-by-step workflow with checkpoints,
+and a path from the first brief to a live site in a GitHub repository.
 
-Every rule has its own ID (for example `SL-14`, `MO-04`), so I can tell the agent exactly what to include and
-what to leave out.
+Every rule has an ID (for example `SL-14`, `TY-06`, `GH-10`), so I can tell the agent exactly what to include
+and what to leave out.
 
 ## How it fits into a project
 
-XSlop is an add-on skillset. Load it next to a project's own instructions (brief, brand guidelines, design
-system, README, CLAUDE.md / AGENTS.md) so the agent understands the project better and knows what quality bar
-to aim for. The order of precedence is: my instructions in the chat first, then the project's own rules and
-design system, then XSlop. If a project's brand deliberately uses something XSlop calls slop, the project wins.
+XSlop is an add-on skillset. Load it next to a project's own instructions (brief, `PRODUCT.md`, `DESIGN.md`,
+brand guidelines, README, CLAUDE.md / AGENTS.md). Order of precedence: my instructions in the chat first, then
+the project's own rules and design system, then XSlop. If a project's brand deliberately uses something XSlop
+calls slop, the project wins, except for the hard rules.
+
+As a skill: put the repository folder among the agent's skills (for Claude Code, `~/.claude/skills/xslop/` or
+`.claude/skills/xslop/` in a project). `SKILL.md` is the entry point; the agent loads the other files when a
+task needs them.
+
+## Repository structure
+
+```
+SKILL.md                     entry point: map, rule groups, defaults, overrides, final checklist
+rules/
+  README.md                  index of all 18 groups, hard rules, which rules load for which task
+  design/                    slop, craft, typography, colour, gradients, layout
+  interaction/               motion, states, components, accessibility, platform conventions
+  product/                   dashboards and product UI, copy and UX writing
+  production/                essentials, SEO, performance, security, GitHub workflow
+modes/                       persuade, operate, read, experience
+commands/                    twenty commands: init, document, shape, critique, audit, scan, polish, harden,
+                             bolder, quieter, distill, typeset, colorize, layout, animate, clarify,
+                             dashboard, ship, continue
+workflow/
+  WORKFLOW.md                brief → research → checkpoints → build → passes → quality → GitHub → handoff
+  GITHUB.md                  repository, branches, commits, PRs, CI, quality gates, deploy, releases
+templates/
+  context/                   PRODUCT.md and DESIGN.md for projects
+  workflow/                  brief, direction board, decisions record
+  reports/                   critique and audit report formats
+  github/                    CI, quality and Pages workflows, Lighthouse budgets, Dependabot, PR and
+                             issue templates, .gitignore, .editorconfig, .env.example, security.txt
+references/                  Apple HIG, Fluent 2, Impeccable, OpenDesign, critique rubric, screenshots
+inspiration/                 galleries and how to analyse them; what good dashboards and business sites share
+toolkit/                     libraries and fonts; gradient tools; shapes and backgrounds; design tools by stage
+recipes/                     code for motion and components, gradients, dashboards
+style/                       style keywords and my personal style (MY-STYLE.md and PINS.md are personal)
+scripts/
+  xslop-scan.mjs             scans a project for slop patterns and hard-rule violations (CI-ready)
+  check-rules.mjs            checks this repository: rule IDs unique, sequential and consistent
+assets/                      banner image and its three.js source
+NOTICE, CHANGELOG.md
+```
 
 ## The workflow
 
-`WORKFLOW.md` is the order my agent follows when it builds a new site. It goes step by step and stops four
-times to let me choose:
+`workflow/WORKFLOW.md` is the order my agent follows when it builds a new site. It stops four times to let me
+choose:
 
-- **Brief**: what the site is, for whom, the one main action. At most three questions if something is missing.
-- **Research**: the agent browses design galleries (Dark, Recent, Saved, Designeer, Dribbble, Mobbin, my
-  Pinterest board) and collects 8–15 real designs that match the request, with screenshots and links.
-- **Checkpoint, direction**: it groups them into three or four directions named after style keywords, shows
-  the pictures, and I pick one (or combine parts, or send my own link).
-- **Design system** and **checkpoint, type and colour**: it shows two or three font pairings and palettes as
-  specimens; I pick.
-- **Structure** and **checkpoint, outline**: pages and sections; I confirm.
-- **First screen** and **checkpoint**: it builds the hero and the next section; I approve or adjust.
-- **Build the rest**, page by page.
-- **Passes**, one after another over the whole site: slop and craft, states, motion, accessibility, SEO,
-  performance, security, production and legal. Each pass goes through its rules, fixes, verifies and ticks
-  itself off.
-- **Quality check** and **handoff**.
+- **Brief**: what the site is, for whom, the one main action, the mode of each surface, `PRODUCT.md`.
+- **Research**: real designs from galleries, Mobbin, Dribbble and my Pinterest board, with screenshots.
+- **Checkpoint, direction**: three or four directions named after style keywords; I pick or combine.
+- **Design system** and **checkpoint, type and colour**: type pairings as specimens, a colour strategy and
+  OKLCH roles, a signature gradient or background if the direction uses one.
+- **Structure** and **checkpoint, outline**.
+- **First screen** and **checkpoint**: the hero and next section built for real.
+- **Build the rest**, then **passes** over the whole site: slop and craft, type and colour, layout,
+  components and copy, product UI (dashboards only), states, motion, accessibility, SEO, performance,
+  security, production and legal.
+- **Quality check** with a scored critique and audit, then **GitHub and deploy**, then **handoff** with
+  `DESIGN.md` written from the build.
 
-All decisions are written into `xslop/DECISIONS.md` in the project, so another session can continue with
-`XSlop continue`. Templates for the brief, the direction board and the decisions record are in `templates/`.
-
-Short commands: `XSlop workflow: <request>`, `XSlop workflow, direction BLACK COAL`, `XSlop workflow, fast`,
-`XSlop workflow, decide yourself`, `XSlop workflow, research only`, `XSlop continue`, `XSlop passes`,
-`XSlop pass security`.
+All decisions go into `xslop/DECISIONS.md` in the project so another session can continue with
+`XSlop continue`.
 
 ## How to use it
 
-Example prompts:
+- `Build a website for a coffee shop using XSlop.` applies every rule and runs the workflow.
+- `XSlop workflow, direction BLACK COAL: portfolio for a photographer.` skips the direction checkpoint.
+- `XSlop dashboard: analytics for a small e-shop.` builds product UI in operate mode.
+- `XSlop critique` / `XSlop audit` reviews without building, with scores and P0–P3 issues.
+- `XSlop polish`, `XSlop harden`, `XSlop bolder`, `XSlop quieter`, `XSlop typeset`, `XSlop colorize`,
+  `XSlop layout`, `XSlop animate`, `XSlop clarify` improve one aspect of an existing site.
+- `XSlop ship` takes a finished site through the production passes to GitHub and a live deploy.
+- `Use XSlop, but keep SL-25 (mono fonts).` allows a soft pattern, used sparingly.
+- `Use XSlop, skip PE-10.` skips a rule. `XSlop, only SEO and PF.` applies only those groups.
+- `node scripts/xslop-scan.mjs ./src` scans any project; `--ci` fails the build on hard rules.
 
-- `Build a website for a coffee shop using XSlop.` – applies every rule.
-- `Use XSlop, but keep SL-25 (mono fonts).` – allows that pattern, used sparingly. (`SL-17`, decorative counting, can never be switched back on.)
-- `Use XSlop, skip PE-10.` – skips that rule.
-- `XSlop, only SEO and PF.` – applies only those groups.
-- `XSlop audit of this site.` – builds nothing, just reviews the site and lists what fails.
-- `Build a site for a ceramics studio in EDITORIAL CREAM + MEGA TYPE.` – uses style keywords from `style/STYLES.md`.
+## Modes
 
-As a skill: put the folder with `SKILL.md` among the agent's skills (for example in Claude). It loads
-automatically when you say "XSlop".
+| Mode | The visitor came to | The style may |
+| --- | --- | --- |
+| Persuade | decide and act (landing page, shop, service) | own the page, as long as the offer and action are clear |
+| Operate | get a job done (dashboard, admin, tool) | lend only type, palette, density and one signature move |
+| Read | understand (docs, blog, case study) | stay quiet; measure and wayfinding come first |
+| Experience | explore (portfolio, campaign) | lead completely, with performance and accessibility kept |
 
-## What it contains
+## Rule groups
 
 | Group | IDs | Contents |
 | --- | --- | --- |
-| Slop to avoid | `SL-01` to `SL-48` | visual and copy patterns that make a site look AI-generated |
+| Slop to avoid | `SL-01` to `SL-72` | visual and copy patterns that make a site look generated, detector patterns, the four default "AI looks" |
 | Design craft | `DC-01` to `DC-20` | small decisions that make a design feel considered |
-| Motion | `MO-01` to `MO-20` | how to animate fast and naturally, without effects for their own sake |
-| States | `ST-01` to `ST-10` | empty, loading, error, offline, slow network, zero results, permission denied, session expiry, validation, success |
-| Production essentials | `PE-01` to `PE-14` | 404, CTA, favicon, OG image, thank-you page, legal pages, cookies, analytics, contact details, Git, accessibility |
-| SEO | `SEO-01` to `SEO-16` | sitemap, robots.txt, canonical, titles, descriptions, H1, heading order, alt text, schema, links, URLs, HTTPS, Search Console, llms.txt |
-| Performance | `PF-01` to `PF-21` | images, lazy loading, Core Web Vitals, code splitting, caching, database, Lighthouse, lightweight 3D and video |
-| Security | `SEC-01` to `SEC-18` | HTTPS and HSTS, CSP, security headers, no secrets in the client, input validation, escaping, safe queries, protected forms, cookies, auth, uploads, CORS, pinned third-party code, dependency audit, safe errors, safe links, minimal data, security.txt |
+| Typography | `TY-01` to `TY-20` | choosing faces, scale, body size, measure, leading, tracking, loading fonts, languages |
+| Colour | `CL-01` to `CL-16` | colour strategy, roles, OKLCH, tinted neutrals, contrast, dark mode |
+| Gradients and backgrounds | `GR-01` to `GR-14` | when a gradient has a job, OKLCH interpolation, mesh, banding, patterns and shapes |
+| Layout and spacing | `LY-01` to `LY-16` | hierarchy, squint test, 4 px spacing, rhythm, grid, container queries, safe areas |
+| Motion | `MO-01` to `MO-20` | timing, easing, popovers, gestures, reduced motion |
+| States | `ST-01` to `ST-10` | empty, loading, error, offline, slow network, zero results, permission, session, validation, success |
+| Components and interaction | `IX-01` to `IX-18` | control states, standard controls, dialogs, forms, undo, feedback, keyboard |
+| Accessibility | `AX-01` to `AX-16` | semantics, contrast, focus, keyboard, zoom, motion, announcements, testing |
+| Platform conventions | `PL-01` to `PL-12` | Apple HIG and Microsoft Fluent 2 principles applied to the web |
+| Dashboards and product UI | `DB-01` to `DB-18` | shell, answer-first data, charts, tables, filters, widget states |
+| Copy and UX writing | `CP-01` to `CP-14` | voice, buzzwords, buttons, errors, honest claims |
+| Production essentials | `PE-01` to `PE-14` | 404, CTA, favicon, OG image, thank-you page, legal pages, cookies, analytics, contact, Git |
+| SEO | `SEO-01` to `SEO-16` | sitemap, robots.txt, canonical, titles, descriptions, headings, alt text, schema, llms.txt |
+| Performance | `PF-01` to `PF-21` | images, lazy loading, Core Web Vitals, code splitting, caching, database, Lighthouse, heavy visuals |
+| Security | `SEC-01` to `SEC-18` | HTTPS, CSP, headers, secrets, validation, escaping, auth, uploads, CORS, dependencies |
+| GitHub workflow | `GH-01` to `GH-16` | repository, README, branches, conventional commits, PRs, CI, quality gates, deploys, releases |
 
-At the end there is a checklist the agent goes through before saying the work is done.
-
-Next to the core sheet there are packs the agent loads when it needs them:
-
-| Pack | What it contains |
-| --- | --- |
-| `inspiration/INSPIRATION.md` | where to look for inspiration (Dark, Recent, Saved, Mobbin, Dribbble, Designeer), what each is good for, how to analyse a reference, and patterns worth learning |
-| `toolkit/TOOLKIT.md` | libraries, assets and fonts to build with (GSAP, Made With GSAP, Lenis, React Bits, 21st.dev, Codrops, Spline, three.js, SVGL, SVG Doodles, Fontshare): when to use each, install code, licence notes, guardrails |
-| `recipes/RECIPES.md` | ready patterns with code: smooth scroll, reveals, split text, pinned gallery, magnetic button, marquee, popovers, custom select, toasts, light 3D hero, countdown, tracking boxes |
-| `style/MY-STYLE.md` | my personal style, applied on top of the rules, including the main keys from my Pinterest web-design board |
-| `style/STYLES.md` | 14 named style keywords and modifiers to use in prompts (for example `BLACK COAL + MEGA TYPE, maximal`) |
-| `style/PINS.md` | all 878 pins from my board sorted into themes, as links |
-| `references/` | screenshots of the inspiration and tool sites, and what to learn from each |
+Hard rules that can never be switched back on: `SL-17` decorative counting (01 / 02 / 03), `SL-43` fake
+testimonials, `SL-44` placeholder business info, `SL-49` side-stripe borders, `CP-14` invented claims.
 
 ## What I want to avoid
 
-These are the things I don't want on a site (the `SL` rules). Some are marked "soft": those are fine only when
-they are a deliberate part of the style and not everywhere.
+The `SL` rules in short. "Soft" ones are fine only as a deliberate part of the style.
 
-Colour and surfaces
-- purple-to-blue gradients
-- gradient backgrounds instead of real content (soft)
-- glowing blurred orbs in the background
-- frosted glass panels everywhere (soft)
-- pointless strong shadows
-- dark mode with unreadable grey text
-- lots of shades and opacities instead of a simple palette
-- grain / dither effects just because they are trendy (soft)
+Colour and surfaces: purple-to-blue gradients; gradient backgrounds as filler (soft); glowing orbs; glass
+everywhere (soft); pointless shadows; low-contrast dark mode; too many shades; grain as decoration (soft);
+glows on dark backgrounds; radial halos behind the hero; graph-paper and stripe backgrounds; thin border plus
+wide shadow; hard offset shadows by reflex (soft).
 
-Layout and components
-- three feature cards with icons in a row
-- empty bento grids
-- generic three-tier pricing
-- everything in bordered boxes, boxes inside boxes
-- dividers everywhere
-- tags and pills everywhere
-- "New" badges above headlines
-- a small eyebrow above every heading (soft)
-- counting labels of any kind: 01 / 02 / 03 on sections, cards, photos, steps or list rows (never, not even when the order is real)
-- super-rounded squircles everywhere
-- untouched component libraries (shadcn/ui)
-- overloaded fake UI mockups
-- needlessly complex diagrams
+Layout and components: three feature cards in a row; icon tile stacks; empty bento grids; generic three-tier
+pricing; boxes inside boxes; nested cards; dividers everywhere; pills everywhere; badges and chips above
+headlines; eyebrows on every heading (soft); counting labels of any kind (never); side-stripe borders (never);
+squircles everywhere; untouched shadcn/ui; fake detailed dashboards; needless diagrams; marquees as filler;
+shapes assembled from CSS instead of real images.
 
-Type
-- Instrument Serif and the "AI serif" look
-- italics on random words
-- tight letter-spacing in body text
-- mono fonts everywhere (soft)
-- ALL CAPS in every subtitle (soft)
-- periods at the end of headlines (soft)
-- headlines filled with a colour gradient
+Type: Instrument Serif and the overused display faces (Inter, Geist, Space Grotesk, Plus Jakarta Sans, DM
+Sans, Fraunces, Playfair…) chosen by reflex; random italics; one italic serif word in a sans headline;
+negative tracking on body text or extreme tracking anywhere; flat hierarchy; oversized H1 by reflex; mono
+everywhere (soft); all caps everywhere (soft); periods in titles (soft); gradient-filled headlines.
 
-Icons and decoration
-- Lucide icons on every line
-- emojis in headings and buttons
-- sparkles on everything "AI" or "new"
-- decorative "code" elements on a site that isn't about code
-- ASCII images and animations
-- glows and beams that follow the cursor
+The four default "AI looks", unless asked for: cream and terracotta with a serif; near-black with one neon;
+broadsheet costume on a site that isn't a publication; neo-brutalist kit.
+
+Icons and decoration: Lucide on every line; emojis in headings and buttons; sparkles; code chrome on a site
+that isn't about code; ASCII art; cursor-following beams; pulsing "live" dots and blinking cursors.
+
+Motion: everything fading in on scroll; content invisible until an animation fires; bouncy everyday UI.
+
+Copy: em dashes everywhere; "It's not X, it's Y"; generic hero copy; wordy text; vague buttons; claims without
+proof; slogan rhythm and buzzwords (seamless, unlock, elevate, empower).
+
+Trust: fake testimonials (never); placeholder business info (never); no real product demo; broken embeds;
+forms asking for too much; keyboard-unfriendly forms.
+
+## Pages and resources used in this project
+
+Every page mentioned anywhere in XSlop, what it is, and how Claude Code uses it. The agent opens these with a
+browser tool or web fetch when the workflow or a command says so; some need my login.
+
+### Guidelines and design systems
+
+| Page | What it is | How the agent uses it |
+| --- | --- | --- |
+| [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) | Apple's design principles and guidance for typography, colour, layout, materials, accessibility, components | source of `PL`, parts of `TY`, `CL`, `LY`, `AX`; summary in `references/apple-hig.md`; every page also has a `.md` version agents can read |
+| [Microsoft Fluent 2](https://fluent2.microsoft.design) | Microsoft's design system: 4 px spacing, type ramp, tokens, elevation, motion, content | reference for product UI and tokens; summary in `references/fluent-2.md` |
+| [Impeccable](https://github.com/pbakaus/impeccable) | open-source design skill for AI agents (Apache-2.0) | the main inspiration for modes, commands, critique and audit scoring, the detector rules; see `references/impeccable.md` and `NOTICE` |
+| [OpenDesign](https://open-design.ai) | open-source, local-first design workspace for coding agents | idea of one `DESIGN.md` per brand and design systems as references; see `references/opendesign.md` |
+
+### Inspiration galleries
+
+| Page | What it is | How the agent uses it |
+| --- | --- | --- |
+| [Mobbin](https://mobbin.com) | library of real app and website screens, flows and sections | research for flows, dashboards and business-site sections; needs my paid login (browser or Mobbin connector) |
+| [Dribbble](https://dribbble.com) | designers' shots | mood and concepts for 3D, scroll and product reveals; treated as inspiration, not as buildable specs |
+| [Dark](https://dark.design) | gallery of dark websites by category | research for dark directions |
+| [Recent](https://recent.design) | feed of current brand, web and motion work | research for fresh directions |
+| [Saved](https://saved.design) | interface, 3D and typography work | research for interface detail and type |
+| [Designeer](https://designeer.xyz) | interface craft, motion, 3D, components | research for components and motion |
+| My Pinterest `web-design` board | 878 pins I saved, sorted in `style/PINS.md` | my own taste; always part of research (`style/MY-STYLE.md`) |
+| [Godly](https://godly.website), [Awwwards](https://www.awwwards.com), [Land-book](https://land-book.com), [SiteInspire](https://www.siteinspire.com), [Lapa Ninja](https://www.lapa.ninja), [httpster](https://httpster.net) | more galleries | optional extra research when the main sources are thin |
+
+### Build toolkit
+
+| Page | What it is | How the agent uses it |
+| --- | --- | --- |
+| [Made With GSAP](https://madewithgsap.com) | GSAP effect examples | finding a signature interaction; `toolkit/TOOLKIT.md`, `recipes/RECIPES.md` |
+| [GSAP](https://gsap.com) | animation library | motion implementation |
+| [Lenis](https://lenis.dev) | smooth scroll library | smooth scroll when a direction needs it |
+| [React Bits](https://reactbits.dev) | animated React components | components installed via its registry, then restyled |
+| [21st.dev](https://21st.dev) | community React/Tailwind components | components to adapt, never used untouched (`SL-19`) |
+| [Codrops](https://tympanus.net/codrops) | tutorials and demos of creative effects | techniques for one signature moment |
+| [Spline](https://spline.design) | 3D design tool with web export | interactive 3D scenes when a style asks for 3D |
+| [three.js](https://threejs.org) | WebGL library | light 3D heroes (`PF-21`), also used for the banner above |
+| [SVGL](https://svgl.app) | official SVG logos of brands | real "works with" logos via its API |
+| [SVG Doodles](https://svgdoodles.com) | hand-drawn SVG accents | underlines, arrows, scribbles |
+| [Fontshare](https://fontshare.com) | free quality fonts | type pairings at the design-system checkpoint |
+
+### Gradients, shapes and backgrounds
+
+| Page | What it is | How the agent uses it |
+| --- | --- | --- |
+| [Balsa UI Gradient Studio](https://balsa-ui.com/tools/gradient-studio) | gradient builder from Balsa UI, an open-code component system for Vue and React | the signature gradient at the type-and-colour checkpoint; `toolkit/gradients.md`, `GR` |
+| [Balsa UI Design Studio](https://balsa-ui.com/tools/design-studio) | design-system and component studio | setting up tokens and components for dashboards (`DB`, `DC-05`) |
+| [Pryzm Studio](https://pryzm.design/studio) | blends a gradient, a photo and a pattern into one high-resolution background | hero, section and OG backgrounds; `toolkit/gradients.md` |
+| [Book of Shapes](https://bookofshapes.com) | free generative SVG patterns (grid, radial, flow, noise, isometric, organic…) | background patterns tuned to the palette; `toolkit/shapes-and-backgrounds.md` |
+| [minitools.design](https://minitools.design) | directory of small design tools by category | the design tools list below; `toolkit/design-tools.md` |
+
+## Design tools
+
+Useful tools for each stage of a web project, mostly from [minitools.design](https://minitools.design).
+`toolkit/design-tools.md` says when the agent suggests each one.
+
+Brand and logos
+- GeoLogo, Logo Lattice: geometric logo marks on grids (a starting sketch only, never an invented brand mark)
+- Gridcraft: presenting logo work with construction grids
+- Symbl: testing how a mark reads at every size, before making favicons
+- [SVGL](https://svgl.app): real brand logos for "works with" rows
+
+Typography
+- [Fontshare](https://fontshare.com), [Google Fonts](https://fonts.google.com): free families
+- [Typewolf](https://www.typewolf.com): what real sites use, and alternatives to overused faces
+- [Type Scale](https://typescale.com), Typescale AI: modular type scales and tokens
+- The Good Line-Height: line heights on a baseline grid
+- [Fontjoy](https://fontjoy.com): pairing ideas
+- [Wakamai Fondue](https://wakamaifondue.com): what a font file supports (languages, figures, features)
+- FontFreezer: freezing variable fonts into smaller static files
+
+Colour and gradients
+- [OKLCH](https://oklch.com): picking colours in OKLCH
+- [Realtime Colors](https://www.realtimecolors.com): palettes previewed on a real layout
+- [Huemint](https://huemint.com), [Coolors](https://coolors.co), [Color Hunt](https://colorhunt.co): palette ideas
+- [Balsa UI Gradient Studio](https://balsa-ui.com/tools/gradient-studio), [Pryzm](https://pryzm.design/studio),
+  [ShaderGradient](https://shadergradient.co), Gradlab, Gradientool, Background Studio, mmeshy, Ramps Studio
+- [Who Can Use](https://www.whocanuse.com), Colorable: contrast checks for real people
+
+Shapes, patterns and icons
+- [Book of Shapes](https://bookofshapes.com), [Hero Patterns](https://heropatterns.com),
+  [Get Waves](https://getwaves.io), [Blobmaker](https://www.blobmaker.app), Dot Grid Builder, Durves
+- [Phosphor](https://phosphoricons.com), [Tabler Icons](https://tabler.io/icons), [Iconoir](https://iconoir.com):
+  icon sets beyond the default
+
+3D
+- [Spline](https://spline.design), Morflax Studio, Valessa: 3D scenes and product shots
+- [Poly Haven](https://polyhaven.com): free HDRIs, textures and models
+- [glTF Report](https://gltf.report): inspecting and compressing GLB files
+- Sticky, Liquid Metal, Glass: chrome, glass and foil looks for one hero object
 
 Motion
-- everything fading and sliding in on scroll
-- bouncy, springy animations on everyday UI
+- Easing editors and Springs Studio: curves and motion tokens
+- [Animista](https://animista.net): CSS animation ideas, adapted to the `MO` rules
 
-Copy
-- em dashes in every sentence
-- "It's not X, it's Y" phrasing
-- generic hero copy ("Supercharge your workflow")
-- wordy, repetitive text
-- vague buttons ("Get started", "Learn more")
-- claims without proof
+Mockups for the final stage
+- [shots.so](https://shots.so), Presenta, Tokokino, Ultramock, Sliick, mckp.live: real screenshots in device
+  frames for the README, case study and OG image
+- Frametic: a website URL turned into a mockup video for launch posts
+- [ray.so](https://ray.so): code snippets as images
 
-Trust
-- fake testimonials
-- leftover placeholder info (lorem ipsum, 123 Main Street)
-- no real product demo
-- broken embeds (maps, videos, chat)
-- forms that ask for too much
-- forms that can't be used with a keyboard
+Utilities
+- [Squoosh](https://squoosh.app): image compression
+- [SVGOMG](https://jakearchibald.github.io/svgomg/): SVG optimisation
+- Triim: trimming transparent edges
+- [tldraw](https://tldraw.com): quick wireframes at the outline checkpoint
 
 ## Source checklists
 
@@ -361,11 +479,8 @@ Item 20 is an advert for a paid service in the original; XSlop only asks for the
 | 19 | Gradient backgrounds | `SL-02` |
 | 20 | Periods in titles | `SL-27` |
 
-## Files
+## Credits
 
-- `SKILL.md` – the core skill sheet.
-- `WORKFLOW.md` – the step-by-step workflow with checkpoints and passes.
-- `templates/` – brief, direction board and decisions record used by the workflow.
-- `inspiration/`, `toolkit/`, `recipes/`, `style/`, `references/` – the packs described above.
-- `README.md` – this overview.
-- `assets/xslop-banner.jpg` – the image above, a dark 3D scene (chrome X, dissolving slop blob, bloom) rendered with three.js (`assets/banner.html` is its source).
+XSlop takes strong inspiration from [Impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus
+(Apache-2.0); see `NOTICE`. Apple HIG and Microsoft Fluent 2 are summarised in my own words with links to the
+originals. Pinterest pins belong to their authors and are linked, not copied.

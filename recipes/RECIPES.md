@@ -25,7 +25,7 @@ const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 ---
 
-## 1. Smooth scroll + scroll animations (Lenis + GSAP)
+## Smooth scroll + scroll animations (Lenis + GSAP)
 
 Use on content-led marketing and portfolio sites. Skip on dashboards and apps.
 
@@ -51,7 +51,7 @@ motion.
 
 ---
 
-## 2. Section reveal (only for key moments)
+## Section reveal (only for key moments)
 
 Use for a handful of headlines or hero elements, not every block (`SL-35`).
 
@@ -67,7 +67,7 @@ gsap.utils.toArray('[data-reveal]').forEach((el) => {
 
 ---
 
-## 3. Split-text headline reveal
+## Split-text headline reveal
 
 Use for the hero headline or one statement per page.
 
@@ -92,7 +92,7 @@ Guardrails: keep the real text in `aria-label`; stagger stays short (MO-03).
 
 ---
 
-## 4. Scroll-scrubbed word highlight (manifesto paragraph)
+## Scroll-scrubbed word highlight (manifesto paragraph)
 
 Words go from muted to full ink as the paragraph scrolls through the viewport.
 
@@ -108,7 +108,7 @@ Guardrails: the end state must be fully readable; for reduced motion show the te
 
 ---
 
-## 5. Pinned horizontal gallery
+## Pinned horizontal gallery
 
 Use for a "closer look" sequence of images or steps on desktop. On mobile, use native horizontal scroll with
 scroll-snap instead.
@@ -127,7 +127,7 @@ mm.add('(min-width: 900px) and (prefers-reduced-motion: no-preference)', () => {
 
 ---
 
-## 6. Magnetic button
+## Magnetic button
 
 Use on one or two primary CTAs, pointer devices only.
 
@@ -154,12 +154,12 @@ Pair with the press state:
 
 ---
 
-## 7. Infinite marquee (ticker strip)
+## Infinite marquee (ticker strip)
 
 Use for a single strip of short facts or logos. Pause on hover; stop for reduced motion.
 
 ```html
-<div class="marquee" aria-label="Drop 02 is live. 106 of 500 left. Numbered pieces.">
+<div class="marquee" aria-label="The spring drop is live. 106 of 500 left.">
   <div class="marquee__track" aria-hidden="true"><span>…content…</span><span>…same content…</span></div>
 </div>
 ```
@@ -174,7 +174,7 @@ Use for a single strip of short facts or logos. Pause on hover; stop for reduced
 
 ---
 
-## 8. Popover / dropdown that grows from its trigger
+## Popover / dropdown that grows from its trigger
 
 Implements MO-02, MO-10, MO-11, MO-12, MO-15.
 
@@ -197,7 +197,7 @@ edge). Close on Escape and outside click, return focus to the trigger, and use t
 
 ---
 
-## 9. Custom select (combobox)
+## Custom select (combobox)
 
 Use when the native select clashes with the design. Requirements: hidden input with the value for forms;
 button with `aria-haspopup="listbox"` and `aria-expanded`; list with `role="listbox"`, options with
@@ -206,7 +206,7 @@ upward when there is no room below; on small screens the list is full field widt
 
 ---
 
-## 10. Icon swap with blur (MO-18)
+## Icon swap with blur (MO-18)
 
 ```css
 .icon-swap { display: grid; }
@@ -216,7 +216,7 @@ upward when there is no room below; on small screens the list is full field widt
 
 ---
 
-## 11. Success pulse (MO-08)
+## Success pulse (MO-08)
 
 ```js
 const pulse = (el) => gsap.fromTo(el, { scale: 1 }, { scale: 1.06, duration: 0.14, yoyo: true, repeat: 1, ease: 'power2.out' })
@@ -226,14 +226,14 @@ Use on the bag count after "add to bag", a saved badge, a sent message.
 
 ---
 
-## 12. Toast notifications
+## Toast notifications
 
 Small, dark, bottom corner, one action link, auto-dismiss after 4–8 s, pause on hover, `role="status"`
 (polite) or `role="alert"` for errors. Stack newest at the bottom; never cover the primary CTA on mobile.
 
 ---
 
-## 13. Lightweight 3D hero object (three.js)
+## Lightweight 3D hero object (three.js)
 
 Use for one signature object. Checklist from real tuning work:
 
@@ -247,7 +247,7 @@ Use for one signature object. Checklist from real tuning work:
 
 ---
 
-## 14. Reservation countdown (e-commerce scarcity, honest version)
+## Reservation countdown (e-commerce scarcity, honest version)
 
 Show a hold timer only when stock is actually reserved. Start on add-to-bag, show minutes:seconds with
 tabular numbers (`DC-18`), turn red under 2 minutes, warn once with a toast, release the items when it ends,
@@ -255,7 +255,7 @@ and tell the user what happened in the bag with an option to add them back.
 
 ---
 
-## 15. Tracking-box overlay (technical / camera aesthetic)
+## Tracking-box overlay (technical / camera aesthetic)
 
 Thin-bordered boxes with corner ticks and tiny mono labels, connected by dashed SVG lines to a hub. Keep it
 sparse (about 6–11 boxes), move a few boxes per beat (every 1–1.5 s), ease moves (0.5–0.6 s), and redraw lines
