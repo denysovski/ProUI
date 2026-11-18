@@ -68,3 +68,10 @@ export function Hero() {
 | --- | --- | --- |
 | React Bits | MIT + Commons Clause | free in any website or product, including paid ones; do not sell or redistribute the components themselves |
 | 21st.dev | per component (MIT, Apache-2.0 and others) | check the component page before shipping; keep notices the licence asks for |
+
+## 21st.dev download limits
+
+A free 21st.dev account can download two components per day (the counter resets at midnight UTC); more needs
+a paid marketplace membership. So the agent picks 21st.dev components only at the design checkpoint, at most
+the one or two the site really uses, and prefers React Bits (no account, no limit) when both offer a similar
+effect.

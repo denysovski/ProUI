@@ -61,7 +61,7 @@ const outputs = new Map();
     `> Every component in the [21st.dev 3D collection](https://21st.dev/community/components/s/3d) (${data.length} components, read from the collection page), sorted by what it is for.`, '',
     '[Effects library](../README.md) · [React Bits catalogue](react-bits.md) · [Install guide](../install.md)', '',
     '> [!NOTE]',
-    '> 21st.dev is a community registry: every component has its own author and licence, and the source and registry need a free 21st.dev account. XSlop keeps this index and installs the chosen component into each project from 21st.dev. Check the licence column before shipping; "no licence" means ask the author first.', '',
+    '> 21st.dev is a community registry: every component has its own author and licence. Downloading source needs a 21st.dev account, and a free account is limited to two component downloads per day; more needs a paid marketplace membership. XSlop keeps this index and installs only the components a project really uses. Check the licence column before shipping; "no licence" means ask the author first.', '',
     '## Install', '', '```bash',
     '# signed in to 21st.dev (or with the 21st.dev Magic MCP / "copy prompt" button)',
     'npx shadcn@latest add https://21st.dev/r/<author>/<component>', '```', '',

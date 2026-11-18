@@ -37,6 +37,7 @@
 
 ## Rules for every preset
 
+- Prefer React Bits when it has a similar effect: 21st.dev downloads are limited on free accounts (`install.md`).
 - Replace demo colours, radii and fonts with the project's tokens.
 - Keep exactly one GPU canvas visible at a time.
 - Put real content into components: real photos in galleries, real numbers in counters, real logos in loops.
