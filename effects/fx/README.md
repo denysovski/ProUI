@@ -49,4 +49,4 @@ Open [demo.html](demo.html) locally to see all of them; the demo uses generated 
 Every effect here counts against the effect budget (`EF-20`) except the theme toggle, roll link and count up,
 which are small interface details. All of them belong to the Quiet kit and fit any other kit.
 
-Original ProUI code, free to use and change in any project. No code from Skiper UI or Annnimate.
+Original ProUI code under the [ProUI licence](../../LICENSE.md): use it in projects you build with a purchased copy of ProUI. No code from Skiper UI or Annnimate.

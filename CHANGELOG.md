@@ -2,6 +2,8 @@
 
 ## 4.0.0 (2026-11-18)
 
+- Licence: ProUI is a paid skill sold on Agensi ($9.99); no open licence on GitHub (`LICENSE.md`).
+
 - Renamed from XSlop to ProUI: repository, skill name (`proui`), commands ("ProUI critique"), project folder (`proui/`), scanner (`scripts/proui-scan.mjs`, `proui-ignore` comments). "XSlop" still works as a trigger word.
 - README and SKILL.md describe ProUI as a playbook for beautiful websites, not only a list of rules.
 

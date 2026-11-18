@@ -6,7 +6,7 @@
 
 Published on [Agensi as ProUI](https://agensi.io/skills/proui). This repository keeps its original name, ProUI; both names work in requests and commands.
 
-[What it is](#what-proui-is) · [Contents](#contents) · [How rules work](#how-the-rules-work) · [Rulebooks](#rulebooks) · [Workflow](#how-the-workflow-works) · [Blueprints](#blueprints) · [Effects](#effects-library) · [Commands](#commands) · [Websites](#websites-used-in-the-workflow) · [Tools](#design-tools) · [Quick start](#quick-start)
+[What it is](#what-proui-is) · [Contents](#contents) · [How rules work](#how-the-rules-work) · [Rulebooks](#rulebooks) · [Workflow](#how-the-workflow-works) · [Blueprints](#blueprints) · [Effects](#effects-library) · [Commands](#commands) · [Websites](#websites-used-in-the-workflow) · [Tools](#design-tools) · [Licence](#licence) · [Quick start](#quick-start)
 
 </div>
 
@@ -273,12 +273,19 @@ Tools without a link are listed on [minitools.design](https://minitools.design).
 
 </details>
 
+## Licence
+
+> [!IMPORTANT]
+> ProUI is **not free to use**. This repository is public so you can see what it contains, but there is no open
+> licence. A licence is sold on [Agensi](https://agensi.io/skills/proui) for $9.99; only after buying it may
+> you use ProUI, for your own and your clients' projects. Copying, sharing or reselling ProUI or any part of it needs the
+> author's written permission. Full terms: [LICENSE.md](LICENSE.md). Third-party parts keep their own licences
+> ([NOTICE](NOTICE)).
+
 ## Quick start
 
-```bash
-# install as a Claude Code skill (personal or per project)
-git clone https://github.com/denysovski/ProUI ~/.claude/skills/proui
-```
+After buying ProUI on [Agensi](https://agensi.io/skills/proui), install the copy you get there in your agent
+(for Claude Code: `~/.claude/skills/proui/`). Then ask:
 
 ```text
 Build a website for a coffee shop using ProUI.
