@@ -30,6 +30,14 @@
     {
       "title": "Aceternity UI components",
       "url": "https://ui.aceternity.com/components"
+    },
+    {
+      "title": "Skiper UI quick start and licence",
+      "url": "https://skiper-ui.com/docs/quick-start"
+    },
+    {
+      "title": "Annnimate animations",
+      "url": "https://annnimate.com/animations"
     }
   ],
   "related": [
@@ -165,13 +173,25 @@
       "id": "EF-21",
       "kind": "do",
       "title": "One kit per site",
-      "text": "Pick one kit (Quiet, Modern dark, Modern light, Immersive, Retro, Playful) and take every effect from it, so motion, light and depth look like one family. When the kit has nothing for a section, build that section plain."
+      "text": "Pick one kit (Quiet, Modern dark, Modern light, Studio, Immersive, Retro, Playful) and take every effect from it, so motion, light and depth look like one family. When the kit has nothing for a section, build that section plain."
     },
     {
       "id": "EF-22",
       "kind": "dont",
       "title": "Mixing effect families",
       "text": "An Aceternity beam hero, a React Bits shader section, a 21st.dev 3D carousel and Motion Primitives cards on one page. Each library has its own motion language; mixed, the page looks assembled from demos."
+    },
+    {
+      "id": "EF-23",
+      "kind": "do",
+      "title": "Credit the libraries that ask for it",
+      "text": "Free Skiper UI components require attribution: add a credit in the footer, colophon or credits page when one is used. Keep the MIT notice for Motion Primitives and any licence file a 21st.dev component ships with."
+    },
+    {
+      "id": "EF-24",
+      "kind": "dont",
+      "title": "Copying paid components",
+      "text": "Rebuilding a paid library component from its preview code, or pasting Pro source into a project without a licence. The motion recipes describe the pattern; build it from the description."
     }
   ]
 }

@@ -1,0 +1,393 @@
+[
+ {
+  "category": "Media",
+  "name": "Apple play button",
+  "url": "https://skiper-ui.com/v1/skiper3",
+  "use": "Play button with a soft hover morph",
+  "install": "@skiper-ui/skiper3",
+  "deps": [
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Buttons and toggles",
+  "name": "Theme toggle buttons",
+  "url": "https://skiper-ui.com/v1/skiper4",
+  "use": "Five animated light and dark switches",
+  "install": "@skiper-ui/skiper4",
+  "deps": [
+   "framer-motion",
+   "clsx"
+  ]
+ },
+ {
+  "category": "Scroll",
+  "name": "Card stack scroll",
+  "url": "https://skiper-ui.com/v1/skiper16",
+  "use": "Cards stack and scale back as you scroll",
+  "install": "@skiper-ui/skiper16",
+  "deps": [
+   "framer-motion",
+   "lenis"
+  ]
+ },
+ {
+  "category": "Scroll",
+  "name": "Card stack with gsap and rotate",
+  "url": "https://skiper-ui.com/v1/skiper17",
+  "use": "Scroll stack with rotation, GSAP version",
+  "install": "@skiper-ui/skiper17",
+  "deps": [
+   "gsap",
+   "@gsap/react",
+   "lenis"
+  ]
+ },
+ {
+  "category": "Scroll",
+  "name": "Svg follow scroll",
+  "url": "https://skiper-ui.com/v1/skiper19",
+  "use": "SVG line draws itself with scroll progress",
+  "install": "@skiper-ui/skiper19",
+  "deps": [
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Buttons and toggles",
+  "name": "Music toggle btn",
+  "url": "https://skiper-ui.com/v1/skiper25",
+  "use": "Sound on/off toggle with a vinyl motion",
+  "install": "@skiper-ui/skiper25",
+  "deps": [
+   "framer-motion",
+   "use-sound"
+  ]
+ },
+ {
+  "category": "Buttons and toggles",
+  "name": "Theme toggle btn",
+  "url": "https://skiper-ui.com/v1/skiper26",
+  "use": "Theme switch using View Transitions (circle, blur, wipe)",
+  "install": "@skiper-ui/skiper26",
+  "deps": [
+   "framer-motion",
+   "next-themes",
+   "lucide-react"
+  ]
+ },
+ {
+  "category": "Text",
+  "name": "3D perspective text",
+  "url": "https://skiper-ui.com/v1/skiper28",
+  "use": "Headline tilts in perspective with scroll",
+  "install": "@skiper-ui/skiper28",
+  "deps": [
+   "framer-motion",
+   "lenis"
+  ]
+ },
+ {
+  "category": "Scroll",
+  "name": "Oliver parallax",
+  "url": "https://skiper-ui.com/v1/skiper30",
+  "use": "Multi-layer parallax of images",
+  "install": "@skiper-ui/skiper30",
+  "deps": [
+   "framer-motion",
+   "lenis"
+  ]
+ },
+ {
+  "category": "Text",
+  "name": "Text Scroll animation",
+  "url": "https://skiper-ui.com/v1/skiper31",
+  "use": "Letters reveal as the section scrolls",
+  "install": "@skiper-ui/skiper31",
+  "deps": [
+   "framer-motion",
+   "lenis"
+  ]
+ },
+ {
+  "category": "Scroll",
+  "name": "Scroll images reveal 003",
+  "url": "https://skiper-ui.com/v1/skiper34",
+  "use": "Images scale and rotate into place on scroll",
+  "install": "@skiper-ui/skiper34",
+  "deps": [
+   "framer-motion",
+   "lenis"
+  ]
+ },
+ {
+  "category": "Numbers",
+  "name": "Animated number",
+  "url": "https://skiper-ui.com/v1/skiper37",
+  "use": "Countdown, spring and in-view number animations",
+  "install": "@skiper-ui/skiper37",
+  "deps": [
+   "framer-motion",
+   "@number-flow/react",
+   "react-intersection-observer"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Canvas crowd",
+  "url": "https://skiper-ui.com/v1/skiper39",
+  "use": "Canvas of walking illustrated people",
+  "install": "@skiper-ui/skiper39",
+  "deps": [
+   "gsap"
+  ]
+ },
+ {
+  "category": "Links and navigation",
+  "name": "CssLink",
+  "url": "https://skiper-ui.com/v1/skiper40",
+  "use": "Link with a CSS-only hover animation",
+  "install": "@skiper-ui/skiper40",
+  "deps": [
+   "lucide-react"
+  ]
+ },
+ {
+  "category": "Surfaces",
+  "name": "Progressive Blur",
+  "url": "https://skiper-ui.com/v1/skiper41",
+  "use": "Layered blur that fades toward an edge",
+  "install": "@skiper-ui/skiper41",
+  "deps": []
+ },
+ {
+  "category": "Carousels",
+  "name": "Perspective carousel",
+  "url": "https://skiper-ui.com/v1/skiper47",
+  "use": "Coverflow carousel in 3D perspective",
+  "install": "@skiper-ui/skiper47",
+  "deps": [
+   "swiper",
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Carousels",
+  "name": "Card swipe carousel",
+  "url": "https://skiper-ui.com/v1/skiper48",
+  "use": "Stacked cards you swipe away",
+  "install": "@skiper-ui/skiper48",
+  "deps": [
+   "swiper",
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Carousels",
+  "name": "Inverted perspective carousel",
+  "url": "https://skiper-ui.com/v1/skiper49",
+  "use": "Coverflow with reversed perspective",
+  "install": "@skiper-ui/skiper49",
+  "deps": [
+   "swiper",
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Carousels",
+  "name": "Creative carousel 001",
+  "url": "https://skiper-ui.com/v1/skiper50",
+  "use": "Single image slider with a focus effect",
+  "install": "@skiper-ui/skiper50",
+  "deps": [
+   "swiper",
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Carousels",
+  "name": "Creative carousel 002",
+  "url": "https://skiper-ui.com/v1/skiper51",
+  "use": "Slider with an unusual transition",
+  "install": "@skiper-ui/skiper51",
+  "deps": [
+   "swiper",
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Galleries",
+  "name": "ExpandOnHover",
+  "url": "https://skiper-ui.com/v1/skiper52",
+  "use": "Row of panels, the hovered one expands",
+  "install": "@skiper-ui/skiper52",
+  "deps": [
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Galleries",
+  "name": "ExpandOnHover vertical",
+  "url": "https://skiper-ui.com/v1/skiper53",
+  "use": "Column of panels, the hovered one expands",
+  "install": "@skiper-ui/skiper53",
+  "deps": [
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Carousels",
+  "name": "Shadcn clipPath Carousal",
+  "url": "https://skiper-ui.com/v1/skiper54",
+  "use": "Carousel with clip-path transitions on shadcn",
+  "install": "@skiper-ui/skiper54",
+  "deps": [
+   "embla-carousel-autoplay",
+   "framer-motion",
+   "lucide-react"
+  ]
+ },
+ {
+  "category": "Links and navigation",
+  "name": "Text roll navigation",
+  "url": "https://skiper-ui.com/v1/skiper58",
+  "use": "Menu links whose letters roll on hover",
+  "install": "@skiper-ui/skiper58",
+  "deps": [
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Cursor",
+  "name": "Mouse follow animations",
+  "url": "https://skiper-ui.com/v1/skiper61",
+  "use": "Elements that follow the pointer, direct or with a spring",
+  "install": "@skiper-ui/skiper61",
+  "deps": [
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Utilities",
+  "name": "Loop animation hook",
+  "url": "https://skiper-ui.com/v1/skiper62",
+  "use": "Hook for looping animations",
+  "install": "@skiper-ui/skiper62",
+  "deps": [
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Surfaces",
+  "name": "Apple squicircle effect",
+  "url": "https://skiper-ui.com/v1/skiper63",
+  "use": "Squircle corners through an SVG filter",
+  "install": "@skiper-ui/skiper63",
+  "deps": [
+   "lucide-react"
+  ]
+ },
+ {
+  "category": "Surfaces",
+  "name": "Gooey Effect",
+  "url": "https://skiper-ui.com/v1/skiper64",
+  "use": "Gooey liquid merge on any elements",
+  "install": "@skiper-ui/skiper64",
+  "deps": [
+   "framer-motion"
+  ]
+ },
+ {
+  "category": "Utilities",
+  "name": "Breakpoint indicator",
+  "url": "https://skiper-ui.com/v1/skiper65",
+  "use": "Shows the current Tailwind breakpoint while developing",
+  "install": "@skiper-ui/skiper65",
+  "deps": [
+   "tailwindcss"
+  ]
+ },
+ {
+  "category": "Surfaces",
+  "name": "SVG clip path mask",
+  "url": "https://skiper-ui.com/v1/skiper66",
+  "use": "Image masked by a custom SVG shape",
+  "install": "@skiper-ui/skiper66",
+  "deps": [
+   "tailwindcss"
+  ]
+ },
+ {
+  "category": "Media",
+  "name": "Video player 001",
+  "url": "https://skiper-ui.com/v1/skiper67",
+  "use": "Video preview that opens into a modal player",
+  "install": "@skiper-ui/skiper67",
+  "deps": [
+   "framer-motion",
+   "media-chrome",
+   "lucide-react"
+  ]
+ },
+ {
+  "category": "Scroll",
+  "name": "Scroll with fade effect",
+  "url": "https://skiper-ui.com/v1/skiper87",
+  "use": "CSS-only fade at the top and bottom of a scroller",
+  "install": "@skiper-ui/skiper87",
+  "deps": []
+ },
+ {
+  "category": "Scroll",
+  "name": "Scroll progress 001",
+  "url": "https://skiper-ui.com/v1/skiper89",
+  "use": "Draggable circular reading progress with a number",
+  "install": "@skiper-ui/skiper89",
+  "deps": [
+   "motion",
+   "@number-flow/react"
+  ]
+ },
+ {
+  "category": "Buttons and toggles",
+  "name": "Animated icons 002",
+  "url": "https://skiper-ui.com/v1/skiper99",
+  "use": "Set of animated icons",
+  "install": "@skiper-ui/skiper99",
+  "deps": [
+   "framer-motion",
+   "lucide-react"
+  ]
+ },
+ {
+  "category": "Overlays",
+  "name": "Custom tooltip",
+  "url": "https://skiper-ui.com/v1/skiper101",
+  "use": "Tooltip on Radix with animation and arrow",
+  "install": "@skiper-ui/skiper101",
+  "deps": [
+   "@radix-ui/react-tooltip"
+  ]
+ },
+ {
+  "category": "Utilities",
+  "name": "Debug Pannel",
+  "url": "https://skiper-ui.com/v1/skiper102",
+  "use": "Prints any object on screen while developing",
+  "install": "@skiper-ui/skiper102",
+  "deps": [
+   "motion"
+  ]
+ },
+ {
+  "category": "Forms",
+  "name": "Smooth caret input",
+  "url": "https://skiper-ui.com/v1/skiper106",
+  "use": "Input with an animated caret that glides between positions",
+  "install": "@skiper-ui/skiper106",
+  "deps": [
+   "dialkit",
+   "framer-motion"
+  ]
+ }
+]

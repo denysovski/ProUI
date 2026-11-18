@@ -137,6 +137,76 @@ const outputs = new Map();
   outputs.set('effects/catalog/aceternity.md', out.join('\n'));
 }
 
+// ---------- Skiper UI (free components, catalogue only) ----------
+{
+  const data = JSON.parse(readFileSync('effects/catalog/skiper-ui.json', 'utf8'));
+  const order = [...new Set(data.map((d) => d.category))];
+  const anchor = (c) => c.toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/ /g, '-');
+  const out = ['# Skiper UI catalogue', '',
+    `> The ${data.length} free components of [Skiper UI](https://skiper-ui.com/components?source=free), read from each component page. Small, polished Framer Motion pieces: scroll stacks, carousels, expanding panels, toggles, progressive blur.`, '',
+    '[Effects library](../README.md) · [Kits](../kits.md) · [Motion recipes](motion-recipes.md) · [Install guide](../install.md)', '',
+    '> [!IMPORTANT]',
+    '> Free Skiper UI components may be used and changed in personal and commercial projects, **with attribution to Skiper UI** (for example a credit in the footer or the colophon). Their source is not copied into XSlop. Pro components need a paid licence key and are not listed.', '',
+    '## Install', '', '```bash',
+    'npm i framer-motion clsx tailwind-merge lucide-react',
+    'npx shadcn@latest add @skiper-ui/skiper40', '```', '',
+    'Components land in `components/v1/skiperNN.tsx`. Rename the file and the export to what it does in the project.', ''];
+  out.push('## Contents', '', ...order.map((c) => `- [${c}](#${anchor(c)})`), '');
+  for (const cat of order) {
+    out.push(`## ${cat}`, '', '| Component | Use it for | Dependencies | Install |', '| --- | --- | --- | --- |');
+    for (const c of data.filter((d) => d.category === cat))
+      out.push(`| [${esc(c.name)}](${c.url}) | ${esc(c.use)} | ${c.deps.length ? c.deps.join(', ') : 'none'} | \`${c.install}\` |`);
+    out.push('');
+  }
+  out.push('---', '', NOTE, '');
+  outputs.set('effects/catalog/skiper-ui.md', out.join('\n'));
+}
+
+// ---------- Motion recipes (own build prompts, inspired by Annnimate) ----------
+{
+  const data = JSON.parse(readFileSync('effects/catalog/motion-recipes.json', 'utf8'));
+  const order = [...new Set(data.map((d) => d.category))];
+  const anchor = (c) => c.toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/ /g, '-');
+  const count = (l) => data.filter((d) => d.level === l).length;
+  const out = ['# Motion recipes', '',
+    `> ${data.length} build prompts for the motion patterns seen on award-level studio sites, written for XSlop so any of them can be built from scratch with GSAP. The pattern list was studied from [Annnimate](https://annnimate.com/animations), a paid GSAP library; the prompts are our own descriptions, no code was copied. Each row links to the original for reference.`, '',
+    '[Effects library](../README.md) · [Kits](../kits.md) · [Sections](../../blueprints/sections.md) · [Motion Rulebook](../../rules/motion/README.md)', '',
+    `| Level | Recipes | Use |`, '| --- | --- | --- |',
+    `| Subtle | ${count('Subtle')} | any site at Subtle level and above; most of them are what makes a site feel finished |`,
+    `| Modern | ${count('Modern')} | Modern level; one signature recipe per page, the rest Subtle |`,
+    `| Immersive | ${count('Immersive')} | Immersive 3D level; one per page, heavy, lazy-loaded |`, '',
+    '## How to build any recipe', '', '```text',
+    'Build the <recipe> from effects/catalog/motion-recipes.md for <section> of <site>.',
+    'Stack: GSAP 3.13+ (all plugins are free), @gsap/react useGSAP in React, template refs + cleanup in Vue,',
+    'or plain JS. Register only the plugins listed for the recipe.',
+    'Content: <real content>. Tokens: --bg, --surface, --text, --accent, fonts, radius from the design system.',
+    'Rules: keep real HTML text (SplitText output aria-hidden, original text in aria-label or sr-only);',
+    'wrap motion in gsap.matchMedia() with a (prefers-reduced-motion: reduce) branch that shows the end state;',
+    'ScrollTrigger reveals run once unless the recipe is scrubbed; pinned sections get a skip link and must not trap',
+    'keyboard focus; pointer effects are off on touch; three.js recipes lazy-load, pause off screen and cap DPR at 1.5.',
+    'Count it against the effect budget in xslop/DECISIONS.md.', '```', '',
+    'Shared setup:', '', '```bash', 'npm i gsap @gsap/react', '```', '',
+    '```js',
+    "import gsap from 'gsap';",
+    "import { ScrollTrigger } from 'gsap/ScrollTrigger';",
+    "import { SplitText } from 'gsap/SplitText';",
+    'gsap.registerPlugin(ScrollTrigger, SplitText);',
+    '',
+    'const mm = gsap.matchMedia();',
+    "mm.add('(prefers-reduced-motion: no-preference)', () => {",
+    '  // recipe animation here; return a cleanup if needed',
+    '});', '```', ''];
+  out.push('## Contents', '', ...order.map((c) => `- [${c}](#${anchor(c)})`), '');
+  for (const cat of order) {
+    out.push(`## ${cat}`, '', '| Recipe | Level | GSAP tools | Build prompt | Seen at |', '| --- | --- | --- | --- | --- |');
+    for (const c of data.filter((d) => d.category === cat))
+      out.push(`| **${esc(c.name)}** | ${c.level} | ${esc(c.tools)} | ${esc(c.prompt)} | [annnimate](${c.inspiration}) |`);
+    out.push('');
+  }
+  out.push('---', '', NOTE, '');
+  outputs.set('effects/catalog/motion-recipes.md', out.join('\n'));
+}
+
 let stale = 0;
 for (const [p, content] of outputs) {
   if (CHECK) { if (!existsSync(p) || readFileSync(p, 'utf8') !== content) { console.error(`${p} is out of date: run node scripts/build-effects.mjs`); stale++; } }

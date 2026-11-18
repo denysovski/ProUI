@@ -12,6 +12,8 @@
 | [install.md](install.md) | how to install components from React Bits and 21st.dev, and what to do without React |
 | [catalog/motion-primitives.md](catalog/motion-primitives.md) | all 33 Motion Primitives components; source saved in [kits/motion-primitives](kits/motion-primitives/) (MIT) |
 | [catalog/aceternity.md](catalog/aceternity.md) | the 114 free Aceternity UI components with registry names |
+| [catalog/skiper-ui.md](catalog/skiper-ui.md) | the 37 free Skiper UI components (attribution required) |
+| [catalog/motion-recipes.md](catalog/motion-recipes.md) | 133 GSAP build prompts for studio-style motion, studied from Annnimate, written in our own words |
 | [catalog/react-bits.md](catalog/react-bits.md) | every React Bits component: backgrounds, animations, text, components, micro-interactions |
 | [catalog/21st-3d.md](catalog/21st-3d.md) | 3D components from 21st.dev: heroes, shaders, globes, orbs, tilt cards, 3D carousels, scroll |
 | [Effects Rulebook](../rules/effects/README.md) | the rules every effect must pass (`EF`) |

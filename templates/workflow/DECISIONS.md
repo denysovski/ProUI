@@ -22,7 +22,7 @@ continues from here with `XSlop continue`.
 
 ## Effects
 
-- Kit (`effects/kits.md`: Quiet / Modern dark / Modern light / Immersive / Retro / Playful / none):
+- Kit (`effects/kits.md`: Quiet / Modern dark / Modern light / Studio / Immersive / Retro / Playful / none):
 - Effect budget (number on the whole site; the user's own number if they gave one):
 - Preset (`effects/presets.md`):
 - Components picked, with page, section, source and licence:

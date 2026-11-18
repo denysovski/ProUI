@@ -140,6 +140,8 @@ one **kit** (a family of components that look alike) and keeps to an **effect bu
 | Catalogue | What's in it |
 | --- | --- |
 | [Motion Primitives](effects/catalog/motion-primitives.md) | all 33 components of [motion-primitives.com](https://motion-primitives.com), source saved in the repository (MIT): text effects, reveals, spotlight, tilt, accordion, morphing dialogs |
+| [Skiper UI](effects/catalog/skiper-ui.md) | the 37 free components of [skiper-ui.com](https://skiper-ui.com/components?source=free): scroll stacks, coverflow carousels, expanding panels, theme toggles, progressive blur (credit Skiper UI when used) |
+| [Motion recipes](effects/catalog/motion-recipes.md) | 133 GSAP build prompts for studio-style motion (text reveals, pinned chapters, sliders, menus, buttons, shaders), studied from [Annnimate](https://annnimate.com/animations) and written in our own words |
 | [Aceternity UI](effects/catalog/aceternity.md) | the 114 free components of [ui.aceternity.com](https://ui.aceternity.com/components) with registry names: beams, spotlights, aurora, bento grids, 3D cards, globes, parallax heroes |
 | [React Bits](effects/catalog/react-bits.md) | all 217 components of [reactbits.dev](https://reactbits.dev/get-started/index): shader backgrounds, cursor and reveal animations, animated text, galleries, cards, micro-interactions |
 | [21st.dev 3D](effects/catalog/21st-3d.md) | all 169 components of the [21st.dev 3D collection](https://21st.dev/community/components/s/3d): 3D heroes, backgrounds, globes, 3D objects, cards, 3D carousels, scroll stories, with author and licence |

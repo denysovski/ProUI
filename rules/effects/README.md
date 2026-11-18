@@ -22,7 +22,8 @@ Positive rules: what a finished, professional site does.
 | `EF-10` | **Test on a mid-range phone** | Effects are checked on a real mid-range Android phone or with 4× CPU throttling: smooth scroll, INP under 200 ms, no overheating. |
 | `EF-11` | **Install from the official source** | Components come from their registry (React Bits, 21st.dev) with their licence checked and recorded in the project. |
 | `EF-20` | **Respect the effect budget** | Count every effect that moves on its own, follows the pointer or renders on a canvas. "A few" or "a couple" means two at most on the whole site; a number the user gives is the number. List the planned effects with their places in the outline (`effects/kits.md`). |
-| `EF-21` | **One kit per site** | Pick one kit (Quiet, Modern dark, Modern light, Immersive, Retro, Playful) and take every effect from it, so motion, light and depth look like one family. When the kit has nothing for a section, build that section plain. |
+| `EF-21` | **One kit per site** | Pick one kit (Quiet, Modern dark, Modern light, Studio, Immersive, Retro, Playful) and take every effect from it, so motion, light and depth look like one family. When the kit has nothing for a section, build that section plain. |
+| `EF-23` | **Credit the libraries that ask for it** | Free Skiper UI components require attribution: add a credit in the footer, colophon or credits page when one is used. Keep the MIT notice for Motion Primitives and any licence file a 21st.dev component ships with. |
 
 ## Don't
 
@@ -39,6 +40,7 @@ Negative rules: what never ships.
 | `EF-18` | **React only for an effect** | Do not add React to a non-React site just to run one animation; rebuild the idea with CSS, GSAP or three.js. |
 | `EF-19` | **Redistributing component libraries** | Never copy React Bits or 21st.dev component source into a template, kit or skill for sale or redistribution; install per project. |
 | `EF-22` | **Mixing effect families** | An Aceternity beam hero, a React Bits shader section, a 21st.dev 3D carousel and Motion Primitives cards on one page. Each library has its own motion language; mixed, the page looks assembled from demos. |
+| `EF-24` | **Copying paid components** | Rebuilding a paid library component from its preview code, or pasting Pro source into a project without a licence. The motion recipes describe the pattern; build it from the description. |
 
 ## Related anti-slop rules
 
@@ -66,6 +68,8 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [web.dev: Animations and performance](https://web.dev/articles/animations-guide)
 - [Motion Primitives](https://motion-primitives.com)
 - [Aceternity UI components](https://ui.aceternity.com/components)
+- [Skiper UI quick start and licence](https://skiper-ui.com/docs/quick-start)
+- [Annnimate animations](https://annnimate.com/animations)
 
 ---
 

@@ -35,6 +35,12 @@ npm i motion clsx tailwind-merge
 npx shadcn@latest add @aceternity/spotlight-new
 npx shadcn@latest add @aceternity/bento-grid
 
+# Skiper UI (free components; credit Skiper UI on the site)
+npx shadcn@latest add @skiper-ui/skiper16
+
+# GSAP for the motion recipes (every plugin is free since 3.13)
+npm i gsap @gsap/react
+
 # 21st.dev: needs a free 21st.dev account (sign in, or use the Magic MCP / copy-prompt button)
 npx shadcn@latest add https://21st.dev/r/shuding/cobe-globe
 ```
@@ -77,6 +83,8 @@ export function Hero() {
 | --- | --- | --- |
 | Motion Primitives | MIT | free for any use; the source is saved in `kits/motion-primitives/`; keep the copyright notice |
 | Aceternity UI (free components) | Aceternity licence | free in your own and client projects; do not redistribute or resell the source; Pro blocks need a paid licence |
+| Skiper UI (free components) | Skiper UI terms | free for personal and commercial use with attribution to Skiper UI; Pro components need a licence key |
+| GSAP | GSAP standard licence | free for commercial use, including all plugins, since 3.13 |
 | React Bits | MIT + Commons Clause | free in any website or product, including paid ones; do not sell or redistribute the components themselves |
 | 21st.dev | per component (MIT, Apache-2.0 and others) | check the component page before shipping; keep notices the licence asks for |
 

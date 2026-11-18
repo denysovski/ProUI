@@ -6,7 +6,8 @@
 
 **Sources:** `MP` Motion Primitives (saved in [effects/kits/motion-primitives](../effects/kits/motion-primitives/)),
 `ACE` Aceternity UI (install `@aceternity/<name>`), `RB` React Bits (install `@react-bits/<Name>-TS-TW`),
-`21st` 21st.dev. "Plain" means HTML and CSS only: no library.
+`21st` 21st.dev, `SK` Skiper UI (free, credit required). For the Studio kit, every section is built from a
+GSAP [motion recipe](../effects/catalog/motion-recipes.md) instead. "Plain" means HTML and CSS only: no library.
 
 > [!IMPORTANT]
 > The table lists options, not a shopping list. A page gets **one** signature effect (`EF-02`). Every other

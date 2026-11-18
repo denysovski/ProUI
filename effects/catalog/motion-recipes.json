@@ -1,0 +1,1199 @@
+[
+ {
+  "category": "Text",
+  "id": "text-reveal",
+  "name": "Line or word reveal",
+  "level": "Subtle",
+  "tools": "SplitText, ScrollTrigger",
+  "prompt": "Split the headline into lines with masks; each line slides up from below its mask with a 0.08 s stagger when 70 % in view. Run once.",
+  "inspiration": "https://annnimate.com/animations/text-reveal"
+ },
+ {
+  "category": "Text",
+  "id": "character-appear",
+  "name": "Character fade-in",
+  "level": "Subtle",
+  "tools": "SplitText, ScrollTrigger",
+  "prompt": "Split into characters and fade opacity only, in order or shuffled, scrubbed to the first half of the section. No movement, so it suits calm brands.",
+  "inspiration": "https://annnimate.com/animations/character-appear"
+ },
+ {
+  "category": "Text",
+  "id": "cinematic-text",
+  "name": "Cinematic title",
+  "level": "Modern",
+  "tools": "SplitText, ScrollTrigger",
+  "prompt": "Large title lines enter alternately from left and right with a long expo ease, like film credits. Lines, words or chars, each with its own stagger.",
+  "inspiration": "https://annnimate.com/animations/cinematic-text"
+ },
+ {
+  "category": "Text",
+  "id": "popping-text",
+  "name": "Popping letters",
+  "level": "Modern",
+  "tools": "SplitText, ScrollTrigger",
+  "prompt": "Characters scale from 0 with a small random rotation and a back-out bounce, origin top-left. For playful one-line statements only.",
+  "inspiration": "https://annnimate.com/animations/popping-text"
+ },
+ {
+  "category": "Text",
+  "id": "folding-text",
+  "name": "3D folding letters",
+  "level": "Modern",
+  "tools": "SplitText, ScrollTrigger",
+  "prompt": "Characters rotate in on the X axis from 90 degrees with perspective on the parent, scrubbed to scroll. Keep to one headline.",
+  "inspiration": "https://annnimate.com/animations/folding-text"
+ },
+ {
+  "category": "Text",
+  "id": "text-scramble",
+  "name": "Text scramble",
+  "level": "Subtle",
+  "tools": "ScrambleText or custom",
+  "prompt": "Characters cycle through a charset (A-Z, 0-9, binary) and lock in left to right. Trigger on view, hover or click. Real text in an aria-label.",
+  "inspiration": "https://annnimate.com/animations/text-scramble"
+ },
+ {
+  "category": "Text",
+  "id": "dual-scramble",
+  "name": "Two-colour scramble",
+  "level": "Subtle",
+  "tools": "ScrambleText, ScrollTrigger",
+  "prompt": "Scramble first in the accent colour, then settle into the text colour. Stack the final text under the scramble span so the layout never shifts.",
+  "inspiration": "https://annnimate.com/animations/dual-scramble"
+ },
+ {
+  "category": "Text",
+  "id": "typewriter",
+  "name": "Typewriter",
+  "level": "Subtle",
+  "tools": "GSAP timeline",
+  "prompt": "Type a phrase character by character, pause, delete, type the next. Timeline only, no intervals. Caret blinks with CSS. Stop after one cycle when reduced motion is on.",
+  "inspiration": "https://annnimate.com/animations/typewriter"
+ },
+ {
+  "category": "Text",
+  "id": "text-shimmer-wave",
+  "name": "Shimmer wave",
+  "level": "Subtle",
+  "tools": "SplitText",
+  "prompt": "A highlight travels across the characters as a wave of brightness and slight lift. Loop slowly or once on view.",
+  "inspiration": "https://annnimate.com/animations/text-shimmer-wave"
+ },
+ {
+  "category": "Text",
+  "id": "text-fill-wave",
+  "name": "Fill on scroll",
+  "level": "Subtle",
+  "tools": "SplitText, ScrollTrigger",
+  "prompt": "Big headline starts as outline or muted colour and fills line by line with scroll; an accent band rides the edge of the fill.",
+  "inspiration": "https://annnimate.com/animations/text-fill-wave"
+ },
+ {
+  "category": "Text",
+  "id": "focus-text",
+  "name": "Word focus brackets",
+  "level": "Modern",
+  "tools": "SplitText, ScrollTrigger",
+  "prompt": "Four corner brackets move from word to word and resize to each; the framed word stays sharp, the rest blur slightly. Scroll or hover drives it.",
+  "inspiration": "https://annnimate.com/animations/focus-text"
+ },
+ {
+  "category": "Text",
+  "id": "rotating-words",
+  "name": "Word wheel",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "Words on a vertical wheel with 3D rotateX; the centre word is full opacity, the others fade with distance. Scroll-driven or autoplay that lands on the last word.",
+  "inspiration": "https://annnimate.com/animations/rotating-words"
+ },
+ {
+  "category": "Text",
+  "id": "word-roller",
+  "name": "Rolling first word",
+  "level": "Modern",
+  "tools": "ScrollTrigger, Inertia",
+  "prompt": "One word in a sentence rolls through a looping list as you scroll while the rest of the sentence stays still; the active word gets the accent.",
+  "inspiration": "https://annnimate.com/animations/word-roller"
+ },
+ {
+  "category": "Text",
+  "id": "text-morph",
+  "name": "Typed text morph",
+  "level": "Subtle",
+  "tools": "Flip",
+  "prompt": "As the user types, letters that shift position glide to their new place with Flip. For search fields and live headlines.",
+  "inspiration": "https://annnimate.com/animations/text-morph"
+ },
+ {
+  "category": "Text",
+  "id": "velocity-type",
+  "name": "Velocity type",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "Variable font axes (weight, width, slant) follow scroll velocity, then ease back to rest. Needs a variable font; clamp the range so text stays readable.",
+  "inspiration": "https://annnimate.com/animations/velocity-type"
+ },
+ {
+  "category": "Text",
+  "id": "echo-headline",
+  "name": "Echo headline",
+  "level": "Immersive",
+  "tools": "ScrollTrigger",
+  "prompt": "One word with stacked copies behind it in 3D that spread out with scroll and fade with depth. Copies are aria-hidden.",
+  "inspiration": "https://annnimate.com/animations/echo-headline"
+ },
+ {
+  "category": "Text",
+  "id": "crossover-text",
+  "name": "Crossover text",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "A big headline changes colour exactly where images pass under it, using a duplicated layer clipped to the image bounds.",
+  "inspiration": "https://annnimate.com/animations/crossover-text"
+ },
+ {
+  "category": "Text",
+  "id": "text-on-path",
+  "name": "Text on a hidden path",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "Words appear one by one along an invisible SVG curve as you scroll; only the words show the line.",
+  "inspiration": "https://annnimate.com/animations/text-on-path"
+ },
+ {
+  "category": "Text",
+  "id": "parting-text",
+  "name": "Parting text",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "A fixed image in the centre while manifesto lines scroll past; each line splits around the image and closes after it.",
+  "inspiration": "https://annnimate.com/animations/parting-text"
+ },
+ {
+  "category": "Text",
+  "id": "paragraph-indent",
+  "name": "Editorial indent",
+  "level": "Subtle",
+  "tools": "SplitText, ScrollTrigger",
+  "prompt": "Lines rise from masks, then the first line slides right to open an indent and a small image fades into the gap.",
+  "inspiration": "https://annnimate.com/animations/paragraph-indent"
+ },
+ {
+  "category": "Text",
+  "id": "zoom-through-text",
+  "name": "Zoom through text",
+  "level": "Immersive",
+  "tools": "SplitText, ScrollTrigger",
+  "prompt": "A big word scales up with scroll until the camera passes between two letters into the next section. Pin the section; give a skip link.",
+  "inspiration": "https://annnimate.com/animations/zoom-through-text"
+ },
+ {
+  "category": "Text",
+  "id": "inline-image-headline",
+  "name": "Images inside a headline",
+  "level": "Modern",
+  "tools": "SplitText, ScrollTrigger",
+  "prompt": "Small photos sit between words; on view the lines rise and the photo slots widen, pushing words apart.",
+  "inspiration": "https://annnimate.com/animations/inline-image-headline"
+ },
+ {
+  "category": "Text",
+  "id": "rectangle-text-reveal",
+  "name": "Block wipe text",
+  "level": "Subtle",
+  "tools": "SplitText, ScrollTrigger",
+  "prompt": "Each line is covered by a rounded block that shrinks to zero width while the text slides in behind it.",
+  "inspiration": "https://annnimate.com/animations/rectangle-text-reveal"
+ },
+ {
+  "category": "Text",
+  "id": "scribble-highlighter",
+  "name": "Scribble highlight",
+  "level": "Subtle",
+  "tools": "ScrollTrigger, DrawSVG",
+  "prompt": "A hand-drawn circle or underline draws around one key word when the headline enters. One word per page.",
+  "inspiration": "https://annnimate.com/animations/scribble-highlighter"
+ },
+ {
+  "category": "Text",
+  "id": "split-flap-board",
+  "name": "Split-flap board",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "Tiles flip through characters like a station board, rows cascading left to right, each tile landing on its own beat. For scores, times, launches.",
+  "inspiration": "https://annnimate.com/animations/split-flap-board"
+ },
+ {
+  "category": "Text",
+  "id": "text-underline",
+  "name": "Directional underline",
+  "level": "Subtle",
+  "tools": "CSS or GSAP",
+  "prompt": "Underline grows from the left on hover and leaves to the right on exit. The default link hover for most sites.",
+  "inspiration": "https://annnimate.com/animations/text-underline"
+ },
+ {
+  "category": "Text",
+  "id": "text-split-zoom",
+  "name": "Text split by image",
+  "level": "Immersive",
+  "tools": "ScrollTrigger",
+  "prompt": "An image grows from zero between two halves of a headline and pushes them apart; scrub or on enter. Hero only.",
+  "inspiration": "https://annnimate.com/animations/text-split-zoom"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "element-reveal",
+  "name": "Scroll reveal set",
+  "level": "Subtle",
+  "tools": "ScrollTrigger",
+  "prompt": "One utility with six reveals: fade, slide up, scale, clip, blur, rotate, with stagger for grids. The base layer of every site; run once, 400 to 700 ms.",
+  "inspiration": "https://annnimate.com/animations/element-reveal"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "parallax",
+  "name": "Parallax layers",
+  "level": "Subtle",
+  "tools": "ScrollTrigger",
+  "prompt": "Layers move at different speeds (background 0.8, foreground 1.1). Keep the difference small; disable on reduced motion.",
+  "inspiration": "https://annnimate.com/animations/parallax"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "background-color",
+  "name": "Section colour change",
+  "level": "Subtle",
+  "tools": "ScrollTrigger",
+  "prompt": "Page background and text colours tween as zones enter, instead of hard section breaks. Check contrast at every step.",
+  "inspiration": "https://annnimate.com/animations/background-color"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "progress",
+  "name": "Reading progress",
+  "level": "Subtle",
+  "tools": "ScrollTrigger",
+  "prompt": "Ring with percentage, thin bar, or text counter for long pages and articles.",
+  "inspiration": "https://annnimate.com/animations/progress"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "hide-header",
+  "name": "Hide-on-scroll header",
+  "level": "Subtle",
+  "tools": "ScrollTrigger",
+  "prompt": "Header hides when scrolling down past a threshold, shows on scroll up and always shows near the top and when focus is inside it.",
+  "inspiration": "https://annnimate.com/animations/hide-header"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "stacking-cards",
+  "name": "Stacking cards",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "Pinned frame; each new card slides up over the last, which scales back, tilts and dims; a small counter jumps to any card. Text arrives after its card settles.",
+  "inspiration": "https://annnimate.com/animations/stacking-cards"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "container-scroll",
+  "name": "Tilted panel stands up",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "An image lies tilted back under the headline and rotates upright to fill the grid as you scroll; headline lifts away.",
+  "inspiration": "https://annnimate.com/animations/container-scroll"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "breakout-media",
+  "name": "Media breaks out",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "A video band sits in the grid beside copy, then grows to full bleed with scroll. For showreels and case study intros.",
+  "inspiration": "https://annnimate.com/animations/breakout-media"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "capsule-hero",
+  "name": "Capsule hero",
+  "level": "Immersive",
+  "tools": "ScrollTrigger, SplitText",
+  "prompt": "Two giant letters part to reveal a video in a rounded capsule; click expands it to full screen and back.",
+  "inspiration": "https://annnimate.com/animations/capsule-hero"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "mask-reveal",
+  "name": "Shape mask reveal",
+  "level": "Subtle",
+  "tools": "ScrollTrigger",
+  "prompt": "Content opens through a growing circle, oval, blob or image mask (clip-path or mask-image), scrubbed.",
+  "inspiration": "https://annnimate.com/animations/mask-reveal"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "noise-image-reveal",
+  "name": "Torn reveal per image",
+  "level": "Subtle",
+  "tools": "ScrollTrigger",
+  "prompt": "Each image tears open from the middle with a rough edge when it enters. SVG mask, no WebGL; use on every image of a case study.",
+  "inspiration": "https://annnimate.com/animations/noise-image-reveal"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "flip-zone",
+  "name": "Media travels between zones",
+  "level": "Modern",
+  "tools": "Flip, ScrollTrigger",
+  "prompt": "One media element moves and resizes into a different container at each scroll step. Product storytelling.",
+  "inspiration": "https://annnimate.com/animations/flip-zone"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "multi-flip",
+  "name": "Pile to grid",
+  "level": "Modern",
+  "tools": "Flip, ScrollTrigger",
+  "prompt": "Cards start in a rotated pile and fly to their grid positions on scroll.",
+  "inspiration": "https://annnimate.com/animations/multi-flip"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "scatter-cluster",
+  "name": "Scatter cluster",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "A pile of photo and stat cards in the centre scatters to its places as you scroll, uncovering the headline; reverses on scroll back.",
+  "inspiration": "https://annnimate.com/animations/scatter-cluster"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "velocity-clip",
+  "name": "Velocity clip",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "Clip-path inset grows with scroll speed and direction, then relaxes. Kinetic editorial headers.",
+  "inspiration": "https://annnimate.com/animations/velocity-clip"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "svg-draw-path",
+  "name": "SVG line draw",
+  "level": "Subtle",
+  "tools": "ScrollTrigger, DrawSVG",
+  "prompt": "Stroke draws from 0 to 100 % through the section. For line illustrations and connectors.",
+  "inspiration": "https://annnimate.com/animations/svg-draw-path"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "animated-grid",
+  "name": "Grid parallax modes",
+  "level": "Modern",
+  "tools": "ScrollTrigger, ScrollSmoother",
+  "prompt": "Columns of an image grid move at different speeds: elastic, wave, centre pull. Needs smooth scrolling; keep it off on touch.",
+  "inspiration": "https://annnimate.com/animations/animated-grid"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "grid-chapters",
+  "name": "Grid chapters",
+  "level": "Modern",
+  "tools": "ScrollTrigger, SplitText",
+  "prompt": "Three chapters on a visible grid; pinned centre text swaps line by line while images drift at their own speeds.",
+  "inspiration": "https://annnimate.com/animations/grid-chapters"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "step-wipe",
+  "name": "Step wipe",
+  "level": "Modern",
+  "tools": "ScrollTrigger, SplitText",
+  "prompt": "Tall section where background and centre card clip open together for each product step; title, number and text swap in sync.",
+  "inspiration": "https://annnimate.com/animations/step-wipe"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "horizontal-case-study",
+  "name": "Horizontal case study",
+  "level": "Modern",
+  "tools": "ScrollTrigger, SplitText",
+  "prompt": "Vertical scroll drives a sideways strip: intro, images of different sizes, note, quote; each panel reveals once. Stacks into a column on phones.",
+  "inspiration": "https://annnimate.com/animations/horizontal-case-study"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "process-list",
+  "name": "Pinned process list",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "Steps come forward one at a time while a thin line grows to each and the image beside it changes. Click a step to jump.",
+  "inspiration": "https://annnimate.com/animations/process-list"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "process-rail",
+  "name": "Process rail with bead",
+  "level": "Modern",
+  "tools": "ScrollTrigger, MotionPath, DrawSVG",
+  "prompt": "A bead travels along a line drawing it, each step lights up when reached and its image fades in.",
+  "inspiration": "https://annnimate.com/animations/process-rail"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "orb-process",
+  "name": "Orb process",
+  "level": "Immersive",
+  "tools": "ScrollTrigger",
+  "prompt": "Ring of step names around a glossy orb; the ring turns each step to the top and the orb shifts to that step's colours.",
+  "inspiration": "https://annnimate.com/animations/orb-process"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "feature-rail",
+  "name": "Sticky chapter rail",
+  "level": "Subtle",
+  "tools": "ScrollTrigger",
+  "prompt": "Chapter names pinned on the left with scroll-spy; a hairline indicator slides and resizes to the active one.",
+  "inspiration": "https://annnimate.com/animations/feature-rail"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "year-dial",
+  "name": "Timeline dial",
+  "level": "Modern",
+  "tools": "ScrollTrigger, Inertia",
+  "prompt": "Months or years around a large dial with ticks; scroll clicks it round one step with an elastic landing. Year in review, company history.",
+  "inspiration": "https://annnimate.com/animations/year-dial"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "rising-stats",
+  "name": "Rising stat cards",
+  "level": "Subtle",
+  "tools": "ScrollTrigger",
+  "prompt": "Stat cards rise and straighten into a grid, numbers roll like an odometer when each card arrives.",
+  "inspiration": "https://annnimate.com/animations/rising-stats"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "counter",
+  "name": "Counter",
+  "level": "Subtle",
+  "tools": "ScrollTrigger",
+  "prompt": "Rolling digits per column or a simple count-up with prefix and suffix; tabular figures.",
+  "inspiration": "https://annnimate.com/animations/counter"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "logo-shuffle",
+  "name": "Logo wall shuffle",
+  "level": "Subtle",
+  "tools": "ScrollTrigger",
+  "prompt": "Client logos in a hairline grid swap one cell at a time while the section is pinned; arrows step a full set.",
+  "inspiration": "https://annnimate.com/animations/logo-shuffle"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "image-dissolve-scroll",
+  "name": "Image dissolve",
+  "level": "Immersive",
+  "tools": "ScrollTrigger, three.js",
+  "prompt": "Noise shader dissolves one image into the next with scroll progress.",
+  "inspiration": "https://annnimate.com/animations/image-dissolve-scroll"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "torn-paper-transition",
+  "name": "Torn paper transition",
+  "level": "Immersive",
+  "tools": "ScrollTrigger, three.js",
+  "prompt": "The first image tears away bottom up to paper, the paper tears onto the next image.",
+  "inspiration": "https://annnimate.com/animations/torn-paper-transition"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "fog-reveal",
+  "name": "Fog transition",
+  "level": "Immersive",
+  "tools": "ScrollTrigger, three.js",
+  "prompt": "A fog bank rolls up and swallows one scene, then clears onto another; headline fades in the fog too.",
+  "inspiration": "https://annnimate.com/animations/fog-reveal"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "scroll-mesh-bend",
+  "name": "Bending image field",
+  "level": "Immersive",
+  "tools": "ScrollTrigger, three.js",
+  "prompt": "Photos at different depths bend like fabric with scroll speed and flatten when still.",
+  "inspiration": "https://annnimate.com/animations/scroll-mesh-bend"
+ },
+ {
+  "category": "Scroll sections",
+  "id": "image-fly-in",
+  "name": "Images fly toward viewer",
+  "level": "Immersive",
+  "tools": "ScrollTrigger",
+  "prompt": "Images move from deep in the page toward the viewer around a clear centre for content; drifts with the cursor.",
+  "inspiration": "https://annnimate.com/animations/image-fly-in"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "marquee",
+  "name": "Draggable marquee",
+  "level": "Subtle",
+  "tools": "Draggable, Inertia",
+  "prompt": "Endless row with autoplay that can be dragged and snaps to the centre item; pause on hover and focus; static under reduced motion.",
+  "inspiration": "https://annnimate.com/animations/marquee"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "infinite-parallax-slider",
+  "name": "Parallax slider",
+  "level": "Modern",
+  "tools": "Draggable, Inertia",
+  "prompt": "Looping slides with inner layers at different speeds; autoplay pauses on hover.",
+  "inspiration": "https://annnimate.com/animations/infinite-parallax-slider"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "infinite-draggable-grid",
+  "name": "Infinite drag grid",
+  "level": "Modern",
+  "tools": "Draggable",
+  "prompt": "Grid you drag in any direction with momentum and seamless wrap. Portfolios and galleries.",
+  "inspiration": "https://annnimate.com/animations/infinite-draggable-grid"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "wipe-slider",
+  "name": "Wipe slider",
+  "level": "Modern",
+  "tools": "SplitText",
+  "prompt": "Full-screen hero slides; each change wipes the background from the travel direction while copy masks out and in.",
+  "inspiration": "https://annnimate.com/animations/wipe-slider"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "curtain-slider",
+  "name": "Curtain slider",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "The outgoing image splits into columns that wipe away one after another; arrows, drag and keys.",
+  "inspiration": "https://annnimate.com/animations/curtain-slider"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "scale-slider",
+  "name": "Scale slider",
+  "level": "Modern",
+  "tools": "Draggable, Inertia",
+  "prompt": "Square photos shrink toward one edge, the largest cropped by the screen; drag, throw or scroll.",
+  "inspiration": "https://annnimate.com/animations/scale-slider"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "lens-rail",
+  "name": "Lens rail",
+  "level": "Modern",
+  "tools": "Draggable, Inertia",
+  "prompt": "Strip of photos dragged sideways; the one passing the centre grows like under a magnifier.",
+  "inspiration": "https://annnimate.com/animations/lens-rail"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "expanding-strip",
+  "name": "Expanding strip",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Tall panels edge to edge; the hovered one widens and its title rises, the others compress.",
+  "inspiration": "https://annnimate.com/animations/expanding-strip"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "card-fan",
+  "name": "Card fan",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "A stack of cards fans into an arc on hover; the card under the pointer lifts forward.",
+  "inspiration": "https://annnimate.com/animations/card-fan"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "photo-stack-gallery",
+  "name": "Photo stack",
+  "level": "Modern",
+  "tools": "MotionPath",
+  "prompt": "A stack unfolds into a strip and a featured image on click; clicking a thumbnail swaps the feature.",
+  "inspiration": "https://annnimate.com/animations/photo-stack-gallery"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "diagonal-gallery",
+  "name": "Diagonal gallery",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "Photos queue on a diagonal; each scroll step moves the current one to a thumbnail top-left and grows the next into the centre.",
+  "inspiration": "https://annnimate.com/animations/diagonal-gallery"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "radial-gallery",
+  "name": "Radial ring",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "A slowly turning ring of cards sized to fit the screen; behind a hero or CTA.",
+  "inspiration": "https://annnimate.com/animations/radial-gallery"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "spiral-gallery",
+  "name": "Spiral gallery",
+  "level": "Immersive",
+  "tools": "three.js, Draggable",
+  "prompt": "Cards on an endless vertical helix; drag to spin with momentum.",
+  "inspiration": "https://annnimate.com/animations/spiral-gallery"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "drift-gallery",
+  "name": "Drifting card deck",
+  "level": "Immersive",
+  "tools": "three.js, Draggable, Inertia",
+  "prompt": "WebGL deck fanned on a diagonal that drifts; cards part around the cursor and the hovered one updates a detail panel.",
+  "inspiration": "https://annnimate.com/animations/drift-gallery"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "project-wheel",
+  "name": "Project wheel",
+  "level": "Modern",
+  "tools": "ScrollTrigger, Inertia",
+  "prompt": "Project titles on the edge of a large wheel; the one at the centre lights up and swaps the image beside it.",
+  "inspiration": "https://annnimate.com/animations/project-wheel"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "portrait-ring",
+  "name": "Portrait ring",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "Greyscale portraits around a ring; scroll turns the next one into the top slot in colour with its name.",
+  "inspiration": "https://annnimate.com/animations/portrait-ring"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "bento-focus",
+  "name": "Bento focus",
+  "level": "Modern",
+  "tools": "Flip",
+  "prompt": "Bento grid with one large slot; clicking a small tile grows it into the slot and reflows the others.",
+  "inspiration": "https://annnimate.com/animations/bento-focus"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "flip-filter",
+  "name": "Animated filter grid",
+  "level": "Subtle",
+  "tools": "Flip",
+  "prompt": "Category filter and grid/list toggle where cards fly to new places instead of jumping.",
+  "inspiration": "https://annnimate.com/animations/flip-filter"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "cast-list",
+  "name": "Category swap portraits",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "Centred category list with portrait cards around it; choosing a category swaps all photos with a lift and blur.",
+  "inspiration": "https://annnimate.com/animations/cast-list"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "team-roster",
+  "name": "Team slider with filters",
+  "level": "Subtle",
+  "tools": "Draggable",
+  "prompt": "Group chips filter a horizontal card slider; clicking a person opens a short profile over the photo.",
+  "inspiration": "https://annnimate.com/animations/team-roster"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "testimonial-globe",
+  "name": "Testimonial sphere",
+  "level": "Immersive",
+  "tools": "three.js, ScrollTrigger",
+  "prompt": "Draggable sphere of image planes behind frosted testimonial cards; off on phones.",
+  "inspiration": "https://annnimate.com/animations/testimonial-globe"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "network-globe",
+  "name": "Locations globe",
+  "level": "Immersive",
+  "tools": "ScrollTrigger",
+  "prompt": "Dotted globe you can drag; selecting a location turns it to face, shows the label and draws routes.",
+  "inspiration": "https://annnimate.com/animations/network-globe"
+ },
+ {
+  "category": "Galleries and sliders",
+  "id": "circular-slider",
+  "name": "Circular slider",
+  "level": "Subtle",
+  "tools": "Draggable, MotionPath",
+  "prompt": "Value input dragged around a circle with an arc that fills; keyboard arrows must work.",
+  "inspiration": "https://annnimate.com/animations/circular-slider"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "floating-navbar",
+  "name": "Header folds into a pill",
+  "level": "Subtle",
+  "tools": "ScrollTrigger",
+  "prompt": "Wide header over the hero that shrinks into a floating pill after the first scroll and opens again at the top.",
+  "inspiration": "https://annnimate.com/animations/floating-navbar"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "morphing-pill-menu",
+  "name": "Pill to menu panel",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "A small Menu pill grows into the whole navigation panel; links cascade in and roll on hover.",
+  "inspiration": "https://annnimate.com/animations/morphing-pill-menu"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "morphing-island",
+  "name": "Section island",
+  "level": "Modern",
+  "tools": "ScrollTrigger",
+  "prompt": "A capsule at the top names the current section; click grows it into the section list and a short preview.",
+  "inspiration": "https://annnimate.com/animations/morphing-island"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "fullscreen-slide-menu",
+  "name": "Page turns into menu",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "The page slides, rotates and scales away while the menu overlay slides in; burger morphs to X; image per link.",
+  "inspiration": "https://annnimate.com/animations/fullscreen-slide-menu"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "multi-level-drawer-menu",
+  "name": "Two-panel drawer",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Drawer reveals with clip-path; hovering a category opens a second panel beside it; drill-down on mobile.",
+  "inspiration": "https://annnimate.com/animations/multi-level-drawer-menu"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "mega-menu",
+  "name": "Morphing mega menu",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "One dropdown container that changes height between groups, content enters from the side you came from, with hover intent.",
+  "inspiration": "https://annnimate.com/animations/mega-menu"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "gooey-menu",
+  "name": "Gooey action menu",
+  "level": "Modern",
+  "tools": "SVG filter",
+  "prompt": "A floating button that fans out actions joined by a gooey filter; arc, line, grid or radial.",
+  "inspiration": "https://annnimate.com/animations/gooey-menu"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "dock-footer",
+  "name": "Footer with dock",
+  "level": "Modern",
+  "tools": "ScrollTrigger, SplitText",
+  "prompt": "Footer uncovered with parallax, columns rise through masks, a glass pill morphs into quick navigation.",
+  "inspiration": "https://annnimate.com/animations/dock-footer"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "gradient-footer",
+  "name": "Glow footer",
+  "level": "Subtle",
+  "tools": "ScrollTrigger, SplitText",
+  "prompt": "Footer with a soft glow from the bottom edge and a wordmark sized to the full width; links with a slide underline.",
+  "inspiration": "https://annnimate.com/animations/gradient-footer"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "hover-index",
+  "name": "Proximity index",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "List of projects whose brightness falls off with distance from the pointer; a preview card wipes to the hovered project.",
+  "inspiration": "https://annnimate.com/animations/hover-index"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "index-wipe",
+  "name": "Index wipe",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "Full-screen list where hovering a name wipes its photo into the background from the pointer direction.",
+  "inspiration": "https://annnimate.com/animations/index-wipe"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "hoverable-list",
+  "name": "Liquid list hover",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Rows fill with a curved shape from the side the pointer enters.",
+  "inspiration": "https://annnimate.com/animations/hoverable-list"
+ },
+ {
+  "category": "Navigation and menus",
+  "id": "image-follow-list",
+  "name": "List with following image",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Hovering a row shows its image near the pointer, eased; desktop only.",
+  "inspiration": "https://annnimate.com/animations/image-follow-list"
+ },
+ {
+  "category": "Buttons",
+  "id": "magnetic-button",
+  "name": "Magnetic button",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Button and its label follow the pointer with different strength. Primary action only.",
+  "inspiration": "https://annnimate.com/animations/magnetic-button"
+ },
+ {
+  "category": "Buttons",
+  "id": "circle-fill-button",
+  "name": "Circle fill from pointer",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Fill grows from where the pointer enters, timed so it always takes the same duration.",
+  "inspiration": "https://annnimate.com/animations/circle-fill-button"
+ },
+ {
+  "category": "Buttons",
+  "id": "curve-fill-button",
+  "name": "Curved fill from direction",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "A wave-shaped fill enters from the pointer side and leaves the same way.",
+  "inspiration": "https://annnimate.com/animations/curve-fill-button"
+ },
+ {
+  "category": "Buttons",
+  "id": "background-fill-button",
+  "name": "Slide-up fill",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Fill slides up from the bottom with optional scale; label colour switches for contrast.",
+  "inspiration": "https://annnimate.com/animations/background-fill-button"
+ },
+ {
+  "category": "Buttons",
+  "id": "icon-button",
+  "name": "Icon morph button",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Icon rotates or morphs and the button fills on hover.",
+  "inspiration": "https://annnimate.com/animations/icon-button"
+ },
+ {
+  "category": "Buttons",
+  "id": "jiggly-button",
+  "name": "Jelly button",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "Squashes on press and wobbles back from the side the pointer came from. Playful brands.",
+  "inspiration": "https://annnimate.com/animations/jiggly-button"
+ },
+ {
+  "category": "Buttons",
+  "id": "rainbow-button",
+  "name": "Gradient flow button",
+  "level": "Subtle",
+  "tools": "CSS",
+  "prompt": "A multi-colour gradient flows across on hover. Playful brands, one per page.",
+  "inspiration": "https://annnimate.com/animations/rainbow-button"
+ },
+ {
+  "category": "UI components",
+  "id": "accordion",
+  "name": "Accordion",
+  "level": "Subtle",
+  "tools": "SplitText",
+  "prompt": "Animated height with the answer's lines rising through masks; single or multiple open.",
+  "inspiration": "https://annnimate.com/animations/accordion"
+ },
+ {
+  "category": "UI components",
+  "id": "morphing-accordion",
+  "name": "Liquid accordion",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "The answer pours out of the question pill and settles into a panel.",
+  "inspiration": "https://annnimate.com/animations/morphing-accordion"
+ },
+ {
+  "category": "UI components",
+  "id": "morphing-tabs",
+  "name": "Tabs joined to content",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "The active tab pill is joined to the panel by a curved neck that follows it.",
+  "inspiration": "https://annnimate.com/animations/morphing-tabs"
+ },
+ {
+  "category": "UI components",
+  "id": "morphing-dialog",
+  "name": "Morphing dialog",
+  "level": "Subtle",
+  "tools": "Flip",
+  "prompt": "Trigger card grows into the dialog with shared elements; others fade in. Focus trap and Escape.",
+  "inspiration": "https://annnimate.com/animations/morphing-dialog"
+ },
+ {
+  "category": "UI components",
+  "id": "feature-dialog",
+  "name": "Rising dialog",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Preview tile opens a tall dialog; page dims and blurs behind.",
+  "inspiration": "https://annnimate.com/animations/feature-dialog"
+ },
+ {
+  "category": "UI components",
+  "id": "detail-drawer",
+  "name": "Push drawer",
+  "level": "Modern",
+  "tools": "SplitText",
+  "prompt": "Hero click slides in a detail panel while the hero moves away and darkens; reverse on close.",
+  "inspiration": "https://annnimate.com/animations/detail-drawer"
+ },
+ {
+  "category": "UI components",
+  "id": "morphing-list",
+  "name": "List row to panel",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "Clicking a row grows it into a detail panel with its thumbnail and title travelling into place.",
+  "inspiration": "https://annnimate.com/animations/morphing-list"
+ },
+ {
+  "category": "UI components",
+  "id": "morphing-select",
+  "name": "Liquid select",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "Dropdown separates from the trigger with a gooey neck; chosen value rolls into place.",
+  "inspiration": "https://annnimate.com/animations/morphing-select"
+ },
+ {
+  "category": "UI components",
+  "id": "morphing-tooltip",
+  "name": "Shared tooltip",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "One tooltip slides between toolbar buttons and resizes to each caption.",
+  "inspiration": "https://annnimate.com/animations/morphing-tooltip"
+ },
+ {
+  "category": "UI components",
+  "id": "tooltip",
+  "name": "Smart tooltip",
+  "level": "Subtle",
+  "tools": "Flip",
+  "prompt": "Tooltip anchored or following the pointer that flips at viewport edges.",
+  "inspiration": "https://annnimate.com/animations/tooltip"
+ },
+ {
+  "category": "UI components",
+  "id": "gooey-toast",
+  "name": "Liquid toasts",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "Toasts stack with a stretching neck between them; hover fans the stack.",
+  "inspiration": "https://annnimate.com/animations/gooey-toast"
+ },
+ {
+  "category": "UI components",
+  "id": "gooey-filter-chips",
+  "name": "Gooey filter chips",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "Chosen chips fly into a tray and merge with a gooey neck; result count rolls.",
+  "inspiration": "https://annnimate.com/animations/gooey-filter-chips"
+ },
+ {
+  "category": "UI components",
+  "id": "pill-stepper",
+  "name": "Rolling quantity stepper",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Plus and minus roll the digits up or down; holding repeats faster.",
+  "inspiration": "https://annnimate.com/animations/pill-stepper"
+ },
+ {
+  "category": "UI components",
+  "id": "multi-step-form",
+  "name": "Multi-step form",
+  "level": "Subtle",
+  "tools": "MorphSVG",
+  "prompt": "Steps slide in the travel direction, labels float, the send button morphs to a loading dot then a tick.",
+  "inspiration": "https://annnimate.com/animations/multi-step-form"
+ },
+ {
+  "category": "UI components",
+  "id": "pricing",
+  "name": "Pricing toggle",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Monthly/yearly switch rolls every price digit by digit and pops a savings chip.",
+  "inspiration": "https://annnimate.com/animations/pricing"
+ },
+ {
+  "category": "UI components",
+  "id": "video-player",
+  "name": "Video player with fullscreen grow",
+  "level": "Subtle",
+  "tools": "Flip",
+  "prompt": "Custom controls; fullscreen grows from its place and returns without stopping the video.",
+  "inspiration": "https://annnimate.com/animations/video-player"
+ },
+ {
+  "category": "UI components",
+  "id": "custom-cursor",
+  "name": "Cursor with labels",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Eased cursor dot with a label on hover targets; off on touch and reduced motion.",
+  "inspiration": "https://annnimate.com/animations/custom-cursor"
+ },
+ {
+  "category": "UI components",
+  "id": "image-trail",
+  "name": "Image trail",
+  "level": "Modern",
+  "tools": "GSAP",
+  "prompt": "Images spawn along the pointer path and shrink away. Portfolios only.",
+  "inspiration": "https://annnimate.com/animations/image-trail"
+ },
+ {
+  "category": "UI components",
+  "id": "3d-card-flip",
+  "name": "Tilt card",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Card tilts toward the pointer with glare and shadow; small angle.",
+  "inspiration": "https://annnimate.com/animations/3d-card-flip"
+ },
+ {
+  "category": "UI components",
+  "id": "elastic-divider",
+  "name": "Elastic divider",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "A section line springs and rings when the pointer sweeps across it.",
+  "inspiration": "https://annnimate.com/animations/elastic-divider"
+ },
+ {
+  "category": "UI components",
+  "id": "magnetic-tag-cloud",
+  "name": "Magnetic tag cloud",
+  "level": "Modern",
+  "tools": "Draggable",
+  "prompt": "Tags knocked away by fast pointer moves and pulled back home.",
+  "inspiration": "https://annnimate.com/animations/magnetic-tag-cloud"
+ },
+ {
+  "category": "UI components",
+  "id": "random-rotate",
+  "name": "Random rotation reveal",
+  "level": "Subtle",
+  "tools": "GSAP",
+  "prompt": "Grid items reveal with a small random angle for a loose, handmade layout.",
+  "inspiration": "https://annnimate.com/animations/random-rotate"
+ },
+ {
+  "category": "Shaders and WebGL",
+  "id": "mesh-gradient",
+  "name": "Mesh gradient",
+  "level": "Modern",
+  "tools": "three.js",
+  "prompt": "Up to eight colour anchors orbit and blend; the pointer stirs them. Hero background; colours from the palette.",
+  "inspiration": "https://annnimate.com/animations/mesh-gradient"
+ },
+ {
+  "category": "Shaders and WebGL",
+  "id": "ink-bloom",
+  "name": "Ink bloom",
+  "level": "Modern",
+  "tools": "three.js",
+  "prompt": "A single wash of brand colour hangs from the top edge and reaches for the cursor.",
+  "inspiration": "https://annnimate.com/animations/ink-bloom"
+ },
+ {
+  "category": "Shaders and WebGL",
+  "id": "dithering",
+  "name": "Dither filter",
+  "level": "Modern",
+  "tools": "three.js",
+  "prompt": "Images or video rendered as two-colour ordered dither with a lens that shows the real colours under the pointer.",
+  "inspiration": "https://annnimate.com/animations/dithering"
+ },
+ {
+  "category": "Shaders and WebGL",
+  "id": "dither-cursor-trail",
+  "name": "Dither cursor trail",
+  "level": "Modern",
+  "tools": "three.js",
+  "prompt": "A fading trail behind the pointer drawn in dither dots; no image needed.",
+  "inspiration": "https://annnimate.com/animations/dither-cursor-trail"
+ },
+ {
+  "category": "Shaders and WebGL",
+  "id": "ascii-image",
+  "name": "ASCII image",
+  "level": "Modern",
+  "tools": "three.js",
+  "prompt": "Picture redrawn as characters by brightness, typing itself in.",
+  "inspiration": "https://annnimate.com/animations/ascii-image"
+ },
+ {
+  "category": "Shaders and WebGL",
+  "id": "ascii-overlay",
+  "name": "ASCII overlay",
+  "level": "Modern",
+  "tools": "three.js, ScrollTrigger",
+  "prompt": "Characters bloom over the bright parts of a photo or video with scroll; the photo stays.",
+  "inspiration": "https://annnimate.com/animations/ascii-overlay"
+ },
+ {
+  "category": "Shaders and WebGL",
+  "id": "image-glitch",
+  "name": "CRT glitch",
+  "level": "Modern",
+  "tools": "three.js",
+  "prompt": "Image behind curved CRT glass that breaks into static on hover and locks back.",
+  "inspiration": "https://annnimate.com/animations/image-glitch"
+ },
+ {
+  "category": "Shaders and WebGL",
+  "id": "gooey-hover-reveal",
+  "name": "Gooey paint reveal",
+  "level": "Modern",
+  "tools": "three.js",
+  "prompt": "Pointer paints gooey blobs that cut through a cover to the content below.",
+  "inspiration": "https://annnimate.com/animations/gooey-hover-reveal"
+ }
+]

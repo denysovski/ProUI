@@ -96,6 +96,29 @@ Feel: one real 3D moment, everything around it calm so it stands out.
 | Cards | ACE `3d-card` for a few featured items |
 | Everything else | Quiet kit |
 
+### Studio (GSAP motion recipes)
+
+For: Modern level, agencies, studios, portfolios, fashion, sport and editorial brands; the "award site" feel.
+Feel: type-led, masked reveals, pinned scroll chapters, confident easing. Built from the
+[motion recipes](catalog/motion-recipes.md) with GSAP, no component library.
+
+| Section | Recipe |
+| --- | --- |
+| Header | Header folds into a pill, or Hide-on-scroll header |
+| Hero (signature) | **one of** Capsule hero, Text split by image, Wipe slider, Cinematic title |
+| Text everywhere | Line or word reveal; Directional underline on links |
+| Work | Proximity index, List with following image, or Horizontal case study |
+| Story / features | Stacking cards, Pinned process list or Sticky chapter rail (inner-page signature) |
+| Numbers | Rising stat cards or Counter |
+| Logos | Draggable marquee or Logo wall shuffle |
+| FAQ | Accordion |
+| Pricing | Pricing toggle |
+| Buttons | Magnetic button on the primary action, Slide-up fill elsewhere |
+| Footer | Glow footer |
+
+Install: `npm i gsap @gsap/react`. Skiper UI's free scroll stacks and carousels (`catalog/skiper-ui.md`) use
+Framer Motion and Lenis; take them only when the kit has no recipe for the section.
+
 ### Retro (React Bits + Aceternity pixel effects)
 
 For: Old-school feel at Subtle or Modern level.

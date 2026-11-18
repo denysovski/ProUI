@@ -18,6 +18,8 @@ effects/kits/motion-primitives/ contains the unmodified source of Motion Primiti
 (https://github.com/ibelick/motion-primitives), Copyright (c) 2024 ibelick, licensed under the
 MIT License; its licence is in effects/kits/motion-primitives/LICENSE.md.
 
-Aceternity UI (https://ui.aceternity.com), React Bits (https://reactbits.dev) and 21st.dev
+Aceternity UI (https://ui.aceternity.com), Skiper UI (https://skiper-ui.com), React Bits (https://reactbits.dev) and 21st.dev
 (https://21st.dev) components are listed with links and install commands only; their source is
-not included.
+not included. The motion recipes in effects/catalog/motion-recipes.md are original
+descriptions of common motion patterns; the pattern list was studied from Annnimate
+(https://annnimate.com) and no code from it is included.

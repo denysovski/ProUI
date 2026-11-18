@@ -1,5 +1,15 @@
 # Changelog
 
+## 3.3.0 (2026-11-18)
+
+- Skiper UI catalogue: the 37 free components with install names and dependencies (attribution required,
+  source not included).
+- Motion recipes: 133 GSAP build prompts in our own words for studio-style motion (text, scroll sections,
+  galleries, menus, buttons, UI components, shaders), studied from Annnimate. Shared build prompt with
+  reduced-motion, accessibility and performance rules.
+- Studio kit (GSAP) in `effects/kits.md`; rules `EF-23` (credit libraries) and `EF-24` (no copying paid
+  components).
+
 ## 3.2.0 (2026-11-18)
 
 - Blueprints (`blueprints/`): sitemaps per kind of site, the landing page order and what comes after it, a
