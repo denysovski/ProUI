@@ -1,0 +1,92 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Bricolage;src:url(https://cdn.jsdelivr.net/npm/@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-wght-normal.woff2) format('woff2');font-weight:200 800}
+@font-face{font-family:Hanken;src:url(https://cdn.jsdelivr.net/npm/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:Hanken;src:url(https://cdn.jsdelivr.net/npm/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:Hanken;src:url(https://cdn.jsdelivr.net/npm/@fontsource/hanken-grotesk/files/hanken-grotesk-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:JB;src:url(https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2)}
+@font-face{font-family:JB;src:url(https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff2);font-weight:500}
+:root{--bg:#0b0d12;--panel:#12151c;--line:rgba(255,255,255,.08);--text:#f4f5f8;--muted:#9aa1b2;--blue:#3b6dff;--blue2:#7da0ff}
+*{box-sizing:border-box;margin:0}
+body{width:1600px;height:900px;background:var(--bg);color:var(--text);font-family:Hanken;overflow:hidden;position:relative}
+.glow{position:absolute;right:-200px;top:-260px;width:1100px;height:900px;background:radial-gradient(closest-side,rgba(59,109,255,.22),transparent 70%);filter:blur(10px)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask:radial-gradient(ellipse 70% 80% at 75% 40%,#000 0%,transparent 75%);opacity:.55}
+.left{position:absolute;left:96px;top:92px;width:640px}
+.brand{display:flex;align-items:center;gap:18px}
+.brand img{width:72px;height:72px}
+.brand span{font:600 22px/1 Hanken;color:var(--muted);letter-spacing:.02em}
+h1{font-family:Bricolage;font-weight:750;font-size:168px;line-height:.9;letter-spacing:-.045em;margin-top:64px;font-variation-settings:"wdth" 100}
+h1 b{color:var(--blue);font-weight:750}
+.lede{font-size:30px;line-height:1.35;color:#cfd3dd;margin-top:30px;max-width:600px;letter-spacing:-.005em}
+.stats{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;column-gap:56px;margin-top:58px}
+.stat strong{display:block;font:700 54px/1 Bricolage;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.stat span{display:block;margin-top:10px;font:500 17px/1.2 Hanken;color:var(--muted)}
+.win{position:absolute;left:820px;top:118px;width:700px;height:640px;background:linear-gradient(180deg,#151924,#10131a);border:1px solid rgba(255,255,255,.1);border-radius:22px;box-shadow:0 40px 120px rgba(0,0,0,.55),0 0 0 1px rgba(0,0,0,.4);overflow:hidden}
+.bar{height:52px;display:flex;align-items:center;gap:8px;padding:0 20px;border-bottom:1px solid var(--line)}
+.bar i{width:12px;height:12px;border-radius:50%;background:#2a2f3b}
+.bar em{margin-left:14px;font:500 15px JB;color:var(--muted);font-style:normal}
+.body{display:grid;grid-template-columns:230px 1fr;height:calc(100% - 52px)}
+.tree{border-right:1px solid var(--line);padding:22px 18px;font:15px/2.05 JB;color:#aeb4c3}
+.tree div{white-space:nowrap}.tree .d{color:var(--text)}.tree .on{color:var(--text);background:rgba(59,109,255,.16);border-radius:8px;margin:0 -10px;padding:0 10px;box-shadow:inset 2px 0 0 var(--blue)}
+.tree .s{padding-left:18px}
+.main{padding:26px 28px}
+.kicker{font:500 13px JB;color:var(--blue2);letter-spacing:.06em;text-transform:uppercase}
+.main h2{font:700 30px/1.1 Bricolage;letter-spacing:-.02em;margin:10px 0 6px}
+.main p.sub{color:var(--muted);font-size:16px;margin-bottom:20px}
+.rule{display:grid;grid-template-columns:64px 52px 1fr;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--line);font-size:16.5px}
+.rule code{font:500 14px JB;color:#cfd3dd}
+.tag{font:600 11.5px Hanken;letter-spacing:.06em;text-transform:uppercase;padding:4px 0;border-radius:6px;text-align:center}
+.do{background:rgba(52,199,123,.14);color:#5ee09a}.dont{background:rgba(255,92,92,.13);color:#ff8a8a}
+.chips{display:flex;gap:8px;margin-top:22px;flex-wrap:wrap}
+.chip{font:500 13px Hanken;color:#cfd3dd;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 13px;background:rgba(255,255,255,.03)}
+.chip.on{border-color:rgba(59,109,255,.6);background:rgba(59,109,255,.14);color:#dfe7ff}
+.cursor{position:absolute;left:1214px;top:668px;width:58px;filter:drop-shadow(0 10px 18px rgba(0,0,0,.5))}
+.foot{position:absolute;left:96px;bottom:70px;font:500 16px JB;color:#6f7686}
+</style></head><body>
+<div class="glow"></div><div class="grid"></div>
+<div class="left">
+  <div class="brand"><img src="../proui-logo.svg" alt=""><span>Skill for AI coding agents</span></div>
+  <h1>Pro<b>UI</b></h1>
+  <p class="lede">The playbook for beautiful websites. Blueprints, colour and type methods, effect kits and a workflow from brief to launch.</p>
+  <div class="stats">
+    <div class="stat"><strong>24</strong><span>rulebooks</span></div>
+    <div class="stat"><strong>576</strong><span>rules</span></div>
+    <div class="stat"><strong>7</strong><span>effect kits</span></div>
+    <div class="stat"><strong>133</strong><span>motion recipes</span></div>
+  </div>
+</div>
+<div class="win">
+  <div class="bar"><i></i><i></i><i></i><em>proui / rules / structure</em></div>
+  <div class="body">
+    <div class="tree">
+      <div class="d">blueprints/</div>
+      <div class="d">effects/</div>
+      <div class="s">kits.md</div>
+      <div class="s">briefs/</div>
+      <div class="d">rules/</div>
+      <div class="s">typography/</div>
+      <div class="s">color/</div>
+      <div class="s">layout/</div>
+      <div class="s on">structure/</div>
+      <div class="s">motion/</div>
+      <div class="s">accessibility/</div>
+      <div class="s">seo/</div>
+      <div class="d">workflow/</div>
+      <div>SKILL.md</div>
+    </div>
+    <div class="main">
+      <div class="kicker">Page Structure Rulebook</div>
+      <h2>Build pages that make sense</h2>
+      <p class="sub">Sitemaps, landing page order, pricing, contact, footers.</p>
+      <div class="rule"><code>PG-02</code><span class="tag do">Do</span><span>Sections follow the visitor's questions</span></div>
+      <div class="rule"><code>PG-05</code><span class="tag do">Do</span><span>The primary action repeats</span></div>
+      <div class="rule"><code>PG-08</code><span class="tag do">Do</span><span>Services that sell packages get tiers</span></div>
+      <div class="rule"><code>PG-12</code><span class="tag do">Do</span><span>Contact is easy to find</span></div>
+      <div class="rule"><code>PG-18</code><span class="tag dont">Don't</span><span>Metal-named tiers</span></div>
+      <div class="rule"><code>PG-21</code><span class="tag dont">Don't</span><span>Footer as a link dump</span></div>
+      <div class="chips"><span class="chip">Quiet</span><span class="chip on">Modern dark</span><span class="chip">Studio</span><span class="chip">Immersive</span></div>
+    </div>
+  </div>
+</div>
+<svg class="cursor" viewBox="-8 -8 136 196"><defs><linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b8cff"/><stop offset="1" stop-color="#2155f5"/></linearGradient></defs><path d="M0 0 L0 150 L38 114 L66 176 L94 163 L66 102 L118 100 Z" fill="url(#c)" stroke="#fff" stroke-width="10" stroke-linejoin="round"/></svg>
+<div class="foot">github.com/denysovski/XSlop</div>
+</body></html>

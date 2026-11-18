@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.4.1 (2026-11-18)
+
+- ProUI logo and banner (`assets/`); README shows the ProUI banner. The skill is published on Agensi as ProUI.
+
 ## 3.4.0 (2026-11-18)
 
 - XSlop fx (`effects/fx/`): 11 effects written from scratch in plain HTML, CSS and JS, covering the useful

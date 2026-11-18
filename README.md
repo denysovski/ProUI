@@ -1,8 +1,10 @@
 <div align="center">
 
-<img src="assets/xslop-banner-v3.jpg" alt="XSlop: a rulebook for building websites that look made by a person, not generated" width="100%">
+<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 576 rules, 7 effect kits, 133 motion recipes" width="100%">
 
-### Rulebooks and a workflow that teach AI agents to build websites that don't look AI-generated
+### The playbook for beautiful websites: blueprints, colour and type methods, effect kits, a workflow from brief to launch, and the rules that keep it looking designed
+
+Published on [Agensi as ProUI](https://agensi.io/skills/proui). This repository keeps its original name, XSlop; both names work in requests and commands.
 
 [What it is](#what-xslop-is) · [Contents](#contents) · [How rules work](#how-the-rules-work) · [Rulebooks](#rulebooks) · [Workflow](#how-the-workflow-works) · [Blueprints](#blueprints) · [Effects](#effects-library) · [Commands](#commands) · [Websites](#websites-used-in-the-workflow) · [Tools](#design-tools) · [Quick start](#quick-start)
 
