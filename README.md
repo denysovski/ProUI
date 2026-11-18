@@ -122,8 +122,8 @@ then picks ready components that fit the chosen style.
 
 | Catalogue | What's in it |
 | --- | --- |
-| [React Bits](effects/catalog/react-bits.md) | every component of [reactbits.dev](https://reactbits.dev/get-started/index): shader backgrounds, cursor and reveal animations, animated text, galleries, cards, micro-interactions |
-| [21st.dev 3D](effects/catalog/21st-3d.md) | 3D heroes, shader backgrounds, globes, orbs, tilt cards, 3D carousels and scroll effects from [21st.dev](https://21st.dev/community/components/s/3d) |
+| [React Bits](effects/catalog/react-bits.md) | all 217 components of [reactbits.dev](https://reactbits.dev/get-started/index): shader backgrounds, cursor and reveal animations, animated text, galleries, cards, micro-interactions |
+| [21st.dev 3D](effects/catalog/21st-3d.md) | all 169 components of the [21st.dev 3D collection](https://21st.dev/community/components/s/3d): 3D heroes, backgrounds, globes, 3D objects, cards, 3D carousels, scroll stories, with author and licence |
 
 Components are installed into your project from their official registries with one command, then restyled to
 your colours and fonts. See [presets](effects/presets.md) and the [install guide](effects/install.md).

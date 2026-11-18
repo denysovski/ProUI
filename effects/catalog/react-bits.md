@@ -48,7 +48,6 @@ Full-section animated backgrounds, mostly WebGL shaders. Use one per page, behin
 | [Dither](https://reactbits.dev/backgrounds/dither) | Retro dithered waves with Bayer, halftone, line and noise patterns, palettes and cursor trails. | WebGL | `@react-bits/Dither-TS-TW` |
 | [DotField](https://reactbits.dev/backgrounds/dot-field) | A gradient dot field seen through a lens that follows the cursor, magnifying, pinching or swirling the dots. | WebGL | `@react-bits/DotField-TS-TW` |
 | [DotGrid](https://reactbits.dev/backgrounds/dot-grid) | A springy dot grid that the cursor flicks and drags through like jelly, with click shockwaves. | WebGL | `@react-bits/DotGrid-TS-TW` |
-| [EvilEye](https://reactbits.dev/backgrounds/evil-eye) | Procedural evil eye shader with animated iris, slit pupil, and fiery outer glow. | WebGL <sub>ogl</sub> | `@react-bits/EvilEye-TS-TW` |
 | [FaultyTerminal](https://reactbits.dev/backgrounds/faulty-terminal) | A flickering CRT terminal of glowing glyphs, with phosphor trails under the cursor and glitches on click. | WebGL | `@react-bits/FaultyTerminal-TS-TW` |
 | [Ferrofluid](https://reactbits.dev/backgrounds/ferrofluid) | A glossy sea of magnetic fluid where swells of spikes roll in and the cursor raises a crown. | WebGL | `@react-bits/Ferrofluid-TS-TW` |
 | [FloatingLines](https://reactbits.dev/backgrounds/floating-lines) | Ribbons of fine glowing lines that drift in waves, part around the cursor and curl when clicked. | WebGL | `@react-bits/FloatingLines-TS-TW` |
@@ -254,7 +253,6 @@ Small interaction details for buttons, toggles, inputs, toasts and loaders.
 | [CometDial](https://reactbits.dev/micro/comet-dial) | Tick-ring dial you flick by angle, with a comet that streaks behind the lit head. | JS animation <sub>motion</sub> | `@react-bits/CometDial-TS-TW` |
 | [DodgeField](https://reactbits.dev/micro/dodge-field) | Wrapper that makes any child dodge the pointer until it relents and glides home. | JS animation <sub>motion</sub> | `@react-bits/DodgeField-TS-TW` |
 | [FlipCard](https://reactbits.dev/micro/flip-card) | Two-faced card that flips in 3D on a click, drag or flick and settles on a spring. | JS animation <sub>motion</sub> | `@react-bits/FlipCard-TS-TW` |
-| [FlyingButton](https://reactbits.dev/micro/flying-button) | Button that fires its thrusters on hover, lifts off on a WebGL smoke plume and lands back in its own cloud. | WebGL | `@react-bits/FlyingButton-TS-TW` |
 | [FolderFloat](https://reactbits.dev/micro/folder-float) | Folder whose notes spring out into a floating cloud when it opens on hover or press. | JS animation <sub>matter-js</sub> | `@react-bits/FolderFloat-TS-TW` |
 | [FuseButton](https://reactbits.dev/micro/fuse-button) | Action button whose done state carries an undo on a burning fuse. | CSS / DOM | `@react-bits/FuseButton-TS-TW` |
 | [GlideSelect](https://reactbits.dev/micro/glide-select) | Select chip whose menu pops from its corner and whose highlight glides between rows. | CSS / DOM | `@react-bits/GlideSelect-TS-TW` |

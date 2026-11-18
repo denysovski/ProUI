@@ -54,25 +54,24 @@ const outputs = new Map();
 // ---------- 21st.dev 3D ----------
 {
   const data = JSON.parse(readFileSync('effects/catalog/21st-3d.json', 'utf8'));
-  const order = [...new Set(data.map((d) => d.category))];
+  const order = ['Heroes and 3D scenes', 'Backgrounds', 'Globes', '3D objects and toys', 'Cards', 'Carousels and galleries', 'Scroll stories', 'Text and marquees', 'Buttons, menus, loaders and UI', 'Shader and developer tools'];
+  for (const c of new Set(data.map((d) => d.category))) if (!order.includes(c)) order.push(c);
+  const anchor = (c) => c.toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/ /g, '-');
   const out = ['# 21st.dev 3D catalogue', '',
-    '> 3D and depth components from the [21st.dev 3D collection](https://21st.dev/community/components/s/3d) and its related 3D, globe, shader and hero collections, sorted by what they are for.', '',
+    `> Every component in the [21st.dev 3D collection](https://21st.dev/community/components/s/3d) (${data.length} components, read from the collection page), sorted by what it is for.`, '',
     '[Effects library](../README.md) · [React Bits catalogue](react-bits.md) · [Install guide](../install.md)', '',
     '> [!NOTE]',
-    '> 21st.dev is a community registry: every component has its own author and licence, and the source is shown after a free sign-in. XSlop keeps the index here and installs the chosen component into each project from its page. Before shipping, check the licence on the component page.', '',
+    '> 21st.dev is a community registry: every component has its own author and licence, and the source and registry need a free 21st.dev account. XSlop keeps this index and installs the chosen component into each project from 21st.dev. Check the licence column before shipping; "no licence" means ask the author first.', '',
     '## Install', '', '```bash',
-    '# copy the exact command from the component page ("CLI" / "Install"); it follows this shape',
+    '# signed in to 21st.dev (or with the 21st.dev Magic MCP / "copy prompt" button)',
     'npx shadcn@latest add https://21st.dev/r/<author>/<component>', '```', '',
-    'Or use the 21st.dev Magic MCP / the "copy prompt" button on the page and let the agent add it. Components without a direct link are found by name and author through the collection search.', '',
-    '**Renders with:** `CSS 3D` (transforms and perspective, light), `Motion` / `GSAP` (JS animation), `Canvas`, `WebGL` / `Three.js` / `R3F` / `cobe` / `Spline` (GPU, heaviest).', ''];
-  out.push('## Contents', '', ...order.map((c) => `- [${c}](#${c.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/ /g, '-')})`), '');
+    'The `<author>/<component>` pair is the end of each link below.', '',
+    '**Renders with:** `CSS 3D / SVG` (lightest), `Motion` or `GSAP` (JS animation), `Canvas`, `WebGL`, `WebGL (cobe)`, `Three.js`, `Three.js (R3F)`, `Spline` (heaviest).', ''];
+  out.push('## Contents', '', ...order.map((c) => `- [${c}](#${anchor(c)})`), '');
   for (const cat of order) {
-    const items = data.filter((d) => d.category === cat);
-    out.push(`## ${cat}`, '', '| Component | Author | Use it for | Renders with |', '| --- | --- | --- | --- |');
-    for (const c of items) {
-      const name = c.url ? `[${esc(c.name)}](${c.url})` : esc(c.name);
-      out.push(`| ${name} | ${esc(c.author)} | ${esc(c.use)}${c.license ? ` <sub>${c.license}</sub>` : ''} | ${c.tech} |`);
-    }
+    const items = data.filter((d) => d.category === cat).sort((x, y) => x.name.localeCompare(y.name));
+    out.push(`## ${cat}`, '', '| Component | Author | Use it for | Renders with | Licence |', '| --- | --- | --- | --- | --- |');
+    for (const c of items) out.push(`| [${esc(c.name)}](${c.url}) | ${esc(c.author)} | ${esc(c.use)} | ${c.tech}${c.deps ? ` <sub>${esc(c.deps)}</sub>` : ''} | ${esc(c.license || 'not stated')} |`);
     out.push('');
   }
   out.push('---', '', NOTE, '');

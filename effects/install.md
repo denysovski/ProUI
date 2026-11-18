@@ -26,8 +26,8 @@ Add the React Bits registry to `components.json`:
 npx shadcn@latest add @react-bits/SplitText-TS-TW
 npx shadcn@latest add @react-bits/DarkVeil-TS-TW
 
-# 21st.dev: copy the command from the component page
-npx shadcn@latest add https://21st.dev/r/ElevenLabs/orb
+# 21st.dev: needs a free 21st.dev account (sign in, or use the Magic MCP / copy-prompt button)
+npx shadcn@latest add https://21st.dev/r/shuding/cobe-globe
 ```
 
 The CLI installs the npm dependencies the component needs (`three`, `ogl`, `gsap`, `motion`…). Commit the generated files; they are now the project's own code.

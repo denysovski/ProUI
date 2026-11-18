@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.1.1 (2026-11-18)
+
+- 21st.dev 3D catalogue rebuilt from the live collection page: all 169 components with author, licence,
+  dependencies and rendering technology.
+- React Bits catalogue checked against the live index: 217 components.
+
 ## 3.1.0 (2026-11-18)
 
 - Effects library (`effects/`): effect levels, presets per style and request, install guide, a catalogue of

@@ -1,1010 +1,1012 @@
 [
  {
-  "category": "Heroes and 3D scenes",
-  "name": "Spline Scene",
-  "author": "Serafim",
-  "url": "https://21st.dev/@serafim/components/splite",
-  "tech": "Spline",
-  "use": "Hero with an interactive Spline scene, lazy-loaded, spotlight behind it"
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Date Wheel Picker",
+  "author": "johuniq",
+  "url": "https://21st.dev/@johuniq/components/date-wheel-picker",
+  "tech": "Motion",
+  "use": "iOS-style date picker with 3D scrolling wheels; drag, wheel and keyboard",
+  "install": "https://21st.dev/r/johuniq/date-wheel-picker",
+  "license": "mit",
+  "deps": "framer-motion"
  },
  {
-  "category": "Heroes and 3D scenes",
-  "name": "Horizon Hero Section",
-  "author": "scott clayton",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Cinematic hero with a 3D horizon"
+  "category": "Cards",
+  "name": "ThreeD Wall Calendar",
+  "author": "ruixen.ui",
+  "url": "https://21st.dev/@ruixen.ui/components/three-dwall-calendar",
+  "tech": "CSS 3D / SVG",
+  "use": "Month view as an interactive 3D wall of day panels",
+  "install": "https://21st.dev/r/ruixen.ui/three-dwall-calendar"
  },
  {
-  "category": "Heroes and 3D scenes",
-  "name": "Futuristic Hero",
-  "author": "larsen66",
-  "url": "https://21st.dev/larsen66/hero-futuristic",
-  "tech": "R3F + WebGPU",
-  "use": "Hero with a scanning depth-map scene"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "CrystallineFieldHero",
-  "author": "Dhileep Kumar GM",
-  "url": "https://21st.dev/@dhileepkumargm/components/crystalline-field-hero",
-  "tech": "Three.js",
-  "use": "Crystalline field background reacting to the mouse"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Globe Hero",
-  "author": "chow-stack",
-  "url": "https://21st.dev/community/components/chow-stack/globe-hero/default",
-  "tech": "R3F",
-  "use": "Dot-globe hero for SaaS landing pages"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "3D Animation",
-  "author": "Dhileep Kumar GM",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Animated 3D hero visual"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Animated Shader Hero",
-  "author": "Ravi Katiyar",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Shader-animated hero background with copy"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Halide Topo Hero",
-  "author": "Shivendra Kumar",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Topographic hero with depth"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Woven Light Hero",
-  "author": "Dhileep Kumar GM",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Woven light strands behind a hero"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Mountain Scene",
-  "author": "Dhileep Kumar GM",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Procedural mountain landscape"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Lunar Gravity Card",
-  "author": "Alex Reino",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Moon-like object hero card"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Volumetric Studio",
-  "author": "Alex Reino",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Volumetric light studio scene"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Liquid Sculpture Hero",
-  "author": "Guglielmo Giannattasio",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Liquid chrome sculpture hero"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Scroll-Locked Video Hero",
-  "author": "Guglielmo Giannattasio",
-  "url": null,
-  "tech": "Video + scroll",
-  "use": "Video scrubbed by scroll"
+  "category": "Text and marquees",
+  "name": "Receding Text Plane",
+  "author": "ruixen.ui",
+  "url": "https://21st.dev/@ruixen.ui/components/receding-text-plane",
+  "tech": "CSS 3D / SVG",
+  "use": "Copy raked away toward a horizon with one CSS transform",
+  "install": "https://21st.dev/r/ruixen.ui/receding-text-plane",
+  "license": "mit"
  },
  {
   "category": "Heroes and 3D scenes",
   "name": "Endless",
-  "author": "Weblisy",
-  "url": null,
+  "author": "helloweblisy",
+  "url": "https://21st.dev/@helloweblisy/components/endless",
+  "tech": "GSAP",
+  "use": "Full-screen 3D image corridor with images flying at the camera",
+  "install": "https://21st.dev/r/helloweblisy/endless",
+  "license": "mit",
+  "deps": "gsap"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "Puzzle Cube",
+  "author": "timmikeladze",
+  "url": "https://21st.dev/@timmikeladze/components/puzzle-cube",
+  "tech": "CSS 3D / SVG",
+  "use": "Rubik's-style SVG cube you can turn, scramble and auto-solve",
+  "install": "https://21st.dev/r/timmikeladze/puzzle-cube",
+  "license": "MIT"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "Tesseract",
+  "author": "ln-dev7",
+  "url": "https://21st.dev/@ln-dev7/components/tesseract",
+  "tech": "Three.js (R3F)",
+  "use": "Rotating 4D hypercube in theme colours",
+  "install": "https://21st.dev/r/ln-dev7/tesseract",
+  "license": "MIT",
+  "deps": "three @react-three/fiber"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "Isometric Cube",
+  "author": "abhishek-mallick",
+  "url": "https://21st.dev/@abhishek-mallick/components/cube",
+  "tech": "CSS 3D / SVG",
+  "use": "Isometric 3×3×3 cube whose layers lift and twist with the pointer",
+  "install": "https://21st.dev/r/abhishek-mallick/cube",
+  "license": "MIT"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "3D Curved Carousel",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/3d-curved-carousel",
   "tech": "WebGL",
-  "use": "Endless tunnel style hero"
+  "use": "WebGL slider bending photos around a cylinder, falls back to plain images",
+  "install": "https://21st.dev/r/kedhareswer/3d-curved-carousel",
+  "license": "mit"
+ },
+ {
+  "category": "Cards",
+  "name": "Book",
+  "author": "shugar",
+  "url": "https://21st.dev/@shugar/components/book",
+  "tech": "CSS 3D / SVG",
+  "use": "Responsive 3D book",
+  "install": "https://21st.dev/r/shugar/book"
+ },
+ {
+  "category": "Cards",
+  "name": "3D Flip Card",
+  "author": "shadcnspace",
+  "url": "https://21st.dev/@shadcnspace/components/card-14",
+  "tech": "CSS 3D / SVG",
+  "use": "Listing card flipping on hover to specs and a CTA",
+  "install": "https://21st.dev/r/shadcnspace/card-14",
+  "license": "free"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Interactive Card Sphere",
+  "author": "aloksivastava1025",
+  "url": "https://21st.dev/@aloksivastava1025/components/cue-interactive-card-sphere",
+  "tech": "CSS 3D / SVG",
+  "use": "Draggable sphere of cards that settles on one hero card",
+  "install": "https://21st.dev/r/aloksivastava1025/cue-interactive-card-sphere",
+  "license": "mit"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "GitHub Contribution Graph 3D Heatmap",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/contribution-skyline",
+  "tech": "CSS 3D / SVG",
+  "use": "Contribution graph that morphs into a 3D isometric skyline",
+  "install": "https://21st.dev/r/kedhareswer/contribution-skyline",
+  "license": "mit"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Folder Interaction",
+  "author": "0xUrvish",
+  "url": "https://21st.dev/@0xUrvish/components/folder-interaction",
+  "tech": "Motion",
+  "use": "Animated folder that opens and closes",
+  "install": "https://21st.dev/r/0xUrvish/folder-interaction",
+  "license": "mit",
+  "deps": "motion"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Iso Button",
+  "author": "abhishek-mallick",
+  "url": "https://21st.dev/@abhishek-mallick/components/iso-button",
+  "tech": "CSS 3D / SVG",
+  "use": "Isometric block button that sinks when pressed",
+  "install": "https://21st.dev/r/abhishek-mallick/iso-button",
+  "license": "MIT"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Curved Arc Image Carousel",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/arc-card-carousel",
+  "tech": "GSAP",
+  "use": "Photo cards on the rim of a large off-screen wheel, scroll or drag to turn",
+  "install": "https://21st.dev/r/kedhareswer/arc-card-carousel",
+  "license": "mit",
+  "deps": "gsap"
  },
  {
   "category": "Heroes and 3D scenes",
   "name": "Orbit Delivery Hero",
-  "author": "Maxim",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Objects orbiting a central product"
+  "author": "fadeichev2121",
+  "url": "https://21st.dev/@fadeichev2121/components/orbit-delivery-hero",
+  "tech": "Three.js (R3F)",
+  "use": "3D delivery planet with a running courier, drag to rotate",
+  "install": "https://21st.dev/r/fadeichev2121/orbit-delivery-hero",
+  "license": "mit",
+  "deps": "three @react-three/fiber"
  },
  {
-  "category": "Heroes and 3D scenes",
-  "name": "Cymatic Particle Hero",
-  "author": "Slider Revolution",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Particle field shaped like sound waves"
+  "category": "Carousels and galleries",
+  "name": "Glassy Coverflow Carousel",
+  "author": "automate_flows",
+  "url": "https://21st.dev/@automate_flows/components/glassy-coverflow-carousel",
+  "tech": "CSS 3D / SVG",
+  "use": "Coverflow for posters and media with swipe, keyboard, reduced motion",
+  "install": "https://21st.dev/r/automate_flows/glassy-coverflow-carousel",
+  "license": "mit"
  },
  {
-  "category": "Heroes and 3D scenes",
-  "name": "Phone Scroll Hero",
-  "author": "Ruixen",
-  "url": null,
-  "tech": "CSS 3D + scroll",
-  "use": "Phone mockup rotating on scroll"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "SaaS Hero Section with 3D Sculpture",
-  "author": "Kedhareswer Naidu",
-  "url": null,
-  "tech": "Three.js",
-  "use": "SaaS hero with a 3D sculpture"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Hole Reveal Hero",
-  "author": "21st",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Hero revealed through an animated hole"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Agentic Factory: Interactive 3D Machine",
-  "author": "Evgeny Shilov",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Interactive 3D machine for AI products"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Phosphor 30",
-  "author": "xordev",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Phosphor glow shader study"
- },
- {
-  "category": "Heroes and 3D scenes",
-  "name": "Shader Animation",
-  "author": "Ali Imam",
-  "url": "https://21st.dev/@designali-in/components/shader-animation",
-  "tech": "Three.js shader",
-  "use": "Full-screen ripple shader"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "GeometricBlurMesh",
-  "author": "Kain Xu",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Blurred geometric mesh background"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "LivingOrigami bg",
-  "author": "Dhileep Kumar GM",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Folding origami background"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Neon Flow",
-  "author": "Yash",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Neon flowing lines"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "TubeCursor",
-  "author": "Rahil Vahora",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Glowing tubes that follow the cursor"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Tubes Cursor",
-  "author": "Jod",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Tube trail cursor background"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "R3F Blob",
-  "author": "ui layout",
-  "url": null,
-  "tech": "R3F",
-  "use": "Morphing 3D blob"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Warp Background",
-  "author": "Dillion Verma",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Perspective warp grid behind content"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Desert Drift",
-  "author": "Patrick Dunn",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Drifting desert landscape"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "ASCII Pyramid",
-  "author": "Montek",
-  "url": null,
-  "tech": "Canvas",
-  "use": "Rotating pyramid drawn in ASCII"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Black Hole",
-  "author": "Meer bahadin",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Black hole with lensing"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Jelly Fish",
-  "author": "Univolve",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Floating jellyfish animation"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Set of Animations 4",
-  "author": "filipz",
-  "url": null,
-  "tech": "WebGL",
-  "use": "A set of 3D background animations"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Background (Silk shader)",
-  "author": "jakob.visintin.dev",
-  "url": "https://21st.dev/@jakob.visintin.dev/components/background",
-  "tech": "WebGL, zero-dependency",
-  "use": "Silk-style animated shader background"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Smoke shader",
-  "author": "binhu01",
-  "url": "https://21st.dev/@binhu01/components/smoke-shader",
-  "tech": "WebGL, zero-dependency",
-  "use": "Cursor-reactive smoke background",
-  "license": "MIT"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Arka",
-  "author": "vayslend",
-  "url": "https://21st.dev/@vayslend/components/arka",
-  "tech": "WebGL, zero-dependency",
-  "use": "Warm silk shader with film grain",
-  "license": "MIT"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Silk shader",
-  "author": "ash_de90ff1a",
-  "url": "https://21st.dev/@ash_de90ff1a/components/silk-shader",
-  "tech": "WebGL, zero-dependency",
-  "use": "Cool silk shader background"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Abyss",
-  "author": "t01033978876",
-  "url": "https://21st.dev/@t01033978876/components/abyss",
-  "tech": "WebGL, zero-dependency",
-  "use": "Deep violet orb shader with spotlight",
-  "license": "MIT"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "b Shader",
-  "author": "vinnysaivignesh111",
-  "url": "https://21st.dev/@vinnysaivignesh111/components/b-shader",
-  "tech": "WebGL, zero-dependency",
-  "use": "Light mesh-drift gradient"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "gradient maru",
-  "author": "m3marimuthum003",
-  "url": "https://21st.dev/@m3marimuthum003/components/gradient-maru",
-  "tech": "WebGL, zero-dependency",
-  "use": "Warm pastel mesh gradient with grain",
-  "license": "MIT"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "c2e812",
-  "author": "finn_4bbcd7bf",
-  "url": "https://21st.dev/@finn_4bbcd7bf/components/c2e812",
-  "tech": "WebGL, zero-dependency",
-  "use": "Metaballs on near-black with acid accent"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Background 1",
-  "author": "obscurepastas",
-  "url": "https://21st.dev/@obscurepastas/components/background-1",
-  "tech": "WebGL (Paper Shaders)",
-  "use": "Pastel metaballs background",
-  "license": "Apache-2.0"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Fire",
-  "author": "patrickthomasdunn1988",
-  "url": "https://21st.dev/@patrickthomasdunn1988/components/fire",
-  "tech": "WebGL (Paper Shaders)",
-  "use": "Fluted-glass waves, cursor-reactive",
-  "license": "Apache-2.0"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "WebGL Shader",
-  "author": "Ali Imam",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Raw WebGL shader background"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Shader Lines",
-  "author": "Ali Imam",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Animated shader lines"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "GLSL Hills",
-  "author": "Ali Imam",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Rolling GLSL hills"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Shader Background",
-  "author": "Le Thanh",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Generic animated shader background"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Liquid Shader",
-  "author": "Dhileep Kumar GM",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Liquid surface shader"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Fluid Field Background",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/components/fluid-field",
-  "tech": "Three.js shader",
-  "use": "Drifting simplex-noise fluid"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Flux Vortex",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/components/flux-vortex",
-  "tech": "Three.js + bloom",
-  "use": "Swirling particle vortex"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Wireframe Forms",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/components/wireframe-forms",
-  "tech": "Canvas",
-  "use": "Rotating wireframe cube, cylinders or icosphere"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Orbital Sphere Background",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Particle sphere in orbit"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Void Field",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Dark particle void"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Portal Field",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Portal-like particle tunnel"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Dimensional Field",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Layered dimensional grid"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Topo Field",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Topographic contour field"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Topology Field",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Topology mesh field"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Constellation Field",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Connected star constellation"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Halftone Flow",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Halftone dots in flowing motion"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Woven Cloth",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Cloth simulation"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Recursive Erosion Background",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Eroding recursive pattern"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Liquid Form Background",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Liquid organic form"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Particle Drift",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Drifting particles"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Generative Tree",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Growing generative tree"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Gateway Flow",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Flowing gateway lines"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Semantic Bloom",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Blooming particle structure"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Landscape",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/library/threeui",
-  "tech": "Three.js",
-  "use": "Procedural landscape"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Isometric Wave Grid Background",
-  "author": "Hossain Jahed",
-  "url": null,
-  "tech": "Canvas / WebGL",
-  "use": "Isometric grid waving"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Flow Field Background",
-  "author": "Hossain Jahed",
-  "url": null,
-  "tech": "Canvas",
-  "use": "Flow-field particle lines"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Hyperdimensional Voxel Cube",
-  "author": "daiv09",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Voxel cube folding through dimensions"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "Aether Ribbon Mesh",
-  "author": "daiv09",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Flowing ribbon mesh"
- },
- {
-  "category": "Backgrounds and shaders",
-  "name": "PillarGrid",
-  "author": "daiv09",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Grid of rising pillars"
- },
- {
-  "category": "Globes",
-  "name": "Globe",
-  "author": "LN (lndev-ui)",
-  "url": "https://21st.dev/@ln-dev7/components/globe",
-  "tech": "R3F",
-  "use": "Theme-aware dotted globe with orbit rings"
- },
- {
-  "category": "Globes",
-  "name": "Interactive Globe",
-  "author": "Yad Hakim",
-  "url": "https://21st.dev/@dev.yadhakim/components/interactive-globe",
-  "tech": "Canvas, zero-dependency",
-  "use": "Dotted globe with city arcs, drag to rotate"
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Focus City",
+  "author": "ibrandify",
+  "url": "https://21st.dev/@ibrandify/components/focus-city",
+  "tech": "CSS 3D / SVG",
+  "use": "Focus calendar with a morphing isometric skyline heatmap",
+  "install": "https://21st.dev/r/ibrandify/focus-city",
+  "license": "mit"
  },
  {
   "category": "Globes",
   "name": "Wireframe Dotted Globe",
-  "author": "Jessi (shadway)",
-  "url": "https://21st.dev/@shadway/components/wireframe-dotted-globe",
-  "tech": "Canvas / d3",
-  "use": "Rotating, zoomable Earth"
+  "author": "moazamtrade",
+  "url": "https://21st.dev/@moazamtrade/components/wireframe-dotted-globe",
+  "tech": "SVG (d3)",
+  "use": "Rotating, zoomable dotted Earth",
+  "install": "https://21st.dev/r/moazamtrade/wireframe-dotted-globe",
+  "deps": "d3"
+ },
+ {
+  "category": "Heroes and 3D scenes",
+  "name": "Tilted Grid Hero",
+  "author": "ruixen.ui",
+  "url": "https://21st.dev/@ruixen.ui/components/tilted-grid-hero",
+  "tech": "CSS 3D / SVG",
+  "use": "Hero with a curved, endlessly streaming row of images",
+  "install": "https://21st.dev/r/ruixen.ui/tilted-grid-hero",
+  "license": "mit"
+ },
+ {
+  "category": "Text and marquees",
+  "name": "Flip Text",
+  "author": "kevingirelli",
+  "url": "https://21st.dev/@kevingirelli/components/flip-text",
+  "tech": "CSS 3D / SVG",
+  "use": "Characters or words flipping into place in 3D",
+  "install": "https://21st.dev/r/kevingirelli/flip-text",
+  "license": "MIT"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Box Loader",
+  "author": "jatin-yadav05",
+  "url": "https://21st.dev/@jatin-yadav05/components/box-loader",
+  "tech": "CSS 3D / SVG",
+  "use": "Loader of rotating 3D cubes",
+  "install": "https://21st.dev/r/jatin-yadav05/box-loader"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "3D Book Carousel Reading Mode",
+  "author": "aloksivastava1025",
+  "url": "https://21st.dev/@aloksivastava1025/components/cue-3d-book-carousel-reading-mode",
+  "tech": "CSS 3D / SVG",
+  "use": "CSS 3D bookshelf that opens into a reading spread",
+  "install": "https://21st.dev/r/aloksivastava1025/cue-3d-book-carousel-reading-mode",
+  "license": "mit"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "Mechanical Keyboard",
+  "author": "ayushmxxn",
+  "url": "https://21st.dev/@ayushmxxn/components/mechanical-keyboard",
+  "tech": "Three.js (R3F)",
+  "use": "Playable 3D mechanical keyboard",
+  "install": "https://21st.dev/r/ayushmxxn/mechanical-keyboard",
+  "license": "mit",
+  "deps": "three @react-three/drei @react-three/fiber"
+ },
+ {
+  "category": "Scroll stories",
+  "name": "3D Stacked Website Cards Scroll",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/case-stack-scroll",
+  "tech": "GSAP",
+  "use": "Case-study cards filing away like folders as you scroll",
+  "install": "https://21st.dev/r/kedhareswer/case-stack-scroll",
+  "license": "mit",
+  "deps": "gsap"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Works Wheel",
+  "author": "crafterui",
+  "url": "https://21st.dev/@crafterui/components/works-wheel",
+  "tech": "CSS 3D / SVG",
+  "use": "Project index in a ring that opens into a 3D drum carousel",
+  "install": "https://21st.dev/r/crafterui/works-wheel",
+  "license": "no licence"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "Vintage Keyboard",
+  "author": "ayushmxxn",
+  "url": "https://21st.dev/@ayushmxxn/components/vintage-keyboard",
+  "tech": "CSS 3D / SVG",
+  "use": "Retro keyboard with keypress animation",
+  "install": "https://21st.dev/r/ayushmxxn/vintage-keyboard",
+  "license": "mit"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "Keys",
+  "author": "abhishek-mallick",
+  "url": "https://21st.dev/@abhishek-mallick/components/keys",
+  "tech": "CSS 3D / SVG",
+  "use": "Isometric keyboard where keys near the pointer sink",
+  "install": "https://21st.dev/r/abhishek-mallick/keys",
+  "license": "MIT"
+ },
+ {
+  "category": "Globes",
+  "name": "Country Flags Globe",
+  "author": "dhxwhy",
+  "url": "https://21st.dev/@dhxwhy/components/flag-globe",
+  "tech": "WebGL (cobe)",
+  "use": "Globe with country flags floating above their locations",
+  "install": "https://21st.dev/r/dhxwhy/flag-globe",
+  "license": "mit",
+  "deps": "cobe"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "3D Journal Page Carousel",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/journal-spread-carousel",
+  "tech": "CSS 3D / SVG",
+  "use": "Scrapbook spread with pages turning in 3D",
+  "install": "https://21st.dev/r/kedhareswer/journal-spread-carousel",
+  "license": "mit"
+ },
+ {
+  "category": "Globes",
+  "name": "Globe Labels",
+  "author": "shuding",
+  "url": "https://21st.dev/@shuding/components/cobe-globe-labels",
+  "tech": "WebGL (cobe)",
+  "use": "WebGL globe with glossy text labels on locations",
+  "install": "https://21st.dev/r/shuding/cobe-globe-labels",
+  "license": "mit",
+  "deps": "cobe"
+ },
+ {
+  "category": "Scroll stories",
+  "name": "Scroll Stacking Cards",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/tilt-stack-scroll",
+  "tech": "GSAP",
+  "use": "Photo cards piling up tilted as the page scrolls",
+  "install": "https://21st.dev/r/kedhareswer/tilt-stack-scroll",
+  "license": "mit",
+  "deps": "gsap"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "3D CSS Box",
+  "author": "danielpetho",
+  "url": "https://21st.dev/@danielpetho/components/css-box",
+  "tech": "Motion",
+  "use": "Draggable pure-CSS cube with content on each face",
+  "install": "https://21st.dev/r/danielpetho/css-box",
+  "license": "MIT",
+  "deps": "motion"
+ },
+ {
+  "category": "Cards",
+  "name": "Expanded Map",
+  "author": "dev.shejanmahamud",
+  "url": "https://21st.dev/@dev.shejanmahamud/components/expanded-map",
+  "tech": "CSS 3D / SVG",
+  "use": "Location card with 3D tilt that expands to a real map",
+  "install": "https://21st.dev/r/dev.shejanmahamud/expanded-map",
+  "license": "no licence"
+ },
+ {
+  "category": "Shader and developer tools",
+  "name": "Three.js WGSL modules",
+  "author": "vgpu",
+  "url": "https://21st.dev/@vgpu/components/tsl-exports",
+  "tech": "Three.js",
+  "use": "Use WGSL functions as three.js TSL nodes on a material",
+  "install": "https://21st.dev/r/vgpu/tsl-exports",
+  "license": "MIT",
+  "deps": "three"
+ },
+ {
+  "category": "Heroes and 3D scenes",
+  "name": "Agentic Factory: Interactive 3D Machine",
+  "author": "eugeneshilow",
+  "url": "https://21st.dev/@eugeneshilow/components/agentic-factory-3d",
+  "tech": "Three.js",
+  "use": "Interactive 3D machine hero for AI products",
+  "install": "https://21st.dev/r/eugeneshilow/agentic-factory-3d",
+  "license": "mit",
+  "deps": "three"
+ },
+ {
+  "category": "Cards",
+  "name": "Holo Card",
+  "author": "rmahammad",
+  "url": "https://21st.dev/@rmahammad/components/holo-card",
+  "tech": "CSS 3D / SVG",
+  "use": "Holographic trading card with spring tilt and foil",
+  "install": "https://21st.dev/r/rmahammad/holo-card",
+  "license": "mit"
+ },
+ {
+  "category": "Text and marquees",
+  "name": "LED Badges",
+  "author": "louisstudios",
+  "url": "https://21st.dev/@louisstudios/components/led-badges",
+  "tech": "WebGL",
+  "use": "Pile of 3D LED name badges with dot-matrix marquees",
+  "install": "https://21st.dev/r/louisstudios/led-badges",
+  "license": "mit"
+ },
+ {
+  "category": "Cards",
+  "name": "Tilt Card",
+  "author": "sidiora-labs",
+  "url": "https://21st.dev/@sidiora-labs/components/tilt-card",
+  "tech": "Motion",
+  "use": "Card wrapper tilting toward the pointer with glare",
+  "install": "https://21st.dev/r/sidiora-labs/tilt-card",
+  "license": "MIT",
+  "deps": "motion"
+ },
+ {
+  "category": "Text and marquees",
+  "name": "Neon Loop",
+  "author": "louisstudios",
+  "url": "https://21st.dev/@louisstudios/components/neon-loop",
+  "tech": "WebGL",
+  "use": "Extruded letters orbiting interlinked neon rings",
+  "install": "https://21st.dev/r/louisstudios/neon-loop",
+  "license": "mit"
+ },
+ {
+  "category": "Scroll stories",
+  "name": "Flipping Website Screenshot Deck",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/tumble-deck-showcase",
+  "tech": "GSAP",
+  "use": "Stack of site cards tipping forward as you scroll",
+  "install": "https://21st.dev/r/kedhareswer/tumble-deck-showcase",
+  "license": "mit",
+  "deps": "gsap"
+ },
+ {
+  "category": "Cards",
+  "name": "Book",
+  "author": "designali-in",
+  "url": "https://21st.dev/@designali-in/components/book",
+  "tech": "CSS 3D / SVG",
+  "use": "3D book component",
+  "install": "https://21st.dev/r/designali-in/book"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "3D Adaptive Navigation Bar",
+  "author": "rhllom",
+  "url": "https://21st.dev/@rhllom/components/3d-adaptive-navigation-bar",
+  "tech": "Motion",
+  "use": "Navigation bar with depth that expands on hover",
+  "install": "https://21st.dev/r/rhllom/3d-adaptive-navigation-bar",
+  "deps": "framer-motion"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Iso Slider",
+  "author": "abhishek-mallick",
+  "url": "https://21st.dev/@abhishek-mallick/components/iso-slider",
+  "tech": "CSS 3D / SVG",
+  "use": "Range slider with an isometric cube thumb",
+  "install": "https://21st.dev/r/abhishek-mallick/iso-slider",
+  "license": "MIT",
+  "deps": "radix-ui"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "3D CD Disc Carousel",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/disc-cascade-carousel",
+  "tech": "CSS 3D / SVG",
+  "use": "Printed discs rolling along a slanted line, for music or film",
+  "install": "https://21st.dev/r/kedhareswer/disc-cascade-carousel",
+  "license": "mit"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Bucket",
+  "author": "0xUrvish",
+  "url": "https://21st.dev/@0xUrvish/components/bucket",
+  "tech": "Motion",
+  "use": "Animated file bucket with drag",
+  "install": "https://21st.dev/r/0xUrvish/bucket",
+  "license": "mit",
+  "deps": "motion"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "R3F Macro Keypad",
+  "author": "good-listener",
+  "url": "https://21st.dev/@good-listener/components/r3-f-macro-keypad",
+  "tech": "Three.js (R3F)",
+  "use": "Transparent four-key macro pad with spring switches",
+  "install": "https://21st.dev/r/good-listener/r3-f-macro-keypad",
+  "license": "mit",
+  "deps": "three @react-three/drei @react-three/fiber"
+ },
+ {
+  "category": "Cards",
+  "name": "Voxel Video Streak Card",
+  "author": "sh20raj",
+  "url": "https://21st.dev/@sh20raj/components/voxel-video-streak-card",
+  "tech": "CSS 3D / SVG",
+  "use": "Tilting video showcase card with stats",
+  "install": "https://21st.dev/r/sh20raj/voxel-video-streak-card",
+  "license": "mit"
+ },
+ {
+  "category": "Heroes and 3D scenes",
+  "name": "Lycoris Specimen",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/lycoris-specimen",
+  "tech": "WebGL",
+  "use": "Scroll-driven WebGL landing hero with a chrome flower and pinned frames",
+  "install": "https://21st.dev/r/kedhareswer/lycoris-specimen",
+  "license": "mit"
+ },
+ {
+  "category": "Heroes and 3D scenes",
+  "name": "SaaS Hero Section with 3D Sculpture",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/ink-orbit-hero",
+  "tech": "CSS 3D / SVG",
+  "use": "SaaS hero with a draggable generative ink sculpture, no dependencies",
+  "install": "https://21st.dev/r/kedhareswer/ink-orbit-hero",
+  "license": "mit"
+ },
+ {
+  "category": "Text and marquees",
+  "name": "Text Ripple",
+  "author": "wensity",
+  "url": "https://21st.dev/@wensity/components/text-ripple",
+  "tech": "CSS 3D / SVG",
+  "use": "CSS-only 3D character wave headline, reduced motion supported",
+  "install": "https://21st.dev/r/wensity/text-ripple",
+  "license": "mit"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Tactile 3D Button",
+  "author": "bidyut10",
+  "url": "https://21st.dev/@bidyut10/components/three-d-button",
+  "tech": "CSS 3D / SVG",
+  "use": "Keycap-style button that sinks when pressed",
+  "install": "https://21st.dev/r/bidyut10/three-d-button",
+  "license": "MIT"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "3D Box Loader Animation",
+  "author": "minhxthanh",
+  "url": "https://21st.dev/@minhxthanh/components/3d-box-loader-animation",
+  "tech": "CSS 3D / SVG",
+  "use": "3D box loading animation",
+  "install": "https://21st.dev/r/minhxthanh/3d-box-loader-animation"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "3D Spider Cursor Follower",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/silk-spider-cursor",
+  "tech": "Three.js",
+  "use": "Jumping spider that follows the cursor and spins webs",
+  "install": "https://21st.dev/r/kedhareswer/silk-spider-cursor",
+  "license": "mit",
+  "deps": "three"
+ },
+ {
+  "category": "Text and marquees",
+  "name": "Letter 3D Swap",
+  "author": "danielpetho",
+  "url": "https://21st.dev/@danielpetho/components/letter-3d-swap",
+  "tech": "Motion",
+  "use": "Letters rotating in 3D on hover to a second face",
+  "install": "https://21st.dev/r/danielpetho/letter-3d-swap",
+  "license": "MIT",
+  "deps": "motion"
  },
  {
   "category": "Globes",
   "name": "COBE Globe",
   "author": "shuding",
-  "url": null,
-  "tech": "cobe (WebGL)",
-  "use": "Lightweight WebGL globe"
+  "url": "https://21st.dev/@shuding/components/cobe-globe",
+  "tech": "WebGL (cobe)",
+  "use": "5 KB WebGL globe with markers, arcs and labels",
+  "install": "https://21st.dev/r/shuding/cobe-globe",
+  "license": "mit",
+  "deps": "cobe"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Inverted Perspective Carousel",
+  "author": "reuno-ui",
+  "url": "https://21st.dev/@reuno-ui/components/skiper49",
+  "tech": "Motion",
+  "use": "Coverflow with inverted perspective",
+  "install": "https://21st.dev/r/reuno-ui/skiper49",
+  "license": "custom (Skiper UI)",
+  "deps": "swiper framer-motion"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "EZPZ Rubber Duck",
+  "author": "ezam0000",
+  "url": "https://21st.dev/@ezam0000/components/ezpz-rubber-duck",
+  "tech": "Three.js",
+  "use": "Squeezable 3D rubber duck on rippling water",
+  "install": "https://21st.dev/r/ezam0000/ezpz-rubber-duck",
+  "license": "mit",
+  "deps": "three"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Img Sphere",
+  "author": "tonyzebastian",
+  "url": "https://21st.dev/@tonyzebastian/components/img-sphere",
+  "tech": "CSS 3D / SVG",
+  "use": "Images arranged on a sphere",
+  "install": "https://21st.dev/r/tonyzebastian/img-sphere"
  },
  {
   "category": "Globes",
-  "name": "Globe CDN",
-  "author": "shuding",
-  "url": "https://21st.dev/@shuding/components/cobe-globe-cdn",
-  "tech": "cobe (WebGL)",
-  "use": "Vercel-style globe with edge markers and arcs"
+  "name": "3D Globe",
+  "author": "manuarora700",
+  "url": "https://21st.dev/@manuarora700/components/3d-globe",
+  "tech": "Three.js (R3F)",
+  "use": "Textured Earth with camera controls and markers",
+  "install": "https://21st.dev/r/manuarora700/3d-globe",
+  "license": "no licence",
+  "deps": "three @react-three/drei @react-three/fiber"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "Geometric Orb",
+  "author": "uicapsule",
+  "url": "https://21st.dev/@uicapsule/components/geometric-orb",
+  "tech": "Three.js (R3F)",
+  "use": "Wireframe sphere with flowing latitude lines",
+  "install": "https://21st.dev/r/uicapsule/geometric-orb",
+  "license": "no licence",
+  "deps": "three @react-three/drei @react-three/fiber"
  },
  {
   "category": "Globes",
-  "name": "Globe Pulse",
+  "name": "Globe Analytics",
   "author": "shuding",
-  "url": null,
-  "tech": "cobe (WebGL)",
-  "use": "Globe with pulsing markers"
+  "url": "https://21st.dev/@shuding/components/cobe-globe-analytics",
+  "tech": "WebGL (cobe)",
+  "use": "Globe with live visitor badges and trends",
+  "install": "https://21st.dev/r/shuding/cobe-globe-analytics",
+  "license": "mit",
+  "deps": "cobe"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Boxy App Icons",
+  "author": "muhammad-binsalman",
+  "url": "https://21st.dev/@muhammad-binsalman/components/boxy-app-icons",
+  "tech": "CSS 3D / SVG",
+  "use": "Grid of 3D hexagonal app icons",
+  "install": "https://21st.dev/r/muhammad-binsalman/boxy-app-icons"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Animated Input",
+  "author": "minhxthanh",
+  "url": "https://21st.dev/@minhxthanh/components/animated-input",
+  "tech": "CSS 3D / SVG",
+  "use": "Animated text input",
+  "install": "https://21st.dev/r/minhxthanh/animated-input"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "3D Parallax Unfurling Gallery",
+  "author": "piyushxdev",
+  "url": "https://21st.dev/@piyushxdev/components/3d-parallax-unfurling-gallery",
+  "tech": "Motion",
+  "use": "Scroll-driven image grid with 3D rotation and parallax",
+  "install": "https://21st.dev/r/piyushxdev/3d-parallax-unfurling-gallery",
+  "license": "mit",
+  "deps": "framer-motion"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "3D Carousel",
+  "author": "cult-ui",
+  "url": "https://21st.dev/@cult-ui/components/3d-carousel",
+  "tech": "Motion",
+  "use": "Rotating 3D image carousel",
+  "install": "https://21st.dev/r/cult-ui/3d-carousel",
+  "license": "mit",
+  "deps": "framer-motion"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Solar Loader",
+  "author": "ruixen.ui",
+  "url": "https://21st.dev/@ruixen.ui/components/solar-loader",
+  "tech": "CSS 3D / SVG",
+  "use": "Loader as a miniature 3D solar system",
+  "install": "https://21st.dev/r/ruixen.ui/solar-loader"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "Interactive 3D Keycap Sphere",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/keycap-orb",
+  "tech": "WebGL",
+  "use": "Sphere of keycaps in raw WebGL2, drag to spin",
+  "install": "https://21st.dev/r/kedhareswer/keycap-orb",
+  "license": "mit"
  },
  {
   "category": "Globes",
-  "name": "Globe Polaroids",
+  "name": "Globe Stickers",
   "author": "shuding",
-  "url": null,
-  "tech": "cobe (WebGL)",
-  "use": "Globe with photo markers"
+  "url": "https://21st.dev/@shuding/components/cobe-globe-stickers",
+  "tech": "WebGL (cobe)",
+  "use": "Globe with emoji stickers on city markers",
+  "install": "https://21st.dev/r/shuding/cobe-globe-stickers",
+  "license": "mit",
+  "deps": "cobe"
  },
  {
-  "category": "Globes",
-  "name": "Globe Interactive",
-  "author": "shuding",
-  "url": null,
-  "tech": "cobe (WebGL)",
-  "use": "Draggable globe"
+  "category": "Scroll stories",
+  "name": "Minted Coin Scroll",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/minted-coin-scroll",
+  "tech": "CSS 3D / SVG",
+  "use": "Scroll poster where a bronze coin unwraps and turns in 3D",
+  "install": "https://21st.dev/r/kedhareswer/minted-coin-scroll",
+  "license": "mit"
+ },
+ {
+  "category": "Scroll stories",
+  "name": "Robot Flyby",
+  "author": "patrickthomasdunn1988",
+  "url": "https://21st.dev/@patrickthomasdunn1988/components/robot-flyby",
+  "tech": "CSS 3D / SVG",
+  "use": "Scroll opens a door and a robot flies down a hallway",
+  "install": "https://21st.dev/r/patrickthomasdunn1988/robot-flyby"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Runway Fashion Lookbook Carousel",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/runway-lookbook",
+  "tech": "GSAP",
+  "use": "Looks walking forward on a catwalk as you scroll",
+  "install": "https://21st.dev/r/kedhareswer/runway-lookbook",
+  "license": "mit",
+  "deps": "gsap"
  },
  {
   "category": "Globes",
   "name": "Globe Live Badge",
   "author": "shuding",
-  "url": null,
-  "tech": "cobe (WebGL)",
-  "use": "Globe with a live badge"
+  "url": "https://21st.dev/@shuding/components/cobe-globe-live",
+  "tech": "WebGL (cobe)",
+  "use": "Globe with live viewer badges",
+  "install": "https://21st.dev/r/shuding/cobe-globe-live",
+  "license": "mit",
+  "deps": "cobe"
  },
  {
-  "category": "Globes",
-  "name": "Globe Weather",
-  "author": "shuding",
-  "url": null,
-  "tech": "cobe (WebGL)",
-  "use": "Globe with weather data"
- },
- {
-  "category": "Globes",
-  "name": "Country Flags Globe",
-  "author": "DHxWhy",
-  "url": "https://21st.dev/@DHxWHY/components/flag-globe",
+  "category": "Carousels and galleries",
+  "name": "Gallery",
+  "author": "mengto",
+  "url": "https://21st.dev/@mengto/components/gallery",
   "tech": "Three.js",
-  "use": "Flags floating above their countries"
+  "use": "Rotating cylindrical image gallery",
+  "install": "https://21st.dev/r/mengto/gallery",
+  "license": "MIT",
+  "deps": "three"
  },
  {
-  "category": "Globes",
-  "name": "3D Globe",
-  "author": "Manu Arora (Aceternity UI)",
-  "url": null,
-  "tech": "three-globe",
-  "use": "Globe with animated arcs"
- },
- {
-  "category": "Globes",
-  "name": "Globe",
-  "author": "Dillion Verma (Magic UI)",
-  "url": null,
-  "tech": "cobe (WebGL)",
-  "use": "Minimal rotating globe"
+  "category": "Carousels and galleries",
+  "name": "Image Sphere",
+  "author": "tonyzebastian",
+  "url": "https://21st.dev/@tonyzebastian/components/image-sphere",
+  "tech": "CSS 3D / SVG",
+  "use": "Images on a Fibonacci sphere, drag with momentum",
+  "install": "https://21st.dev/r/tonyzebastian/image-sphere"
  },
  {
   "category": "Globes",
   "name": "Globe",
-  "author": "Ruixen",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Rotating globe"
+  "author": "dillionverma",
+  "url": "https://21st.dev/@dillionverma/components/globe",
+  "tech": "WebGL (cobe)",
+  "use": "Autorotating performant WebGL globe (Magic UI)",
+  "install": "https://21st.dev/r/dillionverma/globe",
+  "license": "mit",
+  "deps": "cobe"
+ },
+ {
+  "category": "Cards",
+  "name": "Perspective Book",
+  "author": "tom_ui",
+  "url": "https://21st.dev/@tom_ui/components/perspective-book",
+  "tech": "CSS 3D / SVG",
+  "use": "Book in perspective",
+  "install": "https://21st.dev/r/tom_ui/perspective-book"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "3D Folder",
+  "author": "avanishverma4",
+  "url": "https://21st.dev/@avanishverma4/components/3d-folder",
+  "tech": "CSS 3D / SVG",
+  "use": "Reusable 3D folder",
+  "install": "https://21st.dev/r/avanishverma4/3d-folder"
+ },
+ {
+  "category": "Text and marquees",
+  "name": "Marquee Along SVG Path",
+  "author": "danielpetho",
+  "url": "https://21st.dev/@danielpetho/components/marquee-along-svg-path",
+  "tech": "Motion",
+  "use": "Marquee following any SVG path, scroll-velocity aware",
+  "install": "https://21st.dev/r/danielpetho/marquee-along-svg-path",
+  "license": "MIT",
+  "deps": "motion"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Matchbox Carousel",
+  "author": "neebarp",
+  "url": "https://21st.dev/@neebarp/components/matchbox-carousel",
+  "tech": "CSS 3D / SVG",
+  "use": "Matchboxes whose trays slide out to show images",
+  "install": "https://21st.dev/r/neebarp/matchbox-carousel",
+  "license": "mit"
+ },
+ {
+  "category": "Heroes and 3D scenes",
+  "name": "Spline Scene",
+  "author": "serafimcloud",
+  "url": "https://21st.dev/@serafimcloud/components/splite",
+  "tech": "Spline",
+  "use": "Lazy-loaded Spline 3D scene with spotlight",
+  "install": "https://21st.dev/r/serafimcloud/splite",
+  "license": "mit",
+  "deps": "@splinetool/runtime @splinetool/react-spline"
+ },
+ {
+  "category": "Cards",
+  "name": "FlipCard",
+  "author": "youcefbnm",
+  "url": "https://21st.dev/@youcefbnm/components/flip-card",
+  "tech": "CSS 3D / SVG",
+  "use": "Card that flips in 3D",
+  "install": "https://21st.dev/r/youcefbnm/flip-card"
+ },
+ {
+  "category": "Text and marquees",
+  "name": "Depth Flip Text",
+  "author": "hyperiux",
+  "url": "https://21st.dev/@hyperiux/components/depth-flip-text",
+  "tech": "GSAP",
+  "use": "Phrases flipping on a 3D hinge",
+  "install": "https://21st.dev/r/hyperiux/depth-flip-text",
+  "license": "mit",
+  "deps": "gsap"
+ },
+ {
+  "category": "Shader and developer tools",
+  "name": "WGSL in three.js",
+  "author": "vgpu",
+  "url": "https://21st.dev/@vgpu/components/three-tsl",
+  "tech": "Three.js",
+  "use": "Procedural lava material from WGSL modules",
+  "install": "https://21st.dev/r/vgpu/three-tsl",
+  "license": "MIT",
+  "deps": "three"
  },
  {
   "category": "Globes",
-  "name": "Route Globe",
-  "author": "ham7a311",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Globe with travel routes"
- },
- {
-  "category": "Globes",
-  "name": "Globe Type Study",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/components/globe-study",
+  "name": "ASCII Globe Spin",
+  "author": "nikolas-sapa",
+  "url": "https://21st.dev/@nikolas-sapa/components/ascii-globe-spin",
   "tech": "Canvas",
-  "use": "Globe made of rotating type"
- },
- {
-  "category": "Globes",
-  "name": "Orbiting Circles with Globe",
-  "author": "ShadcnSpace",
-  "url": null,
-  "tech": "CSS + cobe",
-  "use": "Icons orbiting a globe"
- },
- {
-  "category": "Orbs and 3D objects",
-  "name": "Orb",
-  "author": "ElevenLabs",
-  "url": "https://21st.dev/community/components/ElevenLabs/orb",
-  "tech": "Three.js shader",
-  "use": "AI agent orb with states; install: npx shadcn@latest add https://21st.dev/r/ElevenLabs/orb"
- },
- {
-  "category": "Orbs and 3D objects",
-  "name": "3d orb",
-  "author": "Vaibhav Kumar Singh",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Glossy 3D orb"
- },
- {
-  "category": "Orbs and 3D objects",
-  "name": "Geometric Orb",
-  "author": "uicapsule",
-  "url": "https://21st.dev/@uicapsule/components/geometric-orb",
-  "tech": "R3F",
-  "use": "Wireframe sphere with flowing latitude lines"
- },
- {
-  "category": "Orbs and 3D objects",
-  "name": "Live Orb",
-  "author": "jay sharma",
-  "url": "https://21st.dev/@radiumcoders/components/live-orb",
-  "tech": "WebGL",
-  "use": "Sphere with eyes that follow the cursor"
- },
- {
-  "category": "Orbs and 3D objects",
-  "name": "Voice Orb",
-  "author": "starc007",
-  "url": "https://21st.dev/@starc007/components/voice-orb",
-  "tech": "WebGL shader",
-  "use": "Liquid sphere reacting to voice",
+  "use": "Canvas ASCII globe with day and night, drag to rotate",
+  "install": "https://21st.dev/r/nikolas-sapa/ascii-globe-spin",
   "license": "MIT"
  },
  {
-  "category": "Orbs and 3D objects",
-  "name": "Voice Powered Orb",
-  "author": "Isaiah",
-  "url": null,
-  "tech": "WebGL",
-  "use": "Orb reacting to microphone input"
+  "category": "3D objects and toys",
+  "name": "3d orb",
+  "author": "vaib215",
+  "url": "https://21st.dev/@vaib215/components/3d-orb",
+  "tech": "Three.js",
+  "use": "Colour-changing 3D orb",
+  "install": "https://21st.dev/r/vaib215/3d-orb",
+  "deps": "three"
  },
  {
-  "category": "Orbs and 3D objects",
-  "name": "ASCII 3D",
-  "author": "aadixc0de",
-  "url": "https://21st.dev/@aadixc0de/components/ascii-3d",
-  "tech": "Canvas (ray marched)",
-  "use": "Torus, cube or your logo drawn in ASCII, draggable"
+  "category": "Heroes and 3D scenes",
+  "name": "Pixel Rocket Voyager",
+  "author": "dhileepkumargm",
+  "url": "https://21st.dev/@dhileepkumargm/components/pixel-rocket-voyager",
+  "tech": "Three.js",
+  "use": "Hero with a pixel-art rocket flying through asteroids",
+  "install": "https://21st.dev/r/dhileepkumargm/pixel-rocket-voyager",
+  "deps": "three framer-motion"
  },
  {
-  "category": "Orbs and 3D objects",
-  "name": "ASCII Cube",
-  "author": "Montek",
-  "url": null,
+  "category": "Carousels and galleries",
+  "name": "3D Image Gallery",
+  "author": "moazamtrade",
+  "url": "https://21st.dev/@moazamtrade/components/3d-image-gallery",
+  "tech": "Three.js (R3F)",
+  "use": "3D image gallery in R3F",
+  "install": "https://21st.dev/r/moazamtrade/3d-image-gallery",
+  "deps": "three @react-three/drei @react-three/fiber"
+ },
+ {
+  "category": "Cards",
+  "name": "Lanyard Badge",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/lanyard-badge",
   "tech": "Canvas",
-  "use": "Rotating ASCII cube"
+  "use": "Badge card on a physics rope, flick to spin",
+  "install": "https://21st.dev/r/kedhareswer/lanyard-badge",
+  "license": "mit"
  },
  {
-  "category": "Orbs and 3D objects",
-  "name": "Spinning 3D Cube",
-  "author": "Motion",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Spinning CSS cube"
+  "category": "Cards",
+  "name": "Crumpled Paper Hover Reveal",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/crumpled-paper-reveal",
+  "tech": "Three.js",
+  "use": "Paper balls uncrumpling into letters and photos",
+  "install": "https://21st.dev/r/kedhareswer/crumpled-paper-reveal",
+  "license": "mit",
+  "deps": "gsap three"
  },
  {
-  "category": "Orbs and 3D objects",
-  "name": "Particle Wordmark",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/components/particle-wordmark",
-  "tech": "Canvas",
-  "use": "Brand name as a shimmering particle field"
+  "category": "Globes",
+  "name": "Globe Polaroids",
+  "author": "shuding",
+  "url": "https://21st.dev/@shuding/components/cobe-globe-polaroids",
+  "tech": "WebGL (cobe)",
+  "use": "Globe with polaroid photos on cities",
+  "install": "https://21st.dev/r/shuding/cobe-globe-polaroids",
+  "license": "mit",
+  "deps": "cobe"
  },
  {
-  "category": "Cards and tilt",
-  "name": "3d-card",
-  "author": "Nick",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Card with layered 3D hover"
- },
- {
-  "category": "Cards and tilt",
-  "name": "3D Card",
-  "author": "Ravi Katiyar",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Perspective hover card"
- },
- {
-  "category": "Cards and tilt",
-  "name": "3D Card",
-  "author": "ExtendUI",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Perspective hover card"
- },
- {
-  "category": "Cards and tilt",
-  "name": "3D Card",
-  "author": "Kavi Katiyar",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Perspective hover card"
- },
- {
-  "category": "Cards and tilt",
-  "name": "Tilt Card",
-  "author": "tom (Spell)",
-  "url": "https://21st.dev/@tom_ui/components/tilt-card",
-  "tech": "CSS 3D",
-  "use": "Tilt with spotlight on hover"
- },
- {
-  "category": "Cards and tilt",
-  "name": "3D tilt card",
-  "author": "Awanish Verma",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Mouse tilt card"
- },
- {
-  "category": "Cards and tilt",
-  "name": "HolographicCard",
-  "author": "Dhileep Kumar GM",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Holographic sheen card"
- },
- {
-  "category": "Cards and tilt",
-  "name": "HolographicInterface",
-  "author": "Dhileep Kumar GM",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Holographic UI panel"
- },
- {
-  "category": "Cards and tilt",
-  "name": "Interactive 3D Analytics Dashboard Card",
-  "author": "Dhileep Kumar GM",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Analytics card with depth"
- },
- {
-  "category": "Cards and tilt",
-  "name": "3d Wrapper",
-  "author": "badtz",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Wrap anything in a 3D tilt"
- },
- {
-  "category": "Cards and tilt",
-  "name": "3D Folder",
-  "author": "Jatin Yadav",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Folder that opens in 3D"
- },
- {
-  "category": "Cards and tilt",
-  "name": "3D Folder",
-  "author": "Awanish Verma",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Folder that opens in 3D"
- },
- {
-  "category": "Cards and tilt",
-  "name": "Spotlight Card",
-  "author": "Hossain Jahed",
-  "url": null,
-  "tech": "CSS",
-  "use": "Card with cursor spotlight"
- },
- {
-  "category": "Cards and tilt",
-  "name": "Animated Feature Spotlight 3D",
-  "author": "Ruixen",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Feature block with 3D spotlight"
- },
- {
-  "category": "Cards and tilt",
-  "name": "ThreeD Wall Calendar",
-  "author": "Ruixen",
-  "url": "https://21st.dev/@ruixen.ui/components/three-dwall-calendar",
-  "tech": "CSS 3D",
-  "use": "Wall calendar with page flips"
- },
- {
-  "category": "Cards and tilt",
-  "name": "Date Wheel Picker",
-  "author": "johuniq",
-  "url": "https://21st.dev/@johuniq/components/date-wheel-picker",
-  "tech": "CSS 3D",
-  "use": "iOS-style 3D wheel date picker"
- },
- {
-  "category": "Carousels and galleries",
-  "name": "3D Curved Carousel",
-  "author": "Kedhareswer Naidu",
-  "url": "https://21st.dev/@kedhareswer/components/3d-curved-carousel",
-  "tech": "CSS 3D",
-  "use": "Cards on a curved track"
- },
- {
-  "category": "Carousels and galleries",
-  "name": "Tilted Card Image Carousel",
-  "author": "Kedhareswer Naidu",
-  "url": "https://21st.dev/@kedhareswer/components/tilt-cascade-carousel",
-  "tech": "CSS 3D",
-  "use": "Photos cascading on a slanted line, reduced-motion aware"
- },
- {
-  "category": "Carousels and galleries",
-  "name": "3D CD Disc Carousel",
-  "author": "Kedhareswer Naidu",
-  "url": "https://21st.dev/@kedhareswer/library/image-carousels",
-  "tech": "CSS 3D",
-  "use": "Images as discs on a climbing line"
+  "category": "Scroll stories",
+  "name": "Crumpled Paper Changelog",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/crumple-changelog",
+  "tech": "Three.js",
+  "use": "Changelog posters crumpling into the next one",
+  "install": "https://21st.dev/r/kedhareswer/crumple-changelog",
+  "license": "mit",
+  "deps": "gsap three"
  },
  {
   "category": "Carousels and galleries",
   "name": "3D Flip Image Carousel",
-  "author": "Kedhareswer Naidu",
-  "url": "https://21st.dev/@kedhareswer/library/image-carousels",
-  "tech": "CSS 3D",
-  "use": "Images flipping in 3D"
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/viewfinder-flip-carousel",
+  "tech": "CSS 3D / SVG",
+  "use": "Photos folding away in perspective around a viewfinder",
+  "install": "https://21st.dev/r/kedhareswer/viewfinder-flip-carousel",
+  "license": "mit"
+ },
+ {
+  "category": "Globes",
+  "name": "Globe",
+  "author": "ln-dev7",
+  "url": "https://21st.dev/@ln-dev7/components/globe",
+  "tech": "Three.js (R3F)",
+  "use": "Theme-aware dotted globe with orbit rings",
+  "install": "https://21st.dev/r/ln-dev7/globe",
+  "license": "MIT",
+  "deps": "three @react-three/fiber"
  },
  {
   "category": "Carousels and galleries",
   "name": "Interactive 3D Card Carousel",
-  "author": "Subhan Uddin",
+  "author": "su2491251",
   "url": "https://21st.dev/@su2491251/components/card-carousel",
   "tech": "Motion",
-  "use": "Arc carousel fanning out on hover"
+  "use": "Arc carousel fanning out on hover",
+  "install": "https://21st.dev/r/su2491251/card-carousel",
+  "license": "MIT",
+  "deps": "motion"
  },
  {
-  "category": "Carousels and galleries",
-  "name": "3D Interactive Card Gallery",
-  "author": "Dhileep Kumar GM",
-  "url": "https://21st.dev/@dhileepkumargm/components/3d-interactive-card-gallery",
-  "tech": "CSS 3D",
-  "use": "Perspective gallery with parallax depth"
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Press Depth",
+  "author": "ddoemonn",
+  "url": "https://21st.dev/@ddoemonn/components/press-depth",
+  "tech": "Motion",
+  "use": "Button that presses with depth and tilts",
+  "install": "https://21st.dev/r/ddoemonn/press-depth",
+  "license": "MIT",
+  "deps": "motion"
  },
  {
-  "category": "Carousels and galleries",
-  "name": "SpatialCardCarousel",
-  "author": "abushaidislam7",
-  "url": "https://21st.dev/@abushaidislam7/components/spatial-card-carousel",
-  "tech": "CSS 3D",
-  "use": "Orbital card showcase with click-to-focus"
+  "category": "3D objects and toys",
+  "name": "R3F Blob",
+  "author": "uilayout.contact",
+  "url": "https://21st.dev/@uilayout.contact/components/r3f-blob",
+  "tech": "CSS 3D / SVG",
+  "use": "Morphing blob in R3F",
+  "install": "https://21st.dev/r/uilayout.contact/r3f-blob"
  },
  {
-  "category": "Carousels and galleries",
-  "name": "Coverflow Carousel",
-  "author": "educalvolpz (SmoothUI)",
-  "url": "https://21st.dev/@educalvolpz/components/coverflow-carousel",
-  "tech": "CSS 3D",
-  "use": "iTunes-style coverflow with keyboard and swipe"
+  "category": "Scroll stories",
+  "name": "Domino Scroll Image Gallery",
+  "author": "dhxwhy",
+  "url": "https://21st.dev/@dhxwhy/components/domino-gallery",
+  "tech": "CSS 3D / SVG",
+  "use": "Tall photo cards toppling like dominoes on scroll",
+  "install": "https://21st.dev/r/dhxwhy/domino-gallery",
+  "license": "mit"
  },
  {
   "category": "Carousels and galleries",
@@ -1012,119 +1014,496 @@
   "author": "crafterui",
   "url": "https://21st.dev/@crafterui/components/dither-helix-carousel",
   "tech": "WebGL",
-  "use": "Spiral column of cards with dither shader"
+  "use": "Spiral column of cards with a dither shader",
+  "install": "https://21st.dev/r/crafterui/dither-helix-carousel",
+  "license": "MIT"
  },
  {
-  "category": "Carousels and galleries",
-  "name": "3D Carousel",
-  "author": "cult/ui",
-  "url": null,
-  "tech": "Motion",
-  "use": "Rotating 3D image carousel"
+  "category": "3D objects and toys",
+  "name": "Nvidia Dgx Pod",
+  "author": "daiwiikharihar",
+  "url": "https://21st.dev/@daiwiikharihar/components/nvidia-dgx-pod",
+  "tech": "CSS 3D / SVG",
+  "use": "Isometric server rack with slide-out blades",
+  "install": "https://21st.dev/r/daiwiikharihar/nvidia-dgx-pod",
+  "license": "mit",
+  "deps": "react-isokit"
  },
  {
-  "category": "Carousels and galleries",
-  "name": "3D Gallery Photography",
-  "author": "Jessi / Vaibhav Kumar Singh",
-  "url": null,
-  "tech": "Three.js",
-  "use": "Photography gallery in 3D space"
+  "category": "Globes",
+  "name": "Globe Interactive",
+  "author": "shuding",
+  "url": "https://21st.dev/@shuding/components/cobe-globe-interactive",
+  "tech": "WebGL (cobe)",
+  "use": "Globe with clickable markers and details",
+  "install": "https://21st.dev/r/shuding/cobe-globe-interactive",
+  "license": "mit",
+  "deps": "cobe"
  },
  {
-  "category": "Carousels and galleries",
-  "name": "Img Sphere",
-  "author": "Tony Sebastian",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Images arranged on a sphere"
- },
- {
-  "category": "Carousels and galleries",
-  "name": "Gallery",
-  "author": "Meng To (ThreeUI)",
-  "url": "https://21st.dev/@mengto/components/gallery",
-  "tech": "Three.js",
-  "use": "Rotating cylindrical gallery"
- },
- {
-  "category": "Carousels and galleries",
-  "name": "3D Cards Slider",
-  "author": "Dhileep Kumar GM",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Cards sliding in depth"
- },
- {
-  "category": "Carousels and galleries",
-  "name": "3d Sliding Cards",
-  "author": "Abhinav C",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Sliding stacked cards"
- },
- {
-  "category": "Carousels and galleries",
-  "name": "Circular Gallery 2",
-  "author": "Ravi Katiyar",
-  "url": null,
+  "category": "3D objects and toys",
+  "name": "Interactive Icon Cloud",
+  "author": "dillionverma",
+  "url": "https://21st.dev/@dillionverma/components/interactive-icon-cloud",
   "tech": "WebGL",
-  "use": "Curved WebGL image gallery"
+  "use": "3D tag cloud of logos",
+  "install": "https://21st.dev/r/dillionverma/interactive-icon-cloud",
+  "license": "mit",
+  "deps": "react-icon-cloud"
  },
  {
-  "category": "Carousels and galleries",
-  "name": "Glass Testimonial Swiper",
-  "author": "Hossain Jahed",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Glass cards swiping in 3D"
- },
- {
-  "category": "Carousels and galleries",
-  "name": "3D Parallax Unfurling Gallery",
-  "author": "Piyush",
-  "url": null,
-  "tech": "Scroll + CSS 3D",
-  "use": "Gallery unfurling on scroll"
- },
- {
-  "category": "Scroll and parallax",
-  "name": "Container Scroll Animation",
-  "author": "Manu Arora (Aceternity UI)",
-  "url": null,
-  "tech": "Motion",
-  "use": "Panel rotating into place as you scroll"
- },
- {
-  "category": "Scroll and parallax",
-  "name": "Hero Parallax",
-  "author": "Manu Arora (Aceternity UI)",
-  "url": null,
-  "tech": "Motion",
-  "use": "Rows of product shots in parallax"
- },
- {
-  "category": "Scroll and parallax",
-  "name": "Zoom Parallax",
-  "author": "Efferd",
-  "url": "https://21st.dev/@efferd/components/zoom-parallax",
-  "tech": "Motion + Lenis",
-  "use": "Images zooming at different speeds"
- },
- {
-  "category": "Scroll and parallax",
-  "name": "Parallax Scrolling",
-  "author": "osmosupply",
-  "url": "https://21st.dev/@osmosupply/components/parallax-scrolling",
+  "category": "Text and marquees",
+  "name": "Layered Text",
+  "author": "xubohuah",
+  "url": "https://21st.dev/@xubohuah/components/layered-text",
   "tech": "GSAP",
-  "use": "Layered parallax hero"
+  "use": "Layered text in 3D perspective with hover",
+  "install": "https://21st.dev/r/xubohuah/layered-text",
+  "deps": "gsap"
  },
  {
-  "category": "Scroll and parallax",
-  "name": "Modern Hero (SmoothScrollHero)",
-  "author": "uniquesonu",
-  "url": "https://21st.dev/@uniquesonu/components/modern-hero",
-  "tech": "Motion + Lenis",
-  "use": "Clip-path image expanding on scroll"
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Server Stack Loader",
+  "author": "ravikatiyar162",
+  "url": "https://21st.dev/@ravikatiyar162/components/loader-12",
+  "tech": "CSS 3D / SVG",
+  "use": "3D server stack loader",
+  "install": "https://21st.dev/r/ravikatiyar162/loader-12",
+  "deps": "styled-components"
+ },
+ {
+  "category": "Globes",
+  "name": "Globe Weather",
+  "author": "shuding",
+  "url": "https://21st.dev/@shuding/components/cobe-globe-weather",
+  "tech": "WebGL (cobe)",
+  "use": "Globe with weather emoji",
+  "install": "https://21st.dev/r/shuding/cobe-globe-weather",
+  "license": "mit",
+  "deps": "cobe"
+ },
+ {
+  "category": "Globes",
+  "name": "Globe CDN",
+  "author": "shuding",
+  "url": "https://21st.dev/@shuding/components/cobe-globe-cdn",
+  "tech": "WebGL (cobe)",
+  "use": "Vercel-style globe with edge markers and traffic arcs",
+  "install": "https://21st.dev/r/shuding/cobe-globe-cdn",
+  "license": "mit",
+  "deps": "cobe"
+ },
+ {
+  "category": "Cards",
+  "name": "Flip Card",
+  "author": "skyleen77",
+  "url": "https://21st.dev/@skyleen77/components/flip-card",
+  "tech": "Motion",
+  "use": "Profile card flipping to bio and stats",
+  "install": "https://21st.dev/r/skyleen77/flip-card",
+  "license": "MIT",
+  "deps": "motion"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Orbital Image Wheel",
+  "author": "educalvolpz",
+  "url": "https://21st.dev/@educalvolpz/components/orbital-image-wheel",
+  "tech": "Motion",
+  "use": "Draggable orbit of thumbnails with snapping",
+  "install": "https://21st.dev/r/educalvolpz/orbital-image-wheel",
+  "license": "MIT",
+  "deps": "motion"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Car Drop Menu",
+  "author": "aakashmehra",
+  "url": "https://21st.dev/@aakashmehra/components/car-drop-menu",
+  "tech": "Three.js",
+  "use": "Menu where cars drop onto an isometric stage",
+  "install": "https://21st.dev/r/aakashmehra/car-drop-menu",
+  "license": "mit",
+  "deps": "three motion"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "3D Folder",
+  "author": "jatin-yadav05",
+  "url": "https://21st.dev/@jatin-yadav05/components/3d-folder",
+  "tech": "CSS 3D / SVG",
+  "use": "Folder opening on hover",
+  "install": "https://21st.dev/r/jatin-yadav05/3d-folder"
+ },
+ {
+  "category": "Heroes and 3D scenes",
+  "name": "Cosmic 404",
+  "author": "muhammetbilgin",
+  "url": "https://21st.dev/@muhammetbilgin/components/cosmic-404",
+  "tech": "WebGL (cobe)",
+  "use": "Animated 404 page with a WebGL globe",
+  "install": "https://21st.dev/r/muhammetbilgin/cosmic-404",
+  "deps": "cobe"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "3d button",
+  "author": "theutkarshmail",
+  "url": "https://21st.dev/@theutkarshmail/components/3d-button",
+  "tech": "CSS 3D / SVG",
+  "use": "3D button with animated text",
+  "install": "https://21st.dev/r/theutkarshmail/3d-button"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Cloth Simulation",
+  "author": "ln-dev7",
+  "url": "https://21st.dev/@ln-dev7/components/cloth",
+  "tech": "Three.js (R3F)",
+  "use": "Cloth rippling in wind, real spring physics",
+  "install": "https://21st.dev/r/ln-dev7/cloth",
+  "license": "MIT",
+  "deps": "three @react-three/fiber"
+ },
+ {
+  "category": "Cards",
+  "name": "Optimized Tilt Card",
+  "author": "sh20raj",
+  "url": "https://21st.dev/@sh20raj/components/optimized-tilt-card",
+  "tech": "CSS 3D / SVG",
+  "use": "Performant tilt card with touch support",
+  "install": "https://21st.dev/r/sh20raj/optimized-tilt-card",
+  "license": "mit"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Indian Doorway Scroll Preloader",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/darwaza-preloader",
+  "tech": "CSS 3D / SVG",
+  "use": "Preloader of a painted Jaipur gate that opens on scroll",
+  "install": "https://21st.dev/r/kedhareswer/darwaza-preloader",
+  "license": "mit"
+ },
+ {
+  "category": "Cards",
+  "name": "Holo Card",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/holo-card",
+  "tech": "WebGL",
+  "use": "Holographic foil card with diffraction shine",
+  "install": "https://21st.dev/r/kedhareswer/holo-card",
+  "license": "mit"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Singularity Horizon",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/singularity-horizon",
+  "tech": "WebGL",
+  "use": "Black hole hero background in raw WebGL2",
+  "install": "https://21st.dev/r/kedhareswer/singularity-horizon",
+  "license": "mit"
+ },
+ {
+  "category": "Cards",
+  "name": "Admit One 3D Holographic Ticket",
+  "author": "sh20raj",
+  "url": "https://21st.dev/@sh20raj/components/admit-one-3-d-holographic-ticket",
+  "tech": "WebGL",
+  "use": "Holographic event ticket with tilt",
+  "install": "https://21st.dev/r/sh20raj/admit-one-3-d-holographic-ticket",
+  "license": "mit"
+ },
+ {
+  "category": "Cards",
+  "name": "Service Card",
+  "author": "lavikatiyar",
+  "url": "https://21st.dev/@lavikatiyar/components/service-card",
+  "tech": "Motion",
+  "use": "Service card with image and CTA",
+  "install": "https://21st.dev/r/lavikatiyar/service-card",
+  "deps": "framer-motion"
+ },
+ {
+  "category": "Text and marquees",
+  "name": "3D Testimonials",
+  "author": "sean0205",
+  "url": "https://21st.dev/@sean0205/components/3d-testimonails",
+  "tech": "CSS 3D / SVG",
+  "use": "Testimonial marquee in perspective",
+  "install": "https://21st.dev/r/sean0205/3d-testimonails",
+  "license": "mit"
+ },
+ {
+  "category": "Globes",
+  "name": "Globe Flights",
+  "author": "shuding",
+  "url": "https://21st.dev/@shuding/components/cobe-globe-flights",
+  "tech": "WebGL (cobe)",
+  "use": "Globe with flight arcs",
+  "install": "https://21st.dev/r/shuding/cobe-globe-flights",
+  "license": "mit",
+  "deps": "cobe"
+ },
+ {
+  "category": "Globes",
+  "name": "Globe",
+  "author": "nyxbui",
+  "url": "https://21st.dev/@nyxbui/components/globe",
+  "tech": "CSS 3D / SVG",
+  "use": "Animated globe (Nyxb UI)",
+  "install": "https://21st.dev/r/nyxbui/globe"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Intersecting Rings",
+  "author": "su2491251",
+  "url": "https://21st.dev/@su2491251/components/intersecting-rings",
+  "tech": "Motion",
+  "use": "Loader of two intersecting rings",
+  "install": "https://21st.dev/r/su2491251/intersecting-rings",
+  "license": "no licence",
+  "deps": "framer-motion"
+ },
+ {
+  "category": "Cards",
+  "name": "Voxel Story Video Card",
+  "author": "sh20raj",
+  "url": "https://21st.dev/@sh20raj/components/voxel-story-video-card",
+  "tech": "CSS 3D / SVG",
+  "use": "Two-column feature card with tilt and video",
+  "install": "https://21st.dev/r/sh20raj/voxel-story-video-card",
+  "license": "mit"
+ },
+ {
+  "category": "Cards",
+  "name": "Feature Card",
+  "author": "ravikatiyar162",
+  "url": "https://21st.dev/@ravikatiyar162/components/feature-card-1",
+  "tech": "Motion",
+  "use": "Animated feature card",
+  "install": "https://21st.dev/r/ravikatiyar162/feature-card-1",
+  "deps": "framer-motion"
+ },
+ {
+  "category": "Heroes and 3D scenes",
+  "name": "Broken by Design: Shattered Glass Hero",
+  "author": "gughigug",
+  "url": "https://21st.dev/@gughigug/components/broken-by-design",
+  "tech": "CSS 3D / SVG",
+  "use": "Hero of glass fragments tilting with the cursor",
+  "install": "https://21st.dev/r/gughigug/broken-by-design",
+  "license": "mit"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "3D Icon Tabs",
+  "author": "andrewlu0",
+  "url": "https://21st.dev/@andrewlu0/components/3d-icon-tabs-1",
+  "tech": "Motion",
+  "use": "Tabs with 3D icons, Airbnb-style",
+  "install": "https://21st.dev/r/andrewlu0/3d-icon-tabs-1",
+  "license": "mit",
+  "deps": "motion"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Coverflow Carousel",
+  "author": "educalvolpz",
+  "url": "https://21st.dev/@educalvolpz/components/coverflow-carousel",
+  "tech": "Motion",
+  "use": "iTunes-style coverflow with drag and keyboard",
+  "install": "https://21st.dev/r/educalvolpz/coverflow-carousel",
+  "license": "MIT",
+  "deps": "motion"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Formation",
+  "author": "uicapsule",
+  "url": "https://21st.dev/@uicapsule/components/formation",
+  "tech": "GSAP",
+  "use": "Gallery switching between flat, tilt, ring and card formations",
+  "install": "https://21st.dev/r/uicapsule/formation",
+  "license": "MIT",
+  "deps": "gsap"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "3D Isometric Image Carousel",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/isometric-lift-carousel",
+  "tech": "CSS 3D / SVG",
+  "use": "Portrait photos in a tilted row that lift on select",
+  "install": "https://21st.dev/r/kedhareswer/isometric-lift-carousel",
+  "license": "mit"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "Orb",
+  "author": "ElevenLabs-crawled",
+  "url": "https://21st.dev/@ElevenLabs-crawled/components/orb",
+  "tech": "Three.js (R3F)",
+  "use": "Audio-reactive orb for voice agent states",
+  "install": "https://21st.dev/r/ElevenLabs-crawled/orb",
+  "license": "MIT",
+  "deps": "three @react-three/drei @react-three/fiber"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Dimensional Switch Slider",
+  "author": "hyperiux",
+  "url": "https://21st.dev/@hyperiux/components/dimensional-switch-slider",
+  "tech": "GSAP",
+  "use": "Card-flip carousel with directional text",
+  "install": "https://21st.dev/r/hyperiux/dimensional-switch-slider",
+  "license": "mit",
+  "deps": "gsap"
+ },
+ {
+  "category": "Cards",
+  "name": "Foundation Primitives",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/foundation-primitives",
+  "tech": "WebGL",
+  "use": "Raymarched frosted shapes under a lens",
+  "install": "https://21st.dev/r/kedhareswer/foundation-primitives",
+  "license": "mit"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Cube Wave",
+  "author": "ln-dev7",
+  "url": "https://21st.dev/@ln-dev7/components/cube-wave",
+  "tech": "Three.js (R3F)",
+  "use": "Grid of cubes rippling in a radial wave",
+  "install": "https://21st.dev/r/ln-dev7/cube-wave",
+  "license": "MIT",
+  "deps": "three @react-three/fiber"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "ASCII Turntable",
+  "author": "ssychui",
+  "url": "https://21st.dev/@ssychui/components/ascii-turntable",
+  "tech": "Three.js",
+  "use": "Logo drawn in ASCII that turns with the cursor",
+  "install": "https://21st.dev/r/ssychui/ascii-turntable",
+  "license": "mit",
+  "deps": "three"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Wireframe Forms",
+  "author": "mengto",
+  "url": "https://21st.dev/@mengto/components/wireframe-forms",
+  "tech": "Canvas",
+  "use": "Rotating wireframe cube, cylinders or icosphere",
+  "install": "https://21st.dev/r/mengto/wireframe-forms",
+  "license": "MIT"
+ },
+ {
+  "category": "Cards",
+  "name": "Cards Shader Effect",
+  "author": "stackingsu",
+  "url": "https://21st.dev/@stackingsu/components/cards-shader-effect",
+  "tech": "WebGL",
+  "use": "Credit card with WebGL shader faces that tilts and flips",
+  "install": "https://21st.dev/r/stackingsu/cards-shader-effect",
+  "license": "no licence"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "3D Fold Fullscreen Menu",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/folio-fold-menu",
+  "tech": "GSAP",
+  "use": "Menu that tips the page back into a sheet",
+  "install": "https://21st.dev/r/kedhareswer/folio-fold-menu",
+  "license": "mit",
+  "deps": "gsap"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "3D Gradient Bar Chart",
+  "author": "sean0205",
+  "url": "https://21st.dev/@sean0205/components/c-chart-6",
+  "tech": "CSS 3D / SVG",
+  "use": "Bar chart card with isometric 3D bars",
+  "install": "https://21st.dev/r/sean0205/c-chart-6",
+  "license": "MIT",
+  "deps": "recharts"
+ },
+ {
+  "category": "Globes",
+  "name": "Globe",
+  "author": "samsiavoshian2009",
+  "url": "https://21st.dev/@samsiavoshian2009/components/globe",
+  "tech": "CSS 3D / SVG",
+  "use": "Globe with flowing orbital trails",
+  "install": "https://21st.dev/r/samsiavoshian2009/globe"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Marketing Badges",
+  "author": "jatin-yadav05",
+  "url": "https://21st.dev/@jatin-yadav05/components/marketing-badges",
+  "tech": "CSS 3D / SVG",
+  "use": "3D marketing badges",
+  "install": "https://21st.dev/r/jatin-yadav05/marketing-badges"
+ },
+ {
+  "category": "Globes",
+  "name": "Interactive Globe Explorer",
+  "author": "support_596fe4b8",
+  "url": "https://21st.dev/@support_596fe4b8/components/interactive-globe-explorer",
+  "tech": "WebGL",
+  "use": "Office list synced with a rotating globe",
+  "install": "https://21st.dev/r/support_596fe4b8/interactive-globe-explorer",
+  "license": "no licence",
+  "deps": "react-globe.gl"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "3D Cube Loader",
+  "author": "ravikatiyar162",
+  "url": "https://21st.dev/@ravikatiyar162/components/loader-3",
+  "tech": "CSS 3D / SVG",
+  "use": "Glowing cube loader",
+  "install": "https://21st.dev/r/ravikatiyar162/loader-3"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Hyperdimensional Voxel Cube",
+  "author": "daiwiikharihar",
+  "url": "https://21st.dev/@daiwiikharihar/components/hyperdimensional-voxel-cube",
+  "tech": "Canvas",
+  "use": "Voxel lattice with wave dynamics",
+  "install": "https://21st.dev/r/daiwiikharihar/hyperdimensional-voxel-cube",
+  "license": "mit"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "Liquid Metal",
+  "author": "larsen66",
+  "url": "https://21st.dev/@larsen66/components/metal-fx",
+  "tech": "WebGL",
+  "use": "Liquid-metal ring around buttons and icons",
+  "install": "https://21st.dev/r/larsen66/metal-fx",
+  "license": "mit",
+  "deps": "metal-fx"
+ },
+ {
+  "category": "Globes",
+  "name": "Globe Bars",
+  "author": "shuding",
+  "url": "https://21st.dev/@shuding/components/cobe-globe-bars",
+  "tech": "WebGL (cobe)",
+  "use": "Globe with progress cards on cities",
+  "install": "https://21st.dev/r/shuding/cobe-globe-bars",
+  "license": "mit",
+  "deps": "cobe"
  },
  {
   "category": "Text and marquees",
@@ -1132,70 +1511,235 @@
   "author": "Shatlyk1011",
   "url": "https://21st.dev/@Shatlyk1011/components/3d-marquee",
   "tech": "Motion",
-  "use": "Tilted grid of images scrolling"
+  "use": "Tilted grid of images scrolling",
+  "install": "https://21st.dev/r/Shatlyk1011/3d-marquee",
+  "license": "mit",
+  "deps": "framer-motion"
  },
  {
-  "category": "Text and marquees",
-  "name": "3D Marquee",
-  "author": "Manu Arora (Aceternity UI)",
-  "url": null,
+  "category": "Backgrounds",
+  "name": "Orb Flow Background",
+  "author": "pmmis-cp",
+  "url": "https://21st.dev/@pmmis-cp/components/orb-flow-background",
+  "tech": "WebGL",
+  "use": "Sphere with flowing particles and click ripples",
+  "install": "https://21st.dev/r/pmmis-cp/orb-flow-background",
+  "license": "mit"
+ },
+ {
+  "category": "Globes",
+  "name": "Globe Satellites",
+  "author": "shuding",
+  "url": "https://21st.dev/@shuding/components/cobe-globe-satellites",
+  "tech": "WebGL (cobe)",
+  "use": "Globe with orbiting satellites",
+  "install": "https://21st.dev/r/shuding/cobe-globe-satellites",
+  "license": "mit",
+  "deps": "cobe"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Ring Tower",
+  "author": "radiumcoders",
+  "url": "https://21st.dev/@radiumcoders/components/ring-tower",
+  "tech": "Three.js",
+  "use": "Tower of tilted image bands, drag to spin",
+  "install": "https://21st.dev/r/radiumcoders/ring-tower",
+  "license": "mit",
+  "deps": "three"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "3D Orbit Gallery",
+  "author": "moazamtrade",
+  "url": "https://21st.dev/@moazamtrade/components/3d-orbit-gallery",
+  "tech": "Three.js (R3F)",
+  "use": "Images orbiting in 3D",
+  "install": "https://21st.dev/r/moazamtrade/3d-orbit-gallery",
+  "deps": "three @react-three/drei @react-three/fiber"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
+  "name": "State",
+  "author": "kavikatiyar",
+  "url": "https://21st.dev/@kavikatiyar/components/state",
   "tech": "Motion",
-  "use": "Tilted grid of images scrolling"
+  "use": "Animated limit-reached state with actions",
+  "install": "https://21st.dev/r/kavikatiyar/state",
+  "deps": "framer-motion"
  },
  {
-  "category": "Text and marquees",
-  "name": "3D Testimonials",
-  "author": "Sean Hello (ReUI)",
-  "url": "https://21st.dev/@sean0205/components/3d-testimonails",
-  "tech": "CSS 3D",
-  "use": "Testimonial marquee in perspective"
+  "category": "3D objects and toys",
+  "name": "3D Lemon Chilli Charm",
+  "author": "aakashmehra",
+  "url": "https://21st.dev/@aakashmehra/components/nimbu-mirchi",
+  "tech": "Three.js",
+  "use": "Hanging charm with real physics",
+  "install": "https://21st.dev/r/aakashmehra/nimbu-mirchi",
+  "license": "mit",
+  "deps": "three"
  },
  {
-  "category": "Text and marquees",
-  "name": "Text Roll",
-  "author": "Cnippet",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Letters rolling on a 3D drum"
+  "category": "Scroll stories",
+  "name": "Image Sequence",
+  "author": "joyco",
+  "url": "https://21st.dev/@joyco/components/image-sequence",
+  "tech": "Canvas",
+  "use": "Canvas image-sequence player for scroll or frame animations",
+  "install": "https://21st.dev/r/joyco/image-sequence",
+  "license": "no licence"
  },
  {
-  "category": "Buttons, navigation and loaders",
-  "name": "3d button",
-  "author": "Utkarsh Pandey",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Pressable 3D button"
+  "category": "Shader and developer tools",
+  "name": "Object Position Slider",
+  "author": "coss.com",
+  "url": "https://21st.dev/@coss.com/components/p-slider-21",
+  "tech": "CSS 3D / SVG",
+  "use": "X/Y/Z sliders for tweaking 3D positions",
+  "install": "https://21st.dev/r/coss.com/p-slider-21",
+  "license": "MIT"
  },
  {
-  "category": "Buttons, navigation and loaders",
+  "category": "Backgrounds",
+  "name": "Aether Vortex",
+  "author": "daiwiikharihar",
+  "url": "https://21st.dev/@daiwiikharihar/components/aether-vortex",
+  "tech": "Canvas",
+  "use": "Interactive 3D particle vortex",
+  "install": "https://21st.dev/r/daiwiikharihar/aether-vortex",
+  "license": "mit"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Orbit Flip Slider",
+  "author": "hyperiux",
+  "url": "https://21st.dev/@hyperiux/components/orbit-flip-slider",
+  "tech": "GSAP",
+  "use": "Image ring morphing between four camera views",
+  "install": "https://21st.dev/r/hyperiux/orbit-flip-slider",
+  "license": "mit",
+  "deps": "gsap"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Cylinder Carousel",
+  "author": "starc007",
+  "url": "https://21st.dev/@starc007/components/cylinder-carousel",
+  "tech": "Motion",
+  "use": "Items lining a cylinder with springy glide",
+  "install": "https://21st.dev/r/starc007/cylinder-carousel",
+  "license": "MIT",
+  "deps": "motion"
+ },
+ {
+  "category": "Shader and developer tools",
+  "name": "Clipping",
+  "author": "vgpu",
+  "url": "https://21st.dev/@vgpu/components/clipping",
+  "tech": "Three.js",
+  "use": "Signed-distance clipping of an animated icosphere",
+  "install": "https://21st.dev/r/vgpu/clipping",
+  "license": "MIT",
+  "deps": "three"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "Rounded Box",
+  "author": "kristen17",
+  "url": "https://21st.dev/@kristen17/components/rounded-box",
+  "tech": "Three.js",
+  "use": "Rounded 3D box",
+  "install": "https://21st.dev/r/kristen17/rounded-box",
+  "deps": "three"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "Smiley",
+  "author": "kedhareswer",
+  "url": "https://21st.dev/@kedhareswer/components/smiley",
+  "tech": "GSAP",
+  "use": "Grid of 3D smileys reacting to the cursor",
+  "install": "https://21st.dev/r/kedhareswer/smiley",
+  "deps": "gsap"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Tube Grid",
+  "author": "louisstudios",
+  "url": "https://21st.dev/@louisstudios/components/tube-grid",
+  "tech": "WebGL",
+  "use": "Glowing tubes tunnel steered by the pointer",
+  "install": "https://21st.dev/r/louisstudios/tube-grid",
+  "license": "mit"
+ },
+ {
+  "category": "Buttons, menus, loaders and UI",
   "name": "3D Button",
-  "author": "Yash Sehgal",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Pressable 3D button"
+  "author": "yashsehgal",
+  "url": "https://21st.dev/@yashsehgal/components/3d-button",
+  "tech": "Motion",
+  "use": "Playful 3D button",
+  "install": "https://21st.dev/r/yashsehgal/3d-button",
+  "license": "mit",
+  "deps": "framer-motion"
  },
  {
-  "category": "Buttons, navigation and loaders",
-  "name": "3D Adaptive Navigation Bar",
-  "author": "Om Rohilla",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Navigation bar with depth"
+  "category": "3D objects and toys",
+  "name": "Tensor Core Gpu",
+  "author": "daiwiikharihar",
+  "url": "https://21st.dev/@daiwiikharihar/components/tensor-core-gpu",
+  "tech": "CSS 3D / SVG",
+  "use": "Isometric GPU hardware illustration",
+  "install": "https://21st.dev/r/daiwiikharihar/tensor-core-gpu",
+  "license": "mit",
+  "deps": "react-isokit"
  },
  {
-  "category": "Buttons, navigation and loaders",
-  "name": "Cube Loader",
-  "author": "daiv09",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Rotating cube loader"
+  "category": "Backgrounds",
+  "name": "Hero Text Ring Funnel",
+  "author": "nikolas-sapa",
+  "url": "https://21st.dev/@nikolas-sapa/components/hero-text-ring-funnel",
+  "tech": "Canvas",
+  "use": "Rings of rotating text forming a tunnel",
+  "install": "https://21st.dev/r/nikolas-sapa/hero-text-ring-funnel",
+  "license": "MIT"
  },
  {
-  "category": "Buttons, navigation and loaders",
-  "name": "Solar Loader",
-  "author": "Ruixen",
-  "url": null,
-  "tech": "CSS 3D",
-  "use": "Orbiting planets loader"
+  "category": "Backgrounds",
+  "name": "Voxel Topography Grid",
+  "author": "daiwiikharihar",
+  "url": "https://21st.dev/@daiwiikharihar/components/voxel-topography-grid",
+  "tech": "Canvas",
+  "use": "3D canvas topography with cursor physics",
+  "install": "https://21st.dev/r/daiwiikharihar/voxel-topography-grid",
+  "license": "mit"
+ },
+ {
+  "category": "3D objects and toys",
+  "name": "R3F Blob",
+  "author": "socolled",
+  "url": "https://21st.dev/@socolled/components/r3f-blob",
+  "tech": "Three.js (R3F)",
+  "use": "Animated blob in R3F",
+  "install": "https://21st.dev/r/socolled/r3f-blob",
+  "deps": "three @react-three/drei @react-three/fiber"
+ },
+ {
+  "category": "Cards",
+  "name": "3d Sliding Cards",
+  "author": "abhinavcdev",
+  "url": "https://21st.dev/@abhinavcdev/components/3d-sliding-cards",
+  "tech": "CSS 3D / SVG",
+  "use": "Cards whose image slides up on hover",
+  "install": "https://21st.dev/r/abhinavcdev/3d-sliding-cards"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Voxel Wall",
+  "author": "Mazyar kawa",
+  "url": "https://21st.dev/@Mazyar%20kawa/components/voxel-wall",
+  "tech": "CSS 3D / SVG",
+  "use": "Voxel tunnel with light rays and camera parallax",
+  "install": "https://21st.dev/r/Mazyar%20kawa/voxel-wall"
  }
 ]

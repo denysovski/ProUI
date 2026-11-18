@@ -2379,22 +2379,6 @@
  },
  {
   "category": "Backgrounds",
-  "name": "EvilEye",
-  "description": "Procedural evil eye shader with animated iris, slit pupil, and fiery outer glow.",
-  "tech": "WebGL",
-  "deps": [
-   "ogl"
-  ],
-  "docs": "https://reactbits.dev/backgrounds/evil-eye",
-  "variants": [
-   "JS-CSS",
-   "JS-TW",
-   "TS-CSS",
-   "TS-TW"
-  ]
- },
- {
-  "category": "Backgrounds",
   "name": "Radar",
   "description": "A radar scope whose sweep leaves a phosphor afterglow and picks up moving contacts.",
   "tech": "WebGL",
@@ -3254,20 +3238,6 @@
   "tech": "Canvas",
   "deps": [],
   "docs": "https://reactbits.dev/micro/shredder",
-  "variants": [
-   "JS-CSS",
-   "JS-TW",
-   "TS-CSS",
-   "TS-TW"
-  ]
- },
- {
-  "category": "Micro",
-  "name": "FlyingButton",
-  "description": "Button that fires its thrusters on hover, lifts off on a WebGL smoke plume and lands back in its own cloud.",
-  "tech": "WebGL",
-  "deps": [],
-  "docs": "https://reactbits.dev/micro/flying-button",
   "variants": [
    "JS-CSS",
    "JS-TW",
