@@ -35,7 +35,7 @@ the first brief to a live site on GitHub.
 | [`recipes/`](recipes/README.md) | ready code for motion, components, gradients and dashboards |
 | [`style/`](style/README.md) | named styles to use in prompts, and my personal taste |
 | [`references/`](references/README.md) | Apple and Microsoft guidelines, Impeccable, OpenDesign, source checklists |
-| [`scripts/`](scripts/README.md) | the slop scanner and the rulebook builder |
+| [`scripts/`](scripts/README.md) | the slop scanner and the rulebook and catalogue builders |
 | [`SKILL.md`](SKILL.md) | the entry point the agent reads first |
 
 ## How the rules work
