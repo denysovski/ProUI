@@ -1,4 +1,4 @@
-# XSlop critique
+# ProUI critique
 
 A design review. It does not change code. Use `references/critique-rubric.md` and report with
 `templates/reports/CRITIQUE.md`.

@@ -1,4 +1,4 @@
-// XSlop fx: coverflow. Usage: <div class="xfx-coverflow" data-xfx-coverflow> <ul class="xfx-coverflow-track">…</ul>
+// ProUI fx: coverflow. Usage: <div class="xfx-coverflow" data-xfx-coverflow> <ul class="xfx-coverflow-track">…</ul>
 //   <div class="xfx-coverflow-nav"><button data-prev aria-label="Previous">←</button><button data-next aria-label="Next">→</button></div></div>
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;

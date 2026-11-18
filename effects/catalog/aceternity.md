@@ -5,7 +5,7 @@
 [Effects library](../README.md) · [Kits](../kits.md) · [Motion Primitives catalogue](motion-primitives.md) · [Install guide](../install.md)
 
 > [!IMPORTANT]
-> Aceternity components are free to use in your own projects, but the licence does not allow redistributing their source. XSlop keeps this index and installs each component into the project from the official registry. Pro blocks and templates are not included.
+> Aceternity components are free to use in your own projects, but the licence does not allow redistributing their source. ProUI keeps this index and installs each component into the project from the official registry. Pro blocks and templates are not included.
 
 ## Install
 

@@ -1,4 +1,4 @@
-# XSlop ship
+# ProUI ship
 
 Take a finished design to production. Runs the production passes from `workflow/WORKFLOW.md`, then the GitHub
 workflow from `workflow/GITHUB.md`.

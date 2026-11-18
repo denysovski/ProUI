@@ -1,4 +1,4 @@
-/* XSlop fx: scroll fade. Soft fade at the edges of a scroll area, only where more content exists.
+/* ProUI fx: scroll fade. Soft fade at the edges of a scroll area, only where more content exists.
    Uses scroll-driven animations where supported; elsewhere a fixed fade at both ends. */
 .xfx-scroll-fade {
   --xfx-fade: 48px;

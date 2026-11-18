@@ -1,4 +1,4 @@
-/* XSlop fx: gooey. Children of .xfx-gooey melt into each other where they touch.
+/* ProUI fx: gooey. Children of .xfx-gooey melt into each other where they touch.
    Needs the SVG filter from gooey.html once per page. Keep text outside the filtered layer. */
 .xfx-gooey { filter: url(#xfx-goo); }
 .xfx-gooey-demo { position: relative; width: 220px; height: 220px; }

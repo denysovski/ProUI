@@ -17,4 +17,4 @@ jobs:
           node-version: 22
       - run: node scripts/build-rulebooks.mjs --check
       - run: node scripts/build-effects.mjs --check
-      - run: node --check scripts/xslop-scan.mjs
+      - run: node --check scripts/proui-scan.mjs

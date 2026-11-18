@@ -1,4 +1,4 @@
-# XSlop dashboard
+# ProUI dashboard
 
 Build or review product UI. Load `modes/operate.md`, `rules/dashboards/README.md`,
 `inspiration/dashboards.md` and `recipes/dashboard.md`.

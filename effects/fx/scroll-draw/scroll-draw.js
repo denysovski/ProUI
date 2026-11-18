@@ -1,4 +1,4 @@
-// XSlop fx: scroll draw. An SVG path draws itself as its section scrolls through the viewport.
+// ProUI fx: scroll draw. An SVG path draws itself as its section scrolls through the viewport.
 // Usage: <svg data-xfx-draw data-start="0.85" data-end="0.25"><path d="…" fill="none" stroke="currentColor"/></svg>
 // start/end: viewport positions (0 top, 1 bottom) where drawing begins and finishes.
 (() => {

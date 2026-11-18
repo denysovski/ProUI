@@ -1,4 +1,4 @@
-# XSlop layout
+# ProUI layout
 
 A spacing, grid and hierarchy pass. Load `rules/layout/README.md`.
 

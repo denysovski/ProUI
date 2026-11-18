@@ -1,4 +1,4 @@
-# XSlop animate
+# ProUI animate
 
 Plan motion before adding it. Load `rules/motion/README.md` and `recipes/RECIPES.md`.
 

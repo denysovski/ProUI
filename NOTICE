@@ -1,10 +1,10 @@
-XSlop
+ProUI
 Copyright 2026 denysovski
 
 This project takes inspiration from Impeccable (https://github.com/pbakaus/impeccable),
 Copyright Paul Bakaus, licensed under the Apache License, Version 2.0. Ideas adapted from it
 (visitor modes, the command set, the PRODUCT.md / DESIGN.md context files, critique and audit
-scoring, and the slop detector patterns that became rules SL-49 to SL-72) are written in XSlop's
+scoring, and the slop detector patterns that became rules SL-49 to SL-72) are written in ProUI's
 own words; no Impeccable source files are included. Impeccable's own NOTICE credits
 ehmo/platform-design-skills (MIT).
 
@@ -23,4 +23,4 @@ Aceternity UI (https://ui.aceternity.com), Skiper UI (https://skiper-ui.com), Re
 not included. The motion recipes in effects/catalog/motion-recipes.md are original
 descriptions of common motion patterns; the pattern list was studied from Annnimate
 (https://annnimate.com) and no code from it is included. The same applies to effects/briefs/.
-effects/fx/ is original XSlop code.
+effects/fx/ is original ProUI code.

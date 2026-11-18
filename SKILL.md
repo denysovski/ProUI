@@ -1,27 +1,30 @@
 ---
-name: xslop
-description: Add-on rulebooks, workflow, site blueprints and effects library for building websites, landing pages and dashboards that look designed by a careful person, not generated. Use alongside a project's own brief when building, redesigning, critiquing or auditing a website or web app, or when the user says "XSlop", "no slop", "make it not look vibecoded", names an XSlop command (critique, audit, polish, ship…), names rule IDs to include or skip, or asks for a "modern web", a "website with 3D effects", gradients or animations.
+name: proui
+description: The playbook for building beautiful websites with ease. Site blueprints (sitemaps, landing page order, pricing, contact, footers), colour and type methods, ready effect kits (Motion Primitives, Aceternity, React Bits, GSAP recipes, plain-JS effects), a step-by-step workflow from brief to launch and quality rulebooks that keep the result looking designed, not generated. Use when building, redesigning, critiquing or auditing a website, landing page or web app, when the user asks for a "modern web", "website with 3D effects", gradients or animations, names a ProUI command (critique, audit, polish, ship…) or rule IDs, or says "XSlop", "no slop" or "make it not look vibecoded".
 ---
 
-# XSlop
+# ProUI
 
-XSlop is a set of rulebooks, a workflow and short commands for making websites and web apps that look and
-behave like a finished product made by a careful person. Every rule has an ID (`SEO-05`: the SEO Rulebook's
+ProUI is a playbook for making beautiful websites and web apps with ease: blueprints for what to build,
+methods for colour and type, ready effect kits, a workflow from brief to launch, and rulebooks that keep the
+result looking and behaving like a finished product made by a careful person. Every rule has an ID (`SEO-05`: the SEO Rulebook's
 rule 05). Each rule is a **Do** (what to do) or a **Don't** (what never ships); some are SOFT (allowed
 deliberately and sparingly) or HARD RULE (never switched back on).
 
-## XSlop is an add-on layer
+## ProUI is an add-on layer
+
+ProUI was called XSlop before; "XSlop" and "ProUI" mean the same thing in requests and commands.
 
 Load it next to the project's own context: its brief, `PRODUCT.md`, `DESIGN.md`, brand guidelines, README,
 CLAUDE.md / AGENTS.md and existing code. Order of precedence:
 
 - The user's explicit instructions in the conversation.
 - The project's own rules and existing design system.
-- XSlop.
+- ProUI.
 
-If a project's brand deliberately uses something XSlop lists as a don't, keep it, use it consistently, and
-apply XSlop everywhere else, except for hard rules. When joining an existing project, read its code and docs
-first, then use XSlop to judge and improve, not to restyle it on your own initiative.
+If a project's brand deliberately uses something ProUI lists as a don't, keep it, use it consistently, and
+apply ProUI everywhere else, except for hard rules. When joining an existing project, read its code and docs
+first, then use ProUI to judge and improve, not to restyle it on your own initiative.
 
 ## Map
 
@@ -46,7 +49,7 @@ first, then use XSlop to judge and improve, not to restyle it on your own initia
 | Style keywords and modifiers named in a prompt | `style/STYLES.md` |
 | Building for the repository owner (denysovski) | `style/MY-STYLE.md`, `style/PINS.md` |
 | Apple HIG, Fluent 2, Impeccable, OpenDesign | `references/` |
-| A mechanical scan of a project | `node scripts/xslop-scan.mjs <dir>` (`commands/scan.md`) |
+| A mechanical scan of a project | `node scripts/proui-scan.mjs <dir>` (`commands/scan.md`) |
 
 ## Rulebooks
 
@@ -79,7 +82,7 @@ first, then use XSlop to judge and improve, not to restyle it on your own initia
 
 ## Default behaviour
 
-When the user asks for a website (or says "use XSlop") without further instructions:
+When the user asks for a website (or says "use ProUI") without further instructions:
 
 - Ask the intake questions first (`templates/workflow/INTAKE.md`): kind of site, feel (modern, classic,
   old-school…), effect level (none, subtle, modern, immersive 3D), colours, main action, technology, content.
@@ -97,10 +100,10 @@ When the user asks for a website (or says "use XSlop") without further instructi
 
 ## Overrides
 
-- `XSlop, but keep SL-25` or `keep mono fonts`: that soft pattern is allowed, used deliberately, not everywhere.
-- `XSlop, skip PE-10` or `no cookie banner`: do not do that rule.
-- `XSlop only SEO and PF`: apply only those rulebooks.
-- `XSlop <command>`: run a command from `commands/`.
+- `ProUI, but keep SL-25` or `keep mono fonts`: that soft pattern is allowed, used deliberately, not everywhere.
+- `ProUI, skip PE-10` or `no cookie banner`: do not do that rule.
+- `ProUI only SEO and PF`: apply only those rulebooks.
+- `ProUI <command>`: run a command from `commands/`.
 
 The user's explicit words win, with two limits. Hard rules cannot be switched back on (listed in
 `rules/README.md`: decorative counting, fake testimonials, placeholder business info, side-stripe borders,
@@ -126,7 +129,7 @@ number. Three or four options at most, with a one-line recommendation.
 
 ## Final checklist
 
-- No don'ts unless the user kept a soft one; no hard-rule violations. `node scripts/xslop-scan.mjs <src>`
+- No don'ts unless the user kept a soft one; no hard-rule violations. `node scripts/proui-scan.mjs <src>`
   reports no hard findings, and every warning was checked in context.
 - One clear primary action per page and a first screen that says what this is and for whom (`DC-10`, `PE-02`).
 - Tokens exist and are used; nothing off-scale (`DC-05`, `TY-05`, `LY-05`, `CL-04`).

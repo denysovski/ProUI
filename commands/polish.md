@@ -1,4 +1,4 @@
-# XSlop polish
+# ProUI polish
 
 Refine an existing surface. Polish is not a hidden redesign: keep the visual world, content and behaviour. If
 the concept is wrong, say so and suggest `bolder`, `quieter` or a new direction instead.

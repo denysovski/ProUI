@@ -57,7 +57,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 
 ## How to check
 
-- Compare the effects on each page with the effect level in `xslop/DECISIONS.md`.
+- Compare the effects on each page with the effect level in `proui/DECISIONS.md`.
 - Lighthouse on mobile and a 4× CPU-throttled recording: no long frames while scrolling.
 - Turn on reduced motion and disable WebGL (`chrome://flags` or a browser without GPU): fallbacks appear.
 

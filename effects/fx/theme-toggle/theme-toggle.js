@@ -1,4 +1,4 @@
-// XSlop fx: theme toggle. Usage: <button class="xfx-theme-toggle" data-xfx-theme-toggle aria-label="Dark theme" aria-pressed="false">…icon…</button>
+// ProUI fx: theme toggle. Usage: <button class="xfx-theme-toggle" data-xfx-theme-toggle aria-label="Dark theme" aria-pressed="false">…icon…</button>
 // Sets data-theme="light|dark" on <html>, remembers the choice, follows the system on first visit.
 (() => {
   const root = document.documentElement;

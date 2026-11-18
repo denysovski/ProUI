@@ -1,8 +1,8 @@
 # Effects library
 
-> Ready-to-install effects for modern websites: 3D scenes, shader backgrounds, animated text, interactive cards and galleries. This is what XSlop reaches for when someone asks for a "modern web" or a "website with 3D effects".
+> Ready-to-install effects for modern websites: 3D scenes, shader backgrounds, animated text, interactive cards and galleries. This is what ProUI reaches for when someone asks for a "modern web" or a "website with 3D effects".
 
-[Back to XSlop](../README.md)
+[Back to ProUI](../README.md)
 
 | File | What's inside |
 | --- | --- |
@@ -12,7 +12,7 @@
 | [install.md](install.md) | how to install components from React Bits and 21st.dev, and what to do without React |
 | [catalog/motion-primitives.md](catalog/motion-primitives.md) | all 33 Motion Primitives components; source saved in [kits/motion-primitives](kits/motion-primitives/) (MIT) |
 | [catalog/aceternity.md](catalog/aceternity.md) | the 114 free Aceternity UI components with registry names |
-| [fx/](fx/README.md) | 11 effects written for XSlop in plain HTML, CSS and JS: progressive blur, scroll fade, expanding panels, stack scroll, coverflow, theme toggle, roll link, gooey, scroll draw, progress ring, count up |
+| [fx/](fx/README.md) | 11 effects written for ProUI in plain HTML, CSS and JS: progressive blur, scroll fade, expanding panels, stack scroll, coverflow, theme toggle, roll link, gooey, scroll draw, progress ring, count up |
 | [briefs/](briefs/README.md) | 20 detailed motion briefs (structure, timeline, options, accessibility) for signature effects |
 | [catalog/skiper-ui.md](catalog/skiper-ui.md) | the 37 free Skiper UI components (attribution required) |
 | [catalog/motion-recipes.md](catalog/motion-recipes.md) | 133 GSAP build prompts for studio-style motion, studied from Annnimate, written in our own words |
@@ -34,7 +34,7 @@ Build                                    ->  install from the registry (install.
 
 > [!IMPORTANT]
 > Motion Primitives is MIT, so its source is saved in `kits/motion-primitives/` with its licence. The others
-> are installed into each project from their official registries and their source is not copied into XSlop:
+> are installed into each project from their official registries and their source is not copied into ProUI:
 > Aceternity and React Bits do not allow redistribution, and 21st.dev components belong to their authors.
 
 ## The short version

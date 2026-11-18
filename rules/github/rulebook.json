@@ -70,7 +70,7 @@
       "id": "GH-08",
       "kind": "do",
       "title": "Pull requests with a checklist",
-      "text": "Every PR uses the template: what changed, screenshots at mobile and desktop, XSlop passes touched, how it was tested."
+      "text": "Every PR uses the template: what changed, screenshots at mobile and desktop, ProUI passes touched, how it was tested."
     },
     {
       "id": "GH-09",
@@ -88,7 +88,7 @@
       "id": "GH-11",
       "kind": "do",
       "title": "Quality gates",
-      "text": "Lighthouse CI with budgets (performance, accessibility, SEO, best practices), an accessibility check (axe or pa11y), a link checker, and `scripts/xslop-scan.mjs` for slop patterns."
+      "text": "Lighthouse CI with budgets (performance, accessibility, SEO, best practices), an accessibility check (axe or pa11y), a link checker, and `scripts/proui-scan.mjs` for slop patterns."
     },
     {
       "id": "GH-12",

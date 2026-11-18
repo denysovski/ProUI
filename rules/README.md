@@ -1,6 +1,6 @@
 # Rulebooks
 
-> Every rule XSlop applies, sorted into rulebooks by subject. Each rulebook has its own folder with a readable `README.md` and the data file it is built from.
+> Every rule ProUI applies, sorted into rulebooks by subject. Each rulebook has its own folder with a readable `README.md` and the data file it is built from.
 
 ## How rules are named
 

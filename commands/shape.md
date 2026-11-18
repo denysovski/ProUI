@@ -1,4 +1,4 @@
-# XSlop shape <surface>
+# ProUI shape <surface>
 
 Plan one page, screen or feature before writing code. Output a short brief, not code.
 
@@ -8,4 +8,4 @@ Plan one page, screen or feature before writing code. Output a short brief, not 
 - States this surface needs (`ST`, `DB-11` to `DB-13`).
 - Two or three structural options (different compositions, not different colours), each named, with a one-line
   trade-off. Present them as named options, never numbered (`SL-17`).
-- Stop and let the user choose. Write the choice into `xslop/DECISIONS.md`.
+- Stop and let the user choose. Write the choice into `proui/DECISIONS.md`.

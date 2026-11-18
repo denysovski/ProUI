@@ -1,6 +1,6 @@
-# XSlop workflow
+# ProUI workflow
 
-The order an agent follows when it builds a new website or a larger UI piece with XSlop. It turns a short
+The order an agent follows when it builds a new website or a larger UI piece with ProUI. It turns a short
 request into a finished site through fixed stages. It **always starts with intake questions** and then **stops at
 four checkpoints** to let the user choose.
 The agent never skips a checkpoint by guessing, unless the user explicitly says "decide yourself" or is not
@@ -25,12 +25,12 @@ available (see "When the user is not there").
 ◆ = checkpoint: the agent shows options, asks, and waits for the user's choice
 ```
 
-The passes run one after another on the finished pages. Each pass goes through its group of XSlop rules,
+The passes run one after another on the finished pages. Each pass goes through its group of ProUI rules,
 fixes what fails, verifies it, and ticks it off in `DECISIONS.md`. A pass is done only when every rule in it
 is either met or recorded as not applicable with a reason.
 
 Everything decided along the way is written into a decisions file in the project
-(`xslop/DECISIONS.md`, template in `templates/workflow/DECISIONS.md`), so any later session or agent can continue
+(`proui/DECISIONS.md`, template in `templates/workflow/DECISIONS.md`), so any later session or agent can continue
 exactly where the last one stopped.
 
 ---
@@ -49,14 +49,14 @@ The full list with options is in `templates/workflow/INTAKE.md`.
 | What kind of website is it? | business or service · shop · product or SaaS · portfolio or creative · personal or blog · dashboard or app |
 | What should it feel like? | modern · classic and timeless · old-school or retro · editorial or magazine · minimal · playful · luxury |
 | How much effect should it have? | none (calm and fast) · subtle (gentle motion) · modern (animation, gradients, one shader) · immersive 3D (3D scenes and scroll effects) |
-| Light, dark or colourful? | light · dark · colourful with gradients · let XSlop decide |
+| Light, dark or colourful? | light · dark · colourful with gradients · let ProUI decide |
 
 **Round two: the practical side**
 
 | Question | Options |
 | --- | --- |
 | What is the one thing a visitor should do? | book or reserve · buy · contact or call · sign up · read or learn |
-| Which technology? | plain HTML and CSS · React / Next.js · already decided in the project · let XSlop decide |
+| Which technology? | plain HTML and CSS · React / Next.js · already decided in the project · let ProUI decide |
 | What content exists? | texts and photos ready · some of it · nothing yet |
 | Languages and size? | one language, one page · one language, several pages · several languages |
 
@@ -69,7 +69,7 @@ How the answers are used:
   DITHER GRAIN, POSTER COLLAGE, RED SIGNAL; luxury → NOIR PORTRAIT, CHROME OBJECT; playful → PLAYFUL POP,
   MEGA TYPE.
 - **Light, dark or colourful** sets the colour strategy question (`CL-01`, `CL-02`, `GR`).
-- Everything goes into `xslop/DECISIONS.md` under Intake.
+- Everything goes into `proui/DECISIONS.md` under Intake.
 
 If the user says "decide yourself" or is not there, the agent picks the most likely answers from the request,
 writes them at the top of the decisions file, and continues.
@@ -93,7 +93,7 @@ Goal: know what to build before looking at anything.
    message** with at most three questions. Everything else gets a sensible default, written into the brief
    as an assumption.
 
-Output: `xslop/BRIEF.md` in the project.
+Output: `proui/BRIEF.md` in the project.
 
 ---
 
@@ -129,10 +129,10 @@ lapa.ninja, httpster.net.
    grid, hero, signature moment, motion, details).
 3. Prefer a spread: different moods, at least one from the user's own board, at least one light and one
    dark option unless the brief rules one out.
-4. Screenshots go into the project's `xslop/research/` folder for the user to see. Do not commit other
+4. Screenshots go into the project's `proui/research/` folder for the user to see. Do not commit other
    people's work to a public repository; keep research local or in the conversation.
 
-Output: `xslop/research/` with screenshots and `xslop/RESEARCH.md` (one block per candidate).
+Output: `proui/research/` with screenshots and `proui/RESEARCH.md` (one block per candidate).
 
 ---
 
@@ -147,7 +147,7 @@ after a style keyword or a combination from `style/STYLES.md` and shows:
 - one line on the idea, one line on why it fits the brief,
 - the palette (hex swatches), the type mood (grotesk or serif, which Fontshare candidates),
 - the signature moment (the one thing people will remember),
-- what XSlop rules it relies on or switches on (soft rules only; hard rules such as `SL-17` stay off).
+- what ProUI rules it relies on or switches on (soft rules only; hard rules such as `SL-17` stay off).
 
 Send the screenshots as files or a page the user can open, then ask in one message:
 
@@ -269,7 +269,7 @@ why). Send the user one short line per finished pass.
 
 ### Pass: Slop and craft (`SL`, `DC`)
 
-- Run `node scripts/xslop-scan.mjs <src>` (`commands/scan.md`) and open every finding in context.
+- Run `node scripts/proui-scan.mjs <src>` (`commands/scan.md`) and open every finding in context.
 - Check every page against `SL-01`–`SL-72` and `DC-01`–`DC-20`.
 - Hard rules are absolute: `SL-17` (search for `01`, `02`, `/ 05`, `No.`), `SL-43`, `SL-44`, `SL-49`, `CP-14`.
 - Verify: screenshots of every page at desktop and mobile, compared side by side with the chosen direction.
@@ -391,7 +391,7 @@ A final look at the whole site after all passes:
   dimensions); fix every P0 and P1,
 - screenshots of every page at 390, 768, 1440 and 1920 widths,
 - a search of the build for leftovers: `lorem`, `example.com`, `TODO`, `console.log`, counting labels,
-- for high-stakes work, a separate agent that did not build the site reviews it against XSlop and reports
+- for high-stakes work, a separate agent that did not build the site reviews it against ProUI and reports
   anything missed.
 
 ---
@@ -399,7 +399,7 @@ A final look at the whole site after all passes:
 ## Stage: GitHub and deploy
 
 Follow `workflow/GITHUB.md` (rules `GH`): repository, README, `.gitignore`, `.env.example`, CI, quality gates
-(Lighthouse CI, axe, link check, XSlop scan), deploy from `main`, Dependabot, release tag. Ask before creating
+(Lighthouse CI, axe, link check, ProUI scan), deploy from `main`, Dependabot, release tag. Ask before creating
 repositories, changing settings or publishing.
 
 ---
@@ -436,11 +436,11 @@ Irreversible actions (publishing, deleting, paying, sending messages) always wai
 
 | Command | What happens |
 | --- | --- |
-| `XSlop workflow: <request>` | runs this whole workflow |
-| `XSlop workflow, direction <STYLE KEYWORD>` | skips the Direction checkpoint and uses that style (research still runs to find references for it) |
-| `XSlop workflow, fast` | runs the stages but merges checkpoints into one: direction, type and outline in a single question |
-| `XSlop workflow, decide yourself` | runs without stopping; every choice is recorded in `DECISIONS.md` |
-| `XSlop workflow, research only` | stops after the Direction checkpoint with the direction board |
-| `XSlop continue` | reads `xslop/DECISIONS.md` and continues from the last recorded stage |
-| `XSlop passes` | runs only the passes and the quality check on an existing site |
-| `XSlop pass <name>` | runs one pass, for example `XSlop pass security` or `XSlop pass SEO` |
+| `ProUI workflow: <request>` | runs this whole workflow |
+| `ProUI workflow, direction <STYLE KEYWORD>` | skips the Direction checkpoint and uses that style (research still runs to find references for it) |
+| `ProUI workflow, fast` | runs the stages but merges checkpoints into one: direction, type and outline in a single question |
+| `ProUI workflow, decide yourself` | runs without stopping; every choice is recorded in `DECISIONS.md` |
+| `ProUI workflow, research only` | stops after the Direction checkpoint with the direction board |
+| `ProUI continue` | reads `proui/DECISIONS.md` and continues from the last recorded stage |
+| `ProUI passes` | runs only the passes and the quality check on an existing site |
+| `ProUI pass <name>` | runs one pass, for example `ProUI pass security` or `ProUI pass SEO` |

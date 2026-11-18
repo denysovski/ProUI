@@ -1,4 +1,4 @@
-/* XSlop fx: coverflow. A native scroll-snap carousel; JS only adds the 3D tilt.
+/* ProUI fx: coverflow. A native scroll-snap carousel; JS only adds the 3D tilt.
    Works with touch, trackpad, keyboard (buttons) and without JS. */
 .xfx-coverflow { --xfx-cf-card: min(56vw, 360px); --xfx-cf-tilt: 42deg; position: relative; }
 .xfx-coverflow-track {

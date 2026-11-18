@@ -11,7 +11,7 @@ decide. Recommended direction is marked.
 - Palette: `#______` background · `#______` text · `#______` accent
 - Type mood: <grotesk / serif>, candidates: <Fontshare families>
 - Signature moment:
-- XSlop soft rules it switches on:
+- ProUI soft rules it switches on:
 
 ## <STYLE KEYWORD>
 
@@ -21,7 +21,7 @@ decide. Recommended direction is marked.
 - Palette:
 - Type mood:
 - Signature moment:
-- XSlop soft rules it switches on:
+- ProUI soft rules it switches on:
 
 ## <STYLE KEYWORD>
 

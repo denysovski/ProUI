@@ -15,6 +15,6 @@
 - [ ] Tested at 360, 768, 1440 px (`PE-04`)
 - [ ] CI and quality checks pass (`GH-10`, `GH-11`)
 
-## XSlop passes touched
+## ProUI passes touched
 
 <!-- e.g. states, motion, SEO -->

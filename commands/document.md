@@ -1,4 +1,4 @@
-# XSlop document
+# ProUI document
 
 Write `DESIGN.md` from `templates/context/DESIGN.md` for a project that already has a look.
 

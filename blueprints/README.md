@@ -2,7 +2,7 @@
 
 > How real websites are put together: which pages a site needs, which sections a landing page has and in what order, how pricing, contact pages and footers work, and how to choose colours and type. The workflow's **Design system** and **Structure** stages read from here.
 
-[Back to XSlop](../README.md) · [Page Structure Rulebook](../rules/structure/README.md) · [Effect kits](../effects/kits.md)
+[Back to ProUI](../README.md) · [Page Structure Rulebook](../rules/structure/README.md) · [Effect kits](../effects/kits.md)
 
 | File | What's inside | Used in stage |
 | --- | --- | --- |

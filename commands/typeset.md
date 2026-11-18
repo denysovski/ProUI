@@ -1,4 +1,4 @@
-# XSlop typeset
+# ProUI typeset
 
 A typography pass. Load `rules/typography/README.md`.
 

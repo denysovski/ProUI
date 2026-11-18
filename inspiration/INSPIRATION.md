@@ -41,7 +41,7 @@ Then note what you would take (principle) and what you would not (anything that 
   decoration.
 - **What dark sites that work tend to do:**
   - Near-black backgrounds (not pure #000 everywhere) with 2–3 surface steps for depth.
-  - Off-white text, not pure white, for long reading; muted text still passes contrast (see XSlop `DC-15`).
+  - Off-white text, not pure white, for long reading; muted text still passes contrast (see ProUI `DC-15`).
   - One saturated accent used rarely: a link colour, a live dot, a button.
   - Product UI or work shown at large size as the main visual, on dark it reads like a gallery wall.
   - Hairline borders (1 px, low-contrast) rather than shadows, which do not show on black.
@@ -82,7 +82,7 @@ Then note what you would take (principle) and what you would not (anything that 
   an MCP server, REST API and design skills for AI agents (search screens, flows and sections).
 - **Use it for:** how real products solve a specific problem: onboarding, paywalls, checkout, settings,
   empty states, search, sign-up. Prefer it over Dribbble when you need something that actually shipped.
-- **How to use with XSlop:** when building a flow, look up 3–5 shipped examples of that exact flow, list the
+- **How to use with ProUI:** when building a flow, look up 3–5 shipped examples of that exact flow, list the
   steps and states they all share, and make sure your version covers the same states (`ST-01`–`ST-10`).
 
 ### Dribbble — "3D scroll" search

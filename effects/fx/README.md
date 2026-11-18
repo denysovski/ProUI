@@ -1,6 +1,6 @@
-# XSlop fx
+# ProUI fx
 
-> Small effects written for XSlop from scratch, in plain HTML, CSS and JavaScript, with no library. They cover the most useful ideas from the free Skiper UI set, so a site can have them without Framer Motion, Swiper or a credit line. Each one works with keyboard and touch, keeps real text, and has a reduced-motion version.
+> Small effects written for ProUI from scratch, in plain HTML, CSS and JavaScript, with no library. They cover the most useful ideas from the free Skiper UI set, so a site can have them without Framer Motion, Swiper or a credit line. Each one works with keyboard and touch, keeps real text, and has a reduced-motion version.
 
 [Effects library](../README.md) · [Skiper UI catalogue](../catalog/skiper-ui.md) · [Kits](../kits.md) · [Demo page](demo.html)
 
@@ -49,4 +49,4 @@ Open [demo.html](demo.html) locally to see all of them; the demo uses generated 
 Every effect here counts against the effect budget (`EF-20`) except the theme toggle, roll link and count up,
 which are small interface details. All of them belong to the Quiet kit and fit any other kit.
 
-Original XSlop code, free to use and change in any project. No code from Skiper UI or Annnimate.
+Original ProUI code, free to use and change in any project. No code from Skiper UI or Annnimate.

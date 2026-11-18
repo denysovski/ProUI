@@ -1,6 +1,6 @@
 # Source checklists
 
-XSlop started from checklists collected as screenshots. Their items are listed here with the XSlop rule that
+ProUI started from checklists collected as screenshots. Their items are listed here with the ProUI rule that
 covers each one. Wording is kept close to the originals; "Do"/"Avoid" prefixes are turned into positive and
 negative rules.
 
@@ -8,7 +8,7 @@ negative rules.
 
 ## Design polish checklist
 
-| Item | XSlop rule |
+| Item | ProUI rule |
 | --- | --- |
 | Delete filler badges | `DC-01` |
 | Drop redundant labels | `DC-02` |
@@ -33,7 +33,7 @@ negative rules.
 
 ## Animation checklist
 
-| Item | XSlop rule |
+| Item | ProUI rule |
 | --- | --- |
 | Ease-out for entrances | `MO-01` |
 | Dropdowns at 150–250ms | `MO-02` |
@@ -60,7 +60,7 @@ negative rules.
 
 Positive items are things to do; negative items are things to avoid.
 
-| Kind | Item | XSlop rule |
+| Kind | Item | ProUI rule |
 | --- | --- | --- |
 | Positive | Cache API responses | `PF-12` |
 | Positive | Load balancer | `PF-19` |
@@ -85,7 +85,7 @@ Positive items are things to do; negative items are things to avoid.
 
 ## SEO checklist
 
-| Item | XSlop rule |
+| Item | ProUI rule |
 | --- | --- |
 | Build sitemap.xml | `SEO-01` |
 | Add robots.txt | `SEO-02` |
@@ -110,7 +110,7 @@ Positive items are things to do; negative items are things to avoid.
 
 ## UI states checklist
 
-| Item | XSlop rule |
+| Item | ProUI rule |
 | --- | --- |
 | Empty State: Guide user before data exists. | `ST-01` |
 | Loading State: Perceived speed matters; keep wait active. | `ST-02` |
@@ -127,7 +127,7 @@ Positive items are things to do; negative items are things to avoid.
 
 Some items were partly covered in the screenshot; the visible letters are kept and the likely full text is in brackets.
 
-| Item | XSlop rule |
+| Item | ProUI rule |
 | --- | --- |
 | Purple-to-blue gradients | `SL-01` |
 | 3 feature cards in a row | `SL-09` |
@@ -162,9 +162,9 @@ Some items were partly covered in the screenshot; the visible letters are kept a
 
 ## Missing essentials checklist
 
-The last item is an advert for a paid service in the original; XSlop only asks for the code to be in a Git repository.
+The last item is an advert for a paid service in the original; ProUI only asks for the code to be in a Git repository.
 
-| Item | XSlop rule |
+| Item | ProUI rule |
 | --- | --- |
 | Custom 404 page | `PE-01` |
 | CTA above the fold | `PE-02` |
@@ -189,7 +189,7 @@ The last item is an advert for a paid service in the original; XSlop only asks f
 
 ## AI design slop indicators
 
-| Item | XSlop rule |
+| Item | ProUI rule |
 | --- | --- |
 | Tags & pills | `SL-14` |
 | Excessive italics | `SL-23` |

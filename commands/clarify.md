@@ -1,4 +1,4 @@
-# XSlop clarify
+# ProUI clarify
 
 A copy pass. Load `rules/copy/README.md` and the word rules in `rules/anti-slop/README.md` (`SL-37` to `SL-42`,
 `SL-71`).

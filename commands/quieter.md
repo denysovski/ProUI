@@ -1,4 +1,4 @@
-# XSlop quieter
+# ProUI quieter
 
 For a design that shouts. Keep the identity, lower the volume.
 

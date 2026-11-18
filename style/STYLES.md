@@ -8,7 +8,7 @@ palette, type, layout, imagery and motion, built from my Pinterest board (`PINS.
 - Name one **base style**: `Build a site for a ceramics studio in EDITORIAL CREAM.`
 - Add **modifiers** if needed: `BLACK COAL + MEGA TYPE + DITHER GRAIN, maximal.`
 - Keywords are case-insensitive; the short id (`black-coal`) works too.
-- XSlop still applies. Each style lists the soft XSlop rules it switches on deliberately; everything else stays.
+- ProUI still applies. Each style lists the soft ProUI rules it switches on deliberately; everything else stays.
 - If a style conflicts with the project's own brand, the brand wins and the style fills the gaps.
 
 ## Overview
@@ -52,7 +52,7 @@ Near-black monochrome with one hot accent. Streetwear, studios, nightlife, tech 
 - **Type:** Heavy condensed or wide grotesk, uppercase display (Clash Display, Cabinet Grotesk); neutral text face (General Sans, Switzer); mono only for codes and prices
 - **Layout and imagery:** Full-bleed black and white photography, product grids on black, hairline dividers, tight small labels in the corners
 - **Motion:** Slow reveals, hard cuts between sections, hover that inverts black and white
-- **XSlop rules it allows:** SL-26 (caps labels) allowed
+- **ProUI rules it allows:** SL-26 (caps labels) allowed
 - **Avoid:** glows, purple, gradients, soft rounded cards
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157834990238/) · [2](https://cz.pinterest.com/pin/661255157834990229/) · [3](https://cz.pinterest.com/pin/661255157834990227/) · [4](https://cz.pinterest.com/pin/661255157830862801/) · [5](https://cz.pinterest.com/pin/661255157830862776/) · [6](https://cz.pinterest.com/pin/661255157830829028/) · [7](https://cz.pinterest.com/pin/661255157830829022/) · [8](https://cz.pinterest.com/pin/661255157830828953/) · [9](https://cz.pinterest.com/pin/661255157830828836/) · [10](https://cz.pinterest.com/pin/661255157830828820/) · [11](https://cz.pinterest.com/pin/661255157830828668/) · [12](https://cz.pinterest.com/pin/661255157830272313/)
 
@@ -66,7 +66,7 @@ BLACK COAL with red as a second voice: black, white and one saturated red used i
 - **Type:** Bold condensed grotesk, some words set huge in red; serif never
 - **Layout and imagery:** Red panels and stripes, poster grids, cut-out photos, numbers and dates as graphics
 - **Motion:** Snappy wipes in red, text that slides in from a mask
-- **XSlop rules it allows:** SL-26 allowed
+- **ProUI rules it allows:** SL-26 allowed
 - **Avoid:** more than one accent colour, pastel tones
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157834990234/) · [2](https://cz.pinterest.com/pin/661255157830862786/) · [3](https://cz.pinterest.com/pin/661255157830829030/) · [4](https://cz.pinterest.com/pin/661255157830828973/) · [5](https://cz.pinterest.com/pin/661255157830828970/) · [6](https://cz.pinterest.com/pin/661255157830828850/) · [7](https://cz.pinterest.com/pin/661255157830828843/) · [8](https://cz.pinterest.com/pin/661255157830897331/) · [9](https://cz.pinterest.com/pin/661255157830897330/) · [10](https://cz.pinterest.com/pin/661255157830897336/)
 
@@ -80,7 +80,7 @@ Warm, quiet and expensive. Architecture, interiors, hospitality, wellness, cultu
 - **Type:** High-contrast serif with italics for headlines (Boska, Gambetta, Erode); calm grotesk for text (Switzer, General Sans); small caps for labels
 - **Layout and imagery:** Large landscape and building photography, wide margins, narrow text columns, asymmetric two-column layouts
 - **Motion:** Slow fades, gentle parallax on photos, nothing bouncy
-- **XSlop rules it allows:** SL-27 (periods in titles) allowed as voice
+- **ProUI rules it allows:** SL-27 (periods in titles) allowed as voice
 - **Avoid:** neon, glow, dense UI, emojis
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157834109160/) · [2](https://cz.pinterest.com/pin/661255157834109157/) · [3](https://cz.pinterest.com/pin/661255157834109156/) · [4](https://cz.pinterest.com/pin/661255157833963460/) · [5](https://cz.pinterest.com/pin/661255157833963306/) · [6](https://cz.pinterest.com/pin/661255157833959154/) · [7](https://cz.pinterest.com/pin/661255157833959043/) · [8](https://cz.pinterest.com/pin/661255157833959038/) · [9](https://cz.pinterest.com/pin/661255157832821721/) · [10](https://cz.pinterest.com/pin/661255157832487251/) · [11](https://cz.pinterest.com/pin/661255157832478917/) · [12](https://cz.pinterest.com/pin/661255157830869123/)
 
@@ -94,7 +94,7 @@ Museum and art-world feel: classical paintings, engravings, archive material tre
 - **Type:** Classical serif display (Boska, Gambetta), small grotesk captions, large numerals for dates and statistics
 - **Layout and imagery:** Artwork shown big with captions like a catalogue, timelines, index lists, big statistics
 - **Motion:** Slow zoom on artworks, page-turn style transitions
-- **XSlop rules it allows:** none extra. Catalogue entries get titles and dates, never 01 / 02 numbering (SL-17)
+- **ProUI rules it allows:** none extra. Catalogue entries get titles and dates, never 01 / 02 numbering (SL-17)
 - **Avoid:** tech gradients, stock icons
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157834108993/) · [2](https://cz.pinterest.com/pin/661255157833959131/) · [3](https://cz.pinterest.com/pin/661255157833959055/) · [4](https://cz.pinterest.com/pin/661255157833929521/) · [5](https://cz.pinterest.com/pin/661255157833925231/) · [6](https://cz.pinterest.com/pin/661255157832938354/) · [7](https://cz.pinterest.com/pin/661255157832935757/) · [8](https://cz.pinterest.com/pin/661255157832643244/) · [9](https://cz.pinterest.com/pin/661255157832442269/) · [10](https://cz.pinterest.com/pin/661255157831044861/)
 
@@ -108,7 +108,7 @@ Maximalist print energy: collage, torn paper, stickers, halftone, overlapping ty
 - **Type:** Mixed display faces on purpose (grotesk plus a blackletter or stencil), giant numbers, rotated labels
 - **Layout and imagery:** Layered collage, cut-out photos, stickers, halftone textures, rule lines, dense poster grids
 - **Motion:** Stop-motion style steps, sticker pop-ins, marquee strips
-- **XSlop rules it allows:** SL-08 (grain/halftone), SL-14 (stickers/pills), SL-26 allowed
+- **ProUI rules it allows:** SL-08 (grain/halftone), SL-14 (stickers/pills), SL-26 allowed
 - **Avoid:** clean SaaS components, glassmorphism
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157834109112/) · [2](https://cz.pinterest.com/pin/661255157834109009/) · [3](https://cz.pinterest.com/pin/661255157833963346/) · [4](https://cz.pinterest.com/pin/661255157833963319/) · [5](https://cz.pinterest.com/pin/661255157833959068/) · [6](https://cz.pinterest.com/pin/661255157833925301/) · [7](https://cz.pinterest.com/pin/661255157833921414/) · [8](https://cz.pinterest.com/pin/661255157832938350/) · [9](https://cz.pinterest.com/pin/661255157832938315/) · [10](https://cz.pinterest.com/pin/661255157832927450/) · [11](https://cz.pinterest.com/pin/661255157830897336/)
 
@@ -122,7 +122,7 @@ Strict grid, lots of white, small precise type. Studios, portfolios, architectur
 - **Type:** One grotesk family only (Switzer, General Sans), sizes from a strict scale, left aligned
 - **Layout and imagery:** 12-column grid, small text blocks, images aligned to the grid, generous empty fields
 - **Motion:** Almost none: fades and underline animations
-- **XSlop rules it allows:** none extra. Order comes from the grid, never from 01 / 02 numbering (SL-17)
+- **ProUI rules it allows:** none extra. Order comes from the grid, never from 01 / 02 numbering (SL-17)
 - **Avoid:** decoration of any kind, shadows, gradients
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157835225657/) · [2](https://cz.pinterest.com/pin/661255157834109158/) · [3](https://cz.pinterest.com/pin/661255157833921283/) · [4](https://cz.pinterest.com/pin/661255157833921277/) · [5](https://cz.pinterest.com/pin/661255157832487251/) · [6](https://cz.pinterest.com/pin/661255157832487239/) · [7](https://cz.pinterest.com/pin/661255157830869170/) · [8](https://cz.pinterest.com/pin/661255157830869167/)
 
@@ -136,7 +136,7 @@ The headline is the image: one or two words so big they run off the edges. Can b
 - **Type:** Very large display (12 to 25 vw), tight tracking, cropped at the viewport edges, often uppercase
 - **Layout and imagery:** Word as the hero, a single image overlapping the letters, small text tucked into corners
 - **Motion:** Letters that slide or scale on scroll, masked reveals
-- **XSlop rules it allows:** SL-24 (tight tracking) allowed on display sizes only
+- **ProUI rules it allows:** SL-24 (tight tracking) allowed on display sizes only
 - **Avoid:** more than one mega headline per screen
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157835225661/) · [2](https://cz.pinterest.com/pin/661255157834990234/) · [3](https://cz.pinterest.com/pin/661255157834990229/) · [4](https://cz.pinterest.com/pin/661255157833963461/) · [5](https://cz.pinterest.com/pin/661255157833910534/) · [6](https://cz.pinterest.com/pin/661255157833910450/) · [7](https://cz.pinterest.com/pin/661255157833910417/) · [8](https://cz.pinterest.com/pin/661255157832938340/) · [9](https://cz.pinterest.com/pin/661255157831026003/) · [10](https://cz.pinterest.com/pin/661255157830935503/)
 
@@ -150,7 +150,7 @@ Dark tech and SaaS where the product sits in a beam or glow of light in the bran
 - **Type:** Clean grotesk (Satoshi, General Sans), mono for code and data
 - **Layout and imagery:** Product UI shown big inside the light, code snippets, sparse feature rows (not three cards)
 - **Motion:** Light that slowly breathes, UI parts that assemble on scroll
-- **XSlop rules it allows:** SL-02 allowed for the one light source
+- **ProUI rules it allows:** SL-02 allowed for the one light source
 - **Avoid:** purple-blue gradient, orbs everywhere, three feature cards
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157834990239/) · [2](https://cz.pinterest.com/pin/661255157833963403/) · [3](https://cz.pinterest.com/pin/661255157833959143/) · [4](https://cz.pinterest.com/pin/661255157833921301/) · [5](https://cz.pinterest.com/pin/661255157833910494/) · [6](https://cz.pinterest.com/pin/661255157832478885/) · [7](https://cz.pinterest.com/pin/661255157831008818/) · [8](https://cz.pinterest.com/pin/661255157830925098/) · [9](https://cz.pinterest.com/pin/661255157830925093/) · [10](https://cz.pinterest.com/pin/661255157830869219/)
 
@@ -164,7 +164,7 @@ Particle and point-cloud typography on black: generative, techy, music or AI bra
 - **Type:** Wide grotesk display formed or overlaid by particles, small mono labels
 - **Layout and imagery:** One particle object or word as the hero, everything else very quiet
 - **Motion:** Particles that drift and react to the cursor, with a static fallback
-- **XSlop rules it allows:** SL-34 (cursor reaction) allowed for the hero only
+- **ProUI rules it allows:** SL-34 (cursor reaction) allowed for the hero only
 - **Avoid:** more than one particle system per page
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157833921424/) · [2](https://cz.pinterest.com/pin/661255157833921420/) · [3](https://cz.pinterest.com/pin/661255157833921419/) · [4](https://cz.pinterest.com/pin/661255157833921418/) · [5](https://cz.pinterest.com/pin/661255157833921415/) · [6](https://cz.pinterest.com/pin/661255157832643331/) · [7](https://cz.pinterest.com/pin/661255157832643324/) · [8](https://cz.pinterest.com/pin/661255157832487243/)
 
@@ -178,7 +178,7 @@ One glossy 3D centrepiece: chrome, glass or iridescent material on a dark or neu
 - **Type:** Neutral grotesk, medium sizes; the object is the display element
 - **Layout and imagery:** Object centred or off-centre with generous space, short text, one CTA
 - **Motion:** Slow rotation, soft hover tilt, light sweeps over the surface
-- **XSlop rules it allows:** none
+- **ProUI rules it allows:** none
 - **Avoid:** multiple 3D objects, objects as wallpaper
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157835225656/) · [2](https://cz.pinterest.com/pin/661255157834108985/) · [3](https://cz.pinterest.com/pin/661255157833963369/) · [4](https://cz.pinterest.com/pin/661255157833925235/) · [5](https://cz.pinterest.com/pin/661255157833925232/) · [6](https://cz.pinterest.com/pin/661255157833910416/) · [7](https://cz.pinterest.com/pin/661255157831044982/) · [8](https://cz.pinterest.com/pin/661255157830925104/)
 
@@ -192,7 +192,7 @@ Pixel dither, halftone, noise and ASCII textures on images and type. Digital-cra
 - **Type:** Grotesk or mono display; pixel or bitmap details
 - **Layout and imagery:** Dithered photos and shapes, scanline or grain overlays, bitmap icons
 - **Motion:** Dither that resolves into the full image on hover or scroll
-- **XSlop rules it allows:** SL-08 (dithering) and SL-33 (ASCII) allowed
+- **ProUI rules it allows:** SL-08 (dithering) and SL-33 (ASCII) allowed
 - **Avoid:** using dither on every image
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157835225660/) · [2](https://cz.pinterest.com/pin/661255157833921421/) · [3](https://cz.pinterest.com/pin/661255157832935777/) · [4](https://cz.pinterest.com/pin/661255157832643326/) · [5](https://cz.pinterest.com/pin/661255157832487252/) · [6](https://cz.pinterest.com/pin/661255157831008896/) · [7](https://cz.pinterest.com/pin/661255157831008816/)
 
@@ -206,7 +206,7 @@ Photo-led fashion and personal brands: large moody portraits, black and white or
 - **Type:** Refined grotesk or a light serif, small and quiet
 - **Layout and imagery:** Portrait fills most of the screen, text sits in a corner, lookbook sequences
 - **Motion:** Slow crossfades between portraits, subtle image zoom
-- **XSlop rules it allows:** none
+- **ProUI rules it allows:** none
 - **Avoid:** busy UI around the photos
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157834990238/) · [2](https://cz.pinterest.com/pin/661255157834990231/) · [3](https://cz.pinterest.com/pin/661255157833959149/) · [4](https://cz.pinterest.com/pin/661255157832643333/) · [5](https://cz.pinterest.com/pin/661255157832643328/) · [6](https://cz.pinterest.com/pin/661255157831008901/) · [7](https://cz.pinterest.com/pin/661255157831008827/) · [8](https://cz.pinterest.com/pin/661255157830925154/)
 
@@ -220,7 +220,7 @@ Light, precise product and app UI: dashboards, fintech, booking, mobile apps.
 - **Type:** Satoshi or General Sans, a tight type scale, tabular numbers
 - **Layout and imagery:** Real UI screens, phone mockups of the real product, clear hierarchy, cards only where content is a card
 - **Motion:** Micro-interactions from the MO rules, nothing decorative
-- **XSlop rules it allows:** none
+- **ProUI rules it allows:** none
 - **Avoid:** fake dashboards (SL-20), three-tier pricing by default
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157834109132/) · [2](https://cz.pinterest.com/pin/661255157834109122/) · [3](https://cz.pinterest.com/pin/661255157834109119/) · [4](https://cz.pinterest.com/pin/661255157833963320/) · [5](https://cz.pinterest.com/pin/661255157833929498/) · [6](https://cz.pinterest.com/pin/661255157833925308/) · [7](https://cz.pinterest.com/pin/661255157833910460/) · [8](https://cz.pinterest.com/pin/661255157832927433/)
 
@@ -234,7 +234,7 @@ Bright, illustrated and friendly. Kids, food, pets, community products.
 - **Type:** Rounded or soft display (Chillax), friendly text face
 - **Layout and imagery:** Illustrations, stickers, rounded shapes, playful photo crops
 - **Motion:** Bouncy only on celebratory moments (MO-13 still applies to everyday UI)
-- **XSlop rules it allows:** SL-14 (pills) allowed
+- **ProUI rules it allows:** SL-14 (pills) allowed
 - **Avoid:** using it for premium or serious brands
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157834109135/) · [2](https://cz.pinterest.com/pin/661255157833963323/) · [3](https://cz.pinterest.com/pin/661255157833959075/) · [4](https://cz.pinterest.com/pin/661255157833925318/) · [5](https://cz.pinterest.com/pin/661255157833925248/) · [6](https://cz.pinterest.com/pin/661255157833910470/)
 

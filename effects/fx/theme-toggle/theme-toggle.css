@@ -1,4 +1,4 @@
-/* XSlop fx: theme toggle with a circular reveal (View Transitions API). */
+/* ProUI fx: theme toggle with a circular reveal (View Transitions API). */
 .xfx-theme-toggle {
   inline-size: 44px; block-size: 44px; border-radius: 999px; border: 1px solid color-mix(in oklab, currentColor 25%, transparent);
   background: none; color: inherit; cursor: pointer; display: grid; place-items: center;

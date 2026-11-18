@@ -2,7 +2,7 @@
 
 > Named style directions to use in prompts, and the repository owner's personal taste.
 
-[Back to XSlop](../README.md)
+[Back to ProUI](../README.md)
 
 | File | What it covers |
 | --- | --- |

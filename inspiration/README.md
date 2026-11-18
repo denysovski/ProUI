@@ -2,7 +2,7 @@
 
 > Where the agent looks for real designs before choosing a direction, and how it analyses them.
 
-[Back to XSlop](../README.md)
+[Back to ProUI](../README.md)
 
 | File | What it covers |
 | --- | --- |

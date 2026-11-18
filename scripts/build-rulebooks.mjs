@@ -89,7 +89,7 @@ function renderBook(b) {
 function renderIndex() {
   const cats = [...new Set(books.map((b) => b.category))];
   const out = [];
-  out.push('# Rulebooks', '', '> Every rule XSlop applies, sorted into rulebooks by subject. Each rulebook has its own folder with a readable `README.md` and the data file it is built from.', '');
+  out.push('# Rulebooks', '', '> Every rule ProUI applies, sorted into rulebooks by subject. Each rulebook has its own folder with a readable `README.md` and the data file it is built from.', '');
   out.push('## How rules are named', '', 'Every rule has an ID made of a **prefix** and a **number**:', '', '```text',
     'SEO-05',
     '│   └─ number: the rule\'s place in its rulebook. It never changes once given,',

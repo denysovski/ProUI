@@ -88,7 +88,7 @@ Negative rules: what never ships.
 
 ## How to check
 
-- Run `node scripts/xslop-scan.mjs <src>` and review every finding in context.
+- Run `node scripts/proui-scan.mjs <src>` and review every finding in context.
 - Compare screenshots at 390 and 1440 px against this list, section by section.
 - Search the build for counting labels (`01`, `/ 05`, `No.`) and placeholder text.
 

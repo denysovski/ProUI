@@ -6,7 +6,7 @@
   "category": "Design",
   "summary": "Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks.",
   "check": [
-    "Run `node scripts/xslop-scan.mjs <src>` and review every finding in context.",
+    "Run `node scripts/proui-scan.mjs <src>` and review every finding in context.",
     "Compare screenshots at 390 and 1440 px against this list, section by section.",
     "Search the build for counting labels (`01`, `/ 05`, `No.`) and placeholder text."
   ],

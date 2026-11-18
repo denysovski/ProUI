@@ -1,10 +1,10 @@
 # Workflow
 
-> How XSlop takes a request from a short brief to a live site, and how the site lives on GitHub.
+> How ProUI takes a request from a short brief to a live site, and how the site lives on GitHub.
 
-[Back to XSlop](../README.md)
+[Back to ProUI](../README.md)
 
-![XSlop workflow](../assets/workflow-v2.jpg)
+![ProUI workflow](../assets/workflow-v2.jpg)
 
 | File | What it covers |
 | --- | --- |
@@ -12,10 +12,10 @@
 | [GITHUB.md](GITHUB.md) | repository, branches, commits, pull requests, CI, quality gates, deploy, releases |
 
 ```text
-XSlop workflow: portfolio for a ceramics studio      run everything, stop at checkpoints
-XSlop workflow, direction BLACK COAL: ...            skip the direction checkpoint
-XSlop workflow, fast: ...                            one combined checkpoint
-XSlop workflow, decide yourself: ...                 no stops, every choice recorded
-XSlop continue                                       resume from xslop/DECISIONS.md
-XSlop pass security                                  run one pass on an existing site
+ProUI workflow: portfolio for a ceramics studio      run everything, stop at checkpoints
+ProUI workflow, direction BLACK COAL: ...            skip the direction checkpoint
+ProUI workflow, fast: ...                            one combined checkpoint
+ProUI workflow, decide yourself: ...                 no stops, every choice recorded
+ProUI continue                                       resume from proui/DECISIONS.md
+ProUI pass security                                  run one pass on an existing site
 ```

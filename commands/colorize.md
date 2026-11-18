@@ -1,4 +1,4 @@
-# XSlop colorize
+# ProUI colorize
 
 A colour pass. Load `rules/color/README.md` and `rules/gradients/README.md`.
 

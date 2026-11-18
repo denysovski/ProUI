@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>XSlop fx demo</title>
+<title>ProUI fx demo</title>
 <link rel="stylesheet" href="progressive-blur/progressive-blur.css">
 <link rel="stylesheet" href="scroll-fade/scroll-fade.css">
 <link rel="stylesheet" href="expand-panels/expand-panels.css">
@@ -33,7 +33,7 @@
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="xfx-goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="b"/><feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="g"/><feComposite in="SourceGraphic" in2="g" operator="atop"/></filter></svg>
 <header>
-  <strong>XSlop fx</strong>
+  <strong>ProUI fx</strong>
   <nav aria-label="Demo"><a class="xfx-roll" data-xfx-roll href="#panels">Panels</a><a class="xfx-roll" data-xfx-roll href="#stack">Stack</a><a class="xfx-roll" data-xfx-roll href="#cover">Coverflow</a></nav>
   <button class="xfx-theme-toggle" data-xfx-theme-toggle aria-label="Dark theme" aria-pressed="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><g class="xfx-sun-rays"><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>

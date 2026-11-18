@@ -2,19 +2,19 @@
 
 Source: https://developer.apple.com/design/human-interface-guidelines (every page also has a Markdown version
 at the same URL with `.md`, useful for agents). This file summarises the parts that apply to websites, in our
-own words, and maps them to XSlop rules. Read the original for native apps.
+own words, and maps them to ProUI rules. Read the original for native apps.
 
 ## Design principles
 
 Apple's current principles: **Purpose** (make something meaningful), **Agency** (let people do things their
 own way), **Responsibility** (act in people's best interest), **Familiarity** (build on what people know),
 **Flexibility** (adapt to diverse contexts), **Simplicity** (be clear and direct), **Craft** (care about every
-detail), **Delight** (make it human, and don't mistake delight for decoration). XSlop: `PL-01` to `PL-05`.
+detail), **Delight** (make it human, and don't mistake delight for decoration). ProUI: `PL-01` to `PL-05`.
 
 ## Typography
 
 - Default and minimum text sizes per platform: iOS 17 pt default / 11 pt minimum, macOS 13 / 10. On the web
-  XSlop uses 16 px body minimum and 11–12 px absolute floor (`TY-06`).
+  ProUI uses 16 px body minimum and 11–12 px absolute floor (`TY-06`).
 - Avoid light weights for text; prefer Regular, Medium, Semibold, Bold (`TY-04`).
 - Minimise the number of typefaces (`TY-03`).
 - Keep hierarchy and avoid truncation when text size grows; layouts restack at large sizes (`TY-09`, `AX-08`).

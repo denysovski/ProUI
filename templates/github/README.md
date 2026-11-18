@@ -1,13 +1,13 @@
 # GitHub templates
 
-Files to copy into a website project during `XSlop ship` (`workflow/GITHUB.md`, rules `GH`). They assume a
+Files to copy into a website project during `ProUI ship` (`workflow/GITHUB.md`, rules `GH`). They assume a
 Node build that outputs static files to `dist/` (Vite, Astro, Eleventy, plain HTML with a build step). Change
 `dist` and the scripts to fit the stack.
 
 | Template | Copy to | Does |
 | --- | --- | --- |
 | `workflows/ci.yml` | `.github/workflows/ci.yml` | install, lint, type-check, test, build on every push and PR (`GH-10`) |
-| `workflows/quality.yml` | `.github/workflows/quality.yml` | Lighthouse CI budgets, axe accessibility check, link check, XSlop scan (`GH-11`) |
+| `workflows/quality.yml` | `.github/workflows/quality.yml` | Lighthouse CI budgets, axe accessibility check, link check, ProUI scan (`GH-11`) |
 | `workflows/pages.yml` | `.github/workflows/pages.yml` | deploy `dist/` to GitHub Pages from `main` (`GH-13`); skip if the host is Vercel, Netlify or Cloudflare |
 | `lighthouserc.json` | `lighthouserc.json` | score budgets for Lighthouse CI |
 | `dependabot.yml` | `.github/dependabot.yml` | weekly npm and Actions updates (`GH-14`) |

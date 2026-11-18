@@ -1,6 +1,6 @@
 # Design
 
-<!-- Written by `XSlop document`, or at the end of the workflow from the finished build. Describes the system
+<!-- Written by `ProUI document`, or at the end of the workflow from the finished build. Describes the system
 as built. Values are tokens the code uses. -->
 
 ## Direction

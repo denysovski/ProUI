@@ -1,4 +1,4 @@
-/* XSlop fx: progress ring. Reading progress as a ring with a percentage; click returns to the top. */
+/* ProUI fx: progress ring. Reading progress as a ring with a percentage; click returns to the top. */
 .xfx-ring { position: fixed; right: 20px; bottom: 20px; z-index: 40; inline-size: 56px; block-size: 56px; border: 0; padding: 0; border-radius: 999px;
   background: var(--surface, #111); color: var(--text, #fff); cursor: pointer; display: grid; place-items: center;
   opacity: 0; transform: translateY(8px); transition: opacity .3s, transform .3s; box-shadow: 0 6px 24px rgb(0 0 0 / .18); }

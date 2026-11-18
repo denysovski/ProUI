@@ -1,7 +1,7 @@
 # Decisions
 
-The running record of the XSlop workflow for this project. Newest stage at the bottom. A later session
-continues from here with `XSlop continue`.
+The running record of the ProUI workflow for this project. Newest stage at the bottom. A later session
+continues from here with `ProUI continue`.
 
 ## Status
 
@@ -97,6 +97,6 @@ Tick when every rule of the group is met or marked not applicable (with the reas
 
 - 
 
-## Skipped or overridden XSlop rules
+## Skipped or overridden ProUI rules
 
 - 

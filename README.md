@@ -4,23 +4,25 @@
 
 ### The playbook for beautiful websites: blueprints, colour and type methods, effect kits, a workflow from brief to launch, and the rules that keep it looking designed
 
-Published on [Agensi as ProUI](https://agensi.io/skills/proui). This repository keeps its original name, XSlop; both names work in requests and commands.
+Published on [Agensi as ProUI](https://agensi.io/skills/proui). This repository keeps its original name, ProUI; both names work in requests and commands.
 
-[What it is](#what-xslop-is) · [Contents](#contents) · [How rules work](#how-the-rules-work) · [Rulebooks](#rulebooks) · [Workflow](#how-the-workflow-works) · [Blueprints](#blueprints) · [Effects](#effects-library) · [Commands](#commands) · [Websites](#websites-used-in-the-workflow) · [Tools](#design-tools) · [Quick start](#quick-start)
+[What it is](#what-proui-is) · [Contents](#contents) · [How rules work](#how-the-rules-work) · [Rulebooks](#rulebooks) · [Workflow](#how-the-workflow-works) · [Blueprints](#blueprints) · [Effects](#effects-library) · [Commands](#commands) · [Websites](#websites-used-in-the-workflow) · [Tools](#design-tools) · [Quick start](#quick-start)
 
 </div>
 
 ---
 
-## What XSlop is
+## What ProUI is
 
-XSlop is a skill for AI coding agents such as Claude Code, Codex or Cursor. It tells the agent what a
-professional website needs and what makes a site look "vibecoded", and gives it a step-by-step workflow from
-the first brief to a live site on GitHub.
+ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor, and a cheat sheet for making
+beautiful websites with ease. It tells the agent which pages and sections a site needs, how to pick colours and
+type, which ready-made effects fit the chosen style and how many to use, and walks it step by step from the
+first brief to a live site. Quality rulebooks then keep the result looking designed by a careful person, not
+generated.
 
 > [!NOTE]
-> XSlop is an **add-on**. It is loaded next to your project's own brief, brand and code. Your instructions come
-> first, then the project's own rules, then XSlop.
+> ProUI is an **add-on**. It is loaded next to your project's own brief, brand and code. Your instructions come
+> first, then the project's own rules, then ProUI.
 
 ## Contents
 
@@ -31,7 +33,7 @@ the first brief to a live site on GitHub.
 | [`blueprints/`](blueprints/README.md) | how websites are put together: sitemaps, landing page order, sections, pricing, contact, footers, colour and type methods |
 | [`effects/`](effects/README.md) | the effects library: kits, effect budget, Motion Primitives (saved here), Aceternity, React Bits and 21st.dev catalogues |
 | [`modes/`](modes/README.md) | four kinds of pages: persuade, operate, read, experience |
-| [`commands/`](commands/README.md) | short commands like `XSlop critique` or `XSlop ship` |
+| [`commands/`](commands/README.md) | short commands like `ProUI critique` or `ProUI ship` |
 | [`templates/`](templates/README.md) | files the agent fills in: brief, decisions, reports, GitHub setup |
 | [`inspiration/`](inspiration/README.md) | galleries to research and what good sites have in common |
 | [`toolkit/`](toolkit/README.md) | libraries, gradient and shape tools, design tools by stage |
@@ -93,7 +95,7 @@ See [how to add a rule](rules/README.md#adding-or-changing-a-rule).
 
 ## How the workflow works
 
-![XSlop workflow: brief, research, direction, design system, type and colour, structure, outline, first screen, approve, build, passes, quality and GitHub, handoff](assets/workflow-v2.jpg)
+![ProUI workflow: brief, research, direction, design system, type and colour, structure, outline, first screen, approve, build, passes, quality and GitHub, handoff](assets/workflow-v2.jpg)
 
 | Step | What happens | You decide |
 | --- | --- | --- |
@@ -109,7 +111,7 @@ See [how to add a rule](rules/README.md#adding-or-changing-a-rule).
 | Quality and GitHub | scored review, CI checks, deploy | approve publishing |
 | Handoff | live link and what still needs your content | |
 
-Every decision is saved in `xslop/DECISIONS.md`, so a new session continues with `XSlop continue`.
+Every decision is saved in `proui/DECISIONS.md`, so a new session continues with `ProUI continue`.
 Full details: [workflow/WORKFLOW.md](workflow/WORKFLOW.md).
 
 ## Blueprints
@@ -128,7 +130,7 @@ How the pages are put together, so the site makes sense before it looks good.
 
 ## Effects library
 
-When you ask for a **modern web** or a **website with 3D effects**, XSlop asks how much effect you want, picks
+When you ask for a **modern web** or a **website with 3D effects**, ProUI asks how much effect you want, picks
 one **kit** (a family of components that look alike) and keeps to an **effect budget**: ask for "a couple of
 3D effects" and you get two, not one per section. See [kits](effects/kits.md).
 
@@ -142,7 +144,7 @@ one **kit** (a family of components that look alike) and keeps to an **effect bu
 | Catalogue | What's in it |
 | --- | --- |
 | [Motion Primitives](effects/catalog/motion-primitives.md) | all 33 components of [motion-primitives.com](https://motion-primitives.com), source saved in the repository (MIT): text effects, reveals, spotlight, tilt, accordion, morphing dialogs |
-| [XSlop fx](effects/fx/README.md) | 11 effects written for XSlop in plain HTML, CSS and JS, no library: progressive blur, expanding panels, stack scroll, coverflow, theme toggle and more, with a demo page |
+| [ProUI fx](effects/fx/README.md) | 11 effects written for ProUI in plain HTML, CSS and JS, no library: progressive blur, expanding panels, stack scroll, coverflow, theme toggle and more, with a demo page |
 | [Motion briefs](effects/briefs/README.md) | 20 detailed build briefs for signature effects: stacking cards, curtain slider, pricing roll, process rail, two-panel drawer and more |
 | [Skiper UI](effects/catalog/skiper-ui.md) | the 37 free components of [skiper-ui.com](https://skiper-ui.com/components?source=free): scroll stacks, coverflow carousels, expanding panels, theme toggles, progressive blur (credit Skiper UI when used) |
 | [Motion recipes](effects/catalog/motion-recipes.md) | 133 GSAP build prompts for studio-style motion (text reveals, pinned chapters, sliders, menus, buttons, shaders), studied from [Annnimate](https://annnimate.com/animations) and written in our own words |
@@ -166,14 +168,14 @@ your colours and fonts. See [presets](effects/presets.md) and the [install guide
 
 | Command | What it does |
 | --- | --- |
-| `XSlop workflow: <request>` | builds a new site with checkpoints |
-| `XSlop critique` | design review with scores and prioritised issues |
-| `XSlop audit` | technical review: accessibility, performance, theming, responsive |
-| `XSlop effects` | picks and installs effects at the chosen level |
-| `XSlop polish` | refines an existing page without redesigning it |
-| `XSlop dashboard` | builds or reviews product UI |
-| `XSlop ship` | production checks, GitHub, deploy |
-| `XSlop continue` | resumes a project from its decisions file |
+| `ProUI workflow: <request>` | builds a new site with checkpoints |
+| `ProUI critique` | design review with scores and prioritised issues |
+| `ProUI audit` | technical review: accessibility, performance, theming, responsive |
+| `ProUI effects` | picks and installs effects at the chosen level |
+| `ProUI polish` | refines an existing page without redesigning it |
+| `ProUI dashboard` | builds or reviews product UI |
+| `ProUI ship` | production checks, GitHub, deploy |
+| `ProUI continue` | resumes a project from its decisions file |
 
 All commands: [commands/README.md](commands/README.md).
 
@@ -185,7 +187,7 @@ All commands: [commands/README.md](commands/README.md).
 | --- | --- |
 | [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) | design principles, typography, colour, layout, accessibility |
 | [Microsoft Fluent 2](https://fluent2.microsoft.design) | spacing system, type ramp, tokens, elevation for product UI |
-| [Impeccable](https://github.com/pbakaus/impeccable) | the open-source design skill XSlop takes the most inspiration from |
+| [Impeccable](https://github.com/pbakaus/impeccable) | the open-source design skill ProUI takes the most inspiration from |
 | [OpenDesign](https://open-design.ai) | one design-system file per brand, design as code |
 
 ### Inspiration (research step)
@@ -275,21 +277,21 @@ Tools without a link are listed on [minitools.design](https://minitools.design).
 
 ```bash
 # install as a Claude Code skill (personal or per project)
-git clone https://github.com/denysovski/XSlop ~/.claude/skills/xslop
+git clone https://github.com/denysovski/ProUI ~/.claude/skills/proui
 ```
 
 ```text
-Build a website for a coffee shop using XSlop.
+Build a website for a coffee shop using ProUI.
 Make me a modern web with 3D effects for my design studio.
-XSlop workflow, direction BLACK COAL: portfolio for a photographer.
-XSlop dashboard: analytics for a small e-shop.
-Use XSlop, but keep SL-25. Skip PE-10.
-XSlop critique
+ProUI workflow, direction BLACK COAL: portfolio for a photographer.
+ProUI dashboard: analytics for a small e-shop.
+Use ProUI, but keep SL-25. Skip PE-10.
+ProUI critique
 ```
 
 ```bash
 # scan any project for slop and hard-rule violations
-node ~/.claude/skills/xslop/scripts/xslop-scan.mjs ./src
+node ~/.claude/skills/proui/scripts/proui-scan.mjs ./src
 ```
 
 ## Credits

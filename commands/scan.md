@@ -1,10 +1,10 @@
-# XSlop scan
+# ProUI scan
 
 Run the bundled pattern scanner over a project and explain the results.
 
 ```bash
-node path/to/xslop/scripts/xslop-scan.mjs ./src           # human-readable report
-node path/to/xslop/scripts/xslop-scan.mjs ./src --json    # for CI
+node path/to/proui/scripts/proui-scan.mjs ./src           # human-readable report
+node path/to/proui/scripts/proui-scan.mjs ./src --json    # for CI
 ```
 
 - The scanner reads HTML, CSS, JS/TS, JSX/TSX, Vue, Svelte, Astro and Markdown files and reports rule IDs with

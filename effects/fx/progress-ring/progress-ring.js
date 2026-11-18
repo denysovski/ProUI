@@ -1,4 +1,4 @@
-// XSlop fx: progress ring. Usage: <button class="xfx-ring" data-xfx-ring aria-label="Back to top"></button>
+// ProUI fx: progress ring. Usage: <button class="xfx-ring" data-xfx-ring aria-label="Back to top"></button>
 (() => {
   const btn = document.querySelector('[data-xfx-ring]');
   if (!btn) return;

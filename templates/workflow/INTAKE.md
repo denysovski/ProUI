@@ -1,8 +1,8 @@
 # Intake questions
 
-The first thing XSlop does on a new website. Ask with the question tool (multiple choice; the user can always
+The first thing ProUI does on a new website. Ask with the question tool (multiple choice; the user can always
 type their own answer), at most four questions per round. Skip any question the request already answers.
-Write the answers into `xslop/DECISIONS.md` under Intake.
+Write the answers into `proui/DECISIONS.md` under Intake.
 
 ## Round one: the kind of site
 
@@ -33,7 +33,7 @@ Write the answers into `xslop/DECISIONS.md` under Intake.
 - Light
 - Dark
 - Colourful, with gradients
-- Let XSlop decide
+- Let ProUI decide
 
 ## Round two: the practical side
 
@@ -48,7 +48,7 @@ Write the answers into `xslop/DECISIONS.md` under Intake.
 - Plain HTML and CSS
 - React / Next.js (needed for most of the effects library)
 - Already decided in this project
-- Let XSlop decide
+- Let ProUI decide
 
 **What content exists?**
 - Texts and photos are ready

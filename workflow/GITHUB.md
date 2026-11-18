@@ -1,6 +1,6 @@
 # GitHub workflow, from first commit to live site
 
-How every XSlop site lives on GitHub. Rules: `rules/github/README.md` (`GH`). Files to copy:
+How every ProUI site lives on GitHub. Rules: `rules/github/README.md` (`GH`). Files to copy:
 `templates/github/`. The agent asks before creating a repository, changing repository settings, adding
 secrets or publishing anything.
 
@@ -34,7 +34,7 @@ licence that allows it.
 | `.env.example` | `templates/github/env.example.template` | `GH-04`, `SEC-04` |
 | `.editorconfig` | `templates/github/editorconfig.template` | `GH-05` |
 | formatter and linter config | Prettier + ESLint (or the stack's own), with `lint` and `format` scripts | `GH-05` |
-| `PRODUCT.md`, `DESIGN.md`, `xslop/DECISIONS.md` | XSlop | design memory for later sessions |
+| `PRODUCT.md`, `DESIGN.md`, `proui/DECISIONS.md` | ProUI | design memory for later sessions |
 | `public/.well-known/security.txt` | `templates/github/security.txt.template` | `SEC-18` |
 
 `package.json` scripts the rest of the pipeline expects: `dev`, `build`, `preview`, `lint`, `typecheck` (if
@@ -63,14 +63,14 @@ gh pr create --fill --base main
 ```
 
 The PR uses `templates/github/pull_request_template.md` (`GH-08`): what changed, screenshots at 390 and
-1440 px, the XSlop checks, passes touched. Review the preview URL, not only the diff.
+1440 px, the ProUI checks, passes touched. Review the preview URL, not only the diff.
 
 ## CI and quality gates
 
 Copy into `.github/workflows/`:
 
 - `ci.yml`: install with the lockfile, lint, type-check, test, build (`GH-10`).
-- `quality.yml`: XSlop scan (hard rules fail the build), Lighthouse CI with budgets from `lighthouserc.json`
+- `quality.yml`: ProUI scan (hard rules fail the build), Lighthouse CI with budgets from `lighthouserc.json`
   (performance 0.9, accessibility, best practices and SEO 0.95, CLS under 0.1), axe accessibility check on the
   built site, link check (`GH-11`).
 

@@ -1,6 +1,6 @@
 # Motion Primitives (vendored)
 
-> The source of all 33 [Motion Primitives](https://motion-primitives.com) components by ibelick, saved here so XSlop can use them without a network or an account. This is the base of the Quiet kit and the motion layer of every other kit ([kits.md](../../kits.md)).
+> The source of all 33 [Motion Primitives](https://motion-primitives.com) components by ibelick, saved here so ProUI can use them without a network or an account. This is the base of the Quiet kit and the motion layer of every other kit ([kits.md](../../kits.md)).
 
 [Catalogue](../../catalog/motion-primitives.md) · [Effect kits](../../kits.md) · [Licence](LICENSE.md)
 

@@ -1,4 +1,4 @@
-# XSlop distill
+# ProUI distill
 
 Remove what does not earn its place.
 

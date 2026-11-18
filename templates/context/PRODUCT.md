@@ -1,6 +1,6 @@
 # Product
 
-<!-- Written by `XSlop init`. Product truth only: no colours, fonts or layouts. Mark inferred facts as
+<!-- Written by `ProUI init`. Product truth only: no colours, fonts or layouts. Mark inferred facts as
 (inferred). Leave a field out rather than filling it with generic text. -->
 
 ## Platform

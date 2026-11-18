@@ -44,7 +44,7 @@ Feel: soft fades and blurs, gentle springs, no glow.
 | Pricing toggle | MP `animated-background` + `sliding-number` |
 | FAQ | MP `accordion` |
 | Buttons | MP `magnetic` on the primary button only |
-| Extras | from [XSlop fx](fx/README.md): progressive blur on image captions, expanding panels, roll links, count up, progress ring |
+| Extras | from [ProUI fx](fx/README.md): progressive blur on image captions, expanding panels, roll links, count up, progress ring |
 
 Install: copy from [kits/motion-primitives](kits/motion-primitives/) or `npx motion-primitives@latest add <name>`.
 
@@ -147,7 +147,7 @@ For: Playful feel at Modern level.
 
 ## Prompt for the build
 
-Use this text when asking for or writing a section, filled in from `xslop/DECISIONS.md`:
+Use this text when asking for or writing a section, filled in from `proui/DECISIONS.md`:
 
 ```text
 Build the <section> for <site>. Kit: <kit>. Level: <level>. Effects left in the budget: <n>.

@@ -1,19 +1,19 @@
 # References
 
-> Background material the rulebooks are built on: design guidelines, the tools XSlop learned from, and screenshots of reference sites.
+> Background material the rulebooks are built on: design guidelines, the tools ProUI learned from, and screenshots of reference sites.
 
-[Back to XSlop](../README.md)
+[Back to ProUI](../README.md)
 
 ## Documents
 
 | File | What it is |
 | --- | --- |
-| `apple-hig.md` | Apple Human Interface Guidelines distilled for the web, mapped to XSlop rules |
+| `apple-hig.md` | Apple Human Interface Guidelines distilled for the web, mapped to ProUI rules |
 | `fluent-2.md` | Microsoft Fluent 2 distilled: spacing, type ramp, tokens, elevation, motion |
-| `impeccable.md` | what XSlop adopted from Impeccable and what it does differently |
+| `impeccable.md` | what ProUI adopted from Impeccable and what it does differently |
 | `opendesign.md` | OpenDesign and the one-`DESIGN.md`-per-brand idea |
 | `critique-rubric.md` | heuristics scored 0–4, cognitive load, personas, P0–P3 severity |
-| `source-checklists.md` | the screenshot checklists XSlop started from, mapped to rule IDs |
+| `source-checklists.md` | the screenshot checklists ProUI started from, mapped to rule IDs |
 
 ## Screenshots
 

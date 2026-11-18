@@ -1,6 +1,6 @@
 # Brief
 
-Filled in by the agent at the start of the XSlop workflow. Assumptions are marked as such.
+Filled in by the agent at the start of the ProUI workflow. Assumptions are marked as such.
 
 ## The site
 
@@ -23,7 +23,7 @@ Filled in by the agent at the start of the XSlop workflow. Assumptions are marke
 - Deadline:
 - Brand rules that must be kept:
 - Style keyword named by the user (from `style/STYLES.md`):
-- XSlop overrides named by the user (rules kept or skipped):
+- ProUI overrides named by the user (rules kept or skipped):
 
 ## Assumptions
 

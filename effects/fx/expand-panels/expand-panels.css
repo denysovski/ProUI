@@ -1,4 +1,4 @@
-/* XSlop fx: expanding panels. A row (or column) of image panels; the hovered or focused one widens.
+/* ProUI fx: expanding panels. A row (or column) of image panels; the hovered or focused one widens.
    No JS. Each panel is a link or button so keyboard users get the same effect. */
 .xfx-expand {
   --xfx-expand-gap: 8px; --xfx-expand-grow: 4; --xfx-expand-radius: 16px; --xfx-expand-size: 480px;

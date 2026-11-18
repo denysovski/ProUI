@@ -2,7 +2,7 @@
 
 > Tested code the agent adapts to the project's tokens.
 
-[Back to XSlop](../README.md)
+[Back to ProUI](../README.md)
 
 | File | Recipes |
 | --- | --- |

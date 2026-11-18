@@ -1,7 +1,7 @@
 # Toolkit pack
 
 The libraries, asset sources and tools to reach for when building, with when to use each, how to install it,
-licence notes and XSlop guardrails. Load this file when building a site or component.
+licence notes and ProUI guardrails. Load this file when building a site or component.
 
 General rules for every resource here:
 
@@ -91,7 +91,7 @@ General rules for every resource here:
 - **Dependencies:** vary per component (for example gsap, motion, three, ogl). Check before installing.
 - **Use it for:** text reveals (split, blur, scramble), magnetic or tilted cards, infinite marquees,
   backgrounds for a single hero. Pick one or two per site.
-- **Guardrails:** many backgrounds are exactly the "glowing blob / beams / aurora" look XSlop warns about
+- **Guardrails:** many backgrounds are exactly the "glowing blob / beams / aurora" look ProUI warns about
   (`SL-03`, `SL-34`). Use a background only when it expresses the brand, tune its colours to the palette, and
   pause it off-screen.
 

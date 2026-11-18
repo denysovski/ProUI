@@ -1,4 +1,4 @@
-# XSlop bolder
+# ProUI bolder
 
 For a design that is correct but forgettable. Increase commitment, not decoration.
 

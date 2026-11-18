@@ -1,6 +1,6 @@
 # Motion recipes
 
-> 133 build prompts for the motion patterns seen on award-level studio sites, written for XSlop so any of them can be built from scratch with GSAP. The pattern list was studied from [Annnimate](https://annnimate.com/animations), a paid GSAP library; the prompts are our own descriptions, no code was copied. Each row links to the original for reference.
+> 133 build prompts for the motion patterns seen on award-level studio sites, written for ProUI so any of them can be built from scratch with GSAP. The pattern list was studied from [Annnimate](https://annnimate.com/animations), a paid GSAP library; the prompts are our own descriptions, no code was copied. Each row links to the original for reference.
 
 [Effects library](../README.md) · [Kits](../kits.md) · [Motion briefs](../briefs/README.md) · [Sections](../../blueprints/sections.md) · [Motion Rulebook](../../rules/motion/README.md)
 
@@ -23,7 +23,7 @@ Rules: keep real HTML text (SplitText output aria-hidden, original text in aria-
 wrap motion in gsap.matchMedia() with a (prefers-reduced-motion: reduce) branch that shows the end state;
 ScrollTrigger reveals run once unless the recipe is scrubbed; pinned sections get a skip link and must not trap
 keyboard focus; pointer effects are off on touch; three.js recipes lazy-load, pause off screen and cap DPR at 1.5.
-Count it against the effect budget in xslop/DECISIONS.md.
+Count it against the effect budget in proui/DECISIONS.md.
 ```
 
 Shared setup:

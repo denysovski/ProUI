@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-// XSlop scan: finds common AI-slop and production problems in a web project's source files.
-// Usage: node xslop-scan.mjs [dir ...] [--json] [--ci]
+// ProUI scan: finds common AI-slop and production problems in a web project's source files.
+// Usage: node proui-scan.mjs [dir ...] [--json] [--ci]
 //   --json  machine-readable output
 //   --ci    exit with code 1 when a hard rule is found
-// Suppress a finding on one line by adding the comment "xslop-ignore" (optionally with a rule id) to it.
+// Suppress a finding on one line by adding the comment "proui-ignore" (optionally with a rule id) to it.
 // Findings are evidence to check in context, not verdicts. No dependencies; Node 18+.
 
 import { readdirSync, readFileSync, statSync } from 'node:fs';
@@ -133,7 +133,7 @@ function scanFile(path, ext) {
     if (line.length > 2000) return; // minified or data line
     for (const c of CHECKS) {
       if (!applies(c.kind, ext)) continue;
-      if (/xslop-ignore/.test(line) && (!/xslop-ignore\s+[A-Z]/.test(line) || line.includes(`xslop-ignore ${c.id}`))) continue;
+      if (/proui-ignore/.test(line) && (!/proui-ignore\s+[A-Z]/.test(line) || line.includes(`proui-ignore ${c.id}`))) continue;
       const m = line.match(c.re);
       if (m) {
         findings.push({ id: c.id, level: c.level, file: rel, line: i + 1, msg: c.msg,
@@ -162,7 +162,7 @@ const hard = findings.filter((f) => f.level === 'hard').length;
 if (asJson) {
   console.log(JSON.stringify({ files: stats.files, hard, total: findings.length, findings }, null, 2));
 } else {
-  console.log(`XSlop scan: ${stats.files} files, ${findings.length} findings (${hard} hard)\n`);
+  console.log(`ProUI scan: ${stats.files} files, ${findings.length} findings (${hard} hard)\n`);
   let last = '';
   for (const f of findings) {
     if (f.level !== last) { console.log(`\n${f.level.toUpperCase()}`); last = f.level; }
@@ -170,7 +170,7 @@ if (asJson) {
     console.log(`  ${f.id.padEnd(7)} ${where}  ${f.msg}${f.match ? `  [${f.match}]` : ''}`);
   }
   if (findings.length === 0) console.log('No findings. Still review the rendered pages: a scanner cannot judge design.');
-  else console.log('\nCheck each finding in context. Suppress a false positive with an "xslop-ignore <ID>" comment on that line.');
+  else console.log('\nCheck each finding in context. Suppress a false positive with an "proui-ignore <ID>" comment on that line.');
 }
 
 if (ci && hard > 0) process.exit(1);

@@ -17,10 +17,10 @@ Positive rules: what a finished, professional site does.
 | `GH-05` | **Consistent formatting** | `.editorconfig`, a formatter (Prettier or the stack's equivalent) and a linter configured in the repo and run in CI. |
 | `GH-06` | **`main` is always deployable** | Work happens on short branches (`feat/…`, `fix/…`, `chore/…`), merged by pull request. |
 | `GH-07` | **Conventional commits** | `feat:`, `fix:`, `style:`, `perf:`, `refactor:`, `docs:`, `chore:`, `ci:`, with a short imperative summary. One logical change per commit. |
-| `GH-08` | **Pull requests with a checklist** | Every PR uses the template: what changed, screenshots at mobile and desktop, XSlop passes touched, how it was tested. |
+| `GH-08` | **Pull requests with a checklist** | Every PR uses the template: what changed, screenshots at mobile and desktop, ProUI passes touched, how it was tested. |
 | `GH-09` | **Protected `main`** | Branch protection (or a ruleset): pull request required, CI must pass, no force pushes. For a solo project, at least require CI. |
 | `GH-10` | **CI on every push and PR** | Install with a lockfile, lint, type-check, run tests if any, build. |
-| `GH-11` | **Quality gates** | Lighthouse CI with budgets (performance, accessibility, SEO, best practices), an accessibility check (axe or pa11y), a link checker, and `scripts/xslop-scan.mjs` for slop patterns. |
+| `GH-11` | **Quality gates** | Lighthouse CI with budgets (performance, accessibility, SEO, best practices), an accessibility check (axe or pa11y), a link checker, and `scripts/proui-scan.mjs` for slop patterns. |
 | `GH-12` | **Preview deploys** | Each PR gets a preview URL (Vercel, Netlify, Cloudflare Pages) so changes are reviewed in a browser, not only in code. |
 | `GH-13` | **Automated deploy from `main`** | GitHub Pages, Vercel, Netlify or Cloudflare deploy on merge; the hosting config lives in the repo (`vercel.json`, `netlify.toml`, `wrangler.toml` or the Pages workflow). |
 | `GH-14` | **Dependency and security automation** | Dependabot (or Renovate) for npm and GitHub Actions, secret scanning and push protection on, CodeQL or another code scan for apps with a backend (`SEC-14`). |

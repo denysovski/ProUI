@@ -1,4 +1,4 @@
-// XSlop fx: stack scroll. Usage: <ol class="xfx-stack" data-xfx-stack> <li>…</li> … </ol>
+// ProUI fx: stack scroll. Usage: <ol class="xfx-stack" data-xfx-stack> <li>…</li> … </ol>
 (() => {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   for (const list of document.querySelectorAll('[data-xfx-stack]')) {

@@ -2,10 +2,10 @@
 
 > What the visitor came to do decides how far the style may lead.
 
-[Back to XSlop](../README.md)
+[Back to ProUI](../README.md)
 
 Before designing anything, decide what the visitor came to do. The mode changes how much the style may lead,
-which rules weigh most and how motion behaves. Write the mode into `xslop/DECISIONS.md`. One site can have
+which rules weigh most and how motion behaves. Write the mode into `proui/DECISIONS.md`. One site can have
 several surfaces in different modes (a persuade landing page, an operate dashboard behind login, read docs).
 
 | Mode | The visitor came to | Examples | File |

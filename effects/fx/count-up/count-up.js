@@ -1,4 +1,4 @@
-// XSlop fx: count up. Usage: <span data-xfx-count="12500" data-prefix="" data-suffix=" +" data-decimals="0" data-duration="1600">12 500 +</span>
+// ProUI fx: count up. Usage: <span data-xfx-count="12500" data-prefix="" data-suffix=" +" data-decimals="0" data-duration="1600">12 500 +</span>
 // The final value is in the HTML, so search engines, screen readers and no-JS visitors see it. Runs once in view.
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;

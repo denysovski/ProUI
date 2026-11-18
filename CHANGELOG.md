@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.0.0 (2026-11-18)
+
+- Renamed from XSlop to ProUI: repository, skill name (`proui`), commands ("ProUI critique"), project folder (`proui/`), scanner (`scripts/proui-scan.mjs`, `proui-ignore` comments). "XSlop" still works as a trigger word.
+- README and SKILL.md describe ProUI as a playbook for beautiful websites, not only a list of rules.
+
 ## 3.4.1 (2026-11-18)
 
 - ProUI logo and banner (`assets/`); README shows the ProUI banner. The skill is published on Agensi as ProUI.

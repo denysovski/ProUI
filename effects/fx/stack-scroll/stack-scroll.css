@@ -1,4 +1,4 @@
-/* XSlop fx: stack scroll. Cards stick one after another; the covered card shrinks and dims. */
+/* ProUI fx: stack scroll. Cards stick one after another; the covered card shrinks and dims. */
 .xfx-stack { --xfx-stack-top: 12vh; --xfx-stack-step: 14px; list-style: none; margin: 0; padding: 0 0 20vh; }
 .xfx-stack > li {
   position: sticky; top: calc(var(--xfx-stack-top) + var(--i, 0) * var(--xfx-stack-step));

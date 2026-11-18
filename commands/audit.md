@@ -1,4 +1,4 @@
-# XSlop audit
+# ProUI audit
 
 A technical review of the implementation. It does not fix; it documents for other commands. Report with
 `templates/reports/AUDIT.md`.
@@ -10,7 +10,7 @@ Score five dimensions 0–4 (total out of 20):
   visuals.
 - **Theming** (`CL`, `DC-05`): tokens used everywhere, no hard-coded values, dark mode correct if offered.
 - **Responsive** (`LY-14` to `LY-16`, `PE-04`): 360 to 1920 px, no horizontal scroll, touch targets, zoom.
-- **Integrity** (`SL`, `scripts/xslop-scan.mjs`): slop patterns, design-system drift, placeholder content.
+- **Integrity** (`SL`, `scripts/proui-scan.mjs`): slop patterns, design-system drift, placeholder content.
 
 Bands: 18–20 excellent, 14–17 good, 10–13 acceptable, 6–9 poor, 0–5 critical.
 

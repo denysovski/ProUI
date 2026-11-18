@@ -1,6 +1,6 @@
 # My style (denysovski)
 
-The personal taste profile to apply on top of XSlop when building something for me. Project instructions still
+The personal taste profile to apply on top of ProUI when building something for me. Project instructions still
 come first; this file decides the look and feel when nothing else does.
 
 **Sources.** Sections 1–4 come from the NATURIK project and the feedback I gave while building it. Section 5
@@ -126,11 +126,11 @@ poster, art, 3D). The second half is where the personal taste lives; the first h
 - Every page gets one oversized typographic moment and one strong image or 3D object.
 - Keep the UI around it minimal and precise: hairlines, small labels, tight alignment.
 
-### 5.5 What the board contains that XSlop still filters
+### 5.5 What the board contains that ProUI still filters
 
-Some saved pins use patterns XSlop treats as slop: purple-blue gradients and glow orbs on SaaS pages, three
+Some saved pins use patterns ProUI treats as slop: purple-blue gradients and glow orbs on SaaS pages, three
 feature cards in a row, generic pricing tables, emoji-heavy playful sites. They are on the board for single
-details, not as the direction. When building for me, the keys in 5.3 win and XSlop still applies.
+details, not as the direction. When building for me, the keys in 5.3 win and ProUI still applies.
 
 ### 5.6 Pins and style keywords
 

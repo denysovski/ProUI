@@ -1,4 +1,4 @@
-/* XSlop fx: progressive blur. Put .xfx-pblur inside a positioned container (image, scroller).
+/* ProUI fx: progressive blur. Put .xfx-pblur inside a positioned container (image, scroller).
    --xfx-pblur-size: height of the blurred band. --xfx-pblur-max: strongest blur. */
 .xfx-pblur {
   --xfx-pblur-size: 30%;

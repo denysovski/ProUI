@@ -5,7 +5,7 @@
 [Effects library](../README.md) · [21st.dev 3D catalogue](21st-3d.md) · [Install guide](../install.md)
 
 > [!IMPORTANT]
-> React Bits is MIT with a Commons Clause: components may be used in any website or product, including paid ones, but must not be sold or redistributed on their own or in a bundle. XSlop therefore lists them and installs them into each project from the official registry; it does not copy their source into this repository.
+> React Bits is MIT with a Commons Clause: components may be used in any website or product, including paid ones, but must not be sold or redistributed on their own or in a bundle. ProUI therefore lists them and installs them into each project from the official registry; it does not copy their source into this repository.
 
 ## Install
 

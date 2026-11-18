@@ -1,4 +1,4 @@
-# XSlop init
+# ProUI init
 
 Write `PRODUCT.md` at the project root from `templates/context/PRODUCT.md`. It holds product truth that every
 later design decision must respect. It does not hold colours, fonts or layout.

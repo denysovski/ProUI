@@ -5,7 +5,7 @@
 [Effects library](../README.md) · [Kits](../kits.md) · [Motion recipes](motion-recipes.md) · [Install guide](../install.md)
 
 > [!IMPORTANT]
-> Free Skiper UI components may be used and changed in personal and commercial projects, **with attribution to Skiper UI** (for example a credit in the footer or the colophon). Their source is not copied into XSlop. Pro components need a paid licence key and are not listed.
+> Free Skiper UI components may be used and changed in personal and commercial projects, **with attribution to Skiper UI** (for example a credit in the footer or the colophon). Their source is not copied into ProUI. Pro components need a paid licence key and are not listed.
 
 ## Install
 

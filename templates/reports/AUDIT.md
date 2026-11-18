@@ -1,6 +1,6 @@
 # Audit: <site>
 
-Date: <!-- yyyy-mm-dd --> · Tools: Lighthouse, axe, xslop-scan, manual keyboard and zoom checks
+Date: <!-- yyyy-mm-dd --> · Tools: Lighthouse, axe, proui-scan, manual keyboard and zoom checks
 
 | Dimension | Score 0–4 | Key finding |
 | --- | --- | --- |

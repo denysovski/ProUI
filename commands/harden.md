@@ -1,4 +1,4 @@
-# XSlop harden
+# ProUI harden
 
 Make the interface survive real data and real conditions.
 
