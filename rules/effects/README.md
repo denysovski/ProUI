@@ -21,6 +21,8 @@ Positive rules: what a finished, professional site does.
 | `EF-09` | **Content stays real HTML** | Headlines, labels and links inside effects remain selectable text in the DOM, readable by screen readers and search engines. |
 | `EF-10` | **Test on a mid-range phone** | Effects are checked on a real mid-range Android phone or with 4× CPU throttling: smooth scroll, INP under 200 ms, no overheating. |
 | `EF-11` | **Install from the official source** | Components come from their registry (React Bits, 21st.dev) with their licence checked and recorded in the project. |
+| `EF-20` | **Respect the effect budget** | Count every effect that moves on its own, follows the pointer or renders on a canvas. "A few" or "a couple" means two at most on the whole site; a number the user gives is the number. List the planned effects with their places in the outline (`effects/kits.md`). |
+| `EF-21` | **One kit per site** | Pick one kit (Quiet, Modern dark, Modern light, Immersive, Retro, Playful) and take every effect from it, so motion, light and depth look like one family. When the kit has nothing for a section, build that section plain. |
 
 ## Don't
 
@@ -36,6 +38,7 @@ Negative rules: what never ships.
 | `EF-17` | **Demo content left in** | No placeholder images, sample names or lorem text from component demos. |
 | `EF-18` | **React only for an effect** | Do not add React to a non-React site just to run one animation; rebuild the idea with CSS, GSAP or three.js. |
 | `EF-19` | **Redistributing component libraries** | Never copy React Bits or 21st.dev component source into a template, kit or skill for sale or redistribution; install per project. |
+| `EF-22` | **Mixing effect families** | An Aceternity beam hero, a React Bits shader section, a 21st.dev 3D carousel and Motion Primitives cards on one page. Each library has its own motion language; mixed, the page looks assembled from demos. |
 
 ## Related anti-slop rules
 
@@ -61,6 +64,8 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [React Bits](https://reactbits.dev/get-started/index)
 - [21st.dev 3D components](https://21st.dev/community/components/s/3d)
 - [web.dev: Animations and performance](https://web.dev/articles/animations-guide)
+- [Motion Primitives](https://motion-primitives.com)
+- [Aceternity UI components](https://ui.aceternity.com/components)
 
 ---
 

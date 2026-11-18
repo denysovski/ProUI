@@ -2,7 +2,7 @@
 
 > Ready combinations. Pick the row for the chosen style, then keep only what the effect level allows.
 
-[Effects library](README.md) · React Bits names install as `@react-bits/<Name>-TS-TW`; 21st.dev names link from the [3D catalogue](catalog/21st-3d.md).
+[Effects library](README.md) · [Kits](kits.md) · React Bits names install as `@react-bits/<Name>-TS-TW`; 21st.dev names link from the [3D catalogue](catalog/21st-3d.md).
 
 ## By style keyword
 
@@ -37,7 +37,10 @@
 
 ## Rules for every preset
 
-- Prefer React Bits when it has a similar effect: 21st.dev downloads are limited on free accounts (`install.md`).
+- Every preset lives inside one kit (`kits.md`); keep the whole site in that kit (`EF-21`).
+- For light motion (text, reveals, cards, accordion) use Motion Primitives first: its source is in this repository.
+- Prefer Motion Primitives, Aceternity or React Bits over 21st.dev when they have a similar effect: 21st.dev downloads are limited on free accounts (`install.md`).
+- When the user asked for only a few effects, take the hero column and nothing else (`EF-20`).
 - Replace demo colours, radii and fonts with the project's tokens.
 - Keep exactly one GPU canvas visible at a time.
 - Put real content into components: real photos in galleries, real numbers in counters, real logos in loops.

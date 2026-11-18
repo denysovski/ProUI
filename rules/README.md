@@ -31,6 +31,7 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | [Gradients and Backgrounds Rulebook](gradients/README.md) | `GR` | When a gradient or background pattern has a job, and how to make one that looks intentional. |
 | [Effects and 3D Rulebook](effects/README.md) | `EF` | Modern effects, shaders and 3D from the effects library, used at the level the user chose and without hurting speed or access. |
 | [Layout and Spacing Rulebook](layout/README.md) | `LY` | Hierarchy, spacing scale, rhythm, grid and adapting to every screen. |
+| [Page Structure Rulebook](structure/README.md) | `PG` | Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built. |
 | [Images and Media Rulebook](images/README.md) | `IM` | Photography, illustration, video and icons: what to use, how to prepare it, what never to ship. |
 
 ## Interaction

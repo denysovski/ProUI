@@ -4,7 +4,7 @@
 
 ### Rulebooks and a workflow that teach AI agents to build websites that don't look AI-generated
 
-[What it is](#what-xslop-is) · [Contents](#contents) · [How rules work](#how-the-rules-work) · [Rulebooks](#rulebooks) · [Workflow](#how-the-workflow-works) · [Effects](#effects-library) · [Commands](#commands) · [Websites](#websites-used-in-the-workflow) · [Tools](#design-tools) · [Quick start](#quick-start)
+[What it is](#what-xslop-is) · [Contents](#contents) · [How rules work](#how-the-rules-work) · [Rulebooks](#rulebooks) · [Workflow](#how-the-workflow-works) · [Blueprints](#blueprints) · [Effects](#effects-library) · [Commands](#commands) · [Websites](#websites-used-in-the-workflow) · [Tools](#design-tools) · [Quick start](#quick-start)
 
 </div>
 
@@ -26,7 +26,8 @@ the first brief to a live site on GitHub.
 | --- | --- |
 | [`rules/`](rules/README.md) | the rulebooks, one folder per subject, each with Do and Don't tables |
 | [`workflow/`](workflow/README.md) | the step-by-step process and the GitHub guide |
-| [`effects/`](effects/README.md) | the effects library: 3D, shaders, animated text and components from React Bits and 21st.dev |
+| [`blueprints/`](blueprints/README.md) | how websites are put together: sitemaps, landing page order, sections, pricing, contact, footers, colour and type methods |
+| [`effects/`](effects/README.md) | the effects library: kits, effect budget, Motion Primitives (saved here), Aceternity, React Bits and 21st.dev catalogues |
 | [`modes/`](modes/README.md) | four kinds of pages: persuade, operate, read, experience |
 | [`commands/`](commands/README.md) | short commands like `XSlop critique` or `XSlop ship` |
 | [`templates/`](templates/README.md) | files the agent fills in: brief, decisions, reports, GitHub setup |
@@ -67,6 +68,7 @@ ST-02
 | Design | [Gradients and Backgrounds Rulebook](rules/gradients/README.md) | `GR` | gradients and background patterns that look intentional |
 | Design | [Effects and 3D Rulebook](rules/effects/README.md) | `EF` | modern effects, shaders and 3D at the level the user chose |
 | Design | [Layout and Spacing Rulebook](rules/layout/README.md) | `LY` | hierarchy, spacing, grid, responsive structure |
+| Design | [Page Structure Rulebook](rules/structure/README.md) | `PG` | sitemaps, landing page order, pricing tiers, contact pages, footers |
 | Design | [Images and Media Rulebook](rules/images/README.md) | `IM` | photos, video, icons and how to prepare them |
 | Interaction | [Navigation Rulebook](rules/navigation/README.md) | `NV` | menus, wayfinding, search, footer, URLs |
 | Interaction | [Components and Interaction Rulebook](rules/components/README.md) | `IX` | controls, overlays, feedback, behaviour |
@@ -97,8 +99,8 @@ See [how to add a rule](rules/README.md#adding-or-changing-a-rule).
 | Brief | what the site is, for whom, the one main action | answer what is still missing |
 | Research | the agent collects real designs from the websites below | |
 | Direction | three or four directions with screenshots | pick one or combine |
-| Design system | fonts, colours, gradient, spacing, effects from the library | pick type, colour and effects |
-| Structure | pages and sections | confirm the outline |
+| Design system | fonts and colours by the [type](blueprints/type-pairing.md) and [colour](blueprints/colour-schemes.md) methods, one effect kit | pick type, colour and kit |
+| Structure | sitemap and sections from the [blueprints](blueprints/README.md): landing page, pricing, contact, footer, with the planned effects | confirm the outline |
 | First screen | the hero built for real | approve the look |
 | Build | every page, with real content | |
 | Passes | design, behaviour and production rulebooks, one by one | |
@@ -108,10 +110,25 @@ See [how to add a rule](rules/README.md#adding-or-changing-a-rule).
 Every decision is saved in `xslop/DECISIONS.md`, so a new session continues with `XSlop continue`.
 Full details: [workflow/WORKFLOW.md](workflow/WORKFLOW.md).
 
+## Blueprints
+
+How the pages are put together, so the site makes sense before it looks good.
+
+| Blueprint | Answers |
+| --- | --- |
+| [Sitemaps](blueprints/site-types.md) | which pages a service business, company, SaaS, shop, portfolio or restaurant needs |
+| [Landing page](blueprints/landing-page.md) | which sections, in which order, where the button repeats, what comes after the landing page |
+| [Sections](blueprints/sections.md) | what each section needs and which component fits each effect level |
+| [Pricing](blueprints/pricing.md) | three named packages for services, tiers and comparison tables for products |
+| [Contact](blueprints/contact.md) | contact pages for companies and local businesses |
+| [Footers](blueprints/footer.md) | slim, standard or fat, by the amount of information |
+| [Colour schemes](blueprints/colour-schemes.md) and [type pairing](blueprints/type-pairing.md) | a method and starter options for each feel |
+
 ## Effects library
 
-When you ask for a **modern web** or a **website with 3D effects**, XSlop asks how much effect you want and
-then picks ready components that fit the chosen style.
+When you ask for a **modern web** or a **website with 3D effects**, XSlop asks how much effect you want, picks
+one **kit** (a family of components that look alike) and keeps to an **effect budget**: ask for "a couple of
+3D effects" and you get two, not one per section. See [kits](effects/kits.md).
 
 | Effect level | You get |
 | --- | --- |
@@ -122,6 +139,8 @@ then picks ready components that fit the chosen style.
 
 | Catalogue | What's in it |
 | --- | --- |
+| [Motion Primitives](effects/catalog/motion-primitives.md) | all 33 components of [motion-primitives.com](https://motion-primitives.com), source saved in the repository (MIT): text effects, reveals, spotlight, tilt, accordion, morphing dialogs |
+| [Aceternity UI](effects/catalog/aceternity.md) | the 114 free components of [ui.aceternity.com](https://ui.aceternity.com/components) with registry names: beams, spotlights, aurora, bento grids, 3D cards, globes, parallax heroes |
 | [React Bits](effects/catalog/react-bits.md) | all 217 components of [reactbits.dev](https://reactbits.dev/get-started/index): shader backgrounds, cursor and reveal animations, animated text, galleries, cards, micro-interactions |
 | [21st.dev 3D](effects/catalog/21st-3d.md) | all 169 components of the [21st.dev 3D collection](https://21st.dev/community/components/s/3d): 3D heroes, backgrounds, globes, 3D objects, cards, 3D carousels, scroll stories, with author and licence |
 
@@ -181,6 +200,8 @@ All commands: [commands/README.md](commands/README.md).
 | --- | --- |
 | [Fontshare](https://fontshare.com) | free quality fonts |
 | [Made With GSAP](https://madewithgsap.com), [GSAP](https://gsap.com), [Lenis](https://lenis.dev) | animation and smooth scroll |
+| [Motion Primitives](https://motion-primitives.com) | quiet Motion components (source saved in the effects library) |
+| [Aceternity UI](https://ui.aceternity.com/components) | free animated sections and effects (catalogue in the effects library) |
 | [React Bits](https://reactbits.dev/get-started/index) | animated React components (full catalogue in the effects library) |
 | [21st.dev 3D components](https://21st.dev/community/components/s/3d) | community 3D components (catalogue in the effects library) |
 | [Codrops](https://tympanus.net/codrops) | creative effect tutorials |
@@ -269,5 +290,6 @@ node ~/.claude/skills/xslop/scripts/xslop-scan.mjs ./src
 
 Strongly inspired by [Impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus (Apache-2.0), see
 [NOTICE](NOTICE). Apple HIG and Microsoft Fluent 2 are summarised in my own words with links. Pinterest pins
-belong to their authors and are linked, not copied. Started from a set of
+belong to their authors and are linked, not copied. Motion Primitives by ibelick is included under its MIT
+licence; Aceternity UI, React Bits and 21st.dev are linked and installed from their registries. Started from a set of
 [screenshot checklists](references/source-checklists.md).

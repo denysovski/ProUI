@@ -13,3 +13,11 @@ and Microsoft Fluent 2 (https://fluent2.microsoft.design) are summarised and lin
 Apple and Fluent are trademarks of their respective owners.
 
 Pinterest pins listed in style/PINS.md belong to their authors and are linked only.
+
+effects/kits/motion-primitives/ contains the unmodified source of Motion Primitives
+(https://github.com/ibelick/motion-primitives), Copyright (c) 2024 ibelick, licensed under the
+MIT License; its licence is in effects/kits/motion-primitives/LICENSE.md.
+
+Aceternity UI (https://ui.aceternity.com), React Bits (https://reactbits.dev) and 21st.dev
+(https://21st.dev) components are listed with links and install commands only; their source is
+not included.

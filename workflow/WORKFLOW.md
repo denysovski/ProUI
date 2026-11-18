@@ -12,7 +12,7 @@ available (see "When the user is not there").
      Build the rest ◀── ◆ First screen ◀── Build the first screen ◀────────────────────────────────┘
           │
           ▼
-     Design passes:     Anti-slop and craft ─▶ Type and colour ─▶ Layout ─▶ Effects ─▶ Images ─▶ Navigation ─▶ Copy
+     Design passes:     Anti-slop and craft ─▶ Type and colour ─▶ Layout and structure ─▶ Effects ─▶ Images ─▶ Navigation ─▶ Copy
      Behaviour passes:  Components ─▶ Forms ─▶ Product UI* ─▶ States ─▶ Motion ─▶ Accessibility
      Production passes: SEO ─▶ Localisation** ─▶ Performance ─▶ Security ─▶ Launch and legal
           │
@@ -162,12 +162,14 @@ Send the screenshots as files or a page the user can open, then ask in one messa
 
 Goal: turn the chosen direction into concrete tokens.
 
-1. **Type:** propose two or three pairings that fit the direction and the mode (display + text, optional mono
-   for data), mostly from Fontshare (`toolkit/TOOLKIT.md`, `toolkit/design-tools.md`). Check `SL-59` and
-   `TY-01` to `TY-04`. Render a specimen for each: the real headline, a paragraph of real copy, a button, a
-   price or number.
-2. **Colour:** name the strategy (`CL-01`) and the light/dark reason (`CL-02`), then define roles in OKLCH
-   (`CL-04`, `CL-05`) and a contrast table for both themes (`CL-09`).
+1. **Type:** follow `blueprints/type-pairing.md`: give each face a job, choose the text face first, then a
+   display face for the subject. Propose two or three pairings that fit the direction and the feel (start
+   from the starter table, mostly Fontshare and Google Fonts). Check `SL-59` and `TY-01` to `TY-04`. Render a
+   specimen for each: the real headline, a paragraph of real copy, a button, a price or number.
+2. **Colour:** follow `blueprints/colour-schemes.md`: start from the subject's own colours, name the strategy
+   (`CL-01`) and the light/dark reason (`CL-02`), split 60-30-10, define roles in OKLCH (`CL-04`, `CL-05`) and
+   a contrast table for both themes (`CL-09`). A starter palette for the feel is a starting point, shifted
+   toward the brand.
 3. **Gradient and background**, if the direction uses one: one signature gradient from the palette
    (`GR-01` to `GR-10`), built in CSS (`recipes/gradients.md`) or with a tool the user exports from
    (`toolkit/gradients.md`: Balsa UI Gradient Studio, Pryzm, ShaderGradient); patterns from Book of Shapes
@@ -175,7 +177,10 @@ Goal: turn the chosen direction into concrete tokens.
 4. **Scale:** type scale (`TY-05`), spacing scale on 4 px (`LY-05`), radii and elevation ramps (`PL-08`,
    `PL-09`), motion durations and easings (`DC-05`, `MO`).
 
-Output: a specimen page or image with the pairings side by side and the palette.
+5. **Effect kit:** from the feel and the effect level, pick one kit in `effects/kits.md` and write the effect
+   budget into `DECISIONS.md` (`EF-20`, `EF-21`). Level None means no kit.
+
+Output: a specimen page or image with the pairings side by side, the palette and the kit.
 
 ---
 
@@ -195,11 +200,21 @@ or theme file.
 
 Goal: agree on what goes where before building it.
 
-1. Sitemap: every page and its purpose.
-2. For each page, the sections in order, each with: its job, the content it needs, the component or recipe it
-   uses (`recipes/RECIPES.md`), and which states apply (`ST`).
-3. Mark the **one signature moment** per page and the primary action of every page (`DC-10`, `PE-02`).
-4. List content that is still missing (copy, photos, legal details) and propose how to fill it honestly.
+1. **Sitemap:** take the sitemap for the kind of site from `blueprints/site-types.md`; keep the pages the
+   business can fill (`PG-01`).
+2. **Landing page:** order the home page by `blueprints/landing-page.md` (promise, proof, detail, objections,
+   action) and plan where the primary action repeats (`PG-02`, `PG-05`).
+3. **Sections:** for each page, the sections in order, each with its job, the content it needs, the component
+   from the kit for the chosen level (`blueprints/sections.md`) or a recipe (`recipes/RECIPES.md`), and which
+   states apply (`ST`).
+4. **Pricing:** services sold in packages get three named packages; subscriptions get a pricing page with a
+   toggle and comparison table; one-price offers get one price (`blueprints/pricing.md`, `PG-08` to `PG-11`).
+   Ask for real prices.
+5. **Contact and footer:** a contact page or section by `blueprints/contact.md`; a slim, standard or fat footer
+   by the amount of information (`blueprints/footer.md`, `PG-12` to `PG-15`).
+6. **Effects:** list every planned effect with its page and section and check the count against the budget
+   (`EF-20`). Mark the **one signature moment** per page and the primary action of every page (`DC-10`, `PE-02`).
+7. List content that is still missing (copy, photos, prices, legal details) and propose how to fill it honestly.
 
 ---
 
@@ -264,14 +279,17 @@ why). Send the user one short line per finished pass.
 - Run `commands/typeset.md` and `commands/colorize.md` over the whole site.
 - Verify: contrast table for every pair in both themes; 200 % zoom; every shipped language renders.
 
-### Pass: Layout (`LY`, `PL`)
+### Pass: Layout and structure (`LY`, `PG`, `PL`)
 
 - Run `commands/layout.md`: squint test, spacing scale, rhythm, grid, container queries, safe areas.
+- Structure against `PG`: section order, primary action repeated, pricing, contact and footer as planned,
+  no section filled with placeholders.
 - Verify: screenshots at 360, 768, 1024, 1440, 1920 with a blurred copy for the squint test.
 
 ### Pass: Effects (`EF`)
 
 - Every effect matches the intake effect level; one hero effect per page; components restyled to tokens.
+- Count the effects against the budget in `DECISIONS.md` (`EF-20`); all of them come from one kit (`EF-21`).
 - Heavy effects lazy-loaded, paused off screen, pixel ratio capped, static fallback, reduced-motion version.
 - Verify: 4× CPU throttling recording; reduced motion on; WebGL off.
 

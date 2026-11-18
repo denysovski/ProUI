@@ -1,0 +1,375 @@
+[
+ {
+  "category": "Text",
+  "name": "text-effect",
+  "use": "Headline entrance per word or letter (fade, blur, slide)",
+  "description": "Easily animate text content with various effects. You can apply animations per character or per word, and customize the animation effects using custom variants or preset animations.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/text-effect.tsx",
+  "docs": "https://motion-primitives.com/docs/text-effect"
+ },
+ {
+  "category": "Text",
+  "name": "text-loop",
+  "use": "Cycle a few words in a headline",
+  "description": "Text animation that transitions between multiple items, creating an engaging looping effect.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/text-loop.tsx",
+  "docs": "https://motion-primitives.com/docs/text-loop"
+ },
+ {
+  "category": "Text",
+  "name": "text-morph",
+  "use": "Button label that morphs between states",
+  "description": "Animates text by morphing shared letters between words, creating fluid transitions.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/text-morph.tsx",
+  "docs": "https://motion-primitives.com/docs/text-morph"
+ },
+ {
+  "category": "Text",
+  "name": "text-roll",
+  "use": "Rolling letters on hover or entrance",
+  "description": "A text roll component that rotates each character, fully customizable for nice text animations.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/text-roll.tsx",
+  "docs": "https://motion-primitives.com/docs/text-roll"
+ },
+ {
+  "category": "Text",
+  "name": "text-scramble",
+  "use": "Scrambled text that resolves, for tech brands",
+  "description": "Text animation that transforms text by randomly cycling through characters before settling on the final content, creating an engaging cryptographic effect.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/text-scramble.tsx",
+  "docs": "https://motion-primitives.com/docs/text-scramble"
+ },
+ {
+  "category": "Text",
+  "name": "text-shimmer",
+  "use": "Shimmer for \"loading\" or AI status text",
+  "description": "Shimmer effect on text. Easily adjust the duration and the spread of the shimmer effect.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/text-shimmer.tsx",
+  "docs": "https://motion-primitives.com/docs/text-shimmer"
+ },
+ {
+  "category": "Text",
+  "name": "text-shimmer-wave",
+  "use": "Wave shimmer across letters",
+  "description": "Shimmer wave effect on text. Easily adjust the wave effect, spread, duration, and more.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/text-shimmer-wave.tsx",
+  "docs": "https://motion-primitives.com/docs/text-shimmer-wave"
+ },
+ {
+  "category": "Text",
+  "name": "spinning-text",
+  "use": "Circular rotating badge text",
+  "description": "Easily animate text circularly. Customize the animation with variants and transitions.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/spinning-text.tsx",
+  "docs": "https://motion-primitives.com/docs/spinning-text"
+ },
+ {
+  "category": "Text",
+  "name": "animated-number",
+  "use": "Count up a metric with a spring",
+  "description": "Easily animate numbers.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/animated-number.tsx",
+  "docs": "https://motion-primitives.com/docs/animated-number"
+ },
+ {
+  "category": "Text",
+  "name": "sliding-number",
+  "use": "Odometer-style digits for prices or counters",
+  "description": "A component that slides numbers.",
+  "deps": [
+   "motion",
+   "react-use-measure"
+  ],
+  "file": "kits/motion-primitives/components/sliding-number.tsx",
+  "docs": "https://motion-primitives.com/docs/sliding-number"
+ },
+ {
+  "category": "Reveal and scroll",
+  "name": "in-view",
+  "use": "Animate a block when it scrolls into view",
+  "description": "Easily animate elements when they come into view. You can apply animations to elements when they enter the viewport, or when they are fully visible.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/in-view.tsx",
+  "docs": "https://motion-primitives.com/docs/in-view"
+ },
+ {
+  "category": "Reveal and scroll",
+  "name": "animated-group",
+  "use": "Stagger a list or grid of children",
+  "description": "",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/animated-group.tsx",
+  "docs": "https://motion-primitives.com/docs/animated-group"
+ },
+ {
+  "category": "Reveal and scroll",
+  "name": "scroll-progress",
+  "use": "Reading progress bar",
+  "description": "Animated scroll progress for your web pages.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/scroll-progress.tsx",
+  "docs": "https://motion-primitives.com/docs/scroll-progress"
+ },
+ {
+  "category": "Reveal and scroll",
+  "name": "progressive-blur",
+  "use": "Blur that fades over an image edge or scroller",
+  "description": "A Progressive Blur component creates a layered blur effect using motion and gradient masks. It progressively blurs layers based on direction and intensity, adding visual depth.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/progressive-blur.tsx",
+  "docs": "https://motion-primitives.com/docs/progressive-blur"
+ },
+ {
+  "category": "Reveal and scroll",
+  "name": "infinite-slider",
+  "use": "Logo wall or marquee loop",
+  "description": "Infinite scrolling slider component that smoothly loops through its children. It supports both horizontal and vertical directions, with customizable speed and speed on hover. Ideal for creating continuous carousels, marquee displays, or dynamic content showcases.",
+  "deps": [
+   "motion",
+   "react-use-measure"
+  ],
+  "file": "kits/motion-primitives/components/infinite-slider.tsx",
+  "docs": "https://motion-primitives.com/docs/infinite-slider"
+ },
+ {
+  "category": "Surfaces and light",
+  "name": "spotlight",
+  "use": "Soft light following the cursor inside a card",
+  "description": "A dynamic spotlight effect component that follows cursor movement.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/spotlight.tsx",
+  "docs": "https://motion-primitives.com/docs/spotlight"
+ },
+ {
+  "category": "Surfaces and light",
+  "name": "glow-effect",
+  "use": "Animated glow behind a card or button",
+  "description": "A customizable glow effect with animation modes, colors, blur-sm, and transitions.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/glow-effect.tsx",
+  "docs": "https://motion-primitives.com/docs/glow-effect"
+ },
+ {
+  "category": "Surfaces and light",
+  "name": "border-trail",
+  "use": "Light travelling around a border",
+  "description": "Animated border effect that moves along the edges of its parent container.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/border-trail.tsx",
+  "docs": "https://motion-primitives.com/docs/border-trail"
+ },
+ {
+  "category": "Surfaces and light",
+  "name": "tilt",
+  "use": "Subtle 3D tilt on hover",
+  "description": "3D tilt effect that responds to mouse movement, enhancing UI elements with a dynamic depth effect, customizable rotation factors and spring options.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/tilt.tsx",
+  "docs": "https://motion-primitives.com/docs/tilt"
+ },
+ {
+  "category": "Surfaces and light",
+  "name": "magnetic",
+  "use": "Element drifting toward the cursor",
+  "description": "A magnetic effect for elements that allows them to be attracted to the mouse cursor.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/magnetic.tsx",
+  "docs": "https://motion-primitives.com/docs/magnetic"
+ },
+ {
+  "category": "Surfaces and light",
+  "name": "cursor",
+  "use": "Custom cursor or cursor-attached label",
+  "description": "A custom cursor component with optional spring animations. It can be globally applied to the page or attached specifically to a parent element.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/cursor.tsx",
+  "docs": "https://motion-primitives.com/docs/cursor"
+ },
+ {
+  "category": "Interactive UI",
+  "name": "accordion",
+  "use": "FAQ and expandable lists",
+  "description": "A vertically stacked set of collapsible containers allowing users to toggle content visibility. Customize the animation effects with variants and transitions for expanding/collapsing the sections.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/accordion.tsx",
+  "docs": "https://motion-primitives.com/docs/accordion"
+ },
+ {
+  "category": "Interactive UI",
+  "name": "disclosure",
+  "use": "Show more / less block",
+  "description": "The Disclosure component allows users to toggle the visibility of content, either collapsed or expanded.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/disclosure.tsx",
+  "docs": "https://motion-primitives.com/docs/disclosure"
+ },
+ {
+  "category": "Interactive UI",
+  "name": "animated-background",
+  "use": "Sliding highlight for tabs, nav and segmented controls",
+  "description": "Visually highlights selected items by sliding a background into view when hovered over or clicked. This smooth transition helps users focus on the active item, making it ideal for interactive lists, menus, or navigations where clear selection feedback is important.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/animated-background.tsx",
+  "docs": "https://motion-primitives.com/docs/animated-background"
+ },
+ {
+  "category": "Interactive UI",
+  "name": "transition-panel",
+  "use": "Animated tab or step content",
+  "description": "Easy way to switch between different pieces of content with enter and exit animations. It's perfect for enhancing user experience in areas such as onboarding card, settings adjustments, or any interactive content that requires a visual transition between states.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/transition-panel.tsx",
+  "docs": "https://motion-primitives.com/docs/transition-panel"
+ },
+ {
+  "category": "Interactive UI",
+  "name": "carousel",
+  "use": "Accessible carousel with controls",
+  "description": "A flexible and easy-to-use carousel with customizable navigation and indicators.",
+  "deps": [
+   "motion",
+   "lucide-react"
+  ],
+  "file": "kits/motion-primitives/components/carousel.tsx",
+  "docs": "https://motion-primitives.com/docs/carousel"
+ },
+ {
+  "category": "Interactive UI",
+  "name": "image-comparison",
+  "use": "Before and after slider",
+  "description": "Interactively compare two images with a draggable slider to reveal differences.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/image-comparison.tsx",
+  "docs": "https://motion-primitives.com/docs/image-comparison"
+ },
+ {
+  "category": "Interactive UI",
+  "name": "dock",
+  "use": "macOS-style dock",
+  "description": "A versatile UI element that provides a flexible and customizable way to organize and display menu items within your application.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/dock.tsx",
+  "docs": "https://motion-primitives.com/docs/dock"
+ },
+ {
+  "category": "Interactive UI",
+  "name": "toolbar-dynamic",
+  "use": "Toolbar that expands into a search or form",
+  "description": "Adjusts width dynamically to accommodate varying tool requirements. Starts small and expands to offer more tools as needed.",
+  "deps": [
+   "motion",
+   "lucide-react"
+  ],
+  "file": "kits/motion-primitives/components/toolbar-dynamic.tsx",
+  "docs": "https://motion-primitives.com/docs/toolbar-dynamic"
+ },
+ {
+  "category": "Interactive UI",
+  "name": "toolbar-expandable",
+  "use": "Toolbar with expanding panels",
+  "description": "Changes height based on content, expanding to display more tools and shrinking to save space. Keeps your screen organized and efficient.",
+  "deps": [
+   "motion",
+   "lucide-react",
+   "react-use-measure"
+  ],
+  "file": "kits/motion-primitives/components/toolbar-expandable.tsx",
+  "docs": "https://motion-primitives.com/docs/toolbar-expandable"
+ },
+ {
+  "category": "Overlays",
+  "name": "dialog",
+  "use": "Modal dialog with motion",
+  "description": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert. Customize the dialog with variants and transition.",
+  "deps": [
+   "motion",
+   "lucide-react",
+   "react-dom"
+  ],
+  "file": "kits/motion-primitives/components/dialog.tsx",
+  "docs": "https://motion-primitives.com/docs/dialog"
+ },
+ {
+  "category": "Overlays",
+  "name": "morphing-dialog",
+  "use": "Card that morphs into a full dialog",
+  "description": "A dialog that uses layout animations to transition content into a focused view. It supports click-outside and escape key functionalities for closing.",
+  "deps": [
+   "motion",
+   "lucide-react",
+   "react-dom"
+  ],
+  "file": "kits/motion-primitives/components/morphing-dialog.tsx",
+  "docs": "https://motion-primitives.com/docs/morphing-dialog"
+ },
+ {
+  "category": "Overlays",
+  "name": "morphing-popover",
+  "use": "Button that morphs into a popover",
+  "description": "A popover that transforms from its trigger into the content using layout animations. It visually morphs instead of appearing as a separate element.",
+  "deps": [
+   "motion"
+  ],
+  "file": "kits/motion-primitives/components/morphing-popover.tsx",
+  "docs": "https://motion-primitives.com/docs/morphing-popover"
+ }
+]

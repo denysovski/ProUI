@@ -62,6 +62,13 @@ Write the answers into `xslop/DECISIONS.md` under Intake.
 
 ## Follow-ups when needed
 
+- Any effect level above None: "How many effects or 3D elements? A couple, a few, or as many as fit the
+  style?" Skip when the user already said ("only two 3D models"). The answer is the effect budget (`EF-20`).
+- A service business: "Do you sell fixed packages, prices per job, or custom quotes? Send the prices if you
+  have them." The answer picks the pricing model (`blueprints/pricing.md`).
+- A company with many pages or audiences: "Which departments or contacts should visitors reach (sales,
+  support, press, careers, locations)?" (`blueprints/contact.md`, `blueprints/footer.md`).
+
 - Immersive 3D or modern on plain HTML: "The 3D components are React. Use React for the site, add one React
   section, or rebuild the effect without React?"
 - A dashboard: "Which question should the dashboard answer first, and who asks it how often?"

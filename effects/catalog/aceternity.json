@@ -1,0 +1,907 @@
+[
+ {
+  "category": "Backgrounds",
+  "name": "Webcam Pixel Grid",
+  "url": "https://ui.aceternity.com/components/webcam-pixel-grid",
+  "use": "Real-time webcam pixel grid for retro aesthetics",
+  "tech": "Canvas",
+  "install": "@aceternity/webcam-pixel-grid"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Scales",
+  "url": "https://ui.aceternity.com/components/scales",
+  "use": "Repeating diagonal, horizontal or vertical line pattern background",
+  "tech": "CSS",
+  "install": "@aceternity/scales"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Dotted Glow Background",
+  "url": "https://ui.aceternity.com/components/dotted-glow-background",
+  "use": "Dots with opacity animation and glow",
+  "tech": "Motion",
+  "install": "@aceternity/dotted-glow-background"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Background Ripple Effect",
+  "url": "https://ui.aceternity.com/components/background-ripple-effect",
+  "use": "Grid of cells that ripple when clicked",
+  "tech": "Motion",
+  "install": "@aceternity/background-ripple-effect"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Sparkles",
+  "url": "https://ui.aceternity.com/components/sparkles",
+  "use": "Configurable sparkles, as background or standalone",
+  "tech": "tsParticles",
+  "install": "@aceternity/sparkles"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Background Gradient",
+  "url": "https://ui.aceternity.com/components/background-gradient",
+  "use": "Animated gradient behind a card or button",
+  "tech": "Motion",
+  "install": "@aceternity/background-gradient"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Background Gradient Animation",
+  "url": "https://ui.aceternity.com/components/background-gradient-animation",
+  "use": "Smooth gradient that shifts position over time",
+  "tech": "Motion",
+  "install": "@aceternity/background-gradient-animation"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Wavy Background",
+  "url": "https://ui.aceternity.com/components/wavy-background",
+  "use": "Moving wave background",
+  "tech": "Canvas",
+  "install": "@aceternity/wavy-background"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Background Boxes",
+  "url": "https://ui.aceternity.com/components/background-boxes",
+  "use": "Full-width box grid that highlights on hover",
+  "tech": "Motion",
+  "install": "@aceternity/background-boxes"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Background Beams",
+  "url": "https://ui.aceternity.com/components/background-beams",
+  "use": "Beams following SVG paths behind a hero",
+  "tech": "Motion",
+  "install": "@aceternity/background-beams"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Background Beams With Collision",
+  "url": "https://ui.aceternity.com/components/background-beams-with-collision",
+  "use": "Beams that explode on collision",
+  "tech": "Motion",
+  "install": "@aceternity/background-beams-with-collision"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Background Lines",
+  "url": "https://ui.aceternity.com/components/background-lines",
+  "use": "SVG paths animating in waves behind a hero",
+  "tech": "Motion",
+  "install": "@aceternity/background-lines"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Aurora Background",
+  "url": "https://ui.aceternity.com/components/aurora-background",
+  "use": "Subtle aurora light background",
+  "tech": "Motion",
+  "install": "@aceternity/aurora-background"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Meteor Effect",
+  "url": "https://ui.aceternity.com/components/meteors",
+  "use": "Meteor beams inside a container",
+  "tech": "Motion",
+  "install": "@aceternity/meteors"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Shooting Stars and Stars Background",
+  "url": "https://ui.aceternity.com/components/shooting-stars-and-stars-background",
+  "use": "Shooting stars over a starry sky",
+  "tech": "Motion",
+  "install": "@aceternity/shooting-stars"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Vortex Background",
+  "url": "https://ui.aceternity.com/components/vortex",
+  "use": "Swirling vortex background for CTAs",
+  "tech": "Canvas",
+  "install": "@aceternity/vortex"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Background Cubes Grid",
+  "url": "https://ui.aceternity.com/components/background-cubes-grid",
+  "use": "Grid of 3D cubes rippling under the cursor",
+  "tech": "Three.js",
+  "install": "@aceternity/background-cubes-grid"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Liquid Glass",
+  "url": "https://ui.aceternity.com/components/liquid-glass",
+  "use": "Glass surface that refracts what is behind it, with a fallback",
+  "tech": "SVG filter",
+  "install": "@aceternity/liquid-glass"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Cloud Shader",
+  "url": "https://ui.aceternity.com/components/cloud-shader",
+  "use": "Procedural drifting clouds",
+  "tech": "WebGL",
+  "install": "@aceternity/cloud-shader"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Noise Background",
+  "url": "https://ui.aceternity.com/components/noise-background",
+  "use": "Animated gradients with noise texture",
+  "tech": "Motion",
+  "install": "@aceternity/noise-background"
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Grid and Dot Backgrounds",
+  "url": "https://ui.aceternity.com/components/grid-and-dot-backgrounds",
+  "use": "Simple grid and dot section backgrounds (copy from page)",
+  "tech": "Motion"
+ },
+ {
+  "category": "Spotlights and reveals",
+  "name": "Spotlight",
+  "url": "https://ui.aceternity.com/components/spotlight",
+  "use": "Spotlight drawing attention to an element",
+  "tech": "Motion",
+  "install": "@aceternity/spotlight"
+ },
+ {
+  "category": "Spotlights and reveals",
+  "name": "Spotlight New",
+  "url": "https://ui.aceternity.com/components/spotlight-new",
+  "use": "Configurable left and right spotlights",
+  "tech": "Motion",
+  "install": "@aceternity/spotlight-new"
+ },
+ {
+  "category": "Spotlights and reveals",
+  "name": "Canvas Reveal Effect",
+  "url": "https://ui.aceternity.com/components/canvas-reveal-effect",
+  "use": "Dot background expanding on hover, Clerk-style",
+  "tech": "Three.js (R3F)",
+  "install": "@aceternity/canvas-reveal-effect"
+ },
+ {
+  "category": "Spotlights and reveals",
+  "name": "SVG Mask Effect",
+  "url": "https://ui.aceternity.com/components/svg-mask-effect",
+  "use": "Cursor reveals what is underneath",
+  "tech": "Motion",
+  "install": "@aceternity/svg-mask-effect"
+ },
+ {
+  "category": "Spotlights and reveals",
+  "name": "Lamp Section Header",
+  "url": "https://ui.aceternity.com/components/lamp-effect",
+  "use": "Lamp glow for section headers, Linear-style",
+  "tech": "Motion",
+  "install": "@aceternity/lamp"
+ },
+ {
+  "category": "Spotlights and reveals",
+  "name": "Glowing Effect",
+  "url": "https://ui.aceternity.com/components/glowing-effect",
+  "use": "Border glow that adapts to any card, Cursor-style",
+  "tech": "Motion",
+  "install": "@aceternity/glowing-effect"
+ },
+ {
+  "category": "Spotlights and reveals",
+  "name": "Google Gemini Effect",
+  "url": "https://ui.aceternity.com/components/google-gemini-effect",
+  "use": "SVG lines animating on scroll",
+  "tech": "Motion",
+  "install": "@aceternity/google-gemini-effect"
+ },
+ {
+  "category": "Spotlights and reveals",
+  "name": "Chromatic Image",
+  "url": "https://ui.aceternity.com/components/chromatic-image",
+  "use": "Image with color separation, displacement and tilt",
+  "tech": "WebGL",
+  "install": "@aceternity/chromatic-image"
+ },
+ {
+  "category": "Spotlights and reveals",
+  "name": "ASCII Art",
+  "url": "https://ui.aceternity.com/components/ascii-art",
+  "use": "Image converted to animated ASCII",
+  "tech": "Canvas",
+  "install": "@aceternity/ascii-art"
+ },
+ {
+  "category": "Spotlights and reveals",
+  "name": "Pixelated Canvas",
+  "url": "https://ui.aceternity.com/components/pixelated-canvas",
+  "use": "Pixelated image with mouse distortion",
+  "tech": "Canvas",
+  "install": "@aceternity/pixelated-canvas"
+ },
+ {
+  "category": "Spotlights and reveals",
+  "name": "Dither Shader",
+  "url": "https://ui.aceternity.com/components/dither-shader",
+  "use": "Real-time ordered dithering of images",
+  "tech": "WebGL",
+  "install": "@aceternity/dither-shader"
+ },
+ {
+  "category": "Cards",
+  "name": "3D Card Effect",
+  "url": "https://ui.aceternity.com/components/3d-card-effect",
+  "use": "Card whose elements lift in perspective on hover",
+  "tech": "Motion",
+  "install": "@aceternity/3d-card"
+ },
+ {
+  "category": "Cards",
+  "name": "Evervault Card",
+  "url": "https://ui.aceternity.com/components/evervault-card",
+  "use": "Hover reveals encrypted text and a gradient",
+  "tech": "Motion",
+  "install": "@aceternity/evervault-card"
+ },
+ {
+  "category": "Cards",
+  "name": "Card Stack",
+  "url": "https://ui.aceternity.com/components/card-stack",
+  "use": "Cards cycling on a stack, for testimonials",
+  "tech": "Motion",
+  "install": "@aceternity/card-stack"
+ },
+ {
+  "category": "Cards",
+  "name": "Card Hover Effect",
+  "url": "https://ui.aceternity.com/components/card-hover-effect",
+  "use": "Highlight slides to the hovered card",
+  "tech": "Motion",
+  "install": "@aceternity/card-hover-effect"
+ },
+ {
+  "category": "Cards",
+  "name": "Wobble Card",
+  "url": "https://ui.aceternity.com/components/wobble-card",
+  "use": "Card that shifts and scales with the mouse, for features",
+  "tech": "Motion",
+  "install": "@aceternity/wobble-card"
+ },
+ {
+  "category": "Cards",
+  "name": "Expandable Cards",
+  "url": "https://ui.aceternity.com/components/expandable-card",
+  "use": "Cards that expand to show more (copy from page)",
+  "tech": "Motion"
+ },
+ {
+  "category": "Cards",
+  "name": "Card Spotlight",
+  "url": "https://ui.aceternity.com/components/card-spotlight",
+  "use": "Card with a radial spotlight reveal",
+  "tech": "Three.js (R3F)",
+  "install": "@aceternity/card-spotlight"
+ },
+ {
+  "category": "Cards",
+  "name": "Focus Cards",
+  "url": "https://ui.aceternity.com/components/focus-cards",
+  "use": "Hovered card in focus, others blurred",
+  "tech": "Motion",
+  "install": "@aceternity/focus-cards"
+ },
+ {
+  "category": "Cards",
+  "name": "Draggable Card",
+  "url": "https://ui.aceternity.com/components/draggable-card",
+  "use": "Tiltable card you can drag and throw",
+  "tech": "Motion",
+  "install": "@aceternity/draggable-card"
+ },
+ {
+  "category": "Cards",
+  "name": "Comet Card",
+  "url": "https://ui.aceternity.com/components/comet-card",
+  "use": "3D tilt card, Perplexity Comet-style",
+  "tech": "Motion",
+  "install": "@aceternity/comet-card"
+ },
+ {
+  "category": "Cards",
+  "name": "Glare Card",
+  "url": "https://ui.aceternity.com/components/glare-card",
+  "use": "Glare on hover, Linear-style",
+  "tech": "Motion",
+  "install": "@aceternity/glare-card"
+ },
+ {
+  "category": "Cards",
+  "name": "Direction Aware Hover",
+  "url": "https://ui.aceternity.com/components/direction-aware-hover",
+  "use": "Overlay entering from the hover direction",
+  "tech": "Motion",
+  "install": "@aceternity/direction-aware-hover"
+ },
+ {
+  "category": "Cards",
+  "name": "Glowing Stars Card",
+  "url": "https://ui.aceternity.com/components/glowing-stars-effect",
+  "use": "Card background stars",
+  "tech": "Motion",
+  "install": "@aceternity/glowing-stars"
+ },
+ {
+  "category": "Cards",
+  "name": "Tooltip Card",
+  "url": "https://ui.aceternity.com/components/tooltip-card",
+  "use": "Tooltip card following the pointer",
+  "tech": "Motion",
+  "install": "@aceternity/tooltip-card"
+ },
+ {
+  "category": "Cards",
+  "name": "Text Reveal Card",
+  "url": "https://ui.aceternity.com/components/text-reveal-card",
+  "use": "Mouse reveals hidden text in a card",
+  "tech": "Motion",
+  "install": "@aceternity/text-reveal-card"
+ },
+ {
+  "category": "Scroll",
+  "name": "Tracing Beam",
+  "url": "https://ui.aceternity.com/components/tracing-beam",
+  "use": "Beam following content as you scroll, for articles",
+  "tech": "Motion",
+  "install": "@aceternity/tracing-beam"
+ },
+ {
+  "category": "Scroll",
+  "name": "Parallax Grid Scroll",
+  "url": "https://ui.aceternity.com/components/parallax-scroll",
+  "use": "Two columns scrolling in opposite directions",
+  "tech": "Motion",
+  "install": "@aceternity/parallax-scroll"
+ },
+ {
+  "category": "Scroll",
+  "name": "Sticky Scroll Reveal",
+  "url": "https://ui.aceternity.com/components/sticky-scroll-reveal",
+  "use": "Sticky panel while text reveals, for feature tours",
+  "tech": "Motion",
+  "install": "@aceternity/sticky-scroll-reveal"
+ },
+ {
+  "category": "Scroll",
+  "name": "Macbook Scroll",
+  "url": "https://ui.aceternity.com/components/macbook-scroll",
+  "use": "Image rising out of a laptop screen, Fey-style",
+  "tech": "Motion",
+  "install": "@aceternity/macbook-scroll"
+ },
+ {
+  "category": "Scroll",
+  "name": "Container Scroll Animation",
+  "url": "https://ui.aceternity.com/components/container-scroll-animation",
+  "use": "Panel rotating into place in 3D on scroll",
+  "tech": "Motion",
+  "install": "@aceternity/container-scroll-animation"
+ },
+ {
+  "category": "Scroll",
+  "name": "Hero Parallax",
+  "url": "https://ui.aceternity.com/components/hero-parallax",
+  "use": "Rows of product shots with rotation and parallax",
+  "tech": "Motion",
+  "install": "@aceternity/hero-parallax"
+ },
+ {
+  "category": "Scroll",
+  "name": "Timeline",
+  "url": "https://ui.aceternity.com/components/timeline",
+  "use": "Timeline with sticky headers and scroll beam",
+  "tech": "Motion",
+  "install": "@aceternity/timeline"
+ },
+ {
+  "category": "Text",
+  "name": "Canvas Text",
+  "url": "https://ui.aceternity.com/components/canvas-text",
+  "use": "Coloured curved lines clipped to text",
+  "tech": "Canvas",
+  "install": "@aceternity/canvas-text"
+ },
+ {
+  "category": "Text",
+  "name": "Encrypted Text",
+  "url": "https://ui.aceternity.com/components/encrypted-text",
+  "use": "Text revealing from gibberish",
+  "tech": "Motion",
+  "install": "@aceternity/encrypted-text"
+ },
+ {
+  "category": "Text",
+  "name": "Layout Text Flip",
+  "url": "https://ui.aceternity.com/components/layout-text-flip",
+  "use": "Word flip that reflows surrounding text",
+  "tech": "Motion",
+  "install": "@aceternity/layout-text-flip"
+ },
+ {
+  "category": "Text",
+  "name": "Colourful Text",
+  "url": "https://ui.aceternity.com/components/colourful-text",
+  "use": "Text with colour, filter and scale effects",
+  "tech": "Motion",
+  "install": "@aceternity/colourful-text"
+ },
+ {
+  "category": "Text",
+  "name": "Squiggly Text",
+  "url": "https://ui.aceternity.com/components/squiggly-text",
+  "use": "SVG turbulence on text",
+  "tech": "Motion",
+  "install": "@aceternity/squiggly-text"
+ },
+ {
+  "category": "Text",
+  "name": "Text Generate Effect",
+  "url": "https://ui.aceternity.com/components/text-generate-effect",
+  "use": "Words fading in one by one",
+  "tech": "Motion",
+  "install": "@aceternity/text-generate-effect"
+ },
+ {
+  "category": "Text",
+  "name": "Typewriter Effect",
+  "url": "https://ui.aceternity.com/components/typewriter-effect",
+  "use": "Typed-out text",
+  "tech": "Motion",
+  "install": "@aceternity/typewriter-effect"
+ },
+ {
+  "category": "Text",
+  "name": "Flip Words",
+  "url": "https://ui.aceternity.com/components/flip-words",
+  "use": "Cycles through a list of words",
+  "tech": "Motion",
+  "install": "@aceternity/flip-words"
+ },
+ {
+  "category": "Text",
+  "name": "Text Hover Effect",
+  "url": "https://ui.aceternity.com/components/text-hover-effect",
+  "use": "Outlined gradient text on hover, x.ai-style",
+  "tech": "Motion",
+  "install": "@aceternity/text-hover-effect"
+ },
+ {
+  "category": "Text",
+  "name": "Container Text Flip",
+  "url": "https://ui.aceternity.com/components/container-text-flip",
+  "use": "Words flipping with animated width",
+  "tech": "Motion",
+  "install": "@aceternity/container-text-flip"
+ },
+ {
+  "category": "Text",
+  "name": "Hero Highlight",
+  "url": "https://ui.aceternity.com/components/hero-highlight",
+  "use": "Background effect with highlighted words",
+  "tech": "Motion",
+  "install": "@aceternity/hero-highlight"
+ },
+ {
+  "category": "Text",
+  "name": "Text Flipping Board",
+  "url": "https://ui.aceternity.com/components/text-flipping-board",
+  "use": "Split-flap display text",
+  "tech": "Motion",
+  "install": "@aceternity/text-flipping-board"
+ },
+ {
+  "category": "Text",
+  "name": "Pointer Highlight",
+  "url": "https://ui.aceternity.com/components/pointer-highlight",
+  "use": "Highlights text in view with a pointer",
+  "tech": "Motion",
+  "install": "@aceternity/pointer-highlight"
+ },
+ {
+  "category": "Buttons",
+  "name": "Magnetic Button",
+  "url": "https://ui.aceternity.com/components/magnetic-button",
+  "use": "Button drifting toward the cursor with spring return",
+  "tech": "Motion",
+  "install": "@aceternity/magnetic-button"
+ },
+ {
+  "category": "Buttons",
+  "name": "Tailwind CSS Buttons",
+  "url": "https://ui.aceternity.com/components/tailwindcss-buttons",
+  "use": "Curated button styles (copy from page)",
+  "tech": "Motion"
+ },
+ {
+  "category": "Buttons",
+  "name": "Hover Border Gradient",
+  "url": "https://ui.aceternity.com/components/hover-border-gradient",
+  "use": "Gradient border expanding on hover",
+  "tech": "Motion",
+  "install": "@aceternity/hover-border-gradient"
+ },
+ {
+  "category": "Buttons",
+  "name": "Moving Border",
+  "url": "https://ui.aceternity.com/components/moving-border",
+  "use": "Border light moving around a button",
+  "tech": "Motion",
+  "install": "@aceternity/moving-border"
+ },
+ {
+  "category": "Buttons",
+  "name": "Stateful Button",
+  "url": "https://ui.aceternity.com/components/stateful-button",
+  "use": "Button with loading and success states",
+  "tech": "Motion",
+  "install": "@aceternity/stateful-button"
+ },
+ {
+  "category": "Loaders",
+  "name": "Image Generation Loader",
+  "url": "https://ui.aceternity.com/components/image-generation-loader",
+  "use": "Scanning pixel loader over an image",
+  "tech": "Canvas",
+  "install": "@aceternity/image-generation-loader"
+ },
+ {
+  "category": "Loaders",
+  "name": "Multi Step Loader",
+  "url": "https://ui.aceternity.com/components/multi-step-loader",
+  "use": "Named steps for long waits",
+  "tech": "Motion",
+  "install": "@aceternity/multi-step-loader"
+ },
+ {
+  "category": "Loaders",
+  "name": "Loaders",
+  "url": "https://ui.aceternity.com/components/loader",
+  "use": "Minimal loaders",
+  "tech": "Motion",
+  "install": "@aceternity/loader"
+ },
+ {
+  "category": "Navigation",
+  "name": "Notch",
+  "url": "https://ui.aceternity.com/components/notch",
+  "use": "Floating notch navigation at the top or bottom",
+  "tech": "Motion",
+  "install": "@aceternity/notch"
+ },
+ {
+  "category": "Navigation",
+  "name": "Floating Navbar",
+  "url": "https://ui.aceternity.com/components/floating-navbar",
+  "use": "Sticky navbar hiding on scroll down",
+  "tech": "Motion",
+  "install": "@aceternity/floating-navbar"
+ },
+ {
+  "category": "Navigation",
+  "name": "Navbar Menu",
+  "url": "https://ui.aceternity.com/components/navbar-menu",
+  "use": "Animated big navigation menu",
+  "tech": "Motion",
+  "install": "@aceternity/navbar-menu"
+ },
+ {
+  "category": "Navigation",
+  "name": "Sidebar",
+  "url": "https://ui.aceternity.com/components/sidebar",
+  "use": "Expandable sidebar with mobile support",
+  "tech": "Motion",
+  "install": "@aceternity/sidebar"
+ },
+ {
+  "category": "Navigation",
+  "name": "Floating Dock",
+  "url": "https://ui.aceternity.com/components/floating-dock",
+  "use": "macOS-style dock navigation",
+  "tech": "Motion",
+  "install": "@aceternity/floating-dock"
+ },
+ {
+  "category": "Navigation",
+  "name": "Animated Tabs",
+  "url": "https://ui.aceternity.com/components/tabs",
+  "use": "Tabs with animated background",
+  "tech": "Motion",
+  "install": "@aceternity/tabs"
+ },
+ {
+  "category": "Navigation",
+  "name": "Resizable Navbar",
+  "url": "https://ui.aceternity.com/components/resizable-navbar",
+  "use": "Navbar that narrows on scroll",
+  "tech": "Motion",
+  "install": "@aceternity/resizable-navbar"
+ },
+ {
+  "category": "Navigation",
+  "name": "Sticky Banner",
+  "url": "https://ui.aceternity.com/components/sticky-banner",
+  "use": "Top banner hiding on scroll",
+  "tech": "Motion",
+  "install": "@aceternity/sticky-banner"
+ },
+ {
+  "category": "Forms and inputs",
+  "name": "Signup Form",
+  "url": "https://ui.aceternity.com/components/signup-form",
+  "use": "Signup form on shadcn inputs (copy from page)",
+  "tech": "Motion"
+ },
+ {
+  "category": "Forms and inputs",
+  "name": "Placeholders And Vanish Input",
+  "url": "https://ui.aceternity.com/components/placeholders-and-vanish-input",
+  "use": "Rotating placeholders, vanishing on submit",
+  "tech": "Motion",
+  "install": "@aceternity/placeholders-and-vanish-input"
+ },
+ {
+  "category": "Forms and inputs",
+  "name": "File Upload",
+  "url": "https://ui.aceternity.com/components/file-upload",
+  "use": "Drag and drop upload with micro-interactions",
+  "tech": "Motion",
+  "install": "@aceternity/file-upload"
+ },
+ {
+  "category": "Forms and inputs",
+  "name": "Gooey Input",
+  "url": "https://ui.aceternity.com/components/gooey-input",
+  "use": "Search input expanding with a gooey effect",
+  "tech": "Motion",
+  "install": "@aceternity/gooey-input"
+ },
+ {
+  "category": "Overlays",
+  "name": "Animated Modal",
+  "url": "https://ui.aceternity.com/components/animated-modal",
+  "use": "Compound modal with animated transitions",
+  "tech": "Motion",
+  "install": "@aceternity/animated-modal"
+ },
+ {
+  "category": "Overlays",
+  "name": "Animated Tooltip",
+  "url": "https://ui.aceternity.com/components/animated-tooltip",
+  "use": "Tooltip following the pointer",
+  "tech": "Motion",
+  "install": "@aceternity/animated-tooltip"
+ },
+ {
+  "category": "Overlays",
+  "name": "Link Preview",
+  "url": "https://ui.aceternity.com/components/link-preview",
+  "use": "Preview card for links",
+  "tech": "Motion",
+  "install": "@aceternity/link-preview"
+ },
+ {
+  "category": "Overlays",
+  "name": "Following Pointer",
+  "url": "https://ui.aceternity.com/components/following-pointer",
+  "use": "Custom pointer with content",
+  "tech": "Motion",
+  "install": "@aceternity/following-pointer"
+ },
+ {
+  "category": "Overlays",
+  "name": "Lens",
+  "url": "https://ui.aceternity.com/components/lens",
+  "use": "Zoom lens over images or video",
+  "tech": "Motion",
+  "install": "@aceternity/lens"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Images Slider",
+  "url": "https://ui.aceternity.com/components/images-slider",
+  "use": "Full-page image slider with keyboard",
+  "tech": "Motion",
+  "install": "@aceternity/images-slider"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Carousel",
+  "url": "https://ui.aceternity.com/components/carousel",
+  "use": "Carousel with micro-interactions",
+  "tech": "Motion",
+  "install": "@aceternity/carousel"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Apple Cards Carousel",
+  "url": "https://ui.aceternity.com/components/apple-cards-carousel",
+  "use": "Minimal card carousel, apple.com-style",
+  "tech": "Motion",
+  "install": "@aceternity/apple-cards-carousel"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Animated Testimonials",
+  "url": "https://ui.aceternity.com/components/animated-testimonials",
+  "use": "Testimonial with image and quote",
+  "tech": "Motion",
+  "install": "@aceternity/animated-testimonials"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Infinite Moving Cards",
+  "url": "https://ui.aceternity.com/components/infinite-moving-cards",
+  "use": "Cards looping in a row",
+  "tech": "Motion",
+  "install": "@aceternity/infinite-moving-cards"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Images Badge",
+  "url": "https://ui.aceternity.com/components/images-badge",
+  "use": "Badge revealing images on hover",
+  "tech": "Motion",
+  "install": "@aceternity/images-badge"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Parallax Hero Images",
+  "url": "https://ui.aceternity.com/components/parallax-hero-images",
+  "use": "Mouse parallax images for heroes",
+  "tech": "Motion",
+  "install": "@aceternity/parallax-hero-images"
+ },
+ {
+  "category": "Carousels and galleries",
+  "name": "Compare",
+  "url": "https://ui.aceternity.com/components/compare",
+  "use": "Before and after image slider",
+  "tech": "tsParticles",
+  "install": "@aceternity/compare"
+ },
+ {
+  "category": "Layout and sections",
+  "name": "Layout Grid",
+  "url": "https://ui.aceternity.com/components/layout-grid",
+  "use": "Grid items expanding on click",
+  "tech": "Motion",
+  "install": "@aceternity/layout-grid"
+ },
+ {
+  "category": "Layout and sections",
+  "name": "Bento Grid",
+  "url": "https://ui.aceternity.com/components/bento-grid",
+  "use": "Bento grid with title, description and header",
+  "tech": "Motion",
+  "install": "@aceternity/bento-grid"
+ },
+ {
+  "category": "Layout and sections",
+  "name": "Cover",
+  "url": "https://ui.aceternity.com/components/container-cover",
+  "use": "Wrapper with beams and space effect on hover",
+  "tech": "tsParticles",
+  "install": "@aceternity/cover"
+ },
+ {
+  "category": "Layout and sections",
+  "name": "Hero Sections",
+  "url": "https://ui.aceternity.com/components/hero-sections-free",
+  "use": "Free hero section blocks (copy from page)",
+  "tech": "Motion + cobe"
+ },
+ {
+  "category": "Layout and sections",
+  "name": "Feature Sections",
+  "url": "https://ui.aceternity.com/components/feature-sections-free",
+  "use": "Free feature section blocks (copy from page)",
+  "tech": "Motion + cobe"
+ },
+ {
+  "category": "Layout and sections",
+  "name": "Cards",
+  "url": "https://ui.aceternity.com/components/cards-free",
+  "use": "Free card blocks (copy from page)",
+  "tech": "Motion"
+ },
+ {
+  "category": "Product and code",
+  "name": "Keyboard",
+  "url": "https://ui.aceternity.com/components/keyboard",
+  "use": "Mac keyboard with key sounds",
+  "tech": "Motion",
+  "install": "@aceternity/keyboard"
+ },
+ {
+  "category": "Product and code",
+  "name": "Terminal",
+  "url": "https://ui.aceternity.com/components/terminal",
+  "use": "Mac terminal with typewriter",
+  "tech": "Motion",
+  "install": "@aceternity/terminal"
+ },
+ {
+  "category": "Product and code",
+  "name": "Code Block",
+  "url": "https://ui.aceternity.com/components/code-block",
+  "use": "Syntax-highlighted code block",
+  "tech": "Motion",
+  "install": "@aceternity/code-block"
+ },
+ {
+  "category": "3D and globes",
+  "name": "GitHub Globe",
+  "url": "https://ui.aceternity.com/components/github-globe",
+  "use": "Interactive globe, GitHub-style",
+  "tech": "Three.js (three-globe)",
+  "install": "@aceternity/globe"
+ },
+ {
+  "category": "3D and globes",
+  "name": "3D Globe",
+  "url": "https://ui.aceternity.com/components/3d-globe",
+  "use": "Realistic globe with tooltips and avatars",
+  "tech": "Three.js (R3F)",
+  "install": "@aceternity/3d-globe"
+ },
+ {
+  "category": "3D and globes",
+  "name": "World Map",
+  "url": "https://ui.aceternity.com/components/world-map",
+  "use": "World map with animated lines and dots",
+  "tech": "SVG (dotted-map)",
+  "install": "@aceternity/world-map"
+ },
+ {
+  "category": "3D and globes",
+  "name": "3D Animated Pin",
+  "url": "https://ui.aceternity.com/components/3d-pin",
+  "use": "Gradient pin animating on hover, for product links",
+  "tech": "Motion",
+  "install": "@aceternity/3d-pin"
+ },
+ {
+  "category": "3D and globes",
+  "name": "3D Marquee",
+  "url": "https://ui.aceternity.com/components/3d-marquee",
+  "use": "Tilted grid marquee for testimonials or heroes",
+  "tech": "Motion",
+  "install": "@aceternity/3d-marquee"
+ }
+]

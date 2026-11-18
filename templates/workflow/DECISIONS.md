@@ -22,8 +22,10 @@ continues from here with `XSlop continue`.
 
 ## Effects
 
+- Kit (`effects/kits.md`: Quiet / Modern dark / Modern light / Immersive / Retro / Playful / none):
+- Effect budget (number on the whole site; the user's own number if they gave one):
 - Preset (`effects/presets.md`):
-- Components picked, with source and licence:
+- Components picked, with page, section, source and licence:
 
 ## Brief
 
@@ -50,7 +52,11 @@ continues from here with `XSlop continue`.
 
 ## Outline
 
-- Pages and sections:
+- Sitemap (`blueprints/site-types.md`):
+- Pages and sections (`blueprints/landing-page.md`, `blueprints/sections.md`):
+- Pricing model and real prices (`blueprints/pricing.md`):
+- Contact page and footer size (`blueprints/contact.md`, `blueprints/footer.md`):
+- Planned effects and count against the budget:
 - Signature moment per page:
 - Changes requested by the user:
 
@@ -65,8 +71,8 @@ Tick when every rule of the group is met or marked not applicable (with the reas
 
 - [ ] Anti-slop and craft (`SL`, `DC`), scan clean of hard rules
 - [ ] Type and colour (`TY`, `CL`, `GR`)
-- [ ] Layout (`LY`, `PL`)
-- [ ] Effects (`EF`), matching the intake effect level
+- [ ] Layout and structure (`LY`, `PG`, `PL`)
+- [ ] Effects (`EF`), matching the intake effect level, the kit and the budget
 - [ ] Images and navigation (`IM`, `NV`)
 - [ ] Copy (`CP`)
 - [ ] Components and forms (`IX`, `FO`)

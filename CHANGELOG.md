@@ -1,5 +1,20 @@
 # Changelog
 
+## 3.2.0 (2026-11-18)
+
+- Blueprints (`blueprints/`): sitemaps per kind of site, the landing page order and what comes after it, a
+  section catalogue with a component per effect level, tiered pricing for services and products, contact
+  pages for companies and local businesses, slim, standard and fat footers, a colour-scheme method with
+  contrast-checked starter palettes, and a type-pairing method with free starter pairings.
+- Page Structure Rulebook (`PG`).
+- Motion Primitives: all 33 components saved in `effects/kits/motion-primitives/` with their MIT licence, and a
+  catalogue.
+- Aceternity UI: catalogue of the 114 free components with registry install names (source not included).
+- Effect kits (`effects/kits.md`): one family of components per site, and an effect budget ("a few" means two).
+  New rules `EF-20` to `EF-22`.
+- Workflow: the Design system stage uses the colour and type methods and picks a kit; the Structure stage
+  builds from the blueprints; intake follow-ups for the number of effects, pricing model and contacts.
+
 ## 3.1.1 (2026-11-18)
 
 - 21st.dev 3D catalogue rebuilt from the live collection page: all 169 components with author, licence,

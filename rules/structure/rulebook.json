@@ -1,0 +1,178 @@
+{
+  "order": 6.5,
+  "prefix": "PG",
+  "folder": "structure",
+  "name": "Page Structure Rulebook",
+  "category": "Design",
+  "summary": "Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built.",
+  "check": [
+    "Compare the sitemap with `blueprints/site-types.md` and the section order with `blueprints/landing-page.md`.",
+    "Scroll the home page on a phone: the primary action is never more than one screen away.",
+    "Every price, quote, logo and number on the page has a source in `DECISIONS.md`."
+  ],
+  "sources": [
+    {
+      "title": "NN/g: Contact Us pages",
+      "url": "https://www.nngroup.com/articles/contact-us-pages/"
+    },
+    {
+      "title": "NN/g: Footers 101",
+      "url": "https://www.nngroup.com/articles/footers/"
+    },
+    {
+      "title": "Baymard Institute: product page and checkout research",
+      "url": "https://baymard.com/research"
+    },
+    {
+      "title": "Orbit Media: website footer best practices",
+      "url": "https://www.orbitmedia.com/blog/website-footer-design-best-practices/"
+    }
+  ],
+  "related": [
+    "SL-09",
+    "SL-11",
+    "SL-17",
+    "SL-43",
+    "SL-45",
+    "NV-07",
+    "PE-02",
+    "PE-03",
+    "PE-16",
+    "FO-09",
+    "DC-10"
+  ],
+  "rules": [
+    {
+      "id": "PG-01",
+      "kind": "do",
+      "title": "Sitemap from the kind of site",
+      "text": "Start from the sitemap for the kind of site in `blueprints/site-types.md` and cut every page the business cannot fill with real content."
+    },
+    {
+      "id": "PG-02",
+      "kind": "do",
+      "title": "Sections follow the visitor's questions",
+      "text": "Order the landing page as promise, proof, detail, objections, action: hero, proof strip, product or services, how it works, deep proof, pricing, FAQ, final CTA, footer (`blueprints/landing-page.md`)."
+    },
+    {
+      "id": "PG-03",
+      "kind": "do",
+      "title": "Leave out what cannot be filled",
+      "text": "A section without real content is removed, not faked with placeholders, stock quotes or invented numbers. Missing content goes on the list in `DECISIONS.md`."
+    },
+    {
+      "id": "PG-04",
+      "kind": "do",
+      "title": "The offer is shown, not listed",
+      "text": "Services and features appear with real screenshots, photos, a demo or examples of the result, close to the top of the page."
+    },
+    {
+      "id": "PG-05",
+      "kind": "do",
+      "title": "The primary action repeats",
+      "text": "The same primary action appears in the header, the hero, after the offer, after pricing and in the final CTA, and as a sticky bar on mobile once the hero button has scrolled away."
+    },
+    {
+      "id": "PG-06",
+      "kind": "do",
+      "title": "Every page has a next step",
+      "text": "Inner pages (service, feature, case study, about) end with the primary action or a link to the page that closes the decision."
+    },
+    {
+      "id": "PG-07",
+      "kind": "do",
+      "title": "Proof is specific and named",
+      "text": "Three to five testimonials with name, role and permission, client logos with permission, numbers with source and date. Fewer, specific proofs beat a long wall."
+    },
+    {
+      "id": "PG-08",
+      "kind": "do",
+      "title": "Services that sell packages get tiers",
+      "text": "When a service is sold in packages, show three named packages built from the real offer, one recommended, same items in the same order, one action per card, add-ons and payment terms below (`blueprints/pricing.md`)."
+    },
+    {
+      "id": "PG-09",
+      "kind": "do",
+      "title": "Prices come from the business",
+      "text": "Use the real prices or \"from\" prices. When there are none yet, ask the user and mark placeholders in the build; never publish invented figures."
+    },
+    {
+      "id": "PG-10",
+      "kind": "do",
+      "title": "A pricing page answers the rest",
+      "text": "Subscription and multi-tier products get a pricing page with a billing toggle that shows the saving, a comparison table grouped by category, an FAQ about payment and cancellation, and a route for custom needs."
+    },
+    {
+      "id": "PG-11",
+      "kind": "do",
+      "title": "Comparison tables work on phones",
+      "text": "On small screens the comparison becomes an accordion per category or a tier switcher, with a sticky row of tier names; the page never scrolls sideways."
+    },
+    {
+      "id": "PG-12",
+      "kind": "do",
+      "title": "Contact is easy to find",
+      "text": "A page or section labelled Contact, linked from the header and the footer, with phone, email, address and hours as real text, response time, and a short form (`blueprints/contact.md`)."
+    },
+    {
+      "id": "PG-13",
+      "kind": "do",
+      "title": "Company contacts by need",
+      "text": "Companies route contacts by what the visitor needs (sales, support, press, careers, locations), not by the org chart, and always keep one main number and email."
+    },
+    {
+      "id": "PG-14",
+      "kind": "do",
+      "title": "Footer size matches the site",
+      "text": "Slim for one-page sites, standard for small businesses, fat with four to six labelled columns, contact, newsletter and a legal row for companies, SaaS and shops (`blueprints/footer.md`)."
+    },
+    {
+      "id": "PG-15",
+      "kind": "do",
+      "title": "Legal row in the footer",
+      "text": "Legal name, registration and VAT numbers where required, privacy, terms, cookie settings and the accessibility statement sit in the last row of the footer."
+    },
+    {
+      "id": "PG-16",
+      "kind": "dont",
+      "title": "Features before the promise",
+      "text": "A features grid as the first thing under the header, before the visitor knows what the product is and who it is for."
+    },
+    {
+      "id": "PG-17",
+      "kind": "dont",
+      "title": "Hidden prices for simple offers",
+      "text": "\"Contact us for pricing\" on a small-business service or a self-serve product. Keep \"contact us\" for genuinely custom or enterprise work, and give a starting price when possible."
+    },
+    {
+      "id": "PG-18",
+      "kind": "dont",
+      "title": "Metal-named tiers",
+      "text": "Bronze, Silver, Gold, Platinum. Name tiers after the customer or the size of the job."
+    },
+    {
+      "id": "PG-19",
+      "kind": "dont",
+      "title": "More than one recommended plan",
+      "text": "Two highlighted cards, or a badge on every card. Recommend one."
+    },
+    {
+      "id": "PG-20",
+      "kind": "dont",
+      "title": "Contact only through a form",
+      "text": "A form as the only way to reach a business, or contact details hidden under About."
+    },
+    {
+      "id": "PG-21",
+      "kind": "dont",
+      "title": "Footer as a link dump",
+      "text": "Dozens of unsorted links, keyword lists, tag clouds or a copy of the header with nothing else."
+    },
+    {
+      "id": "PG-22",
+      "kind": "dont",
+      "title": "Every section a different layout trick",
+      "text": "A new effect, layout and component style in each section. One signature moment per page, the rest calm and consistent."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 ---
 name: xslop
-description: Add-on rulebooks, workflow and effects library for building websites, landing pages and dashboards that look designed by a careful person, not generated. Use alongside a project's own brief when building, redesigning, critiquing or auditing a website or web app, or when the user says "XSlop", "no slop", "make it not look vibecoded", names an XSlop command (critique, audit, polish, ship…), names rule IDs to include or skip, or asks for a "modern web", a "website with 3D effects", gradients or animations.
+description: Add-on rulebooks, workflow, site blueprints and effects library for building websites, landing pages and dashboards that look designed by a careful person, not generated. Use alongside a project's own brief when building, redesigning, critiquing or auditing a website or web app, or when the user says "XSlop", "no slop", "make it not look vibecoded", names an XSlop command (critique, audit, polish, ship…), names rule IDs to include or skip, or asks for a "modern web", a "website with 3D effects", gradients or animations.
 ---
 
 # XSlop
@@ -30,7 +30,9 @@ first, then use XSlop to judge and improve, not to restyle it on your own initia
 | The list of rulebooks and how IDs work | `rules/README.md` |
 | One rulebook (Do and Don't tables, how to check, sources) | `rules/<rulebook>/README.md` |
 | The questions to ask before anything else | `templates/workflow/INTAKE.md` |
-| Modern effects, 3D, shaders, animated components | `effects/` (levels, presets, install, React Bits and 21st.dev catalogues) |
+| Modern effects, 3D, shaders, animated components | `effects/` (levels, kits and budget, presets, install, catalogues for Motion Primitives, Aceternity, React Bits, 21st.dev) |
+| Sitemaps, landing page order, sections, pricing, contact, footers | `blueprints/` |
+| Choosing colours and typefaces | `blueprints/colour-schemes.md`, `blueprints/type-pairing.md` |
 | What the visitor came to do | `modes/` (persuade, operate, read, experience) |
 | A short command (critique, audit, polish, ship…) | `commands/README.md` and the command's file |
 | Building a new site step by step | `workflow/WORKFLOW.md` |
@@ -57,6 +59,7 @@ first, then use XSlop to judge and improve, not to restyle it on your own initia
 | Gradients and Backgrounds Rulebook | `GR` | `rules/gradients/README.md` |
 | Effects and 3D Rulebook | `EF` | `rules/effects/README.md` |
 | Layout and Spacing Rulebook | `LY` | `rules/layout/README.md` |
+| Page Structure Rulebook | `PG` | `rules/structure/README.md` |
 | Images and Media Rulebook | `IM` | `rules/images/README.md` |
 | Navigation Rulebook | `NV` | `rules/navigation/README.md` |
 | Components and Interaction Rulebook | `IX` | `rules/components/README.md` |
@@ -81,8 +84,12 @@ When the user asks for a website (or says "use XSlop") without further instructi
 - Ask the intake questions first (`templates/workflow/INTAKE.md`): kind of site, feel (modern, classic,
   old-school…), effect level (none, subtle, modern, immersive 3D), colours, main action, technology, content.
   Skip only what the request already answers, or everything if the user says "decide yourself".
-- "Modern web" or "3D effects" means: ask the effect level, then pick from `effects/presets.md` and the
-  catalogues, never more than the chosen level allows (`EF`).
+- "Modern web" or "3D effects" means: ask the effect level, pick one kit from `effects/kits.md` and take
+  every effect from it, never more than the level and the effect budget allow (`EF-01`, `EF-20`, `EF-21`).
+  "A few" or "a couple" of effects or 3D models means two at most on the whole site.
+- Build the structure from `blueprints/`: the sitemap for the kind of site, the landing page order, then
+  pricing (packages for services), contact and the footer size that fits the amount of information (`PG`).
+- Choose colours and type with the methods in `blueprints/colour-schemes.md` and `blueprints/type-pairing.md`.
 - Decide the mode of each surface (`modes/README.md`) and lead with the rulebooks that matter most for it
   (table in `rules/README.md`).
 - Apply every rulebook that applies: do every Do, avoid every Don't.

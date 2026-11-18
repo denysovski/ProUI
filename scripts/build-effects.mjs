@@ -3,6 +3,8 @@
 //
 //   effects/catalog/react-bits.json  ->  effects/catalog/react-bits.md
 //   effects/catalog/21st-3d.json     ->  effects/catalog/21st-3d.md
+//   effects/catalog/motion-primitives.json -> effects/catalog/motion-primitives.md
+//   effects/catalog/aceternity.json  ->  effects/catalog/aceternity.md
 //
 // Usage: node scripts/build-effects.mjs [--check]   (run from the repository root, Node 18+)
 
@@ -76,6 +78,63 @@ const outputs = new Map();
   }
   out.push('---', '', NOTE, '');
   outputs.set('effects/catalog/21st-3d.md', out.join('\n'));
+}
+
+// ---------- Motion Primitives (vendored, MIT) ----------
+{
+  const data = JSON.parse(readFileSync('effects/catalog/motion-primitives.json', 'utf8'));
+  const order = ['Text', 'Reveal and scroll', 'Surfaces and light', 'Interactive UI', 'Overlays'];
+  const anchor = (c) => c.toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/ /g, '-');
+  const out = ['# Motion Primitives catalogue', '',
+    `> All ${data.length} components of [Motion Primitives](https://motion-primitives.com) by ibelick: small, quiet Motion components for text, reveals, light and interactive UI. Their source is saved in this repository under [kits/motion-primitives](../kits/motion-primitives/).`, '',
+    '[Effects library](../README.md) · [Kits](../kits.md) · [Aceternity catalogue](aceternity.md) · [Install guide](../install.md)', '',
+    '> [!NOTE]',
+    '> Motion Primitives is MIT licensed (Copyright (c) 2024 ibelick). The copy in `kits/motion-primitives/` keeps its licence file; keep that notice when a component is copied into a project.', '',
+    '## Install', '', '```bash',
+    '# from the vendored copy: copy components/<name>.tsx, lib/utils.ts and any hook it imports',
+    'npm i motion clsx tailwind-merge', '',
+    '# or from the official registry',
+    'npx motion-primitives@latest add <name>',
+    'npx shadcn@latest add "https://motion-primitives.com/c/<name>.json"', '```', '',
+    'Every component imports `cn` from `@/lib/utils`. A few also need `lucide-react`, `react-use-measure` or a hook from `hooks/`.', ''];
+  out.push('## Contents', '', ...order.map((c) => `- [${c}](#${anchor(c)})`), '');
+  for (const cat of order) {
+    const items = data.filter((d) => d.category === cat);
+    out.push(`## ${cat}`, '', '| Component | Use it for | Extra dependencies | Source |', '| --- | --- | --- | --- |');
+    for (const c of items) {
+      const extra = c.deps.filter((d) => d !== 'motion');
+      out.push(`| [${c.name}](${c.docs}) | ${esc(c.use)} | ${extra.length ? extra.join(', ') : 'none'} | [${c.name}.tsx](../${c.file}) |`);
+    }
+    out.push('');
+  }
+  out.push('---', '', NOTE, '');
+  outputs.set('effects/catalog/motion-primitives.md', out.join('\n'));
+}
+
+// ---------- Aceternity UI (free components, catalogue only) ----------
+{
+  const data = JSON.parse(readFileSync('effects/catalog/aceternity.json', 'utf8'));
+  const order = [...new Set(data.map((d) => d.category))];
+  const anchor = (c) => c.toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/ /g, '-');
+  const out = ['# Aceternity UI catalogue', '',
+    `> The ${data.length} free components of [Aceternity UI](https://ui.aceternity.com/components), read from the component pages, with their registry names. Bolder than Motion Primitives: beams, spotlights, 3D cards, globes, parallax heroes.`, '',
+    '[Effects library](../README.md) · [Kits](../kits.md) · [Motion Primitives catalogue](motion-primitives.md) · [Install guide](../install.md)', '',
+    '> [!IMPORTANT]',
+    '> Aceternity components are free to use in your own projects, but the licence does not allow redistributing their source. XSlop keeps this index and installs each component into the project from the official registry. Pro blocks and templates are not included.', '',
+    '## Install', '', '```bash',
+    'npm i motion clsx tailwind-merge',
+    'npx shadcn@latest add @aceternity/<registry-name>', '```', '',
+    'The registry name is in the Install column. "Copy from page" means the component has no registry entry; copy its code from the linked page.', '',
+    '**Renders with:** `CSS` and `Motion` are light, `SVG filter`, `Canvas` and `tsParticles` are medium, `WebGL` and `Three.js` are heavy (lazy-load them).', ''];
+  out.push('## Contents', '', ...order.map((c) => `- [${c}](#${anchor(c)})`), '');
+  for (const cat of order) {
+    const items = data.filter((d) => d.category === cat);
+    out.push(`## ${cat}`, '', '| Component | Use it for | Renders with | Install |', '| --- | --- | --- | --- |');
+    for (const c of items) out.push(`| [${esc(c.name)}](${c.url}) | ${esc(c.use)} | ${c.tech} | ${c.install ? '`' + c.install + '`' : 'copy from page'} |`);
+    out.push('');
+  }
+  out.push('---', '', NOTE, '');
+  outputs.set('effects/catalog/aceternity.md', out.join('\n'));
 }
 
 let stale = 0;

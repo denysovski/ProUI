@@ -22,6 +22,14 @@
     {
       "title": "web.dev: Animations and performance",
       "url": "https://web.dev/articles/animations-guide"
+    },
+    {
+      "title": "Motion Primitives",
+      "url": "https://motion-primitives.com"
+    },
+    {
+      "title": "Aceternity UI components",
+      "url": "https://ui.aceternity.com/components"
     }
   ],
   "related": [
@@ -146,6 +154,24 @@
       "kind": "dont",
       "title": "Redistributing component libraries",
       "text": "Never copy React Bits or 21st.dev component source into a template, kit or skill for sale or redistribution; install per project."
+    },
+    {
+      "id": "EF-20",
+      "kind": "do",
+      "title": "Respect the effect budget",
+      "text": "Count every effect that moves on its own, follows the pointer or renders on a canvas. \"A few\" or \"a couple\" means two at most on the whole site; a number the user gives is the number. List the planned effects with their places in the outline (`effects/kits.md`)."
+    },
+    {
+      "id": "EF-21",
+      "kind": "do",
+      "title": "One kit per site",
+      "text": "Pick one kit (Quiet, Modern dark, Modern light, Immersive, Retro, Playful) and take every effect from it, so motion, light and depth look like one family. When the kit has nothing for a section, build that section plain."
+    },
+    {
+      "id": "EF-22",
+      "kind": "dont",
+      "title": "Mixing effect families",
+      "text": "An Aceternity beam hero, a React Bits shader section, a 21st.dev 3D carousel and Motion Primitives cards on one page. Each library has its own motion language; mixed, the page looks assembled from demos."
     }
   ]
 }
