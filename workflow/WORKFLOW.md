@@ -1,17 +1,18 @@
 # XSlop workflow
 
 The order an agent follows when it builds a new website or a larger UI piece with XSlop. It turns a short
-request into a finished site through fixed stages, and it **stops at four checkpoints** to let the user choose.
+request into a finished site through fixed stages. It **always starts with intake questions** and then **stops at
+four checkpoints** to let the user choose.
 The agent never skips a checkpoint by guessing, unless the user explicitly says "decide yourself" or is not
 available (see "When the user is not there").
 
 ```
-Brief ──▶ Research ──▶ ◆ Direction ──▶ Design system ──▶ ◆ Type and colour ──▶ Structure ──▶ ◆ Outline
+◆ Intake questions ──▶ Brief ──▶ Research ──▶ ◆ Direction ──▶ Design system ──▶ ◆ Type and colour ──▶ Structure ──▶ ◆ Outline
                                                                                                     │
      Build the rest ◀── ◆ First screen ◀── Build the first screen ◀────────────────────────────────┘
           │
           ▼
-     Design passes:     Anti-slop and craft ─▶ Type and colour ─▶ Layout ─▶ Images ─▶ Navigation ─▶ Copy
+     Design passes:     Anti-slop and craft ─▶ Type and colour ─▶ Layout ─▶ Effects ─▶ Images ─▶ Navigation ─▶ Copy
      Behaviour passes:  Components ─▶ Forms ─▶ Product UI* ─▶ States ─▶ Motion ─▶ Accessibility
      Production passes: SEO ─▶ Localisation** ─▶ Performance ─▶ Security ─▶ Launch and legal
           │
@@ -31,6 +32,47 @@ is either met or recorded as not applicable with a reason.
 Everything decided along the way is written into a decisions file in the project
 (`xslop/DECISIONS.md`, template in `templates/workflow/DECISIONS.md`), so any later session or agent can continue
 exactly where the last one stopped.
+
+---
+
+## Stage: Intake questions
+
+Goal: know what kind of website the user imagines before anything else. This stage is never skipped. The
+agent asks with the question tool (multiple choice, the user can always type their own answer), at most four
+questions at a time, in two short rounds. Questions already answered by the request are not asked again.
+The full list with options is in `templates/workflow/INTAKE.md`.
+
+**Round one: the kind of site**
+
+| Question | Options |
+| --- | --- |
+| What kind of website is it? | business or service · shop · product or SaaS · portfolio or creative · personal or blog · dashboard or app |
+| What should it feel like? | modern · classic and timeless · old-school or retro · editorial or magazine · minimal · playful · luxury |
+| How much effect should it have? | none (calm and fast) · subtle (gentle motion) · modern (animation, gradients, one shader) · immersive 3D (3D scenes and scroll effects) |
+| Light, dark or colourful? | light · dark · colourful with gradients · let XSlop decide |
+
+**Round two: the practical side**
+
+| Question | Options |
+| --- | --- |
+| What is the one thing a visitor should do? | book or reserve · buy · contact or call · sign up · read or learn |
+| Which technology? | plain HTML and CSS · React / Next.js · already decided in the project · let XSlop decide |
+| What content exists? | texts and photos ready · some of it · nothing yet |
+| Languages and size? | one language, one page · one language, several pages · several languages |
+
+How the answers are used:
+
+- **Effect level** caps the effects (`effects/levels.md`, `EF-01`). Modern and immersive 3D pick components
+  from the effects library (`effects/presets.md`); React-only components need React (`effects/install.md`).
+- **Feel** narrows the style keywords offered at the direction checkpoint: modern → BLACK COAL, LIGHT BEAM,
+  PRODUCT CLEAN, VOID PARTICLES; classic → GALLERY CLASSIC, EDITORIAL CREAM, SWISS MINIMAL; old-school →
+  DITHER GRAIN, POSTER COLLAGE, RED SIGNAL; luxury → NOIR PORTRAIT, CHROME OBJECT; playful → PLAYFUL POP,
+  MEGA TYPE.
+- **Light, dark or colourful** sets the colour strategy question (`CL-01`, `CL-02`, `GR`).
+- Everything goes into `xslop/DECISIONS.md` under Intake.
+
+If the user says "decide yourself" or is not there, the agent picks the most likely answers from the request,
+writes them at the top of the decisions file, and continues.
 
 ---
 
@@ -226,6 +268,12 @@ why). Send the user one short line per finished pass.
 
 - Run `commands/layout.md`: squint test, spacing scale, rhythm, grid, container queries, safe areas.
 - Verify: screenshots at 360, 768, 1024, 1440, 1920 with a blurred copy for the squint test.
+
+### Pass: Effects (`EF`)
+
+- Every effect matches the intake effect level; one hero effect per page; components restyled to tokens.
+- Heavy effects lazy-loaded, paused off screen, pixel ratio capped, static fallback, reduced-motion version.
+- Verify: 4× CPU throttling recording; reduced motion on; WebGL off.
 
 ### Pass: Images and navigation (`IM`, `NV`)
 

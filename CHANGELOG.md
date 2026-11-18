@@ -1,5 +1,15 @@
 # Changelog
 
+## 3.1.0 (2026-11-18)
+
+- Effects library (`effects/`): effect levels, presets per style and request, install guide, a catalogue of
+  every React Bits component and a catalogue of 3D components from 21st.dev, built from JSON by
+  `scripts/build-effects.mjs`. Components are installed per project from their registries, not copied.
+- Effects and 3D Rulebook (`EF`).
+- Intake questions at the start of every workflow (`templates/workflow/INTAKE.md`): kind of site, feel,
+  effect level, colours, action, technology, content, languages.
+- `XSlop effects` command; workflow diagram and README updated.
+
 ## 3.0.0 (2026-11-17)
 
 - Rulebooks: every subject has its own folder in `rules/` with a `README.md` (Do and Don't tables, how to

@@ -7,6 +7,7 @@
 | Script | What it does |
 | --- | --- |
 | [xslop-scan.mjs](xslop-scan.mjs) | scans a website project for slop patterns and hard-rule violations |
+| [build-effects.mjs](build-effects.mjs) | builds the effect catalogues in `effects/catalog/` from their JSON; `--check` fails if out of date |
 | [build-rulebooks.mjs](build-rulebooks.mjs) | builds every rulebook README from its `rulebook.json`; `--check` validates IDs, references and freshness |
 
 ```bash

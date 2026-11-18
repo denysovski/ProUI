@@ -4,7 +4,7 @@
 
 [Back to XSlop](../README.md)
 
-![XSlop workflow](../assets/workflow.jpg)
+![XSlop workflow](../assets/workflow-v2.jpg)
 
 | File | What it covers |
 | --- | --- |

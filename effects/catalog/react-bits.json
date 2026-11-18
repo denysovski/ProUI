@@ -1,0 +1,3278 @@
+[
+ {
+  "category": "Animations",
+  "name": "AnimatedContent",
+  "description": "Wrapper that reveals its content on scroll with slides, blur, 3D tilts, soft wipes and staggered children.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/animations/animated-content",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "BlobCursor",
+  "description": "Liquid metal blob cursor that stretches, sloshes and bursts into droplets, in chrome, jelly, pearl or ink.",
+  "tech": "WebGL",
+  "deps": [
+   "three"
+  ],
+  "docs": "https://reactbits.dev/animations/blob-cursor",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "ClickSpark",
+  "description": "Bursts of sparks at every click, as dashes, comets, dots or stars, that can spill around buttons.",
+  "tech": "Canvas",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/click-spark",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "Crosshair",
+  "description": "Crosshair cursor with live coordinates that locks onto links and buttons and measures them.",
+  "tech": "Canvas",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/crosshair",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "Cubes",
+  "description": "A grid of outlined 3D cubes that turn to face the cursor, spin when swept and ripple on click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/cubes",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "ElectricBorder",
+  "description": "Wraps any element in crackling strands of current that surge near the cursor and leap off in sparks.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/electric-border",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "FadeContent",
+  "description": "Wrapper that fades content in on scroll, plain or out of focus, from washed-out gray, or through grain, mist and pixel blocks.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/animations/fade-content",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "GlareHover",
+  "description": "A glossy light streak that sweeps across any element in the direction the cursor moves.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/glare-hover",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "GradualBlur",
+  "description": "Progressive edge blur for headers, footers, captions and carousels, with an optional fade to color that hides at the ends of a scroll.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/gradual-blur",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "CrystalizedBall",
+  "description": "A glass ball with a crackling electric rim and glowing dust that swirls with the cursor.",
+  "tech": "WebGL",
+  "deps": [
+   "ogl"
+  ],
+  "docs": "https://reactbits.dev/animations/crystalized-ball",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "ElectricLogo",
+  "description": "Turns any logo into a living lightning outline, with arcs that leap off its edges.",
+  "tech": "WebGL",
+  "deps": [
+   "ogl"
+  ],
+  "docs": "https://reactbits.dev/animations/electric-logo",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "DitherVeil",
+  "description": "A 1-bit dithered photo the cursor burns through to full colour, knitting back cell by cell.",
+  "tech": "WebGL",
+  "deps": [
+   "ogl"
+  ],
+  "docs": "https://reactbits.dev/animations/dither-veil",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "GlowCursor",
+  "description": "Light that pours from the cursor, drifts softly through the air and cools as it fades.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/glow-cursor",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "GhostCursor",
+  "description": "A ghost of glowing smoke that floats after the cursor and curls away as it rises.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/ghost-cursor",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "ImageTrail",
+  "description": "Cursor-based image trail with several built-in variants.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/animations/image-trail",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "LogoLoop",
+  "description": "Continuously looping marquee of brand or tech logos with seamless repeat and hover pause.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/logo-loop",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "Magnet",
+  "description": "Elements magnetically ease toward the cursor then settle back with spring physics.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/magnet",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "MetaBalls",
+  "description": "Liquid metaballs that merge, stretch and pinch apart, with a cursor blob that pushes through them.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/meta-balls",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "Strands",
+  "description": "Spectral strands that twist inside a frosted glass orb and swell into a smooth bulge where they come together, like the new Siri.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/strands",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "MetallicPaint",
+  "description": "Liquid chrome that flows over your logo or text, adapted from Paper's Liquid Metal shader.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/metallic-paint",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "Noise",
+  "description": "Film grain overlay for photos and pages, from fine 35mm grain to dust, paper and TV static.",
+  "tech": "Canvas",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/noise",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "PixelTrail",
+  "description": "Glossy pixels melt into a fluid goo trail behind the cursor, with color shifts and drips.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/pixel-trail",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "PixelTransition",
+  "description": "Retro pixel dissolve that covers a card in solid pixels, swaps the content underneath and clears again.",
+  "tech": "Canvas",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/pixel-transition",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "PixelSwap",
+  "description": "New content builds in pixel by pixel in a springy wave that starts wherever the cursor enters.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/pixel-swap",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "Ribbons",
+  "description": "Springy ribbons that trail the cursor, in lens, comet or even shapes with an optional wave.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/ribbons",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "ShapeBlur",
+  "description": "A crisp logo or shape that drifts out of focus under the pointer like a camera lens.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/shape-blur",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "SplashCursor",
+  "description": "A fluid simulation that trails the cursor in swirling ink and bursts into a splash on click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/splash-cursor",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "StarBorder",
+  "description": "A twinkling star that travels the exact outline of any button, pill or card, trailing light and stardust.",
+  "tech": "Canvas",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/star-border",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "StickerPeel",
+  "description": "A die-cut sticker you can peel at any edge, drag, throw and swing, in gloss, matte or holographic finishes.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/sticker-peel",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "TargetCursor",
+  "description": "A reticle cursor whose corner brackets snap around targets, matching their shape.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/target-cursor",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "LaserFlow",
+  "description": "A beam of light that splashes onto your content and pours over its corners.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/laser-flow",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Antigravity",
+  "description": "A field of particles that lifts into a glowing ring around the cursor and bursts outward on click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/antigravity",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "OrbitImages",
+  "description": "SVG Path customizable orbiting images effect",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/orbit-images",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "AsciiText",
+  "description": "Waving ASCII text that tilts toward the pointer, scrambles on hover and ripples on click.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/ascii-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "BlurText",
+  "description": "Text starts blurred then crisply resolves for a soft-focus reveal effect.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/text-animations/blur-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "CircularText",
+  "description": "Layouts characters around a circle with optional rotation animation.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/text-animations/circular-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "CountUp",
+  "description": "Animated number counter supporting formatting and decimals.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/text-animations/count-up",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "CurvedLoop",
+  "description": "Flowing looping text path along a customizable curve with drag interaction.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/curved-loop",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "DecryptedText",
+  "description": "Hacker-style decryption cycling random glyphs until resolving to real text.",
+  "tech": "Canvas",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/text-animations/decrypted-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "FallingText",
+  "description": "Text that breaks apart and tumbles into a pile you can drag, throw and swipe, then flies back into place.",
+  "tech": "JS animation",
+  "deps": [
+   "matter-js"
+  ],
+  "docs": "https://reactbits.dev/text-animations/falling-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "FuzzyText",
+  "description": "Vibrating fuzzy text with controllable hover intensity.",
+  "tech": "Canvas",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/fuzzy-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "GlitchText",
+  "description": "RGB split and distortion glitch effect with jitter effects.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/glitch-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "GradientText",
+  "description": "Living gradients inside your text: a sliding sweep, a drifting mesh or a swinging conic fan.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/gradient-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "RotatingText",
+  "description": "Cycles through multiple phrases with 3D rotate / flip transitions.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/text-animations/rotating-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "ScrambledText",
+  "description": "Detects cursor position and applies a distortion effect to text.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/text-animations/scrambled-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "ScrollFloat",
+  "description": "Text gently floats / parallax shifts on scroll.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/text-animations/scroll-float",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "ScrollReveal",
+  "description": "Text gently unblurs and reveals on scroll.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/text-animations/scroll-reveal",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "ScrollVelocity",
+  "description": "Text marquee animatio - speed and distortion scale with user's scroll velocity.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/text-animations/scroll-velocity",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "ShinyText",
+  "description": "A sheen of light that sweeps across text, from soft bands to chrome-like reflections.",
+  "tech": "Canvas",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/shiny-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "SplitText",
+  "description": "Splits text into characters / words for staggered entrance animation.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap",
+   "@gsap/react"
+  ],
+  "docs": "https://reactbits.dev/text-animations/split-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "TextCursor",
+  "description": "Text or emoji that trails your cursor as stamped copies, a following chain or a ribbon of letters.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/text-cursor",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "TextPressure",
+  "description": "Characters scale / warp interactively based on pointer pressure zone.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/text-pressure",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "TextType",
+  "description": "Typewriter effect with blinking cursor and adjustable typing cadence.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/text-animations/text-type",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "TrueFocus",
+  "description": "Applies dynamic blur / clarity based over a series of words in order.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/text-animations/true-focus",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "VariableProximity",
+  "description": "Letter styling changes continuously with pointer distance mapping.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/variable-proximity",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "Shuffle",
+  "description": "Animated text reveal where characters shuffle before settling.",
+  "tech": "Canvas",
+  "deps": [
+   "gsap",
+   "@gsap/react"
+  ],
+  "docs": "https://reactbits.dev/text-animations/shuffle",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "ParticleText",
+  "description": "Text assembles from drifting particles that scatter and reform on demand.",
+  "tech": "Canvas",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/particle-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "SplitFlapText",
+  "description": "Mechanical split-flap departure board that clacks through to each new phrase.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/split-flap-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "WarpText",
+  "description": "WebGL warp that bends and refracts the text around the pointer.",
+  "tech": "WebGL",
+  "deps": [
+   "ogl"
+  ],
+  "docs": "https://reactbits.dev/text-animations/warp-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "TechText",
+  "description": "A wordmark whose letters turn into dashed vector paths under the cursor.",
+  "tech": "Canvas",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/tech-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "StrokeText",
+  "description": "Outlined letterforms draw themselves on, then flood with fill.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/text-animations/stroke-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "DepthText",
+  "description": "Layered extruded type with parallax that shifts against the pointer.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/depth-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "FoldText",
+  "description": "Lines unfold into place like creased paper opening flat.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/text-animations/fold-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "EchoText",
+  "description": "Ghosted copies trail behind the text and settle into a single word.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/text-animations/echo-text",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "MaskedHeading",
+  "description": "A headline with a drifting colour mesh or image showing through, revealed word by word.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/text-animations/masked-heading",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Text animations",
+  "name": "TextLoop",
+  "description": "A seamless text marquee that flows along curved SVG paths.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/text-animations/text-loop",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "AnimatedList",
+  "description": "A scrolling list whose rows spring into view, with a gliding selection and arrow keys.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/components/animated-list",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "BounceCards",
+  "description": "A fan of photo cards that bounce in, then spread apart and straighten the one you hover.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/bounce-cards",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "BubbleMenu",
+  "description": "Floating circular expanding menu with staggered item reveal.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/components/bubble-menu",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "CardNav",
+  "description": "A navigation bar that springs open into a row of cards, each with its own links.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/components/card-nav",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "CardSwap",
+  "description": "A 3D stack of cards that sends the front card to the back on a timer, or when you fling it.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/components/card-swap",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "Carousel",
+  "description": "Swipeable cards for feature tours, stories and galleries, with five transitions and an autoplay timer.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/components/carousel",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "ChromaGrid",
+  "description": "A grid of grayscale photo cards where a spotlight follows the cursor and brings back color.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/chroma-grid",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "HoloCard",
+  "description": "Collectible trading card with a real holographic foil and glitter that sparkles as it tilts.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/holo-card",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "CircularCarousel",
+  "description": "A 3D ring of images with bendable cards, momentum drag, snapping and click to focus.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/circular-carousel",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "FlexCarousel",
+  "description": "An infinite image row that flows through invisible liquid glass at its edges.",
+  "tech": "WebGL",
+  "deps": [
+   "ogl"
+  ],
+  "docs": "https://reactbits.dev/components/flex-carousel",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "DepthCarousel",
+  "description": "Cards recede into depth on a 3D rail, with drag, keyboard and auto-advance.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/components/depth-carousel",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "AccordionGallery",
+  "description": "Panels expand on hover or focus, revealing parallax imagery and captions.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/components/accordion-gallery",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "MorphSlider",
+  "description": "WebGL slider that melts between images with a displacement transition.",
+  "tech": "WebGL",
+  "deps": [
+   "ogl",
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/components/morph-slider",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "DriftWall",
+  "description": "An endless perspective wall of tiles drifting past, lifting on hover.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/drift-wall",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "CircularGallery",
+  "description": "A curved image gallery you can drag, scroll or tab through, with cards that open to the full image.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/circular-gallery",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "Counter",
+  "description": "An odometer-style number whose digits roll to every new value, with currency, separators and locales.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/counter",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "DecayCard",
+  "description": "An image card that tears and melts as the pointer moves, then pulls itself back together.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/decay-card",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "Dock",
+  "description": "macOS style dock with smooth magnification, launch bounce, badges and context menus.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/dock",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "DomeGallery",
+  "description": "Immersive 3D dome gallery projecting images on a hemispheric surface.",
+  "tech": "JS animation",
+  "deps": [
+   "@use-gesture/react"
+  ],
+  "docs": "https://reactbits.dev/components/dome-gallery",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "ElasticSlider",
+  "description": "A slider that grows under your cursor and stretches like rubber when pulled past either end, then springs back.",
+  "tech": "Canvas",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/components/elastic-slider",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "FlowingMenu",
+  "description": "A full-height menu with a liquid band that glides between rows and reveals a scrolling marquee of each item.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/components/flowing-menu",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "FluidGlass",
+  "description": "A 3D glass object that refracts your headline, image or video, follows the cursor and melts between shapes.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/fluid-glass",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "FlyingPosters",
+  "description": "3D posters that twist and flip as you scroll or drag through an endless column.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/flying-posters",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "Folder",
+  "description": "Folder that drops its flap open or swings open like a book, with pages you can pick.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/folder",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "GlassIcons",
+  "description": "Liquid glass icons that bend the color behind them, for app grids, docks and social links.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/glass-icons",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "GlassSurface",
+  "description": "Apple-style liquid glass that bends what is behind it, in a rounded panel or any logo shape.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/glass-surface",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "GooeyNav",
+  "description": "A navigation bar whose active pill breaks into goo that flows over to the item you pick.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/gooey-nav",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "InfiniteSpiral",
+  "description": "An endlessly looping 3D helix of images with adjustable motion, depth and spacing.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/infinite-spiral",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "InfiniteMenu",
+  "description": "A draggable sphere of image tiles that snaps the nearest one forward and shows its title.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/infinite-menu",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "Lanyard",
+  "description": "Swinging 3D badge on a stretchy woven band that you can drag, throw or click to flip.",
+  "tech": "WebGL",
+  "deps": [
+   "three"
+  ],
+  "docs": "https://reactbits.dev/components/lanyard",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "MagicBento",
+  "description": "A bento grid of feature cards with live artwork, edge light that follows the cursor and a click wave.",
+  "tech": "Canvas",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/components/magic-bento",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "Masonry",
+  "description": "A masonry gallery that springs into place, reflows as it resizes and opens images in a lightbox.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/components/masonry",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "ModelViewer",
+  "description": "A product-style 3D model viewer that frames itself and floats over a soft shadow.",
+  "tech": "WebGL",
+  "deps": [
+   "@react-three/fiber",
+   "@react-three/drei",
+   "three"
+  ],
+  "docs": "https://reactbits.dev/components/model-viewer",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "PillNav",
+  "description": "A pill navigation bar where a fill rises through each link as its label rolls over, with a sliding active dot.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/pill-nav",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "PixelCard",
+  "description": "A card that fills with twinkling pixels on hover, rippling out from the center or the cursor.",
+  "tech": "Canvas",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/pixel-card",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "ProfileCard",
+  "description": "A framed profile card that tilts toward the cursor, with holographic foil shining through a tiled pattern.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/components/profile-card",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "ScrollStack",
+  "description": "Cards pin and stack as you scroll, settling back into a dimmed deck with smooth, jitter-free motion.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/scroll-stack",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "SpotlightCard",
+  "description": "Card lit by a soft spotlight that follows the pointer, catches its edge and reaches nearby cards.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/spotlight-card",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "BorderGlow",
+  "description": "Glowing mesh-gradient border that follows cursor direction and intensifies near edges.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/border-glow",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "LineSidebar",
+  "description": "Static list navigation with a cursor-proximity effect that shifts and highlights nearby items.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/line-sidebar",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "OptionWheel",
+  "description": "Curved option picker that spins with scroll, drag or arrow keys, tilting items away.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/option-wheel",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "SpecularButton",
+  "description": "Glass button whose edge catches the light, with a highlight that glides toward the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/specular-button",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "ElasticMesh",
+  "description": "Turns text or any logo into a puffy inflated shape you can press, poke and stretch like jelly.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/elastic-mesh",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "RippleDistortion",
+  "description": "Pointer-driven water displacement that warps content and leaves a decaying wake.",
+  "tech": "WebGL",
+  "deps": [
+   "ogl"
+  ],
+  "docs": "https://reactbits.dev/animations/ripple-distortion",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "SwarmCursor",
+  "description": "A liquid swarm of particles that flows after the cursor, curls into eddies and pours around hovered buttons.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/swarm-cursor",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "HalftoneReveal",
+  "description": "A halftone print of an image whose dots swell into the real photo under the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/halftone-reveal",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "ScrollExpand",
+  "description": "A rounded media frame that grows to full bleed as it scrolls through the viewport.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/scroll-expand",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Animations",
+  "name": "CursorGrid",
+  "description": "A crisp grid whose cells light up and fade behind the cursor, with grid styles, tiles and click pulses.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/animations/cursor-grid",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "CurvedInput",
+  "description": "Arc-bent input bar with text, caret and submit button all following the curve.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/curved-input",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "Stack",
+  "description": "Pile of cards you can drag, flick or click through, with thrown cards tucking underneath.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/components/stack",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "Stepper",
+  "description": "A multi-step flow with a gliding step indicator, spring transitions and horizontal or vertical layouts.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/components/stepper",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "TiltedCard",
+  "description": "A 3D card that tilts toward the cursor, with glare, a soft shadow, floating layers and a flip side.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/components/tilted-card",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "StaggeredMenu",
+  "description": "Menu with staggered item animations and smooth transitions on open/close.",
+  "tech": "JS animation",
+  "deps": [
+   "gsap"
+  ],
+  "docs": "https://reactbits.dev/components/staggered-menu",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Components",
+  "name": "ReflectiveCard",
+  "description": "A metal ID card that reflects your camera or a looping video and catches the light as it tilts.",
+  "tech": "WebGL",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/components/reflective-card",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "PatternWaves",
+  "description": "A lit halftone surface of dots, lines or glyphs that moves like draped silk.",
+  "tech": "WebGL",
+  "deps": [
+   "ogl"
+  ],
+  "docs": "https://reactbits.dev/backgrounds/pattern-waves",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "MicroSlats",
+  "description": "A wall of tiny slats that becomes a rolling sea in perspective, with glinting crests.",
+  "tech": "WebGL",
+  "deps": [
+   "ogl"
+  ],
+  "docs": "https://reactbits.dev/backgrounds/micro-slats",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "ShapeWaves",
+  "description": "A field of triangles, circles and squares that brighten and grow along rolling waves.",
+  "tech": "WebGL",
+  "deps": [
+   "vgpu"
+  ],
+  "docs": "https://reactbits.dev/backgrounds/shape-waves",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "AeroShards",
+  "description": "Silk ribbons of thick glass shards streaming on layered depths among survey markers, catching light along their edges.",
+  "tech": "WebGL",
+  "deps": [
+   "vgpu"
+  ],
+  "docs": "https://reactbits.dev/backgrounds/aero-shards",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "GhostFibers",
+  "description": "Layered ribbons of fine glowing fibers that twist, fold and drift through soft depth of field.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/ghost-fibers",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Aurora",
+  "description": "A soft, calm aurora that flows across the top of the page and drifts toward the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/aurora",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Balatro",
+  "description": "The swirling Balatro paint shader, with crisp pixels, a cursor that stirs the paint and click whirlpools.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/balatro",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Ballpit",
+  "description": "A soft-lit pit of physics balls you can shove with the cursor, grab, throw and blast apart.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/ballpit",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Beams",
+  "description": "Glossy ribbons that ripple in the dark and catch the light, which follows your cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/beams",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "ColorBends",
+  "description": "Vibrant color bends with smooth flowing animation.",
+  "tech": "WebGL",
+  "deps": [
+   "three"
+  ],
+  "docs": "https://reactbits.dev/backgrounds/color-bends",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "CRTWarp",
+  "description": "A blocky plasma glowing on a curved CRT, with real scanlines, a phosphor mask, afterglow and a power-on intro.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/crt-warp",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "DarkVeil",
+  "description": "A silky veil of light that drifts in the dark and bends around the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/dark-veil",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Dither",
+  "description": "Retro dithered waves with Bayer, halftone, line and noise patterns, palettes and cursor trails.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/dither",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "DotField",
+  "description": "A gradient dot field seen through a lens that follows the cursor, magnifying, pinching or swirling the dots.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/dot-field",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "DotGrid",
+  "description": "A springy dot grid that the cursor flicks and drags through like jelly, with click shockwaves.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/dot-grid",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "FaultyTerminal",
+  "description": "A flickering CRT terminal of glowing glyphs, with phosphor trails under the cursor and glitches on click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/faulty-terminal",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Galaxy",
+  "description": "Endless flight through a twinkling starfield with warp jumps, cursor repulsion and star palettes.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/galaxy",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "GradientBlinds",
+  "description": "Satin gradient blinds lit by a spotlight that follows the cursor, swaying and turning toward the light.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/gradient-blinds",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Lightfall",
+  "description": "Streaks of light falling down a curved tunnel, bending around the cursor and stretching into warp trails on hold.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/lightfall",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "FluxLines",
+  "description": "Glowing flux lines tracing a churning magnetic fluid. The cursor magnet reveals and curls them.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/flux-lines",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Ferrofluid",
+  "description": "A glossy sea of magnetic fluid where swells of spikes roll in and the cursor raises a crown.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/ferrofluid",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "MoltenMetal",
+  "description": "Swirling caustic filaments with white-hot cores that heat up under the cursor and flare on click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/molten-metal",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "GradientWaves",
+  "description": "Lit satin waves rolling in from a hazy horizon, with a light that follows the cursor and swells on click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/gradient-waves",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "WebThreads",
+  "description": "Glowing threads woven through luminous pinch points that light up under the cursor and carry light on click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/web-threads",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Topography",
+  "description": "A 3D landscape drawn in glowing contour lines that rises under the cursor, with light pulses on click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/topography",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "LightTunnel",
+  "description": "A swirling fibre-optic tunnel where comets of light race into depth, steered by the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/light-tunnel",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "SlicedWaves",
+  "description": "Waves of colored light sliced into glowing bars, seen in depth with a focus that follows the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/sliced-waves",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "AcidSquares",
+  "description": "A rolling field of glossy squares that ripples under two drifting colored lights.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/acid-squares",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Scanner",
+  "description": "Glowing interference lines swept by a scan beam, with a CRT finish, cursor lensing and click pings.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/scanner",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "HoloMosaic",
+  "description": "Holographic tiles that split light into sweeping color as it moves, with glitter, a flip-in intro and click waves.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/holo-mosaic",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "GradientASCII",
+  "description": "Soft gradient glows drawn in ASCII characters that scramble under the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/gradient-ascii",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Grainient",
+  "description": "Flowing grainy gradients you can stir with the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/grainient",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "GridScan",
+  "description": "A 3D grid room swept by a scanning light that follows your view.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/grid-scan",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "GridDistortion",
+  "description": "Image background that breaks into a grid of blocks under the cursor and settles back into place.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/grid-distortion",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "GridMotion",
+  "description": "A tilted wall of drifting tiles that slides with the pointer and lights up where it rests.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/grid-motion",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Hyperspeed",
+  "description": "Night highway of glowing light trails on a winding road that warps into hyperspace while you hold.",
+  "tech": "WebGL",
+  "deps": [
+   "three"
+  ],
+  "docs": "https://reactbits.dev/backgrounds/hyperspeed",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Iridescence",
+  "description": "Liquid iridescent surface with shifting folds that you can stir with the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/iridescence",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "LetterGlitch",
+  "description": "A calm field of letters that flicker, scramble and glitch in color, stirred by the cursor and torn by clicks.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/letter-glitch",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "LightRays",
+  "description": "Volumetric light rays from any edge, with source glow and haze. The cursor steers the beam and casts a shadow.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/light-rays",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Lightning",
+  "description": "Crackling, branching lightning that bends toward the cursor and strikes wherever you click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/lightning",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "LineWaves",
+  "description": "Fine lines that flow in silky waves while a band of light drifts through them.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/line-waves",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "EvilEye",
+  "description": "Procedural evil eye shader with animated iris, slit pupil, and fiery outer glow.",
+  "tech": "WebGL",
+  "deps": [
+   "ogl"
+  ],
+  "docs": "https://reactbits.dev/backgrounds/evil-eye",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Radar",
+  "description": "A radar scope whose sweep leaves a phosphor afterglow and picks up moving contacts.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/radar",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "SoftAurora",
+  "description": "Soft aurora borealis shader with 3D Perlin noise and cosine gradient palettes.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/soft-aurora",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "MagicRings",
+  "description": "Glowing rings that pulse outward in a wave, swell toward the cursor and flare on click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/magic-rings",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "LiquidChrome",
+  "description": "Soft ribbons of liquid chrome that swirl through a dark pool, ripple under the cursor and catch the light as it moves.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/liquid-chrome",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Orb",
+  "description": "A glowing ring of swirling color that breathes, trails an orbiting light and reaches toward the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/orb",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Particles",
+  "description": "A drifting 3D field of particles with glow, twinkle, constellation lines and cursor interaction.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/particles",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "PixelBlast",
+  "description": "Dithered pixel clouds that drift, shimmer and light up under the cursor, with ripples, shapes and a perspective floor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/pixel-blast",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Plasma",
+  "description": "Folds of satin light twisting slowly through the dark, turning to follow the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/plasma",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "PlasmaWave",
+  "description": "Two ribbons of plasma curling through each other, with soft glow and white-hot cores.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/plasma-wave",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Prism",
+  "description": "Rotating prism of glowing spectral light with configurable shape, colors and motion.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/prism",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "PrismaticBurst",
+  "description": "A burst of prismatic light rays that leans toward the cursor and sends a wave of light outward on click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/prismatic-burst",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "RippleGrid",
+  "description": "A crisp grid that ripples like water, bending and lighting up as waves pass through it.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/ripple-grid",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Silk",
+  "description": "Flowing satin folds with glossy highlights that turn toward the cursor and ripple on click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/silk",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "SideRays",
+  "description": "Shafts of light that fan in from a corner or side, shimmer slowly and lean toward the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/side-rays",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "ShapeGrid",
+  "description": "A drifting grid of shapes that lights up under the cursor, with perspective tilt and rainbow trails.",
+  "tech": "Canvas",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/shape-grid",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Threads",
+  "description": "Flowing threads that fray apart and part around the cursor, from fine silk to contour lines.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/threads",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "Waves",
+  "description": "Dense flowing lines that sway like silk, bend around the cursor and spring back into place.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/waves",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "MagnetLines",
+  "description": "A field of magnetic lines that swing toward the cursor, ripple outward and spin with every click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/magnet-lines",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "LiquidEther",
+  "description": "A glowing liquid that swirls under the cursor, colored by how fast it flows.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/liquid-ether",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "FloatingLines",
+  "description": "Ribbons of fine glowing lines that drift in waves, part around the cursor and curl when clicked.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/floating-lines",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "LightPillar",
+  "description": "A swirling pillar of light that ignites on load, leans toward the cursor and surges on click.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/light-pillar",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Backgrounds",
+  "name": "PixelSnow",
+  "description": "Pixel-art snowflakes drifting down in layers of depth, brushed aside by the cursor.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/backgrounds/pixel-snow",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "SquishSwitch",
+  "description": "Switch whose thumb stretches with speed and squashes against the end when you flick it.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/micro/squish-switch",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "HoldButton",
+  "description": "Hold-to-confirm button whose liquid fill rises while pressed and snaps back if you let go.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/micro/hold-button",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "PeekRating",
+  "description": "Star rating that lifts a wave of stars up to the pointer, then commits with a pop on click.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/peek-rating",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "SpringCheck",
+  "description": "Checkbox row where one spring fills the box, draws the tick and strikes through the label.",
+  "tech": "JS animation",
+  "deps": [
+   "motion",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/spring-check",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "PulseHeart",
+  "description": "Like button that contracts to a dot, flips colour and pulses back as the count ticks over.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/pulse-heart",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "RubberSegment",
+  "description": "Segmented control whose rubber thumb stretches across the gap and squashes into place.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/micro/rubber-segment",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "SlideCommit",
+  "description": "Slide-to-confirm handle that spins while your action runs and unfurls into a done pill.",
+  "tech": "JS animation",
+  "deps": [
+   "motion",
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/slide-commit",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "WarmTooltip",
+  "description": "Tooltip group where the first label waits, then its siblings open instantly while warm.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/micro/warm-tooltip",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "FuseButton",
+  "description": "Action button whose done state carries an undo on a burning fuse.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/fuse-button",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "ScrubField",
+  "description": "Number chip you drag to scrub, with rubber-band limits and click to type.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/micro/scrub-field",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "LatticeLoader",
+  "description": "Agent status row with a lattice of cells that brighten in a wave beside a live stopwatch.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/micro/lattice-loader",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "DodgeField",
+  "description": "Wrapper that makes any child dodge the pointer until it relents and glides home.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/micro/dodge-field",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "CodeSlots",
+  "description": "One-time code input whose digits spring into their slots, with paste and SMS autofill.",
+  "tech": "JS animation",
+  "deps": [
+   "motion",
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/code-slots",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "WakeSlider",
+  "description": "Thumbless range slider of thin bars where drag speed raises a wake behind the handle.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/micro/wake-slider",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "CometDial",
+  "description": "Tick-ring dial you flick by angle, with a comet that streaks behind the lit head.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/micro/comet-dial",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "JellyRadio",
+  "description": "Radio group of chips where the chosen one swells and barges its neighbours outward.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/micro/jelly-radio",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "SwipeRow",
+  "description": "List row that swipes open to reveal actions and deletes on a full swipe.",
+  "tech": "JS animation",
+  "deps": [
+   "motion",
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/swipe-row",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "GlideSelect",
+  "description": "Select chip whose menu pops from its corner and whose highlight glides between rows.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/glide-select",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "StatusMark",
+  "description": "Agent task status glyph that morphs from an idle ring to a progress arc, then a check.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/micro/status-mark",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "CallChip",
+  "description": "Tool-call chip whose fill wipes across as a live timer ticks, ending green or shaking red.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/call-chip",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "BellToggle",
+  "description": "Pill toggle where a press rings the bell, crossfades the label and unfurls the pill.",
+  "tech": "JS animation",
+  "deps": [
+   "motion",
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/bell-toggle",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "SlingButton",
+  "description": "Send button you pull back like a slingshot and release to fire.",
+  "tech": "JS animation",
+  "deps": [
+   "motion",
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/sling-button",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "SwipeToast",
+  "description": "Toast that swipes down to dismiss and burns a thin fuse for its remaining time.",
+  "tech": "JS animation",
+  "deps": [
+   "motion",
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/swipe-toast",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "PromptBar",
+  "description": "Chat composer with @ sources, / commands, a model picker, dictation and attachments.",
+  "tech": "Canvas",
+  "deps": [
+   "motion",
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/prompt-bar",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "SloshGauge",
+  "description": "Tank gauge whose liquid chases the value, tilts as it moves and splashes when it fills.",
+  "tech": "CSS / DOM",
+  "deps": [],
+  "docs": "https://reactbits.dev/micro/slosh-gauge",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "VoicePill",
+  "description": "Mic button that swells into a capsule of live equalizer bars and a timer while recording.",
+  "tech": "Canvas",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/voice-pill",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "ThoughtLine",
+  "description": "Reasoning trace header with a live clock that folds its steps into one line when done.",
+  "tech": "JS animation",
+  "deps": [
+   "motion",
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/thought-line",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "RefineFrame",
+  "description": "Media frame that steps an image through generation stages without any layout shift.",
+  "tech": "Canvas",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/refine-frame",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "FolderFloat",
+  "description": "Folder whose notes spring out into a floating cloud when it opens on hover or press.",
+  "tech": "JS animation",
+  "deps": [
+   "matter-js"
+  ],
+  "docs": "https://reactbits.dev/micro/folder-float",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "BranchedMenu",
+  "description": "Collapsible menu that branches each section from a trunk and traces a line to your pick.",
+  "tech": "CSS / DOM",
+  "deps": [
+   "@hugeicons/react",
+   "@hugeicons/core-free-icons"
+  ],
+  "docs": "https://reactbits.dev/micro/branched-menu",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "FlipCard",
+  "description": "Two-faced card that flips in 3D on a click, drag or flick and settles on a spring.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/micro/flip-card",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "TearTicket",
+  "description": "Ticket whose perforated stub tears off by hand, fibre by fibre, and drops away.",
+  "tech": "JS animation",
+  "deps": [
+   "motion"
+  ],
+  "docs": "https://reactbits.dev/micro/tear-ticket",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "PaperCrumple",
+  "description": "An image that crumples into a textured 3D sheet while you hold and drag it.",
+  "tech": "WebGL",
+  "deps": [
+   "three"
+  ],
+  "docs": "https://reactbits.dev/micro/paper-crumple",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "Shredder",
+  "description": "A list with a paper shredder at the bottom that cuts dragged rows into curling strips.",
+  "tech": "Canvas",
+  "deps": [],
+  "docs": "https://reactbits.dev/micro/shredder",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ },
+ {
+  "category": "Micro",
+  "name": "FlyingButton",
+  "description": "Button that fires its thrusters on hover, lifts off on a WebGL smoke plume and lands back in its own cloud.",
+  "tech": "WebGL",
+  "deps": [],
+  "docs": "https://reactbits.dev/micro/flying-button",
+  "variants": [
+   "JS-CSS",
+   "JS-TW",
+   "TS-CSS",
+   "TS-TW"
+  ]
+ }
+]

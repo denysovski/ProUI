@@ -6,7 +6,24 @@ continues from here with `XSlop continue`.
 ## Status
 
 - Current stage:
-- Waiting for the user: yes / no — <question>
+- Waiting for the user: yes / no, and the question
+
+## Intake
+
+- Kind of site:
+- Feel (modern / classic / old-school / editorial / minimal / playful / luxury):
+- Effect level (none / subtle / modern / immersive 3D):
+- Light, dark or colourful:
+- Main action:
+- Technology:
+- Content available:
+- Languages and size:
+- Answered by: the user / inferred by the agent
+
+## Effects
+
+- Preset (`effects/presets.md`):
+- Components picked, with source and licence:
 
 ## Brief
 
@@ -49,6 +66,7 @@ Tick when every rule of the group is met or marked not applicable (with the reas
 - [ ] Anti-slop and craft (`SL`, `DC`), scan clean of hard rules
 - [ ] Type and colour (`TY`, `CL`, `GR`)
 - [ ] Layout (`LY`, `PL`)
+- [ ] Effects (`EF`), matching the intake effect level
 - [ ] Images and navigation (`IM`, `NV`)
 - [ ] Copy (`CP`)
 - [ ] Components and forms (`IX`, `FO`)

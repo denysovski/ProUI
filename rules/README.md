@@ -29,6 +29,7 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | [Typography Rulebook](typography/README.md) | `TY` | Choosing faces, setting a scale, measure, leading and tracking, and loading fonts properly. |
 | [Colour Rulebook](color/README.md) | `CL` | Colour strategy, roles, OKLCH, contrast and dark mode. |
 | [Gradients and Backgrounds Rulebook](gradients/README.md) | `GR` | When a gradient or background pattern has a job, and how to make one that looks intentional. |
+| [Effects and 3D Rulebook](effects/README.md) | `EF` | Modern effects, shaders and 3D from the effects library, used at the level the user chose and without hurting speed or access. |
 | [Layout and Spacing Rulebook](layout/README.md) | `LY` | Hierarchy, spacing scale, rhythm, grid and adapting to every screen. |
 | [Images and Media Rulebook](images/README.md) | `IM` | Photography, illustration, video and icons: what to use, how to prepare it, what never to ship. |
 
@@ -84,7 +85,7 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | [Persuade](../modes/persuade.md) | Anti-Slop, Craft, Typography, Colour, Copy | everything else |
 | [Operate](../modes/operate.md) | Dashboards, Components, Forms, States, Accessibility | everything else; Gradients rarely apply |
 | [Read](../modes/read.md) | Typography, Layout, Navigation, Accessibility, SEO | everything else |
-| [Experience](../modes/experience.md) | Anti-Slop, Motion, Images, Performance, Accessibility | everything else |
+| [Experience](../modes/experience.md) | Anti-Slop, Effects, Motion, Images, Performance, Accessibility | everything else |
 
 ## Adding or changing a rule
 

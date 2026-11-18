@@ -25,6 +25,7 @@ what it reports. Commands can be combined with overrides (`XSlop polish, keep SL
 | `XSlop typeset` | [typeset.md](typeset.md) | typography pass |
 | `XSlop colorize` | [colorize.md](colorize.md) | colour system pass, gradients included |
 | `XSlop layout` | [layout.md](layout.md) | spacing, grid and hierarchy pass |
+| `XSlop effects` | [effects.md](effects.md) | picks and installs effects from the effects library at the chosen level |
 | `XSlop animate` | [animate.md](animate.md) | motion plan and implementation |
 | `XSlop clarify` | [clarify.md](clarify.md) | copy and UX writing pass |
 | `XSlop dashboard` | [dashboard.md](dashboard.md) | builds or reviews product UI in operate mode |

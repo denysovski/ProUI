@@ -4,7 +4,7 @@
 
 ### Rulebooks and a workflow that teach AI agents to build websites that don't look AI-generated
 
-[What it is](#what-xslop-is) · [Contents](#contents) · [How rules work](#how-the-rules-work) · [Rulebooks](#rulebooks) · [Workflow](#how-the-workflow-works) · [Commands](#commands) · [Websites](#websites-used-in-the-workflow) · [Tools](#design-tools) · [Quick start](#quick-start)
+[What it is](#what-xslop-is) · [Contents](#contents) · [How rules work](#how-the-rules-work) · [Rulebooks](#rulebooks) · [Workflow](#how-the-workflow-works) · [Effects](#effects-library) · [Commands](#commands) · [Websites](#websites-used-in-the-workflow) · [Tools](#design-tools) · [Quick start](#quick-start)
 
 </div>
 
@@ -26,6 +26,7 @@ the first brief to a live site on GitHub.
 | --- | --- |
 | [`rules/`](rules/README.md) | the rulebooks, one folder per subject, each with Do and Don't tables |
 | [`workflow/`](workflow/README.md) | the step-by-step process and the GitHub guide |
+| [`effects/`](effects/README.md) | the effects library: 3D, shaders, animated text and components from React Bits and 21st.dev |
 | [`modes/`](modes/README.md) | four kinds of pages: persuade, operate, read, experience |
 | [`commands/`](commands/README.md) | short commands like `XSlop critique` or `XSlop ship` |
 | [`templates/`](templates/README.md) | files the agent fills in: brief, decisions, reports, GitHub setup |
@@ -64,6 +65,7 @@ ST-02
 | Design | [Typography Rulebook](rules/typography/README.md) | `TY` | fonts, scale, line length, spacing, loading |
 | Design | [Colour Rulebook](rules/color/README.md) | `CL` | colour strategy, roles, contrast, dark mode |
 | Design | [Gradients and Backgrounds Rulebook](rules/gradients/README.md) | `GR` | gradients and background patterns that look intentional |
+| Design | [Effects and 3D Rulebook](rules/effects/README.md) | `EF` | modern effects, shaders and 3D at the level the user chose |
 | Design | [Layout and Spacing Rulebook](rules/layout/README.md) | `LY` | hierarchy, spacing, grid, responsive structure |
 | Design | [Images and Media Rulebook](rules/images/README.md) | `IM` | photos, video, icons and how to prepare them |
 | Interaction | [Navigation Rulebook](rules/navigation/README.md) | `NV` | menus, wayfinding, search, footer, URLs |
@@ -87,14 +89,15 @@ See [how to add a rule](rules/README.md#adding-or-changing-a-rule).
 
 ## How the workflow works
 
-![XSlop workflow: brief, research, direction, design system, type and colour, structure, outline, first screen, approve, build, passes, quality and GitHub, handoff](assets/workflow.jpg)
+![XSlop workflow: brief, research, direction, design system, type and colour, structure, outline, first screen, approve, build, passes, quality and GitHub, handoff](assets/workflow-v2.jpg)
 
 | Step | What happens | You decide |
 | --- | --- | --- |
-| Brief | what the site is, for whom, the one main action | answer up to three questions |
+| Intake questions | the agent asks what kind of site you imagine | type of site, feel (modern, classic, old-school…), effect level, colours, action, tech, content |
+| Brief | what the site is, for whom, the one main action | answer what is still missing |
 | Research | the agent collects real designs from the websites below | |
 | Direction | three or four directions with screenshots | pick one or combine |
-| Design system | fonts, colours, gradient, spacing | pick type and colour |
+| Design system | fonts, colours, gradient, spacing, effects from the library | pick type, colour and effects |
 | Structure | pages and sections | confirm the outline |
 | First screen | the hero built for real | approve the look |
 | Build | every page, with real content | |
@@ -104,6 +107,26 @@ See [how to add a rule](rules/README.md#adding-or-changing-a-rule).
 
 Every decision is saved in `xslop/DECISIONS.md`, so a new session continues with `XSlop continue`.
 Full details: [workflow/WORKFLOW.md](workflow/WORKFLOW.md).
+
+## Effects library
+
+When you ask for a **modern web** or a **website with 3D effects**, XSlop asks how much effect you want and
+then picks ready components that fit the chosen style.
+
+| Effect level | You get |
+| --- | --- |
+| None | a calm, fast site with hover and focus feedback only |
+| Subtle | gentle motion, tilt and spotlight cards |
+| Modern | an animated headline, gradients or one shader background, one interactive section |
+| Immersive 3D | a 3D hero scene, 3D galleries, scroll-driven sequences |
+
+| Catalogue | What's in it |
+| --- | --- |
+| [React Bits](effects/catalog/react-bits.md) | every component of [reactbits.dev](https://reactbits.dev/get-started/index): shader backgrounds, cursor and reveal animations, animated text, galleries, cards, micro-interactions |
+| [21st.dev 3D](effects/catalog/21st-3d.md) | 3D heroes, shader backgrounds, globes, orbs, tilt cards, 3D carousels and scroll effects from [21st.dev](https://21st.dev/community/components/s/3d) |
+
+Components are installed into your project from their official registries with one command, then restyled to
+your colours and fonts. See [presets](effects/presets.md) and the [install guide](effects/install.md).
 
 ## Modes
 
@@ -121,12 +144,13 @@ Full details: [workflow/WORKFLOW.md](workflow/WORKFLOW.md).
 | `XSlop workflow: <request>` | builds a new site with checkpoints |
 | `XSlop critique` | design review with scores and prioritised issues |
 | `XSlop audit` | technical review: accessibility, performance, theming, responsive |
+| `XSlop effects` | picks and installs effects at the chosen level |
 | `XSlop polish` | refines an existing page without redesigning it |
 | `XSlop dashboard` | builds or reviews product UI |
 | `XSlop ship` | production checks, GitHub, deploy |
 | `XSlop continue` | resumes a project from its decisions file |
 
-All twenty commands: [commands/README.md](commands/README.md).
+All commands: [commands/README.md](commands/README.md).
 
 ## Websites used in the workflow
 
@@ -157,7 +181,8 @@ All twenty commands: [commands/README.md](commands/README.md).
 | --- | --- |
 | [Fontshare](https://fontshare.com) | free quality fonts |
 | [Made With GSAP](https://madewithgsap.com), [GSAP](https://gsap.com), [Lenis](https://lenis.dev) | animation and smooth scroll |
-| [React Bits](https://reactbits.dev), [21st.dev](https://21st.dev) | components to adapt |
+| [React Bits](https://reactbits.dev/get-started/index) | animated React components (full catalogue in the effects library) |
+| [21st.dev 3D components](https://21st.dev/community/components/s/3d) | community 3D components (catalogue in the effects library) |
 | [Codrops](https://tympanus.net/codrops) | creative effect tutorials |
 | [Spline](https://spline.design), [three.js](https://threejs.org) | 3D |
 | [SVGL](https://svgl.app), [SVG Doodles](https://svgdoodles.com) | brand logos and hand-drawn accents |
@@ -228,6 +253,7 @@ git clone https://github.com/denysovski/XSlop ~/.claude/skills/xslop
 
 ```text
 Build a website for a coffee shop using XSlop.
+Make me a modern web with 3D effects for my design studio.
 XSlop workflow, direction BLACK COAL: portfolio for a photographer.
 XSlop dashboard: analytics for a small e-shop.
 Use XSlop, but keep SL-25. Skip PE-10.

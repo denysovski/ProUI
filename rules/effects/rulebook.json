@@ -1,0 +1,151 @@
+{
+  "order": 5.5,
+  "prefix": "EF",
+  "folder": "effects",
+  "name": "Effects and 3D Rulebook",
+  "category": "Design",
+  "summary": "Modern effects, shaders and 3D from the effects library, used at the level the user chose and without hurting speed or access.",
+  "check": [
+    "Compare the effects on each page with the effect level in `xslop/DECISIONS.md`.",
+    "Lighthouse on mobile and a 4× CPU-throttled recording: no long frames while scrolling.",
+    "Turn on reduced motion and disable WebGL (`chrome://flags` or a browser without GPU): fallbacks appear."
+  ],
+  "sources": [
+    {
+      "title": "React Bits",
+      "url": "https://reactbits.dev/get-started/index"
+    },
+    {
+      "title": "21st.dev 3D components",
+      "url": "https://21st.dev/community/components/s/3d"
+    },
+    {
+      "title": "web.dev: Animations and performance",
+      "url": "https://web.dev/articles/animations-guide"
+    }
+  ],
+  "related": [
+    "SL-03",
+    "SL-19",
+    "SL-35",
+    "SL-54",
+    "SL-68",
+    "SL-72"
+  ],
+  "rules": [
+    {
+      "id": "EF-01",
+      "kind": "do",
+      "title": "Effects match the intake answer",
+      "text": "The effect level the user chose (none, subtle, modern, immersive 3D) caps every effect on the site. Never add 3D or shaders because the brief said \"modern\" without asking (`effects/levels.md`)."
+    },
+    {
+      "id": "EF-02",
+      "kind": "do",
+      "title": "One hero effect per page",
+      "text": "Each page has at most one leading effect, usually in the first screen. Everything else supports it quietly."
+    },
+    {
+      "id": "EF-03",
+      "kind": "do",
+      "title": "Restyle every component",
+      "text": "Installed components take the project's colours, radius, type and spacing tokens. Demo colours, demo text and demo images are removed."
+    },
+    {
+      "id": "EF-04",
+      "kind": "do",
+      "title": "Lazy-load heavy effects",
+      "text": "WebGL, three.js, R3F and Spline load after first paint (dynamic import, `ssr: false`, or on idle/visible), never in the critical path."
+    },
+    {
+      "id": "EF-05",
+      "kind": "do",
+      "title": "Render only while visible",
+      "text": "Animated canvases pause when off screen (IntersectionObserver) and when the tab is hidden."
+    },
+    {
+      "id": "EF-06",
+      "kind": "do",
+      "title": "Cap the pixel ratio",
+      "text": "GPU effects render at `devicePixelRatio` capped at 1.5–2, and lower on small screens."
+    },
+    {
+      "id": "EF-07",
+      "kind": "do",
+      "title": "A static fallback",
+      "text": "Every GPU effect has a poster image or CSS gradient that shows before it loads, if WebGL fails, and for reduced motion."
+    },
+    {
+      "id": "EF-08",
+      "kind": "do",
+      "title": "Reduced motion version",
+      "text": "With `prefers-reduced-motion`, effects stop or become a still frame; text animations show the final text immediately."
+    },
+    {
+      "id": "EF-09",
+      "kind": "do",
+      "title": "Content stays real HTML",
+      "text": "Headlines, labels and links inside effects remain selectable text in the DOM, readable by screen readers and search engines."
+    },
+    {
+      "id": "EF-10",
+      "kind": "do",
+      "title": "Test on a mid-range phone",
+      "text": "Effects are checked on a real mid-range Android phone or with 4× CPU throttling: smooth scroll, INP under 200 ms, no overheating."
+    },
+    {
+      "id": "EF-11",
+      "kind": "do",
+      "title": "Install from the official source",
+      "text": "Components come from their registry (React Bits, 21st.dev) with their licence checked and recorded in the project."
+    },
+    {
+      "id": "EF-12",
+      "kind": "dont",
+      "title": "Several GPU canvases at once",
+      "text": "Never more than one WebGL canvas visible at the same time."
+    },
+    {
+      "id": "EF-13",
+      "kind": "dont",
+      "title": "3D on every section",
+      "text": "No 3D object, shader or tilt in every section. Repetition turns a signature into noise."
+    },
+    {
+      "id": "EF-14",
+      "kind": "dont",
+      "title": "Effects behind body text",
+      "text": "No moving background behind paragraphs, forms or prices."
+    },
+    {
+      "id": "EF-15",
+      "kind": "dont",
+      "title": "Cursor replacements in working UI",
+      "text": "No custom cursors, cursor trails or blob cursors on forms, shops, dashboards or long reading pages."
+    },
+    {
+      "id": "EF-16",
+      "kind": "dont",
+      "title": "Effects as the LCP element",
+      "text": "The largest element of the first screen is never a canvas that waits for JavaScript; use a poster or real image."
+    },
+    {
+      "id": "EF-17",
+      "kind": "dont",
+      "title": "Demo content left in",
+      "text": "No placeholder images, sample names or lorem text from component demos."
+    },
+    {
+      "id": "EF-18",
+      "kind": "dont",
+      "title": "React only for an effect",
+      "text": "Do not add React to a non-React site just to run one animation; rebuild the idea with CSS, GSAP or three.js."
+    },
+    {
+      "id": "EF-19",
+      "kind": "dont",
+      "title": "Redistributing component libraries",
+      "text": "Never copy React Bits or 21st.dev component source into a template, kit or skill for sale or redistribution; install per project."
+    }
+  ]
+}

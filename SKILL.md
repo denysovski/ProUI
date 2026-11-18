@@ -1,6 +1,6 @@
 ---
 name: xslop
-description: Add-on rulebooks and workflow for building websites, landing pages and dashboards that look designed by a careful person, not generated. Use alongside a project's own brief when building, redesigning, critiquing or auditing a website or web app, or when the user says "XSlop", "no slop", "make it not look vibecoded", names an XSlop command (critique, audit, polish, ship…) or names rule IDs to include or skip.
+description: Add-on rulebooks, workflow and effects library for building websites, landing pages and dashboards that look designed by a careful person, not generated. Use alongside a project's own brief when building, redesigning, critiquing or auditing a website or web app, or when the user says "XSlop", "no slop", "make it not look vibecoded", names an XSlop command (critique, audit, polish, ship…), names rule IDs to include or skip, or asks for a "modern web", a "website with 3D effects", gradients or animations.
 ---
 
 # XSlop
@@ -29,6 +29,8 @@ first, then use XSlop to judge and improve, not to restyle it on your own initia
 | --- | --- |
 | The list of rulebooks and how IDs work | `rules/README.md` |
 | One rulebook (Do and Don't tables, how to check, sources) | `rules/<rulebook>/README.md` |
+| The questions to ask before anything else | `templates/workflow/INTAKE.md` |
+| Modern effects, 3D, shaders, animated components | `effects/` (levels, presets, install, React Bits and 21st.dev catalogues) |
 | What the visitor came to do | `modes/` (persuade, operate, read, experience) |
 | A short command (critique, audit, polish, ship…) | `commands/README.md` and the command's file |
 | Building a new site step by step | `workflow/WORKFLOW.md` |
@@ -53,6 +55,7 @@ first, then use XSlop to judge and improve, not to restyle it on your own initia
 | Typography Rulebook | `TY` | `rules/typography/README.md` |
 | Colour Rulebook | `CL` | `rules/color/README.md` |
 | Gradients and Backgrounds Rulebook | `GR` | `rules/gradients/README.md` |
+| Effects and 3D Rulebook | `EF` | `rules/effects/README.md` |
 | Layout and Spacing Rulebook | `LY` | `rules/layout/README.md` |
 | Images and Media Rulebook | `IM` | `rules/images/README.md` |
 | Navigation Rulebook | `NV` | `rules/navigation/README.md` |
@@ -75,10 +78,15 @@ first, then use XSlop to judge and improve, not to restyle it on your own initia
 
 When the user asks for a website (or says "use XSlop") without further instructions:
 
+- Ask the intake questions first (`templates/workflow/INTAKE.md`): kind of site, feel (modern, classic,
+  old-school…), effect level (none, subtle, modern, immersive 3D), colours, main action, technology, content.
+  Skip only what the request already answers, or everything if the user says "decide yourself".
+- "Modern web" or "3D effects" means: ask the effect level, then pick from `effects/presets.md` and the
+  catalogues, never more than the chosen level allows (`EF`).
 - Decide the mode of each surface (`modes/README.md`) and lead with the rulebooks that matter most for it
   (table in `rules/README.md`).
 - Apply every rulebook that applies: do every Do, avoid every Don't.
-- For a new site, follow `workflow/WORKFLOW.md`, which stops at four checkpoints for the user's choices.
+- For a new site, follow `workflow/WORKFLOW.md`, which starts with the intake questions and stops at four checkpoints for the user's choices.
 
 ## Overrides
 

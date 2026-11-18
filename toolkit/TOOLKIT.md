@@ -215,3 +215,7 @@ General rules for every resource here:
 | Free professional fonts | Fontshare | Google Fonts |
 | Real product patterns and flows | Mobbin | Refero, Page Flows |
 | Visual direction | Dark, Recent, Saved | Dribbble (concepts) |
+
+## Effects library
+
+Full catalogues of React Bits and 21st.dev 3D components, with effect levels, presets and install steps, live in [`effects/`](../effects/README.md).

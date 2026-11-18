@@ -111,7 +111,7 @@ function renderIndex() {
     '| [Persuade](../modes/persuade.md) | Anti-Slop, Craft, Typography, Colour, Copy | everything else |',
     '| [Operate](../modes/operate.md) | Dashboards, Components, Forms, States, Accessibility | everything else; Gradients rarely apply |',
     '| [Read](../modes/read.md) | Typography, Layout, Navigation, Accessibility, SEO | everything else |',
-    '| [Experience](../modes/experience.md) | Anti-Slop, Motion, Images, Performance, Accessibility | everything else |', '');
+    '| [Experience](../modes/experience.md) | Anti-Slop, Effects, Motion, Images, Performance, Accessibility | everything else |', '');
   out.push('## Adding or changing a rule', '', '```bash',
     '# 1. edit the rulebook data',
     'rules/<rulebook>/rulebook.json   # add an object to "rules" with the next free id',
