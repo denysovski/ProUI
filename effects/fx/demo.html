@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XSlop fx demo</title>
+<link rel="stylesheet" href="progressive-blur/progressive-blur.css">
+<link rel="stylesheet" href="scroll-fade/scroll-fade.css">
+<link rel="stylesheet" href="expand-panels/expand-panels.css">
+<link rel="stylesheet" href="stack-scroll/stack-scroll.css">
+<link rel="stylesheet" href="coverflow/coverflow.css">
+<link rel="stylesheet" href="theme-toggle/theme-toggle.css">
+<link rel="stylesheet" href="roll-link/roll-link.css">
+<link rel="stylesheet" href="gooey/gooey.css">
+<link rel="stylesheet" href="progress-ring/progress-ring.css">
+<link rel="stylesheet" href="count-up/count-up.css">
+<style>
+  :root { --bg: oklch(98.5% 0.003 250); --surface: oklch(95.5% 0.006 250); --text: oklch(22% 0.02 265); --muted: oklch(48% 0.02 265); --accent: oklch(55% 0.2 30); }
+  :root[data-theme="dark"] { --bg: oklch(16% 0.008 260); --surface: oklch(21% 0.01 260); --text: oklch(95% 0.005 260); --muted: oklch(72% 0.015 260); --accent: oklch(80% 0.17 145); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, sans-serif; }
+  header { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; position: sticky; top: 0; background: var(--bg); z-index: 30; }
+  nav { display: flex; gap: 24px; }
+  section { padding: 64px 24px; max-width: 1100px; margin: 0 auto; }
+  h2 { font-size: 1.5rem; margin: 0 0 8px; } p.note { color: var(--muted); margin: 0 0 24px; }
+  .media { position: relative; border-radius: 20px; overflow: hidden; height: 360px; }
+  .media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .media .cap { position: absolute; z-index: 2; left: 20px; bottom: 16px; color: #fff; font-weight: 600; }
+  .scroller { height: 260px; background: var(--surface); border-radius: 16px; padding: 0 20px; }
+  .stats { display: flex; gap: 48px; font-size: 2.5rem; font-weight: 700; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="xfx-goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="b"/><feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="g"/><feComposite in="SourceGraphic" in2="g" operator="atop"/></filter></svg>
+<header>
+  <strong>XSlop fx</strong>
+  <nav aria-label="Demo"><a class="xfx-roll" data-xfx-roll href="#panels">Panels</a><a class="xfx-roll" data-xfx-roll href="#stack">Stack</a><a class="xfx-roll" data-xfx-roll href="#cover">Coverflow</a></nav>
+  <button class="xfx-theme-toggle" data-xfx-theme-toggle aria-label="Dark theme" aria-pressed="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><g class="xfx-sun-rays"><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+  </button>
+</header>
+<main>
+<section><h2>Progressive blur</h2><p class="note">Blur ramps up toward the bottom edge behind the caption.</p>
+  <div class="media"><img data-ph="1" alt="Placeholder"><div class="xfx-pblur"><span></span><span></span><span></span><span></span><span></span></div><span class="cap">Caption over a soft blur</span></div></section>
+<section><h2>Scroll fade</h2><p class="note">Edges fade only where there is more to scroll.</p>
+  <div class="scroller xfx-scroll-fade" tabindex="0"><p>Line of content.</p><p>Line of content.</p><p>Line of content.</p><p>Line of content.</p><p>Line of content.</p><p>Line of content.</p><p>Line of content.</p><p>Line of content.</p><p>Line of content.</p><p>Line of content.</p></div></section>
+<section id="panels"><h2>Expanding panels</h2><p class="note">Hover or tab through; the panel widens and its title rises.</p>
+  <ul class="xfx-expand"><li><a href="#"><img data-ph="2" alt=""><p class="xfx-expand-title">Architecture</p></a></li><li><a href="#"><img data-ph="3" alt=""><p class="xfx-expand-title">Interiors</p></a></li><li><a href="#"><img data-ph="4" alt=""><p class="xfx-expand-title">Landscape</p></a></li><li><a href="#"><img data-ph="5" alt=""><p class="xfx-expand-title">Objects</p></a></li></ul></section>
+<section id="stack"><h2>Stack scroll</h2><p class="note">Each card sticks; the one underneath shrinks and dims.</p>
+  <ol class="xfx-stack" data-xfx-stack><li><img data-ph="6" alt=""></li><li><img data-ph="7" alt=""></li><li><img data-ph="8" alt=""></li><li><img data-ph="9" alt=""></li></ol></section>
+<section id="cover"><h2>Coverflow</h2><p class="note">Native scroll snap with a 3D tilt; swipe, drag the scrollbar, arrow keys or buttons.</p>
+  <div class="xfx-coverflow" data-xfx-coverflow><ul class="xfx-coverflow-track" aria-label="Gallery"><li><img data-ph="1" alt=""></li><li><img data-ph="2" alt=""></li><li><img data-ph="3" alt=""></li><li><img data-ph="4" alt=""></li><li><img data-ph="5" alt=""></li><li><img data-ph="6" alt=""></li></ul>
+  <div class="xfx-coverflow-nav"><button data-prev aria-label="Previous">←</button><button data-next aria-label="Next">→</button></div></div></section>
+<section><h2>Scroll draw</h2><p class="note">The line draws itself as the section passes.</p>
+  <svg data-xfx-draw viewBox="0 0 1000 200" width="100%" height="200"><path d="M10 150 C 200 10, 350 190, 500 100 S 800 10, 990 120" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></section>
+<section><h2>Count up</h2><p class="note">Final values are in the HTML.</p>
+  <div class="stats"><span data-xfx-count="12500" data-suffix="+">12 500+</span><span data-xfx-count="98.6" data-decimals="1" data-suffix=" %">98.6 %</span><span data-xfx-count="24" data-suffix=" h">24 h</span></div></section>
+<section><h2>Gooey</h2><p class="note">Shapes melt where they meet.</p>
+  <div class="xfx-gooey xfx-gooey-demo" aria-hidden="true"><span style="--i:0"></span><span style="--i:1"></span><span style="--i:2"></span><span style="--i:3"></span></div></section>
+<div style="height:40vh"></div>
+</main>
+<button class="xfx-ring" data-xfx-ring aria-label="Back to top"></button>
+<script>
+  // demo placeholders: generated gradients, no third-party images
+  const hues = [20, 60, 120, 170, 210, 250, 290, 330, 0];
+  document.querySelectorAll('img[data-ph]').forEach((img) => {
+    const h = hues[img.dataset.ph % hues.length];
+    img.src = 'data:image/svg+xml,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900"><defs><linearGradient id="g" x2="1" y2="1"><stop offset="0" stop-color="hsl(${h} 60% 62%)"/><stop offset="1" stop-color="hsl(${h + 40} 55% 30%)"/></linearGradient></defs><rect width="1200" height="900" fill="url(#g)"/><circle cx="820" cy="300" r="180" fill="hsl(${h} 80% 85% / .5)"/></svg>`);
+  });
+</script>
+<script src="roll-link/roll-link.js"></script>
+<script src="theme-toggle/theme-toggle.js"></script>
+<script src="stack-scroll/stack-scroll.js"></script>
+<script src="coverflow/coverflow.js"></script>
+<script src="scroll-draw/scroll-draw.js"></script>
+<script src="count-up/count-up.js"></script>
+<script src="progress-ring/progress-ring.js"></script>
+</body>
+</html>

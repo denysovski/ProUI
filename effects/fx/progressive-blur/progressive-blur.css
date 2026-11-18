@@ -1,0 +1,24 @@
+/* XSlop fx: progressive blur. Put .xfx-pblur inside a positioned container (image, scroller).
+   --xfx-pblur-size: height of the blurred band. --xfx-pblur-max: strongest blur. */
+.xfx-pblur {
+  --xfx-pblur-size: 30%;
+  --xfx-pblur-max: 12px;
+  position: absolute; inset: auto 0 0 0; height: var(--xfx-pblur-size);
+  pointer-events: none; z-index: 1;
+}
+.xfx-pblur[data-side="top"] { inset: 0 0 auto 0; transform: scaleY(-1); }
+.xfx-pblur > span {
+  position: absolute; inset: 0;
+  -webkit-backdrop-filter: blur(var(--b)); backdrop-filter: blur(var(--b));
+  -webkit-mask: linear-gradient(to bottom, transparent var(--from), #000 var(--to));
+          mask: linear-gradient(to bottom, transparent var(--from), #000 var(--to));
+}
+/* five layers, each blurrier and starting lower: the blur ramps up smoothly */
+.xfx-pblur > span:nth-child(1) { --b: calc(var(--xfx-pblur-max) * .06); --from: 0%;  --to: 30%; }
+.xfx-pblur > span:nth-child(2) { --b: calc(var(--xfx-pblur-max) * .15); --from: 15%; --to: 50%; }
+.xfx-pblur > span:nth-child(3) { --b: calc(var(--xfx-pblur-max) * .3);  --from: 35%; --to: 70%; }
+.xfx-pblur > span:nth-child(4) { --b: calc(var(--xfx-pblur-max) * .6);  --from: 55%; --to: 90%; }
+.xfx-pblur > span:nth-child(5) { --b: var(--xfx-pblur-max);              --from: 75%; --to: 100%; }
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .xfx-pblur { background: linear-gradient(to bottom, transparent, color-mix(in oklab, var(--bg, #000) 70%, transparent)); }
+}

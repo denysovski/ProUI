@@ -30,7 +30,7 @@ first, then use XSlop to judge and improve, not to restyle it on your own initia
 | The list of rulebooks and how IDs work | `rules/README.md` |
 | One rulebook (Do and Don't tables, how to check, sources) | `rules/<rulebook>/README.md` |
 | The questions to ask before anything else | `templates/workflow/INTAKE.md` |
-| Modern effects, 3D, shaders, animated components | `effects/` (levels, kits and budget, presets, install, catalogues for Motion Primitives, Aceternity, Skiper UI, React Bits, 21st.dev, and 133 GSAP motion recipes) |
+| Modern effects, 3D, shaders, animated components | `effects/` (levels, kits and budget, presets, install, catalogues for Motion Primitives, Aceternity, Skiper UI, React Bits, 21st.dev, 133 GSAP motion recipes, 20 motion briefs, and `effects/fx/` with 11 ready effects in plain HTML, CSS and JS) |
 | Sitemaps, landing page order, sections, pricing, contact, footers | `blueprints/` |
 | Choosing colours and typefaces | `blueprints/colour-schemes.md`, `blueprints/type-pairing.md` |
 | What the visitor came to do | `modes/` (persuade, operate, read, experience) |

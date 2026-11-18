@@ -2,7 +2,9 @@
 
 > 133 build prompts for the motion patterns seen on award-level studio sites, written for XSlop so any of them can be built from scratch with GSAP. The pattern list was studied from [Annnimate](https://annnimate.com/animations), a paid GSAP library; the prompts are our own descriptions, no code was copied. Each row links to the original for reference.
 
-[Effects library](../README.md) · [Kits](../kits.md) · [Sections](../../blueprints/sections.md) · [Motion Rulebook](../../rules/motion/README.md)
+[Effects library](../README.md) · [Kits](../kits.md) · [Motion briefs](../briefs/README.md) · [Sections](../../blueprints/sections.md) · [Motion Rulebook](../../rules/motion/README.md)
+
+Recipes with a link have a full [brief](../briefs/README.md): structure, timeline, options, accessibility and mobile behaviour.
 
 | Level | Recipes | Use |
 | --- | --- | --- |
@@ -56,22 +58,22 @@ mm.add('(prefers-reduced-motion: no-preference)', () => {
 
 | Recipe | Level | GSAP tools | Build prompt | Seen at |
 | --- | --- | --- | --- | --- |
-| **Line or word reveal** | Subtle | SplitText, ScrollTrigger | Split the headline into lines with masks; each line slides up from below its mask with a 0.08 s stagger when 70 % in view. Run once. | [annnimate](https://annnimate.com/animations/text-reveal) |
+| **[Line or word reveal](../briefs/text-reveal.md)** | Subtle | SplitText, ScrollTrigger | Split the headline into lines with masks; each line slides up from below its mask with a 0.08 s stagger when 70 % in view. Run once. | [annnimate](https://annnimate.com/animations/text-reveal) |
 | **Character fade-in** | Subtle | SplitText, ScrollTrigger | Split into characters and fade opacity only, in order or shuffled, scrubbed to the first half of the section. No movement, so it suits calm brands. | [annnimate](https://annnimate.com/animations/character-appear) |
 | **Cinematic title** | Modern | SplitText, ScrollTrigger | Large title lines enter alternately from left and right with a long expo ease, like film credits. Lines, words or chars, each with its own stagger. | [annnimate](https://annnimate.com/animations/cinematic-text) |
 | **Popping letters** | Modern | SplitText, ScrollTrigger | Characters scale from 0 with a small random rotation and a back-out bounce, origin top-left. For playful one-line statements only. | [annnimate](https://annnimate.com/animations/popping-text) |
 | **3D folding letters** | Modern | SplitText, ScrollTrigger | Characters rotate in on the X axis from 90 degrees with perspective on the parent, scrubbed to scroll. Keep to one headline. | [annnimate](https://annnimate.com/animations/folding-text) |
 | **Text scramble** | Subtle | ScrambleText or custom | Characters cycle through a charset (A-Z, 0-9, binary) and lock in left to right. Trigger on view, hover or click. Real text in an aria-label. | [annnimate](https://annnimate.com/animations/text-scramble) |
-| **Two-colour scramble** | Subtle | ScrambleText, ScrollTrigger | Scramble first in the accent colour, then settle into the text colour. Stack the final text under the scramble span so the layout never shifts. | [annnimate](https://annnimate.com/animations/dual-scramble) |
+| **[Two-colour scramble](../briefs/dual-scramble.md)** | Subtle | ScrambleText, ScrollTrigger | Scramble first in the accent colour, then settle into the text colour. Stack the final text under the scramble span so the layout never shifts. | [annnimate](https://annnimate.com/animations/dual-scramble) |
 | **Typewriter** | Subtle | GSAP timeline | Type a phrase character by character, pause, delete, type the next. Timeline only, no intervals. Caret blinks with CSS. Stop after one cycle when reduced motion is on. | [annnimate](https://annnimate.com/animations/typewriter) |
 | **Shimmer wave** | Subtle | SplitText | A highlight travels across the characters as a wave of brightness and slight lift. Loop slowly or once on view. | [annnimate](https://annnimate.com/animations/text-shimmer-wave) |
 | **Fill on scroll** | Subtle | SplitText, ScrollTrigger | Big headline starts as outline or muted colour and fills line by line with scroll; an accent band rides the edge of the fill. | [annnimate](https://annnimate.com/animations/text-fill-wave) |
 | **Word focus brackets** | Modern | SplitText, ScrollTrigger | Four corner brackets move from word to word and resize to each; the framed word stays sharp, the rest blur slightly. Scroll or hover drives it. | [annnimate](https://annnimate.com/animations/focus-text) |
-| **Word wheel** | Modern | ScrollTrigger | Words on a vertical wheel with 3D rotateX; the centre word is full opacity, the others fade with distance. Scroll-driven or autoplay that lands on the last word. | [annnimate](https://annnimate.com/animations/rotating-words) |
+| **[Word wheel](../briefs/rotating-words.md)** | Modern | ScrollTrigger | Words on a vertical wheel with 3D rotateX; the centre word is full opacity, the others fade with distance. Scroll-driven or autoplay that lands on the last word. | [annnimate](https://annnimate.com/animations/rotating-words) |
 | **Rolling first word** | Modern | ScrollTrigger, Inertia | One word in a sentence rolls through a looping list as you scroll while the rest of the sentence stays still; the active word gets the accent. | [annnimate](https://annnimate.com/animations/word-roller) |
 | **Typed text morph** | Subtle | Flip | As the user types, letters that shift position glide to their new place with Flip. For search fields and live headlines. | [annnimate](https://annnimate.com/animations/text-morph) |
 | **Velocity type** | Modern | ScrollTrigger | Variable font axes (weight, width, slant) follow scroll velocity, then ease back to rest. Needs a variable font; clamp the range so text stays readable. | [annnimate](https://annnimate.com/animations/velocity-type) |
-| **Echo headline** | Immersive | ScrollTrigger | One word with stacked copies behind it in 3D that spread out with scroll and fade with depth. Copies are aria-hidden. | [annnimate](https://annnimate.com/animations/echo-headline) |
+| **[Echo headline](../briefs/echo-headline.md)** | Immersive | ScrollTrigger | One word with stacked copies behind it in 3D that spread out with scroll and fade with depth. Copies are aria-hidden. | [annnimate](https://annnimate.com/animations/echo-headline) |
 | **Crossover text** | Modern | ScrollTrigger | A big headline changes colour exactly where images pass under it, using a duplicated layer clipped to the image bounds. | [annnimate](https://annnimate.com/animations/crossover-text) |
 | **Text on a hidden path** | Modern | ScrollTrigger | Words appear one by one along an invisible SVG curve as you scroll; only the words show the line. | [annnimate](https://annnimate.com/animations/text-on-path) |
 | **Parting text** | Modern | ScrollTrigger | A fixed image in the centre while manifesto lines scroll past; each line splits around the image and closes after it. | [annnimate](https://annnimate.com/animations/parting-text) |
@@ -80,7 +82,7 @@ mm.add('(prefers-reduced-motion: no-preference)', () => {
 | **Images inside a headline** | Modern | SplitText, ScrollTrigger | Small photos sit between words; on view the lines rise and the photo slots widen, pushing words apart. | [annnimate](https://annnimate.com/animations/inline-image-headline) |
 | **Block wipe text** | Subtle | SplitText, ScrollTrigger | Each line is covered by a rounded block that shrinks to zero width while the text slides in behind it. | [annnimate](https://annnimate.com/animations/rectangle-text-reveal) |
 | **Scribble highlight** | Subtle | ScrollTrigger, DrawSVG | A hand-drawn circle or underline draws around one key word when the headline enters. One word per page. | [annnimate](https://annnimate.com/animations/scribble-highlighter) |
-| **Split-flap board** | Modern | GSAP | Tiles flip through characters like a station board, rows cascading left to right, each tile landing on its own beat. For scores, times, launches. | [annnimate](https://annnimate.com/animations/split-flap-board) |
+| **[Split-flap board](../briefs/split-flap-board.md)** | Modern | GSAP | Tiles flip through characters like a station board, rows cascading left to right, each tile landing on its own beat. For scores, times, launches. | [annnimate](https://annnimate.com/animations/split-flap-board) |
 | **Directional underline** | Subtle | CSS or GSAP | Underline grows from the left on hover and leaves to the right on exit. The default link hover for most sites. | [annnimate](https://annnimate.com/animations/text-underline) |
 | **Text split by image** | Immersive | ScrollTrigger | An image grows from zero between two halves of a headline and pushes them apart; scrub or on enter. Hero only. | [annnimate](https://annnimate.com/animations/text-split-zoom) |
 
@@ -93,7 +95,7 @@ mm.add('(prefers-reduced-motion: no-preference)', () => {
 | **Section colour change** | Subtle | ScrollTrigger | Page background and text colours tween as zones enter, instead of hard section breaks. Check contrast at every step. | [annnimate](https://annnimate.com/animations/background-color) |
 | **Reading progress** | Subtle | ScrollTrigger | Ring with percentage, thin bar, or text counter for long pages and articles. | [annnimate](https://annnimate.com/animations/progress) |
 | **Hide-on-scroll header** | Subtle | ScrollTrigger | Header hides when scrolling down past a threshold, shows on scroll up and always shows near the top and when focus is inside it. | [annnimate](https://annnimate.com/animations/hide-header) |
-| **Stacking cards** | Modern | ScrollTrigger | Pinned frame; each new card slides up over the last, which scales back, tilts and dims; a small counter jumps to any card. Text arrives after its card settles. | [annnimate](https://annnimate.com/animations/stacking-cards) |
+| **[Stacking cards](../briefs/stacking-cards.md)** | Modern | ScrollTrigger | Pinned frame; each new card slides up over the last, which scales back, tilts and dims; a small counter jumps to any card. Text arrives after its card settles. | [annnimate](https://annnimate.com/animations/stacking-cards) |
 | **Tilted panel stands up** | Modern | ScrollTrigger | An image lies tilted back under the headline and rotates upright to fill the grid as you scroll; headline lifts away. | [annnimate](https://annnimate.com/animations/container-scroll) |
 | **Media breaks out** | Modern | ScrollTrigger | A video band sits in the grid beside copy, then grows to full bleed with scroll. For showreels and case study intros. | [annnimate](https://annnimate.com/animations/breakout-media) |
 | **Capsule hero** | Immersive | ScrollTrigger, SplitText | Two giant letters part to reveal a video in a rounded capsule; click expands it to full screen and back. | [annnimate](https://annnimate.com/animations/capsule-hero) |
@@ -109,7 +111,7 @@ mm.add('(prefers-reduced-motion: no-preference)', () => {
 | **Step wipe** | Modern | ScrollTrigger, SplitText | Tall section where background and centre card clip open together for each product step; title, number and text swap in sync. | [annnimate](https://annnimate.com/animations/step-wipe) |
 | **Horizontal case study** | Modern | ScrollTrigger, SplitText | Vertical scroll drives a sideways strip: intro, images of different sizes, note, quote; each panel reveals once. Stacks into a column on phones. | [annnimate](https://annnimate.com/animations/horizontal-case-study) |
 | **Pinned process list** | Modern | ScrollTrigger | Steps come forward one at a time while a thin line grows to each and the image beside it changes. Click a step to jump. | [annnimate](https://annnimate.com/animations/process-list) |
-| **Process rail with bead** | Modern | ScrollTrigger, MotionPath, DrawSVG | A bead travels along a line drawing it, each step lights up when reached and its image fades in. | [annnimate](https://annnimate.com/animations/process-rail) |
+| **[Process rail with bead](../briefs/process-rail.md)** | Modern | ScrollTrigger, MotionPath, DrawSVG | A bead travels along a line drawing it, each step lights up when reached and its image fades in. | [annnimate](https://annnimate.com/animations/process-rail) |
 | **Orb process** | Immersive | ScrollTrigger | Ring of step names around a glossy orb; the ring turns each step to the top and the orb shifts to that step's colours. | [annnimate](https://annnimate.com/animations/orb-process) |
 | **Sticky chapter rail** | Subtle | ScrollTrigger | Chapter names pinned on the left with scroll-spy; a hairline indicator slides and resizes to the active one. | [annnimate](https://annnimate.com/animations/feature-rail) |
 | **Timeline dial** | Modern | ScrollTrigger, Inertia | Months or years around a large dial with ticks; scroll clicks it round one step with an elastic landing. Year in review, company history. | [annnimate](https://annnimate.com/animations/year-dial) |
@@ -120,7 +122,7 @@ mm.add('(prefers-reduced-motion: no-preference)', () => {
 | **Torn paper transition** | Immersive | ScrollTrigger, three.js | The first image tears away bottom up to paper, the paper tears onto the next image. | [annnimate](https://annnimate.com/animations/torn-paper-transition) |
 | **Fog transition** | Immersive | ScrollTrigger, three.js | A fog bank rolls up and swallows one scene, then clears onto another; headline fades in the fog too. | [annnimate](https://annnimate.com/animations/fog-reveal) |
 | **Bending image field** | Immersive | ScrollTrigger, three.js | Photos at different depths bend like fabric with scroll speed and flatten when still. | [annnimate](https://annnimate.com/animations/scroll-mesh-bend) |
-| **Images fly toward viewer** | Immersive | ScrollTrigger | Images move from deep in the page toward the viewer around a clear centre for content; drifts with the cursor. | [annnimate](https://annnimate.com/animations/image-fly-in) |
+| **[Images fly toward viewer](../briefs/image-fly-in.md)** | Immersive | ScrollTrigger | Images move from deep in the page toward the viewer around a clear centre for content; drifts with the cursor. | [annnimate](https://annnimate.com/animations/image-fly-in) |
 
 ## Galleries and sliders
 
@@ -130,13 +132,13 @@ mm.add('(prefers-reduced-motion: no-preference)', () => {
 | **Parallax slider** | Modern | Draggable, Inertia | Looping slides with inner layers at different speeds; autoplay pauses on hover. | [annnimate](https://annnimate.com/animations/infinite-parallax-slider) |
 | **Infinite drag grid** | Modern | Draggable | Grid you drag in any direction with momentum and seamless wrap. Portfolios and galleries. | [annnimate](https://annnimate.com/animations/infinite-draggable-grid) |
 | **Wipe slider** | Modern | SplitText | Full-screen hero slides; each change wipes the background from the travel direction while copy masks out and in. | [annnimate](https://annnimate.com/animations/wipe-slider) |
-| **Curtain slider** | Modern | GSAP | The outgoing image splits into columns that wipe away one after another; arrows, drag and keys. | [annnimate](https://annnimate.com/animations/curtain-slider) |
-| **Scale slider** | Modern | Draggable, Inertia | Square photos shrink toward one edge, the largest cropped by the screen; drag, throw or scroll. | [annnimate](https://annnimate.com/animations/scale-slider) |
+| **[Curtain slider](../briefs/curtain-slider.md)** | Modern | GSAP | The outgoing image splits into columns that wipe away one after another; arrows, drag and keys. | [annnimate](https://annnimate.com/animations/curtain-slider) |
+| **[Scale slider](../briefs/scale-slider.md)** | Modern | Draggable, Inertia | Square photos shrink toward one edge, the largest cropped by the screen; drag, throw or scroll. | [annnimate](https://annnimate.com/animations/scale-slider) |
 | **Lens rail** | Modern | Draggable, Inertia | Strip of photos dragged sideways; the one passing the centre grows like under a magnifier. | [annnimate](https://annnimate.com/animations/lens-rail) |
 | **Expanding strip** | Subtle | GSAP | Tall panels edge to edge; the hovered one widens and its title rises, the others compress. | [annnimate](https://annnimate.com/animations/expanding-strip) |
 | **Card fan** | Subtle | GSAP | A stack of cards fans into an arc on hover; the card under the pointer lifts forward. | [annnimate](https://annnimate.com/animations/card-fan) |
 | **Photo stack** | Modern | MotionPath | A stack unfolds into a strip and a featured image on click; clicking a thumbnail swaps the feature. | [annnimate](https://annnimate.com/animations/photo-stack-gallery) |
-| **Diagonal gallery** | Modern | ScrollTrigger | Photos queue on a diagonal; each scroll step moves the current one to a thumbnail top-left and grows the next into the centre. | [annnimate](https://annnimate.com/animations/diagonal-gallery) |
+| **[Diagonal gallery](../briefs/diagonal-gallery.md)** | Modern | ScrollTrigger | Photos queue on a diagonal; each scroll step moves the current one to a thumbnail top-left and grows the next into the centre. | [annnimate](https://annnimate.com/animations/diagonal-gallery) |
 | **Radial ring** | Modern | GSAP | A slowly turning ring of cards sized to fit the screen; behind a hero or CTA. | [annnimate](https://annnimate.com/animations/radial-gallery) |
 | **Spiral gallery** | Immersive | three.js, Draggable | Cards on an endless vertical helix; drag to spin with momentum. | [annnimate](https://annnimate.com/animations/spiral-gallery) |
 | **Drifting card deck** | Immersive | three.js, Draggable, Inertia | WebGL deck fanned on a diagonal that drifts; cards part around the cursor and the hovered one updates a detail panel. | [annnimate](https://annnimate.com/animations/drift-gallery) |
@@ -154,16 +156,16 @@ mm.add('(prefers-reduced-motion: no-preference)', () => {
 
 | Recipe | Level | GSAP tools | Build prompt | Seen at |
 | --- | --- | --- | --- | --- |
-| **Header folds into a pill** | Subtle | ScrollTrigger | Wide header over the hero that shrinks into a floating pill after the first scroll and opens again at the top. | [annnimate](https://annnimate.com/animations/floating-navbar) |
+| **[Header folds into a pill](../briefs/floating-navbar.md)** | Subtle | ScrollTrigger | Wide header over the hero that shrinks into a floating pill after the first scroll and opens again at the top. | [annnimate](https://annnimate.com/animations/floating-navbar) |
 | **Pill to menu panel** | Modern | GSAP | A small Menu pill grows into the whole navigation panel; links cascade in and roll on hover. | [annnimate](https://annnimate.com/animations/morphing-pill-menu) |
 | **Section island** | Modern | ScrollTrigger | A capsule at the top names the current section; click grows it into the section list and a short preview. | [annnimate](https://annnimate.com/animations/morphing-island) |
 | **Page turns into menu** | Modern | GSAP | The page slides, rotates and scales away while the menu overlay slides in; burger morphs to X; image per link. | [annnimate](https://annnimate.com/animations/fullscreen-slide-menu) |
-| **Two-panel drawer** | Subtle | GSAP | Drawer reveals with clip-path; hovering a category opens a second panel beside it; drill-down on mobile. | [annnimate](https://annnimate.com/animations/multi-level-drawer-menu) |
+| **[Two-panel drawer](../briefs/multi-level-drawer-menu.md)** | Subtle | GSAP | Drawer reveals with clip-path; hovering a category opens a second panel beside it; drill-down on mobile. | [annnimate](https://annnimate.com/animations/multi-level-drawer-menu) |
 | **Morphing mega menu** | Subtle | GSAP | One dropdown container that changes height between groups, content enters from the side you came from, with hover intent. | [annnimate](https://annnimate.com/animations/mega-menu) |
 | **Gooey action menu** | Modern | SVG filter | A floating button that fans out actions joined by a gooey filter; arc, line, grid or radial. | [annnimate](https://annnimate.com/animations/gooey-menu) |
 | **Footer with dock** | Modern | ScrollTrigger, SplitText | Footer uncovered with parallax, columns rise through masks, a glass pill morphs into quick navigation. | [annnimate](https://annnimate.com/animations/dock-footer) |
 | **Glow footer** | Subtle | ScrollTrigger, SplitText | Footer with a soft glow from the bottom edge and a wordmark sized to the full width; links with a slide underline. | [annnimate](https://annnimate.com/animations/gradient-footer) |
-| **Proximity index** | Modern | GSAP | List of projects whose brightness falls off with distance from the pointer; a preview card wipes to the hovered project. | [annnimate](https://annnimate.com/animations/hover-index) |
+| **[Proximity index](../briefs/hover-index.md)** | Modern | GSAP | List of projects whose brightness falls off with distance from the pointer; a preview card wipes to the hovered project. | [annnimate](https://annnimate.com/animations/hover-index) |
 | **Index wipe** | Modern | GSAP | Full-screen list where hovering a name wipes its photo into the background from the pointer direction. | [annnimate](https://annnimate.com/animations/index-wipe) |
 | **Liquid list hover** | Subtle | GSAP | Rows fill with a curved shape from the side the pointer enters. | [annnimate](https://annnimate.com/animations/hoverable-list) |
 | **List with following image** | Subtle | GSAP | Hovering a row shows its image near the pointer, eased; desktop only. | [annnimate](https://annnimate.com/animations/image-follow-list) |
@@ -184,11 +186,11 @@ mm.add('(prefers-reduced-motion: no-preference)', () => {
 
 | Recipe | Level | GSAP tools | Build prompt | Seen at |
 | --- | --- | --- | --- | --- |
-| **Accordion** | Subtle | SplitText | Animated height with the answer's lines rising through masks; single or multiple open. | [annnimate](https://annnimate.com/animations/accordion) |
+| **[Accordion](../briefs/accordion.md)** | Subtle | SplitText | Animated height with the answer's lines rising through masks; single or multiple open. | [annnimate](https://annnimate.com/animations/accordion) |
 | **Liquid accordion** | Modern | GSAP | The answer pours out of the question pill and settles into a panel. | [annnimate](https://annnimate.com/animations/morphing-accordion) |
 | **Tabs joined to content** | Modern | GSAP | The active tab pill is joined to the panel by a curved neck that follows it. | [annnimate](https://annnimate.com/animations/morphing-tabs) |
 | **Morphing dialog** | Subtle | Flip | Trigger card grows into the dialog with shared elements; others fade in. Focus trap and Escape. | [annnimate](https://annnimate.com/animations/morphing-dialog) |
-| **Rising dialog** | Subtle | GSAP | Preview tile opens a tall dialog; page dims and blurs behind. | [annnimate](https://annnimate.com/animations/feature-dialog) |
+| **[Rising dialog](../briefs/feature-dialog.md)** | Subtle | GSAP | Preview tile opens a tall dialog; page dims and blurs behind. | [annnimate](https://annnimate.com/animations/feature-dialog) |
 | **Push drawer** | Modern | SplitText | Hero click slides in a detail panel while the hero moves away and darkens; reverse on close. | [annnimate](https://annnimate.com/animations/detail-drawer) |
 | **List row to panel** | Modern | GSAP | Clicking a row grows it into a detail panel with its thumbnail and title travelling into place. | [annnimate](https://annnimate.com/animations/morphing-list) |
 | **Liquid select** | Modern | GSAP | Dropdown separates from the trigger with a gooey neck; chosen value rolls into place. | [annnimate](https://annnimate.com/animations/morphing-select) |
@@ -198,13 +200,13 @@ mm.add('(prefers-reduced-motion: no-preference)', () => {
 | **Gooey filter chips** | Modern | GSAP | Chosen chips fly into a tray and merge with a gooey neck; result count rolls. | [annnimate](https://annnimate.com/animations/gooey-filter-chips) |
 | **Rolling quantity stepper** | Subtle | GSAP | Plus and minus roll the digits up or down; holding repeats faster. | [annnimate](https://annnimate.com/animations/pill-stepper) |
 | **Multi-step form** | Subtle | MorphSVG | Steps slide in the travel direction, labels float, the send button morphs to a loading dot then a tick. | [annnimate](https://annnimate.com/animations/multi-step-form) |
-| **Pricing toggle** | Subtle | GSAP | Monthly/yearly switch rolls every price digit by digit and pops a savings chip. | [annnimate](https://annnimate.com/animations/pricing) |
+| **[Pricing toggle](../briefs/pricing.md)** | Subtle | GSAP | Monthly/yearly switch rolls every price digit by digit and pops a savings chip. | [annnimate](https://annnimate.com/animations/pricing) |
 | **Video player with fullscreen grow** | Subtle | Flip | Custom controls; fullscreen grows from its place and returns without stopping the video. | [annnimate](https://annnimate.com/animations/video-player) |
 | **Cursor with labels** | Subtle | GSAP | Eased cursor dot with a label on hover targets; off on touch and reduced motion. | [annnimate](https://annnimate.com/animations/custom-cursor) |
 | **Image trail** | Modern | GSAP | Images spawn along the pointer path and shrink away. Portfolios only. | [annnimate](https://annnimate.com/animations/image-trail) |
 | **Tilt card** | Subtle | GSAP | Card tilts toward the pointer with glare and shadow; small angle. | [annnimate](https://annnimate.com/animations/3d-card-flip) |
-| **Elastic divider** | Subtle | GSAP | A section line springs and rings when the pointer sweeps across it. | [annnimate](https://annnimate.com/animations/elastic-divider) |
-| **Magnetic tag cloud** | Modern | Draggable | Tags knocked away by fast pointer moves and pulled back home. | [annnimate](https://annnimate.com/animations/magnetic-tag-cloud) |
+| **[Elastic divider](../briefs/elastic-divider.md)** | Subtle | GSAP | A section line springs and rings when the pointer sweeps across it. | [annnimate](https://annnimate.com/animations/elastic-divider) |
+| **[Magnetic tag cloud](../briefs/magnetic-tag-cloud.md)** | Modern | Draggable | Tags knocked away by fast pointer moves and pulled back home. | [annnimate](https://annnimate.com/animations/magnetic-tag-cloud) |
 | **Random rotation reveal** | Subtle | GSAP | Grid items reveal with a small random angle for a loose, handmade layout. | [annnimate](https://annnimate.com/animations/random-rotate) |
 
 ## Shaders and WebGL
@@ -216,7 +218,7 @@ mm.add('(prefers-reduced-motion: no-preference)', () => {
 | **Dither filter** | Modern | three.js | Images or video rendered as two-colour ordered dither with a lens that shows the real colours under the pointer. | [annnimate](https://annnimate.com/animations/dithering) |
 | **Dither cursor trail** | Modern | three.js | A fading trail behind the pointer drawn in dither dots; no image needed. | [annnimate](https://annnimate.com/animations/dither-cursor-trail) |
 | **ASCII image** | Modern | three.js | Picture redrawn as characters by brightness, typing itself in. | [annnimate](https://annnimate.com/animations/ascii-image) |
-| **ASCII overlay** | Modern | three.js, ScrollTrigger | Characters bloom over the bright parts of a photo or video with scroll; the photo stays. | [annnimate](https://annnimate.com/animations/ascii-overlay) |
+| **[ASCII overlay](../briefs/ascii-overlay.md)** | Modern | three.js, ScrollTrigger | Characters bloom over the bright parts of a photo or video with scroll; the photo stays. | [annnimate](https://annnimate.com/animations/ascii-overlay) |
 | **CRT glitch** | Modern | three.js | Image behind curved CRT glass that breaks into static on hover and locks back. | [annnimate](https://annnimate.com/animations/image-glitch) |
 | **Gooey paint reveal** | Modern | three.js | Pointer paints gooey blobs that cut through a cover to the content below. | [annnimate](https://annnimate.com/animations/gooey-hover-reveal) |
 

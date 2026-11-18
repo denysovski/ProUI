@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.4.0 (2026-11-18)
+
+- XSlop fx (`effects/fx/`): 11 effects written from scratch in plain HTML, CSS and JS, covering the useful
+  ideas of the free Skiper UI set without a library or credit line, with a demo page.
+- Motion briefs (`effects/briefs/`): 20 detailed briefs for signature motion components, written in our own
+  words after studying the free Annnimate starter pack (no code from it included). Linked from the recipes.
+
 ## 3.3.0 (2026-11-18)
 
 - Skiper UI catalogue: the 37 free components with install names and dependencies (attribution required,

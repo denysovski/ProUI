@@ -6,7 +6,8 @@
   "level": "Subtle",
   "tools": "SplitText, ScrollTrigger",
   "prompt": "Split the headline into lines with masks; each line slides up from below its mask with a 0.08 s stagger when 70 % in view. Run once.",
-  "inspiration": "https://annnimate.com/animations/text-reveal"
+  "inspiration": "https://annnimate.com/animations/text-reveal",
+  "brief": "../briefs/text-reveal.md"
  },
  {
   "category": "Text",
@@ -60,7 +61,8 @@
   "level": "Subtle",
   "tools": "ScrambleText, ScrollTrigger",
   "prompt": "Scramble first in the accent colour, then settle into the text colour. Stack the final text under the scramble span so the layout never shifts.",
-  "inspiration": "https://annnimate.com/animations/dual-scramble"
+  "inspiration": "https://annnimate.com/animations/dual-scramble",
+  "brief": "../briefs/dual-scramble.md"
  },
  {
   "category": "Text",
@@ -105,7 +107,8 @@
   "level": "Modern",
   "tools": "ScrollTrigger",
   "prompt": "Words on a vertical wheel with 3D rotateX; the centre word is full opacity, the others fade with distance. Scroll-driven or autoplay that lands on the last word.",
-  "inspiration": "https://annnimate.com/animations/rotating-words"
+  "inspiration": "https://annnimate.com/animations/rotating-words",
+  "brief": "../briefs/rotating-words.md"
  },
  {
   "category": "Text",
@@ -141,7 +144,8 @@
   "level": "Immersive",
   "tools": "ScrollTrigger",
   "prompt": "One word with stacked copies behind it in 3D that spread out with scroll and fade with depth. Copies are aria-hidden.",
-  "inspiration": "https://annnimate.com/animations/echo-headline"
+  "inspiration": "https://annnimate.com/animations/echo-headline",
+  "brief": "../briefs/echo-headline.md"
  },
  {
   "category": "Text",
@@ -222,7 +226,8 @@
   "level": "Modern",
   "tools": "GSAP",
   "prompt": "Tiles flip through characters like a station board, rows cascading left to right, each tile landing on its own beat. For scores, times, launches.",
-  "inspiration": "https://annnimate.com/animations/split-flap-board"
+  "inspiration": "https://annnimate.com/animations/split-flap-board",
+  "brief": "../briefs/split-flap-board.md"
  },
  {
   "category": "Text",
@@ -294,7 +299,8 @@
   "level": "Modern",
   "tools": "ScrollTrigger",
   "prompt": "Pinned frame; each new card slides up over the last, which scales back, tilts and dims; a small counter jumps to any card. Text arrives after its card settles.",
-  "inspiration": "https://annnimate.com/animations/stacking-cards"
+  "inspiration": "https://annnimate.com/animations/stacking-cards",
+  "brief": "../briefs/stacking-cards.md"
  },
  {
   "category": "Scroll sections",
@@ -438,7 +444,8 @@
   "level": "Modern",
   "tools": "ScrollTrigger, MotionPath, DrawSVG",
   "prompt": "A bead travels along a line drawing it, each step lights up when reached and its image fades in.",
-  "inspiration": "https://annnimate.com/animations/process-rail"
+  "inspiration": "https://annnimate.com/animations/process-rail",
+  "brief": "../briefs/process-rail.md"
  },
  {
   "category": "Scroll sections",
@@ -537,7 +544,8 @@
   "level": "Immersive",
   "tools": "ScrollTrigger",
   "prompt": "Images move from deep in the page toward the viewer around a clear centre for content; drifts with the cursor.",
-  "inspiration": "https://annnimate.com/animations/image-fly-in"
+  "inspiration": "https://annnimate.com/animations/image-fly-in",
+  "brief": "../briefs/image-fly-in.md"
  },
  {
   "category": "Galleries and sliders",
@@ -582,7 +590,8 @@
   "level": "Modern",
   "tools": "GSAP",
   "prompt": "The outgoing image splits into columns that wipe away one after another; arrows, drag and keys.",
-  "inspiration": "https://annnimate.com/animations/curtain-slider"
+  "inspiration": "https://annnimate.com/animations/curtain-slider",
+  "brief": "../briefs/curtain-slider.md"
  },
  {
   "category": "Galleries and sliders",
@@ -591,7 +600,8 @@
   "level": "Modern",
   "tools": "Draggable, Inertia",
   "prompt": "Square photos shrink toward one edge, the largest cropped by the screen; drag, throw or scroll.",
-  "inspiration": "https://annnimate.com/animations/scale-slider"
+  "inspiration": "https://annnimate.com/animations/scale-slider",
+  "brief": "../briefs/scale-slider.md"
  },
  {
   "category": "Galleries and sliders",
@@ -636,7 +646,8 @@
   "level": "Modern",
   "tools": "ScrollTrigger",
   "prompt": "Photos queue on a diagonal; each scroll step moves the current one to a thumbnail top-left and grows the next into the centre.",
-  "inspiration": "https://annnimate.com/animations/diagonal-gallery"
+  "inspiration": "https://annnimate.com/animations/diagonal-gallery",
+  "brief": "../briefs/diagonal-gallery.md"
  },
  {
   "category": "Galleries and sliders",
@@ -753,7 +764,8 @@
   "level": "Subtle",
   "tools": "ScrollTrigger",
   "prompt": "Wide header over the hero that shrinks into a floating pill after the first scroll and opens again at the top.",
-  "inspiration": "https://annnimate.com/animations/floating-navbar"
+  "inspiration": "https://annnimate.com/animations/floating-navbar",
+  "brief": "../briefs/floating-navbar.md"
  },
  {
   "category": "Navigation and menus",
@@ -789,7 +801,8 @@
   "level": "Subtle",
   "tools": "GSAP",
   "prompt": "Drawer reveals with clip-path; hovering a category opens a second panel beside it; drill-down on mobile.",
-  "inspiration": "https://annnimate.com/animations/multi-level-drawer-menu"
+  "inspiration": "https://annnimate.com/animations/multi-level-drawer-menu",
+  "brief": "../briefs/multi-level-drawer-menu.md"
  },
  {
   "category": "Navigation and menus",
@@ -834,7 +847,8 @@
   "level": "Modern",
   "tools": "GSAP",
   "prompt": "List of projects whose brightness falls off with distance from the pointer; a preview card wipes to the hovered project.",
-  "inspiration": "https://annnimate.com/animations/hover-index"
+  "inspiration": "https://annnimate.com/animations/hover-index",
+  "brief": "../briefs/hover-index.md"
  },
  {
   "category": "Navigation and menus",
@@ -933,7 +947,8 @@
   "level": "Subtle",
   "tools": "SplitText",
   "prompt": "Animated height with the answer's lines rising through masks; single or multiple open.",
-  "inspiration": "https://annnimate.com/animations/accordion"
+  "inspiration": "https://annnimate.com/animations/accordion",
+  "brief": "../briefs/accordion.md"
  },
  {
   "category": "UI components",
@@ -969,7 +984,8 @@
   "level": "Subtle",
   "tools": "GSAP",
   "prompt": "Preview tile opens a tall dialog; page dims and blurs behind.",
-  "inspiration": "https://annnimate.com/animations/feature-dialog"
+  "inspiration": "https://annnimate.com/animations/feature-dialog",
+  "brief": "../briefs/feature-dialog.md"
  },
  {
   "category": "UI components",
@@ -1059,7 +1075,8 @@
   "level": "Subtle",
   "tools": "GSAP",
   "prompt": "Monthly/yearly switch rolls every price digit by digit and pops a savings chip.",
-  "inspiration": "https://annnimate.com/animations/pricing"
+  "inspiration": "https://annnimate.com/animations/pricing",
+  "brief": "../briefs/pricing.md"
  },
  {
   "category": "UI components",
@@ -1104,7 +1121,8 @@
   "level": "Subtle",
   "tools": "GSAP",
   "prompt": "A section line springs and rings when the pointer sweeps across it.",
-  "inspiration": "https://annnimate.com/animations/elastic-divider"
+  "inspiration": "https://annnimate.com/animations/elastic-divider",
+  "brief": "../briefs/elastic-divider.md"
  },
  {
   "category": "UI components",
@@ -1113,7 +1131,8 @@
   "level": "Modern",
   "tools": "Draggable",
   "prompt": "Tags knocked away by fast pointer moves and pulled back home.",
-  "inspiration": "https://annnimate.com/animations/magnetic-tag-cloud"
+  "inspiration": "https://annnimate.com/animations/magnetic-tag-cloud",
+  "brief": "../briefs/magnetic-tag-cloud.md"
  },
  {
   "category": "UI components",
@@ -1176,7 +1195,8 @@
   "level": "Modern",
   "tools": "three.js, ScrollTrigger",
   "prompt": "Characters bloom over the bright parts of a photo or video with scroll; the photo stays.",
-  "inspiration": "https://annnimate.com/animations/ascii-overlay"
+  "inspiration": "https://annnimate.com/animations/ascii-overlay",
+  "brief": "../briefs/ascii-overlay.md"
  },
  {
   "category": "Shaders and WebGL",

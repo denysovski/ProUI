@@ -1,0 +1,17 @@
+/* XSlop fx: coverflow. A native scroll-snap carousel; JS only adds the 3D tilt.
+   Works with touch, trackpad, keyboard (buttons) and without JS. */
+.xfx-coverflow { --xfx-cf-card: min(56vw, 360px); --xfx-cf-tilt: 42deg; position: relative; }
+.xfx-coverflow-track {
+  display: flex; gap: 0; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
+  padding: 40px calc(50% - var(--xfx-cf-card) / 2); perspective: 1200px; list-style: none; margin: 0;
+}
+.xfx-coverflow-track::-webkit-scrollbar { display: none; }
+.xfx-coverflow-track > li {
+  flex: 0 0 var(--xfx-cf-card); scroll-snap-align: center; transform-style: preserve-3d;
+  transform: rotateY(var(--ry, 0deg)) translateZ(var(--tz, 0px)) scale(var(--sc, 1));
+  z-index: var(--z, 1); opacity: var(--o, 1);
+}
+.xfx-coverflow-track img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 18px; display: block; box-shadow: 0 20px 50px rgb(0 0 0 / .25); }
+.xfx-coverflow-nav { display: flex; justify-content: center; gap: 12px; }
+.xfx-coverflow-nav button { min-width: 44px; min-height: 44px; border-radius: 999px; border: 1px solid currentColor; background: none; color: inherit; cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { .xfx-coverflow-track > li { transform: none; opacity: 1; } .xfx-coverflow-track { scroll-behavior: auto; } }

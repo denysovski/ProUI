@@ -170,7 +170,8 @@ const outputs = new Map();
   const count = (l) => data.filter((d) => d.level === l).length;
   const out = ['# Motion recipes', '',
     `> ${data.length} build prompts for the motion patterns seen on award-level studio sites, written for XSlop so any of them can be built from scratch with GSAP. The pattern list was studied from [Annnimate](https://annnimate.com/animations), a paid GSAP library; the prompts are our own descriptions, no code was copied. Each row links to the original for reference.`, '',
-    '[Effects library](../README.md) · [Kits](../kits.md) · [Sections](../../blueprints/sections.md) · [Motion Rulebook](../../rules/motion/README.md)', '',
+    '[Effects library](../README.md) · [Kits](../kits.md) · [Motion briefs](../briefs/README.md) · [Sections](../../blueprints/sections.md) · [Motion Rulebook](../../rules/motion/README.md)', '',
+    'Recipes with a link have a full [brief](../briefs/README.md): structure, timeline, options, accessibility and mobile behaviour.', '',
     `| Level | Recipes | Use |`, '| --- | --- | --- |',
     `| Subtle | ${count('Subtle')} | any site at Subtle level and above; most of them are what makes a site feel finished |`,
     `| Modern | ${count('Modern')} | Modern level; one signature recipe per page, the rest Subtle |`,
@@ -200,7 +201,7 @@ const outputs = new Map();
   for (const cat of order) {
     out.push(`## ${cat}`, '', '| Recipe | Level | GSAP tools | Build prompt | Seen at |', '| --- | --- | --- | --- | --- |');
     for (const c of data.filter((d) => d.category === cat))
-      out.push(`| **${esc(c.name)}** | ${c.level} | ${esc(c.tools)} | ${esc(c.prompt)} | [annnimate](${c.inspiration}) |`);
+      out.push(`| **${c.brief ? `[${esc(c.name)}](${c.brief})` : esc(c.name)}** | ${c.level} | ${esc(c.tools)} | ${esc(c.prompt)} | [annnimate](${c.inspiration}) |`);
     out.push('');
   }
   out.push('---', '', NOTE, '');

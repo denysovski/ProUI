@@ -140,6 +140,8 @@ one **kit** (a family of components that look alike) and keeps to an **effect bu
 | Catalogue | What's in it |
 | --- | --- |
 | [Motion Primitives](effects/catalog/motion-primitives.md) | all 33 components of [motion-primitives.com](https://motion-primitives.com), source saved in the repository (MIT): text effects, reveals, spotlight, tilt, accordion, morphing dialogs |
+| [XSlop fx](effects/fx/README.md) | 11 effects written for XSlop in plain HTML, CSS and JS, no library: progressive blur, expanding panels, stack scroll, coverflow, theme toggle and more, with a demo page |
+| [Motion briefs](effects/briefs/README.md) | 20 detailed build briefs for signature effects: stacking cards, curtain slider, pricing roll, process rail, two-panel drawer and more |
 | [Skiper UI](effects/catalog/skiper-ui.md) | the 37 free components of [skiper-ui.com](https://skiper-ui.com/components?source=free): scroll stacks, coverflow carousels, expanding panels, theme toggles, progressive blur (credit Skiper UI when used) |
 | [Motion recipes](effects/catalog/motion-recipes.md) | 133 GSAP build prompts for studio-style motion (text reveals, pinned chapters, sliders, menus, buttons, shaders), studied from [Annnimate](https://annnimate.com/animations) and written in our own words |
 | [Aceternity UI](effects/catalog/aceternity.md) | the 114 free components of [ui.aceternity.com](https://ui.aceternity.com/components) with registry names: beams, spotlights, aurora, bento grids, 3D cards, globes, parallax heroes |

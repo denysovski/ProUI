@@ -12,6 +12,8 @@
 | [install.md](install.md) | how to install components from React Bits and 21st.dev, and what to do without React |
 | [catalog/motion-primitives.md](catalog/motion-primitives.md) | all 33 Motion Primitives components; source saved in [kits/motion-primitives](kits/motion-primitives/) (MIT) |
 | [catalog/aceternity.md](catalog/aceternity.md) | the 114 free Aceternity UI components with registry names |
+| [fx/](fx/README.md) | 11 effects written for XSlop in plain HTML, CSS and JS: progressive blur, scroll fade, expanding panels, stack scroll, coverflow, theme toggle, roll link, gooey, scroll draw, progress ring, count up |
+| [briefs/](briefs/README.md) | 20 detailed motion briefs (structure, timeline, options, accessibility) for signature effects |
 | [catalog/skiper-ui.md](catalog/skiper-ui.md) | the 37 free Skiper UI components (attribution required) |
 | [catalog/motion-recipes.md](catalog/motion-recipes.md) | 133 GSAP build prompts for studio-style motion, studied from Annnimate, written in our own words |
 | [catalog/react-bits.md](catalog/react-bits.md) | every React Bits component: backgrounds, animations, text, components, micro-interactions |

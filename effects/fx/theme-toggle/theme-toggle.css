@@ -1,0 +1,15 @@
+/* XSlop fx: theme toggle with a circular reveal (View Transitions API). */
+.xfx-theme-toggle {
+  inline-size: 44px; block-size: 44px; border-radius: 999px; border: 1px solid color-mix(in oklab, currentColor 25%, transparent);
+  background: none; color: inherit; cursor: pointer; display: grid; place-items: center;
+}
+.xfx-theme-toggle svg { inline-size: 20px; block-size: 20px; transition: transform .5s cubic-bezier(.22, 1, .36, 1); }
+:root[data-theme="dark"] .xfx-theme-toggle svg { transform: rotate(180deg); }
+.xfx-theme-toggle .xfx-sun-rays { transition: opacity .3s; }
+:root[data-theme="dark"] .xfx-theme-toggle .xfx-sun-rays { opacity: 0; }
+::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+::view-transition-new(root) { animation: xfx-theme-reveal .55s cubic-bezier(.65, 0, .35, 1); }
+@keyframes xfx-theme-reveal {
+  from { clip-path: circle(0 at var(--xfx-x, 50%) var(--xfx-y, 0%)); }
+  to   { clip-path: circle(var(--xfx-r, 150vmax) at var(--xfx-x, 50%) var(--xfx-y, 0%)); }
+}

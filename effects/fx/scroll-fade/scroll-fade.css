@@ -1,0 +1,27 @@
+/* XSlop fx: scroll fade. Soft fade at the edges of a scroll area, only where more content exists.
+   Uses scroll-driven animations where supported; elsewhere a fixed fade at both ends. */
+.xfx-scroll-fade {
+  --xfx-fade: 48px;
+  overflow: auto;
+  -webkit-mask: linear-gradient(to bottom, transparent, #000 var(--xfx-fade), #000 calc(100% - var(--xfx-fade)), transparent);
+          mask: linear-gradient(to bottom, transparent, #000 var(--xfx-fade), #000 calc(100% - var(--xfx-fade)), transparent);
+}
+.xfx-scroll-fade[data-axis="x"] {
+  -webkit-mask: linear-gradient(to right, transparent, #000 var(--xfx-fade), #000 calc(100% - var(--xfx-fade)), transparent);
+          mask: linear-gradient(to right, transparent, #000 var(--xfx-fade), #000 calc(100% - var(--xfx-fade)), transparent);
+}
+@property --xfx-top { syntax: "<length>"; inherits: false; initial-value: 0px; }
+@property --xfx-bottom { syntax: "<length>"; inherits: false; initial-value: 48px; }
+@supports (animation-timeline: scroll()) {
+  .xfx-scroll-fade:not([data-axis="x"]) {
+    -webkit-mask: linear-gradient(to bottom, transparent, #000 var(--xfx-top), #000 calc(100% - var(--xfx-bottom)), transparent);
+            mask: linear-gradient(to bottom, transparent, #000 var(--xfx-top), #000 calc(100% - var(--xfx-bottom)), transparent);
+    animation: xfx-scroll-fade linear both; animation-timeline: scroll(self);
+  }
+  @keyframes xfx-scroll-fade {
+    0%   { --xfx-top: 0px;            --xfx-bottom: var(--xfx-fade); }
+    8%   { --xfx-top: var(--xfx-fade); }
+    92%  { --xfx-bottom: var(--xfx-fade); }
+    100% { --xfx-top: var(--xfx-fade); --xfx-bottom: 0px; }
+  }
+}

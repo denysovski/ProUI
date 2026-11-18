@@ -44,6 +44,7 @@ Feel: soft fades and blurs, gentle springs, no glow.
 | Pricing toggle | MP `animated-background` + `sliding-number` |
 | FAQ | MP `accordion` |
 | Buttons | MP `magnetic` on the primary button only |
+| Extras | from [XSlop fx](fx/README.md): progressive blur on image captions, expanding panels, roll links, count up, progress ring |
 
 Install: copy from [kits/motion-primitives](kits/motion-primitives/) or `npx motion-primitives@latest add <name>`.
 
@@ -116,7 +117,7 @@ Feel: type-led, masked reveals, pinned scroll chapters, confident easing. Built 
 | Buttons | Magnetic button on the primary action, Slide-up fill elsewhere |
 | Footer | Glow footer |
 
-Install: `npm i gsap @gsap/react`. Skiper UI's free scroll stacks and carousels (`catalog/skiper-ui.md`) use
+Signature effects have a full brief in [briefs/](briefs/README.md). Install: `npm i gsap @gsap/react`. Skiper UI's free scroll stacks and carousels (`catalog/skiper-ui.md`) use
 Framer Motion and Lenis; take them only when the kit has no recipe for the section.
 
 ### Retro (React Bits + Aceternity pixel effects)

@@ -1,0 +1,29 @@
+/* XSlop fx: expanding panels. A row (or column) of image panels; the hovered or focused one widens.
+   No JS. Each panel is a link or button so keyboard users get the same effect. */
+.xfx-expand {
+  --xfx-expand-gap: 8px; --xfx-expand-grow: 4; --xfx-expand-radius: 16px; --xfx-expand-size: 480px;
+  display: flex; gap: var(--xfx-expand-gap); height: var(--xfx-expand-size); list-style: none; margin: 0; padding: 0;
+}
+.xfx-expand[data-axis="y"] { flex-direction: column; height: auto; }
+.xfx-expand[data-axis="y"] > li { min-height: 72px; }
+.xfx-expand[data-axis="y"] > li:is(:hover, :focus-within) { min-height: calc(var(--xfx-expand-size) * .6); }
+.xfx-expand > li {
+  flex: 1 1 0; min-width: 0; position: relative; overflow: hidden; border-radius: var(--xfx-expand-radius);
+  transition: flex-grow .6s cubic-bezier(.22, 1, .36, 1), min-height .6s cubic-bezier(.22, 1, .36, 1);
+}
+.xfx-expand > li:is(:hover, :focus-within) { flex-grow: var(--xfx-expand-grow); }
+.xfx-expand a { position: absolute; inset: 0; color: #fff; text-decoration: none; outline-offset: -4px; }
+.xfx-expand img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.08); transition: transform .8s cubic-bezier(.22, 1, .36, 1); }
+.xfx-expand > li:is(:hover, :focus-within) img { transform: scale(1); }
+.xfx-expand .xfx-expand-title {
+  position: absolute; left: 20px; right: 20px; bottom: 18px; margin: 0;
+  font: 600 1.125rem/1.2 var(--font-display, inherit); text-shadow: 0 1px 12px rgb(0 0 0 / .5);
+  opacity: 0; transform: translateY(12px); transition: opacity .4s, transform .5s cubic-bezier(.22, 1, .36, 1);
+}
+.xfx-expand > li:is(:hover, :focus-within) .xfx-expand-title { opacity: 1; transform: none; transition-delay: .15s; }
+@media (hover: none), (max-width: 640px) {
+  .xfx-expand:not([data-axis="y"]) { flex-direction: column; height: auto; }
+  .xfx-expand > li { min-height: 220px; }
+  .xfx-expand .xfx-expand-title { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) { .xfx-expand * , .xfx-expand > li { transition: none !important; } }

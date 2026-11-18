@@ -1,0 +1,7 @@
+/* XSlop fx: roll link. Letters roll up one after another on hover or focus; a copy rolls in from below. */
+.xfx-roll { display: inline-flex; overflow: hidden; line-height: 1.2; text-decoration: none; color: inherit; vertical-align: bottom; }
+.xfx-roll .xfx-roll-char { display: inline-block; position: relative; white-space: pre;
+  transition: transform .45s cubic-bezier(.65, 0, .35, 1); transition-delay: calc(var(--ci) * 18ms); }
+.xfx-roll .xfx-roll-char::after { content: attr(data-c); position: absolute; left: 0; top: 100%; }
+.xfx-roll:is(:hover, :focus-visible) .xfx-roll-char { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .xfx-roll .xfx-roll-char { transition: none; } .xfx-roll:is(:hover, :focus-visible) .xfx-roll-char { transform: none; } .xfx-roll:is(:hover, :focus-visible) { text-decoration: underline; } }
