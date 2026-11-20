@@ -25,6 +25,7 @@ Positive rules: what a finished, professional site does.
 | `PG-13` | **Company contacts by need** | Companies route contacts by what the visitor needs (sales, support, press, careers, locations), not by the org chart, and always keep one main number and email. |
 | `PG-14` | **Footer size matches the site** | Slim for one-page sites, standard for small businesses, fat with four to six labelled columns, contact, newsletter and a legal row for companies, SaaS and shops (`blueprints/footer.md`). |
 | `PG-15` | **Legal row in the footer** | Legal name, registration and VAT numbers where required, privacy, terms, cookie settings and the accessibility statement sit in the last row of the footer. |
+| `PG-23` | **Footer groups by what people look for** | Group footer links by job: product, company (about, careers, press), resources (help, status, blog), trust (security, compliance), legal. The last row carries ©, privacy, terms, cookie settings and the security contact. Size the footer to the site (`PG-14`); a small site needs only the legal row and contact. |
 
 ## Don't
 

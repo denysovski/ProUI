@@ -12,8 +12,10 @@
 | [pricing.md](pricing.md) | tiered pricing for services and products, comparison tables, billing toggles, "contact us" pricing | Structure |
 | [contact.md](contact.md) | contact pages for companies and local businesses, forms, maps, departments | Structure |
 | [footer.md](footer.md) | slim, standard and fat footers and when each fits | Structure |
+| [legal-and-trust.md](legal-and-trust.md) | cookie consent, privacy, personal data, uploaded files, accessibility, security.txt, status page, footer link checklist | Structure, Launch |
 | [colour-schemes.md](colour-schemes.md) | a method for building a palette, the 60-30-10 split, starter palettes per feel | Design system |
 | [type-pairing.md](type-pairing.md) | a method for choosing and pairing typefaces, starter pairings per feel | Design system |
+| [../typography/README.md](../typography/README.md) | how fonts work together, what the reference sites use, free alternatives, specimens, licences | Design system |
 
 ## How the workflow uses the blueprints
 

@@ -71,7 +71,30 @@ As CSS variables (two examples; the rest follow the same pattern):
 }
 ```
 
+## Palettes measured on real sites
+
+Colours read from the computed styles of live sites in November 2026 (`inspiration/site-studies/`). They show
+what "luxurious, not garish" looks like in practice: warm grounds, deep inks, one accent. Use them as proof
+that a combination works, then shift the hue toward the brand (`CL-22`); never copy a brand's palette whole.
+
+| Feel | Ground | Ink | Secondary text | Accent | Seen on |
+| --- | --- | --- | --- | --- | --- |
+| warm dark, technical | `rgb(21,20,20)` | cream `rgb(255,251,245)` | ink at 60 % | orange `rgb(255,94,31)` | Cloudflare |
+| warm light, calm | off-white `rgb(247,246,244)` | `rgb(12,10,8)` | ink at 60 % | none, ink buttons | Rox |
+| paper and electric | paper `rgb(242,241,236)` | `rgb(16,15,15)` | ink at 55 % | blue `rgb(0,0,255)`, hero only | Agentcard |
+| cream editorial | cream `rgb(250,244,235)` | near-black | ink at 66 % | black video hero | Taxi Studio |
+| ivory and earth | ivory `rgb(249,250,240)` | brown `rgb(74,24,9)` | brown at 60 % | coral `rgb(255,131,94)` | Heron |
+| white and deep green | white | near-black | ink at 60 % | green `rgb(11,116,67)` with mint text `rgb(217,255,224)` | Fruitful |
+| white and lime | white | near-black | ink at 55 % | lime pill | Ramp design |
+| near-black product | `rgb(10,10,10)` | white | white at 55 % | none, white pills | xAI, X Money |
+
+What they share: no pure `#fff` grounds on the warm sites and no pure `#000` text anywhere; secondary text is
+the ink at lower opacity, not a separate grey; the accent appears on the primary action and almost nowhere
+else; a saturated field is used once, in the hero, if at all.
+
 ## Avoid
+
+- Garish colour: neon on neon, rainbow gradients, saturated backgrounds behind long text (`CL-23`).
 
 - Picking colours before the strategy and the reason (`CL-01`).
 - Several saturated accents in one view (`CL-20`); the accent on large backgrounds.

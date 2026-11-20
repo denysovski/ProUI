@@ -29,6 +29,7 @@ Positive rules: what a finished, professional site does.
 | `TY-20` | **Check every language you ship** | Diacritics (č, ř, ů, ž), long German words and right-to-left scripts must render in the chosen face. A display face without the needed glyphs is not an option. |
 | `TY-21` | **Load only the weights you use** | Two or three weights per family at most, preferably one variable font file. Every extra weight is extra bytes and extra noise. |
 | `TY-22` | **Hyphenate narrow columns** | In narrow columns and on phones, use `hyphens: auto` with the correct `lang`, so ragged edges stay calm. |
+| `TY-26` | **Test the pair on a specimen** | Before building, set the chosen faces together on one page: a headline, a paragraph, a button, a label and a table row, in every language you ship (including `Příliš žluťoučký kůň úpěl ďábelské ódy` for Czech). The pair works when the x-heights look related, the text face reads well at 16 px, the contrast between the faces is clear (serif with sans, or display with text) and no glyph is missing. See `typography/README.md`. |
 
 ## Don't
 
@@ -42,6 +43,7 @@ Negative rules: what never ships.
 | `TY-23` | **Faux bold and italic** | Never let the browser fake a weight or style the font file does not have. Load the real file or set `font-synthesis: none`. |
 | `TY-24` | **Display faces for body text** | Display and decorative faces are for large sizes only. Paragraphs, labels and forms use a text face designed for small sizes. |
 | `TY-25` | **Centred long paragraphs** | Centred text is for short display lines. Anything longer than two or three lines is start-aligned. |
+| `TY-27` | **Trial or unlicensed fonts in production** | Trial versions, fonts copied from another site and desktop-only licences are not shipped. Check the licence covers web use and the expected traffic; when the client will not buy the commercial face, use the free alternative listed in `typography/README.md`. |
 
 ## Related anti-slop rules
 

@@ -59,6 +59,7 @@ The full list with options is in `templates/workflow/INTAKE.md`.
 | Which technology? | plain HTML and CSS · React / Next.js · already decided in the project · let ProUI decide |
 | What content exists? | texts and photos ready · some of it · nothing yet |
 | Languages and size? | one language, one page · one language, several pages · several languages |
+| Legal and data? | who runs the site (company name, ID, address) · does it collect data (forms, accounts, uploads, analytics) · is it sold to EU consumers |
 
 How the answers are used:
 
@@ -166,10 +167,17 @@ Goal: turn the chosen direction into concrete tokens.
    display face for the subject. Propose two or three pairings that fit the direction and the feel (start
    from the starter table, mostly Fontshare and Google Fonts). Check `SL-59` and `TY-01` to `TY-04`. Render a
    specimen for each: the real headline, a paragraph of real copy, a button, a price or number.
+   **Pairing check** (`TY-26`, `typography/README.md`): x-heights related, clear contrast between the faces,
+   the text face reads at 16 px, every character of every language exists (Czech test line), weights only
+   300–500 for display unless the direction asks for heavy. **Licence check** (`TY-27`): web licence
+   confirmed, or a free alternative from the typography guide; no trial fonts.
 2. **Colour:** follow `blueprints/colour-schemes.md`: start from the subject's own colours, name the strategy
    (`CL-01`) and the light/dark reason (`CL-02`), split 60-30-10, define roles in OKLCH (`CL-04`, `CL-05`) and
    a contrast table for both themes (`CL-09`). A starter palette for the feel is a starting point, shifted
-   toward the brand.
+   toward the brand. **Restraint check** (`CL-22`, `CL-23`): start from a palette measured on real sites
+   (`inspiration/site-studies/`, observed palettes in `blueprints/colour-schemes.md`): warm off-white or warm
+   near-black ground, ink that is not pure black, secondary text by opacity, one accent for the main action.
+   Reject neon, rainbow gradients and more than one loud colour.
 3. **Gradient and background**, if the direction uses one: one signature gradient from the palette
    (`GR-01` to `GR-10`), built in CSS (`recipes/gradients.md`) or with a tool the user exports from
    (`toolkit/gradients.md`: Balsa UI Gradient Studio, Pryzm, ShaderGradient); patterns from Book of Shapes
@@ -211,7 +219,9 @@ Goal: agree on what goes where before building it.
    toggle and comparison table; one-price offers get one price (`blueprints/pricing.md`, `PG-08` to `PG-11`).
    Ask for real prices.
 5. **Contact and footer:** a contact page or section by `blueprints/contact.md`; a slim, standard or fat footer
-   by the amount of information (`blueprints/footer.md`, `PG-12` to `PG-15`).
+   by the amount of information (`blueprints/footer.md`, `PG-12` to `PG-15`, `PG-23`). List the legal and
+   trust pages the site type needs from `blueprints/legal-and-trust.md`: company details, privacy, terms,
+   cookie settings, accessibility statement, security contact, status page, Trust Center.
 6. **Effects:** list every planned effect with its page and section and check the count against the budget
    (`EF-20`). Mark the **one signature moment** per page and the primary action of every page (`DC-10`, `PE-02`).
 7. List content that is still missing (copy, photos, prices, legal details) and propose how to fill it honestly.
@@ -376,9 +386,13 @@ why). Send the user one short line per finished pass.
 
 - Custom 404, primary action above the fold and sticky on mobile where it helps, breakpoints, favicon set,
   Open Graph, thank-you states, privacy policy, terms, cookie consent that loads non-essential scripts only
-  after consent, analytics, real contact details, code in Git.
-- Verify: open every legal and system page; test cookie consent in a fresh browser (reject must work as
-  easily as accept); confirm no placeholder business data remains.
+  after consent (`PE-23`, `PE-26`), analytics, real contact details, code in Git, `security.txt` and a status
+  page where the product needs one (`PE-24`), safe handling of uploaded files (`PE-25`), accessibility
+  statement (`PE-15`). Follow `blueprints/legal-and-trust.md`.
+- Verify: open every legal and system page; test cookie consent in a fresh browser (Reject on the first
+  layer, same size as Accept, nothing pre-ticked, no tracker requests in the network panel before the
+  choice, footer link reopens it); fetch `/.well-known/security.txt`; upload a wrong type and an oversized
+  file; confirm no placeholder business data remains.
 
 ---
 

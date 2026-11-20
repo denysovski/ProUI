@@ -29,7 +29,10 @@
   Show first- and second-level pages only; the full list goes into a sitemap page linked from the footer.
 - **Contact** in its own column or the brand column: real phone, email, address, hours.
 - **Legal row** last: legal name, registration and VAT numbers where required, privacy, terms, cookie settings,
-  accessibility statement (`PE-08`, `PE-09`, `PE-15`, `PE-16`).
+  accessibility statement, "Report security issues" (`PE-08`, `PE-09`, `PE-15`, `PE-16`, `PE-24`).
+- **Status and trust** for products: Status, Security or Trust Center, subprocessors (`PG-23`). The full
+  checklist by site type, with the groups seen on Cloudflare, Rox, Heron and xAI, is in
+  [legal-and-trust.md](legal-and-trust.md#footer-checklist-from-the-studied-sites).
 - **Newsletter** only with a promise: what it contains and how often.
 - **Trust elements** that are real: payment methods, certifications, awards.
 - **Mobile:** columns become collapsible groups or two columns; contact and legal stay open; tap targets 44 px.

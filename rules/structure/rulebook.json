@@ -173,6 +173,12 @@
       "kind": "dont",
       "title": "Every section a different layout trick",
       "text": "A new effect, layout and component style in each section. One signature moment per page, the rest calm and consistent."
+    },
+    {
+      "id": "PG-23",
+      "kind": "do",
+      "title": "Footer groups by what people look for",
+      "text": "Group footer links by job: product, company (about, careers, press), resources (help, status, blog), trust (security, compliance), legal. The last row carries ©, privacy, terms, cookie settings and the security contact. Size the footer to the site (`PG-14`); a small site needs only the legal row and contact."
     }
   ]
 }

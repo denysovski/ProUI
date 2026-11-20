@@ -189,6 +189,18 @@
       "kind": "dont",
       "title": "Centred long paragraphs",
       "text": "Centred text is for short display lines. Anything longer than two or three lines is start-aligned."
+    },
+    {
+      "id": "TY-26",
+      "kind": "do",
+      "title": "Test the pair on a specimen",
+      "text": "Before building, set the chosen faces together on one page: a headline, a paragraph, a button, a label and a table row, in every language you ship (including `Příliš žluťoučký kůň úpěl ďábelské ódy` for Czech). The pair works when the x-heights look related, the text face reads well at 16 px, the contrast between the faces is clear (serif with sans, or display with text) and no glyph is missing. See `typography/README.md`."
+    },
+    {
+      "id": "TY-27",
+      "kind": "dont",
+      "title": "Trial or unlicensed fonts in production",
+      "text": "Trial versions, fonts copied from another site and desktop-only licences are not shipped. Check the licence covers web use and the expected traffic; when the client will not buy the commercial face, use the free alternative listed in `typography/README.md`."
     }
   ]
 }

@@ -44,9 +44,11 @@ continues from here with `ProUI continue`.
 - Display font:
 - Text font:
 - Mono (data only):
+- Pairing check passed (`TY-26`), licences confirmed or free alternative chosen (`TY-27`):
 - Colour strategy (Restrained / Committed / Full palette / Drenched):
 - Light or dark, and why:
 - Palette tokens (OKLCH, by role):
+- Palette based on (real site or observed palette), one accent, no garish colour (`CL-22`, `CL-23`):
 - Signature gradient / background, tool used:
 - Scale (type, spacing, radii, motion):
 
@@ -56,6 +58,8 @@ continues from here with `ProUI continue`.
 - Pages and sections (`blueprints/landing-page.md`, `blueprints/sections.md`):
 - Pricing model and real prices (`blueprints/pricing.md`):
 - Contact page and footer size (`blueprints/contact.md`, `blueprints/footer.md`):
+- Legal and trust pages (`blueprints/legal-and-trust.md`): company details, privacy, terms, cookie consent, accessibility statement, security.txt, status page:
+- Personal data and uploads collected, where stored, how long:
 - Planned effects and count against the budget:
 - Signature moment per page:
 - Changes requested by the user:

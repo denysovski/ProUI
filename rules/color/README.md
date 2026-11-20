@@ -26,6 +26,7 @@ Positive rules: what a finished, professional site does.
 | `CL-16` | **Respect culture and context** | Red can mean danger, loss or luck; green can mean gain or not. In charts and finance follow the audience's convention, and label the meaning. |
 | `CL-17` | **Define state colours once** | Success, warning, danger and info are tokens with a background, border and text variant each, checked for contrast in both themes. |
 | `CL-18` | **A visible focus colour** | The focus ring has its own token with 3:1 contrast against every surface it can appear on, not the accent at low opacity. |
+| `CL-22` | **Start from a palette that is proven** | Base the palette on combinations that already work on real, respected sites: a warm off-white or warm near-black ground, ink that is not pure black, and one accent. `inspiration/site-studies/` and `blueprints/colour-schemes.md` list measured palettes. Adapt the hue to the subject; do not invent a scheme from nothing. |
 
 ## Don't
 
@@ -38,6 +39,7 @@ Negative rules: what never ships.
 | `CL-19` | **Red and green as the only difference** | Never rely on a red/green pair alone for good and bad, up and down, or valid and invalid; add a sign, icon or label (`CL-10`). |
 | `CL-20` | **Several saturated accents in one view** | One saturated accent per view. A second strong colour competes with the primary action. |
 | `CL-21` | **Pure black text on pure white for long reading** | For long reading, soften the extremes slightly (near-black on off-white) to reduce glare, while keeping contrast well above 7:1. |
+| `CL-23` | **Garish colour** | Neon on neon, fully saturated backgrounds behind long text, rainbow gradients, more than one loud colour fighting for attention, or a saturated accent on every element. Luxury and trust read as restraint: muted grounds, deep inks and one confident accent used for the main action only. |
 
 ## Related anti-slop rules
 

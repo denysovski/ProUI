@@ -35,7 +35,8 @@ first, then use ProUI to judge and improve, not to restyle it on your own initia
 | The questions to ask before anything else | `templates/workflow/INTAKE.md` |
 | Modern effects, 3D, shaders, animated components | `effects/` (levels, kits and budget, presets, install, catalogues for Motion Primitives, Aceternity, Skiper UI, React Bits, 21st.dev, 133 GSAP motion recipes, 20 motion briefs, and `effects/fx/` with 11 ready effects in plain HTML, CSS and JS) |
 | Sitemaps, landing page order, sections, pricing, contact, footers | `blueprints/` |
-| Choosing colours and typefaces | `blueprints/colour-schemes.md`, `blueprints/type-pairing.md` |
+| Choosing colours and typefaces | `blueprints/colour-schemes.md`, `blueprints/type-pairing.md`, `typography/README.md` (pairing, free alternatives, licences) |
+| Cookies, privacy, personal data, uploads, security.txt, status page, footer legal links | `blueprints/legal-and-trust.md` |
 | What the visitor came to do | `modes/` (persuade, operate, read, experience) |
 | A short command (critique, audit, polish, ship…) | `commands/README.md` and the command's file |
 | Building a new site step by step | `workflow/WORKFLOW.md` |
@@ -43,7 +44,7 @@ first, then use ProUI to judge and improve, not to restyle it on your own initia
 | Project context files | `templates/context/PRODUCT.md`, `templates/context/DESIGN.md` |
 | Brief, direction board, decisions record | `templates/workflow/` |
 | Critique and audit report formats | `templates/reports/`, `references/critique-rubric.md` |
-| Inspiration sources and how to analyse them | `inspiration/` |
+| Inspiration sources and how to analyse them | `inspiration/` (galleries, and `inspiration/site-studies/` with 17 studied sites, build prompts and their animations) |
 | Libraries, gradients, shapes, design tools | `toolkit/` |
 | Code for motion, components, gradients, dashboards | `recipes/` |
 | Style keywords and modifiers named in a prompt | `style/STYLES.md` |
@@ -92,7 +93,9 @@ When the user asks for a website (or says "use ProUI") without further instructi
   "A few" or "a couple" of effects or 3D models means two at most on the whole site.
 - Build the structure from `blueprints/`: the sitemap for the kind of site, the landing page order, then
   pricing (packages for services), contact and the footer size that fits the amount of information (`PG`).
-- Choose colours and type with the methods in `blueprints/colour-schemes.md` and `blueprints/type-pairing.md`.
+- Choose colours and type with the methods in `blueprints/colour-schemes.md` and `blueprints/type-pairing.md`;
+  test the pair on a specimen and confirm licences (`TY-26`, `TY-27`); keep colour restrained (`CL-22`, `CL-23`).
+- Add the legal and trust pages the site needs and consent before tracking (`blueprints/legal-and-trust.md`, `PE-23` to `PE-26`).
 - Decide the mode of each surface (`modes/README.md`) and lead with the rulebooks that matter most for it
   (table in `rules/README.md`).
 - Apply every rulebook that applies: do every Do, avoid every Don't.

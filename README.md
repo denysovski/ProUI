@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 576 rules, 7 effect kits, 133 motion recipes" width="100%">
+<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 585 rules, 7 effect kits, 133 motion recipes" width="100%">
 
 ### The playbook for beautiful websites: blueprints, colour and type methods, effect kits, a workflow from brief to launch, and the rules that keep it looking designed
 
@@ -30,12 +30,13 @@ generated.
 | --- | --- |
 | [`rules/`](rules/README.md) | the rulebooks, one folder per subject, each with Do and Don't tables |
 | [`workflow/`](workflow/README.md) | the step-by-step process and the GitHub guide |
-| [`blueprints/`](blueprints/README.md) | how websites are put together: sitemaps, landing page order, sections, pricing, contact, footers, colour and type methods |
+| [`blueprints/`](blueprints/README.md) | how websites are put together: sitemaps, landing page order, sections, pricing, contact, footers, legal and trust pages, colour and type methods |
+| [`typography/`](typography/README.md) | how fonts work together, what well-known sites use, free alternatives, licences, specimens |
 | [`effects/`](effects/README.md) | the effects library: kits, effect budget, Motion Primitives (saved here), Aceternity, React Bits and 21st.dev catalogues |
 | [`modes/`](modes/README.md) | four kinds of pages: persuade, operate, read, experience |
 | [`commands/`](commands/README.md) | short commands like `ProUI critique` or `ProUI ship` |
 | [`templates/`](templates/README.md) | files the agent fills in: brief, decisions, reports, GitHub setup |
-| [`inspiration/`](inspiration/README.md) | galleries to research and what good sites have in common |
+| [`inspiration/`](inspiration/README.md) | galleries to research, 17 studied sites with build prompts, their animations and palettes |
 | [`toolkit/`](toolkit/README.md) | libraries, gradient and shape tools, design tools by stage |
 | [`recipes/`](recipes/README.md) | ready code for motion, components, gradients and dashboards |
 | [`style/`](style/README.md) | named styles to use in prompts, and my personal taste |
@@ -126,6 +127,7 @@ How the pages are put together, so the site makes sense before it looks good.
 | [Pricing](blueprints/pricing.md) | three named packages for services, tiers and comparison tables for products |
 | [Contact](blueprints/contact.md) | contact pages for companies and local businesses |
 | [Footers](blueprints/footer.md) | slim, standard or fat, by the amount of information |
+| [Legal and trust](blueprints/legal-and-trust.md) | cookie consent done right, privacy, personal data, uploaded files, security.txt, status page |
 | [Colour schemes](blueprints/colour-schemes.md) and [type pairing](blueprints/type-pairing.md) | a method and starter options for each feel |
 
 ## Effects library

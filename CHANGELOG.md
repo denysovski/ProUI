@@ -1,5 +1,20 @@
 # Changelog
 
+## 4.1.0 (2026-11-21)
+
+- Typography guide (`typography/`): how fonts play together, the four type systems seen on well-known sites,
+  what 17 reference sites use with free alternatives, platform fonts, licences, and eight specimen images
+  set in open-licence fonts.
+- Site studies (`inspiration/site-studies/`): 17 live sites studied in the browser (type, colour, navigation,
+  cookie banners, footers) with a build prompt per site in our own words; `animations.md` with the easing
+  curves they use, a prompt per motion pattern, and what colour and motion say about a site.
+- Legal and trust blueprint (`blueprints/legal-and-trust.md`): pages per site type, EU and Czech cookie
+  consent, personal data, user uploads, European Accessibility Act, security.txt, status page, footer
+  checklist. Observed palettes in `blueprints/colour-schemes.md`.
+- Rules `TY-26`, `TY-27`, `CL-22`, `CL-23`, `PE-23` to `PE-26`, `PG-23` (585 rules). The workflow gains a
+  legal intake question, pairing, licence and colour restraint checks, legal pages in the outline and
+  consent, security.txt and upload tests at launch.
+
 ## 4.0.0 (2026-11-18)
 
 - Licence: ProUI is a paid skill sold on Agensi ($9.99); no open licence on GitHub (`LICENSE.md`).
