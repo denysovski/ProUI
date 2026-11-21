@@ -2,6 +2,15 @@
 
 ## 4.2.0 (2026-11-21)
 
+- Typography rewritten as a short visual guide: ten specimen sheets (grotesk statements with pixel labels,
+  24 grotesks, 12 pixel fonts, 12 monos, 16 serifs, 12 condensed and display faces, six pairings by kind of
+  site, and what 31 tech, e-shop and fashion brands use with free matches). Detailed tables moved to
+  `typography/reference.md`, now with the measured fonts of 32 brand sites.
+- Marketplace package builder (`scripts/build-package.mjs`) that leaves out the owner's personal style files
+  and every reference to them.
+
+## 4.2.0 (2026-11-21)
+
 - Filter swap (`effects/fx/filter-swap/`): the one transition for filtering a grid or list. Shown items fade
   out and drop 14 px, the set swaps after 260 ms, new items fade in rising 14 px, 45 ms apart. Plain CSS and
   JS, reduced-motion version included. Pattern from the machacekdesign.cz portfolio.

@@ -31,7 +31,7 @@ generated.
 | [`rules/`](rules/README.md) | the rulebooks, one folder per subject, each with Do and Don't tables |
 | [`workflow/`](workflow/README.md) | the step-by-step process and the GitHub guide |
 | [`blueprints/`](blueprints/README.md) | how websites are put together: sitemaps, landing page order, sections, pricing, contact, footers, legal and trust pages, colour and type methods |
-| [`typography/`](typography/README.md) | how fonts work together, what well-known sites use, free alternatives, licences, specimens |
+| [`typography/`](typography/README.md) | which fonts modern sites use (32 brands measured), free matches, 24 grotesks, pixel labels, serifs, pairings by kind of site, as specimen sheets |
 | [`effects/`](effects/README.md) | the effects library: kits, effect budget, Motion Primitives (saved here), Aceternity, React Bits and 21st.dev catalogues |
 | [`modes/`](modes/README.md) | four kinds of pages: persuade, operate, read, experience |
 | [`commands/`](commands/README.md) | short commands like `ProUI critique` or `ProUI ship` |
