@@ -77,6 +77,7 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | `SL-43` | Fake testimonials |
 | `SL-44` | Placeholder business info |
 | `SL-49` | Side-stripe accent borders |
+| `MO-29` | One transition for filtering: fade out, swap, rise in |
 | `CP-14` | Invented claims, numbers or customers |
 
 ## Which rulebooks lead in each mode

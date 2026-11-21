@@ -1,0 +1,20 @@
+/* ProUI fx: filter swap. The one transition for filtering a grid or list (rule MO-29).
+   The shown items fade out and drop 14 px, the set swaps after 260 ms, then the new items fade in
+   rising 14 px, 45 ms apart. Nothing grows, scales, clips or shuffles.
+   Markup: <ul class="xfx-filter" data-xfx-filter> <li data-tags="web print">…</li> … </ul>
+           <button data-xfx-filter-btn="web" aria-pressed="false">Web</button> (value "*" shows all) */
+.xfx-filter > * {
+  transition: opacity 450ms cubic-bezier(0.22, 1, 0.36, 1), transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.xfx-filter > .is-out {
+  opacity: 0;
+  transform: translateY(14px);
+}
+.xfx-filter > [hidden] {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .xfx-filter > * {
+    transition: none;
+  }
+}

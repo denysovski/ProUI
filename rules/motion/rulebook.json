@@ -194,6 +194,13 @@
       "kind": "dont",
       "title": "Endless decorative loops",
       "text": "No looping animation on content that people read or use (rotating badges, pulsing buttons, floating cards)."
+    },
+    {
+      "id": "MO-29",
+      "kind": "do",
+      "level": "hard",
+      "title": "One transition for filtering: fade out, swap, rise in",
+      "text": "When chips, tabs or categories filter a grid or list, the shown items fade out and drop about 14 px (opacity 450 ms, transform 600 ms), the set swaps after about 260 ms, then the new items fade in rising 14 px, about 45 ms apart. Use this and nothing else for filtering: no growing cards, clip-path reveals, scaling or shuffling layouts. Ready code: `effects/fx/filter-swap/`."
     }
   ]
 }

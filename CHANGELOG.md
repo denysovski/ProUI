@@ -1,5 +1,13 @@
 # Changelog
 
+## 4.2.0 (2026-11-21)
+
+- Filter swap (`effects/fx/filter-swap/`): the one transition for filtering a grid or list. Shown items fade
+  out and drop 14 px, the set swaps after 260 ms, new items fade in rising 14 px, 45 ms apart. Plain CSS and
+  JS, reduced-motion version included. Pattern from the machacekdesign.cz portfolio.
+- Rule `MO-29` (hard): filtering uses this transition and nothing else, no growing cards, clip reveals,
+  scaling or shuffling (586 rules).
+
 ## 4.1.0 (2026-11-21)
 
 - Typography guide (`typography/`): how fonts play together, the four type systems seen on well-known sites,

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 585 rules, 7 effect kits, 133 motion recipes" width="100%">
+<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 586 rules, 7 effect kits, 133 motion recipes" width="100%">
 
 ### The playbook for beautiful websites: blueprints, colour and type methods, effect kits, a workflow from brief to launch, and the rules that keep it looking designed
 

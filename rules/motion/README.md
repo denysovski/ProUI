@@ -31,6 +31,7 @@ Positive rules: what a finished, professional site does.
 | `MO-21` | **Native page transitions** | Use the View Transitions API for page and state transitions where it is supported, with an instant fallback. |
 | `MO-22` | **Scroll-driven animation in CSS** | Prefer CSS scroll-driven animations (`animation-timeline`) over scroll listeners, with a static fallback. |
 | `MO-23` | **Animate only transform and opacity** | Moving things use `transform` and `opacity`; filter and clip-path only for short, bounded moments. |
+| `MO-29` | **One transition for filtering: fade out, swap, rise in** <sub>HARD RULE</sub> | When chips, tabs or categories filter a grid or list, the shown items fade out and drop about 14 px (opacity 450 ms, transform 600 ms), the set swaps after about 260 ms, then the new items fade in rising 14 px, about 45 ms apart. Use this and nothing else for filtering: no growing cards, clip-path reveals, scaling or shuffling layouts. Ready code: `effects/fx/filter-swap/`. |
 
 ## Don't
 

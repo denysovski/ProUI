@@ -17,6 +17,7 @@
 | [Scroll draw](scroll-draw/) | SVG path draws itself as its section passes | JS | Skiper `skiper19` |
 | [Progress ring](progress-ring/) | reading progress ring with a percentage, back to top on click | CSS + JS | Skiper `skiper89` |
 | [Count up](count-up/) | numbers count up once in view; final values stay in the HTML, formatted for the page language | CSS + JS | Skiper `skiper37` |
+| [Filter swap](filter-swap/) | the only filtering transition (`MO-29`): shown items fade out and drop 14 px, the set swaps after 260 ms, new items rise in 45 ms apart; nothing grows or shuffles | CSS + JS | machacekdesign.cz portfolio |
 
 ## Use
 
@@ -47,6 +48,6 @@ Open [demo.html](demo.html) locally to see all of them; the demo uses generated 
 ## Rules
 
 Every effect here counts against the effect budget (`EF-20`) except the theme toggle, roll link and count up,
-which are small interface details. All of them belong to the Quiet kit and fit any other kit.
+which are small interface details, and the filter swap, which is the required behaviour of any filter (`MO-29`). All of them belong to the Quiet kit and fit any other kit.
 
 Original ProUI code under the [ProUI licence](../../LICENSE.md): use it in projects you build with a purchased copy of ProUI. No code from Skiper UI or Annnimate.
