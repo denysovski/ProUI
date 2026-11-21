@@ -2,8 +2,7 @@
 
 <img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 586 rules, 7 effect kits, 133 motion recipes" width="100%">
 
-**The playbook for beautiful websites, for AI coding agents.**<br>
-Blueprints, type and colour methods, effect kits, a workflow from brief to launch,<br>and the rules that keep a site looking designed instead of generated.
+**The playbook for beautiful websites, for AI coding agents.** Blueprints, type and colour methods, effect kits, a workflow from brief to launch, and the rules that keep a site looking designed instead of generated.
 
 [Get ProUI on Agensi](https://agensi.io/skills/proui) · [What's inside](#whats-inside) · [How it works](#how-it-works) · [Rules](#the-rules) · [Quick start](#quick-start) · [Licence](#licence)
 
