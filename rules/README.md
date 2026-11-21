@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Rulebooks: 24 rulebooks of Do and Don't rules that keep a site looking designed, not generated" width="100%">
 
-[Back to ProUI](../README.md) · 24 rulebooks · 586 rules
+[Back to ProUI](../README.md) · 24 rulebooks · 587 rules
 
 **Every rule ProUI applies, sorted by subject.** Each rulebook is a short list of Do and Don't rules with a fixed ID, so you can name a rule in a prompt, switch it off for one project, or point at it in a review.
 
@@ -26,7 +26,7 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 
 | Rulebook | Prefix | Rules | Covers |
 | --- | --- | --- | --- |
-| [Anti-Slop Rulebook](anti-slop/README.md) | `SL` | 72 | Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks. |
+| [Anti-Slop Rulebook](anti-slop/README.md) | `SL` | 73 | Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks. |
 | [Design Craft Rulebook](craft/README.md) | `DC` | 25 | Small decisions that separate a considered design from a template. |
 | [Typography Rulebook](typography/README.md) | `TY` | 27 | Choosing faces, setting a scale, measure, leading and tracking, and loading fonts properly. |
 | [Colour Rulebook](color/README.md) | `CL` | 23 | Colour strategy, roles, OKLCH, contrast and dark mode. |

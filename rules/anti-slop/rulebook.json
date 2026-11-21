@@ -461,6 +461,12 @@
       "kind": "dont",
       "title": "Content hidden at rest",
       "text": "Text or images that stay invisible until a scroll animation fires, so the page is blank without JavaScript, in screenshots, for crawlers, or when the animation fails. Content is visible by default; motion only enhances it (`MO`, `PF-21`)."
+    },
+    {
+      "id": "SL-73",
+      "kind": "dont",
+      "title": "Icons and pictures on content cards",
+      "text": "A small icon, emoji or clip-art picture on top of every service, feature, standard or value card. On professional sites (property, finance, law, architecture, luxury) it reads as a template and cheapens the content. Let the title and the copy lead, or show the real thing (a photo of the work, a number, a screenshot). Icons belong in controls, dense data and navigation aids; decorative card icons are acceptable on social media graphics and playful consumer brands (`SL-29`, `SL-57`)."
     }
   ]
 }

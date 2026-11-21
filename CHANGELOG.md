@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.1 (2026-11-21)
+
+- New rule `SL-73`: no decorative icons, emojis or clip-art on content cards on professional sites (587 rules).
+
 ## 4.3.0 (2026-11-21)
 
 - Every README rewritten and given a cover image: the same dark canvas as the banner with a wireframe

@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Anti-Slop Rulebook: Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks." width="100%">
 
-[All rulebooks](../README.md) · Prefix `SL` · Design · 72 rules
+[All rulebooks](../README.md) · Prefix `SL` · Design · 73 rules
 
 **Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks.**
 
@@ -13,7 +13,7 @@ Review this page against SL-01 to SL-05.
 Why does SL-01 matter here?
 ```
 
-## Don't · 72
+## Don't · 73
 
 What never ships.
 
@@ -91,6 +91,7 @@ What never ships.
 | `SL-70` | **Shape-assembled illustrations** | Pictures built from CSS circles and rectangles, or many-point `clip-path` polygons and blob masks where a real image, icon or drawing belongs. |
 | `SL-71` | **Aphoristic cadence** | Short punchy fragments in threes ("Fast. Simple. Yours."), slogans in place of information, and buzzwords ("seamless", "unlock", "elevate", "empower", "next-level", "game-changing"). See `CP-03`. |
 | `SL-72` | **Content hidden at rest** | Text or images that stay invisible until a scroll animation fires, so the page is blank without JavaScript, in screenshots, for crawlers, or when the animation fails. Content is visible by default; motion only enhances it (`MO`, `PF-21`). |
+| `SL-73` | **Icons and pictures on content cards** | A small icon, emoji or clip-art picture on top of every service, feature, standard or value card. On professional sites (property, finance, law, architecture, luxury) it reads as a template and cheapens the content. Let the title and the copy lead, or show the real thing (a photo of the work, a number, a screenshot). Icons belong in controls, dense data and navigation aids; decorative card icons are acceptable on social media graphics and playful consumer brands (`SL-29`, `SL-57`). |
 
 ## How to check
 

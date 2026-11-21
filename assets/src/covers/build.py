@@ -240,7 +240,7 @@ def sk_scripts():
         (0, '<span style="color:#ffcf6b">WARN</span>' + pl('  SL-01  theme.css:4    purple-to-blue gradient')),
         (0, '<span style="color:#ffcf6b">WARN</span>' + pl('  CL-23  sale.css:18    three saturated accents')),
         (0, cm('')), (0, st('$') + pl(' node scripts/build-rulebooks.mjs --check')),
-        (0, pl('24 rulebooks, 586 rules ') + st('valid')),
+        (0, pl('24 rulebooks, 587 rules ') + st('valid')),
         (0, st('$') + pl(' node scripts/build-package.mjs 4.2.0')),
     ])
 
@@ -341,7 +341,7 @@ SKETCH = {
 COVERS = [
     ('blueprints/cover.jpg', 'blueprints', 'Blueprints', 'How real websites are put together: pages, sections, pricing, contact, footers and legal pages.', ['10 guides', 'Structure', 'Design system'], 'blueprints', 'Landing page · 1440'),
     ('workflow/cover.jpg', 'workflow', 'Workflow', 'From a short brief to a live site, with four checkpoints where you decide.', ['10 stages', '4 checkpoints', 'GitHub'], 'workflow', 'Workflow · stages'),
-    ('rules/cover.jpg', 'rules', 'Rulebooks', '24 rulebooks of Do and Don\'t rules that keep a site looking designed, not generated.', ['24 rulebooks', '586 rules', 'IDs you can switch'], 'rules', 'rules / overview'),
+    ('rules/cover.jpg', 'rules', 'Rulebooks', '24 rulebooks of Do and Don\'t rules that keep a site looking designed, not generated.', ['24 rulebooks', '587 rules', 'IDs you can switch'], 'rules', 'rules / overview'),
     ('effects/cover.jpg', 'effects', 'Effects library', 'Kits, levels and an effect budget, plus catalogues of ready components and motion recipes.', ['4 levels', '7 kits', '133 recipes'], 'effects', 'Motion · kit and budget'),
     ('effects/fx/cover.jpg', 'effects / fx', 'ProUI fx', 'Twelve small effects in plain HTML, CSS and JavaScript. No library, no credit line.', ['12 effects', 'no dependencies', 'reduced motion'], 'fx', 'fx / demo.html'),
     ('effects/briefs/cover.jpg', 'effects / briefs', 'Motion briefs', 'Twenty detailed briefs for signature motion: structure, timeline, options and access.', ['20 briefs', 'GSAP', 'own words'], 'briefs', 'briefs / stacking-cards.md'),
@@ -393,7 +393,7 @@ def page(crumb, title, lede, chips, frame, sketch_html):
 <div class="canvas"><div class="ctop"><i></i><i></i><i></i><em>{html.escape(frame)}</em></div><div class="stage">{sketch_html}</div></div>
 </body></html>"""
 
-MAP = [('rules', 'rules', '24 rulebooks · 586 rules'), ('workflow', 'workflow', 'brief to launch'), ('blueprints', 'blueprints', 'pages and sections'), ('typography', 'typography', 'fonts and specimens'),
+MAP = [('rules', 'rules', '24 rulebooks · 587 rules'), ('workflow', 'workflow', 'brief to launch'), ('blueprints', 'blueprints', 'pages and sections'), ('typography', 'typography', 'fonts and specimens'),
        ('effects', 'effects', 'kits, levels, catalogues'), ('fx', 'effects / fx', '12 plain effects'), ('inspiration', 'inspiration', 'galleries and studies'), ('commands', 'commands', 'critique, polish, ship')]
 
 def map_page():
