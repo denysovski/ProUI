@@ -1,19 +1,19 @@
-# References
+<img src="cover.jpg" alt="References: four source documents mapped to rule IDs" width="100%">
 
-> Background material the rulebooks are built on: design guidelines, the tools ProUI learned from, and screenshots of reference sites.
+[Back to ProUI](../README.md) · [Rulebooks](../rules/README.md) · [Credits](../NOTICE)
 
-[Back to ProUI](../README.md)
+**The material the rulebooks are built on.** Design guidelines and tools ProUI learned from, distilled in our own words and mapped to rule IDs, plus the review rubric and the checklists the project started from.
 
 ## Documents
 
-| File | What it is |
+| Document | What it is |
 | --- | --- |
-| `apple-hig.md` | Apple Human Interface Guidelines distilled for the web, mapped to ProUI rules |
-| `fluent-2.md` | Microsoft Fluent 2 distilled: spacing, type ramp, tokens, elevation, motion |
-| `impeccable.md` | what ProUI adopted from Impeccable and what it does differently |
-| `opendesign.md` | OpenDesign and the one-`DESIGN.md`-per-brand idea |
-| `critique-rubric.md` | heuristics scored 0–4, cognitive load, personas, P0–P3 severity |
-| `source-checklists.md` | the screenshot checklists ProUI started from, mapped to rule IDs |
+| [apple-hig.md](apple-hig.md) | Apple Human Interface Guidelines distilled for the web, mapped to ProUI rules |
+| [fluent-2.md](fluent-2.md) | Microsoft Fluent 2 distilled: spacing, type ramp, tokens, elevation, motion |
+| [impeccable.md](impeccable.md) | what ProUI adopted from Impeccable and what it does differently |
+| [opendesign.md](opendesign.md) | OpenDesign and the idea of one `DESIGN.md` per brand |
+| [critique-rubric.md](critique-rubric.md) | heuristics scored 0–4, cognitive load, personas, P0–P3 severity |
+| [source-checklists.md](source-checklists.md) | the screenshot checklists ProUI started from, mapped to rule IDs |
 
 ## Screenshots
 

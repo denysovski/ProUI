@@ -1,12 +1,18 @@
-# Dashboards and Product UI Rulebook
+<img src="cover.jpg" alt="Dashboards and Product UI Rulebook: Dashboards, admin panels, tools and settings: shell, data, charts, tables and states." width="100%">
 
-> Dashboards, admin panels, tools and settings: shell, data, charts, tables and states.
+[All rulebooks](../README.md) · Prefix `DB` · Product · 26 rules
 
-[All rulebooks](../README.md) · Prefix `DB` · Product
+**Dashboards, admin panels, tools and settings: shell, data, charts, tables and states.**
 
-## Do
+```text
+Apply the Dashboards and Product UI Rulebook (DB) to this page.
+Review this page against DB-01 to DB-05.
+Why does DB-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 22
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -33,9 +39,9 @@ Positive rules: what a finished, professional site does.
 | `DB-21` | **Export and share** | Tables and charts that people report from can be exported (CSV) and the current view shared by URL. |
 | `DB-22` | **Accessible charts** | Every chart has a text summary and a data table alternative; series are distinguishable without colour. |
 
-## Don't
+## Don't · 4
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -64,5 +70,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [Fluent 2](https://fluent2.microsoft.design)
 
 ---
+
+Previous: [Platform Conventions Rulebook](../platform/README.md) · Next: [Copy and UX Writing Rulebook](../copy/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

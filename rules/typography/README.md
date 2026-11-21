@@ -1,12 +1,18 @@
-# Typography Rulebook
+<img src="cover.jpg" alt="Typography Rulebook: Choosing faces, setting a scale, measure, leading and tracking, and loading fonts properly." width="100%">
 
-> Choosing faces, setting a scale, measure, leading and tracking, and loading fonts properly.
+[All rulebooks](../README.md) · Prefix `TY` · Design · 27 rules
 
-[All rulebooks](../README.md) · Prefix `TY` · Design
+**Choosing faces, setting a scale, measure, leading and tracking, and loading fonts properly.**
 
-## Do
+```text
+Apply the Typography Rulebook (TY) to this page.
+Review this page against TY-01 to TY-05.
+Why does TY-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 20
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -31,9 +37,9 @@ Positive rules: what a finished, professional site does.
 | `TY-22` | **Hyphenate narrow columns** | In narrow columns and on phones, use `hyphens: auto` with the correct `lang`, so ragged edges stay calm. |
 | `TY-26` | **Test the pair on a specimen** | Before building, set the chosen faces together on one page: a headline, a paragraph, a button, a label and a table row, in every language you ship (including `Příliš žluťoučký kůň úpěl ďábelské ódy` for Czech). The pair works when the x-heights look related, the text face reads well at 16 px, the contrast between the faces is clear (serif with sans, or display with text) and no glyph is missing. See `typography/README.md`. |
 
-## Don't
+## Don't · 7
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -78,5 +84,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [Practical Typography](https://practicaltypography.com)
 
 ---
+
+Previous: [Design Craft Rulebook](../craft/README.md) · Next: [Colour Rulebook](../color/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

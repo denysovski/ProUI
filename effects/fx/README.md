@@ -1,8 +1,10 @@
-# ProUI fx
+<img src="cover.jpg" alt="ProUI fx: twelve small effects in plain HTML, CSS and JavaScript" width="100%">
 
-> Small effects written for ProUI from scratch, in plain HTML, CSS and JavaScript, with no library. They cover the most useful ideas from the free Skiper UI set, so a site can have them without Framer Motion, Swiper or a credit line. Each one works with keyboard and touch, keeps real text, and has a reduced-motion version.
+[Effects library](../README.md) · [Demo page](demo.html) · [Skiper UI catalogue](../catalog/skiper-ui.md) · [Kits](../kits.md)
 
-[Effects library](../README.md) · [Skiper UI catalogue](../catalog/skiper-ui.md) · [Kits](../kits.md) · [Demo page](demo.html)
+**Twelve small effects, written for ProUI from scratch.** Plain HTML, CSS and JavaScript, no library and no credit line. They cover the most useful ideas of the free Skiper UI set, so a site can have them without Framer Motion or Swiper. Each one works with keyboard and touch, keeps real text in the page, and has a reduced-motion version.
+
+## The effects
 
 | Effect | What it does | Files | Similar idea in |
 | --- | --- | --- | --- |
@@ -19,7 +21,7 @@
 | [Count up](count-up/) | numbers count up once in view; final values stay in the HTML, formatted for the page language | CSS + JS | Skiper `skiper37` |
 | [Filter swap](filter-swap/) | the only filtering transition (`MO-29`): shown items fade out and drop 14 px, the set swaps after 260 ms, new items rise in 45 ms apart; nothing grows or shuffles | CSS + JS | machacekdesign.cz portfolio |
 
-## Use
+## Use one
 
 Copy the folder of the effect into the project, link its CSS and load its JS at the end of `body` (or import it
 in a framework component and run it after mount). Markup and options are at the top of each file.
@@ -45,7 +47,7 @@ The gooey effect needs this filter once per page:
 Colours come from the page tokens (`--bg`, `--surface`, `--text`, `--accent`, `--font-display`, `--font-mono`).
 Open [demo.html](demo.html) locally to see all of them; the demo uses generated gradients instead of photos.
 
-## Rules
+## Budget and licence
 
 Every effect here counts against the effect budget (`EF-20`) except the theme toggle, roll link and count up,
 which are small interface details, and the filter swap, which is the required behaviour of any filter (`MO-29`). All of them belong to the Quiet kit and fit any other kit.

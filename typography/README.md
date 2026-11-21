@@ -1,8 +1,8 @@
-# Typography
+<img src="cover.jpg" alt="Typography: type metrics on the letters Ag and four font roles" width="100%">
 
-> Which fonts modern websites use, which free fonts give the same feel, and which ones fit which kind of site. Everything here is free for commercial use. The detailed tables live in [reference.md](reference.md).
+[Back to ProUI](../README.md) · [Reference tables](reference.md) · [Type pairing method](../blueprints/type-pairing.md) · [Typography Rulebook](../rules/typography/README.md)
 
-[Back to ProUI](../README.md) · [Reference](reference.md) · [Type pairing method](../blueprints/type-pairing.md) · [Typography Rulebook](../rules/typography/README.md)
+**Which fonts modern websites use, which free fonts give the same feel, and which fit which kind of site.** Every font shown here is free for commercial use. The detailed tables live in [reference.md](reference.md).
 
 <img src="specimens/grotesk-statements.jpg" alt="Six grotesk headlines with small pixel labels on warm backgrounds" width="100%">
 

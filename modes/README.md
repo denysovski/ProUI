@@ -1,18 +1,18 @@
-# Modes
+<img src="cover.jpg" alt="Modes: persuade, operate, read and experience, shown as four wireframes" width="100%">
 
-> What the visitor came to do decides how far the style may lead.
+[Back to ProUI](../README.md) · [Rulebooks by mode](../rules/README.md#which-rulebooks-lead-in-each-mode)
 
-[Back to ProUI](../README.md)
+**What the visitor came to do decides how far the style may lead.** Before designing anything, the agent names the mode of each surface. The mode changes which rules weigh most, how much the brand may show off, and how motion behaves.
 
-Before designing anything, decide what the visitor came to do. The mode changes how much the style may lead,
-which rules weigh most and how motion behaves. Write the mode into `proui/DECISIONS.md`. One site can have
-several surfaces in different modes (a persuade landing page, an operate dashboard behind login, read docs).
-
-| Mode | The visitor came to | Examples | File |
+| Mode | The visitor came to | Style may | Examples |
 | --- | --- | --- | --- |
-| Persuade | decide and act | landing page, shop, service business, product site | [persuade.md](persuade.md) |
-| Operate | get a job done | dashboard, admin, tool, settings, checkout, account | [operate.md](operate.md) |
-| Read | understand | docs, blog, article, guide, case study, legal pages | [read.md](read.md) |
-| Experience | explore and feel | portfolio, campaign, gallery, launch microsite | [experience.md](experience.md) |
+| [Persuade](persuade.md) | decide and act | lead, with one signature moment | landing page, shop, service business, product site |
+| [Operate](operate.md) | get a job done | step back; speed and clarity first | dashboard, admin, tool, settings, checkout, account |
+| [Read](read.md) | understand | serve the text | docs, blog, article, guide, case study, legal pages |
+| [Experience](experience.md) | explore and feel | lead the whole way | portfolio, campaign, gallery, launch microsite |
 
-If the request does not make the mode clear, pick the most likely one, say which in one line, and go on.
+## How it is used
+
+- One site can have several modes: a persuade landing page, an operate dashboard behind the login, read docs.
+- The mode is written into `proui/DECISIONS.md` next to each surface.
+- When the request does not make the mode clear, the agent picks the most likely one, says so in one line and goes on.

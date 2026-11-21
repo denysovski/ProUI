@@ -1,12 +1,18 @@
-# Components and Interaction Rulebook
+<img src="cover.jpg" alt="Components and Interaction Rulebook: Controls, overlays, feedback and behaviour that feel familiar and trustworthy." width="100%">
 
-> Controls, overlays, feedback and behaviour that feel familiar and trustworthy.
+[All rulebooks](../README.md) · Prefix `IX` · Interaction · 26 rules
 
-[All rulebooks](../README.md) · Prefix `IX` · Interaction
+**Controls, overlays, feedback and behaviour that feel familiar and trustworthy.**
 
-## Do
+```text
+Apply the Components and Interaction Rulebook (IX) to this page.
+Review this page against IX-01 to IX-05.
+Why does IX-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 20
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -31,9 +37,9 @@ Positive rules: what a finished, professional site does.
 | `IX-19` | **Sticky actions on long forms and pages** | On long forms and product pages, the main action stays reachable (a sticky footer bar on phones) without covering content. |
 | `IX-20` | **Confirm destructive actions by name** | Irreversible actions say exactly what will be lost and use a specific button label ("Delete 3 invoices"), not "OK". |
 
-## Don't
+## Don't · 6
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -66,5 +72,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/)
 
 ---
+
+Previous: [Navigation Rulebook](../navigation/README.md) · Next: [Forms and Checkout Rulebook](../forms/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

@@ -1,12 +1,18 @@
-# GitHub Workflow Rulebook
+<img src="cover.jpg" alt="GitHub Workflow Rulebook: The repository, branches, commits, pull requests, CI, quality gates, deploys and releases." width="100%">
 
-> The repository, branches, commits, pull requests, CI, quality gates, deploys and releases.
+[All rulebooks](../README.md) · Prefix `GH` · Production · 22 rules
 
-[All rulebooks](../README.md) · Prefix `GH` · Production
+**The repository, branches, commits, pull requests, CI, quality gates, deploys and releases.**
 
-## Do
+```text
+Apply the GitHub Workflow Rulebook (GH) to this page.
+Review this page against GH-01 to GH-05.
+Why does GH-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 19
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -30,9 +36,9 @@ Positive rules: what a finished, professional site does.
 | `GH-18` | **A licence when the code is public** | Public repositories state a licence (MIT, Apache-2.0) or say clearly that all rights are reserved. |
 | `GH-19` | **CODEOWNERS on team projects** | A `CODEOWNERS` file asks the right people to review changes in their area. |
 
-## Don't
+## Don't · 3
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -51,5 +57,7 @@ Negative rules: what never ships.
 - [Semantic Versioning](https://semver.org)
 
 ---
+
+Previous: [Security Rulebook](../security/README.md) · Next: [Anti-Slop Rulebook](../anti-slop/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

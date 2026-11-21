@@ -1,12 +1,18 @@
-# Security Rulebook
+<img src="cover.jpg" alt="Security Rulebook: Protecting visitors, data and the site itself, from headers to authentication." width="100%">
 
-> Protecting visitors, data and the site itself, from headers to authentication.
+[All rulebooks](../README.md) · Prefix `SEC` · Production · 26 rules
 
-[All rulebooks](../README.md) · Prefix `SEC` · Production
+**Protecting visitors, data and the site itself, from headers to authentication.**
 
-## Do
+```text
+Apply the Security Rulebook (SEC) to this page.
+Review this page against SEC-01 to SEC-05.
+Why does SEC-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 21
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -32,9 +38,9 @@ Positive rules: what a finished, professional site does.
 | `SEC-21` | **Least-privilege keys** | API keys and service accounts have only the rights they need, and are rotated when people leave or keys leak. |
 | `SEC-22` | **Expiring reset links** | Password reset and magic links are single-use and expire within about an hour. |
 
-## Don't
+## Don't · 5
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -56,5 +62,7 @@ Negative rules: what never ships.
 - [securityheaders.com](https://securityheaders.com)
 
 ---
+
+Previous: [Performance Rulebook](../performance/README.md) · Next: [GitHub Workflow Rulebook](../github/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

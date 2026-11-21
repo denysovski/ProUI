@@ -1,12 +1,18 @@
-# Motion Rulebook
+<img src="cover.jpg" alt="Motion Rulebook: Timing, easing and choreography that make an interface feel fast and physical." width="100%">
 
-> Timing, easing and choreography that make an interface feel fast and physical.
+[All rulebooks](../README.md) · Prefix `MO` · Interaction · 29 rules
 
-[All rulebooks](../README.md) · Prefix `MO` · Interaction
+**Timing, easing and choreography that make an interface feel fast and physical.**
 
-## Do
+```text
+Apply the Motion Rulebook (MO) to this page.
+Review this page against MO-01 to MO-05.
+Why does MO-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 22
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -33,9 +39,9 @@ Positive rules: what a finished, professional site does.
 | `MO-23` | **Animate only transform and opacity** | Moving things use `transform` and `opacity`; filter and clip-path only for short, bounded moments. |
 | `MO-29` | **One transition for filtering: fade out, swap, rise in** <sub>HARD RULE</sub> | When chips, tabs or categories filter a grid or list, the shown items fade out and drop about 14 px (opacity 450 ms, transform 600 ms), the set swaps after about 260 ms, then the new items fade in rising 14 px, about 45 ms apart. Use this and nothing else for filtering: no growing cards, clip-path reveals, scaling or shuffling layouts. Ready code: `effects/fx/filter-swap/`. |
 
-## Don't
+## Don't · 7
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -70,5 +76,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [MDN: View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API)
 
 ---
+
+Previous: [States Rulebook](../states/README.md) · Next: [Accessibility Rulebook](../accessibility/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

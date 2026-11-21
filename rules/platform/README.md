@@ -1,12 +1,18 @@
-# Platform Conventions Rulebook
+<img src="cover.jpg" alt="Platform Conventions Rulebook: Principles from Apple's Human Interface Guidelines and Microsoft Fluent 2, applied to the web." width="100%">
 
-> Principles from Apple's Human Interface Guidelines and Microsoft Fluent 2, applied to the web.
+[All rulebooks](../README.md) · Prefix `PL` · Interaction · 14 rules
 
-[All rulebooks](../README.md) · Prefix `PL` · Interaction
+**Principles from Apple's Human Interface Guidelines and Microsoft Fluent 2, applied to the web.**
 
-## Do
+```text
+Apply the Platform Conventions Rulebook (PL) to this page.
+Review this page against PL-01 to PL-05.
+Why does PL-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 13
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -24,9 +30,9 @@ Positive rules: what a finished, professional site does.
 | `PL-12` | **Native app look on the web only when it is an app** | A web app may borrow platform patterns (sidebar, toolbar, segmented controls); a marketing site should not dress up as an operating system. |
 | `PL-13` | **Respect the reading direction** | Use logical CSS properties (`margin-inline-start`, `inset-inline-end`) so layouts mirror correctly for right-to-left languages. |
 
-## Don't
+## Don't · 1
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -43,5 +49,7 @@ Negative rules: what never ships.
 - [Fluent 2](https://fluent2.microsoft.design)
 
 ---
+
+Previous: [Accessibility Rulebook](../accessibility/README.md) · Next: [Dashboards and Product UI Rulebook](../dashboards/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

@@ -1,8 +1,10 @@
-# GitHub templates
+<img src="cover.jpg" alt="GitHub templates: passing checks on a pull request" width="100%">
 
-Files to copy into a website project during `ProUI ship` (`workflow/GITHUB.md`, rules `GH`). They assume a
-Node build that outputs static files to `dist/` (Vite, Astro, Eleventy, plain HTML with a build step). Change
-`dist` and the scripts to fit the stack.
+[Templates](../README.md) · [GitHub guide](../../workflow/GITHUB.md) · [GitHub Workflow Rulebook](../../rules/github/README.md)
+
+**Everything a website repository needs to check itself.** These files are copied into a project during `ProUI ship`. They assume a Node build that outputs static files to `dist/` (Vite, Astro, Eleventy, or plain HTML with a build step); change `dist` and the scripts to fit the stack.
+
+## The files
 
 | Template | Copy to | Does |
 | --- | --- | --- |
@@ -19,4 +21,6 @@ Node build that outputs static files to `dist/` (Vite, Astro, Eleventy, plain HT
 | `env.example.template` | `.env.example` | `GH-04` |
 | `security.txt.template` | `public/.well-known/security.txt` | `SEC-18` |
 
-The `package.json` should have `lint`, `typecheck` (if TypeScript), `test` (if any) and `build` scripts.
+## Before you copy
+
+The project's `package.json` should have `lint`, `typecheck` (if TypeScript), `test` (if any) and `build` scripts.

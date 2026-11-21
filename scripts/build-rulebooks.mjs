@@ -64,17 +64,25 @@ const NOTE = '<sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mj
 function renderBook(b) {
   const dos = b.rules.filter((r) => r.kind === 'do');
   const donts = b.rules.filter((r) => r.kind === 'dont');
+  const i = books.indexOf(b);
+  const prev = books[(i - 1 + books.length) % books.length];
+  const next = books[(i + 1) % books.length];
+  const count = (n, one, many) => `${n} ${n === 1 ? one : many}`;
   const out = [];
-  out.push(`# ${b.name}`, '', `> ${b.summary}`, '');
-  out.push(`[All rulebooks](../README.md) · Prefix \`${b.prefix}\` · ${b.category}`, '');
+  out.push(`<img src="cover.jpg" alt="${b.name}: ${b.summary.replace(/"/g, "'")}" width="100%">`, '');
+  out.push(`[All rulebooks](../README.md) · Prefix \`${b.prefix}\` · ${b.category} · ${count(b.rules.length, 'rule', 'rules')}`, '');
+  out.push(`**${b.summary}**`, '');
   if (b.prefix === 'SL') {
     out.push('> [!IMPORTANT]', '> Every rule here is a **don\'t**. Rules marked SOFT are allowed only as a deliberate, sparing part of a brand or a chosen style. Rules marked HARD RULE can never be switched back on.', '');
   }
+  const ex = (dos[0] || donts[0]).id;
+  const last = b.rules[Math.min(4, b.rules.length - 1)].id;
+  out.push('```text', `Apply the ${b.name} (${b.prefix}) to this page.`, `Review this page against ${b.rules[0].id} to ${last}.`, `Why does ${ex} matter here?`, '```', '');
   if (dos.length) {
-    out.push('## Do', '', 'Positive rules: what a finished, professional site does.', '', '| ID | Rule | Details |', '| --- | --- | --- |', ...dos.map(row), '');
+    out.push(`## Do · ${dos.length}`, '', 'What a finished, professional site does.', '', '| ID | Rule | Details |', '| --- | --- | --- |', ...dos.map(row), '');
   }
   if (donts.length) {
-    out.push('## Don\'t', '', 'Negative rules: what never ships.', '', '| ID | Avoid | Details |', '| --- | --- | --- |', ...donts.map(row), '');
+    out.push(`## Don't · ${donts.length}`, '', 'What never ships.', '', '| ID | Avoid | Details |', '| --- | --- | --- |', ...donts.map(row), '');
   }
   if (b.related?.length) {
     out.push('## Related anti-slop rules', '', 'Don\'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this subject.', '',
@@ -82,14 +90,17 @@ function renderBook(b) {
   }
   if (b.check?.length) out.push('## How to check', '', ...b.check.map((c) => `- ${c}`), '');
   if (b.sources?.length) out.push('## Sources', '', ...b.sources.map((s) => `- [${s.title}](${s.url})`), '');
-  out.push('---', '', NOTE, '');
+  out.push('---', '', `Previous: [${prev.name}](../${prev.folder.split('/').pop()}/README.md) · Next: [${next.name}](../${next.folder.split('/').pop()}/README.md)`, '', NOTE, '');
   return out.join('\n');
 }
 
 function renderIndex() {
   const cats = [...new Set(books.map((b) => b.category))];
   const out = [];
-  out.push('# Rulebooks', '', '> Every rule ProUI applies, sorted into rulebooks by subject. Each rulebook has its own folder with a readable `README.md` and the data file it is built from.', '');
+  const total = [...allIds.values()].length;
+  out.push('<img src="cover.jpg" alt="Rulebooks: 24 rulebooks of Do and Don\'t rules that keep a site looking designed, not generated" width="100%">', '');
+  out.push(`[Back to ProUI](../README.md) · ${books.length} rulebooks · ${total} rules`, '');
+  out.push('**Every rule ProUI applies, sorted by subject.** Each rulebook is a short list of Do and Don\'t rules with a fixed ID, so you can name a rule in a prompt, switch it off for one project, or point at it in a review.', '');
   out.push('## How rules are named', '', 'Every rule has an ID made of a **prefix** and a **number**:', '', '```text',
     'SEO-05',
     '│   └─ number: the rule\'s place in its rulebook. It never changes once given,',
@@ -101,8 +112,8 @@ function renderIndex() {
     '| SOFT | allowed only as a deliberate, sparing part of a brand or a chosen style |',
     '| HARD RULE | can never be switched back on, whatever the prompt says |', '');
   for (const c of cats) {
-    out.push(`## ${c}`, '', '| Rulebook | Prefix | Covers |', '| --- | --- | --- |');
-    for (const b of books.filter((x) => x.category === c)) out.push(`| [${b.name}](${b.folder}/README.md) | \`${b.prefix}\` | ${esc(b.summary)} |`);
+    out.push(`## ${c}`, '', '| Rulebook | Prefix | Rules | Covers |', '| --- | --- | --- | --- |');
+    for (const b of books.filter((x) => x.category === c)) out.push(`| [${b.name}](${b.folder}/README.md) | \`${b.prefix}\` | ${b.rules.length} | ${esc(b.summary)} |`);
     out.push('');
   }
   const hard = [...allIds.values()].filter((r) => r.level === 'hard');

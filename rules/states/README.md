@@ -1,12 +1,18 @@
-# States Rulebook
+<img src="cover.jpg" alt="States Rulebook: Every situation the interface has to handle, not only the happy path." width="100%">
 
-> Every situation the interface has to handle, not only the happy path.
+[All rulebooks](../README.md) · Prefix `ST` · Interaction · 16 rules
 
-[All rulebooks](../README.md) · Prefix `ST` · Interaction
+**Every situation the interface has to handle, not only the happy path.**
 
-## Do
+```text
+Apply the States Rulebook (ST) to this page.
+Review this page against ST-01 to ST-05.
+Why does ST-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 15
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -26,9 +32,9 @@ Positive rules: what a finished, professional site does.
 | `ST-14` | **First run** | The very first visit to a product area has a short orientation or a useful default, which can be skipped and never comes back unasked. |
 | `ST-15` | **Maintenance and rate limits** | Planned downtime and rate limits get their own friendly page or message with a time when it will work again. |
 
-## Don't
+## Don't · 1
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -43,5 +49,7 @@ Negative rules: what never ships.
 - [NN/g: Error message guidelines](https://www.nngroup.com/articles/error-message-guidelines/)
 
 ---
+
+Previous: [Forms and Checkout Rulebook](../forms/README.md) · Next: [Motion Rulebook](../motion/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

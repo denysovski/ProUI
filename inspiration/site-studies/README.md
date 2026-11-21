@@ -1,8 +1,10 @@
-# Site studies
+<img src="cover.jpg" alt="Site studies: background colours and easing curves measured on real sites" width="100%">
 
-> Seventeen live websites studied in the browser in November 2026: their type, colour, navigation, motion, cookie banners and footers, measured from the pages themselves. Each study ends with a prompt that rebuilds the *idea* for a different brand. Inspiration, never a copy: no text, logos, images, illustrations or code from these sites go into a build (`SL-43`, `EF-24`).
+[Inspiration](../README.md) · [Animations](animations.md) · [Typography](../../typography/README.md) · [Footers and legal pages](../../blueprints/legal-and-trust.md)
 
-[Inspiration](../README.md) · [Typography](../../typography/README.md) · [Animations](animations.md) · [Footers and legal pages](../../blueprints/legal-and-trust.md)
+**Seventeen live websites, studied in the browser in November 2026.** For each one: its type, colour, navigation, motion, cookie banner and footer, measured from the page itself, and a prompt that rebuilds the *idea* for a different brand. Inspiration, never a copy: no text, logos, images, illustrations or code from these sites go into a build (`SL-43`, `EF-24`).
+
+## The sites
 
 | Study | Kind of site | The idea worth learning |
 | --- | --- | --- |

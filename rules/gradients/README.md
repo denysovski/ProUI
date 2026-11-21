@@ -1,12 +1,18 @@
-# Gradients and Backgrounds Rulebook
+<img src="cover.jpg" alt="Gradients and Backgrounds Rulebook: When a gradient or background pattern has a job, and how to make one that looks intentional." width="100%">
 
-> When a gradient or background pattern has a job, and how to make one that looks intentional.
+[All rulebooks](../README.md) · Prefix `GR` · Design · 16 rules
 
-[All rulebooks](../README.md) · Prefix `GR` · Design
+**When a gradient or background pattern has a job, and how to make one that looks intentional.**
 
-## Do
+```text
+Apply the Gradients and Backgrounds Rulebook (GR) to this page.
+Review this page against GR-01 to GR-05.
+Why does GR-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 13
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -24,9 +30,9 @@ Positive rules: what a finished, professional site does.
 | `GR-13` | **Export the right format** | SVG for patterns and shapes (optimised with SVGO), AVIF/WebP for photo-like gradients and mesh exports, CSS only when the gradient is simple. Animated shader gradients render only while visible and stop for reduced motion (`PF-21`). |
 | `GR-14` | **Dividers with intent** | Wave or angled section dividers only when the style is organic or playful, and the same divider shape across the site. |
 
-## Don't
+## Don't · 3
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -53,5 +59,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - View large gradients on an 8-bit screen or a compressed screenshot for banding.
 
 ---
+
+Previous: [Colour Rulebook](../color/README.md) · Next: [Effects and 3D Rulebook](../effects/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

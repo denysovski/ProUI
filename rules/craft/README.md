@@ -1,12 +1,18 @@
-# Design Craft Rulebook
+<img src="cover.jpg" alt="Design Craft Rulebook: Small decisions that separate a considered design from a template." width="100%">
 
-> Small decisions that separate a considered design from a template.
+[All rulebooks](../README.md) · Prefix `DC` · Design · 25 rules
 
-[All rulebooks](../README.md) · Prefix `DC` · Design
+**Small decisions that separate a considered design from a template.**
 
-## Do
+```text
+Apply the Design Craft Rulebook (DC) to this page.
+Review this page against DC-01 to DC-05.
+Why does DC-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 23
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -34,9 +40,9 @@ Positive rules: what a finished, professional site does.
 | `DC-22` | **Every interactive element looks interactive** | Cards that link have a hover and focus state, a cursor change and a clear target; static cards do not pretend to be clickable. |
 | `DC-23` | **Optical sizes for icons** | Icons sit on a fixed size grid (16, 20, 24) with one stroke width, and are visually balanced against the cap height of the text next to them. |
 
-## Don't
+## Don't · 2
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -74,5 +80,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - List every distinct spacing, radius and colour value in the CSS; anything not a token is a fix.
 
 ---
+
+Previous: [Anti-Slop Rulebook](../anti-slop/README.md) · Next: [Typography Rulebook](../typography/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

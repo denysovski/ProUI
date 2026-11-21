@@ -1,8 +1,12 @@
-# Motion briefs
+<img src="cover.jpg" alt="Motion briefs: a timeline with keyframes for stacking cards" width="100%">
 
-> Detailed build briefs for 20 motion components: structure, timeline, options, accessibility and mobile behaviour, written in our own words. The set follows the free Annnimate starter pack, which the owner of this repository studied; no code from it is included. Build each one from its brief with GSAP.
+[Effects library](../README.md) · [Motion recipes](../catalog/motion-recipes.md) · [Kits](../kits.md)
 
-[Effects library](../README.md) · [Motion recipes](../catalog/motion-recipes.md) (all 133 patterns, one line each) · [Kits](../kits.md)
+**Twenty briefs for motion that has to be right the first time.** Each brief describes one signature component in full: structure, timeline, options, accessibility and mobile behaviour, written in our own words. The set follows the free Annnimate starter pack, which the repository owner studied; no code from it is included. Build each one with GSAP from its brief.
+
+Use a brief when the effect is the signature moment of a page. For everything else, the one-line [motion recipes](../catalog/motion-recipes.md) are enough.
+
+## The briefs
 
 | Brief | Level | GSAP tools | Use in |
 | --- | --- | --- | --- |
@@ -27,4 +31,3 @@
 | [Two-colour text scramble](dual-scramble.md) | Subtle | GSAP, ScrambleTextPlugin, ScrollTrigger | tech brands, labels, numbers, hero kicker |
 | [Two-panel drawer menu](multi-level-drawer-menu.md) | Subtle | GSAP | shops, sports, editorial sites with deep categories |
 
-A brief is longer than a recipe: use it when the effect is the signature moment of a page and has to be right the first time.

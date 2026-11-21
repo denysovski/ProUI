@@ -1,12 +1,18 @@
-# Effects and 3D Rulebook
+<img src="cover.jpg" alt="Effects and 3D Rulebook: Modern effects, shaders and 3D from the effects library, used at the level the user chose and without hurting speed or access." width="100%">
 
-> Modern effects, shaders and 3D from the effects library, used at the level the user chose and without hurting speed or access.
+[All rulebooks](../README.md) · Prefix `EF` · Design · 24 rules
 
-[All rulebooks](../README.md) · Prefix `EF` · Design
+**Modern effects, shaders and 3D from the effects library, used at the level the user chose and without hurting speed or access.**
 
-## Do
+```text
+Apply the Effects and 3D Rulebook (EF) to this page.
+Review this page against EF-01 to EF-05.
+Why does EF-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 14
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -25,9 +31,9 @@ Positive rules: what a finished, professional site does.
 | `EF-21` | **One kit per site** | Pick one kit (Quiet, Modern dark, Modern light, Studio, Immersive, Retro, Playful) and take every effect from it, so motion, light and depth look like one family. When the kit has nothing for a section, build that section plain. |
 | `EF-23` | **Credit the libraries that ask for it** | Free Skiper UI components require attribution: add a credit in the footer, colophon or credits page when one is used. Keep the MIT notice for Motion Primitives and any licence file a 21st.dev component ships with. |
 
-## Don't
+## Don't · 10
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -72,5 +78,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [Annnimate animations](https://annnimate.com/animations)
 
 ---
+
+Previous: [Gradients and Backgrounds Rulebook](../gradients/README.md) · Next: [Layout and Spacing Rulebook](../layout/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

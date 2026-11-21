@@ -1,12 +1,18 @@
-# Performance Rulebook
+<img src="cover.jpg" alt="Performance Rulebook: Fast loading, smooth interaction and stable layout, measured with Core Web Vitals." width="100%">
 
-> Fast loading, smooth interaction and stable layout, measured with Core Web Vitals.
+[All rulebooks](../README.md) · Prefix `PF` · Production · 33 rules
 
-[All rulebooks](../README.md) · Prefix `PF` · Production
+**Fast loading, smooth interaction and stable layout, measured with Core Web Vitals.**
 
-## Do
+```text
+Apply the Performance Rulebook (PF) to this page.
+Review this page against PF-01 to PF-05.
+Why does PF-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 27
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -38,9 +44,9 @@ Positive rules: what a finished, professional site does.
 | `PF-28` | **Break up long tasks** | JavaScript work over about 50 ms is split up or moved to a worker so input stays responsive (INP under 200 ms). |
 | `PF-29` | **Skip off-screen rendering** | `content-visibility: auto` with `contain-intrinsic-size` on long pages with heavy sections below the fold. |
 
-## Don't
+## Don't · 6
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -63,5 +69,7 @@ Negative rules: what never ships.
 - [web.dev: INP](https://web.dev/articles/inp)
 
 ---
+
+Previous: [SEO Rulebook](../seo/README.md) · Next: [Security Rulebook](../security/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

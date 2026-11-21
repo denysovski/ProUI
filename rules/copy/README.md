@@ -1,12 +1,18 @@
-# Copy and UX Writing Rulebook
+<img src="cover.jpg" alt="Copy and UX Writing Rulebook: Words that sound like the business and help people act: headlines, buttons, errors, claims." width="100%">
 
-> Words that sound like the business and help people act: headlines, buttons, errors, claims.
+[All rulebooks](../README.md) · Prefix `CP` · Content · 22 rules
 
-[All rulebooks](../README.md) · Prefix `CP` · Content
+**Words that sound like the business and help people act: headlines, buttons, errors, claims.**
 
-## Do
+```text
+Apply the Copy and UX Writing Rulebook (CP) to this page.
+Review this page against CP-01 to CP-05.
+Why does CP-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 15
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -26,9 +32,9 @@ Positive rules: what a finished, professional site does.
 | `CP-17` | **Unambiguous dates and times** | Write dates in a format nobody misreads ("17 Nov 2026", "Tue 9:00–17:00") and show time zones where they matter. |
 | `CP-18` | **Inclusive, plain language** | Gender-neutral wording, no idioms that do not translate, explain necessary jargon once. |
 
-## Don't
+## Don't · 7
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -67,5 +73,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [Fluent 2: Content](https://fluent2.microsoft.design)
 
 ---
+
+Previous: [Dashboards and Product UI Rulebook](../dashboards/README.md) · Next: [Localisation Rulebook](../localization/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

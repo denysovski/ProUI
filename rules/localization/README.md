@@ -1,12 +1,18 @@
-# Localisation Rulebook
+<img src="cover.jpg" alt="Localisation Rulebook: Sites in more than one language or market: language, formats, currencies and switching." width="100%">
 
-> Sites in more than one language or market: language, formats, currencies and switching.
+[All rulebooks](../README.md) · Prefix `LO` · Content · 10 rules
 
-[All rulebooks](../README.md) · Prefix `LO` · Content
+**Sites in more than one language or market: language, formats, currencies and switching.**
 
-## Do
+```text
+Apply the Localisation Rulebook (LO) to this page.
+Review this page against LO-01 to LO-05.
+Why does LO-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 7
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -18,9 +24,9 @@ Positive rules: what a finished, professional site does.
 | `LO-06` | **Translate everything** | Titles, meta descriptions, alt text, error messages, emails and legal pages are translated, not only the visible body. |
 | `LO-07` | **Local currency and prices** | Prices show in the visitor's currency where the business supports it, with taxes as local law expects. |
 
-## Don't
+## Don't · 3
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -39,5 +45,7 @@ Negative rules: what never ships.
 - [MDN: Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
 
 ---
+
+Previous: [Copy and UX Writing Rulebook](../copy/README.md) · Next: [Launch Essentials Rulebook](../launch/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

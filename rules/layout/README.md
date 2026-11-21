@@ -1,12 +1,18 @@
-# Layout and Spacing Rulebook
+<img src="cover.jpg" alt="Layout and Spacing Rulebook: Hierarchy, spacing scale, rhythm, grid and adapting to every screen." width="100%">
 
-> Hierarchy, spacing scale, rhythm, grid and adapting to every screen.
+[All rulebooks](../README.md) · Prefix `LY` · Design · 22 rules
 
-[All rulebooks](../README.md) · Prefix `LY` · Design
+**Hierarchy, spacing scale, rhythm, grid and adapting to every screen.**
 
-## Do
+```text
+Apply the Layout and Spacing Rulebook (LY) to this page.
+Review this page against LY-01 to LY-05.
+Why does LY-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 17
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -28,9 +34,9 @@ Positive rules: what a finished, professional site does.
 | `LY-17` | **Reserve space for media** | Images, videos, embeds and ads have `width`/`height` or `aspect-ratio`, so nothing jumps while loading (`PF-03`). |
 | `LY-18` | **A compact sticky header** | A sticky header stays short (about 56–72 px on desktop, less on phones) and may hide on scroll down and return on scroll up. |
 
-## Don't
+## Don't · 5
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -67,5 +73,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [Fluent 2: Layout](https://fluent2.microsoft.design/layout)
 
 ---
+
+Previous: [Effects and 3D Rulebook](../effects/README.md) · Next: [Page Structure Rulebook](../structure/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

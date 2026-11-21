@@ -1,12 +1,18 @@
-# Navigation Rulebook
+<img src="cover.jpg" alt="Navigation Rulebook: Menus, wayfinding, search, footers and URLs that let people find things and know where they are." width="100%">
 
-> Menus, wayfinding, search, footers and URLs that let people find things and know where they are.
+[All rulebooks](../README.md) · Prefix `NV` · Interaction · 14 rules
 
-[All rulebooks](../README.md) · Prefix `NV` · Interaction
+**Menus, wayfinding, search, footers and URLs that let people find things and know where they are.**
 
-## Do
+```text
+Apply the Navigation Rulebook (NV) to this page.
+Review this page against NV-01 to NV-05.
+Why does NV-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 9
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -20,9 +26,9 @@ Positive rules: what a finished, professional site does.
 | `NV-08` | **Accessible mobile menu** | The mobile menu opens with a labelled button, traps focus while open, closes with Escape and returns focus to the button. |
 | `NV-09` | **URLs for every state worth sharing** | Tabs, filters, search results and opened items that people may share or revisit have their own URL. |
 
-## Don't
+## Don't · 5
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -43,5 +49,7 @@ Negative rules: what never ships.
 - [NN/g: Auto-forwarding carousels](https://www.nngroup.com/articles/auto-forwarding/)
 
 ---
+
+Previous: [Images and Media Rulebook](../images/README.md) · Next: [Components and Interaction Rulebook](../components/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

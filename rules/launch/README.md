@@ -1,12 +1,18 @@
-# Launch Essentials Rulebook
+<img src="cover.jpg" alt="Launch Essentials Rulebook: What every real, launched website has: system pages, legal pages, contact details, monitoring." width="100%">
 
-> What every real, launched website has: system pages, legal pages, contact details, monitoring.
+[All rulebooks](../README.md) · Prefix `PE` · Production · 26 rules
 
-[All rulebooks](../README.md) · Prefix `PE` · Production
+**What every real, launched website has: system pages, legal pages, contact details, monitoring.**
 
-## Do
+```text
+Apply the Launch Essentials Rulebook (PE) to this page.
+Review this page against PE-01 to PE-05.
+Why does PE-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 23
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -34,9 +40,9 @@ Positive rules: what a finished, professional site does.
 | `PE-24` | **Security contact and status page** | Publish `/.well-known/security.txt` (RFC 9116) with `Contact` and `Expires`, and link "Report security issues" from the footer. Products people log in to, pay through or integrate with also link a status page hosted separately from the site. |
 | `PE-25` | **Uploaded files are handled safely** | User uploads are checked for type and size on the server, renamed, stripped of metadata, stored privately and served through expiring links, never executed or rendered as HTML or SVG on the main domain, and deleted when their purpose ends, as the privacy policy says. |
 
-## Don't
+## Don't · 3
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -55,5 +61,7 @@ Negative rules: what never ships.
 - [GDPR overview](https://gdpr.eu)
 
 ---
+
+Previous: [Localisation Rulebook](../localization/README.md) · Next: [SEO Rulebook](../seo/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

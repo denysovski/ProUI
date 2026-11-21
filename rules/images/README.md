@@ -1,12 +1,18 @@
-# Images and Media Rulebook
+<img src="cover.jpg" alt="Images and Media Rulebook: Photography, illustration, video and icons: what to use, how to prepare it, what never to ship." width="100%">
 
-> Photography, illustration, video and icons: what to use, how to prepare it, what never to ship.
+[All rulebooks](../README.md) · Prefix `IM` · Design · 15 rules
 
-[All rulebooks](../README.md) · Prefix `IM` · Design
+**Photography, illustration, video and icons: what to use, how to prepare it, what never to ship.**
 
-## Do
+```text
+Apply the Images and Media Rulebook (IM) to this page.
+Review this page against IM-01 to IM-05.
+Why does IM-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 9
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -20,9 +26,9 @@ Positive rules: what a finished, professional site does.
 | `IM-08` | **SVG for icons and logos** | Icons and logos are optimised inline SVG or an SVG sprite, not icon fonts or PNGs. |
 | `IM-09` | **Credit and licence** | Every image that is not the client's own has a licence that allows the use, recorded in the project. |
 
-## Don't
+## Don't · 6
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -54,5 +60,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [W3C: Images tutorial (alt text)](https://www.w3.org/WAI/tutorials/images/)
 
 ---
+
+Previous: [Page Structure Rulebook](../structure/README.md) · Next: [Navigation Rulebook](../navigation/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

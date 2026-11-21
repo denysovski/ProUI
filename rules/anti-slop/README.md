@@ -1,15 +1,21 @@
-# Anti-Slop Rulebook
+<img src="cover.jpg" alt="Anti-Slop Rulebook: Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks." width="100%">
 
-> Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks.
+[All rulebooks](../README.md) · Prefix `SL` · Design · 72 rules
 
-[All rulebooks](../README.md) · Prefix `SL` · Design
+**Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks.**
 
 > [!IMPORTANT]
 > Every rule here is a **don't**. Rules marked SOFT are allowed only as a deliberate, sparing part of a brand or a chosen style. Rules marked HARD RULE can never be switched back on.
 
-## Don't
+```text
+Apply the Anti-Slop Rulebook (SL) to this page.
+Review this page against SL-01 to SL-05.
+Why does SL-01 matter here?
+```
 
-Negative rules: what never ships.
+## Don't · 72
+
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -97,5 +103,7 @@ Negative rules: what never ships.
 - [Impeccable](https://github.com/pbakaus/impeccable)
 
 ---
+
+Previous: [GitHub Workflow Rulebook](../github/README.md) · Next: [Design Craft Rulebook](../craft/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.3.0 (2026-11-21)
+
+- Every README rewritten and given a cover image: the same dark canvas as the banner with a wireframe
+  sketch of what the folder holds. Rulebook covers are generated from each `rulebook.json` and show its
+  own rules (`assets/src/covers/build.py`).
+- Main README shorter: a board of the main folders, the workflow in five steps, rulebooks by area, and the
+  long lists of websites and tools moved to `toolkit/README.md`.
+- Rulebook pages show the rule count, example prompts with their IDs, and links to the previous and next
+  rulebook. The rulebook index lists the number of rules per rulebook.
+
 ## 4.2.0 (2026-11-21)
 
 - Typography rewritten as a short visual guide: ten specimen sheets (grotesk statements with pixel labels,

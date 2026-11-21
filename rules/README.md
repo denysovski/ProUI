@@ -1,6 +1,8 @@
-# Rulebooks
+<img src="cover.jpg" alt="Rulebooks: 24 rulebooks of Do and Don't rules that keep a site looking designed, not generated" width="100%">
 
-> Every rule ProUI applies, sorted into rulebooks by subject. Each rulebook has its own folder with a readable `README.md` and the data file it is built from.
+[Back to ProUI](../README.md) · 24 rulebooks · 586 rules
+
+**Every rule ProUI applies, sorted by subject.** Each rulebook is a short list of Do and Don't rules with a fixed ID, so you can name a rule in a prompt, switch it off for one project, or point at it in a review.
 
 ## How rules are named
 
@@ -22,52 +24,52 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 
 ## Design
 
-| Rulebook | Prefix | Covers |
-| --- | --- | --- |
-| [Anti-Slop Rulebook](anti-slop/README.md) | `SL` | Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks. |
-| [Design Craft Rulebook](craft/README.md) | `DC` | Small decisions that separate a considered design from a template. |
-| [Typography Rulebook](typography/README.md) | `TY` | Choosing faces, setting a scale, measure, leading and tracking, and loading fonts properly. |
-| [Colour Rulebook](color/README.md) | `CL` | Colour strategy, roles, OKLCH, contrast and dark mode. |
-| [Gradients and Backgrounds Rulebook](gradients/README.md) | `GR` | When a gradient or background pattern has a job, and how to make one that looks intentional. |
-| [Effects and 3D Rulebook](effects/README.md) | `EF` | Modern effects, shaders and 3D from the effects library, used at the level the user chose and without hurting speed or access. |
-| [Layout and Spacing Rulebook](layout/README.md) | `LY` | Hierarchy, spacing scale, rhythm, grid and adapting to every screen. |
-| [Page Structure Rulebook](structure/README.md) | `PG` | Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built. |
-| [Images and Media Rulebook](images/README.md) | `IM` | Photography, illustration, video and icons: what to use, how to prepare it, what never to ship. |
+| Rulebook | Prefix | Rules | Covers |
+| --- | --- | --- | --- |
+| [Anti-Slop Rulebook](anti-slop/README.md) | `SL` | 72 | Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks. |
+| [Design Craft Rulebook](craft/README.md) | `DC` | 25 | Small decisions that separate a considered design from a template. |
+| [Typography Rulebook](typography/README.md) | `TY` | 27 | Choosing faces, setting a scale, measure, leading and tracking, and loading fonts properly. |
+| [Colour Rulebook](color/README.md) | `CL` | 23 | Colour strategy, roles, OKLCH, contrast and dark mode. |
+| [Gradients and Backgrounds Rulebook](gradients/README.md) | `GR` | 16 | When a gradient or background pattern has a job, and how to make one that looks intentional. |
+| [Effects and 3D Rulebook](effects/README.md) | `EF` | 24 | Modern effects, shaders and 3D from the effects library, used at the level the user chose and without hurting speed or access. |
+| [Layout and Spacing Rulebook](layout/README.md) | `LY` | 22 | Hierarchy, spacing scale, rhythm, grid and adapting to every screen. |
+| [Page Structure Rulebook](structure/README.md) | `PG` | 23 | Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built. |
+| [Images and Media Rulebook](images/README.md) | `IM` | 15 | Photography, illustration, video and icons: what to use, how to prepare it, what never to ship. |
 
 ## Interaction
 
-| Rulebook | Prefix | Covers |
-| --- | --- | --- |
-| [Navigation Rulebook](navigation/README.md) | `NV` | Menus, wayfinding, search, footers and URLs that let people find things and know where they are. |
-| [Components and Interaction Rulebook](components/README.md) | `IX` | Controls, overlays, feedback and behaviour that feel familiar and trustworthy. |
-| [Forms and Checkout Rulebook](forms/README.md) | `FO` | Forms people can finish: fields, labels, validation, errors and checkout. |
-| [States Rulebook](states/README.md) | `ST` | Every situation the interface has to handle, not only the happy path. |
-| [Motion Rulebook](motion/README.md) | `MO` | Timing, easing and choreography that make an interface feel fast and physical. |
-| [Accessibility Rulebook](accessibility/README.md) | `AX` | Usable by everyone, designed in from the start. Target: WCAG 2.2 AA. |
-| [Platform Conventions Rulebook](platform/README.md) | `PL` | Principles from Apple's Human Interface Guidelines and Microsoft Fluent 2, applied to the web. |
+| Rulebook | Prefix | Rules | Covers |
+| --- | --- | --- | --- |
+| [Navigation Rulebook](navigation/README.md) | `NV` | 14 | Menus, wayfinding, search, footers and URLs that let people find things and know where they are. |
+| [Components and Interaction Rulebook](components/README.md) | `IX` | 26 | Controls, overlays, feedback and behaviour that feel familiar and trustworthy. |
+| [Forms and Checkout Rulebook](forms/README.md) | `FO` | 18 | Forms people can finish: fields, labels, validation, errors and checkout. |
+| [States Rulebook](states/README.md) | `ST` | 16 | Every situation the interface has to handle, not only the happy path. |
+| [Motion Rulebook](motion/README.md) | `MO` | 29 | Timing, easing and choreography that make an interface feel fast and physical. |
+| [Accessibility Rulebook](accessibility/README.md) | `AX` | 28 | Usable by everyone, designed in from the start. Target: WCAG 2.2 AA. |
+| [Platform Conventions Rulebook](platform/README.md) | `PL` | 14 | Principles from Apple's Human Interface Guidelines and Microsoft Fluent 2, applied to the web. |
 
 ## Product
 
-| Rulebook | Prefix | Covers |
-| --- | --- | --- |
-| [Dashboards and Product UI Rulebook](dashboards/README.md) | `DB` | Dashboards, admin panels, tools and settings: shell, data, charts, tables and states. |
+| Rulebook | Prefix | Rules | Covers |
+| --- | --- | --- | --- |
+| [Dashboards and Product UI Rulebook](dashboards/README.md) | `DB` | 26 | Dashboards, admin panels, tools and settings: shell, data, charts, tables and states. |
 
 ## Content
 
-| Rulebook | Prefix | Covers |
-| --- | --- | --- |
-| [Copy and UX Writing Rulebook](copy/README.md) | `CP` | Words that sound like the business and help people act: headlines, buttons, errors, claims. |
-| [Localisation Rulebook](localization/README.md) | `LO` | Sites in more than one language or market: language, formats, currencies and switching. |
+| Rulebook | Prefix | Rules | Covers |
+| --- | --- | --- | --- |
+| [Copy and UX Writing Rulebook](copy/README.md) | `CP` | 22 | Words that sound like the business and help people act: headlines, buttons, errors, claims. |
+| [Localisation Rulebook](localization/README.md) | `LO` | 10 | Sites in more than one language or market: language, formats, currencies and switching. |
 
 ## Production
 
-| Rulebook | Prefix | Covers |
-| --- | --- | --- |
-| [Launch Essentials Rulebook](launch/README.md) | `PE` | What every real, launched website has: system pages, legal pages, contact details, monitoring. |
-| [SEO Rulebook](seo/README.md) | `SEO` | Being found: technical SEO, content signals, structured data and what search engines penalise. |
-| [Performance Rulebook](performance/README.md) | `PF` | Fast loading, smooth interaction and stable layout, measured with Core Web Vitals. |
-| [Security Rulebook](security/README.md) | `SEC` | Protecting visitors, data and the site itself, from headers to authentication. |
-| [GitHub Workflow Rulebook](github/README.md) | `GH` | The repository, branches, commits, pull requests, CI, quality gates, deploys and releases. |
+| Rulebook | Prefix | Rules | Covers |
+| --- | --- | --- | --- |
+| [Launch Essentials Rulebook](launch/README.md) | `PE` | 26 | What every real, launched website has: system pages, legal pages, contact details, monitoring. |
+| [SEO Rulebook](seo/README.md) | `SEO` | 29 | Being found: technical SEO, content signals, structured data and what search engines penalise. |
+| [Performance Rulebook](performance/README.md) | `PF` | 33 | Fast loading, smooth interaction and stable layout, measured with Core Web Vitals. |
+| [Security Rulebook](security/README.md) | `SEC` | 26 | Protecting visitors, data and the site itself, from headers to authentication. |
+| [GitHub Workflow Rulebook](github/README.md) | `GH` | 22 | The repository, branches, commits, pull requests, CI, quality gates, deploys and releases. |
 
 ## Hard rules
 

@@ -1,12 +1,18 @@
-# Colour Rulebook
+<img src="cover.jpg" alt="Colour Rulebook: Colour strategy, roles, OKLCH, contrast and dark mode." width="100%">
 
-> Colour strategy, roles, OKLCH, contrast and dark mode.
+[All rulebooks](../README.md) · Prefix `CL` · Design · 23 rules
 
-[All rulebooks](../README.md) · Prefix `CL` · Design
+**Colour strategy, roles, OKLCH, contrast and dark mode.**
 
-## Do
+```text
+Apply the Colour Rulebook (CL) to this page.
+Review this page against CL-01 to CL-05.
+Why does CL-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 17
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -28,9 +34,9 @@ Positive rules: what a finished, professional site does.
 | `CL-18` | **A visible focus colour** | The focus ring has its own token with 3:1 contrast against every surface it can appear on, not the accent at low opacity. |
 | `CL-22` | **Start from a palette that is proven** | Base the palette on combinations that already work on real, respected sites: a warm off-white or warm near-black ground, ink that is not pure black, and one accent. `inspiration/site-studies/` and `blueprints/colour-schemes.md` list measured palettes. Adapt the hue to the subject; do not invent a scheme from nothing. |
 
-## Don't
+## Don't · 6
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -73,5 +79,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [OKLCH in CSS (Evil Martians)](https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl)
 
 ---
+
+Previous: [Typography Rulebook](../typography/README.md) · Next: [Gradients and Backgrounds Rulebook](../gradients/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

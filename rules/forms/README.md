@@ -1,12 +1,18 @@
-# Forms and Checkout Rulebook
+<img src="cover.jpg" alt="Forms and Checkout Rulebook: Forms people can finish: fields, labels, validation, errors and checkout." width="100%">
 
-> Forms people can finish: fields, labels, validation, errors and checkout.
+[All rulebooks](../README.md) · Prefix `FO` · Interaction · 18 rules
 
-[All rulebooks](../README.md) · Prefix `FO` · Interaction
+**Forms people can finish: fields, labels, validation, errors and checkout.**
 
-## Do
+```text
+Apply the Forms and Checkout Rulebook (FO) to this page.
+Review this page against FO-01 to FO-05.
+Why does FO-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 12
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -23,9 +29,9 @@ Positive rules: what a finished, professional site does.
 | `FO-11` | **Show password option** | Password fields have a show/hide toggle and accept paste and password managers. |
 | `FO-12` | **Address lookup where it helps** | Offer address autocomplete or postcode lookup, with manual entry always possible. |
 
-## Don't
+## Don't · 6
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -57,5 +63,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [HTML autocomplete tokens (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)
 
 ---
+
+Previous: [Components and Interaction Rulebook](../components/README.md) · Next: [States Rulebook](../states/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

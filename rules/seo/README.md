@@ -1,12 +1,18 @@
-# SEO Rulebook
+<img src="cover.jpg" alt="SEO Rulebook: Being found: technical SEO, content signals, structured data and what search engines penalise." width="100%">
 
-> Being found: technical SEO, content signals, structured data and what search engines penalise.
+[All rulebooks](../README.md) · Prefix `SEO` · Production · 29 rules
 
-[All rulebooks](../README.md) · Prefix `SEO` · Production
+**Being found: technical SEO, content signals, structured data and what search engines penalise.**
 
-## Do
+```text
+Apply the SEO Rulebook (SEO) to this page.
+Review this page against SEO-01 to SEO-05.
+Why does SEO-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 22
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -33,9 +39,9 @@ Positive rules: what a finished, professional site does.
 | `SEO-23` | **Local business consistency** | Local businesses keep name, address and phone identical on the site, Google Business Profile and directories, and add LocalBusiness schema with opening hours. |
 | `SEO-24` | **Accurate sitemap dates** | `lastmod` in the sitemap changes only when the page content really changes. |
 
-## Don't
+## Don't · 7
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -60,5 +66,7 @@ Negative rules: what never ships.
 - [Schema.org](https://schema.org)
 
 ---
+
+Previous: [Launch Essentials Rulebook](../launch/README.md) · Next: [Performance Rulebook](../performance/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

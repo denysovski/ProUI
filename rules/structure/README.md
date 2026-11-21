@@ -1,12 +1,18 @@
-# Page Structure Rulebook
+<img src="cover.jpg" alt="Page Structure Rulebook: Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built." width="100%">
 
-> Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built.
+[All rulebooks](../README.md) · Prefix `PG` · Design · 23 rules
 
-[All rulebooks](../README.md) · Prefix `PG` · Design
+**Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built.**
 
-## Do
+```text
+Apply the Page Structure Rulebook (PG) to this page.
+Review this page against PG-01 to PG-05.
+Why does PG-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 16
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -27,9 +33,9 @@ Positive rules: what a finished, professional site does.
 | `PG-15` | **Legal row in the footer** | Legal name, registration and VAT numbers where required, privacy, terms, cookie settings and the accessibility statement sit in the last row of the footer. |
 | `PG-23` | **Footer groups by what people look for** | Group footer links by job: product, company (about, careers, press), resources (help, status, blog), trust (security, compliance), legal. The last row carries ©, privacy, terms, cookie settings and the security contact. Size the footer to the site (`PG-14`); a small site needs only the legal row and contact. |
 
-## Don't
+## Don't · 7
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -73,5 +79,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [Orbit Media: website footer best practices](https://www.orbitmedia.com/blog/website-footer-design-best-practices/)
 
 ---
+
+Previous: [Layout and Spacing Rulebook](../layout/README.md) · Next: [Images and Media Rulebook](../images/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>

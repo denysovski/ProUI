@@ -26,7 +26,7 @@ const EDITS = [
   ['workflow/WORKFLOW.md', "| `style/PINS.md` (the user's Pinterest board) | the user's own taste; always included | pick the themes that match the brief, open 5–10 pins |\n", ''],
   ['workflow/WORKFLOW.md', 'the brief **and** `style/MY-STYLE.md`,', 'the brief,'],
   ['workflow/WORKFLOW.md', "different moods, at least one from the user's own board, at least one light", 'different moods, at least one light'],
-  ['style/README.md', " and the repository owner's personal taste.", '.'],
+  ['style/README.md', "\n## Personal files\n\n| File | What it is |\n| --- | --- |\n", ''],
   ['assets/src/workflow.html', ', Mobbin, Dribbble and the Pinterest board.', ', Mobbin and Dribbble.'],
   ['references/README.md', "- Pinterest board `web-design`: all 878 loadable pins viewed and measured (see `style/MY-STYLE.md`, with links\n  to example pins by theme). The pin images are not copied here because most were made by other designers.\n", ''],
   ['NOTICE', '\nPinterest pins listed in style/PINS.md belong to their authors and are linked only.\n', ''],

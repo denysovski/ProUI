@@ -1,12 +1,18 @@
-# Accessibility Rulebook
+<img src="cover.jpg" alt="Accessibility Rulebook: Usable by everyone, designed in from the start. Target: WCAG 2.2 AA." width="100%">
 
-> Usable by everyone, designed in from the start. Target: WCAG 2.2 AA.
+[All rulebooks](../README.md) · Prefix `AX` · Interaction · 28 rules
 
-[All rulebooks](../README.md) · Prefix `AX` · Interaction
+**Usable by everyone, designed in from the start. Target: WCAG 2.2 AA.**
 
-## Do
+```text
+Apply the Accessibility Rulebook (AX) to this page.
+Review this page against AX-01 to AX-05.
+Why does AX-01 matter here?
+```
 
-Positive rules: what a finished, professional site does.
+## Do · 22
+
+What a finished, professional site does.
 
 | ID | Rule | Details |
 | --- | --- | --- |
@@ -33,9 +39,9 @@ Positive rules: what a finished, professional site does.
 | `AX-23` | **Headings describe their section** | Every heading tells what the section is about; screen reader users jump through headings like a table of contents. |
 | `AX-24` | **Accessibility statement** | Sites that sell to EU consumers publish an accessibility statement and a way to report barriers, as the European Accessibility Act requires since 28 June 2025. |
 
-## Don't
+## Don't · 6
 
-Negative rules: what never ships.
+What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
@@ -69,5 +75,7 @@ Don'ts from the [Anti-Slop Rulebook](../anti-slop/README.md) that belong to this
 - [European Accessibility Act (Directive 2019/882)](https://eur-lex.europa.eu/eli/dir/2019/882/oj)
 
 ---
+
+Previous: [Motion Rulebook](../motion/README.md) · Next: [Platform Conventions Rulebook](../platform/README.md)
 
 <sub>Generated from `rulebook.json` by `scripts/build-rulebooks.mjs`. To change a rule, edit the JSON and run the script.</sub>
