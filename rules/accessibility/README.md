@@ -29,7 +29,7 @@ What a finished, professional site does.
 | `AX-12` | **Reduced motion** | `prefers-reduced-motion: reduce` replaces movement with fades or instant changes but keeps the state change visible. Do not kill all transitions to 0 ms if feedback is lost. |
 | `AX-14` | **Reduced transparency and more contrast** | Honour `prefers-reduced-transparency` (solid surfaces instead of glass) and `prefers-contrast: more` (stronger borders and text). |
 | `AX-15` | **Announce changes** | Loading, success and errors are announced to screen readers (`aria-live`, `role="status"`, `role="alert"`), not only shown. |
-| `AX-16` | **Test with real tools** | axe or Lighthouse accessibility audit, keyboard-only walkthrough, a screen reader pass (VoiceOver or NVDA) on the main flow, and a 200 % zoom check before handoff. |
+| `AX-16` | **Test accessibility before every release** <sub>HARD RULE</sub> | Run it, do not assume it: an axe or Lighthouse accessibility audit (no serious issues, score 95+), a keyboard-only walkthrough, a screen reader pass (VoiceOver or NVDA, and VoiceOver or TalkBack on a phone) on the main flow, contrast checks and a 200 % zoom check, on desktop and on a real phone, before every handoff and release. |
 | `AX-17` | **Focus not obscured** | A focused element is never hidden behind sticky headers, footers, cookie bars or chat widgets (WCAG 2.2, 2.4.11). |
 | `AX-18` | **Alternatives to dragging** | Everything done by dragging (sliders, sorting, maps) can also be done with single clicks or taps (WCAG 2.2, 2.5.7). |
 | `AX-19` | **Consistent help** | Help, contact and chat links appear in the same place on every page (WCAG 2.2, 3.2.6). |

@@ -123,8 +123,9 @@
     {
       "id": "AX-16",
       "kind": "do",
-      "title": "Test with real tools",
-      "text": "axe or Lighthouse accessibility audit, keyboard-only walkthrough, a screen reader pass (VoiceOver or NVDA) on the main flow, and a 200 % zoom check before handoff."
+      "title": "Test accessibility before every release",
+      "text": "Run it, do not assume it: an axe or Lighthouse accessibility audit (no serious issues, score 95+), a keyboard-only walkthrough, a screen reader pass (VoiceOver or NVDA, and VoiceOver or TalkBack on a phone) on the main flow, contrast checks and a 200 % zoom check, on desktop and on a real phone, before every handoff and release.",
+      "level": "hard"
     },
     {
       "id": "AX-17",

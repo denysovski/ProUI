@@ -1,5 +1,14 @@
 # Changelog
 
+## 4.3.0 (2026-11-22)
+
+- `LY-23` (hard): every page works on a phone, checked at 320, 360, 390 and 430 px: no sideways overflow,
+  text that fits and is start-aligned, images cropped for the narrow frame, 44 px controls, reachable navigation.
+- `LY-24` (hard): phones get their own spacing, about 64–96 px between sections, 32–48 px between blocks and
+  16–24 px side padding; add space before shrinking text.
+- `AX-16` is now hard: accessibility is tested before every release (audit, keyboard, screen reader on desktop
+  and phone, contrast, 200 % zoom). 588 rules.
+
 ## 4.3.1 (2026-11-21)
 
 - New rule `SL-73`: no decorative icons, emojis or clip-art on content cards on professional sites (587 rules).

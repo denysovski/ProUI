@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Layout and Spacing Rulebook: Hierarchy, spacing scale, rhythm, grid and adapting to every screen." width="100%">
 
-[All rulebooks](../README.md) · Prefix `LY` · Design · 22 rules
+[All rulebooks](../README.md) · Prefix `LY` · Design · 24 rules
 
 **Hierarchy, spacing scale, rhythm, grid and adapting to every screen.**
 
@@ -10,7 +10,7 @@ Review this page against LY-01 to LY-05.
 Why does LY-01 matter here?
 ```
 
-## Do · 17
+## Do · 19
 
 What a finished, professional site does.
 
@@ -33,6 +33,8 @@ What a finished, professional site does.
 | `LY-16` | **Respect safe areas** | `env(safe-area-inset-*)` for fixed bars on phones with notches and home indicators; sticky CTAs sit above the home indicator (`PE-03`). |
 | `LY-17` | **Reserve space for media** | Images, videos, embeds and ads have `width`/`height` or `aspect-ratio`, so nothing jumps while loading (`PF-03`). |
 | `LY-18` | **A compact sticky header** | A sticky header stays short (about 56–72 px on desktop, less on phones) and may hide on scroll down and return on scroll up. |
+| `LY-23` | **Every page works on a phone** <sub>HARD RULE</sub> | Build and check every page at 320, 360, 390 and 430 px, not only desktop: nothing overflows sideways, text fits its box and is start-aligned (`TY-25`), images are cropped or swapped for the narrow frame where needed, controls are at least 44 px, the navigation stays reachable, and every feature still works (`LY-14`, `LY-19`, `AX-08`). |
+| `LY-24` | **Air between sections on phones** <sub>HARD RULE</sub> | Phones get their own spacing, not the desktop values scaled down: about 64–96 px between sections, 32–48 px between blocks inside a section and at least 12–16 px between related elements, with 16–24 px side padding (`LY-09`). If a phone screen looks crowded, add space before shrinking text. |
 
 ## Don't · 5
 

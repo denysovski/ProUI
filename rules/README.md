@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Rulebooks: 24 rulebooks of Do and Don't rules that keep a site looking designed, not generated" width="100%">
 
-[Back to ProUI](../README.md) · 24 rulebooks · 587 rules
+[Back to ProUI](../README.md) · 24 rulebooks · 589 rules
 
 **Every rule ProUI applies, sorted by subject.** Each rulebook is a short list of Do and Don't rules with a fixed ID, so you can name a rule in a prompt, switch it off for one project, or point at it in a review.
 
@@ -32,7 +32,7 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | [Colour Rulebook](color/README.md) | `CL` | 23 | Colour strategy, roles, OKLCH, contrast and dark mode. |
 | [Gradients and Backgrounds Rulebook](gradients/README.md) | `GR` | 16 | When a gradient or background pattern has a job, and how to make one that looks intentional. |
 | [Effects and 3D Rulebook](effects/README.md) | `EF` | 24 | Modern effects, shaders and 3D from the effects library, used at the level the user chose and without hurting speed or access. |
-| [Layout and Spacing Rulebook](layout/README.md) | `LY` | 22 | Hierarchy, spacing scale, rhythm, grid and adapting to every screen. |
+| [Layout and Spacing Rulebook](layout/README.md) | `LY` | 24 | Hierarchy, spacing scale, rhythm, grid and adapting to every screen. |
 | [Page Structure Rulebook](structure/README.md) | `PG` | 23 | Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built. |
 | [Images and Media Rulebook](images/README.md) | `IM` | 15 | Photography, illustration, video and icons: what to use, how to prepare it, what never to ship. |
 
@@ -79,7 +79,10 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | `SL-43` | Fake testimonials |
 | `SL-44` | Placeholder business info |
 | `SL-49` | Side-stripe accent borders |
+| `LY-23` | Every page works on a phone |
+| `LY-24` | Air between sections on phones |
 | `MO-29` | One transition for filtering: fade out, swap, rise in |
+| `AX-16` | Test accessibility before every release |
 | `CP-14` | Invented claims, numbers or customers |
 
 ## Which rulebooks lead in each mode
