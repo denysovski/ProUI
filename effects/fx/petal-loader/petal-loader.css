@@ -1,0 +1,77 @@
+/* ProUI fx · Petal loader (MO-30, MO-31, MO-32)
+   A full-screen intro loader made of simple shapes that fill one by one in the accent colour.
+   Each petal fills from the side of the previous one and empties toward the next, so the colour
+   travels clockwise around the flower. No outlines: an empty petal is a faint tint of the ink.
+
+   Markup (the JS builds the petals):
+     <div class="petal-loader" data-done="false" aria-hidden="true">
+       <div class="petal-flower"></div>
+     </div>
+   Hide it with data-done="true" once the heavy first screen is ready. */
+
+.petal-loader {
+  --petal-accent: #c8ff2e;
+  --petal-empty: rgb(10 10 10 / 0.07);
+  --petal-bg: #ffffff;
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: grid;
+  place-items: center;
+  background: var(--petal-bg);
+  transition:
+    opacity 600ms cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s 600ms;
+}
+.petal-loader[data-done="true"] {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* 7 circles of diameter 24 on a 84 x 76 field: six around one */
+.petal-flower {
+  position: relative;
+  width: 76px;
+  aspect-ratio: 84 / 76;
+}
+@media (min-width: 1100px) {
+  .petal-flower {
+    width: min(800px, 80vw, 96vh);
+  }
+}
+
+.petal {
+  position: absolute;
+  width: 28.572%; /* 24 / 84 */
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  border-radius: 50%;
+  /* an HTML clip: an SVG clipPath can let a composited transform escape (MO-33) */
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--petal-empty);
+}
+.petal-fill {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--petal-accent);
+  transform: translate(var(--dx), var(--dy));
+  animation: petal-flow 2.8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  animation-delay: calc(var(--i) * 170ms);
+}
+@keyframes petal-flow {
+  0% { transform: translate(var(--dx), var(--dy)); }
+  13% { transform: translate(0, 0); }
+  52% { transform: translate(0, 0); }
+  64% { transform: translate(calc(var(--dx) * -1), calc(var(--dy) * -1)); }
+  100% { transform: translate(calc(var(--dx) * -1), calc(var(--dy) * -1)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .petal-fill {
+    animation: none;
+    transform: none;
+  }
+}

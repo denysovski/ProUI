@@ -1,5 +1,18 @@
 # Changelog
 
+## 4.4.0 (2026-11-22)
+
+- Study of HMOTA, a site built with ProUI, written from its source: tokens, spacing, pages, the motion
+  system, the scroll-driven 3D first screen, the intro loader, 3D performance, light and shadow, and the
+  bugs hit along the way (`inspiration/site-studies/hmota.md`).
+- Style keyword `CONCRETE LIME`: architectural brutalism with maximal type.
+- New effect `effects/fx/petal-loader/`: a brand-shaped intro loader that fills clockwise.
+- New rules: `MO-30` (hard) intro loader only for a heavy first screen, `MO-31` loader shaped like the
+  brand, `MO-32` (hard) warm up the scene behind the loader, `MO-33` no moving fills clipped by SVG
+  `clipPath`, `NV-15` (hard) every new page opens at its top, `NV-16` hide-on-scroll by distance,
+  `PF-34` (hard) render 3D on demand, `DC-26` shadows only on open ground. 597 rules.
+- Main README ends with a "Built with ProUI" section showing HMOTA.
+
 ## 4.3.0 (2026-11-22)
 
 - `LY-23` (hard): every page works on a phone, checked at 320, 360, 390 and 430 px: no sideways overflow,

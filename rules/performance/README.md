@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Performance Rulebook: Fast loading, smooth interaction and stable layout, measured with Core Web Vitals." width="100%">
 
-[All rulebooks](../README.md) · Prefix `PF` · Production · 33 rules
+[All rulebooks](../README.md) · Prefix `PF` · Production · 34 rules
 
 **Fast loading, smooth interaction and stable layout, measured with Core Web Vitals.**
 
@@ -10,7 +10,7 @@ Review this page against PF-01 to PF-05.
 Why does PF-01 matter here?
 ```
 
-## Do · 27
+## Do · 28
 
 What a finished, professional site does.
 
@@ -43,6 +43,7 @@ What a finished, professional site does.
 | `PF-27` | **Keep the back/forward cache working** | No `unload` handlers and no `Cache-Control: no-store` on normal pages, so Back is instant. |
 | `PF-28` | **Break up long tasks** | JavaScript work over about 50 ms is split up or moved to a worker so input stays responsive (INP under 200 ms). |
 | `PF-29` | **Skip off-screen rendering** | `content-visibility: auto` with `contain-intrinsic-size` on long pages with heavy sections below the fold. |
+| `PF-34` | **Render 3D on demand** <sub>HARD RULE</sub> | A WebGL scene on a page draws only when something changes: render on demand (`frameloop="demand"` in React Three Fiber) and request a frame from scroll, pointer and running animations. Cap the pixel ratio at 2 (1 is enough below 768 px for heavy scenes), load the 3D code as its own chunk and prefetch it as soon as the page starts. Draw the shadow map by hand (`shadowMap.autoUpdate = false`) while the scene or the light changes, and keep drawing it for about 24 frames after the last change, because parts updated a frame late would otherwise freeze a stale shadow. |
 
 ## Don't · 6
 

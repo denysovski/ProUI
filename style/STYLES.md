@@ -27,6 +27,7 @@ palette, type, layout, imagery and motion, built from my Pinterest board (`PINS.
 | `CHROME OBJECT` | One glossy 3D centrepiece: chrome, glass or iridescent material on a dark or neutral stage. |
 | `DITHER GRAIN` | Pixel dither, halftone, noise and ASCII textures on images and type. Digital-craft, music, culture, developer brands. |
 | `NOIR PORTRAIT` | Photo-led fashion and personal brands: large moody portraits, black and white or cold-graded, minimal type. |
+| `CONCRETE LIME` | Architectural brutalism with maximal type: white paper, ink, hairlines, one acid lime, a 3D white-clay model. Architecture, engineering, real estate, design studios. |
 | `PRODUCT CLEAN` | Light, precise product and app UI: dashboards, fintech, booking, mobile apps. |
 | `PLAYFUL POP` | Bright, illustrated and friendly. Kids, food, pets, community products. |
 
@@ -238,12 +239,32 @@ Bright, illustrated and friendly. Kids, food, pets, community products.
 - **Avoid:** using it for premium or serious brands
 - **Example pins:** [1](https://cz.pinterest.com/pin/661255157834109135/) · [2](https://cz.pinterest.com/pin/661255157833963323/) · [3](https://cz.pinterest.com/pin/661255157833959075/) · [4](https://cz.pinterest.com/pin/661255157833925318/) · [5](https://cz.pinterest.com/pin/661255157833925248/) · [6](https://cz.pinterest.com/pin/661255157833910470/)
 
+## CONCRETE LIME
+
+Keyword: `CONCRETE LIME` or `concrete-lime`
+
+Architectural brutalism with maximal type. The page is a drawing sheet: white paper, ink, hairlines and
+labels like a title block, one acid lime for everything that is "live", and oversized grotesk headlines.
+The material is shown raw, as in brutalist buildings: the structure, the grid and the numbers are the
+decoration. There is no single established name for it; it sits between Swiss typography, web brutalism and
+the drawing language of architecture offices. Architecture, engineering, construction, real estate, urban
+planning, industrial design, design studios. Full study of a site built in it: [HMOTA](../inspiration/site-studies/hmota.md).
+
+- **Palette:** paper #FFFFFF, paper-2 #F6F6F4, ink #0A0A0A, grey ink #5E5E5E, label grey #757575, hairline #E4E4E0, lime #C8FF2E. Lime is a surface or a mark (pill, dot, underline, loader, 3D trees), never text on white (1.1:1); ink on lime is 16.8:1. One section of the page may turn to ink with lime focus rings
+- **Type:** an oversized neo-grotesk for headlines (Instrument Sans, PP Neue Montreal, Switzer), up to `clamp(56px, 11.5vw, 220px)`, tight tracking, two short lines; a text serif for statements (Hedvig Letters Serif) at `clamp(27px, 3.1vw, 58px)`; a small mono-like sans for labels, data and numbers (Geist, 12–13.5 px)
+- **Layout and imagery:** a 12-column grid with `clamp(12px, 1.4vw, 24px)` gaps and `clamp(14px, 1.5vw, 28px)` side padding; sections `clamp(96px, 14vw, 240px)` apart (tight ones `clamp(64px, 8vw, 140px)`); label/value columns like a drawing title block; hairline tables; an asymmetric scattered project grid; plans, axonometrics and a white-clay 3D model instead of stock photos
+- **Motion:** slow and exact: Lenis smooth scroll (lerp 0.1), headlines and statements revealed line by line through masks (1.05 s, expo out, 85 ms apart), one scroll-driven 3D story on the first screen, a brand-shaped intro loader only for it (`MO-30`–`MO-32`), page transitions as a short veil with a thin lime line, filtering with the filter swap (`MO-29`)
+- **ProUI rules it allows:** none extra. The full-screen 3D first scene follows `MO-30`–`MO-32`, `PF-34` and `DC-26`
+- **Avoid:** rounded cards, shadows on cards, gradients, glass, emoji or icons on content, more than one accent, lime text on white, numbered sections (`SL-17`), photos of people as decoration
+- **Example sites:** [HMOTA](https://denysovski.github.io/HMOTA/) · [Kononenko](https://kononenkogroup.com) · [Telha Clarke](https://telhaclarke.com.au)
+
 ## Combinations that work
 
 - `BLACK COAL + MEGA TYPE` — streetwear drop, studio landing page.
 - `RED SIGNAL + POSTER COLLAGE, MAXIMAL` — event, festival, music release.
 - `EDITORIAL CREAM + GALLERY CLASSIC` — museum, gallery, cultural institution.
 - `SWISS MINIMAL + MEGA TYPE` — architecture office or design studio portfolio.
+- `CONCRETE LIME + MEGA TYPE` — architecture or engineering studio with a 3D model on the first screen.
 - `LIGHT BEAM + CHROME OBJECT` — developer tool or AI product launch.
 - `VOID PARTICLES + DITHER GRAIN, DARK` — music, generative art, creative tech.
 - `NOIR PORTRAIT + MINIMAL` — personal brand, photographer, model portfolio.

@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Navigation Rulebook: Menus, wayfinding, search, footers and URLs that let people find things and know where they are." width="100%">
 
-[All rulebooks](../README.md) · Prefix `NV` · Interaction · 14 rules
+[All rulebooks](../README.md) · Prefix `NV` · Interaction · 16 rules
 
 **Menus, wayfinding, search, footers and URLs that let people find things and know where they are.**
 
@@ -10,7 +10,7 @@ Review this page against NV-01 to NV-05.
 Why does NV-01 matter here?
 ```
 
-## Do · 9
+## Do · 11
 
 What a finished, professional site does.
 
@@ -25,6 +25,8 @@ What a finished, professional site does.
 | `NV-07` | **A footer that works** | The footer repeats key links: contact, opening hours or support, legal pages, social profiles, a short sitemap. |
 | `NV-08` | **Accessible mobile menu** | The mobile menu opens with a labelled button, traps focus while open, closes with Escape and returns focus to the button. |
 | `NV-09` | **URLs for every state worth sharing** | Tabs, filters, search results and opened items that people may share or revisit have their own URL. |
+| `NV-15` | **Every new page opens at its top** <sub>HARD RULE</sub> | A link to another page always lands at the top of that page, also between pages that share a layout (a list and its detail, one project and the next). In the Next.js App Router a root `template.tsx` does not remount when only a deeper segment changes, so run the arrival (scroll to top, reveal) in an effect keyed on the pathname. With Lenis or another smooth scroll, jump it to 0 immediately and repeat for two frames, because the new page can mount a frame later. Back and forward keep their saved position. |
+| `NV-16` | **Hide-on-scroll measures distance, not frame steps** <sub>SOFT</sub> | A header that hides on the way down and returns on the way up compares the position with the point where the direction last changed, not with the previous frame: smooth-scroll libraries split a slow wheel tick into many steps of 1–3 px, and a per-frame threshold never fires. Hide after about 24 px down, show after about 12 px up, and keep it visible near the top, over a full-screen hero and while a menu is open. On phones it may stay visible all the time. |
 
 ## Don't · 5
 

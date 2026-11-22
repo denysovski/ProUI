@@ -180,6 +180,13 @@
       "kind": "dont",
       "title": "One-off values",
       "text": "No spacing, colour, radius, shadow or font size that is not a token. A one-off value is a missing token or a mistake (`DC-05`)."
+    },
+    {
+      "id": "DC-26",
+      "kind": "do",
+      "level": "soft",
+      "title": "Shadows fall on open ground, never through houses",
+      "text": "In an architectural or product scene a shadow lands only where something could receive it. Mask the shadow-catching ground inside every footprint, so a shadow stops at the edge of a building instead of showing through it. See-through volumes do not receive shadows, and their sunlit walls must never be brighter than the shade behind them (cap their colour), or a shadow seen through a wall turns into a white patch. Every shadow starts at the foot of what casts it; a gap means the shadow map is stale or biased."
     }
   ]
 }

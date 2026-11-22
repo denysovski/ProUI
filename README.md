@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 589 rules, 7 effect kits, 133 motion recipes" width="100%">
+<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 597 rules, 7 effect kits, 133 motion recipes" width="100%">
 
 **The playbook for beautiful websites, for AI coding agents.** Blueprints, type and colour methods, effect kits, a workflow from brief to launch, and the rules that keep a site looking designed instead of generated.
 
@@ -12,7 +12,7 @@
 
 ## What ProUI is
 
-ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load it next to your project and ask for a website: the agent knows which pages and sections the site needs, how to pick fonts and colours, which effects fit and how many to use, and how to get from the first brief to a live site. Then it checks its own work against 589 rules.
+ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load it next to your project and ask for a website: the agent knows which pages and sections the site needs, how to pick fonts and colours, which effects fit and how many to use, and how to get from the first brief to a live site. Then it checks its own work against 597 rules.
 
 - **Structure first.** Sitemaps, landing page order, pricing, contact, footers and legal pages for real kinds of business.
 - **Taste you can name.** Fonts measured on 32 brand sites, palettes measured on real sites, style keywords like `EDITORIAL CREAM`.
@@ -124,3 +124,23 @@ node ~/.claude/skills/proui/scripts/proui-scan.mjs ./src
 ## Credits
 
 Strongly inspired by [Impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus (Apache-2.0), see [NOTICE](NOTICE). Apple HIG and Microsoft Fluent 2 are summarised in our own words with links. Motion Primitives by ibelick is included under its MIT licence; Aceternity UI, React Bits, Skiper UI and 21st.dev are linked and installed from their registries. Pinterest pins belong to their authors and are linked, not copied. Started from a set of [screenshot checklists](references/source-checklists.md).
+
+---
+
+## Built with ProUI
+
+<a href="https://denysovski.github.io/HMOTA/"><img src="assets/showcase/hmota-home.jpg" alt="HMOTA: a 3D model of an office building in white clay and concrete among translucent neighbours, lime trees and a material callout" width="100%"></a>
+
+<table>
+<tr>
+<td width="50%"><a href="https://denysovski.github.io/HMOTA/mapa/"><img src="assets/showcase/hmota-map.jpg" alt="HMOTA map: a 3D relief of the Czech Republic with lime pins and a list of buildings by region" width="100%"></a></td>
+<td width="50%"><a href="https://denysovski.github.io/HMOTA/studio/"><img src="assets/showcase/hmota-studio.jpg" alt="HMOTA studio page: a giant Studio headline, a title block of facts and a serif statement" width="100%"></a></td>
+</tr>
+</table>
+
+**[HMOTA](https://denysovski.github.io/HMOTA/)**, the website of an invented architecture studio, was made
+with this repository from the first brief to the live site. ProUI set its rules for spacing and layout,
+motion and the intro loader, 3D performance, SEO, accessibility and phones; the style it defined became the
+keyword [`CONCRETE LIME`](style/STYLES.md#concrete-lime), and what we learned building it is written up in
+[the HMOTA study](inspiration/site-studies/hmota.md) so the next site starts from there.
+[Live site](https://denysovski.github.io/HMOTA/) · [Source](https://github.com/denysovski/HMOTA)

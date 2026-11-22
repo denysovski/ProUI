@@ -104,6 +104,20 @@
       "kind": "dont",
       "title": "Links that open new tabs by default",
       "text": "Internal links stay in the same tab. External links open in the same tab too unless leaving would lose work."
+    },
+    {
+      "id": "NV-15",
+      "kind": "do",
+      "level": "hard",
+      "title": "Every new page opens at its top",
+      "text": "A link to another page always lands at the top of that page, also between pages that share a layout (a list and its detail, one project and the next). In the Next.js App Router a root `template.tsx` does not remount when only a deeper segment changes, so run the arrival (scroll to top, reveal) in an effect keyed on the pathname. With Lenis or another smooth scroll, jump it to 0 immediately and repeat for two frames, because the new page can mount a frame later. Back and forward keep their saved position."
+    },
+    {
+      "id": "NV-16",
+      "kind": "do",
+      "level": "soft",
+      "title": "Hide-on-scroll measures distance, not frame steps",
+      "text": "A header that hides on the way down and returns on the way up compares the position with the point where the direction last changed, not with the previous frame: smooth-scroll libraries split a slow wheel tick into many steps of 1–3 px, and a per-frame threshold never fires. Hide after about 24 px down, show after about 12 px up, and keep it visible near the top, over a full-screen hero and while a menu is open. On phones it may stay visible all the time."
     }
   ]
 }

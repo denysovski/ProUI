@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Rulebooks: 24 rulebooks of Do and Don't rules that keep a site looking designed, not generated" width="100%">
 
-[Back to ProUI](../README.md) · 24 rulebooks · 589 rules
+[Back to ProUI](../README.md) · 24 rulebooks · 597 rules
 
 **Every rule ProUI applies, sorted by subject.** Each rulebook is a short list of Do and Don't rules with a fixed ID, so you can name a rule in a prompt, switch it off for one project, or point at it in a review.
 
@@ -27,7 +27,7 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | Rulebook | Prefix | Rules | Covers |
 | --- | --- | --- | --- |
 | [Anti-Slop Rulebook](anti-slop/README.md) | `SL` | 73 | Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks. |
-| [Design Craft Rulebook](craft/README.md) | `DC` | 25 | Small decisions that separate a considered design from a template. |
+| [Design Craft Rulebook](craft/README.md) | `DC` | 26 | Small decisions that separate a considered design from a template. |
 | [Typography Rulebook](typography/README.md) | `TY` | 27 | Choosing faces, setting a scale, measure, leading and tracking, and loading fonts properly. |
 | [Colour Rulebook](color/README.md) | `CL` | 23 | Colour strategy, roles, OKLCH, contrast and dark mode. |
 | [Gradients and Backgrounds Rulebook](gradients/README.md) | `GR` | 16 | When a gradient or background pattern has a job, and how to make one that looks intentional. |
@@ -40,11 +40,11 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 
 | Rulebook | Prefix | Rules | Covers |
 | --- | --- | --- | --- |
-| [Navigation Rulebook](navigation/README.md) | `NV` | 14 | Menus, wayfinding, search, footers and URLs that let people find things and know where they are. |
+| [Navigation Rulebook](navigation/README.md) | `NV` | 16 | Menus, wayfinding, search, footers and URLs that let people find things and know where they are. |
 | [Components and Interaction Rulebook](components/README.md) | `IX` | 26 | Controls, overlays, feedback and behaviour that feel familiar and trustworthy. |
 | [Forms and Checkout Rulebook](forms/README.md) | `FO` | 18 | Forms people can finish: fields, labels, validation, errors and checkout. |
 | [States Rulebook](states/README.md) | `ST` | 16 | Every situation the interface has to handle, not only the happy path. |
-| [Motion Rulebook](motion/README.md) | `MO` | 29 | Timing, easing and choreography that make an interface feel fast and physical. |
+| [Motion Rulebook](motion/README.md) | `MO` | 33 | Timing, easing and choreography that make an interface feel fast and physical. |
 | [Accessibility Rulebook](accessibility/README.md) | `AX` | 28 | Usable by everyone, designed in from the start. Target: WCAG 2.2 AA. |
 | [Platform Conventions Rulebook](platform/README.md) | `PL` | 14 | Principles from Apple's Human Interface Guidelines and Microsoft Fluent 2, applied to the web. |
 
@@ -67,7 +67,7 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | --- | --- | --- | --- |
 | [Launch Essentials Rulebook](launch/README.md) | `PE` | 26 | What every real, launched website has: system pages, legal pages, contact details, monitoring. |
 | [SEO Rulebook](seo/README.md) | `SEO` | 29 | Being found: technical SEO, content signals, structured data and what search engines penalise. |
-| [Performance Rulebook](performance/README.md) | `PF` | 33 | Fast loading, smooth interaction and stable layout, measured with Core Web Vitals. |
+| [Performance Rulebook](performance/README.md) | `PF` | 34 | Fast loading, smooth interaction and stable layout, measured with Core Web Vitals. |
 | [Security Rulebook](security/README.md) | `SEC` | 26 | Protecting visitors, data and the site itself, from headers to authentication. |
 | [GitHub Workflow Rulebook](github/README.md) | `GH` | 22 | The repository, branches, commits, pull requests, CI, quality gates, deploys and releases. |
 
@@ -81,9 +81,13 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | `SL-49` | Side-stripe accent borders |
 | `LY-23` | Every page works on a phone |
 | `LY-24` | Air between sections on phones |
+| `NV-15` | Every new page opens at its top |
 | `MO-29` | One transition for filtering: fade out, swap, rise in |
+| `MO-30` | An intro loader only when the first screen is heavy |
+| `MO-32` | Warm up the scene behind the loader |
 | `AX-16` | Test accessibility before every release |
 | `CP-14` | Invented claims, numbers or customers |
+| `PF-34` | Render 3D on demand |
 
 ## Which rulebooks lead in each mode
 

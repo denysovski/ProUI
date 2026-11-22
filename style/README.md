@@ -25,6 +25,7 @@ ProUI workflow, direction BLACK COAL, ACCENT cobalt: portfolio for a photographe
 | `CHROME OBJECT` | one glossy 3D centrepiece | launches, hardware, premium tech |
 | `DITHER GRAIN` | dither, halftone, noise, ASCII textures | digital craft, developer brands |
 | `NOIR PORTRAIT` | large moody portraits, minimal type | fashion, personal brands |
+| `CONCRETE LIME` | drawing sheet: paper, ink, hairlines, one acid lime, white-clay 3D | architecture, engineering, real estate, studios |
 | `PRODUCT CLEAN` | light, precise product UI | fintech, booking, apps |
 | `PLAYFUL POP` | bright, illustrated, friendly | kids, food, pets, community |
 

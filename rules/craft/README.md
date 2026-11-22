@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Design Craft Rulebook: Small decisions that separate a considered design from a template." width="100%">
 
-[All rulebooks](../README.md) · Prefix `DC` · Design · 25 rules
+[All rulebooks](../README.md) · Prefix `DC` · Design · 26 rules
 
 **Small decisions that separate a considered design from a template.**
 
@@ -10,7 +10,7 @@ Review this page against DC-01 to DC-05.
 Why does DC-01 matter here?
 ```
 
-## Do · 23
+## Do · 24
 
 What a finished, professional site does.
 
@@ -39,6 +39,7 @@ What a finished, professional site does.
 | `DC-21` | **One radius scale** | Corners come from a small radius scale (for example 4, 8, 12, 999). Every card, button and input uses it, and nested corners stay concentric (`DC-14`). |
 | `DC-22` | **Every interactive element looks interactive** | Cards that link have a hover and focus state, a cursor change and a clear target; static cards do not pretend to be clickable. |
 | `DC-23` | **Optical sizes for icons** | Icons sit on a fixed size grid (16, 20, 24) with one stroke width, and are visually balanced against the cap height of the text next to them. |
+| `DC-26` | **Shadows fall on open ground, never through houses** <sub>SOFT</sub> | In an architectural or product scene a shadow lands only where something could receive it. Mask the shadow-catching ground inside every footprint, so a shadow stops at the edge of a building instead of showing through it. See-through volumes do not receive shadows, and their sunlit walls must never be brighter than the shade behind them (cap their colour), or a shadow seen through a wall turns into a white patch. Every shadow starts at the foot of what casts it; a gap means the shadow map is stale or biased. |
 
 ## Don't · 2
 

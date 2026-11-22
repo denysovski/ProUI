@@ -4,6 +4,10 @@
 
 **Seventeen live websites, studied in the browser in November 2026.** For each one: its type, colour, navigation, motion, cookie banner and footer, measured from the page itself, and a prompt that rebuilds the *idea* for a different brand. Inspiration, never a copy: no text, logos, images, illustrations or code from these sites go into a build (`SL-43`, `EF-24`).
 
+> [!TIP]
+> **Built with ProUI:** [HMOTA](hmota.md) is a full study of a site made with ProUI, written from its source:
+> tokens, spacing, the motion system, the intro loader, 3D performance, and the bugs hit along the way.
+
 ## The sites
 
 | Study | Kind of site | The idea worth learning |

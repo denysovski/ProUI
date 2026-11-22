@@ -2,7 +2,7 @@
 
 [Effects library](../README.md) · [Demo page](demo.html) · [Skiper UI catalogue](../catalog/skiper-ui.md) · [Kits](../kits.md)
 
-**Twelve small effects, written for ProUI from scratch.** Plain HTML, CSS and JavaScript, no library and no credit line. They cover the most useful ideas of the free Skiper UI set, so a site can have them without Framer Motion or Swiper. Each one works with keyboard and touch, keeps real text in the page, and has a reduced-motion version.
+**Thirteen small effects, written for ProUI from scratch.** Plain HTML, CSS and JavaScript, no library and no credit line. They cover the most useful ideas of the free Skiper UI set, so a site can have them without Framer Motion or Swiper. Each one works with keyboard and touch, keeps real text in the page, and has a reduced-motion version.
 
 ## The effects
 
@@ -20,6 +20,7 @@
 | [Progress ring](progress-ring/) | reading progress ring with a percentage, back to top on click | CSS + JS | Skiper `skiper89` |
 | [Count up](count-up/) | numbers count up once in view; final values stay in the HTML, formatted for the page language | CSS + JS | Skiper `skiper37` |
 | [Filter swap](filter-swap/) | the only filtering transition (`MO-29`): shown items fade out and drop 14 px, the set swaps after 260 ms, new items rise in 45 ms apart; nothing grows or shuffles | CSS + JS | machacekdesign.cz portfolio |
+| [Petal loader](petal-loader/) | intro loader for a heavy first screen (`MO-30`–`MO-32`): six circles around one fill clockwise in the accent, each from the side of the previous one; no outlines, large on desktop, static with reduced motion | CSS + JS | HMOTA hero |
 
 ## Use one
 

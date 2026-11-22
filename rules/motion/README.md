@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Motion Rulebook: Timing, easing and choreography that make an interface feel fast and physical." width="100%">
 
-[All rulebooks](../README.md) · Prefix `MO` · Interaction · 29 rules
+[All rulebooks](../README.md) · Prefix `MO` · Interaction · 33 rules
 
 **Timing, easing and choreography that make an interface feel fast and physical.**
 
@@ -10,7 +10,7 @@ Review this page against MO-01 to MO-05.
 Why does MO-01 matter here?
 ```
 
-## Do · 22
+## Do · 25
 
 What a finished, professional site does.
 
@@ -38,8 +38,11 @@ What a finished, professional site does.
 | `MO-22` | **Scroll-driven animation in CSS** | Prefer CSS scroll-driven animations (`animation-timeline`) over scroll listeners, with a static fallback. |
 | `MO-23` | **Animate only transform and opacity** | Moving things use `transform` and `opacity`; filter and clip-path only for short, bounded moments. |
 | `MO-29` | **One transition for filtering: fade out, swap, rise in** <sub>HARD RULE</sub> | When chips, tabs or categories filter a grid or list, the shown items fade out and drop about 14 px (opacity 450 ms, transform 600 ms), the set swaps after about 260 ms, then the new items fade in rising 14 px, about 45 ms apart. Use this and nothing else for filtering: no growing cards, clip-path reveals, scaling or shuffling layouts. Ready code: `effects/fx/filter-swap/`. |
+| `MO-30` | **An intro loader only when the first screen is heavy** <sub>HARD RULE</sub> | Show a full-screen loader only when the first screen cannot work without something heavy: a 3D scene, compiled shaders, a large model or video that drives the page. An ordinary page paints its content at once, with no loader. While it shows, lock scrolling, keep the real page underneath, and give up after about 12 s: unlock and show the page as it is rather than waiting forever. It fades out over about 600 ms into a frame that is already rendered, never into a blank or half-built scene. |
+| `MO-31` | **A loader shaped like the brand, not a spinner** <sub>SOFT</sub> | Build the loader from a few simple shapes taken from the brand or the subject (circles of a flower, a house, the logo's parts) and fill them one by one in the accent colour; skip the generic rotating ring. No outlines: an empty shape is the ink at about 7 % opacity, a full one is the accent. The fill flows in one direction (for example clockwise), each shape filling from the side of the previous one and emptying toward the next, in a 2.4–3 s loop with about 170 ms between shapes. It may be large on desktop (up to about 800 px wide, never taller than the screen) and about 76 px on phones. With reduced motion it shows the full shape without moving. Ready code: `effects/fx/petal-loader/`. |
+| `MO-32` | **Warm up the scene behind the loader** <sub>HARD RULE</sub> | Use the loader time to play every stage of a scroll-driven scene once, out of sight: each material, light, shadow and effect variant is compiled and uploaded before the visitor can scroll, so the first scroll never stutters. Then jump back to where the page really is and start the intro from there. Do not replace the live scene with still images or a video of it while it warms up; visitors notice the swap. |
 
-## Don't · 7
+## Don't · 8
 
 What never ships.
 
@@ -52,6 +55,7 @@ What never ships.
 | `MO-26` | **Motion that blocks input** | The user can click, scroll and type while something animates. No intro sequence holds the page hostage. |
 | `MO-27` | **Parallax on text** | Text never moves at a different speed than the page. Parallax, if any, is for background imagery and stops for reduced motion. |
 | `MO-28` | **Endless decorative loops** | No looping animation on content that people read or use (rotating badges, pulsing buttons, floating cards). |
+| `MO-33` | **Clipping a moving fill with an SVG clipPath** <sub>SOFT</sub> | A CSS transform animation inside an SVG `clipPath` can be moved to the compositor and drawn outside the clip in Chrome. For a fill that slides into a shape, use an HTML element with `border-radius` and `overflow: hidden` around the moving element, which clips reliably, or animate SVG attributes instead of CSS transforms. |
 
 ## Related anti-slop rules
 

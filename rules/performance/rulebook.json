@@ -222,6 +222,13 @@
       "kind": "dont",
       "title": "Huge DOM",
       "text": "Avoid pages with thousands of nodes. Paginate, virtualise or simplify markup (about 1,500 nodes is a warning sign)."
+    },
+    {
+      "id": "PF-34",
+      "kind": "do",
+      "level": "hard",
+      "title": "Render 3D on demand",
+      "text": "A WebGL scene on a page draws only when something changes: render on demand (`frameloop=\"demand\"` in React Three Fiber) and request a frame from scroll, pointer and running animations. Cap the pixel ratio at 2 (1 is enough below 768 px for heavy scenes), load the 3D code as its own chunk and prefetch it as soon as the page starts. Draw the shadow map by hand (`shadowMap.autoUpdate = false`) while the scene or the light changes, and keep drawing it for about 24 frames after the last change, because parts updated a frame late would otherwise freeze a stale shadow."
     }
   ]
 }

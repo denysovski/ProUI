@@ -19,6 +19,7 @@
 | GALLERY CLASSIC | none | `BlurText` | `Masonry`, `CircularGallery` | Subtle or Modern |
 | POSTER COLLAGE | `Noise` | `FallingText` | `BounceCards`, `StickerPeel` | Modern |
 | NOIR PORTRAIT | `Noise` | `BlurText` | `ShapeBlur` on images | Subtle |
+| CONCRETE LIME | one scroll-driven R3F scene on the first screen (white clay, `PF-34`), nothing elsewhere | `SplitText` masked line reveals | [Petal loader](fx/petal-loader/), [Filter swap](fx/filter-swap/), magnetic labels | Immersive 3D on the first screen, Subtle below |
 | PRODUCT CLEAN | `SoftAurora` at low intensity | `CountUp` for real numbers | 21st 3D Stacked Website Cards Scroll, `ModelViewer` | Modern |
 | PLAYFUL POP | `Ballpit` | `Shuffle`, `RotatingText` | `BounceCards`, `ClickSpark`, `Dock` | Modern |
 | RED SIGNAL | `ColorBends` in the accent | `GlitchText` sparingly | `ElectricBorder` on one element | Modern |

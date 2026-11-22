@@ -66,7 +66,7 @@ How the answers are used:
 - **Effect level** caps the effects (`effects/levels.md`, `EF-01`). Modern and immersive 3D pick components
   from the effects library (`effects/presets.md`); React-only components need React (`effects/install.md`).
 - **Feel** narrows the style keywords offered at the direction checkpoint: modern → BLACK COAL, LIGHT BEAM,
-  PRODUCT CLEAN, VOID PARTICLES; classic → GALLERY CLASSIC, EDITORIAL CREAM, SWISS MINIMAL; old-school →
+  PRODUCT CLEAN, VOID PARTICLES, CONCRETE LIME; classic → GALLERY CLASSIC, EDITORIAL CREAM, SWISS MINIMAL; old-school →
   DITHER GRAIN, POSTER COLLAGE, RED SIGNAL; luxury → NOIR PORTRAIT, CHROME OBJECT; playful → PLAYFUL POP,
   MEGA TYPE.
 - **Light, dark or colourful** sets the colour strategy question (`CL-01`, `CL-02`, `GR`).
