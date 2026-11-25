@@ -31,6 +31,7 @@ ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load
 | [`rules/`](rules/README.md) | 24 rulebooks of Do and Don't rules, each with its own page |
 | [`workflow/`](workflow/README.md) | the step-by-step process from brief to launch, and the GitHub guide |
 | [`blueprints/`](blueprints/README.md) | how websites are put together: pages, sections, pricing, contact, footers, legal pages, colour and type methods |
+| [`colors/`](colors/README.md) | modern colour schemes as JSON and CSS variables, tuned replacements for pure black, white, grey, blue and red, palettes from recent projects |
 | [`typography/`](typography/README.md) | which fonts modern sites use, free matches, specimen sheets, pairings by kind of site |
 | [`effects/`](effects/README.md) | effect levels, kits and budget, 25 plain effects, 20 motion briefs, catalogues of ready components including all 168 Annnimate animations |
 | [`inspiration/`](inspiration/README.md) | galleries to research, 25 studied sites with build prompts, their animations and palettes, and a full study of unanim.studio |

@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.6.0 (2026-11-25)
+
+- New folder `colors/`: colour schemes in `palettes.json` with generated CSS variables and a swatch sheet.
+  Includes tuned replacements for pure black, white, grey, blue and red (after lay.the.designer), nine palettes
+  read from recent projects and four curated sets. Designed to grow: add a palette, run `node colors/build.mjs`.
+
 ## 4.5.0 (2026-11-25)
 
 - New blueprint `blueprints/cart.md`: a shop's cart drawer that raises the order value honestly (layout,

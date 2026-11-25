@@ -35,7 +35,7 @@ first, then use ProUI to judge and improve, not to restyle it on your own initia
 | The questions to ask before anything else | `templates/workflow/INTAKE.md` |
 | Modern effects, 3D, shaders, animated components | `effects/` (levels, kits and budget, presets, install, catalogues for Motion Primitives, Aceternity, Skiper UI, React Bits, 21st.dev, Annnimate (168 animations described), 133 GSAP motion recipes, 20 motion briefs, and `effects/fx/` with 25 ready effects in plain HTML, CSS and JS) |
 | Sitemaps, landing page order, sections, pricing, contact, footers | `blueprints/` |
-| Choosing colours and typefaces | `blueprints/colour-schemes.md`, `blueprints/type-pairing.md`, `typography/README.md` (pairing, free alternatives, licences) |
+| Choosing colours and typefaces | `blueprints/colour-schemes.md`, `colors/README.md` (palettes, tuned replacements for pure colours), `blueprints/type-pairing.md`, `typography/README.md` (pairing, free alternatives, licences) |
 | Cookies, privacy, personal data, uploads, security.txt, status page, footer legal links | `blueprints/legal-and-trust.md` |
 | What the visitor came to do | `modes/` (persuade, operate, read, experience) |
 | A short command (critique, audit, polish, ship…) | `commands/README.md` and the command's file |

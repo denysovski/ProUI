@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "updated": "2026-11-25",
+  "replacements": {
+    "note": "Swap the obvious pure value for a tuned one. Idea from the carousel 'I hate true colors' by lay.the.designer (Instagram, Dew0DHCjV8m); values read from the slides.",
+    "items": [
+      { "instead": "#000000", "use": ["#131212", "#1D252C"], "why": "warm off-black for print and packaging, blue-slate black for apps and fintech" },
+      { "instead": "#FFFFFF", "use": ["#FBF8F3", "#F7F7F5"], "why": "paper white with warmth, neutral studio white for documents" },
+      { "instead": "#808080", "use": ["#9EA9AE", "#DBDCE2"], "why": "blue-grey that sits with photos, cool light grey for surfaces" },
+      { "instead": "#0000FF", "use": ["#0044C2", "#0C01C4"], "why": "trustworthy cobalt, electric ultramarine for one loud moment" },
+      { "instead": "#FF0000", "use": ["#E7002A", "#FF3300"], "why": "crimson that prints well, vermilion-orange that feels current" }
+    ]
+  },
+  "palettes": [
+    { "id": "steel-fog", "name": "Steel Fog", "source": "repo:BrandIt", "mood": "cold, quiet, product-first",
+      "colors": { "ink": "#0D1014", "night": "#0A0B0D", "steel": "#44505C", "fog": "#E6EBEF", "fog-2": "#D3DBE2", "soft": "#F4F3F1" } },
+    { "id": "night-blue", "name": "Night Blue", "source": "repo:ProUI", "mood": "dark tool UI with one blue and a success green",
+      "colors": { "bg": "#0B0D12", "panel": "#12151C", "text": "#F4F5F8", "muted": "#9AA1B2", "blue": "#3B6DFF", "blue-2": "#7DA0FF", "green": "#5EE09A" } },
+    { "id": "showroom", "name": "Showroom", "source": "repo:TeslaFuturistic", "mood": "white gallery, zinc greys, one red",
+      "colors": { "ink": "#0B0B0C", "ink-2": "#27272A", "muted": "#5B5B63", "line": "#E4E4E7", "soft": "#F5F5F7", "paper": "#FFFFFF", "red": "#D91F26" } },
+    { "id": "concrete-lime", "name": "Concrete Lime", "source": "repo:HMOTA", "mood": "brutalist black and paper with an acid accent",
+      "colors": { "ink": "#0A0A0A", "paper": "#FFFFFF", "paper-2": "#F6F6F4", "label": "#757575", "line": "#E4E4E0", "lime": "#C8FF2E" } },
+    { "id": "harbour-blue", "name": "Harbour Blue", "source": "repo:KondoruArch", "mood": "architecture, calm navy ramp on stone",
+      "colors": { "ink": "#06213F", "blue-900": "#0B3A6B", "blue-700": "#14508C", "blue-500": "#1F6BB8", "surface": "#EAF1F8", "tint": "#F5F8FB", "stone": "#DDD8D3" } },
+    { "id": "graphite-bone", "name": "Graphite Bone", "source": "repo:VaultX", "mood": "nine-step neutral ramp, one coral",
+      "colors": { "ink": "#111111", "coal": "#1A1A1A", "smoke": "#2A2A2A", "steel": "#626260", "ash": "#9A9A96", "fog": "#E6E6E3", "paper": "#F2F2F0", "bone": "#FAFAF8", "coral": "#FF8B76" } },
+    { "id": "caramel-night", "name": "Caramel Night", "source": "repo:KristynaDvorackovaBC", "mood": "warm skin tones on near-black, gold detail",
+      "colors": { "night": "#040D12", "caramel": "#C49B7E", "sand": "#E0C1AA", "cocoa": "#A87D5C", "gold": "#C9A227", "cream": "#F2E4D8" } },
+    { "id": "carbon-moss", "name": "Carbon Moss", "source": "repo:NATURIK", "mood": "carbon ramp, moss and lime, a cold blue link",
+      "colors": { "ink": "#050506", "graphite": "#121214", "carbon": "#1D1D20", "steel": "#8B8B8F", "paper": "#E2E2E0", "moss": "#5F9C00", "lime": "#8FD400", "blue": "#3A5BFF" } },
+    { "id": "ink-vermilion", "name": "Ink Vermilion", "source": "repo:XSLOP", "mood": "editorial black, warm stone, vermilion",
+      "colors": { "ink": "#0B0B0B", "panel": "#1E1E1E", "stone": "#A3A19C", "mist": "#EDEDEF", "vermilion": "#E8401C", "orange": "#FF5A1F" } },
+    { "id": "frost-chrome", "name": "Frost Chrome", "source": "curated", "mood": "film-grain greys, ice and brushed metal for skincare",
+      "colors": { "grain": "#8E9094", "fog": "#C9CCD0", "ice": "#E8EEF2", "frost": "#F6F8F9", "metal": "#5E646B", "ink": "#16181B" } },
+    { "id": "liquid-silver", "name": "Liquid Silver", "source": "curated", "mood": "chrome packaging, ice blue, heavy black type",
+      "colors": { "ink": "#0A0A0B", "chrome": "#B9C2CB", "chrome-hi": "#EEF3F7", "ice": "#CFE3F2", "shadow": "#5A6570", "paper": "#FFFFFF" } },
+    { "id": "clay-studio", "name": "Clay Studio", "source": "curated", "mood": "warm neutrals with a terracotta signal",
+      "colors": { "ink": "#1C1916", "clay": "#B5653F", "sand": "#D9CBB8", "linen": "#EFE8DD", "paper": "#FBF8F3", "olive": "#6B6A4E" } },
+    { "id": "deep-tide", "name": "Deep Tide", "source": "curated", "mood": "fintech blue-black with a cobalt and mint",
+      "colors": { "ink": "#1D252C", "deep": "#0F1419", "cobalt": "#0044C2", "mint": "#9FE3C4", "mist": "#DBDCE2", "paper": "#F7F7F5" } }
+  ]
+}
