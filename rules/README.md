@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Rulebooks: 24 rulebooks of Do and Don't rules that keep a site looking designed, not generated" width="100%">
 
-[Back to ProUI](../README.md) · 24 rulebooks · 597 rules
+[Back to ProUI](../README.md) · 24 rulebooks · 602 rules
 
 **Every rule ProUI applies, sorted by subject.** Each rulebook is a short list of Do and Don't rules with a fixed ID, so you can name a rule in a prompt, switch it off for one project, or point at it in a review.
 
@@ -33,7 +33,7 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | [Gradients and Backgrounds Rulebook](gradients/README.md) | `GR` | 16 | When a gradient or background pattern has a job, and how to make one that looks intentional. |
 | [Effects and 3D Rulebook](effects/README.md) | `EF` | 24 | Modern effects, shaders and 3D from the effects library, used at the level the user chose and without hurting speed or access. |
 | [Layout and Spacing Rulebook](layout/README.md) | `LY` | 24 | Hierarchy, spacing scale, rhythm, grid and adapting to every screen. |
-| [Page Structure Rulebook](structure/README.md) | `PG` | 23 | Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built. |
+| [Page Structure Rulebook](structure/README.md) | `PG` | 28 | Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built. |
 | [Images and Media Rulebook](images/README.md) | `IM` | 15 | Photography, illustration, video and icons: what to use, how to prepare it, what never to ship. |
 
 ## Interaction
@@ -81,6 +81,8 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | `SL-49` | Side-stripe accent borders |
 | `LY-23` | Every page works on a phone |
 | `LY-24` | Air between sections on phones |
+| `PG-24` | The cart is a drawer that sells |
+| `PG-27` | A paid extra hidden in the checkout button |
 | `NV-15` | Every new page opens at its top |
 | `MO-29` | One transition for filtering: fade out, swap, rise in |
 | `MO-30` | An intro loader only when the first screen is heavy |

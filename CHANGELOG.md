@@ -2,6 +2,18 @@
 
 ## 4.5.0 (2026-11-25)
 
+- New blueprint `blueprints/cart.md`: a shop's cart drawer that raises the order value honestly (layout,
+  free-gift ladder, one-click add-ons, paid extras done legally, what to measure), after the cart
+  Shovel Studio built for Hours.
+- New rules: `PG-24` (hard) the cart is a drawer that sells, `PG-25` a free-gift ladder instead of discount
+  codes, `PG-26` one-click add-ons that need no choice, `PG-27` (hard, don't) a paid extra hidden in the
+  checkout button, `PG-28` test cart changes on order value. 602 rules.
+- Typography: "Paid display faces worth buying", ten new sans faces (Magnuvo, Xipta Sans, Hook, Forten
+  Crush, GC Skywrath, Artocle, Zunero Club, Oklean, Nuvorqa, Vyreliq) with price, character, use, style
+  keyword and a free stand-in for drafts.
+
+## 4.5.0 (2026-11-25)
+
 - Full study of unanim.studio (`inspiration/site-studies/unanim.md`): Saans in two weights, the measured type
   scale, colour, grid, the dock menu that opens upward while the page recedes, the hero that sinks under a black
   shade, blur line reveals, micro-interactions, and the studio's identity on Dribbble.

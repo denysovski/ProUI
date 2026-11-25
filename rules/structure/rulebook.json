@@ -179,6 +179,41 @@
       "kind": "do",
       "title": "Footer groups by what people look for",
       "text": "Group footer links by job: product, company (about, careers, press), resources (help, status, blog), trust (security, compliance), legal. The last row carries ©, privacy, terms, cookie settings and the security contact. Size the footer to the site (`PG-14`); a small site needs only the legal row and contact."
+    },
+    {
+      "id": "PG-24",
+      "kind": "do",
+      "level": "hard",
+      "title": "The cart is a drawer that sells",
+      "text": "Adding to the cart opens a cart drawer from the side (a bottom sheet on phones) instead of leaving the page. Top to bottom: the items with variant, quantity and remove; a progress line toward the next free gift or free shipping; two to four products that go with the cart; then a fixed footer with the total and one solid checkout button that never scrolls away. It closes with Escape, the close button or a click outside, and traps focus while open (`AX`). Full layout: `blueprints/cart.md`."
+    },
+    {
+      "id": "PG-25",
+      "kind": "do",
+      "level": "soft",
+      "title": "A free-gift ladder instead of discount codes",
+      "text": "To raise the order value, show tiers of free gifts at the next spend thresholds, spaced about 50–100 USD (1 000–2 000 Kč) apart and starting just above the current average order. Pick gifts that cost little to make, weigh little to ship and look valuable (a cap, socks, a tote, a sample size). Show the next step in words (\"Add 450 Kč for a free cap\") and a gift that is reached appears in the cart as a line priced \"Free\". Fashion brands report that gifts move order value and conversion more than a discounted checkout or free shipping; still measure it on your shop."
+    },
+    {
+      "id": "PG-26",
+      "kind": "do",
+      "level": "soft",
+      "title": "One-click add-ons that need no choice",
+      "text": "Products suggested in the cart are complementary and one size (a cap, a bracelet, socks, care products), so a single click adds them without opening a size picker. Show two to four, each with image, name and price, plus an add button. Measure revenue per visitor. When the cart is empty or holds one item, recently viewed products are a good second row."
+    },
+    {
+      "id": "PG-27",
+      "kind": "dont",
+      "level": "hard",
+      "title": "A paid extra hidden in the checkout button",
+      "text": "Never put a paid extra (shipping protection, order insurance, free-returns plans, donations) into the price of the main checkout button and leave the cheaper path as a weaker secondary button such as \"Continue without free returns\". It is a pre-selected extra payment: banned in the EU by the Consumer Rights Directive (article 22 requires express consent, no default options) and treated by the US FTC as a hidden junk fee. Offer it as its own clearly priced switch above the button, off by default, and keep the checkout button showing the real total of what the person chose."
+    },
+    {
+      "id": "PG-28",
+      "kind": "do",
+      "level": "soft",
+      "title": "Test cart changes on order value, not clicks",
+      "text": "Every cart change (gift tiers, add-ons, button order, copy) ships as an A/B test with a holdout, judged on average order value, conversion rate and revenue per visitor over at least two full weeks, and on returns and complaints after that. A change that only raises clicks is not a win."
     }
   ]
 }

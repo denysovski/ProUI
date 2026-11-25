@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Page Structure Rulebook: Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built." width="100%">
 
-[All rulebooks](../README.md) · Prefix `PG` · Design · 23 rules
+[All rulebooks](../README.md) · Prefix `PG` · Design · 28 rules
 
 **Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built.**
 
@@ -10,7 +10,7 @@ Review this page against PG-01 to PG-05.
 Why does PG-01 matter here?
 ```
 
-## Do · 16
+## Do · 20
 
 What a finished, professional site does.
 
@@ -32,8 +32,12 @@ What a finished, professional site does.
 | `PG-14` | **Footer size matches the site** | Slim for one-page sites, standard for small businesses, fat with four to six labelled columns, contact, newsletter and a legal row for companies, SaaS and shops (`blueprints/footer.md`). |
 | `PG-15` | **Legal row in the footer** | Legal name, registration and VAT numbers where required, privacy, terms, cookie settings and the accessibility statement sit in the last row of the footer. |
 | `PG-23` | **Footer groups by what people look for** | Group footer links by job: product, company (about, careers, press), resources (help, status, blog), trust (security, compliance), legal. The last row carries ©, privacy, terms, cookie settings and the security contact. Size the footer to the site (`PG-14`); a small site needs only the legal row and contact. |
+| `PG-24` | **The cart is a drawer that sells** <sub>HARD RULE</sub> | Adding to the cart opens a cart drawer from the side (a bottom sheet on phones) instead of leaving the page. Top to bottom: the items with variant, quantity and remove; a progress line toward the next free gift or free shipping; two to four products that go with the cart; then a fixed footer with the total and one solid checkout button that never scrolls away. It closes with Escape, the close button or a click outside, and traps focus while open (`AX`). Full layout: `blueprints/cart.md`. |
+| `PG-25` | **A free-gift ladder instead of discount codes** <sub>SOFT</sub> | To raise the order value, show tiers of free gifts at the next spend thresholds, spaced about 50–100 USD (1 000–2 000 Kč) apart and starting just above the current average order. Pick gifts that cost little to make, weigh little to ship and look valuable (a cap, socks, a tote, a sample size). Show the next step in words ("Add 450 Kč for a free cap") and a gift that is reached appears in the cart as a line priced "Free". Fashion brands report that gifts move order value and conversion more than a discounted checkout or free shipping; still measure it on your shop. |
+| `PG-26` | **One-click add-ons that need no choice** <sub>SOFT</sub> | Products suggested in the cart are complementary and one size (a cap, a bracelet, socks, care products), so a single click adds them without opening a size picker. Show two to four, each with image, name and price, plus an add button. Measure revenue per visitor. When the cart is empty or holds one item, recently viewed products are a good second row. |
+| `PG-28` | **Test cart changes on order value, not clicks** <sub>SOFT</sub> | Every cart change (gift tiers, add-ons, button order, copy) ships as an A/B test with a holdout, judged on average order value, conversion rate and revenue per visitor over at least two full weeks, and on returns and complaints after that. A change that only raises clicks is not a win. |
 
-## Don't · 7
+## Don't · 8
 
 What never ships.
 
@@ -46,6 +50,7 @@ What never ships.
 | `PG-20` | **Contact only through a form** | A form as the only way to reach a business, or contact details hidden under About. |
 | `PG-21` | **Footer as a link dump** | Dozens of unsorted links, keyword lists, tag clouds or a copy of the header with nothing else. |
 | `PG-22` | **Every section a different layout trick** | A new effect, layout and component style in each section. One signature moment per page, the rest calm and consistent. |
+| `PG-27` | **A paid extra hidden in the checkout button** <sub>HARD RULE</sub> | Never put a paid extra (shipping protection, order insurance, free-returns plans, donations) into the price of the main checkout button and leave the cheaper path as a weaker secondary button such as "Continue without free returns". It is a pre-selected extra payment: banned in the EU by the Consumer Rights Directive (article 22 requires express consent, no default options) and treated by the US FTC as a hidden junk fee. Offer it as its own clearly priced switch above the button, off by default, and keep the checkout button showing the real total of what the person chose. |
 
 ## Related anti-slop rules
 

@@ -218,6 +218,8 @@ Goal: agree on what goes where before building it.
 4. **Pricing:** services sold in packages get three named packages; subscriptions get a pricing page with a
    toggle and comparison table; one-price offers get one price (`blueprints/pricing.md`, `PG-08` to `PG-11`).
    Ask for real prices.
+   Shops get a cart drawer with a free-gift ladder and one-click add-ons, paid extras only as an opt-in
+   switch (`blueprints/cart.md`, `PG-24` to `PG-28`).
 5. **Contact and footer:** a contact page or section by `blueprints/contact.md`; a slim, standard or fat footer
    by the amount of information (`blueprints/footer.md`, `PG-12` to `PG-15`, `PG-23`). List the legal and
    trust pages the site type needs from `blueprints/legal-and-trust.md`: company details, privacy, terms,

@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Typography: type metrics on the letters Ag and four font roles" width="100%">
 
-[Back to ProUI](../README.md) · [Reference tables](reference.md) · [Type pairing method](../blueprints/type-pairing.md) · [Typography Rulebook](../rules/typography/README.md)
+[Back to ProUI](../README.md) · [Paid display faces](#paid-display-faces-worth-buying) · [Reference tables](reference.md) · [Type pairing method](../blueprints/type-pairing.md) · [Typography Rulebook](../rules/typography/README.md)
 
 **Which fonts modern websites use, which free fonts give the same feel, and which fit which kind of site.** Every font shown here is free for commercial use. The detailed tables live in [reference.md](reference.md).
 
@@ -26,6 +26,31 @@
 - **Finance, B2B:** Manrope or Hanken Grotesk + IBM Plex Mono for numbers
 
 <img src="specimens/pairings.jpg" alt="Six small website heroes, one pairing for each kind of site" width="100%">
+
+## Paid display faces worth buying
+
+Ten new sans faces picked by [Craftwork](https://www.instagram.com/p/Df438jtDUl9/) in November 2026. They are
+cheap (10–54 USD) and give a site a voice that free fonts rarely have, which helps against the
+overused-font look (`SL-59`). Use **one** of them for headlines or a wordmark and keep a free grotesk for
+text. Before building, buy the licence that covers web use, check that Czech accents are included
+(`TY-20`, `TY-27`), test it on a specimen next to the text font (`TY-26`), and never ship the free "demo" files, which are for personal use only.
+
+| Font | Price | Character | Use it for | Style keyword | Free stand-in for drafts |
+| --- | --- | --- | --- | --- | --- |
+| **Magnuvo** (Limitype) | 31 USD | heavy geometric display with sharp angular cuts | posters, events, streetwear, packaging | `POSTER COLLAGE`, `RED SIGNAL` | Unbounded 800, Syne 800 |
+| **Xipta Sans** | 23 USD | neutral neo-grotesk in three weights | product sites, UI, editorial text | `PRODUCT CLEAN`, `SWISS MINIMAL` | Inter Tight, Schibsted Grotesk |
+| **Hook** | 14 USD | bold condensed headline sans, 16 styles | sport, surf, outdoor, sales headlines | `MEGA TYPE`, `BLACK COAL` | Anton, Bebas Neue |
+| **Forten Crush** | 30 USD | retro sans with softly rounded corners | food, drinks, vintage brands, merch | `PLAYFUL POP` | Rubik 800, Bowlby One |
+| **GC Skywrath** (Onyx Studio) | 54 USD | variable sans, eight weights, ink traps | tech brands, studios, identities that need one family from UI to headline | `CONCRETE LIME`, `BLACK COAL` | Familjen Grotesk, Bricolage Grotesque |
+| **Artocle** | 31 USD | sharp condensed display, tall narrow letters | huge one-line headlines, posters, music | `MEGA TYPE`, `POSTER COLLAGE` | Big Shoulders Display, Antonio |
+| **Zunero Club** | 30 USD | playful geometric that breaks the rules | kids, games, community, festivals | `PLAYFUL POP` | Rubik Mono One, Righteous |
+| **Oklean** | 35 USD | thin, wide, elegant sans for logos | fashion, beauty, hotels, wordmarks | `NOIR PORTRAIT`, `EDITORIAL CREAM` | Jost 300, Tenor Sans |
+| **Nuvorqa** | 10 USD | rounded unicase in five weights | tech and kids brands, short labels and logos, never paragraphs | `PLAYFUL POP`, `LIGHT BEAM` | Unica One |
+| **Vyreliq** | 10 USD | calm contemporary sans for identities and editorial | studios, magazines, brand guidelines | `EDITORIAL CREAM`, `SWISS MINIMAL` | Host Grotesk, Geologica |
+
+The best value here: **GC Skywrath** when one family has to do everything, **Hook** or **Artocle** for a
+single huge headline, **Oklean** for a luxury wordmark. The display-only faces (Magnuvo, Forten Crush,
+Zunero Club, Nuvorqa) are for a few words per page; set them at 48 px and up.
 
 ## Saans and the Unanim type system
 

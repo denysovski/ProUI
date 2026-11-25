@@ -61,7 +61,7 @@ Information-heavy companies need a [fat footer](footer.md) and usually a search 
 | **Home** | current collection or bestsellers, categories, shipping and returns promise |
 | **Category / listing** | filters, sort, product cards with price and stock |
 | **Product detail** | photos, price, variants, add to cart, delivery estimate, reviews, details and care |
-| **Cart and checkout** | guest checkout first, full price early (`FO-08`, `FO-09`) |
+| **Cart and checkout** | a cart drawer that sells honestly ([cart.md](cart.md), `PG-24`–`PG-28`), guest checkout first, full price early (`FO-08`, `FO-09`) |
 | **Shipping, returns, payment** | one clear page each, linked from product pages and the footer |
 | **Contact and order help** | order status, returns, email or chat |
 | About or story | the maker, the materials |

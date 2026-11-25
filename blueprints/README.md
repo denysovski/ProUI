@@ -21,6 +21,7 @@ Every section answers one of them. A section that cannot be filled with real con
 | [Sitemaps](site-types.md) | which pages a service business, company, SaaS, shop, portfolio, restaurant or personal site needs |
 | [Landing page](landing-page.md) | which sections, in which order, where the main button repeats, what comes after |
 | [Sections](sections.md) | what each section needs and which component fits each effect level |
+| [Cart drawer](cart.md) | a shop's cart drawer: layout, free-gift ladder, one-click add-ons, paid extras done legally, what to measure |
 | [Pricing](pricing.md) | three named packages for services, tiers and comparison tables for products |
 | [Contact](contact.md) | contact pages for companies and local businesses: forms, maps, departments |
 | [Footers](footer.md) | slim, standard or fat, by the amount of information |
@@ -40,5 +41,5 @@ Every section answers one of them. A section that cannot be filled with real con
 | --- | --- | --- |
 | Intake | the kind of site and the feel | a sitemap from [site-types.md](site-types.md) and a section order from [landing-page.md](landing-page.md) |
 | Design system | [colour-schemes.md](colour-schemes.md), [type-pairing.md](type-pairing.md) | two or three palettes and pairings to choose from |
-| Structure | [sections.md](sections.md), [pricing.md](pricing.md), [contact.md](contact.md), [footer.md](footer.md), [legal-and-trust.md](legal-and-trust.md) | every page with its sections, content and one component each |
+| Structure | [sections.md](sections.md), [pricing.md](pricing.md), [cart.md](cart.md), [contact.md](contact.md), [footer.md](footer.md), [legal-and-trust.md](legal-and-trust.md) | every page with its sections, content and one component each |
 | Outline checkpoint | everything above | you see the plan and approve it before anything is built |
