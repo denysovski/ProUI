@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ProUI interface sounds</title>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-content: center; gap: 28px; background: #f4f3f1; color: #111; font: 500 15px/1.4 system-ui, sans-serif; }
+  .row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  button, a { padding: 12px 18px; border: 1px solid #111; border-radius: 99px; background: #fff; color: inherit; font: inherit; text-decoration: none; cursor: pointer; }
+  [data-xsound-toggle] { position: fixed; right: 20px; bottom: 20px; background: #111; color: #fff; }
+  [data-xsound-toggle][aria-pressed="true"] { background: #e8401c; border-color: #e8401c; }
+  p { max-width: 46ch; margin: 0 auto; text-align: center; color: #555; }
+</style></head>
+<body>
+<p>Sound is off. Turn it on with the button in the corner, then hover and click.</p>
+<nav class="row" aria-label="Demo links"><a href="#" data-xsound="hover tap">Work</a><a href="#" data-xsound="hover tap">Studio</a><a href="#" data-xsound="hover tap">Contact</a></nav>
+<div class="row">
+  <button data-xsound="tap">tap</button><button data-xsound="pop">pop</button><button data-xsound="whoosh">whoosh</button>
+  <button data-xsound="success">success</button><button data-xsound="error">error</button><button data-xsound="hover soft" data-xsound-hover="soft">soft hover</button>
+</div>
+<button data-xsound-toggle aria-pressed="false" data-label-on="Sound on" data-label-off="Sound off">Sound off</button>
+<script src="ui-sounds.js"></script>
+</body></html>

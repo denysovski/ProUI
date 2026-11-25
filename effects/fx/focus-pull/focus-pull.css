@@ -1,0 +1,10 @@
+/* ProUI fx: focus pull (CSS only). Hovering or focusing a menu word blurs the film behind it like a camera
+   losing focus, so the word is the only sharp thing. Seen on blurred.tv; written from scratch.
+   <div class="xfx-fpull"><video class="xfx-fpull-media" …></video><nav class="xfx-fpull-nav"><a>About</a>…</nav></div> */
+.xfx-fpull { position: relative; overflow: hidden; }
+.xfx-fpull-media { position: absolute; inset: -40px; width: calc(100% + 80px); height: calc(100% + 80px); object-fit: cover; transition: filter .7s cubic-bezier(.16,1,.3,1), scale .7s cubic-bezier(.16,1,.3,1); }
+.xfx-fpull:has(.xfx-fpull-nav a:is(:hover, :focus-visible)) .xfx-fpull-media { filter: blur(var(--pull, 18px)) brightness(.85); scale: 1.03; }
+.xfx-fpull-nav { position: relative; z-index: 1; display: flex; justify-content: space-between; }
+.xfx-fpull-nav a { color: #fff; text-decoration: none; transition: opacity .3s; }
+.xfx-fpull-nav:has(a:is(:hover, :focus-visible)) a:not(:hover, :focus-visible) { opacity: .45; }
+@media (prefers-reduced-motion: reduce) { .xfx-fpull-media { transition: none; } }

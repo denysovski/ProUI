@@ -7,7 +7,7 @@
 | Guide | What it covers |
 | --- | --- |
 | [INSPIRATION.md](INSPIRATION.md) | the galleries (Dark, Recent, Saved, Designeer, Mobbin, Dribbble), what each is good for, and the analysis every reference gets |
-| [Site studies](site-studies/README.md) | 17 live sites studied in the browser: type, colour, navigation, cookie banners and footers, with a build prompt per site |
+| [Site studies](site-studies/README.md) | 25 live sites studied in the browser (with a full study of unanim.studio): type, colour, navigation, cookie banners and footers, with a build prompt per site |
 | [Animations](site-studies/animations.md) | the motion those sites ship, the easing curves they use, a prompt per pattern, and what colour and motion say about a site |
 | [Dashboards](dashboards.md) | what well-made dashboards and professional business sites have in common |
 

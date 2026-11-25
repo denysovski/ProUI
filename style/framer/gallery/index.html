@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRAMER style: 80 sections</title>
+<meta name="description" content="The 80 sections of the ProUI FRAMER style, built in plain HTML, CSS and JavaScript.">
+<link rel="stylesheet" href="../../../effects/fx/dock-menu/dock-menu.css">
+<link rel="stylesheet" href="../../../effects/fx/recede-hero/recede-hero.css">
+<link rel="stylesheet" href="../../../effects/fx/blur-lines/blur-lines.css">
+<link rel="stylesheet" href="../../../effects/fx/hover-members/hover-members.css">
+<link rel="stylesheet" href="../../../effects/fx/section-stack/section-stack.css">
+<link rel="stylesheet" href="../../../effects/fx/word-split/word-split.css">
+<link rel="stylesheet" href="../../../effects/fx/card-expand/card-expand.css">
+<link rel="stylesheet" href="../../../effects/fx/focus-words/focus-words.css">
+<link rel="stylesheet" href="../../../effects/fx/focus-pull/focus-pull.css">
+<link rel="stylesheet" href="../../../effects/fx/underline-swap/underline-swap.css">
+<link rel="stylesheet" href="../../../effects/fx/expand-panels/expand-panels.css">
+<link rel="stylesheet" href="../../../effects/fx/stack-scroll/stack-scroll.css">
+<link rel="stylesheet" href="../../../effects/fx/coverflow/coverflow.css">
+<link rel="stylesheet" href="../../../effects/fx/filter-swap/filter-swap.css">
+<link rel="stylesheet" href="../../../effects/fx/count-up/count-up.css">
+<link rel="stylesheet" href="framer.css">
+</head>
+<body id="top">
+<div data-xfx-recede>
+  <header class="g-top"><strong>ProUI · FRAMER</strong><nav aria-label="Groups" id="g-nav"></nav></header>
+  <section class="g-intro"><h1>80 sections in the FRAMER style</h1><p>Every section of <a href="../sections.md">sections.md</a>, live. Pictures are generated placeholders and bracketed text marks content that must come from the real client. Replace both before anything ships.</p></section>
+  <main id="g-main"></main>
+</div>
+<div class="xfx-dock" data-xfx-dock>
+  <div class="xfx-dock-panel" id="dock-panel"><div class="xfx-dock-content">
+    <p class="xfx-dock-label">Groups</p><ul id="dock-links"></ul><hr class="xfx-dock-rule">
+    <p class="xfx-dock-label">Docs</p><ul><li><a href="../README.md">FRAMER style</a></li><li><a href="../motion.md">Motion recipes</a></li></ul>
+    <a class="xfx-dock-cta" href="../sections.md">All 80 prompts</a>
+  </div></div>
+  <button class="xfx-dock-bar" aria-expanded="false" aria-controls="dock-panel" aria-label="Open menu">Menu<span class="xfx-dock-lines" aria-hidden="true"><i></i><i></i><i></i></span><span class="xfx-dock-pill" aria-hidden="true"><span>Gallery</span><span>Close</span></span></button>
+</div>
+<div class="follow" aria-hidden="true"><img alt=""></div>
+<script src="sections.js"></script>
+<script>
+  (() => {
+    const main = document.getElementById('g-main'), nav = document.getElementById('g-nav'), dock = document.getElementById('dock-links');
+    let group = '';
+    const slug = (s) => s.toLowerCase().replace(/[^a-z]+/g, '-');
+    for (const s of window.SECTIONS) {
+      if (s.g !== group) {
+        group = s.g;
+        main.insertAdjacentHTML('beforeend', `<h2 class="g-group" id="${slug(group)}">${group}</h2>`);
+        nav.insertAdjacentHTML('beforeend', `<a href="#${slug(group)}">${group.split(',')[0]}</a>`);
+        dock.insertAdjacentHTML('beforeend', `<li><a href="#${slug(group)}">${group.split(',')[0]}</a></li>`);
+      }
+      main.insertAdjacentHTML('beforeend', `<div class="g-item" id="${s.id}"><p class="g-label"><b>${s.id}</b>${s.name}</p><div class="g-frame">${s.html}</div></div>`);
+    }
+  })();
+</script>
+<script src="../../../effects/fx/dock-menu/dock-menu.js"></script>
+<script src="../../../effects/fx/recede-hero/recede-hero.js"></script>
+<script src="../../../effects/fx/blur-lines/blur-lines.js"></script>
+<script src="../../../effects/fx/hover-members/hover-members.js"></script>
+<script src="../../../effects/fx/section-stack/section-stack.js"></script>
+<script src="../../../effects/fx/word-split/word-split.js"></script>
+<script src="../../../effects/fx/card-expand/card-expand.js"></script>
+<script src="../../../effects/fx/focus-words/focus-words.js"></script>
+<script src="../../../effects/fx/stack-scroll/stack-scroll.js"></script>
+<script src="../../../effects/fx/coverflow/coverflow.js"></script>
+<script src="../../../effects/fx/filter-swap/filter-swap.js"></script>
+<script src="../../../effects/fx/count-up/count-up.js"></script>
+<script src="gallery.js"></script>
+</body>
+</html>

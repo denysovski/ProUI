@@ -2,7 +2,7 @@
 
 [Effects library](../README.md) · [Demo page](demo.html) · [Skiper UI catalogue](../catalog/skiper-ui.md) · [Kits](../kits.md)
 
-**Thirteen small effects, written for ProUI from scratch.** Plain HTML, CSS and JavaScript, no library and no credit line. They cover the most useful ideas of the free Skiper UI set, so a site can have them without Framer Motion or Swiper. Each one works with keyboard and touch, keeps real text in the page, and has a reduced-motion version.
+**Twenty-five small effects, written for ProUI from scratch.** Plain HTML, CSS and JavaScript, no library and no credit line. They cover the most useful ideas of the free Skiper UI set, so a site can have them without Framer Motion or Swiper. Each one works with keyboard and touch, keeps real text in the page, and has a reduced-motion version.
 
 ## The effects
 
@@ -21,6 +21,35 @@
 | [Count up](count-up/) | numbers count up once in view; final values stay in the HTML, formatted for the page language | CSS + JS | Skiper `skiper37` |
 | [Filter swap](filter-swap/) | the only filtering transition (`MO-29`): shown items fade out and drop 14 px, the set swaps after 260 ms, new items rise in 45 ms apart; nothing grows or shuffles | CSS + JS | machacekdesign.cz portfolio |
 | [Petal loader](petal-loader/) | intro loader for a heavy first screen (`MO-30`–`MO-32`): six circles around one fill clockwise in the accent, each from the side of the previous one; no outlines, large on desktop, static with reduced motion | CSS + JS | HMOTA hero |
+
+## Unanim set
+
+Twelve more effects from the November 2026 study of [unanim.studio](../../inspiration/site-studies/unanim.md),
+the [seven reference sites](../../inspiration/site-studies/reference-sites.md), Skiper UI `skiper6` and the
+[Annnimate catalogue](../catalog/annnimate.md). Timings are the measured ones; the code is new. Open
+[motion-demo.html](motion-demo.html) to try all of them on one page.
+
+| Effect | What it does | Files | Seen on |
+| --- | --- | --- | --- |
+| [Dock menu](dock-menu/) | dark pill at the bottom centre grows upward into a frosted panel (clip-path, 640 ms sheet curve); links rise 50 ms apart; the page behind recedes to 0.976 under a 35 % veil; Escape and focus trap | CSS + JS | unanim.studio |
+| [Recede hero](recede-hero/) | hero sinks at 0.15 of the scroll, its photo drifts −7 % → 0, a black shade grows to 0.78 while the white section slides over it | CSS + JS | unanim.studio |
+| [Blur lines](blur-lines/) | text appears line by line, each word fades through a 4 px blur and rises .25 em, 60 ms per line; blocks only fade through the blur | CSS + JS | unanim.studio |
+| [Hover members](hover-members/) | row of small portraits over a giant word; the hovered one grows, a round tag follows the pointer, the word swaps letter by letter to the name | CSS + JS | Skiper UI `skiper6` |
+| [Section stack](section-stack/) | each section holds while the next slides over; the covered one scales to 0.94, rounds and dims | CSS + JS | Annnimate Section Stack |
+| [Word split](word-split/) | a small photo between two words grows to fill the screen, pushing the words apart and cutting through photos | CSS + JS | Annnimate Word Split Expand |
+| [Scroll fill](scroll-fill/) | a statement fills from grey to ink word by word with the scroll | CSS + JS | jeppesen.dev, Annnimate Text Fill Wave |
+| [Card expand](card-expand/) | the next section arrives as an inset rounded card and squares off to full width; its headline rises at the end | CSS + JS | Annnimate Card Expand, Image Handoff |
+| [Focus words](focus-words/) | four corner brackets glide from word to word; the rest of the text softens | CSS + JS | Annnimate Focus Text, motiveone.com brackets |
+| [Focus pull](focus-pull/) | hovering a menu word blurs the film behind it like a camera losing focus | CSS | blurred.tv |
+| [Underline swap](underline-swap/) | underline leaves to the right and returns from the left; optional `./` prefix | CSS | unanim.studio |
+| [Hide header](hide-header/) | header hides on the way down, returns on the way up, always shown with focus inside | CSS + JS | most reference sites |
+
+Budget: the dock menu, underline swap and hide header are navigation details and do not count against
+`EF-20`. The recede hero, word split, section stack and card expand are signature scroll moments: one
+per page. Hover members is a signature section: one per site.
+
+Optional and off by default: [interface sounds](../../sounds/README.md) for hover and click, only when the
+user asks for sound.
 
 ## Use one
 

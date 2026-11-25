@@ -2,9 +2,12 @@
 
 [Inspiration](../README.md) · [Animations](animations.md) · [Typography](../../typography/README.md) · [Footers and legal pages](../../blueprints/legal-and-trust.md)
 
-**Seventeen live websites, studied in the browser in November 2026.** For each one: its type, colour, navigation, motion, cookie banner and footer, measured from the page itself, and a prompt that rebuilds the *idea* for a different brand. Inspiration, never a copy: no text, logos, images, illustrations or code from these sites go into a build (`SL-43`, `EF-24`).
+**Twenty-five live websites, studied in the browser in November 2026.** For each one: its type, colour, navigation, motion, cookie banner and footer, measured from the page itself, and a prompt that rebuilds the *idea* for a different brand. Inspiration, never a copy: no text, logos, images, illustrations or code from these sites go into a build (`SL-43`, `EF-24`).
 
 > [!TIP]
+> **New:** a full study of [unanim.studio](unanim.md) (type, colour, the dock menu, the receding hero, reveals,
+> the identity outside the website) and [seven reference sites](reference-sites.md) with a pitch-deck reel.
+>
 > **Built with ProUI:** [HMOTA](hmota.md) is a full study of a site made with ProUI, written from its source:
 > tokens, spacing, the motion system, the intro loader, 3D performance, and the bugs hit along the way.
 
@@ -12,6 +15,14 @@
 
 | Study | Kind of site | The idea worth learning |
 | --- | --- | --- |
+| [unanim.studio](unanim.md) | digital studio, Brussels | one font in two weights, a dock menu, a hero that recedes into shade |
+| [Journalist House](reference-sites.md#journalist-house) | residential tower | a chaptered story; the archive photo becomes the new building |
+| [Apekon](reference-sites.md#apekon) | product studio | a WebGL night sky and a wordmark that switches alphabets |
+| [Jeppesen](reference-sites.md#jeppesen) | brand studio | warm grain paper, the logo inside the wordmark |
+| [Motive](reference-sites.md#motive) | industrial energy | light trails behind glass stats, corner brackets |
+| [Blurred](reference-sites.md#blurred) | production company | one film on one screen; the menu pulls focus |
+| [InterNest](reference-sites.md#internest) | real estate | the logo flies from the loader into the header |
+| [Focus Industries](reference-sites.md#focus-industries) | autonomous drones | spec-sheet typography and an inset grey page |
 | [Mintlify](#mintlify) | documentation platform | serif headline on a dark technical page, live status in the footer |
 | [Cloudflare](#cloudflare) | infrastructure | one warm grotesk, one orange, a fat footer that maps the whole company |
 | [Jack & Jill](#jack--jill) | AI recruiting | two audiences side by side from the first screen |

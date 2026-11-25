@@ -21,6 +21,7 @@ palette, type, layout, imagery and motion, built from my Pinterest board (`PINS.
 | `GALLERY CLASSIC` | Museum and art-world feel: classical paintings, engravings, archive material treated with modern layout. |
 | `POSTER COLLAGE` | Maximalist print energy: collage, torn paper, stickers, halftone, overlapping type. Events, music, fashion drops, youth brands. |
 | `SWISS MINIMAL` | Strict grid, lots of white, small precise type. Studios, portfolios, architecture offices, consultancies. |
+| `FRAMER` | The look of the best Framer and studio sites: one grotesk in two weights, full-bleed photos, springs and layout animations, 80 ready sections. Also triggered by "Framer Motion" or "component page". See [framer/](framer/README.md). |
 | `MEGA TYPE` | The headline is the image: one or two words so big they run off the edges. Can be combined with any palette. |
 | `LIGHT BEAM` | Dark tech and SaaS where the product sits in a beam or glow of light in the brand colour. |
 | `VOID PARTICLES` | Particle and point-cloud typography on black: generative, techy, music or AI brands. |

@@ -33,7 +33,7 @@ first, then use ProUI to judge and improve, not to restyle it on your own initia
 | The list of rulebooks and how IDs work | `rules/README.md` |
 | One rulebook (Do and Don't tables, how to check, sources) | `rules/<rulebook>/README.md` |
 | The questions to ask before anything else | `templates/workflow/INTAKE.md` |
-| Modern effects, 3D, shaders, animated components | `effects/` (levels, kits and budget, presets, install, catalogues for Motion Primitives, Aceternity, Skiper UI, React Bits, 21st.dev, 133 GSAP motion recipes, 20 motion briefs, and `effects/fx/` with 11 ready effects in plain HTML, CSS and JS) |
+| Modern effects, 3D, shaders, animated components | `effects/` (levels, kits and budget, presets, install, catalogues for Motion Primitives, Aceternity, Skiper UI, React Bits, 21st.dev, Annnimate (168 animations described), 133 GSAP motion recipes, 20 motion briefs, and `effects/fx/` with 25 ready effects in plain HTML, CSS and JS) |
 | Sitemaps, landing page order, sections, pricing, contact, footers | `blueprints/` |
 | Choosing colours and typefaces | `blueprints/colour-schemes.md`, `blueprints/type-pairing.md`, `typography/README.md` (pairing, free alternatives, licences) |
 | Cookies, privacy, personal data, uploads, security.txt, status page, footer legal links | `blueprints/legal-and-trust.md` |
@@ -44,10 +44,12 @@ first, then use ProUI to judge and improve, not to restyle it on your own initia
 | Project context files | `templates/context/PRODUCT.md`, `templates/context/DESIGN.md` |
 | Brief, direction board, decisions record | `templates/workflow/` |
 | Critique and audit report formats | `templates/reports/`, `references/critique-rubric.md` |
-| Inspiration sources and how to analyse them | `inspiration/` (galleries, and `inspiration/site-studies/` with 17 studied sites, build prompts and their animations) |
+| Inspiration sources and how to analyse them | `inspiration/` (galleries, and `inspiration/site-studies/` with 25 studied sites, build prompts and their animations; `unanim.md` is the deepest study of a brand identity) |
 | Libraries, gradients, shapes, design tools | `toolkit/` |
 | Code for motion, components, gradients, dashboards | `recipes/` |
 | Style keywords and modifiers named in a prompt | `style/STYLES.md` |
+| "Framer", "Framer Motion", "component page", section IDs `F-01`…`F-80` | `style/framer/` (the FRAMER style, 80 sections with prompts, Framer Motion recipes, a live gallery) |
+| Sound for hover and click, only when the user asks for sound | `sounds/` (optional, off by default, never added by the workflow) |
 | Building for the repository owner (denysovski) | `style/MY-STYLE.md`, `style/PINS.md` |
 | Apple HIG, Fluent 2, Impeccable, OpenDesign | `references/` |
 | A mechanical scan of a project | `node scripts/proui-scan.mjs <dir>` (`commands/scan.md`) |

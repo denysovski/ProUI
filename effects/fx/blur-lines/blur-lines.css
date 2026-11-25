@@ -1,0 +1,11 @@
+/* ProUI fx: blur lines. Text appears line by line: each word fades through a 4 px blur and rises a quarter
+   of a line; every new line starts 60 ms later. Blocks with data-xfx-blur-in only fade through the blur. */
+[data-xfx-lines] .xfx-word { display: inline-block; text-indent: 0; }
+[data-xfx-lines].is-in .xfx-word { animation: xfx-blur-fade .7s cubic-bezier(.45,0,.55,1) backwards, xfx-blur-rise .9s cubic-bezier(.16,1,.3,1) backwards;
+  animation-delay: calc(.15s + var(--line, 0) * 60ms); }
+/* hidden only once the script runs, so the text is never lost without JS (SL-72) */
+.xfx-lines-ready [data-xfx-lines]:not(.is-in) .xfx-word, .xfx-lines-ready [data-xfx-blur-in]:not(.is-in) { opacity: 0; }
+[data-xfx-blur-in].is-in { animation: xfx-blur-fade .7s cubic-bezier(.45,0,.55,1) backwards; animation-delay: calc(.15s + var(--i, 0) * 80ms); }
+@keyframes xfx-blur-fade { from { opacity: 0; filter: blur(4px); } }
+@keyframes xfx-blur-rise { from { transform: translateY(.25em); } }
+@media (prefers-reduced-motion: reduce) { [data-xfx-lines] .xfx-word, [data-xfx-blur-in] { animation: none !important; opacity: 1 !important; } }

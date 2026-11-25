@@ -1,0 +1,56 @@
+/* ProUI fx: dock menu. A dark pill at the bottom centre that grows upward into a frosted panel while the
+   page behind recedes (scale .976 under a 35 % veil). Timings measured on unanim.studio, rebuilt from scratch. */
+.xfx-dock { --dock-w: 266px; --dock-h: 48px; --panel-w: 285px; --panel-h: 460px;
+  --sheet: cubic-bezier(.32,.72,0,1); --rise: cubic-bezier(.16,1,.3,1); --shut: cubic-bezier(.65,0,.35,1);
+  position: fixed; left: 50%; bottom: 20px; z-index: 60; width: var(--dock-w); translate: -50% 0; color: #fff; font: 500 14px/1 var(--font-body, system-ui, sans-serif); }
+.xfx-dock-bar { position: relative; z-index: 2; display: flex; align-items: center; width: 100%; height: var(--dock-h); padding: 0 6px 0 22px;
+  border: 0; border-radius: 99px; background: #1e1e1e; color: inherit; font: inherit; cursor: pointer; transition: transform .12s cubic-bezier(.23,1,.32,1); }
+.xfx-dock-bar:active { transform: scale(.97); }
+.xfx-dock-bar:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+.xfx-dock-lines { position: relative; width: 20px; height: 11px; margin-left: auto; margin-right: 14px; transition: transform .6s var(--rise); }
+.xfx-dock-lines i { position: absolute; left: 0; width: 100%; height: 1.2px; background: currentColor; transition: transform .5s var(--rise), opacity .2s; }
+.xfx-dock-lines i:nth-child(1) { top: 0; } .xfx-dock-lines i:nth-child(2) { top: 5px; } .xfx-dock-lines i:nth-child(3) { top: 10px; }
+.xfx-dock-pill { position: relative; overflow: hidden; height: 34px; min-width: 88px; padding: 0 14px; border-radius: 99px; background: #fff; color: #111; }
+.xfx-dock-pill span { position: absolute; inset: 0; display: grid; place-items: center; transition: transform .5s var(--rise); }
+.xfx-dock-pill span + span { transform: translateY(100%); }
+.xfx-dock.is-open .xfx-dock-lines { transform: rotate(90deg); }
+.xfx-dock.is-open .xfx-dock-lines i:nth-child(1) { transform: translateY(5px) rotate(45deg) scaleX(.8); }
+.xfx-dock.is-open .xfx-dock-lines i:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.xfx-dock.is-open .xfx-dock-lines i:nth-child(3) { transform: translateY(-5px) rotate(-45deg) scaleX(.8); }
+.xfx-dock.is-open .xfx-dock-pill span:first-child { transform: translateY(-100%); }
+.xfx-dock.is-open .xfx-dock-pill span + span { transform: none; }
+
+.xfx-dock-panel { position: absolute; left: -3px; bottom: -3px; z-index: 1; width: var(--panel-w); height: var(--panel-h); padding: 22px 22px calc(var(--dock-h) + 30px);
+  border-radius: 20px 20px 29px 29px; background: rgba(30,30,30,.32); -webkit-backdrop-filter: blur(40px) saturate(1.2); backdrop-filter: blur(40px) saturate(1.2); /* proui-ignore SL-03: frosted panel over the page, not an orb */
+  clip-path: inset(calc(100% - var(--dock-h) - 6px) 0 0 round 20px 20px 29px 29px); visibility: hidden;
+  transition: clip-path .42s var(--shut) 60ms, visibility 0s linear .5s; }
+.xfx-dock-content { transform: translateY(12%); transition: transform .42s var(--shut) 60ms; }
+.xfx-dock.is-open .xfx-dock-panel { clip-path: inset(0 round 20px 20px 29px 29px); visibility: visible; transition: clip-path .64s var(--sheet), visibility 0s; }
+.xfx-dock.is-open .xfx-dock-content { transform: none; transition: transform .64s var(--sheet); }
+.xfx-dock-label { margin: 0 0 14px; font-size: 12px; font-weight: 400; opacity: .6; }
+.xfx-dock-panel ul { margin: 0 0 22px; padding: 0; list-style: none; }
+.xfx-dock-panel li { overflow: hidden; clip-path: inset(-.2em -3em); }
+.xfx-dock-panel a { display: inline-block; padding: 3px 0; color: inherit; text-decoration: none; font-size: 17px; line-height: 1.05;
+  transform: translateY(calc(100% + .3em)); transition: transform .26s var(--shut) calc(var(--i, 0) * 15ms); }
+.xfx-dock.is-open .xfx-dock-panel a { transform: none; transition: transform .8s var(--rise) calc(.2s + var(--i, 0) * 50ms); }
+.xfx-dock-panel a:hover, .xfx-dock-panel a:focus-visible { opacity: .7; }
+.xfx-dock-rule { height: 0; margin: 0 0 18px; border: 0; border-top: 1px solid #ffffff3d; transform: scaleX(0); transform-origin: 0 50%; transition: transform .26s var(--shut); }
+.xfx-dock.is-open .xfx-dock-rule { transform: none; transition: transform 1.1s var(--rise) .45s; }
+.xfx-dock-cta { position: absolute; left: 22px; right: 22px; bottom: calc(var(--dock-h) + 22px); display: grid; place-items: center; height: 40px; border-radius: 38px; background: #fff; color: #1e1e1e !important; transform: translateY(.75rem) !important; opacity: 0; transition: opacity .26s, transform .26s var(--shut) !important; }
+.xfx-dock.is-open .xfx-dock-cta { opacity: 1; transform: none !important; transition: opacity .6s var(--rise) .55s, transform .8s var(--rise) .55s !important; }
+
+/* the page behind: wrap it in [data-xfx-recede] */
+[data-xfx-recede] { transition: scale .52s cubic-bezier(.65,0,.35,1), border-radius .52s; transform-origin: 50% 50vh; }
+html.xfx-dock-open [data-xfx-recede] { scale: .976; border-radius: 14px; overflow: clip; transition: scale .8s var(--sheet, cubic-bezier(.32,.72,0,1)), border-radius .8s; }
+.xfx-dock-veil { position: fixed; inset: 0; z-index: 55; background: rgba(0,0,0,.35); opacity: 0; pointer-events: none; transition: opacity .44s 60ms; }
+html.xfx-dock-open .xfx-dock-veil { opacity: 1; pointer-events: auto; transition: opacity .64s; }
+html.xfx-dock-open { background: #0c0c0c; }
+
+@media (max-width: 767px) {
+  .xfx-dock { --dock-w: calc(100vw - 24px); --panel-w: calc(100vw - 18px); bottom: 12px; }
+  .xfx-dock-panel { height: auto; min-height: 380px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .xfx-dock *, .xfx-dock-panel, [data-xfx-recede], .xfx-dock-veil { transition-duration: .01s !important; transition-delay: 0s !important; }
+  html.xfx-dock-open [data-xfx-recede] { scale: none; }
+}

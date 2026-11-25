@@ -1,0 +1,5 @@
+/* ProUI fx: card expand. The next section arrives as an inset rounded card and grows to the full width of the
+   screen as it scrolls in, squaring its corners; its headline rises once it is almost full. */
+.xfx-cexpand { clip-path: inset(0 calc(var(--inset, 6vw) * (1 - var(--p, 0))) round calc(32px * (1 - var(--p, 0)))); }
+.xfx-cexpand [data-rise] { opacity: var(--rise, 0); transform: translateY(calc((1 - var(--rise, 0)) * 24px)); }
+@media (prefers-reduced-motion: reduce) { .xfx-cexpand { clip-path: none; } .xfx-cexpand [data-rise] { opacity: 1; transform: none; } }

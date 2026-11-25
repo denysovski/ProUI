@@ -1,0 +1,11 @@
+/* ProUI fx: word split. A small photo between two words grows until it fills the screen, pushing the words
+   apart and cutting through a few photos on the way. The section is pinned while it plays. */
+.xfx-wsplit { position: relative; height: 320svh; }
+.xfx-wsplit-stage { position: sticky; top: 0; display: flex; align-items: center; justify-content: center; height: 100svh; overflow: hidden; }
+.xfx-wsplit-word { font: 500 clamp(48px, 11vw, 180px)/1 var(--font-display, system-ui, sans-serif); letter-spacing: -.03em; white-space: nowrap; transform: translateX(var(--push, 0)); }
+.xfx-wsplit-word:first-child { --push: calc(var(--p, 0) * -60vw); }
+.xfx-wsplit-word:last-child { --push: calc(var(--p, 0) * 60vw); }
+.xfx-wsplit-media { position: relative; flex: none; width: calc(14vw + var(--p, 0) * 86vw); height: calc(10vw + var(--p, 0) * (100svh - 10vw)); margin: 0 1.2vw; overflow: hidden; border-radius: calc(12px * (1 - var(--p, 0))); }
+.xfx-wsplit-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; }
+.xfx-wsplit-media img.is-on { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .xfx-wsplit { height: auto; } .xfx-wsplit-stage { position: relative; } }

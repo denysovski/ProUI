@@ -1,5 +1,22 @@
 # Changelog
 
+## 4.5.0 (2026-11-25)
+
+- Full study of unanim.studio (`inspiration/site-studies/unanim.md`): Saans in two weights, the measured type
+  scale, colour, grid, the dock menu that opens upward while the page recedes, the hero that sinks under a black
+  shade, blur line reveals, micro-interactions, and the studio's identity on Dribbble.
+- Seven more reference sites and a pitch-deck reel (`reference-sites.md`): Journalist House, Apekon, Jeppesen,
+  Motive, Blurred, InterNest, Focus Industries.
+- New style `FRAMER` (`style/framer/`): the look, a motion system, 80 sections `F-01`…`F-80` with prompts,
+  Framer Motion recipes and a live gallery of all 80 in plain HTML, CSS and JS.
+- Twelve new plain-JS effects (`effects/fx/`): dock menu, recede hero, blur lines, hover members (after Skiper UI
+  skiper6), section stack, word split, scroll fill, card expand, focus words, focus pull, underline swap, hide
+  header; demo in `effects/fx/motion-demo.html`.
+- Annnimate catalogue: all 168 animations described in our own words (`effects/catalog/annnimate.md`).
+- Typography: Saans and the Unanim type system with free matches and a specimen.
+- Optional interface sounds (`sounds/`): nine synthesised sounds and WAV files, off by default, never part of
+  the workflow.
+
 ## 4.4.0 (2026-11-22)
 
 - Study of HMOTA, a site built with ProUI, written from its source: tokens, spacing, pages, the motion

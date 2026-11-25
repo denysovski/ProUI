@@ -1,0 +1,5 @@
+/* ProUI fx: section stack. Each section holds while the next slides over it like a sheet; the covered one
+   scales down, rounds its corners and dims, so the page reads as a stack of chapters. */
+.xfx-sstack > * { position: sticky; top: 0; min-height: 100svh; transform-origin: 50% 0; overflow: clip;
+  scale: var(--s, 1); border-radius: var(--r, 0); filter: brightness(var(--b, 1)); }
+@media (prefers-reduced-motion: reduce) { .xfx-sstack > * { position: relative; scale: none; filter: none; border-radius: 0; } }

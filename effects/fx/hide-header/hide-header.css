@@ -1,0 +1,5 @@
+/* ProUI fx: hide header. Hides on the way down, returns on the way up, always shown near the top. */
+.xfx-hide-header { position: sticky; top: 0; z-index: 50; transition: transform .45s cubic-bezier(.16,1,.3,1); }
+.xfx-hide-header.is-hidden { transform: translateY(-100%); }
+.xfx-hide-header:focus-within { transform: none; }
+@media (prefers-reduced-motion: reduce) { .xfx-hide-header { transition: none; } }

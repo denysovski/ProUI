@@ -1,0 +1,3 @@
+/* ProUI fx: scroll fill. A statement fills from grey to ink word by word as it crosses the screen. */
+[data-xfx-fill] .xfx-fw { color: color-mix(in oklab, currentColor calc(18% + var(--f, 0) * 82%), transparent); transition: color .2s linear; }
+@media (prefers-reduced-motion: reduce) { [data-xfx-fill] .xfx-fw { color: inherit; } }

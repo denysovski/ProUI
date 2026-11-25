@@ -1,0 +1,7 @@
+/* ProUI fx: recede hero. The hero sinks at .15 of the scroll, its image drifts inside it, and a black shade
+   grows while the next (light) section slides over it. Measured on unanim.studio, rebuilt from scratch. */
+.xfx-recede { position: relative; z-index: 0; overflow: hidden; min-height: 100svh; will-change: transform; }
+.xfx-recede-media { position: absolute; inset: -8% 0 0; width: 100%; height: 108%; object-fit: cover; transform: translateY(var(--xfx-img, -7%)); }
+.xfx-recede-shade { position: absolute; inset: 0; z-index: 2; background: #000; opacity: var(--xfx-shade, 0); pointer-events: none; }
+.xfx-recede > :where(:not(.xfx-recede-media, .xfx-recede-shade)) { position: relative; z-index: 1; }
+.xfx-recede + * { position: relative; z-index: 1; background: var(--bg, #fff); }

@@ -34,6 +34,7 @@
 | --- | --- |
 | [Motion recipes](catalog/motion-recipes.md) | 133 GSAP build prompts for studio-style motion, written in our own words |
 | [Motion Primitives](catalog/motion-primitives.md) | 33 quiet Motion components: text effects, reveals, spotlight, tilt, morphing dialogs |
+| [Annnimate](catalog/annnimate.md) | all 168 GSAP animations of annnimate.com described in our own words, by category and level |
 | [Skiper UI](catalog/skiper-ui.md) | 37 free components: scroll stacks, coverflow, expanding panels, theme toggles (credit Skiper UI) |
 | [Aceternity UI](catalog/aceternity.md) | 114 free components: beams, spotlights, aurora, bento grids, 3D cards, globes |
 | [React Bits](catalog/react-bits.md) | 217 components: shader backgrounds, cursor and reveal animations, animated text |

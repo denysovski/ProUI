@@ -27,6 +27,36 @@
 
 <img src="specimens/pairings.jpg" alt="Six small website heroes, one pairing for each kind of site" width="100%">
 
+## Saans and the Unanim type system
+
+[unanim.studio](../inspiration/site-studies/unanim.md) runs its whole brand on **Saans** by Displaay Type
+Foundry, in two weights only: **400 for everything big** (the 711 px wordmark included) and **500 for
+small UI labels**. Nothing is bold. Hierarchy comes from size: 12–13 px labels sit next to a word that is
+half the screen tall.
+
+Saans is a commercial font: buy a licence from Displaay before using it in a build (`TY-27`); trial files
+are for testing only. These free fonts give the same feel, shown below in the same system (Inter, Geist and Instrument Sans would also work but are overused, `SL-59`):
+
+| Font | Closeness | Notes |
+| --- | --- | --- |
+| **Host Grotesk** | closest | similar open shapes and rounded terminals; 400 and 500 cover everything |
+| **Hanken Grotesk** | neutral | safest for small UI, slightly colder |
+| **Albert Sans** | warmer | softer curves, good for long indented statements |
+| **Onest** | technical | when the studio also ships product UI; good Cyrillic |
+
+The system, whichever font you use:
+
+```css
+:root { --font: "Saans", "Host Grotesk", sans-serif; }
+body  { font: 400 15px/1.5 var(--font); letter-spacing: -.007em; }
+.ui   { font-size: 13px; line-height: 15px; font-weight: 500; -webkit-font-smoothing: auto; }
+.menu { font-size: 17px; line-height: 15px; font-weight: 500; }
+.statement { font-size: clamp(32px, 3.4vw, 52px); line-height: 1.05; letter-spacing: -.02em; text-indent: 28%; }
+.wordmark  { font-size: 49vw; line-height: 1; letter-spacing: -.03em; font-weight: 400; white-space: nowrap; }
+```
+
+<img src="specimens/unanim-type.jpg" alt="A dark studio hero with a giant cropped lowercase wordmark and a dock menu, above four columns showing Host Grotesk, Hanken Grotesk, Albert Sans and Onest at 400 and 500 with an indented statement" width="100%">
+
 ## Grotesks
 
 The default for modern websites. Neutral ones (Inter, Geist) for interfaces, characterful ones (Schibsted, Host, Familjen, Bricolage) for big statements.
