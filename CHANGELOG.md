@@ -1,5 +1,13 @@
 # Changelog
 
+## 5.1.0 (2026-11-27)
+
+- `FO-19` is now a hard rule, "Topic first, then three fields": the visitor picks a topic (Product,
+  Partnership, Bug, Other), then the form shows only name, email and a description matched to the topic.
+  `blueprints/contact.md` rewritten around it.
+- Inspiration: Saaspo and Unsection described from their pages (page types, industries, 13 section types);
+  Bencho added (150+ live micro-interactions by trigger), also in the toolkit and the research table.
+
 ## 5.0.0 (2026-11-27)
 
 - **New folder `security/`:** an attack library of 49 attacks in 9 groups (injection, access control,

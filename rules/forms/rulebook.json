@@ -139,8 +139,9 @@
     {
       "id": "FO-19",
       "kind": "do",
-      "title": "A short guided enquiry instead of a long contact form",
-      "text": "For services that qualify leads (agencies, studios, trades, B2B), replace the one long contact form with a short multi-step enquiry: one question per screen, mostly tap-to-choose answers (\"What do you need help with?\", budget range, timeline), a visible step count (\"2 of 5\", `FO-10`), five or six steps at most, name and contact last, and a personal thank-you that says when and how the reply comes. Send it to where the team actually answers (email, CRM, WhatsApp). Keep a plain email address on the page for people who prefer it."
+      "title": "Topic first, then three fields",
+      "text": "A contact form asks as little as possible. First the visitor picks what it is about from a few large choices (for example Product, Partnership, Bug, Billing, Other), and only then the form appears with three fields: name, email and a description of the problem or request, its placeholder and label matched to the chosen topic (\"What went wrong?\" for Bug). The topic travels with the message and routes it to the right person. No phone, company, budget or subject fields unless the owner says the answer changes who replies (`FO-14`). After sending, a thank-you that says who answers and when, and a plain email address stays on the page for anyone who prefers it (`PG-20`).",
+      "level": "hard"
     }
   ]
 }

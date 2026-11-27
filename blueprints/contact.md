@@ -49,18 +49,38 @@ main number and email for anyone who does not fit a route.
 
 ### Freelancer, studio, portfolio
 
-Email first, availability ("Booking from March"), a short project form (name, email, project type, budget
-range, message), social links.
+Email first, availability ("Booking from March"), the two-step form with project types as the topics (New website,
+Redesign, Branding, Other), social links.
 
-## The form
+## The form (`FO-19`)
 
-- Name, email (or phone), message. Add a field only when the answer changes who replies or what they reply
-  (topic, company size, budget range) (`FO-14`).
-- One column, labels above fields, both required and optional marked (`FO-01` to `FO-03`).
-- No CAPTCHA by default; use a honeypot or server-side checks first (`FO-17`).
-- After sending: a thank-you state or page that says what happens next and when (`PE-07`), and a copy by email
-  if the system can send one.
+Ask as little as possible, in two steps:
+
+```text
+Step 1  What is it about?                    Step 2  Bug
+        ┌─────────┐ ┌─────────────┐                  Name   [                    ]
+        │ Product │ │ Partnership │                  Email  [                    ]
+        └─────────┘ └─────────────┘                  What went wrong?
+        ┌─────────┐ ┌─────────┐                      [                           ]
+        │   Bug   │ │  Other  │                      [                           ]
+        └─────────┘ └─────────┘                      [ Send ]        ← Change topic
+```
+
+- **Step 1:** two to six large tap targets with the topics the business really gets (Product, Partnership, Bug,
+  Billing, Press, Other). Picking one opens step 2 at once, no Next button. On a page that already has one
+  topic (a support page, a careers page), skip step 1.
+- **Step 2:** only **name, email and the description**. The description's label and placeholder follow the
+  topic ("What would you like to know about the product?", "What went wrong? What did you expect?"). The topic
+  is shown above the fields with a "Change topic" link and is sent with the message.
+- Nothing else: no phone, company, budget, subject or "how did you hear about us" unless the owner says the
+  answer changes who replies (`FO-14`). One column, labels above fields (`FO-01`, `FO-02`).
+- The topic routes the message (Bug → support inbox, Partnership → the founder) and can prefill the subject of
+  the email the team receives.
+- No CAPTCHA by default; use a honeypot or server-side checks first (`FO-17`, `security/attacks/abuse-and-cost.md`).
+- After sending: a thank-you state that names who answers and when (`PE-07`), and a copy by email if the
+  system can send one.
 - Consent text for the privacy policy where needed, linked, not a pre-ticked box.
+- A plain email address stays on the page for anyone who would rather write directly (`PG-20`).
 
 ## Avoid
 

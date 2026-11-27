@@ -84,6 +84,7 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | `PG-24` | The cart is a drawer that sells |
 | `PG-27` | A paid extra hidden in the checkout button |
 | `NV-15` | Every new page opens at its top |
+| `FO-19` | Topic first, then three fields |
 | `MO-29` | One transition for filtering: fade out, swap, rise in |
 | `MO-30` | An intro loader only when the first screen is heavy |
 | `MO-32` | Warm up the scene behind the loader |

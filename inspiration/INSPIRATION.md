@@ -119,18 +119,37 @@ Then note what you would take (principle) and what you would not (anything that 
 
 ### Saaspo — saaspo.com
 
-- **What it is:** a gallery of SaaS landing pages.
+- **What it is:** a curated collection of SaaS landing pages, submitted by users, with pages, single sections
+  and Open Graph images.
+- **Organised by:** page type (Landing, Pricing, Product, About, Blog, Customers, Careers, Contact,
+  Integrations, Partners), industry (AI, agents, calendar, developer tools, finance, security, legal,
+  automation, infrastructure), stack (Next.js, Framer, Webflow) and style (dark mode).
 - **Use it for:** product sites: how real SaaS pages order the hero, proof, features, pricing and the final
-  call to action, and how they show the product itself instead of fake dashboards (`SL-20`, `SL-45`).
+  call to action, how they show the product itself instead of fake dashboards (`SL-20`, `SL-45`), and the
+  inner pages that are easy to forget (customers, integrations, careers, contact).
 - **Watch out for:** the SaaS default look this gallery is full of (`SL-01`, `SL-15`, `SL-09`): collect the
   structure, not the purple gradient.
 
 ### Unsection — unsection.com
 
-- **What it is:** an inspiration library organised by section rather than by whole site.
-- **Use it for:** the Structure stage, when one section type (pricing, FAQ, testimonials, footer,
-  comparison) needs better options than the usual three cards. Pick by what the section has to answer
-  (`blueprints/sections.md`).
+- **What it is:** section-first inspiration: single sections from real sites rather than whole pages, plus
+  collections, website types, industries, fonts in use and templates.
+- **Organised by:** 13 section types (Hero, Testimonials, Feature, CTA, Footer, Blog, Navbar, Pricing, Logo,
+  FAQs, Team, Contact, Portfolio), then filters for style, layout and elements.
+- **Use it for:** the Structure stage, when one section needs better options than the usual three cards. Pick
+  by what the section has to answer (`blueprints/sections.md`), and check its Contact examples against
+  `FO-19`.
+
+### Bencho — bencho.dev
+
+- **What it is:** a library of more than 150 live React components and micro-interactions you can try and copy,
+  each tagged by its trigger (press, drag, hover, loading, type, swipe, select): a thinking orb, a liquid
+  tooltip, a genie effect, a dynamic island, a seat map, a signature pad, loader variants. It also has
+  interface sounds and an MCP server.
+- **Use it for:** the one interaction that makes a product feel made (a seat map for a venue, a signature pad
+  for a contract, a loader that fits the brand, `MO-31`); browse by trigger to find what fits the action.
+- **Watch out for:** one signature interaction per page (`EF-02`); restyle to the brand (`SL-19`); sounds stay
+  off by default (`sounds/`).
 
 ### Awwwards — awwwards.com
 

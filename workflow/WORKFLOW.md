@@ -117,6 +117,7 @@ Search the sources that fit the brief. Always use at least four, mixing gallerie
 | mobbin.com | how shipped apps and sites solve a specific flow, dashboards, business site sections | search the flow or section (onboarding, checkout, analytics dashboard, pricing section); needs the user's paid login, in the browser or through the Mobbin connector |
 | curated.design, saaspo.com | real sites of the same industry; SaaS landing page structure | industry shelf plus style filter |
 | details.so, unsection.com | one moment or one section done well: loaders, transitions, footers, pricing | filter by element or section type |
+| bencho.dev, spell.sh | one live micro-interaction to copy and restyle | browse by trigger (press, drag, hover, loading) |
 | `inspiration/dashboards.md` | what well-made dashboards and business sites share | read before any operate surface |
 | 21st.dev, reactbits.dev, madewithgsap.com, tympanus.net/codrops | the one signature interaction | search the effect, not the industry |
 
