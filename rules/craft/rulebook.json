@@ -187,6 +187,24 @@
       "level": "soft",
       "title": "Shadows fall on open ground, never through houses",
       "text": "In an architectural or product scene a shadow lands only where something could receive it. Mask the shadow-catching ground inside every footprint, so a shadow stops at the edge of a building instead of showing through it. See-through volumes do not receive shadows, and their sunlit walls must never be brighter than the shade behind them (cap their colour), or a shadow seen through a wall turns into a white patch. Every shadow starts at the foot of what casts it; a gap means the shadow map is stale or biased."
+    },
+    {
+      "id": "DC-27",
+      "kind": "do",
+      "title": "Borders in alpha, not grey hex",
+      "text": "Hairlines and dividers use a translucent ink (`rgb(0 0 0 / 0.1)`, `color-mix(in oklch, var(--ink) 12%, transparent)`) instead of a fixed grey, so the same border works on white, on a tinted section, on a photo and in dark mode."
+    },
+    {
+      "id": "DC-28",
+      "kind": "do",
+      "title": "Shadows in layers",
+      "text": "When something needs elevation, build its shadow from two or three stacked low-opacity shadows (a tight one for contact, a wider soft one for distance) tinted with the background's hue, not one large grey blur (`PL-09`, `SL-53`)."
+    },
+    {
+      "id": "DC-29",
+      "kind": "do",
+      "title": "Fade the edges of scrolling rows",
+      "text": "A horizontally scrolling row (carousel, logo strip, tabs) fades out at the edges with a mask (`mask-image: linear-gradient(90deg, transparent, #000 8% 92%, transparent)`) instead of cutting items off hard or adding gradient overlays that fight the background."
     }
   ]
 }

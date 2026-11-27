@@ -99,6 +99,59 @@ Then note what you would take (principle) and what you would not (anything that 
   their own projects.
 - **Use it for:** finding the right tool, component source or design engineer portfolio quickly.
 
+### Curated — curated.design
+
+- **What it is:** a gallery of almost 3 000 live websites and landing pages, each reviewed by hand, linking
+  straight to the real sites, with sections and components taken from them.
+- **Organised by:** industry shelves (Agency, E-commerce, Education, Finance and more), then filters for
+  style, visuals, attributes, tags, media type and date. Advanced filters are paid.
+- **Use it for:** the Research stage when you need several real sites of the same industry and style side by
+  side, for example "e-commerce, editorial, photography-led".
+
+### Details — details.so
+
+- **What it is:** a library of single moments captured from live production sites and tagged by hand: hero
+  sections, footers, preloaders, page transitions, scroll and hover animations. New examples weekly.
+- **Organised by:** UI elements, structure, transitions and loading, scroll, pointer and hover, industries,
+  styles; filters combine.
+- **Use it for:** the one signature interaction (`EF-02`) and for loaders and page transitions
+  (`MO-30`–`MO-32`, `MO-21`): look at how real sites time and stage them before writing your own.
+
+### Saaspo — saaspo.com
+
+- **What it is:** a gallery of SaaS landing pages.
+- **Use it for:** product sites: how real SaaS pages order the hero, proof, features, pricing and the final
+  call to action, and how they show the product itself instead of fake dashboards (`SL-20`, `SL-45`).
+- **Watch out for:** the SaaS default look this gallery is full of (`SL-01`, `SL-15`, `SL-09`): collect the
+  structure, not the purple gradient.
+
+### Unsection — unsection.com
+
+- **What it is:** an inspiration library organised by section rather than by whole site.
+- **Use it for:** the Structure stage, when one section type (pricing, FAQ, testimonials, footer,
+  comparison) needs better options than the usual three cards. Pick by what the section has to answer
+  (`blueprints/sections.md`).
+
+### Awwwards — awwwards.com
+
+- **What it is:** the long-running awards site; every Site of the Day is scored for design, usability,
+  creativity and content, with a developer score for performance, responsiveness, semantics, animations and
+  accessibility.
+- **Use it for:** ambitious, experimental work (3D, WebGL, motion, editorial layouts) and its Collections and
+  Elements pages for single parts (menus, footers, about pages).
+- **Watch out for:** award sites often trade usability and speed for effect. Check the developer score and
+  the accessibility score before copying an idea, and keep `MO-24` (no scroll hijacking) and `MO-26`.
+
+### Spell UI — spell.sh
+
+- **What it is:** a small open-source (MIT) library of refined, motion-first React and Tailwind components
+  by a design engineer, installable through the shadcn CLI and listed on 21st.dev: text reveals, shimmer,
+  tilt cards, animated checkboxes, copy buttons, light rays, marquees.
+- **Use it for:** one polished micro-interaction (a copy button, an animated checkbox, a text reveal) at the
+  Modern effect level, restyled to the brand (`SL-19`).
+- **Watch out for:** shimmer, light rays, gradient text and marquees are on the slop list when used as filler
+  (`SL-28`, `SL-55`, `SL-68`).
+
 ---
 
 ## Patterns worth learning from these galleries

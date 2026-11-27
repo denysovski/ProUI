@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Forms and Checkout Rulebook: Forms people can finish: fields, labels, validation, errors and checkout." width="100%">
 
-[All rulebooks](../README.md) · Prefix `FO` · Interaction · 18 rules
+[All rulebooks](../README.md) · Prefix `FO` · Interaction · 19 rules
 
 **Forms people can finish: fields, labels, validation, errors and checkout.**
 
@@ -10,7 +10,7 @@ Review this page against FO-01 to FO-05.
 Why does FO-01 matter here?
 ```
 
-## Do · 12
+## Do · 13
 
 What a finished, professional site does.
 
@@ -28,6 +28,7 @@ What a finished, professional site does.
 | `FO-10` | **Named steps in multi-step forms** | Multi-step forms show the steps by name ("Delivery", "Payment") with the current one marked. No step numbers (`SL-17`). |
 | `FO-11` | **Show password option** | Password fields have a show/hide toggle and accept paste and password managers. |
 | `FO-12` | **Address lookup where it helps** | Offer address autocomplete or postcode lookup, with manual entry always possible. |
+| `FO-19` | **A short guided enquiry instead of a long contact form** | For services that qualify leads (agencies, studios, trades, B2B), replace the one long contact form with a short multi-step enquiry: one question per screen, mostly tap-to-choose answers ("What do you need help with?", budget range, timeline), a visible step count ("2 of 5", `FO-10`), five or six steps at most, name and contact last, and a personal thank-you that says when and how the reply comes. Send it to where the team actually answers (email, CRM, WhatsApp). Keep a plain email address on the page for people who prefer it. |
 
 ## Don't · 6
 

@@ -25,6 +25,14 @@ jobs:
           curl -fsSL https://raw.githubusercontent.com/denysovski/ProUI/main/scripts/proui-scan.mjs -o "$RUNNER_TEMP/proui-scan.mjs"
           node "$RUNNER_TEMP/proui-scan.mjs" src --ci
 
+      - name: ProUI security scan (hard findings fail the build)
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/denysovski/ProUI/main/scripts/proui-security-scan.mjs -o "$RUNNER_TEMP/proui-security-scan.mjs"
+          node "$RUNNER_TEMP/proui-security-scan.mjs" . --build dist --ci
+
+      - name: Dependency audit
+        run: npm audit --audit-level=high
+
       - name: Lighthouse CI
         run: npx --yes @lhci/cli@0.14.x autorun
         env:

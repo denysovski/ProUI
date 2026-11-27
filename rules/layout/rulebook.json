@@ -176,6 +176,12 @@
       "level": "hard",
       "title": "Air between sections on phones",
       "text": "Phones get their own spacing, not the desktop values scaled down: about 64–96 px between sections, 32–48 px between blocks inside a section and at least 12–16 px between related elements, with 16–24 px side padding (`LY-09`). If a phone screen looks crowded, add space before shrinking text."
+    },
+    {
+      "id": "LY-25",
+      "kind": "do",
+      "title": "Full-height sections in dvh",
+      "text": "A section meant to fill the screen uses `min-height: 100dvh` (or `100svh` when it must not jump as the browser bar hides), never `100vh`, which on phones is taller than the visible screen and hides the bottom under the browser bar (`LY-16`)."
     }
   ]
 }

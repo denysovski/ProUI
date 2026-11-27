@@ -1,2 +1,6 @@
 dist/
 assets/src/covers/_html/
+
+.env
+.env.*
+!.env.example

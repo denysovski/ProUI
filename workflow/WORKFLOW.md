@@ -115,6 +115,8 @@ Search the sources that fit the brief. Always use at least four, mixing gallerie
 | designeer.xyz | interface craft, motion, 3D, components | category and colour filters |
 | dribbble.com | concepts for 3D, scroll and product reveals | search by the brief's topic plus "website" or "3d scroll" |
 | mobbin.com | how shipped apps and sites solve a specific flow, dashboards, business site sections | search the flow or section (onboarding, checkout, analytics dashboard, pricing section); needs the user's paid login, in the browser or through the Mobbin connector |
+| curated.design, saaspo.com | real sites of the same industry; SaaS landing page structure | industry shelf plus style filter |
+| details.so, unsection.com | one moment or one section done well: loaders, transitions, footers, pricing | filter by element or section type |
 | `inspiration/dashboards.md` | what well-made dashboards and business sites share | read before any operate surface |
 | 21st.dev, reactbits.dev, madewithgsap.com, tympanus.net/codrops | the one signature interaction | search the effect, not the industry |
 
@@ -374,15 +376,25 @@ why). Send the user one short line per finished pass.
 - Verify: Lighthouse on mobile for every page type; Core Web Vitals in the green (LCP under 2.5 s, INP under
   200 ms, CLS under 0.1); bundle size noted in `DECISIONS.md`.
 
-### Pass: Security (`SEC`)
+### Pass: Security (`SEC`, `security/`)
 
-- HTTPS and HSTS, Content Security Policy, security headers, no secrets in client code or the repository,
-  server-side validation, escaped output, safe data access, protected forms, safe cookies, proper
-  authentication and uploads where they exist, restricted CORS, pinned third-party code with integrity,
-  dependency audit, errors without leaks, safe external links, minimal data, security.txt.
-- Verify: check response headers (for example with `curl -I`), run `npm audit`, search the repository and
-  build output for keys and tokens, submit forms with bad and oversized input, and confirm error pages show no
-  internals.
+Follow [security/CHECKLIST.md](../security/CHECKLIST.md):
+
+1. **Pick the level.** Basic for every site; Basic + Intermediate when the site has accounts, a database,
+   saved forms, an API, uploads, payments, an admin area or an AI feature. Health, finance, children's data
+   or money between users: also tell the owner to book a professional review.
+2. **Run the scanner:** `node <proui>/scripts/proui-security-scan.mjs . --build <build dir>`. Fix every hard
+   finding; read every warning in context (`security/ATTACKS.md` has the fix for each `AT` id).
+3. **Go through the checklist** (B1–B11, and I1–I17 for intermediate). While building, the same rules apply
+   already: secret keys only on the server (`SEC-04`), owner checked on every object (`SEC-27`), admin checked
+   on the server (`SEC-28`), allow-listed fields (`SEC-29`), prices from the server (`SEC-30`), atomic
+   coupons (`SEC-31`), budgets on paid APIs (`SEC-32`), AI that does not trust prompts (`SEC-33`).
+4. **Run the self-tests** that apply from [security/PROBES.md](../security/PROBES.md), only against localhost or
+   staging, with two test accounts.
+5. **Write `proui/SECURITY.md`** from [security/REPORT.md](../security/REPORT.md) and add the owner's to-dos
+   (rotate leaked keys, set provider budgets) to the handoff.
+
+A site does not deploy with an open **must** item.
 
 ### Pass: Launch and legal (`PE`)
 

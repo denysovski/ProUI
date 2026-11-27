@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Rulebooks: 24 rulebooks of Do and Don't rules that keep a site looking designed, not generated" width="100%">
 
-[Back to ProUI](../README.md) · 24 rulebooks · 602 rules
+[Back to ProUI](../README.md) · 24 rulebooks · 633 rules
 
 **Every rule ProUI applies, sorted by subject.** Each rulebook is a short list of Do and Don't rules with a fixed ID, so you can name a rule in a prompt, switch it off for one project, or point at it in a review.
 
@@ -26,25 +26,25 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 
 | Rulebook | Prefix | Rules | Covers |
 | --- | --- | --- | --- |
-| [Anti-Slop Rulebook](anti-slop/README.md) | `SL` | 73 | Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks. |
-| [Design Craft Rulebook](craft/README.md) | `DC` | 26 | Small decisions that separate a considered design from a template. |
+| [Anti-Slop Rulebook](anti-slop/README.md) | `SL` | 76 | Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks. |
+| [Design Craft Rulebook](craft/README.md) | `DC` | 29 | Small decisions that separate a considered design from a template. |
 | [Typography Rulebook](typography/README.md) | `TY` | 27 | Choosing faces, setting a scale, measure, leading and tracking, and loading fonts properly. |
 | [Colour Rulebook](color/README.md) | `CL` | 23 | Colour strategy, roles, OKLCH, contrast and dark mode. |
 | [Gradients and Backgrounds Rulebook](gradients/README.md) | `GR` | 16 | When a gradient or background pattern has a job, and how to make one that looks intentional. |
 | [Effects and 3D Rulebook](effects/README.md) | `EF` | 24 | Modern effects, shaders and 3D from the effects library, used at the level the user chose and without hurting speed or access. |
-| [Layout and Spacing Rulebook](layout/README.md) | `LY` | 24 | Hierarchy, spacing scale, rhythm, grid and adapting to every screen. |
-| [Page Structure Rulebook](structure/README.md) | `PG` | 28 | Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built. |
-| [Images and Media Rulebook](images/README.md) | `IM` | 15 | Photography, illustration, video and icons: what to use, how to prepare it, what never to ship. |
+| [Layout and Spacing Rulebook](layout/README.md) | `LY` | 25 | Hierarchy, spacing scale, rhythm, grid and adapting to every screen. |
+| [Page Structure Rulebook](structure/README.md) | `PG` | 30 | Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built. |
+| [Images and Media Rulebook](images/README.md) | `IM` | 16 | Photography, illustration, video and icons: what to use, how to prepare it, what never to ship. |
 
 ## Interaction
 
 | Rulebook | Prefix | Rules | Covers |
 | --- | --- | --- | --- |
 | [Navigation Rulebook](navigation/README.md) | `NV` | 16 | Menus, wayfinding, search, footers and URLs that let people find things and know where they are. |
-| [Components and Interaction Rulebook](components/README.md) | `IX` | 26 | Controls, overlays, feedback and behaviour that feel familiar and trustworthy. |
-| [Forms and Checkout Rulebook](forms/README.md) | `FO` | 18 | Forms people can finish: fields, labels, validation, errors and checkout. |
+| [Components and Interaction Rulebook](components/README.md) | `IX` | 27 | Controls, overlays, feedback and behaviour that feel familiar and trustworthy. |
+| [Forms and Checkout Rulebook](forms/README.md) | `FO` | 19 | Forms people can finish: fields, labels, validation, errors and checkout. |
 | [States Rulebook](states/README.md) | `ST` | 16 | Every situation the interface has to handle, not only the happy path. |
-| [Motion Rulebook](motion/README.md) | `MO` | 33 | Timing, easing and choreography that make an interface feel fast and physical. |
+| [Motion Rulebook](motion/README.md) | `MO` | 41 | Timing, easing and choreography that make an interface feel fast and physical. |
 | [Accessibility Rulebook](accessibility/README.md) | `AX` | 28 | Usable by everyone, designed in from the start. Target: WCAG 2.2 AA. |
 | [Platform Conventions Rulebook](platform/README.md) | `PL` | 14 | Principles from Apple's Human Interface Guidelines and Microsoft Fluent 2, applied to the web. |
 
@@ -68,7 +68,7 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | [Launch Essentials Rulebook](launch/README.md) | `PE` | 26 | What every real, launched website has: system pages, legal pages, contact details, monitoring. |
 | [SEO Rulebook](seo/README.md) | `SEO` | 29 | Being found: technical SEO, content signals, structured data and what search engines penalise. |
 | [Performance Rulebook](performance/README.md) | `PF` | 34 | Fast loading, smooth interaction and stable layout, measured with Core Web Vitals. |
-| [Security Rulebook](security/README.md) | `SEC` | 26 | Protecting visitors, data and the site itself, from headers to authentication. |
+| [Security Rulebook](security/README.md) | `SEC` | 37 | Protecting visitors, data, money and the budget: from headers to authentication, access control, prices and paid APIs. Attack library and checklist: security/. |
 | [GitHub Workflow Rulebook](github/README.md) | `GH` | 22 | The repository, branches, commits, pull requests, CI, quality gates, deploys and releases. |
 
 ## Hard rules
@@ -90,6 +90,14 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | `AX-16` | Test accessibility before every release |
 | `CP-14` | Invented claims, numbers or customers |
 | `PF-34` | Render 3D on demand |
+| `SEC-27` | Check the owner on every object |
+| `SEC-28` | Admin routes checked on the server |
+| `SEC-29` | Allow-list the fields a request may set |
+| `SEC-30` | The server sets every price |
+| `SEC-31` | One-time things are used atomically |
+| `SEC-32` | Budgets and limits on every paid API |
+| `SEC-33` | AI features that trust the prompt |
+| `SEC-34` | Secrets in Git, now or ever |
 
 ## Which rulebooks lead in each mode
 

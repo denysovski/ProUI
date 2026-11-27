@@ -1,5 +1,32 @@
 # Changelog
 
+## 5.0.0 (2026-11-27)
+
+- **New folder `security/`:** an attack library of 49 attacks in 9 groups (injection, access control,
+  sign-in, shops and money, browser-side, files and server, secrets and dependencies, abuse and cost, AI
+  features), each with an example, the impact, the defence at a basic and an intermediate level and a way to
+  test it; the security checklist (11 basic, 17 intermediate checks); self-tests with `curl` and two test
+  accounts; a report template.
+- **New script `scripts/proui-security-scan.mjs`:** finds secret keys (also in Git history and build output),
+  string-built SQL, shell commands, mass assignment, prices, roles and AI models read from the request,
+  open CORS, unverified JWTs and webhooks, non-atomic coupons, raw HTML, open redirects, SSRF and path
+  traversal. Runs in the CI template with `npm audit`.
+- Workflow: the security pass now follows `security/CHECKLIST.md` and writes `proui/SECURITY.md`.
+- New security rules `SEC-27` to `SEC-37`: owner checked on every object, admin checked on the server,
+  allow-listed fields, the server sets every price, atomic one-time things, budgets and limits on every
+  paid API, AI features that trust the prompt, secrets in Git, SSRF, open redirects, paths from input.
+- New design rules from studied videos (no duplicates of existing rules): `SL-74` an arrow on every button,
+  `SL-75` dot-separated slogans, `SL-76` everything in a card; `MO-34` to `MO-41` (appear from 0.97, shake a
+  wrong password, directional steps, accordions to real height, no transitions during a theme switch, only
+  the first tooltip waits, release velocity to a spring, less motion for frequent actions); `DC-27` alpha
+  borders, `DC-28` layered shadows, `DC-29` masked scroll edges; `LY-25` dvh; `IM-16` multiply for white
+  product shots; `IX-27` fewer choices in groups; `FO-19` a guided enquiry instead of a long contact form;
+  `PG-29` lookbooks people can swipe and tap, `PG-30` shop the look. `CP-03` gains the AI tells "quiet",
+  "real", "crafted" and "thoughtfully". 633 rules.
+- New blueprint `blueprints/lookbook.md`: a clothing brand's lookbook in three levels.
+- Inspiration: Curated, Details, Saaspo, Unsection, Awwwards and Spell UI described with what to use them
+  for, also in the research table and the toolkit.
+
 ## 4.6.0 (2026-11-25)
 
 - New folder `colors/`: colour schemes in `palettes.json` with generated CSS variables and a swatch sheet.

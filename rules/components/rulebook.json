@@ -181,6 +181,12 @@
       "kind": "dont",
       "title": "Pop-ups on arrival",
       "text": "No newsletter, discount or chat pop-up on page load or within the first scroll. Offer it inline or after a clear sign of interest."
+    },
+    {
+      "id": "IX-27",
+      "kind": "do",
+      "title": "Fewer choices, in groups",
+      "text": "Each decision point offers few options (Hick's law): one primary action, at most one secondary, the rest behind \"More\". Longer lists are grouped into chunks of about five to seven with headings (Miller's law), and the usual place for things is kept (Jakob's law: people expect your site to work like the ones they already use)."
     }
   ]
 }

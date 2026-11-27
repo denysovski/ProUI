@@ -113,6 +113,8 @@ gh release create v1.0.0 --generate-notes
 
 - `templates/github/dependabot.yml` → `.github/dependabot.yml` for weekly npm and Actions updates (`GH-14`).
 - Settings → Code security: secret scanning and push protection on; CodeQL for sites with a back end.
+- The quality workflow runs `proui-security-scan.mjs --ci` and `npm audit --audit-level=high` on every push
+  (`security/CHECKLIST.md`).
 - `templates/github/ISSUE_TEMPLATE/` → `.github/ISSUE_TEMPLATE/` so the client can report bugs and changes in
   a usable shape (`GH-16`).
 - `templates/github/release.yml` → `.github/release.yml` for grouped release notes.

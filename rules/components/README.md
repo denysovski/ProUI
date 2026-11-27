@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Components and Interaction Rulebook: Controls, overlays, feedback and behaviour that feel familiar and trustworthy." width="100%">
 
-[All rulebooks](../README.md) · Prefix `IX` · Interaction · 26 rules
+[All rulebooks](../README.md) · Prefix `IX` · Interaction · 27 rules
 
 **Controls, overlays, feedback and behaviour that feel familiar and trustworthy.**
 
@@ -10,7 +10,7 @@ Review this page against IX-01 to IX-05.
 Why does IX-01 matter here?
 ```
 
-## Do · 20
+## Do · 21
 
 What a finished, professional site does.
 
@@ -36,6 +36,7 @@ What a finished, professional site does.
 | `IX-18` | **Touch gestures have a fallback** | Swipe, drag and long-press always have a visible button alternative; drag surfaces set `touch-action` and clean up when a gesture is interrupted. |
 | `IX-19` | **Sticky actions on long forms and pages** | On long forms and product pages, the main action stays reachable (a sticky footer bar on phones) without covering content. |
 | `IX-20` | **Confirm destructive actions by name** | Irreversible actions say exactly what will be lost and use a specific button label ("Delete 3 invoices"), not "OK". |
+| `IX-27` | **Fewer choices, in groups** | Each decision point offers few options (Hick's law): one primary action, at most one secondary, the rest behind "More". Longer lists are grouped into chunks of about five to seven with headings (Miller's law), and the usual place for things is kept (Jakob's law: people expect your site to work like the ones they already use). |
 
 ## Don't · 6
 

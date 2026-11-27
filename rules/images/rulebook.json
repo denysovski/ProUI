@@ -114,6 +114,12 @@
       "kind": "dont",
       "title": "Lazy-loading the first image",
       "text": "Never lazy-load images in the first viewport, especially the largest one (`PF-22`)."
+    },
+    {
+      "id": "IM-16",
+      "kind": "do",
+      "title": "Blend white product shots into the page",
+      "text": "Product photos shot on white sit on a tinted card with `mix-blend-mode: multiply`, so the white square disappears and the product stands on the page's own colour. Do not use it on photos with white parts that must stay white (labels, white garments) or on dark backgrounds."
     }
   ]
 }

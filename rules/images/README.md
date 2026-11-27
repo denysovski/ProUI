@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Images and Media Rulebook: Photography, illustration, video and icons: what to use, how to prepare it, what never to ship." width="100%">
 
-[All rulebooks](../README.md) · Prefix `IM` · Design · 15 rules
+[All rulebooks](../README.md) · Prefix `IM` · Design · 16 rules
 
 **Photography, illustration, video and icons: what to use, how to prepare it, what never to ship.**
 
@@ -10,7 +10,7 @@ Review this page against IM-01 to IM-05.
 Why does IM-01 matter here?
 ```
 
-## Do · 9
+## Do · 10
 
 What a finished, professional site does.
 
@@ -25,6 +25,7 @@ What a finished, professional site does.
 | `IM-07` | **Video done properly** | Videos have a poster image, captions, controls, and are compressed for the web (H.264 or AV1, short loops under a few MB). |
 | `IM-08` | **SVG for icons and logos** | Icons and logos are optimised inline SVG or an SVG sprite, not icon fonts or PNGs. |
 | `IM-09` | **Credit and licence** | Every image that is not the client's own has a licence that allows the use, recorded in the project. |
+| `IM-16` | **Blend white product shots into the page** | Product photos shot on white sit on a tinted card with `mix-blend-mode: multiply`, so the white square disappears and the product stands on the page's own colour. Do not use it on photos with white parts that must stay white (labels, white garments) or on dark backgrounds. |
 
 ## Don't · 6
 

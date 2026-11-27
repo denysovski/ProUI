@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Motion Rulebook: Timing, easing and choreography that make an interface feel fast and physical." width="100%">
 
-[All rulebooks](../README.md) · Prefix `MO` · Interaction · 33 rules
+[All rulebooks](../README.md) · Prefix `MO` · Interaction · 41 rules
 
 **Timing, easing and choreography that make an interface feel fast and physical.**
 
@@ -10,7 +10,7 @@ Review this page against MO-01 to MO-05.
 Why does MO-01 matter here?
 ```
 
-## Do · 25
+## Do · 33
 
 What a finished, professional site does.
 
@@ -41,6 +41,14 @@ What a finished, professional site does.
 | `MO-30` | **An intro loader only when the first screen is heavy** <sub>HARD RULE</sub> | Show a full-screen loader only when the first screen cannot work without something heavy: a 3D scene, compiled shaders, a large model or video that drives the page. An ordinary page paints its content at once, with no loader. While it shows, lock scrolling, keep the real page underneath, and give up after about 12 s: unlock and show the page as it is rather than waiting forever. It fades out over about 600 ms into a frame that is already rendered, never into a blank or half-built scene. |
 | `MO-31` | **A loader shaped like the brand, not a spinner** <sub>SOFT</sub> | Build the loader from a few simple shapes taken from the brand or the subject (circles of a flower, a house, the logo's parts) and fill them one by one in the accent colour; skip the generic rotating ring. No outlines: an empty shape is the ink at about 7 % opacity, a full one is the accent. The fill flows in one direction (for example clockwise), each shape filling from the side of the previous one and emptying toward the next, in a 2.4–3 s loop with about 170 ms between shapes. It may be large on desktop (up to about 800 px wide, never taller than the screen) and about 76 px on phones. With reduced motion it shows the full shape without moving. Ready code: `effects/fx/petal-loader/`. |
 | `MO-32` | **Warm up the scene behind the loader** <sub>HARD RULE</sub> | Use the loader time to play every stage of a scroll-driven scene once, out of sight: each material, light, shadow and effect variant is compiled and uploaded before the visitor can scroll, so the first scroll never stutters. Then jump back to where the page really is and start the intro from there. Do not replace the live scene with still images or a video of it while it warms up; visitors notice the swap. |
+| `MO-34` | **Appear from 0.97, never from nothing** | Cards, dialogs, sheets and toasts that appear start at about `scale(0.97)` and opacity 0 and settle at 1. Starting from `scale(0)` looks like a jump cut and draws a moving outline (popovers: `MO-10`). |
+| `MO-35` | **Shake a wrong password** | A rejected password or code shakes the field once (translateX 0, −10, 10, −6, 6, −3, 0 px over about 360 ms) as well as turning it red with a message. With reduced motion, only the colour and the message change. |
+| `MO-36` | **Steps slide the way you are going** | In a stepper, wizard or multi-step form, the next step slides in from the right and the previous one leaves to the left; going back reverses it. A plain crossfade hides which way the person moved. |
+| `MO-37` | **Accordions open to their real height** | Animate disclosure panels to `height: auto` with `:root { interpolate-size: allow-keywords }` (or `calc-size()`), so nobody measures heights in JavaScript or hard-codes a max-height. Browsers without it open instantly, which is a fine fallback. |
+| `MO-38` | **No transitions during a theme switch** | While the colour theme changes, turn transitions off for one frame (`.theme-switching * { transition: none !important }`), so a hundred elements do not fade at different speeds. |
+| `MO-39` | **Only the first tooltip waits** | The first tooltip opens after a short delay (about 400–600 ms); while one is open or was just closed, moving to the next control shows its tooltip at once, without the delay or the entrance animation. |
+| `MO-40` | **Hand the release velocity to a spring** | When a dragged or flicked element is let go (a sheet, a card, a carousel), animate it to rest with a spring that starts from the release velocity (for example `animate(y, 0, { type: "spring", duration: 0.5, bounce: 0, velocity })`), not a fixed-duration transition that ignores how hard it was thrown (`MO-14`, `MO-19`). |
+| `MO-41` | **The more often, the less motion** | Motion is inversely proportional to how often something is used: a once-a-session moment can animate, a command used fifty times a day (keyboard shortcuts, list navigation, a frequently opened menu) appears instantly. Respond in under 400 ms either way (`IX-16`). |
 
 ## Don't · 8
 

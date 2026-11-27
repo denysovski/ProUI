@@ -467,6 +467,27 @@
       "kind": "dont",
       "title": "Icons and pictures on content cards",
       "text": "A small icon, emoji or clip-art picture on top of every service, feature, standard or value card. On professional sites (property, finance, law, architecture, luxury) it reads as a template and cheapens the content. Let the title and the copy lead, or show the real thing (a photo of the work, a number, a screenshot). Icons belong in controls, dense data and navigation aids; decorative card icons are acceptable on social media graphics and playful consumer brands (`SL-29`, `SL-57`)."
+    },
+    {
+      "id": "SL-74",
+      "kind": "dont",
+      "level": "soft",
+      "title": "An arrow on every button",
+      "text": "A `→` or arrow icon after every button and link label (\"Start now ↗\", \"See pricing ↗\", \"Learn more ↗\"). Keep an arrow where it means something: leaving the site, the one main next step, or a carousel. Everywhere else the label is enough."
+    },
+    {
+      "id": "SL-75",
+      "kind": "dont",
+      "level": "soft",
+      "title": "Dot-separated slogans",
+      "text": "Three words with middle dots (\"Design · Build · Ship\", \"Fast · Simple · Secure\") as a headline, tagline or hero line. Say what the business does in a sentence (`CP-04`)."
+    },
+    {
+      "id": "SL-76",
+      "kind": "dont",
+      "level": "soft",
+      "title": "Everything in a card",
+      "text": "Every block of the page boxed in a bordered or shadowed card, so the page is a stack of boxes. Group by spacing, alignment and type first (`LY-06`); use a surface only when something is a separate object the visitor can pick or move (`SL-51`)."
     }
   ]
 }

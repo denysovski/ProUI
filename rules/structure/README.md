@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Page Structure Rulebook: Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built." width="100%">
 
-[All rulebooks](../README.md) · Prefix `PG` · Design · 28 rules
+[All rulebooks](../README.md) · Prefix `PG` · Design · 30 rules
 
 **Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built.**
 
@@ -10,7 +10,7 @@ Review this page against PG-01 to PG-05.
 Why does PG-01 matter here?
 ```
 
-## Do · 20
+## Do · 22
 
 What a finished, professional site does.
 
@@ -36,6 +36,8 @@ What a finished, professional site does.
 | `PG-25` | **A free-gift ladder instead of discount codes** <sub>SOFT</sub> | To raise the order value, show tiers of free gifts at the next spend thresholds, spaced about 50–100 USD (1 000–2 000 Kč) apart and starting just above the current average order. Pick gifts that cost little to make, weigh little to ship and look valuable (a cap, socks, a tote, a sample size). Show the next step in words ("Add 450 Kč for a free cap") and a gift that is reached appears in the cart as a line priced "Free". Fashion brands report that gifts move order value and conversion more than a discounted checkout or free shipping; still measure it on your shop. |
 | `PG-26` | **One-click add-ons that need no choice** <sub>SOFT</sub> | Products suggested in the cart are complementary and one size (a cap, a bracelet, socks, care products), so a single click adds them without opening a size picker. Show two to four, each with image, name and price, plus an add button. Measure revenue per visitor. When the cart is empty or holds one item, recently viewed products are a good second row. |
 | `PG-28` | **Test cart changes on order value, not clicks** <sub>SOFT</sub> | Every cart change (gift tiers, add-ons, button order, copy) ships as an A/B test with a holdout, judged on average order value, conversion rate and revenue per visitor over at least two full weeks, and on returns and complaints after that. A change that only raises clicks is not a win. |
+| `PG-29` | **Lookbooks people can swipe and tap** | A fashion lookbook is not a static grid. Each look opens full-screen in 9:16 with the image filling the screen, a stories-style progress bar showing the position, tap zones on the left and right third to go back and forward (tapping takes less effort than swiping) and swipe as a second way. The progress bar and the arrows keep it usable by keyboard and screen reader (`blueprints/lookbook.md`). |
+| `PG-30` | **Shop the look on every look** | Every lookbook image lists the products the model wears, each with image, name, price and an add button, in a small sheet at the bottom of the look. Several items can be added from one look without leaving it (`PG-26`). |
 
 ## Don't · 8
 

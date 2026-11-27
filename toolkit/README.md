@@ -30,6 +30,9 @@
 | [Saved](https://saved.design) | interface, 3D and typography details |
 | [Designeer](https://designeer.xyz) | components, motion, 3D |
 | [Dribbble](https://dribbble.com) | concepts for 3D, scroll and product reveals |
+| [Curated](https://curated.design), [Saaspo](https://saaspo.com) | real sites by industry; SaaS landing pages |
+| [Details](https://details.so), [Unsection](https://unsection.com) | single moments (loaders, transitions, hover) and single sections |
+| [Spell UI](https://spell.sh) | refined motion-first React components (MIT) |
 | [Godly](https://godly.website), [Awwwards](https://www.awwwards.com), [Land-book](https://land-book.com), [SiteInspire](https://www.siteinspire.com), [Lapa Ninja](https://www.lapa.ninja), [httpster](https://httpster.net) | extra galleries when the main ones are thin |
 
 ## Building

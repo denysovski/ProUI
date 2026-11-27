@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Design Craft Rulebook: Small decisions that separate a considered design from a template." width="100%">
 
-[All rulebooks](../README.md) · Prefix `DC` · Design · 26 rules
+[All rulebooks](../README.md) · Prefix `DC` · Design · 29 rules
 
 **Small decisions that separate a considered design from a template.**
 
@@ -10,7 +10,7 @@ Review this page against DC-01 to DC-05.
 Why does DC-01 matter here?
 ```
 
-## Do · 24
+## Do · 27
 
 What a finished, professional site does.
 
@@ -40,6 +40,9 @@ What a finished, professional site does.
 | `DC-22` | **Every interactive element looks interactive** | Cards that link have a hover and focus state, a cursor change and a clear target; static cards do not pretend to be clickable. |
 | `DC-23` | **Optical sizes for icons** | Icons sit on a fixed size grid (16, 20, 24) with one stroke width, and are visually balanced against the cap height of the text next to them. |
 | `DC-26` | **Shadows fall on open ground, never through houses** <sub>SOFT</sub> | In an architectural or product scene a shadow lands only where something could receive it. Mask the shadow-catching ground inside every footprint, so a shadow stops at the edge of a building instead of showing through it. See-through volumes do not receive shadows, and their sunlit walls must never be brighter than the shade behind them (cap their colour), or a shadow seen through a wall turns into a white patch. Every shadow starts at the foot of what casts it; a gap means the shadow map is stale or biased. |
+| `DC-27` | **Borders in alpha, not grey hex** | Hairlines and dividers use a translucent ink (`rgb(0 0 0 / 0.1)`, `color-mix(in oklch, var(--ink) 12%, transparent)`) instead of a fixed grey, so the same border works on white, on a tinted section, on a photo and in dark mode. |
+| `DC-28` | **Shadows in layers** | When something needs elevation, build its shadow from two or three stacked low-opacity shadows (a tight one for contact, a wider soft one for distance) tinted with the background's hue, not one large grey blur (`PL-09`, `SL-53`). |
+| `DC-29` | **Fade the edges of scrolling rows** | A horizontally scrolling row (carousel, logo strip, tabs) fades out at the edges with a mask (`mask-image: linear-gradient(90deg, transparent, #000 8% 92%, transparent)`) instead of cutting items off hard or adding gradient overlays that fight the background. |
 
 ## Don't · 2
 

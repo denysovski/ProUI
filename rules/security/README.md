@@ -1,8 +1,8 @@
-<img src="cover.jpg" alt="Security Rulebook: Protecting visitors, data and the site itself, from headers to authentication." width="100%">
+<img src="cover.jpg" alt="Security Rulebook: Protecting visitors, data, money and the budget: from headers to authentication, access control, prices and paid APIs. Attack library and checklist: security/." width="100%">
 
-[All rulebooks](../README.md) · Prefix `SEC` · Production · 26 rules
+[All rulebooks](../README.md) · Prefix `SEC` · Production · 37 rules
 
-**Protecting visitors, data and the site itself, from headers to authentication.**
+**Protecting visitors, data, money and the budget: from headers to authentication, access control, prices and paid APIs. Attack library and checklist: security/.**
 
 ```text
 Apply the Security Rulebook (SEC) to this page.
@@ -10,7 +10,7 @@ Review this page against SEC-01 to SEC-05.
 Why does SEC-01 matter here?
 ```
 
-## Do · 21
+## Do · 29
 
 What a finished, professional site does.
 
@@ -37,8 +37,16 @@ What a finished, professional site does.
 | `SEC-20` | **Verify webhooks** | Incoming webhooks (payments, forms) are checked by signature before anything happens. |
 | `SEC-21` | **Least-privilege keys** | API keys and service accounts have only the rights they need, and are rotated when people leave or keys leak. |
 | `SEC-22` | **Expiring reset links** | Password reset and magic links are single-use and expire within about an hour. |
+| `SEC-27` | **Check the owner on every object** <sub>HARD RULE</sub> | Every read, change or download of a private object (order, invoice, file, message, profile) is filtered by the signed-in user on the server: `where: { id, userId: session.user.id }`, answering 404 otherwise. Changing the ID in the URL must never show someone else's data. Add row-level security in the database as a second wall where it exists (`security/attacks/access-control.md`, AT-10). |
+| `SEC-28` | **Admin routes checked on the server** <sub>HARD RULE</sub> | Every admin page and every admin API route checks the role on the server, from the session or the database, inside the handler as well as in middleware. A hidden link, an unlisted URL or a client-side check is not protection. Staff accounts use two-factor sign-in (AT-11). |
+| `SEC-29` | **Allow-list the fields a request may set** <sub>HARD RULE</sub> | Never save a request body as it came (`create({ data: req.body })`). Parse it with a schema that lists the allowed fields, so `role`, `isAdmin`, `credits`, `price` or `verified` sent by an attacker are dropped (AT-12). |
+| `SEC-30` | **The server sets every price** <sub>HARD RULE</sub> | The browser sends what the person wants (product, variant, quantity, coupon code); the server looks up prices, discounts, shipping and tax and computes the total, and creates the payment amount itself. Quantities are whole numbers from 1 to a sensible maximum; totals never go below zero (AT-30, AT-31). |
+| `SEC-31` | **One-time things are used atomically** <sub>HARD RULE</sub> | Coupons, gift-card balances, referral bonuses, the last item in stock and one-time codes are checked and used in one atomic step (a conditional `UPDATE ... WHERE used_at IS NULL RETURNING`, a unique constraint or a locking transaction). Money-moving requests carry an idempotency key, so a double click or a replay creates one order (AT-33, AT-34). |
+| `SEC-32` | **Budgets and limits on every paid API** <sub>HARD RULE</sub> | Every paid service (AI, maps, search, SMS, voice, storage egress) has a hard budget with alerts at the provider, per-user and per-IP rate limits, and limits fixed on the server: the model, the maximum output tokens, the number of tool calls, the voice minutes. Expensive calls need sign-in; repeated results are cached; images are resized once and served from a CDN with hotlinking blocked (AT-70, AT-83). |
+| `SEC-35` | **Server-side fetches only to allowed hosts** | A feature that fetches a URL given by a user (link previews, imports, webhooks to test) fetches only allow-listed hosts, refuses private, loopback and link-local addresses after resolving and after redirects, and has short timeouts and size limits (AT-52). |
+| `SEC-36` | **Redirect only to your own paths** | `next`, `returnTo` and `callbackUrl` parameters accept only relative paths on the same site (starting with `/`, not `//`), checked against an allow-list; OAuth redirect URIs are registered exactly (AT-42, AT-25). |
 
-## Don't · 5
+## Don't · 8
 
 What never ships.
 
@@ -49,11 +57,15 @@ What never ships.
 | `SEC-24` | **Exposed internals on the server** | No reachable `.git`, `.env`, backups, directory listings or server version headers in production. |
 | `SEC-25` | **Your own crypto** | Never invent hashing, encryption or token schemes. Use the platform's and well-known libraries' implementations. |
 | `SEC-26` | **Personal data in logs and URLs** | Logs, analytics and URLs never contain passwords, tokens, card data or unnecessary personal data. |
+| `SEC-33` | **AI features that trust the prompt** <sub>HARD RULE</sub> | Never treat a system prompt as a security boundary or let a model's answer grant anything. Put no secrets in prompts; give tools the least power (read-only, one user's data); confirm side effects with the user; render model output as sanitised text so it cannot load outside images or run scripts; build each user's context only from their own data (AT-80 to AT-82). |
+| `SEC-34` | **Secrets in Git, now or ever** <sub>HARD RULE</sub> | `.env*` files are ignored before the first commit, with a `.env.example` of names only; a secret scan runs before commits and in CI. A key that was ever pushed is rotated at the provider first, then removed from the history, because it must be assumed copied (AT-61). |
+| `SEC-37` | **File paths and shell commands from input** | Never build a file path, an archive entry path or a shell command from user input. Map IDs to stored paths, check that resolved paths stay inside their folder, and call programs with `execFile` and an argument array (AT-04, AT-51). |
 
 ## How to check
 
-- `curl -I` the live site for headers; `npm audit`; search the repo and build for keys.
-- Submit forms with bad and oversized input; check error pages show no internals.
+- Run `node scripts/proui-security-scan.mjs . --build <build dir>` and fix every hard finding.
+- Go through security/CHECKLIST.md at the right level and run the self-tests in security/PROBES.md against localhost or staging.
+- `curl -I` the live site for headers; `npm audit`.
 
 ## Sources
 

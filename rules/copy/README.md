@@ -38,7 +38,7 @@ What never ships.
 
 | ID | Avoid | Details |
 | --- | --- | --- |
-| `CP-03` | **Buzzwords** | Avoid "seamless", "unlock", "elevate", "empower", "revolutionise", "next-level", "cutting-edge", "game-changing", "supercharge", "effortless", "delve", "leverage", "robust", "in today's fast-paced world". |
+| `CP-03` | **Buzzwords** | Avoid "seamless", "unlock", "elevate", "empower", "revolutionise", "next-level", "cutting-edge", "game-changing", "supercharge", "effortless", "delve", "leverage", "robust", "in today's fast-paced world", and the newer AI tells "quiet" (quiet confidence, quietly powerful), "real" (real results, real people), "crafted" and "thoughtfully". |
 | `CP-04` | **Slogan rhythm** | Avoid three-word fragments in a row, rhetorical questions as headings, and "not X but Y" contrasts (`SL-38`, `SL-71`). |
 | `CP-14` | **Invented claims, numbers or customers** <sub>HARD RULE</sub> | No invented numbers, customers, awards or reviews. Placeholders are marked as placeholders for the client to replace (`SL-42` to `SL-44`). |
 | `CP-19` | **Cute error messages** | No "Oops!", "Uh-oh" or jokes in errors. People with a problem want the cause and the fix. |

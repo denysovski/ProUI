@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 602 rules, 7 effect kits, 133 motion recipes" width="100%">
+<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 633 rules, 7 effect kits, 133 motion recipes" width="100%">
 
 **The playbook for beautiful websites, for AI coding agents.** Blueprints, type and colour methods, effect kits, a workflow from brief to launch, and the rules that keep a site looking designed instead of generated.
 
@@ -12,12 +12,13 @@
 
 ## What ProUI is
 
-ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load it next to your project and ask for a website: the agent knows which pages and sections the site needs, how to pick fonts and colours, which effects fit and how many to use, and how to get from the first brief to a live site. Then it checks its own work against 602 rules.
+ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load it next to your project and ask for a website: the agent knows which pages and sections the site needs, how to pick fonts and colours, which effects fit and how many to use, and how to get from the first brief to a live site. Then it checks its own work against 633 rules.
 
 - **Structure first.** Sitemaps, landing page order, pricing, contact, footers and legal pages for real kinds of business.
 - **Taste you can name.** Fonts measured on 32 brand sites, palettes measured on real sites, style keywords like `EDITORIAL CREAM`.
 - **Effects with a budget.** One kit per site, an effect level you choose, and "a couple of 3D effects" means two.
 - **A workflow with checkpoints.** You pick the direction, the type and colour, the outline and the first screen.
+- **Secure by default.** A library of 49 attacks, a security checklist and a scanner, so a vibe-coded shop does not leak data, sell a jacket for 1 Kč or burn its API budget overnight.
 
 > [!NOTE]
 > ProUI is an add-on. Your instructions come first, then your project's own rules, then ProUI.
@@ -36,6 +37,7 @@ ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load
 | [`effects/`](effects/README.md) | effect levels, kits and budget, 25 plain effects, 20 motion briefs, catalogues of ready components including all 168 Annnimate animations |
 | [`inspiration/`](inspiration/README.md) | galleries to research, 25 studied sites with build prompts, their animations and palettes, and a full study of unanim.studio |
 | [`style/`](style/README.md) | style keywords to use in prompts, and the FRAMER style with 80 ready sections |
+| [`security/`](security/README.md) | an attack library of 49 attacks with defences at two levels, the security checklist, self-tests, a report template and a security scanner |
 | [`sounds/`](sounds/README.md) | optional interface sounds for hover and click, off by default |
 | [`modes/`](modes/README.md) | persuade, operate, read, experience: what the visitor came to do |
 | [`commands/`](commands/README.md) | short commands like `ProUI critique` or `ProUI ship` |
@@ -43,7 +45,7 @@ ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load
 | [`recipes/`](recipes/README.md) | tested code for motion, components, gradients and dashboards |
 | [`toolkit/`](toolkit/README.md) | libraries, design tools and the websites used in each stage |
 | [`references/`](references/README.md) | Apple HIG, Fluent 2, Impeccable and OpenDesign, distilled |
-| [`scripts/`](scripts/README.md) | the slop scanner and the builders that keep the repository consistent |
+| [`scripts/`](scripts/README.md) | the slop scanner, the security scanner and the builders that keep the repository consistent |
 | [`SKILL.md`](SKILL.md) | the entry point the agent reads first |
 
 ## How it works
@@ -54,6 +56,8 @@ ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load
 2. **Research and direction.** It collects real designs and shows three or four directions. You pick one.
 3. **Design system and structure.** Fonts, palette and effect kit, then every page and section. You approve both.
 4. **Build and passes.** The first screen for your approval, then the rest, checked rulebook by rulebook.
+   The security pass picks a level (basic or intermediate), runs the security scanner and self-tests against
+   49 known attacks, from SQL injection to a price edited in the browser (`security/`).
 5. **Ship.** Scored review, CI, deploy and a handoff list of what still needs your content.
 
 Every decision is saved in `proui/DECISIONS.md`, so a new session continues with `ProUI continue`. Details: [workflow/WORKFLOW.md](workflow/WORKFLOW.md).
