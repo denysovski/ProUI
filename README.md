@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 652 rules, 7 effect kits, 133 motion recipes" width="100%">
+<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 653 rules, 7 effect kits, 133 motion recipes" width="100%">
 
 **The playbook for beautiful websites, for AI coding agents.** Blueprints, type and colour methods, effect kits, a workflow from brief to launch, and the rules that keep a site looking designed instead of generated.
 
@@ -12,7 +12,7 @@
 
 ## What ProUI is
 
-ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load it next to your project and ask for a website: the agent knows which pages and sections the site needs, how to pick fonts and colours, which effects fit and how many to use, and how to get from the first brief to a live site. Then it checks its own work against 652 rules.
+ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load it next to your project and ask for a website: the agent knows which pages and sections the site needs, how to pick fonts and colours, which effects fit and how many to use, and how to get from the first brief to a live site. Then it checks its own work against 653 rules.
 
 - **Structure first.** Sitemaps, landing page order, pricing, contact, footers and legal pages for real kinds of business.
 - **Taste you can name.** Fonts measured on 32 brand sites, palettes measured on real sites, style keywords like `EDITORIAL CREAM`.

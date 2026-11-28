@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-28 · SL-78
+
+- `SL-78` pulsing dots and the "coming soon" costume (hard rule), learned from a BrandIt card that used an italic serif line, a pulsing dot and a gradient wash. 653 rules.
+
 ## 5.2.0 (2026-11-28)
 
 - **New folder `production/`:** `CONCEPTS.md` sorts about 90 engineering terms ("who's gonna tell vibe coders

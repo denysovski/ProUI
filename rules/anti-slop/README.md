@@ -96,6 +96,7 @@ What never ships.
 | `SL-75` | **Dot-separated slogans** <sub>SOFT</sub> | Three words with middle dots ("Design · Build · Ship", "Fast · Simple · Secure") as a headline, tagline or hero line. Say what the business does in a sentence (`CP-04`). |
 | `SL-76` | **Everything in a card** <sub>SOFT</sub> | Every block of the page boxed in a bordered or shadowed card, so the page is a stack of boxes. Group by spacing, alignment and type first (`LY-06`); use a surface only when something is a separate object the visitor can pick or move (`SL-51`). |
 | `SL-77` | **Stacked tells** <sub>HARD RULE</sub> | One soft tell on its own (an eyebrow, an arrow, a pill, an italic word, cream background, a card) can be a choice. Three or more on one screen read as AI-made, even when each is defensible. In the slop pass, count the soft tells per screen; at three, remove until at most two remain, keeping the ones the brand needs. |
+| `SL-78` | **Pulsing dots and the "coming soon" costume** <sub>HARD RULE</sub> | A pulsing dot, a glowing badge or a breathing button to say "live", "new" or "coming soon", usually with an italic serif line and a gradient wash behind it. Motion that never stops pulls the eye from the real content. A placeholder card stays plain: the brand mark and one line in the product font, same radius and colours as its neighbours. One quiet motion (a light running along the edge) is the most it gets. |
 
 ## How to check
 

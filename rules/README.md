@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Rulebooks: 24 rulebooks of Do and Don't rules that keep a site looking designed, not generated" width="100%">
 
-[Back to ProUI](../README.md) · 24 rulebooks · 652 rules
+[Back to ProUI](../README.md) · 24 rulebooks · 653 rules
 
 **Every rule ProUI applies, sorted by subject.** Each rulebook is a short list of Do and Don't rules with a fixed ID, so you can name a rule in a prompt, switch it off for one project, or point at it in a review.
 
