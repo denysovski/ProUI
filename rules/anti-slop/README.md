@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Anti-Slop Rulebook: Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks." width="100%">
 
-[All rulebooks](../README.md) · Prefix `SL` · Design · 76 rules
+[All rulebooks](../README.md) · Prefix `SL` · Design · 77 rules
 
 **Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks.**
 
@@ -13,7 +13,7 @@ Review this page against SL-01 to SL-05.
 Why does SL-01 matter here?
 ```
 
-## Don't · 76
+## Don't · 77
 
 What never ships.
 
@@ -95,6 +95,7 @@ What never ships.
 | `SL-74` | **An arrow on every button** <sub>SOFT</sub> | A `→` or arrow icon after every button and link label ("Start now ↗", "See pricing ↗", "Learn more ↗"). Keep an arrow where it means something: leaving the site, the one main next step, or a carousel. Everywhere else the label is enough. |
 | `SL-75` | **Dot-separated slogans** <sub>SOFT</sub> | Three words with middle dots ("Design · Build · Ship", "Fast · Simple · Secure") as a headline, tagline or hero line. Say what the business does in a sentence (`CP-04`). |
 | `SL-76` | **Everything in a card** <sub>SOFT</sub> | Every block of the page boxed in a bordered or shadowed card, so the page is a stack of boxes. Group by spacing, alignment and type first (`LY-06`); use a surface only when something is a separate object the visitor can pick or move (`SL-51`). |
+| `SL-77` | **Stacked tells** <sub>HARD RULE</sub> | One soft tell on its own (an eyebrow, an arrow, a pill, an italic word, cream background, a card) can be a choice. Three or more on one screen read as AI-made, even when each is defensible. In the slop pass, count the soft tells per screen; at three, remove until at most two remain, keeping the ones the brand needs. |
 
 ## How to check
 

@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Launch Essentials Rulebook: What every real, launched website has: system pages, legal pages, contact details, monitoring." width="100%">
 
-[All rulebooks](../README.md) · Prefix `PE` · Production · 26 rules
+[All rulebooks](../README.md) · Prefix `PE` · Production · 32 rules
 
 **What every real, launched website has: system pages, legal pages, contact details, monitoring.**
 
@@ -10,7 +10,7 @@ Review this page against PE-01 to PE-05.
 Why does PE-01 matter here?
 ```
 
-## Do · 23
+## Do · 29
 
 What a finished, professional site does.
 
@@ -39,6 +39,12 @@ What a finished, professional site does.
 | `PE-23` | **Consent before tracking** | Non-essential cookies, pixels, embedded videos and maps load only after the visitor agrees. The first layer of the banner offers Reject next to Accept, with the same size and style; no category is pre-ticked; a footer link reopens the choice. EU and Czech law require prior consent (Czech since 1 January 2022). See `blueprints/legal-and-trust.md`. |
 | `PE-24` | **Security contact and status page** | Publish `/.well-known/security.txt` (RFC 9116) with `Contact` and `Expires`, and link "Report security issues" from the footer. Products people log in to, pay through or integrate with also link a status page hosted separately from the site. |
 | `PE-25` | **Uploaded files are handled safely** | User uploads are checked for type and size on the server, renamed, stripped of metadata, stored privately and served through expiring links, never executed or rendered as HTML or SVG on the main domain, and deleted when their purpose ends, as the privacy policy says. |
+| `PE-27` | **Deleting an account deletes the data** <sub>HARD RULE</sub> | When someone deletes their account or asks to be forgotten, their uploads, files, messages, profile and copies in email tools and analytics are deleted too (backups expire on their schedule), within the time the privacy policy states. Say in the policy what is kept and why (invoices for tax law). |
+| `PE-28` | **Cancelling is as easy as signing up** <sub>HARD RULE</sub> | A subscription that was bought online can be cancelled online, in the same number of steps, without a phone call, a chat, a hidden page or a maze of "Are you sure?" offers. One retention offer at most, then a clear Cancel button and a confirmation email. Consumer law in the EU and the US treats hard-to-cancel flows as unfair or deceptive. |
+| `PE-29` | **Remind before a trial turns into a payment** <sub>HARD RULE</sub> | A free trial that converts into a paid plan, and an annual renewal, send a reminder a few days before the first charge with the price, the date and a one-click link to cancel. The trial's sign-up page states the price and date up front. |
+| `PE-30` | **AI chat answers a crisis safely** <sub>HARD RULE</sub> | A chatbot or AI companion that talks with the public recognises messages about self-harm or suicide, stops the normal flow, answers with care and shows local crisis resources (in the Czech Republic the Linka první psychické pomoci 116 123; in the EU 112 for emergencies). Some laws now require it, for example California's law on companion chatbots (SB 243). Test it before launch. |
+| `PE-31` | **Production basics before launch, nothing bigger** | Before launch, every site with a back end has the "now" column of `production/CONCEPTS.md`: rate limits, caching, pagination, indexes, timeouts, idempotent payments, health check, monitoring, backups, migrations in Git, budgets. Do not add what a small site does not need (Kubernetes, microservices, sharding, multi-region): every extra part is another place to break. |
+| `PE-32` | **Clean up before handing over** <sub>HARD RULE</sub> | The last pass before handoff removes dead code, unused components, routes, files and packages, merges duplicate logic, simplifies overbuilt code and fixes redundant queries, in small commits with a build and test after each, and records what changed (`production/CLEANUP.md`). |
 
 ## Don't · 3
 

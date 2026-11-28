@@ -111,6 +111,39 @@
       "kind": "dont",
       "title": "Blank screens",
       "text": "A page is never empty white while it loads, fails or has no data. Every wait and every failure shows something useful."
+    },
+    {
+      "id": "ST-17",
+      "kind": "do",
+      "title": "Every request has a timeout and a way out",
+      "text": "Every request, in the browser and on the server, has a timeout (10–15 s for normal calls), after which the screen shows what happened and a retry. Reads (GET) retry once or twice with exponential backoff; writes retry only with an idempotency key (`SEC-31`). After about 3 s of waiting, say that it is still working (`ST-05`). Use one shared request helper (`production/RESILIENCE.md`).",
+      "level": "hard"
+    },
+    {
+      "id": "ST-18",
+      "kind": "do",
+      "title": "Unexpected answers do not crash the screen",
+      "text": "Before parsing a response, check the status and the `content-type`. Hotel and airport Wi-Fi, proxies and error pages answer with HTML, so `res.json()` throws \"Unexpected token <\". Show a message that names the likely cause (\"Your network is asking you to sign in\") and a retry, never a crash or a blank screen."
+    },
+    {
+      "id": "ST-19",
+      "kind": "do",
+      "title": "The payment result survives a lost connection",
+      "text": "After paying, the order status comes from the server (the provider's webhook), not from the browser finishing the redirect. If the connection drops, the success page checks the order again on reconnect and shows the real result. Never show \"Payment failed, try again\" when the outcome is unknown: say it is being confirmed, so nobody pays twice.",
+      "level": "hard"
+    },
+    {
+      "id": "ST-20",
+      "kind": "do",
+      "title": "Links to deleted things land on a clear page",
+      "text": "Shared links, push notifications, emails, bookmarks and search results can point at something that was deleted. They open a page that says so (\"This post was deleted\") with a way back, keep replies and threads in place with a placeholder, and never crash on missing data."
+    },
+    {
+      "id": "ST-21",
+      "kind": "do",
+      "title": "Deleting is designed, not an afterthought",
+      "text": "For every thing a user can delete, decide before building what happens to everything that points at it (shares, replies, team members, subscriptions, saved cards, caches, reports), whether it can be undone, and how a large delete runs. Cancel subscriptions before deleting accounts, require a replacement before removing the card in use, soft-delete with undo, run big deletes as resumable background jobs, and make deletes idempotent (`production/RESILIENCE.md`).",
+      "level": "hard"
     }
   ]
 }

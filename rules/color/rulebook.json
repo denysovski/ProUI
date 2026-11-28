@@ -176,6 +176,12 @@
       "kind": "dont",
       "title": "Garish colour",
       "text": "Neon on neon, fully saturated backgrounds behind long text, rainbow gradients, more than one loud colour fighting for attention, or a saturated accent on every element. Luxury and trust read as restraint: muted grounds, deep inks and one confident accent used for the main action only."
+    },
+    {
+      "id": "CL-24",
+      "kind": "do",
+      "title": "No theme flash on load",
+      "text": "Set the colour theme (dark, light or system) in a small blocking script in the `<head>` before the first paint, reading the saved choice and `prefers-color-scheme`, so a refresh never flashes the wrong theme. Mark the root with `color-scheme` so form controls and scrollbars match."
     }
   ]
 }

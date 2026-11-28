@@ -255,6 +255,26 @@
       "kind": "dont",
       "title": "File paths and shell commands from input",
       "text": "Never build a file path, an archive entry path or a shell command from user input. Map IDs to stored paths, check that resolved paths stay inside their folder, and call programs with `execFile` and an argument array (AT-04, AT-51)."
+    },
+    {
+      "id": "SEC-38",
+      "kind": "dont",
+      "title": "Session tokens in localStorage",
+      "text": "Never keep session or refresh tokens in `localStorage` or `sessionStorage`: any script on the page, including an XSS or a compromised third-party script, can read them. Use `HttpOnly`, `Secure`, `SameSite` cookies set by the server (`SEC-09`).",
+      "level": "hard"
+    },
+    {
+      "id": "SEC-39",
+      "kind": "do",
+      "title": "Verify the email before it counts",
+      "text": "A new account's email is verified before it can receive credits, invite others, send email through the site or become an admin, and before it is linked to an existing account. Otherwise anyone can sign up as someone else or farm free credits (`AT-71`)."
+    },
+    {
+      "id": "SEC-40",
+      "kind": "dont",
+      "title": "Public storage buckets",
+      "text": "Storage buckets (S3, Supabase Storage, Firebase Storage, R2) are private by default. Only intentionally public assets (product images, the logo) live in a public bucket; user uploads, invoices and exports are served through short-lived signed URLs after an ownership check (`SEC-27`, `PE-25`).",
+      "level": "hard"
     }
   ]
 }

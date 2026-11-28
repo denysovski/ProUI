@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Rulebooks: 24 rulebooks of Do and Don't rules that keep a site looking designed, not generated" width="100%">
 
-[Back to ProUI](../README.md) · 24 rulebooks · 633 rules
+[Back to ProUI](../README.md) · 24 rulebooks · 652 rules
 
 **Every rule ProUI applies, sorted by subject.** Each rulebook is a short list of Do and Don't rules with a fixed ID, so you can name a rule in a prompt, switch it off for one project, or point at it in a review.
 
@@ -26,13 +26,13 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 
 | Rulebook | Prefix | Rules | Covers |
 | --- | --- | --- | --- |
-| [Anti-Slop Rulebook](anti-slop/README.md) | `SL` | 76 | Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks. |
+| [Anti-Slop Rulebook](anti-slop/README.md) | `SL` | 77 | Patterns that make a website look AI-generated. Everything here is a don't; the positive counterparts live in the other rulebooks. |
 | [Design Craft Rulebook](craft/README.md) | `DC` | 29 | Small decisions that separate a considered design from a template. |
 | [Typography Rulebook](typography/README.md) | `TY` | 27 | Choosing faces, setting a scale, measure, leading and tracking, and loading fonts properly. |
-| [Colour Rulebook](color/README.md) | `CL` | 23 | Colour strategy, roles, OKLCH, contrast and dark mode. |
+| [Colour Rulebook](color/README.md) | `CL` | 24 | Colour strategy, roles, OKLCH, contrast and dark mode. |
 | [Gradients and Backgrounds Rulebook](gradients/README.md) | `GR` | 16 | When a gradient or background pattern has a job, and how to make one that looks intentional. |
 | [Effects and 3D Rulebook](effects/README.md) | `EF` | 24 | Modern effects, shaders and 3D from the effects library, used at the level the user chose and without hurting speed or access. |
-| [Layout and Spacing Rulebook](layout/README.md) | `LY` | 25 | Hierarchy, spacing scale, rhythm, grid and adapting to every screen. |
+| [Layout and Spacing Rulebook](layout/README.md) | `LY` | 26 | Hierarchy, spacing scale, rhythm, grid and adapting to every screen. |
 | [Page Structure Rulebook](structure/README.md) | `PG` | 30 | Which pages a site needs, which sections a landing page has and in what order, and how pricing, contact and footers are built. |
 | [Images and Media Rulebook](images/README.md) | `IM` | 16 | Photography, illustration, video and icons: what to use, how to prepare it, what never to ship. |
 
@@ -41,9 +41,9 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | Rulebook | Prefix | Rules | Covers |
 | --- | --- | --- | --- |
 | [Navigation Rulebook](navigation/README.md) | `NV` | 16 | Menus, wayfinding, search, footers and URLs that let people find things and know where they are. |
-| [Components and Interaction Rulebook](components/README.md) | `IX` | 27 | Controls, overlays, feedback and behaviour that feel familiar and trustworthy. |
-| [Forms and Checkout Rulebook](forms/README.md) | `FO` | 19 | Forms people can finish: fields, labels, validation, errors and checkout. |
-| [States Rulebook](states/README.md) | `ST` | 16 | Every situation the interface has to handle, not only the happy path. |
+| [Components and Interaction Rulebook](components/README.md) | `IX` | 28 | Controls, overlays, feedback and behaviour that feel familiar and trustworthy. |
+| [Forms and Checkout Rulebook](forms/README.md) | `FO` | 20 | Forms people can finish: fields, labels, validation, errors and checkout. |
+| [States Rulebook](states/README.md) | `ST` | 21 | Every situation the interface has to handle, not only the happy path. |
 | [Motion Rulebook](motion/README.md) | `MO` | 41 | Timing, easing and choreography that make an interface feel fast and physical. |
 | [Accessibility Rulebook](accessibility/README.md) | `AX` | 28 | Usable by everyone, designed in from the start. Target: WCAG 2.2 AA. |
 | [Platform Conventions Rulebook](platform/README.md) | `PL` | 14 | Principles from Apple's Human Interface Guidelines and Microsoft Fluent 2, applied to the web. |
@@ -65,10 +65,10 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 
 | Rulebook | Prefix | Rules | Covers |
 | --- | --- | --- | --- |
-| [Launch Essentials Rulebook](launch/README.md) | `PE` | 26 | What every real, launched website has: system pages, legal pages, contact details, monitoring. |
+| [Launch Essentials Rulebook](launch/README.md) | `PE` | 32 | What every real, launched website has: system pages, legal pages, contact details, monitoring. |
 | [SEO Rulebook](seo/README.md) | `SEO` | 29 | Being found: technical SEO, content signals, structured data and what search engines penalise. |
 | [Performance Rulebook](performance/README.md) | `PF` | 34 | Fast loading, smooth interaction and stable layout, measured with Core Web Vitals. |
-| [Security Rulebook](security/README.md) | `SEC` | 37 | Protecting visitors, data, money and the budget: from headers to authentication, access control, prices and paid APIs. Attack library and checklist: security/. |
+| [Security Rulebook](security/README.md) | `SEC` | 40 | Protecting visitors, data, money and the budget: from headers to authentication, access control, prices and paid APIs. Attack library and checklist: security/. |
 | [GitHub Workflow Rulebook](github/README.md) | `GH` | 22 | The repository, branches, commits, pull requests, CI, quality gates, deploys and releases. |
 
 ## Hard rules
@@ -79,17 +79,28 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | `SL-43` | Fake testimonials |
 | `SL-44` | Placeholder business info |
 | `SL-49` | Side-stripe accent borders |
+| `SL-77` | Stacked tells |
 | `LY-23` | Every page works on a phone |
 | `LY-24` | Air between sections on phones |
+| `LY-26` | Tables on phones are rebuilt, not shrunk |
 | `PG-24` | The cart is a drawer that sells |
 | `PG-27` | A paid extra hidden in the checkout button |
 | `NV-15` | Every new page opens at its top |
 | `FO-19` | Topic first, then three fields |
+| `FO-20` | Lock the button while it sends |
+| `ST-17` | Every request has a timeout and a way out |
+| `ST-19` | The payment result survives a lost connection |
+| `ST-21` | Deleting is designed, not an afterthought |
 | `MO-29` | One transition for filtering: fade out, swap, rise in |
 | `MO-30` | An intro loader only when the first screen is heavy |
 | `MO-32` | Warm up the scene behind the loader |
 | `AX-16` | Test accessibility before every release |
 | `CP-14` | Invented claims, numbers or customers |
+| `PE-27` | Deleting an account deletes the data |
+| `PE-28` | Cancelling is as easy as signing up |
+| `PE-29` | Remind before a trial turns into a payment |
+| `PE-30` | AI chat answers a crisis safely |
+| `PE-32` | Clean up before handing over |
 | `PF-34` | Render 3D on demand |
 | `SEC-27` | Check the owner on every object |
 | `SEC-28` | Admin routes checked on the server |
@@ -99,6 +110,8 @@ Each rule is either a **Do** (positive: what to do) or a **Don't** (negative: wh
 | `SEC-32` | Budgets and limits on every paid API |
 | `SEC-33` | AI features that trust the prompt |
 | `SEC-34` | Secrets in Git, now or ever |
+| `SEC-38` | Session tokens in localStorage |
+| `SEC-40` | Public storage buckets |
 
 ## Which rulebooks lead in each mode
 

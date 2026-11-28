@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Layout and Spacing Rulebook: Hierarchy, spacing scale, rhythm, grid and adapting to every screen." width="100%">
 
-[All rulebooks](../README.md) · Prefix `LY` · Design · 25 rules
+[All rulebooks](../README.md) · Prefix `LY` · Design · 26 rules
 
 **Hierarchy, spacing scale, rhythm, grid and adapting to every screen.**
 
@@ -10,7 +10,7 @@ Review this page against LY-01 to LY-05.
 Why does LY-01 matter here?
 ```
 
-## Do · 20
+## Do · 21
 
 What a finished, professional site does.
 
@@ -36,6 +36,7 @@ What a finished, professional site does.
 | `LY-23` | **Every page works on a phone** <sub>HARD RULE</sub> | Build and check every page at 320, 360, 390 and 430 px, not only desktop: nothing overflows sideways, text fits its box and is start-aligned (`TY-25`), images are cropped or swapped for the narrow frame where needed, controls are at least 44 px, the navigation stays reachable, and every feature still works (`LY-14`, `LY-19`, `AX-08`). |
 | `LY-24` | **Air between sections on phones** <sub>HARD RULE</sub> | Phones get their own spacing, not the desktop values scaled down: about 64–96 px between sections, 32–48 px between blocks inside a section and at least 12–16 px between related elements, with 16–24 px side padding (`LY-09`). If a phone screen looks crowded, add space before shrinking text. |
 | `LY-25` | **Full-height sections in dvh** | A section meant to fill the screen uses `min-height: 100dvh` (or `100svh` when it must not jump as the browser bar hides), never `100vh`, which on phones is taller than the visible screen and hides the bottom under the browser bar (`LY-16`). |
+| `LY-26` | **Tables on phones are rebuilt, not shrunk** <sub>HARD RULE</sub> | A table that does not fit a phone is not scaled down or left to scroll sideways at 11 px. Rebuild it in six moves: rank the columns by use (identity, value, state), stack each row into two lines (name left, value right, state below), keep one aligned slot for the numbers, label the ambiguous values (dates get a label, prices do not), reveal the rest on tap in an expanding row or a sheet (never a new page), and let the table own its breakpoint with a container query (`blueprints/tables-on-phones.md`, `DB-09`). |
 
 ## Don't · 5
 

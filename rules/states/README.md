@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="States Rulebook: Every situation the interface has to handle, not only the happy path." width="100%">
 
-[All rulebooks](../README.md) · Prefix `ST` · Interaction · 16 rules
+[All rulebooks](../README.md) · Prefix `ST` · Interaction · 21 rules
 
 **Every situation the interface has to handle, not only the happy path.**
 
@@ -10,7 +10,7 @@ Review this page against ST-01 to ST-05.
 Why does ST-01 matter here?
 ```
 
-## Do · 15
+## Do · 20
 
 What a finished, professional site does.
 
@@ -31,6 +31,11 @@ What a finished, professional site does.
 | `ST-13` | **Concurrent edits** | When two people can edit the same thing, detect conflicts and let the user choose what to keep instead of silently overwriting. |
 | `ST-14` | **First run** | The very first visit to a product area has a short orientation or a useful default, which can be skipped and never comes back unasked. |
 | `ST-15` | **Maintenance and rate limits** | Planned downtime and rate limits get their own friendly page or message with a time when it will work again. |
+| `ST-17` | **Every request has a timeout and a way out** <sub>HARD RULE</sub> | Every request, in the browser and on the server, has a timeout (10–15 s for normal calls), after which the screen shows what happened and a retry. Reads (GET) retry once or twice with exponential backoff; writes retry only with an idempotency key (`SEC-31`). After about 3 s of waiting, say that it is still working (`ST-05`). Use one shared request helper (`production/RESILIENCE.md`). |
+| `ST-18` | **Unexpected answers do not crash the screen** | Before parsing a response, check the status and the `content-type`. Hotel and airport Wi-Fi, proxies and error pages answer with HTML, so `res.json()` throws "Unexpected token <". Show a message that names the likely cause ("Your network is asking you to sign in") and a retry, never a crash or a blank screen. |
+| `ST-19` | **The payment result survives a lost connection** <sub>HARD RULE</sub> | After paying, the order status comes from the server (the provider's webhook), not from the browser finishing the redirect. If the connection drops, the success page checks the order again on reconnect and shows the real result. Never show "Payment failed, try again" when the outcome is unknown: say it is being confirmed, so nobody pays twice. |
+| `ST-20` | **Links to deleted things land on a clear page** | Shared links, push notifications, emails, bookmarks and search results can point at something that was deleted. They open a page that says so ("This post was deleted") with a way back, keep replies and threads in place with a placeholder, and never crash on missing data. |
+| `ST-21` | **Deleting is designed, not an afterthought** <sub>HARD RULE</sub> | For every thing a user can delete, decide before building what happens to everything that points at it (shares, replies, team members, subscriptions, saved cards, caches, reports), whether it can be undone, and how a large delete runs. Cancel subscriptions before deleting accounts, require a replacement before removing the card in use, soft-delete with undo, run big deletes as resumable background jobs, and make deletes idempotent (`production/RESILIENCE.md`). |
 
 ## Don't · 1
 

@@ -55,6 +55,9 @@ first, then use ProUI to judge and improve, not to restyle it on your own initia
 | A mechanical scan of a project | `node scripts/proui-scan.mjs <dir>` (`commands/scan.md`) |
 | Security: attacks, checklist, self-tests, scanner | `security/README.md`, `security/CHECKLIST.md`, `node scripts/proui-security-scan.mjs <dir> --build <build dir>` |
 | A shop's cart or a fashion lookbook | `blueprints/cart.md`, `blueprints/lookbook.md` |
+| Tables on phones | `blueprints/tables-on-phones.md` (`LY-26`) |
+| Bad networks, deleting things, production concepts, cleanup | `production/RESILIENCE.md`, `production/CONCEPTS.md`, `production/CLEANUP.md` |
+| A brand book for the client | `templates/brand-guidelines/` |
 
 ## Rulebooks
 
@@ -149,6 +152,7 @@ number. Three or four options at most, with a one-line recommendation.
 - 404, legal pages, cookie consent, favicon, OG image, analytics, real contact details (`PE`).
 - Titles, descriptions, H1s, sitemap, robots, canonical, schema, llms.txt (`SEO`).
 - Lighthouse run; Core Web Vitals green: LCP ≤ 2.5 s, INP ≤ 200 ms, CLS ≤ 0.1 (`PF-03`).
+- Cleanup pass done: no dead code, unused packages or duplicate logic left (`PE-32`, `production/CLEANUP.md`).
 - Security headers, CSP, HTTPS, no secrets, dependency audit clean (`SEC`); `security/CHECKLIST.md` passed at the
   right level, `proui-security-scan.mjs` without hard findings, `proui/SECURITY.md` written.
 - In a GitHub repository with README, CI, quality gates and an automated deploy (`GH`).

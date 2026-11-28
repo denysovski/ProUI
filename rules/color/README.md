@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Colour Rulebook: Colour strategy, roles, OKLCH, contrast and dark mode." width="100%">
 
-[All rulebooks](../README.md) · Prefix `CL` · Design · 23 rules
+[All rulebooks](../README.md) · Prefix `CL` · Design · 24 rules
 
 **Colour strategy, roles, OKLCH, contrast and dark mode.**
 
@@ -10,7 +10,7 @@ Review this page against CL-01 to CL-05.
 Why does CL-01 matter here?
 ```
 
-## Do · 17
+## Do · 18
 
 What a finished, professional site does.
 
@@ -33,6 +33,7 @@ What a finished, professional site does.
 | `CL-17` | **Define state colours once** | Success, warning, danger and info are tokens with a background, border and text variant each, checked for contrast in both themes. |
 | `CL-18` | **A visible focus colour** | The focus ring has its own token with 3:1 contrast against every surface it can appear on, not the accent at low opacity. |
 | `CL-22` | **Start from a palette that is proven** | Base the palette on combinations that already work on real, respected sites: a warm off-white or warm near-black ground, ink that is not pure black, and one accent. `inspiration/site-studies/` and `blueprints/colour-schemes.md` list measured palettes. Adapt the hue to the subject; do not invent a scheme from nothing. |
+| `CL-24` | **No theme flash on load** | Set the colour theme (dark, light or system) in a small blocking script in the `<head>` before the first paint, reading the saved choice and `prefers-color-scheme`, so a refresh never flashes the wrong theme. Mark the root with `color-scheme` so form controls and scrollbars match. |
 
 ## Don't · 6
 

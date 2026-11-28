@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 633 rules, 7 effect kits, 133 motion recipes" width="100%">
+<img src="assets/proui-banner.png" alt="ProUI: the playbook for beautiful websites. 24 rulebooks, 652 rules, 7 effect kits, 133 motion recipes" width="100%">
 
 **The playbook for beautiful websites, for AI coding agents.** Blueprints, type and colour methods, effect kits, a workflow from brief to launch, and the rules that keep a site looking designed instead of generated.
 
@@ -12,13 +12,14 @@
 
 ## What ProUI is
 
-ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load it next to your project and ask for a website: the agent knows which pages and sections the site needs, how to pick fonts and colours, which effects fit and how many to use, and how to get from the first brief to a live site. Then it checks its own work against 633 rules.
+ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load it next to your project and ask for a website: the agent knows which pages and sections the site needs, how to pick fonts and colours, which effects fit and how many to use, and how to get from the first brief to a live site. Then it checks its own work against 652 rules.
 
 - **Structure first.** Sitemaps, landing page order, pricing, contact, footers and legal pages for real kinds of business.
 - **Taste you can name.** Fonts measured on 32 brand sites, palettes measured on real sites, style keywords like `EDITORIAL CREAM`.
 - **Effects with a budget.** One kit per site, an effect level you choose, and "a couple of 3D effects" means two.
 - **A workflow with checkpoints.** You pick the direction, the type and colour, the outline and the first screen.
 - **Secure by default.** A library of 49 attacks, a security checklist and a scanner, so a vibe-coded shop does not leak data, sell a jacket for 1 Kč or burn its API budget overnight.
+- **Cleans up after itself.** A last pass removes dead code, unused components and packages, duplicate logic and redundant queries, and proves nothing broke.
 
 > [!NOTE]
 > ProUI is an add-on. Your instructions come first, then your project's own rules, then ProUI.
@@ -37,6 +38,7 @@ ProUI is a skill for AI coding agents such as Claude Code, Codex or Cursor. Load
 | [`effects/`](effects/README.md) | effect levels, kits and budget, 25 plain effects, 20 motion briefs, catalogues of ready components including all 168 Annnimate animations |
 | [`inspiration/`](inspiration/README.md) | galleries to research, 25 studied sites with build prompts, their animations and palettes, and a full study of unanim.studio |
 | [`style/`](style/README.md) | style keywords to use in prompts, and the FRAMER style with 80 ready sections |
+| [`production/`](production/README.md) | about 90 production concepts sorted by when a site needs them, resilience on bad networks and when deleting things, and the cleanup pass that ends every project |
 | [`security/`](security/README.md) | an attack library of 49 attacks with defences at two levels, the security checklist, self-tests, a report template and a security scanner |
 | [`sounds/`](sounds/README.md) | optional interface sounds for hover and click, off by default |
 | [`modes/`](modes/README.md) | persuade, operate, read, experience: what the visitor came to do |

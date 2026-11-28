@@ -488,6 +488,13 @@
       "level": "soft",
       "title": "Everything in a card",
       "text": "Every block of the page boxed in a bordered or shadowed card, so the page is a stack of boxes. Group by spacing, alignment and type first (`LY-06`); use a surface only when something is a separate object the visitor can pick or move (`SL-51`)."
+    },
+    {
+      "id": "SL-77",
+      "kind": "dont",
+      "title": "Stacked tells",
+      "text": "One soft tell on its own (an eyebrow, an arrow, a pill, an italic word, cream background, a card) can be a choice. Three or more on one screen read as AI-made, even when each is defensible. In the slop pass, count the soft tells per screen; at three, remove until at most two remain, keeping the ones the brand needs.",
+      "level": "hard"
     }
   ]
 }

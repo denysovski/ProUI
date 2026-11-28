@@ -182,6 +182,13 @@
       "kind": "do",
       "title": "Full-height sections in dvh",
       "text": "A section meant to fill the screen uses `min-height: 100dvh` (or `100svh` when it must not jump as the browser bar hides), never `100vh`, which on phones is taller than the visible screen and hides the bottom under the browser bar (`LY-16`)."
+    },
+    {
+      "id": "LY-26",
+      "kind": "do",
+      "title": "Tables on phones are rebuilt, not shrunk",
+      "text": "A table that does not fit a phone is not scaled down or left to scroll sideways at 11 px. Rebuild it in six moves: rank the columns by use (identity, value, state), stack each row into two lines (name left, value right, state below), keep one aligned slot for the numbers, label the ambiguous values (dates get a label, prices do not), reveal the rest on tap in an expanding row or a sheet (never a new page), and let the table own its breakpoint with a container query (`blueprints/tables-on-phones.md`, `DB-09`).",
+      "level": "hard"
     }
   ]
 }

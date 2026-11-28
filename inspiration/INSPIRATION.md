@@ -73,6 +73,8 @@ Then note what you would take (principle) and what you would not (anything that 
   isometric illustration, SaaS templates. Every tile credits its creator.
 - **Use it for:** the newest interface patterns, especially AI product UI, 3D UI elements and shader
   visuals, and to find designers worth following.
+- **Watch out for:** every card on the page is labelled "ad", so some placements are promoted; judge the
+  work, not its position in the feed.
 
 ### Mobbin — mobbin.com
 
@@ -94,10 +96,17 @@ Then note what you would take (principle) and what you would not (anything that 
 
 ### Designeer — designeer.xyz
 
-- **What it is:** a curated directory for designers, developers and design engineers. Categories include
-  Inspiration, Components, Build, Visuals, Utilities, Design Engineers and Sections. Creators can submit
-  their own projects.
-- **Use it for:** finding the right tool, component source or design engineer portfolio quickly.
+- **What it is:** a hand-reviewed catalogue for designers, developers and design engineers: design
+  inspiration, UI resources, tools and portfolios, plus **Finds**, a feed of the latest visual work picked
+  from across the web, credited to its maker, with a colour filter.
+- **Typical Finds:** micro-interactions and components (an add-to-bag button, a gift-card scratch, a file
+  upload that reacts, a dynamic island, a code input), 404 pages, loaders, holo and 3D cards, ASCII and
+  pixel effects, footers, posters and brand identities.
+- **Use it for:** the one signature interaction (`EF-02`), a loader that fits the brand (`MO-31`), a 404 page
+  that is not a dead end, and design engineers worth following. Categories also cover components, build
+  tools, visuals, utilities and sections.
+- **Watch out for:** ASCII, dithering, holo and liquid-glass experiments are fun in a feed and slop on a
+  client site when they carry no meaning (`SL-08`, `SL-04`).
 
 ### Curated — curated.design
 

@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Forms and Checkout Rulebook: Forms people can finish: fields, labels, validation, errors and checkout." width="100%">
 
-[All rulebooks](../README.md) · Prefix `FO` · Interaction · 19 rules
+[All rulebooks](../README.md) · Prefix `FO` · Interaction · 20 rules
 
 **Forms people can finish: fields, labels, validation, errors and checkout.**
 
@@ -10,7 +10,7 @@ Review this page against FO-01 to FO-05.
 Why does FO-01 matter here?
 ```
 
-## Do · 13
+## Do · 14
 
 What a finished, professional site does.
 
@@ -29,6 +29,7 @@ What a finished, professional site does.
 | `FO-11` | **Show password option** | Password fields have a show/hide toggle and accept paste and password managers. |
 | `FO-12` | **Address lookup where it helps** | Offer address autocomplete or postcode lookup, with manual entry always possible. |
 | `FO-19` | **Topic first, then three fields** <sub>HARD RULE</sub> | A contact form asks as little as possible. First the visitor picks what it is about from a few large choices (for example Product, Partnership, Bug, Billing, Other), and only then the form appears with three fields: name, email and a description of the problem or request, its placeholder and label matched to the chosen topic ("What went wrong?" for Bug). The topic travels with the message and routes it to the right person. No phone, company, budget or subject fields unless the owner says the answer changes who replies (`FO-14`). After sending, a thank-you that says who answers and when, and a plain email address stays on the page for anyone who prefers it (`PG-20`). |
+| `FO-20` | **Lock the button while it sends** <sub>HARD RULE</sub> | A submit button is disabled while its request runs and its label says so ("Sending…", "Paying…"), so a double click or an impatient second tap cannot send it twice. The server is protected too (`SEC-31`). The button unlocks with a clear result or an error. Inputs live in a real `<form>` with `onSubmit`, so Enter submits. |
 
 ## Don't · 6
 

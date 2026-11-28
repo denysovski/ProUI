@@ -1,6 +1,6 @@
 <img src="cover.jpg" alt="Security Rulebook: Protecting visitors, data, money and the budget: from headers to authentication, access control, prices and paid APIs. Attack library and checklist: security/." width="100%">
 
-[All rulebooks](../README.md) · Prefix `SEC` · Production · 37 rules
+[All rulebooks](../README.md) · Prefix `SEC` · Production · 40 rules
 
 **Protecting visitors, data, money and the budget: from headers to authentication, access control, prices and paid APIs. Attack library and checklist: security/.**
 
@@ -10,7 +10,7 @@ Review this page against SEC-01 to SEC-05.
 Why does SEC-01 matter here?
 ```
 
-## Do · 29
+## Do · 30
 
 What a finished, professional site does.
 
@@ -45,8 +45,9 @@ What a finished, professional site does.
 | `SEC-32` | **Budgets and limits on every paid API** <sub>HARD RULE</sub> | Every paid service (AI, maps, search, SMS, voice, storage egress) has a hard budget with alerts at the provider, per-user and per-IP rate limits, and limits fixed on the server: the model, the maximum output tokens, the number of tool calls, the voice minutes. Expensive calls need sign-in; repeated results are cached; images are resized once and served from a CDN with hotlinking blocked (AT-70, AT-83). |
 | `SEC-35` | **Server-side fetches only to allowed hosts** | A feature that fetches a URL given by a user (link previews, imports, webhooks to test) fetches only allow-listed hosts, refuses private, loopback and link-local addresses after resolving and after redirects, and has short timeouts and size limits (AT-52). |
 | `SEC-36` | **Redirect only to your own paths** | `next`, `returnTo` and `callbackUrl` parameters accept only relative paths on the same site (starting with `/`, not `//`), checked against an allow-list; OAuth redirect URIs are registered exactly (AT-42, AT-25). |
+| `SEC-39` | **Verify the email before it counts** | A new account's email is verified before it can receive credits, invite others, send email through the site or become an admin, and before it is linked to an existing account. Otherwise anyone can sign up as someone else or farm free credits (`AT-71`). |
 
-## Don't · 8
+## Don't · 10
 
 What never ships.
 
@@ -60,6 +61,8 @@ What never ships.
 | `SEC-33` | **AI features that trust the prompt** <sub>HARD RULE</sub> | Never treat a system prompt as a security boundary or let a model's answer grant anything. Put no secrets in prompts; give tools the least power (read-only, one user's data); confirm side effects with the user; render model output as sanitised text so it cannot load outside images or run scripts; build each user's context only from their own data (AT-80 to AT-82). |
 | `SEC-34` | **Secrets in Git, now or ever** <sub>HARD RULE</sub> | `.env*` files are ignored before the first commit, with a `.env.example` of names only; a secret scan runs before commits and in CI. A key that was ever pushed is rotated at the provider first, then removed from the history, because it must be assumed copied (AT-61). |
 | `SEC-37` | **File paths and shell commands from input** | Never build a file path, an archive entry path or a shell command from user input. Map IDs to stored paths, check that resolved paths stay inside their folder, and call programs with `execFile` and an argument array (AT-04, AT-51). |
+| `SEC-38` | **Session tokens in localStorage** <sub>HARD RULE</sub> | Never keep session or refresh tokens in `localStorage` or `sessionStorage`: any script on the page, including an XSS or a compromised third-party script, can read them. Use `HttpOnly`, `Secure`, `SameSite` cookies set by the server (`SEC-09`). |
+| `SEC-40` | **Public storage buckets** <sub>HARD RULE</sub> | Storage buckets (S3, Supabase Storage, Firebase Storage, R2) are private by default. Only intentionally public assets (product images, the logo) live in a public bucket; user uploads, invoices and exports are served through short-lived signed URLs after an ownership check (`SEC-27`, `PE-25`). |
 
 ## How to check
 

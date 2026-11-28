@@ -1,5 +1,26 @@
 # Changelog
 
+## 5.2.0 (2026-11-28)
+
+- **New folder `production/`:** `CONCEPTS.md` sorts about 90 engineering terms ("who's gonna tell vibe coders
+  about…") into now, grows and big for websites and small apps; `RESILIENCE.md` covers 11 bad-network cases
+  and 11 deletion cases with fixes, a fetch helper with timeout, content check and backoff, and tests;
+  `CLEANUP.md` is the new last pass of every project (dead code, duplicates, unused components, overbuilt
+  code, legacy, redundant queries, abandoned files, technical debt) with Knip, depcheck, madge and jscpd.
+- Workflow: Pass: Cleanup before the quality check; the States pass checks resilience; Launch checks the
+  production basics and the new legal rules; `ProUI pass cleanup`.
+- New rules (no duplicates of existing ones): `ST-17` timeouts and a way out, `ST-18` unexpected answers,
+  `ST-19` payment result survives a lost connection, `ST-20` links to deleted things, `ST-21` deleting is
+  designed; `FO-20` lock the button while it sends; `IX-28` toasts wait while you read them; `CL-24` no
+  theme flash; `LY-26` tables on phones are rebuilt, not shrunk; `SEC-38` no session tokens in
+  localStorage, `SEC-39` verify the email, `SEC-40` no public storage buckets; `PE-27` deleting an account
+  deletes the data, `PE-28` cancelling as easy as signing up, `PE-29` reminder before a trial turns paid,
+  `PE-30` AI chat answers a crisis safely, `PE-31` production basics and nothing bigger, `PE-32` clean up
+  before handing over; `SL-77` stacked tells. 652 rules.
+- New blueprint `blueprints/tables-on-phones.md`: six moves with markup and container-query CSS.
+- New template `templates/brand-guidelines/`: a 17-page brand book at 16:9, light and dark, prints to PDF.
+- Inspiration: Designeer (Finds feed) and Saved (ad labels) updated.
+
 ## 5.1.0 (2026-11-27)
 
 - `FO-19` is now a hard rule, "Topic first, then three fields": the visitor picks a topic (Product,

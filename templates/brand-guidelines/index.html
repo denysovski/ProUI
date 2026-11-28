@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Brand] — Brand guidelines</title>
+<!--
+  ProUI template: brand guidelines, 17 pages at 16:9.
+  Edit the variables below and the [bracketed] text. Open in a browser to review; print to PDF
+  (Chrome: Save as PDF, margins None, background graphics on) for a brand book.
+  ?theme=dark switches every page to the dark version.
+-->
+<style>
+  :root {
+    --paper: #ffffff;
+    --ink: #111111;
+    --muted: rgb(17 17 17 / 0.56);
+    --line: rgb(17 17 17 / 0.12);
+    --fill: rgb(17 17 17 / 0.06);
+    --fill-2: rgb(17 17 17 / 0.11);
+    --accent: #2f5bff;            /* the brand colour */
+    --accent-2: #ffb800;          /* optional second colour */
+    --display: "Instrument Sans", "Inter", system-ui, sans-serif;   /* swap for the brand's type */
+    --text: "Inter", system-ui, sans-serif;
+    --page-w: 1600px;
+    --page-h: 900px;
+    --m: 64px;                    /* page margin */
+  }
+  html.dark, .page.dark {
+    --paper: #0f0f10;
+    --ink: #f2f2f0;
+    --muted: rgb(242 242 240 / 0.58);
+    --line: rgb(242 242 240 / 0.14);
+    --fill: rgb(242 242 240 / 0.06);
+    --fill-2: rgb(242 242 240 / 0.11);
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #d9d9d6; font: 16px/1.5 var(--text); color: #111; padding: 48px 0; }
+  .page {
+    position: relative; width: var(--page-w); height: var(--page-h); margin: 0 auto 40px;
+    background: var(--paper); color: var(--ink); padding: var(--m); overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .head, .foot {
+    display: flex; justify-content: space-between; font-size: 13px; letter-spacing: 0.01em; color: var(--muted);
+  }
+  .foot { margin-top: auto; padding-top: 24px; border-top: 1px solid var(--line); }
+  h1, h2, h3 { font-family: var(--display); font-weight: 500; letter-spacing: -0.02em; line-height: 1.02; }
+  h2 { font-size: 64px; margin-top: 40px; }
+  h3 { font-size: 22px; letter-spacing: -0.01em; }
+  p { max-width: 52ch; color: var(--muted); }
+  .lead { font-size: 22px; line-height: 1.4; color: var(--ink); max-width: 38ch; }
+  .ph { background: var(--fill); border-radius: 4px; position: relative; }
+  .ph::after { content: attr(data-note); position: absolute; left: 16px; bottom: 14px; font-size: 13px; color: var(--muted); }
+  .grid { display: grid; gap: 24px; }
+  .cap { font-size: 13px; color: var(--muted); margin-top: 10px; }
+  .row { display: flex; gap: 24px; }
+
+  /* 01 cover */
+  .cover { display: grid; grid-template-columns: 1.15fr 1fr; padding: 0; }
+  .cover .left { padding: var(--m); display: flex; flex-direction: column; }
+  .cover h1 { font-size: 132px; margin-top: auto; }
+  .cover .meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; font-size: 14px; }
+  .cover .meta span { display: block; color: var(--muted); }
+  .cover .right { background: var(--fill-2); }
+
+  /* 02 contents */
+  .toc { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px 64px; margin-top: 64px; }
+  .toc div { border-top: 1px solid var(--line); padding-top: 16px; }
+  .toc b { font-family: var(--display); font-weight: 500; font-size: 28px; display: block; }
+  .toc span { color: var(--muted); font-size: 14px; }
+
+  /* section divider */
+  .divider h1 { font-size: 200px; margin-top: auto; padding-top: 32px; border-top: 1px solid var(--line); }
+
+  /* statement */
+  .statement h1 { font-size: 84px; max-width: 18ch; margin: auto 0; }
+
+  /* personality */
+  .traits { margin-top: 56px; display: grid; gap: 26px; }
+  .trait { display: grid; grid-template-columns: 180px 1fr 180px; align-items: center; gap: 32px; font-size: 18px; }
+  .trait :last-child { text-align: right; color: var(--muted); }
+  .scale { height: 2px; background: var(--line); position: relative; }
+  .scale i { position: absolute; top: -7px; width: 16px; height: 16px; border-radius: 50%; background: var(--ink); left: var(--v); translate: -50% 0; }
+
+  /* voice */
+  .voice { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; }
+  .voice div { border-top: 2px solid var(--ink); padding-top: 20px; }
+  .voice .no { border-color: var(--line); }
+  .voice li { list-style: none; font-size: 22px; font-family: var(--display); padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .voice .no li { color: var(--muted); text-decoration: line-through; text-decoration-thickness: 1px; }
+  .voice ul { padding: 0; margin-top: 12px; }
+
+  /* logo */
+  .logo-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; flex: 1; }
+  .logo-box { border-radius: 4px; display: grid; place-items: center; position: relative; }
+  .logo-box.l { background: var(--fill); }
+  .logo-box.d { background: #111; color: #fff; }
+  .logo-box.a { background: var(--accent); color: #fff; }
+  .wordmark { font-family: var(--display); font-size: 72px; font-weight: 600; letter-spacing: -0.04em; display: flex; align-items: center; gap: 18px; }
+  .wordmark i { width: 56px; height: 56px; border-radius: 14px; background: currentColor; display: block; }
+
+  /* construction */
+  .construct { display: grid; grid-template-columns: 1fr 1.5fr; gap: 64px; margin-top: 40px; flex: 1; }
+  .construct svg { width: 100%; height: 100%; }
+
+  /* usage */
+  .usage { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px; flex: 1; }
+  .usage .ph { display: grid; place-items: center; min-height: 260px; }
+  .usage .bad { outline: 1px solid var(--line); background: transparent; }
+  .usage .tag { font-size: 13px; margin-top: 12px; display: flex; gap: 8px; align-items: center; }
+  .usage .tag::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #1b9e5a; }
+  .usage .x .tag::before { background: #d6332a; }
+
+  /* colour */
+  .swatches { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 16px; margin-top: 40px; flex: 1; }
+  .sw { border-radius: 4px; padding: 20px; display: flex; flex-direction: column; justify-content: flex-end; font-size: 14px; }
+  .sw b { font-family: var(--display); font-size: 24px; font-weight: 500; }
+  .ratio { display: flex; height: 18px; margin-top: 24px; border-radius: 2px; overflow: hidden; }
+
+  /* typography */
+  .specimen { display: grid; grid-template-columns: 1.3fr 1fr; gap: 64px; margin-top: 32px; flex: 1; }
+  .big-aa { font-family: var(--display); font-size: 300px; line-height: 0.85; letter-spacing: -0.03em; }
+  .glyphs { font-family: var(--display); font-size: 30px; line-height: 1.4; word-break: break-all; }
+  .scale-list div { display: grid; grid-template-columns: 120px 1fr; align-items: baseline; border-top: 1px solid var(--line); padding: 14px 0; }
+  .scale-list span { font-size: 13px; color: var(--muted); }
+
+  /* type in use */
+  .inuse { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 24px; margin-top: 40px; flex: 1; }
+  .card { border-radius: 4px; padding: 28px; display: flex; flex-direction: column; }
+  .card.solid { background: var(--accent); color: #fff; }
+  .card.soft { background: var(--fill); }
+  .card.line { outline: 1px solid var(--line); }
+  .card h4 { font-family: var(--display); font-weight: 500; letter-spacing: -0.02em; }
+
+  /* imagery */
+  .bleed { padding: 0; }
+  .bleed .img { position: absolute; inset: 0; background: linear-gradient(160deg, #6b6b68, #232322); }
+  .bleed .over { position: relative; margin-top: auto; padding: var(--m); color: #fff; }
+  .bleed h1 { font-size: 76px; max-width: 20ch; }
+  .bleed .head { position: relative; padding: var(--m) var(--m) 0; color: rgb(255 255 255 / 0.7); }
+
+  .gallery { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 16px; margin-top: 40px; flex: 1; }
+  .gallery .ph:first-child { grid-row: span 2; }
+
+  /* social */
+  .social { display: grid; grid-template-columns: repeat(4, 300px); gap: 24px; margin-top: 40px; align-items: start; }
+  .post { aspect-ratio: 4 / 5; border-radius: 4px; padding: 22px; display: flex; flex-direction: column; justify-content: flex-end; font-family: var(--display); font-size: 26px; line-height: 1.1; letter-spacing: -0.02em; }
+  .post.s1 { background: var(--fill-2); }
+  .post.s2 { background: var(--accent); color: #fff; }
+  .post.s3 { background: transparent; outline: 1px solid var(--line); }
+  .post.s4 { background: var(--fill); }
+
+  /* applications */
+  .apps { display: grid; grid-template-columns: 1fr 1.4fr; grid-template-rows: 1fr 1fr; grid-template-areas: "card web" "sign web"; gap: 24px; margin-top: 40px; flex: 1; }
+  .apps .ph:nth-child(1) { grid-area: card; } .apps .ph:nth-child(2) { grid-area: sign; } .apps .ph:nth-child(3) { grid-area: web; }
+
+  /* back */
+  .back { justify-content: space-between; }
+  .back .wordmark { font-size: 56px; }
+
+  @media print {
+    body { background: none; padding: 0; }
+    .page { margin: 0; page-break-after: always; break-after: page; }
+    @page { size: 1600px 900px; margin: 0; }
+  }
+  @media (max-width: 1640px) { body { zoom: calc(100vw / 1680px); } }
+</style>
+<script>if (new URLSearchParams(location.search).get('theme') === 'dark') document.documentElement.classList.add('dark');</script>
+</head>
+<body>
+
+<!-- 01 Cover -->
+<section class="page cover" aria-label="Cover">
+  <div class="left">
+    <div class="head"><span>[Brand]</span><span>Brand guidelines</span></div>
+    <h1>Brand<br>guidelines</h1>
+    <p class="lead" style="margin-top:20px">[How [Brand] looks, sounds and shows up.]</p>
+    <div class="meta">
+      <div><span>Version</span>[1.0]</div>
+      <div><span>Updated</span>[November 2026]</div>
+      <div><span>Owner</span>[Name, role]</div>
+    </div>
+  </div>
+  <div class="right"></div>
+</section>
+
+<!-- 02 Contents -->
+<section class="page" aria-label="Contents">
+  <div class="head"><span>[Brand] · Brand guidelines</span><span>Contents</span></div>
+  <h2>Contents</h2>
+  <div class="toc">
+    <div><b>Brand</b><span>Purpose, personality, voice · 3</span></div>
+    <div><b>Logo</b><span>Primary, construction, usage · 7</span></div>
+    <div><b>Colour</b><span>Palette and proportions · 10</span></div>
+    <div><b>Typography</b><span>Typefaces, scale, in use · 11</span></div>
+    <div><b>Imagery</b><span>Art direction · 13</span></div>
+    <div><b>Applications</b><span>Social, print, digital · 15</span></div>
+  </div>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>2</span></div>
+</section>
+
+<!-- 03 Divider -->
+<section class="page divider dark" aria-label="Section: Brand">
+  <div class="head"><span>[Brand] · Brand guidelines</span><span>Section</span></div>
+  <h1>Brand</h1>
+  <div class="foot"><span>Purpose · Personality · Voice</span><span>3</span></div>
+</section>
+
+<!-- 04 Purpose -->
+<section class="page statement" aria-label="Purpose">
+  <div class="head"><span>Brand · Purpose</span><span>[Brand]</span></div>
+  <h1>[One sentence about why [Brand] exists and for whom.]</h1>
+  <div class="row" style="gap:64px">
+    <p><b style="color:var(--ink)">Mission.</b> [What we do every day to get there, in plain words.]</p>
+    <p><b style="color:var(--ink)">Promise.</b> [What a customer can always count on.]</p>
+  </div>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>4</span></div>
+</section>
+
+<!-- 05 Personality -->
+<section class="page" aria-label="Personality">
+  <div class="head"><span>Brand · Personality</span><span>[Brand]</span></div>
+  <h2>Personality</h2>
+  <p style="margin-top:16px">Where [Brand] sits between two honest opposites. Move the dots, then keep every design and every sentence on this side.</p>
+  <div class="traits">
+    <div class="trait"><span>[Precise]</span><div class="scale"><i style="--v:22%"></i></div><span>[Loose]</span></div>
+    <div class="trait"><span>[Warm]</span><div class="scale"><i style="--v:35%"></i></div><span>[Cool]</span></div>
+    <div class="trait"><span>[Quiet]</span><div class="scale"><i style="--v:60%"></i></div><span>[Loud]</span></div>
+    <div class="trait"><span>[Classic]</span><div class="scale"><i style="--v:70%"></i></div><span>[New]</span></div>
+    <div class="trait"><span>[Serious]</span><div class="scale"><i style="--v:45%"></i></div><span>[Playful]</span></div>
+  </div>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>5</span></div>
+</section>
+
+<!-- 06 Voice -->
+<section class="page" aria-label="Voice">
+  <div class="head"><span>Brand · Voice</span><span>[Brand]</span></div>
+  <h2>How we write</h2>
+  <div class="voice">
+    <div><h3>We say</h3><ul><li>[Your order ships Monday.]</li><li>[We fixed it. Sorry for the wait.]</li><li>[Made in Brno since 2009.]</li></ul></div>
+    <div class="no"><h3>We don't say</h3><ul><li>[Elevate your experience.]</li><!-- proui-ignore SL-71 example of what not to say --><li>[Seamless, cutting-edge solutions.]</li><li>[Crafted with passion.]</li></ul></div>
+  </div>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>6</span></div>
+</section>
+
+<!-- 07 Logo -->
+<section class="page" aria-label="Logo">
+  <div class="head"><span>Logo · Primary</span><span>[Brand]</span></div>
+  <h2>Logo</h2>
+  <div class="logo-row">
+    <div class="logo-box l"><div class="wordmark"><i></i>[Brand]</div></div>
+    <div class="logo-box d"><div class="wordmark"><i></i>[Brand]</div></div>
+  </div>
+  <p class="cap">Primary logo on light and on dark. Use the files from [link]; never retype the wordmark.</p>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>7</span></div>
+</section>
+
+<!-- 08 Construction -->
+<section class="page" aria-label="Logo construction">
+  <div class="head"><span>Logo · Construction</span><span>[Brand]</span></div>
+  <h2>Construction and clear space</h2>
+  <div class="construct">
+    <div>
+      <p>The clear space around the logo is the height of the symbol, marked <b style="color:var(--ink)">x</b>. Nothing enters it: text, images or edges.</p>
+      <p style="margin-top:16px">Minimum size: [24 px] on screen, [10 mm] in print.</p>
+    </div>
+    <svg viewBox="0 0 800 420" aria-label="Logo with clear space">
+      <rect x="1" y="1" width="798" height="418" fill="none" stroke="currentColor" stroke-opacity=".15" stroke-dasharray="6 6"/>
+      <rect x="160" y="150" width="480" height="120" fill="none" stroke="currentColor" stroke-opacity=".3"/>
+      <rect x="200" y="170" width="80" height="80" rx="20" fill="currentColor"/>
+      <text x="300" y="235" font-size="72" font-weight="600" fill="currentColor" font-family="system-ui" letter-spacing="-3">[Brand]</text>
+      <g stroke="currentColor" stroke-opacity=".45"><line x1="160" y1="110" x2="160" y2="310"/><line x1="640" y1="110" x2="640" y2="310"/><line x1="120" y1="150" x2="680" y2="150"/><line x1="120" y1="270" x2="680" y2="270"/></g>
+      <text x="92" y="215" font-size="18" fill="currentColor" fill-opacity=".6">x</text><text x="700" y="215" font-size="18" fill="currentColor" fill-opacity=".6">x</text>
+      <text x="396" y="130" font-size="18" fill="currentColor" fill-opacity=".6">x</text><text x="396" y="300" font-size="18" fill="currentColor" fill-opacity=".6">x</text>
+    </svg>
+  </div>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>8</span></div>
+</section>
+
+<!-- 09 Usage -->
+<section class="page" aria-label="Logo usage">
+  <div class="head"><span>Logo · Usage</span><span>[Brand]</span></div>
+  <h2>Logo usage</h2>
+  <div class="usage">
+    <div><div class="ph"><div class="wordmark" style="font-size:40px"><i style="width:32px;height:32px;border-radius:8px"></i>[Brand]</div></div><div class="tag">On a calm, plain background</div></div>
+    <div><div class="ph" style="background:#111;color:#fff"><div class="wordmark" style="font-size:40px"><i style="width:32px;height:32px;border-radius:8px"></i>[Brand]</div></div><div class="tag">White on dark</div></div>
+    <div class="x"><div class="ph bad"><div class="wordmark" style="font-size:40px;transform:scaleX(1.45)"><i style="width:32px;height:32px;border-radius:8px"></i>[Brand]</div></div><div class="tag">Never stretch or squash</div></div>
+    <div class="x"><div class="ph bad"><div class="wordmark" style="font-size:40px;color:var(--accent-2)"><i style="width:32px;height:32px;border-radius:8px"></i>[Brand]</div></div><div class="tag">Never recolour or add effects</div></div>
+  </div>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>9</span></div>
+</section>
+
+<!-- 10 Colour -->
+<section class="page" aria-label="Colour">
+  <div class="head"><span>Colour · Palette</span><span>[Brand]</span></div>
+  <h2>Colour</h2>
+  <div class="swatches">
+    <div class="sw" style="background:var(--accent);color:#fff"><b>[Signal Blue]</b>HEX [#2F5BFF] · RGB [47 91 255] · OKLCH [0.55 0.24 266]</div>
+    <div class="sw" style="background:#111;color:#fff"><b>[Ink]</b>HEX [#111111]</div>
+    <div class="sw" style="background:var(--fill-2)"><b>[Stone]</b>HEX [#E2E2DF]</div>
+    <div class="sw" style="background:var(--accent-2)"><b>[Amber]</b>HEX [#FFB800]</div>
+  </div>
+  <div class="ratio" aria-label="Proportions"><span style="flex:60;background:var(--paper);outline:1px solid var(--line)"></span><span style="flex:25;background:#111"></span><span style="flex:10;background:var(--accent)"></span><span style="flex:5;background:var(--accent-2)"></span></div>
+  <p class="cap">Proportions in a typical layout: mostly paper and ink, the brand colour for what matters, amber only as a highlight. Text contrast checked against WCAG AA.</p>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>10</span></div>
+</section>
+
+<!-- 11 Typography -->
+<section class="page" aria-label="Typography">
+  <div class="head"><span>Typography · Typefaces</span><span>[Brand]</span></div>
+  <h2>Typography</h2>
+  <div class="specimen">
+    <div><div class="big-aa">Aa</div><p style="margin-top:24px"><b style="color:var(--ink)">[Display typeface]</b> for headlines, [Regular, Medium]. <b style="color:var(--ink)">[Text typeface]</b> for everything people read, [Regular, Medium]. Licences: [web, desktop].</p></div>
+    <div class="glyphs">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 ěščřžýáíéůú &amp;@€%</div>
+  </div>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>11</span></div>
+</section>
+
+<!-- 12 Type scale and in use -->
+<section class="page" aria-label="Typography in use">
+  <div class="head"><span>Typography · Scale and use</span><span>[Brand]</span></div>
+  <h2>Typography in use</h2>
+  <div class="inuse">
+    <div class="card solid"><h4 style="font-size:64px;line-height:1;margin-top:auto">[Your headline.]</h4><span style="font-size:13px;margin-top:18px;opacity:.8">Display 64 / 1.0 / −2 %</span></div>
+    <div class="card soft"><h4 style="font-size:30px;line-height:1.1">[Article headline goes here]</h4><p style="margin-top:14px">[Body text at 17 px with 1.55 line height, 60–70 characters per line, never lighter than the muted colour.]</p></div>
+    <div class="card line scale-list">
+      <div><span>Display</span><b style="font-size:40px;font-family:var(--display);font-weight:500">Aa</b></div>
+      <div><span>H2</span><b style="font-size:28px;font-family:var(--display);font-weight:500">Aa</b></div>
+      <div><span>Body</span><b style="font-size:17px;font-weight:400">Aa</b></div>
+      <div><span>Caption</span><b style="font-size:13px;font-weight:400">Aa</b></div>
+    </div>
+  </div>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>12</span></div>
+</section>
+
+<!-- 13 Imagery statement -->
+<section class="page bleed dark" aria-label="Imagery">
+  <div class="img" role="img" aria-label="[Full-bleed brand photograph]"></div>
+  <div class="head"><span>Imagery</span><span>[Brand]</span></div>
+  <div class="over"><h1>[A bold statement about the brand, set big over one strong photograph.]</h1></div>
+</section>
+
+<!-- 14 Image direction -->
+<section class="page" aria-label="Image direction">
+  <div class="head"><span>Imagery · Direction</span><span>[Brand]</span></div>
+  <h2>Photography</h2>
+  <div class="gallery">
+    <div class="ph" data-note="[Hero: people at work, natural light]"></div>
+    <div class="ph" data-note="[Detail: material, hands]"></div>
+    <div class="ph" data-note="[Place: the real studio]"></div>
+    <div class="ph" data-note="[Product on its own]"></div>
+    <div class="ph" data-note="[Avoid: stock, staged smiles]"></div>
+  </div>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>14</span></div>
+</section>
+
+<!-- 15 Social -->
+<section class="page dark" aria-label="Social media">
+  <div class="head"><span>Applications · Social media</span><span>[Brand]</span></div>
+  <h2>Social media</h2>
+  <div class="social">
+    <div class="post s1">[Photo post with a short line]</div>
+    <div class="post s2">[Announcement in the brand colour]</div>
+    <div class="post s3">[Quote on ink]</div>
+    <div class="post s4">[Carousel cover]</div>
+  </div>
+  <p class="cap">Portrait 4:5, 1080 × 1350. Text inside a 64 px margin; logo only on the last slide.</p>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>15</span></div>
+</section>
+
+<!-- 16 Applications -->
+<section class="page" aria-label="Applications">
+  <div class="head"><span>Applications</span><span>[Brand]</span></div>
+  <h2>Applications</h2>
+  <div class="apps">
+    <div class="ph" data-note="[Business card, 85 × 55 mm]"></div>
+    <div class="ph" data-note="[Signage or packaging]"></div>
+    <div class="ph" data-note="[Website home page]"></div>
+  </div>
+  <div class="foot"><span>[Brand] · Brand guidelines [1.0]</span><span>16</span></div>
+</section>
+
+<!-- 17 Back -->
+<section class="page back dark" aria-label="Contact">
+  <div class="head"><span>[Brand]</span><span>Brand guidelines [1.0]</span></div>
+  <div class="wordmark"><i></i>[Brand]</div>
+  <div class="row" style="justify-content:space-between;align-items:flex-end">
+    <p>Questions about the brand: <b style="color:var(--ink)">[brand@company.cz]</b><br>Files and fonts: [link]</p>
+    <span style="color:var(--muted);font-size:13px">17</span>
+  </div>
+</section>
+
+</body>
+</html>

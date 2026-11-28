@@ -17,7 +17,7 @@ available (see "When the user is not there").
      Production passes: SEO ─▶ Localisation** ─▶ Performance ─▶ Security ─▶ Launch and legal
           │
           ▼
-     Quality check ──▶ GitHub and deploy ──▶ Handoff
+     Cleanup ──▶ Quality check ──▶ GitHub and deploy ──▶ Handoff
 
 *  only for operate surfaces (dashboards, tools, settings)
 ** only for sites in more than one language or market
@@ -337,6 +337,12 @@ why). Send the user one short line per finished pass.
   success: build every one that applies to each page and component.
 - Verify: trigger each state on purpose (throttled network, offline mode, empty data, bad input) and take a
   screenshot of it.
+- Resilience (`production/RESILIENCE.md`): every request has a timeout and a retry (`ST-17`), HTML instead of
+  JSON is handled (`ST-18`), submit buttons lock while sending (`FO-20`), the payment result survives a lost
+  connection (`ST-19`), links to deleted things land on a clear page (`ST-20`), and every delete is designed
+  with the deletion checklist (`ST-21`).
+- Verify: throttle to Slow 3G and go offline mid-save in DevTools; make the API return HTML; double-click
+  every submit; delete shared, last, parent and paid things with two test accounts.
 
 ### Pass: Motion (`MO`, motion recipes, `PF-21`)
 
@@ -399,6 +405,10 @@ A site does not deploy with an open **must** item.
 
 ### Pass: Launch and legal (`PE`)
 
+- Production basics (`PE-31`): the **now** column of `production/CONCEPTS.md` is in place; nothing from the
+  **big** column is added to a small site.
+- Accounts and money (`PE-27` to `PE-30`): deleting an account deletes the data, cancelling is as easy as
+  signing up, a reminder goes out before a trial turns paid, an AI chat answers a crisis safely.
 - Custom 404, primary action above the fold and sticky on mobile where it helps, breakpoints, favicon set,
   Open Graph, thank-you states, privacy policy, terms, cookie consent that loads non-essential scripts only
   after consent (`PE-23`, `PE-26`), analytics, real contact details, code in Git, `security.txt` and a status
@@ -410,6 +420,21 @@ A site does not deploy with an open **must** item.
   file; confirm no placeholder business data remains.
 
 ---
+
+### Pass: Cleanup (`PE-32`, last)
+
+Follow [production/CLEANUP.md](../production/CLEANUP.md) after every other pass, before the quality check:
+
+1. Commit, then run `npx knip`, `npx depcheck`, `npx madge --orphans --extensions ts,tsx,js,jsx src` and
+   `npx jscpd src --min-lines 8`.
+2. Confirm each candidate by reading the code and searching for its name, and list the findings: dead code
+   (unused functions, files, components, routes, APIs, variables, imports, packages), duplicate logic,
+   unused UI components, overbuilt code, legacy code and old feature flags, redundant queries and API calls,
+   abandoned files, and technical debt.
+3. Clean in small commits by category; build, type check, lint and test after each.
+4. Add the cleanup report to the handoff (removed, merged, simplified, queries saved, left for later).
+
+Never delete files the framework loads by name, config, migrations or anything you cannot prove unused.
 
 ## Stage: Quality check
 
@@ -473,3 +498,4 @@ Irreversible actions (publishing, deleting, paying, sending messages) always wai
 | `ProUI continue` | reads `proui/DECISIONS.md` and continues from the last recorded stage |
 | `ProUI passes` | runs only the passes and the quality check on an existing site |
 | `ProUI pass <name>` | runs one pass, for example `ProUI pass security` or `ProUI pass SEO` |
+| `ProUI pass cleanup` | finds and removes dead code, duplicates, unused components and packages, and redundant queries (`production/CLEANUP.md`) |

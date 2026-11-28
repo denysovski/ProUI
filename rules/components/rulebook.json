@@ -187,6 +187,12 @@
       "kind": "do",
       "title": "Fewer choices, in groups",
       "text": "Each decision point offers few options (Hick's law): one primary action, at most one secondary, the rest behind \"More\". Longer lists are grouped into chunks of about five to seven with headings (Miller's law), and the usual place for things is kept (Jakob's law: people expect your site to work like the ones they already use)."
+    },
+    {
+      "id": "IX-28",
+      "kind": "do",
+      "title": "Toasts wait while you read them",
+      "text": "A toast's timer pauses while the pointer is over it, while it has focus and while the tab is hidden, and restarts when the person comes back, so nobody misses a message that disappeared in another tab (`IX-10`)."
     }
   ]
 }

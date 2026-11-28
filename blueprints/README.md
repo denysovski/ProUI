@@ -21,6 +21,7 @@ Every section answers one of them. A section that cannot be filled with real con
 | [Sitemaps](site-types.md) | which pages a service business, company, SaaS, shop, portfolio, restaurant or personal site needs |
 | [Landing page](landing-page.md) | which sections, in which order, where the main button repeats, what comes after |
 | [Sections](sections.md) | what each section needs and which component fits each effect level |
+| [Tables on phones](tables-on-phones.md) | rebuild a wide table for phones in six moves (rank, stack, slot, label, reveal, container breakpoint) with markup and CSS |
 | [Lookbook](lookbook.md) | a clothing brand's lookbook in three levels: grid with stepper, full-screen stories with tap zones, shop the look |
 | [Cart drawer](cart.md) | a shop's cart drawer: layout, free-gift ladder, one-click add-ons, paid extras done legally, what to measure |
 | [Pricing](pricing.md) | three named packages for services, tiers and comparison tables for products |

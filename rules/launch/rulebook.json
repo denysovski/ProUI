@@ -176,6 +176,47 @@
       "kind": "dont",
       "title": "Dark-pattern cookie banner",
       "text": "Only \"Accept all\" and \"Settings\" on the first layer, a grey text link for reject next to a bright accept button, pre-ticked categories, cookie walls, or trackers that run before the choice. Authorities fine these."
+    },
+    {
+      "id": "PE-27",
+      "kind": "do",
+      "title": "Deleting an account deletes the data",
+      "text": "When someone deletes their account or asks to be forgotten, their uploads, files, messages, profile and copies in email tools and analytics are deleted too (backups expire on their schedule), within the time the privacy policy states. Say in the policy what is kept and why (invoices for tax law).",
+      "level": "hard"
+    },
+    {
+      "id": "PE-28",
+      "kind": "do",
+      "title": "Cancelling is as easy as signing up",
+      "text": "A subscription that was bought online can be cancelled online, in the same number of steps, without a phone call, a chat, a hidden page or a maze of \"Are you sure?\" offers. One retention offer at most, then a clear Cancel button and a confirmation email. Consumer law in the EU and the US treats hard-to-cancel flows as unfair or deceptive.",
+      "level": "hard"
+    },
+    {
+      "id": "PE-29",
+      "kind": "do",
+      "title": "Remind before a trial turns into a payment",
+      "text": "A free trial that converts into a paid plan, and an annual renewal, send a reminder a few days before the first charge with the price, the date and a one-click link to cancel. The trial's sign-up page states the price and date up front.",
+      "level": "hard"
+    },
+    {
+      "id": "PE-30",
+      "kind": "do",
+      "title": "AI chat answers a crisis safely",
+      "text": "A chatbot or AI companion that talks with the public recognises messages about self-harm or suicide, stops the normal flow, answers with care and shows local crisis resources (in the Czech Republic the Linka první psychické pomoci 116 123; in the EU 112 for emergencies). Some laws now require it, for example California's law on companion chatbots (SB 243). Test it before launch.",
+      "level": "hard"
+    },
+    {
+      "id": "PE-31",
+      "kind": "do",
+      "title": "Production basics before launch, nothing bigger",
+      "text": "Before launch, every site with a back end has the \"now\" column of `production/CONCEPTS.md`: rate limits, caching, pagination, indexes, timeouts, idempotent payments, health check, monitoring, backups, migrations in Git, budgets. Do not add what a small site does not need (Kubernetes, microservices, sharding, multi-region): every extra part is another place to break."
+    },
+    {
+      "id": "PE-32",
+      "kind": "do",
+      "title": "Clean up before handing over",
+      "text": "The last pass before handoff removes dead code, unused components, routes, files and packages, merges duplicate logic, simplifies overbuilt code and fixes redundant queries, in small commits with a build and test after each, and records what changed (`production/CLEANUP.md`).",
+      "level": "hard"
     }
   ]
 }

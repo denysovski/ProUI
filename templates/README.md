@@ -10,6 +10,7 @@
 | [workflow/](workflow/) | [INTAKE.md](workflow/INTAKE.md), [BRIEF.md](workflow/BRIEF.md), [DIRECTIONS.md](workflow/DIRECTIONS.md), [DECISIONS.md](workflow/DECISIONS.md) | the intake questions, the brief, the direction checkpoint and the running record |
 | [reports/](reports/) | [CRITIQUE.md](reports/CRITIQUE.md), [AUDIT.md](reports/AUDIT.md) | `ProUI critique`, `ProUI audit` |
 | [github/](github/README.md) | CI, quality and Pages workflows, Lighthouse budgets, Dependabot, PR and issue templates, dotfiles, `security.txt` | `ProUI ship` |
+| [brand-guidelines/](brand-guidelines/README.md) | a 17-page brand book at 16:9 in one HTML file (light and dark, prints to PDF) | the Design system stage or the handoff, when the client needs the brand written down |
 
 ## Where they end up
 

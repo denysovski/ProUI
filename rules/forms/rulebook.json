@@ -142,6 +142,13 @@
       "title": "Topic first, then three fields",
       "text": "A contact form asks as little as possible. First the visitor picks what it is about from a few large choices (for example Product, Partnership, Bug, Billing, Other), and only then the form appears with three fields: name, email and a description of the problem or request, its placeholder and label matched to the chosen topic (\"What went wrong?\" for Bug). The topic travels with the message and routes it to the right person. No phone, company, budget or subject fields unless the owner says the answer changes who replies (`FO-14`). After sending, a thank-you that says who answers and when, and a plain email address stays on the page for anyone who prefers it (`PG-20`).",
       "level": "hard"
+    },
+    {
+      "id": "FO-20",
+      "kind": "do",
+      "title": "Lock the button while it sends",
+      "text": "A submit button is disabled while its request runs and its label says so (\"Sending…\", \"Paying…\"), so a double click or an impatient second tap cannot send it twice. The server is protected too (`SEC-31`). The button unlocks with a clear result or an error. Inputs live in a real `<form>` with `onSubmit`, so Enter submits.",
+      "level": "hard"
     }
   ]
 }
